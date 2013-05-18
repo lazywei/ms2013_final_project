@@ -17,11 +17,14 @@ data_files = Dir["#{data_dir}/*"]
 
 result = []
 data_files.each do |filename|
+  next unless redis.get(filename).nil?
+
   text = File.read(filename)
   text = text.split(/[^\u4E00-\u9fa5]+/)
   text.each do |str|
     result << n_gram(str)
   end
+  redis.set(filename, "done")
 end
 
 result.flatten!

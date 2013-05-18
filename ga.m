@@ -1,6 +1,6 @@
-str = "強調將堅決支持";
+function ga(str)
 
-str_length = length(str) / 3;
+str_length = tw_len(str);
 str_arr = char(str);
 
 % Create init chr groups
@@ -17,30 +17,48 @@ final_result = [];
 final_score = 0;
 
 for i=1:size(chr_groups)(1)
-    result = [];
-    start_position = 1;
     chr = [chr_groups(i, :) 1];
-    for i=1:length(chr)
-        if chr(i) == 1
-            result = [result; str_arr(start_position:i*3)];
-            start_position = i*3+1;
-        end
-    end
+    result = slice_str_by_ref(str_arr, chr);
 
     score = 0;
-    cmd_str = 'redis-cli get ';
     for i=1:size(result)(1)
-        [s, output] = system([cmd_str result(i, :)]);
-        output = str2num(output);
-        if isempty(output)
-            output = 1;
-        end
-        score += (length(result(i, :)) / 3)^2 + output;
+        score += count_score(result(i, :));
     end
-    if score >= final_score
+
+    if score > final_score
         final_result = result;
         final_score = score;
     end
 end
 final_score
 final_result
+end
+
+function len=tw_len(str)
+    len = length(str) / 3;
+end
+
+function score=count_score(word)
+    cmd_str = 'redis-cli get ';
+    [s, output] = system([cmd_str word]);
+    output = str2num(output);
+    if isempty(output)
+        output = 1;
+    end
+    if (tw_len(word) >= 4)
+        score = (-1) * output;
+    else
+        score = tw_len(word) * output;
+    end
+end
+
+function result=slice_str_by_ref(str_arr, ref)
+    result = [];
+    start_position = 1;
+    for i=1:length(ref)
+        if ref(i) == 1
+            result = [result; str_arr(start_position:i*3)];
+            start_position = i*3+1;
+        end
+    end
+end
