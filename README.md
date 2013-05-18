@@ -11,3 +11,4 @@ This is a project about「中文斷詞」.
 - http://nokogiri.org/
 - https://github.com/typhoeus/typhoeus
 - http://tw.news.yahoo.com/
+- http://rubular.com/
