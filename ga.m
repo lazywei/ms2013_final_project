@@ -15,6 +15,12 @@ for i=1:length(chr)
 end
 
 cmd_str = 'redis-cli get ';
-[output, s] = system([cmd_str result(1, :)]);
-result(1, :)
-output
+
+for i=1:size(result)(1)
+    [s, output] = system([cmd_str result(i, :)]);
+    output = str2num(output);
+    if isempty(output)
+        output = 1;
+    end
+    printf('%s = %d \n', result(i, :), output);
+end
