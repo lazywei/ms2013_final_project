@@ -12,4 +12,3 @@ This is a project about「中文斷詞」.
 - [Typhoeus(ruby gem)](https://github.com/typhoeus/typhoeus)
 - [Yahoo news](http://tw.news.yahoo.com/)
 - [Rubular(ruby regex tester)](http://rubular.com/)
-- [Redis Matlab wrapper](https://github.com/dantswain/redis-matlab.git)

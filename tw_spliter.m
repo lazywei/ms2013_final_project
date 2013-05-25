@@ -1,4 +1,4 @@
-function ga(str)
+function tw_spliter(str)
 
 str_length = tw_len(str);
 str_arr = char(str);
