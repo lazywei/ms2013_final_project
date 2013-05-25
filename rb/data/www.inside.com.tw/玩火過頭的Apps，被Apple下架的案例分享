@@ -1,0 +1,56 @@
+
+
+無論是不是iOS的開發者，應該都曾經聽說過蘋果對於App Store上的軟體嚴格控制，無論是上架審核無法通過或者是已經上架但卻違反規定被移除都是常見的事情。在這一篇文章中，我們將看看幾個因為開發者違反了蘋果的規定、玩火過頭，而所遭受到移除的案例。
+造假評論的Molinkers
+
+Molinkers是一家在App Store上擁有超過千款軟體的軟體開發商，雖然許多軟體內容相當相近，但這個數量仍然相當驚人。然而，有一天有位網友發現Molinkers在App Store上有疑似造假評價的行為，於是便寫了信和蘋果的副總裁Phil Schiller抱怨。過沒多久，這一千多套軟體就被蘋果下架而無法繼續在App Store上販售了。
+參考連結：Apple investigates possible US AppStore ratings scam
+虐待嬰兒以作樂的Baby Shaker
+
+Baby Shaker是一款透過iPhone上的動態感應裝置來偵測使用者晃動、使畫面上的嬰兒停止哭泣並在嬰兒眼睛上打了紅色的叉。受到嬰幼兒保護團體的抗議後，這款軟體最終也在App Store上由蘋果強制下架。
+參考連結：Apple forced to ban iPhone application that allowed users to violently shake a baby
+公開批評蘋果的Tommy Refenes
+
+Tommy Refenes是App Store上某款遊戲叫做Zits and Giggles的開發者，並且受邀在今年的GDC（Game Developer Conference，世界上知名的遊戲開發者會議）上與大家分享在App Store上的經驗。
+他說：「大約從五個月前開始，我逐漸從App Store上得到一些經驗，這些經驗最後證明了：對於大多數的產品而言，AppStore是個屎（shit）」。或許只是巧合，但在一個禮拜後，他的遊戲就從App Store上被蘋果移除了。
+參考連結：Developer Rants Against App Store, Gets Banned (Video)
+一直當機的Layar
+
+Layar是在iPhone平台上相當早期的AR（擴增實境）軟體，當初推出時曾經造成滿大的轟動。然而，由於過多的使用者回報當機的狀況，蘋果不得不暫時從App Store上移除Layar這套還算相當熱門的軟體。
+參考連結：Layar Pulled From App Store, Bad News for Augmented Reality
+遭到濫用的iChatr
+
+還記得iChatr嗎？那個曾經受到本站報導的iPhone 4專用輪盤聊天室軟體？或許你已經猜到了，由於太多的使用者在視訊聊天室中裸露自己的身體，iChatr最終也遭到了蘋果的下架。
+參考連結：iChatr Gets Pulled From App Store Due To Wangs
+有隱藏功能的Handy Light
+
+Handy Light是一款有著美麗Icon的軟體，藉由在螢幕上顯示不同的顏色來模擬手電筒效果。
+然而，在這個平凡的軟體中，只要以特定的順序選擇手電筒的顏色，便可以開啟隱藏的功能，也就是讓使用者能夠透過WiFi來分享3G上網的訊號(這是不被官方所允許的功能)。隨著這件事情逐漸在網路上傳開，不意外地沒過了多久，這款軟體便從架上消失了。
+參考連結：Apple Approves, Pulls Flashlight App with Hidden Tethering Mode
+具有下架潛力（？）的Camera+
+
+Camera+是目前在App Store上攝影類別中數一數二的軟體，功能相當完整且強大，並搭配上獨特華麗的介面，自然是十分受到使用者喜歡，在短短一個月內便有二十五萬美元的成績。
+為了能夠讓攝影的功能更加精練，他們也試圖將iPhone上的硬體音量控制按鈕作為快門使用，讓使用者不需要一手搖搖晃晃的扶著iPhone、一手去點擊觸控螢幕。然而這樣的功能，是與蘋果的規定有所牴觸的，所以一直無法順利的通過上架審核。
+可是有國外網友卻發現，只需要在安裝了Camera+的iPhone上用Safari連進以下這個網址便可以開啟這項隱藏的功能！
+
+
+camplus://enablevolumesnap
+
+
+雖然目前蘋果暫時沒有動作，但顯然這樣的隱藏功能是極有可能引來蘋果的注意並且下架的。
+8/12更新：如同筆者所預測，Camera+真的被蘋果下架了！
+結論
+根據一個非正式的統計數字，發現大約每個月平均會有一到兩千個軟體遭到蘋果的移除，以上所提到的不過只是冰山一角，包含Tweetie、Instapaper或者是近期相當熱門的Pulse在內，都曾經遭到蘋果要求下架。身為在平台上的開發者，我們只能盡量的符合蘋果的要求，以避免類似的事情發生在自己身上了。
+
+
+
+
+Maria Sarfraz:
+April 28th, 2013 at 1:58 am
+ i agree 100%
+whenever you need to get a testimonial, you can drop me a line at
+http://iphonage.com
+
+
+
+ Tagged with: App Store, pulled 

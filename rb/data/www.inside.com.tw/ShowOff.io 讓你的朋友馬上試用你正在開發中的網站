@@ -1,0 +1,62 @@
+
+
+
+你是否有過這樣的經驗？夜深人靜的時候，開發了一個很棒的服務，馬上就想要分享給你的朋友們看看，告訴他們你做出了下一個能幹掉Facebook的好服務，但因為開發過程你的程式碼、資料庫都在自己的開發機上，要開給朋友們看還需要多很多步驟，像是放到伺服器上、建立&設定環境或是在自己的開發機上弄一個可以公開的環境出來，或是你根本就在防火牆內、也根本沒有公開的IP可用，種種麻煩顯然會阻擋了你幹掉Facebook的決心。
+多虧了科技持續在進步、而且始終來自於人性，現在想要炫耀你的好作品有了更簡單的管道：showoff.io。
+之前 Inside 作者 Richard 曾經在2011網頁開發熱門技術 – Node.js一文中介紹過 Node.Js：
+Node.js顧名思義便是使用JavaScript語言作為基礎的框架，特別的是，相對於jQuery或是YUI等在瀏覽器中運行使用的JavaScript框架，Node.js是作為網站程式的後端框架，就如同PHP或是Java一般開發網站。
+換句話說，JavaScript不只可以跑在瀏覽器中，還可以當做網站的伺服器！這個想法是非常的新鮮有趣，主要的原因是在於隨著Gmail等AJAX網站以及技術的興起，許多的程式開發者紛紛投入心力鑽研JavaScript，並且有許多開發心得、優化技巧陸續被發掘，加上瀏覽器之間的競爭越來越激烈，JavaScript的執行效能持續性的突破，因此最終便誕生了Node.js。
+本文所介紹的 showoff.io 便是利用Node.js技術所開發的一個有趣服務，它做的事情非常簡單：執行 showoff.io 並指定你要分享的 port，接著它會產生一組臨時的 URL ，把這個臨時的 URL 分享給你的朋友，朋友就能透過 showoff.io 的伺服器連上你的電腦。
+提供免費服務
+更棒的是，showoff.io 有提供免費的服務，不付費的使用者每次可以有 5 分鐘的使用時間，5 分鐘一到你就必須重新啟動（而且網址會重新產生）。如果你付費的話，有兩種選擇：
+1 塊美金可以有 1 day pass
+5塊美金可以有一個月吃到飽
+如果付月費的話，另外還可以享有自訂網址的功能，不需要每次使用時都要另外通知朋友、客戶另外一個動態的網址，顯然會方便許多。（而且 $5 還真的是很便宜）
+適用情境
+showoff.io 特別適用於以下幾種情境：
+你想要一個簡單的方式來給朋友們看你的作品
+執行客戶的專案，可以提供一個簡便的方式讓客戶看到目前最新的修改（尤其一些比較小的案子，可能沒有staging server）
+在開發環境上測試真實的SSL認證
+想要在開發環境上使用某些必須要有公開的URL作為 callback URL 的服務
+開發手機應用，想讓mobile apps可以直接存取某個Web Services（例如手機用3G上網，跟開發環境處在不同網段，開發期間可以透過此方式進行測試）
+在 showoff.io 的教學頁面有說明要如何在 Mac OS X 以及 Windows 環境上安裝，基本上使用 showoff.io 你必須要有 Ruby 以及 RubyGems 的支援，同時防火牆的 port 22 必須是開放的。
+showoff.io 是一個非常實用的服務，簡單的指令就可以解決許多困擾，不曉得您是否有遇過類似的問題是可以直接利用 showoff.io 解決的？期待您的經驗分享。
+
+
+
+
+Mona Hu:
+June 29th, 2011 at 2:04 pm
+ 第一時間的 show-off is priceless！.
+
+
+Kyk Tommy:
+June 29th, 2011 at 2:26 pm
+ This service is very useful for beginner like me. I do not have any server and want to "show off" my good ideas!
+
+
+Philip Zheng:
+June 30th, 2011 at 2:13 am
+ 分享iOS App上的TestFlight。
+http://server.everfine.com.tw/blog/archives/2011/06/testflight---ap.html
+
+
+Jack Huang:
+July 2nd, 2011 at 7:24 am
+ good
+
+
+Kero Yu:
+July 6th, 2011 at 5:53 am
+ 還是直接花兩三塊美金買個美國host隨時用划算
+
+
+趙政宏:
+October 30th, 2011 at 7:58 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+
+ Tagged with: node.js, showoff.io 

@@ -1,0 +1,49 @@
+
+
+
+
+<圖片來自>
+先前，在試做網頁搜尋引擎的時候，提出幾個應該要具備的know-how。 其中，關於第六項，DB, server, 網路基於處理大量資料的性能調整,並能有效處理分散運算，因為沒對Google或其他搜尋引擎的做法深究，憑著直覺與過去賣給企業DB系統的經驗，覺得是 採用一些平行運算的（商用）資料庫叢集解決方案就可以。但顯然事情並非如此單純。
+現在的網路及應用程式環境，資料量越處理越大。做個twitter紅了，數千萬requests的湧入，馬上考驗平台的穩定性。如果要設計一個搜尋 引擎或大型社群遊戲之類的東西，會員破千萬或資料量數百terabytes，系統的可擴展性顯然會是個非常重要應面對的首要任務。
+為了達到Tera級乃至Peta級的資料處理，Google、Facebook、Amazon以及其他公司怎麼做的？偉大的公司必然採用了偉大的技術，底下列出幾個在設計高擴展性的（雲端）系統應該注意的概念、元件與開源專案：
+1. Google – Bigtable
+原來Google不是用RDBMS來儲存搜尋資料的。在我先前的試驗中，也的確發現了RDBMS會有效能的問題，在擴展上不易，且金額昂貴。關於Bigtable，從http://trac.nchc.org.tw/cloud/wiki/HyperTable抄了一段描述，看了就可理解：
+了達到高讀取效能與Petabyte等級的資料庫容量，因此，Google設計出了一套底層為B-tree資料結構型式的 儲存格式，並更改了傳統關聯式資料庫以Row來鎖定一筆資料的觀點，而採用更細緻化的Cell觀點來切入資料庫內容，並且在Cell又加上了版本控制的觀 念以掌控日益新增的Cell資料版本數目，由於鎖定的目標由原本的Row縮小到Cell，因此用來定位之標的就由原本的Primary Key延伸而成為了Row? Key+Column Family+Column Qualifier+Timestamp的組合，這些觀念會在稍後的章節詳細說明。然而，Bigtable的出現並不是為了取代傳統關聯式資料庫系統 (RDBMS)，像是在Google內部還是會用到像是MySQL等傳統資料庫，原因是這2種型態的資料庫訴求的功能面並不相同，Bigtable強調的 是在數量龐大的資料庫中快速搜尋與讀取資料的效能，但是寫入效能不見得優於RDBMS，所以在一般Transaction導向應用的程式，如果常需要寫入 動作或Rollback動作，而較不在乎Real-Time讀取效能的應用，還是以RDBMS較易於使用，關於Bigtable的應用面包括：存放網站索 引記錄，Google Earth的衛星照片，Google Finance的金融資料記錄等等，可存放的資料單位容量大小從數kb到數十gb都可以存放，對於搜尋引擎公司來說Bigtable無疑是搜尋引擎之資料 庫的最佳解決方案。
+ 
+2. Google – Google File System
+分散到很多機器上，為了底層存放資料的穩定性，Page自己發明了分散式容錯的檔案系統，用來將資料儲存在便宜的PC上。
+原始論文在這裡。
+ 
+3.  Google – MapReduce
+MapReduce是一個programming 的model。摘錄http://www.ithome.com.tw/itadm/article.php?c=49410&s=7部分段落：
+Google臺灣工程研究所所長簡立峰說：「這是一種解決問題的程式開發模型。」
+和傳統開發模式相比，簡立峰表示：「使用MapReduce模式，開發人員在拆解問題的過程中，就要先對問題進行平行化處理。」開發人員需要先分析 問題的解決流程，找出可以利用平行運算來處理資料的部分，也就是那些能夠被切成小段分開來處理的資料，再針對可以採用平行處理的部分寫成Map程式。
+透過上面三個主要的元件組成，針對1T以上的資料，很快(ex. < 0.1 秒)的取出正確所需的資料，而且能隨者需求擴增的主要技術問題就解決了大半。
+但是，BigTable跟Google File System都是Google自家才能使用 。我們可以考慮哪些原件來整合，以達到高效能與高擴展性？尤其針對網頁型或社群型的大量資料處理，該注意的元件或項目有哪些？
+1.  HyperTable
+基於Google 發布的paper，由zvents所做的開放原碼專案，做的是分散式資料庫系統。網址在http://hypertable.org/，背後有百度的加持。
+ 
+2. Cassandra
+Facebook釋出的類似BigTable的分散式資料庫系統，也是開放原始碼，網址在http://incubator.apache.org/cassandra/
+ 
+3. HyperRecord
+用Ruby On Rails開發的人不可錯過，這是整合了HyperTable的Active Record版本。網址在http://code.google.com/p/hypertable/wiki/HyperRecord
+ 
+4. 其它應注意技術，通常在你的網站中會有需要使用：
+4.1 memcached – 廣為使用了，自行蒐尋一下。
+4.2 Sphinx – 在資料庫中用SQL搜尋，你不如對資料庫做全文檢索後，透過sphinxd搜尋引擎來搜尋。SQL語句的搜尋特性是，下的條件越多可能會找的越慢。但Sphinx在找資料時，則是條件越多，找的越快。網址在http://www.sphinxsearch.com/
+4.3 擴展過程中，對不需要及時處理的頁面或工作，加入非同步處理的元素。這時候，需要考量一些可以幫忙queue的東西：
+例如：beanstalkd – 簡單的使用介面，協助你把工作排入queue，非同步地處理。網址在http://kr.github.com/beanstalkd/
+又，如果需要企業等級的穩定度，可考慮使用RabbitMQ，網址在http://www.rabbitmq.com/
+ 
+ 5. Hadoop
+Hadoop不僅在實驗室中受重視，也早已走到市場中，成為雲端概念中最重要的專案。Yahoo, Google與其它數十上百的重量級用戶都在使用。不得錯過的重要平台。
+相關學習資訊可見http://www.hadoop.tw/
+本文同步發布在 http://stingtao.info
+
+
+
+
+
+
+ Tagged with: Cloud Computing 

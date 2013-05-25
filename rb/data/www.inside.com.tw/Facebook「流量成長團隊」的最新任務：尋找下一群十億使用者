@@ -1,0 +1,91 @@
+
+
+
+上週 Facebook 發表自 IPO 後的第一份財報所公布的數字顯示目前 Facebook 每月活躍使用者（MAU）為 9.55 億，每日活躍使用者（DAU）為 5.52 億，兩項數據比起去年同期的成長率都有三成左右（29% 與 32%），究竟他們是怎麼辦到的呢？這都要歸功於他們的「流量成長駭客（growth hacker）」。彭博商業周刊（Bloomberg Businessweek）上週刊了一篇文章介紹 Facebook 的「流量成長團隊（growth team）」（註 1）。
+（關於流量成長駭客，讀者們可參考 Inside 過去的兩篇文章：〈傳統的行銷副總Out！你從現在起必須知道的「Growth Hacker」〉、〈流量成長駭客（Growth Hacker）應該具備的條件〉）
+一般人可能覺得 Facebook 過去幾年的擴張沒什麼，但其實他們為了要在全球迅速擴張可是下足了功夫。在 Facebook，有一個特殊的單位，這個團隊負責的工作幾乎與整家公司的每一項業務息息相關——吸引新的會員加入並且愛上 Facebook。
+聽起來是很普通的工作，一點也不，請看一下 Lawrence 前一陣子從 Facebook 徵才網頁找到的資訊（註 2），這份工作要負責：
+
+運用資料找出可以優化某些關鍵成長路徑、使用者動線的機會。
+透過問卷調查、焦點訪談或是任何的質性研究工具搭配對於資料的充分掌握，理解哪些機會是可行的。
+主導可以直接提高轉換率或是 facebook 整理成長、參與度的專案。
+負責 facebook 的核心產品像是新聞動態、通知以及行動應用，以及其他的行銷渠道像是 SEO、SEM 以及 email。
+運用像是 Hadoop/Hive、Oracle、ETL、R、PHP、Python、Excep、MicroStrategy 或其他任何相關可以在處理有效率地大規模資料的網路工具。
+
+而 Facebook 對於應徵者的條件要求是：
+
+工程、資訊科學、數學、物理、統計或相關科技的學士、碩士。
+強大的 SQL 或 scripting 技能，必須具備同時學會兩者的能力。
+有能力處理並分析複雜的資料集，並且能詮釋這些資料所代表的意義並做出商業決策。
+出眾的溝通與簡報能力。
+強大的組織能力並且能注意到細節。
+對於複雜、高延展性（highly scalable）的網頁應用程式或媒體產品背後的技術架構具有充分的理解。
+具備設計簡單、直覺的使用者介面的經驗，必須要有能力建立簡單的 wire frames 與 mock ups。
+強烈建議最好具有開發社交產品、技術或平台的經驗。
+
+這個團隊已經從最初的五個人擴大到今日的 150 人規模，其核心人物是產品經理 Naomi Gleit，她是 Facebook 目前除了創辦人兼 CEO Mark Zuckerberg 之外任職時間最長的員工。她解釋：
+My job has been, over the years, to remove barriers that are preventing people from joining Facebook
+過去幾年裡，我的工作就是排除那些阻擋使用者加入 Facebook 的障礙。
+▲ Naomi Gleit 在 Facebook 負責過的工作（資料來源：Facebook）
+Naomi Gleit 與她的團隊的終極目標就是「讓所有人都用 Facebook」。
+當 Mark Zuckerberg 決定將 Facebook 的擴張列為重要任務後，流量成長團隊因此成立。當時是 2007 年年底，Facebook 已經擁有接近一億名使用者，但成長速度已經趨緩。
+Mark Zuckerberg 給這個團隊的挑戰就是：讓網站的使用者增加好幾倍。
+於是他們與 Google 簽訂協議，讓 Facebook 的個人檔案出現在 Google 的搜尋結果，同時還推出了一個後來令人嘖嘖稱奇的「People You May Know（你可能認識的人）」功能，相信許多人曾有「Facebook 怎麼知道我們認識」、「Facebook 竟然幫我找到小學同學」等類似的經驗，靠的就是它。後來在 Naomi Gleit 和團隊成員 Javier Olivan 的主導之下，Facebook 推出了翻譯工具，讓全球不同語言的使用者可以用自己的母語使用 Facebook。目前 Facebook 已經有 110 種語言版本（當然，並不全是完整的翻譯）。
+兩年內，他們讓使用者的人數增加到三億六千萬人。
+從下圖我們看到，自從 2007 年底 Facebook 成立了流量成長團隊後，使用者數量開始出現明顯增長。五年內 Facebook 的使用人數就從原本不到一億增加到今天的 9.55 億。
+圖片來源：Bloomberg Businessweek
+Javier Olivan 告訴彭博商業周刊的記者，他們每天進辦公室要做的第一件事是就是把所有監控使用者相關數據的螢幕看過一遍。最近他將團隊重新命名為「GEM」，代表 growth（成長）、engagement（參與）和 mobile（行動平台）。
+Naomi Gleit 現在正帶領著自己的產品經理團隊與 GEM 密切合作。她認為要產生更多的活躍使用者，關鍵在於發現她所稱的「神奇時刻（magic movements）」——使用者從「好奇 Facebook 到底在搞什麼鬼」到「哈，原來如此，太酷了吧」。Nomi Gleit 說自己扮演的角色就像是成長佈道者（growth evangelist）。
+但就如同 Facebook 上週的財報顯示，他們目前成長的速度已經再度放緩。而他們下一個快速成長的機會就是在新興市場，以及那些社交網站還不是那麼普及的地方。Olivan 認為：
+The next billions of people, we believe, are going to come through mobil.
+我們相信下一群十億使用者會透過行動裝置產生。
+然而 Facebook 還是面臨了許多障礙，例如一些國家的當局禁止使用者登入 Facebook（例如中國、越南等，後者偶爾會被屏蔽），或是其他區域性的強力競爭者如俄國的 VKontakte。
+如同〈傳統的行銷副總Out！你從現在起必須知道的「Growth Hacker」〉、〈流量成長駭客（Growth Hacker）應該具備的條件〉這兩篇文章所說，流量成長專家已經成為矽谷的熱門職缺，除了 Facebook 和 Twitter，Quora、Dropbox 和 37signals 也都強力徵求這樣的人才。
+Facebook 的成長團隊最新任務就是確保新興市場的行動裝置使用者願意使用他們的服務，不過相信現有的行動裝置使用者最希望的應該還是有個更快、更好的 Facebook app 吧 XD
+Facebook 不久之後就會達到十億使用者的里程碑，這點毫無疑問。但 Naomi Gleit 把眼光放得更遠：
+1 billion is one-seventh of the world’s population.
+十億不過是世界人口數的七分之一。
+各位創業家們，你們的團隊中有流量成長駭客嗎？
+ 
+ 
+註 1：Chasing Facebook’s Next Billion Users -- Businessweek註 2：Facebook Careers
+ 
+
+
+
+
+Carrie Kao:
+July 30th, 2012 at 3:43 pm
+ 優化網站及導入流量,在現在或未來或許是很熱門的職缺喔!!!
+
+
+Fang-Zhi Tsai:
+July 31st, 2012 at 3:38 am
+ "...Naomi Gleit認為要產生更多的活躍使用者，關鍵在於發現她所稱的「神奇時刻（magic movements）」——使用者從「好奇 Facebook 到底在搞什麼鬼」到「哈，原來如此，太酷了吧」....."
+真有趣!
+
+
+Max Lu:
+July 31st, 2012 at 5:51 am
+ 「My job has been, over the years, to remove barriers that are preventing people from joining Facebook.
+過去幾年裡，我的工作就是排除那些阻擋使用者加入 Facebook 的障礙。」.
+
+
+:
+August 18th, 2012 at 2:24 pm
+ 如果你真的有興趣，請先耐心地從頭到尾看清楚每一項分析說明，不一定能讓你獲益良多，但是，絕對讓你不虛此行！
+一、你仍以傳統方式求職，寧願面對失業，改行，再找工作的情形嗎？
+如果你是一個敬業樂業的人，如果你的事業心比老闆強，為何要繼續去"求職"？
+二、學歷高，職位高，就能一勞永逸了嗎？
+你有沒有想過，當你無私的教會了下屬時，你的位置還能保住多久？
+擁有一紙或多張文憑碩士，博士，教授．．．就可以一帆風順，一勞永逸了嗎？
+別以為擁有高學歷就不會被裁員．．．
+三、擺在眼前的全球性不景氣，你看到了嗎？
+從過去到2012年的現在，多少家大大小小的國內及國外公司倒閉？
+受全球性的不景氣影響，公司裁員，減薪，公司的工作人員減少，你的工作量，有增無減，希望老闆加薪，還是加"辛"？還是等待被裁員？你認為不可能嗎發生在你身上？當有人工作量可以跟你媲美而且薪水比你少的時候，搞不好你就是裁員名單之一，經濟不景氣老闆只會想怎麼減輕費用支出，不會去擔心你的生活!!
+現在有一個賺錢機會...聰明的你進來評估看看這賺錢機會否值得您投資...
+www.liuliping.ftp.cc複製到網址列執行
+（謹慎評估了解才是上策 決定當下既是決定未來）
+
+
+

@@ -1,0 +1,58 @@
+
+
+近來，與報導Amazon Kindle Tablet呼之欲出的文章一樣熱鬧的是網路上有關於Amazon.com改版的討論，且幾乎是一面倒認為這是Amazon.com為了即將上市的Kindle Tablet量身訂做的改版。先來看一下新舊版本有什麼大不同？Amazon.com的新版尚未全面開放，剛好筆者由兩台不同筆記型電腦以Chrome上Amazon.com，一台出現現行的版本，一台是新的版本。
+ 
+
+其實即便是現行(舊)版本，Amazon.com的首頁商品陳列的設計，相較於台灣大型購物網站那種深怕消費者會漏掉任何一件商品，且到處充斥著如街道上霓虹燈的動畫式的商品陳列方式，已經是很簡單且簡潔。而這次的改版，先不論是否是為Kindle Tablet或者是其他行動裝置量身訂做，從Desktop上來看，也是很大程度的優化。以冷與淺的色系為基調，改變商品陳列方式以爭取更多的空白，降低了視覺上帶來的壓力。加大的搜尋bar以及menu的隱藏安排，提供更友善的使用者介面。
+這次改版是為Amazon Kindle Tablet量身訂做？
+筆者同時也看一下iPad2上的Amazon.com，是跟Desktop看到的現行版本，且iPad推出多時，Amazon.com也沒有特別偵測這是iPad而呈現所謂的mobile version(於iPhone的Safari上Amazon.com，就是Mobile version)。Desktop的version未修改地顯示於10吋iPad上是可以接受的。不過若由TechCrunch的MG Siegler揭露了他親身體驗的Amazon Kindle Tablet的規格，明白指出這是一個7吋大小的Tablet的事實來看，要於7吋螢幕上呈現目前Desktop版本，文字與圖片會很擁擠，不僅視覺上不舒服，且touch panel上的操作更容易點觸別的連結，使用者瀏覽就會顯得吃力了。因此Amazon.com這次的改版，上述冷淺色調與多釋出的空間，加大的搜尋bar以及menu的隱藏安排，確實更適合tablet上瀏覽以及觸控的操作，尤其是於7吋的tablet上。
+新版另一個大的調整，是將毛利較高且於網路上傳遞方便的虛擬商品與雲端服務區置於視覺正中央處，即search bar正下方那一排"Instant video / MP3 Store / Cloud Player / Kindle / Cloud Drive / Appstore for Andriod / Game & Software Downloads / Audible Audiobooks"區，這些也會是Amazon.com於Kindle Tablet主打的項目。所以想像將新版的網站移植到Kindle Tablet上時，更容易對使用者行銷這些虛擬商品與雲端服務；而在desktop版本上也可以養成消費的習慣。
+筆者曾於「從美國近期Tablets的電視廣告對Amazon Tablet產生的狂想曲」本文中提及，Amazon推出tablet的利器，是其豐富、又深又廣的實體與虛擬商品的電子商務服務。相較於其他，Amazon的硬體＋軟體＋服務的結合，讓Kindle Tablet是Andriod Tablets的品牌中，最有資格挑戰Apple iPad的市場領導地位。毛利高的虛擬商品也提供Amazon空間來補貼硬體，以更低的價格來銷售Kindle Tablet，這是其他僅有硬體的品牌所望塵莫及的。Forrester Research已經先預測若Amazon將Kindle Tablet的價格壓低到美金300元以下，於今年第四季就可以售出三百萬到五百萬台的tablets(如果製造供給正常)。而TC與GigaOm都分別指出最好的價值是美金250元，以match售價為美金249.99元的 Barnes & Noble’s Nook Color，來個左打Apple iPad，右擊BN Nook。
+Amazon於行動裝置上的網站與Mobile Apps：
+Amazon.com於此之前於智慧型行動裝置的佈局相當積極，早已針對不同的硬體推出一些Apps，如下圖所示(註：筆者只有iPad與iPhone，故於此只能針對iOS作介紹)：
+ 
+既然是購物網站，最終目的當時是希望消費者可以在網站上購物，所以對於那些不在desktop之前，可能是在移動中，或者定點但非居家或者工作環境中的智慧型行動裝置使用者，該如何透過合適的Mobile Apps以便利消費者於行動裝置上瀏覽與購物，或者引導可能會於實體商店購買的消費者到網站上購物？而一樣都是智慧型行動裝置，iPhone與iPad有大小以及使用情境不同的差異，Mobile Apps是否當然就需要針對這些差異進行客製化的開發？從上圖Amazon的Mobile Apps的佈局，可以看到Amazon面面俱到的用心：
+1. 空間的限制下，個人化的商品呈現：
+於行動裝置螢幕尺寸較小無法像desktop可以較舒適地進行深與廣的瀏覽限制下，行動網站迎合消費習慣與內容的個人化呈現是一個對策(其實desktop版本也應該提供消費者這樣的選擇)。精準的個人化商品推薦一向是Amazon.com的強項，其Desktop版本已經發揮得淋漓盡致，理所當然會提供更需要個人化的Mobile App，Amazon提供的Window Shop就是一個例子，如以下的video。
+Window Shop的設計可以視為desktop的濃縮版加上個人化的呈現，於iPad上操作與瀏覽很就手，但這樣的版本並不適合螢幕更小的iPhone，是專為iPad所開發的。
+2. 時間的限制下，重點商品的促銷：
+Amazon.com有一個Today's Deals，稱為"Gold Box Deals"的每日限量促銷商品服務，類似被Amazon買下來的一日一物折扣網站Woot.com(台灣的網勁科技沒多久前才賣給兆赫轉投資地壹創媒的瘋狂賣客也是一例)。有時效性與限量性的促銷(Amazon並未揭露數量，僅以被購買的%呈現)，雖然未針對每個人不同的消費內容而設計，但因是挑選過的商品，且具即時性，非常合適於螢幕小(商品項目少)且隨身性高(即時)的智慧型手機，所以Amazon於iPhone (iPad無) 推出獨立的Amazon Deals的App，讓對促銷商品有興趣的消費者可以隨時隨地下單，且尚未開賣的促銷品，還貼心地提供desktop版本沒有的"Remind Me"功能。
+
+3. 實體購物到線上購物的引導：
+想像消費者在一個3C賣場看筆記型電腦，這時候若可以很快地查詢某台電腦網路上的是否有較低的價格，且方便地下單，如果沒有即時取得的需求，線上retailers就有機會可能於實體店面發生的消費行為引導到線上來。Amazon於iPhone上的Price Check App就發揮了這樣的作用，除了提供現在常見的商品條碼掃描功能，還有對於媒體商品例如書本，CD，DVD等的圖片比對功能，以及語音辨識功能，讀者可以參考如以下的測試video。Video中除了顯示這些尋找商品的功能外，也可看到非常便利的下單程序。
+
+Price Check只提供於iPhone上，沒有iPad的版本，這應該是考慮到使用情境的設計。一來iPhone比iPad更具隨身性(隨身攜帶iPhone的機會高於iPad)，再則不論是條碼掃描或是圖片搜尋，於iPhone操作比iPad來得容易(參考：條碼掃描的熱門App RedLaser也僅提供iPhone的版本)。7吋的Kindle Tablet相較於10吋的iPad隨身可攜性更高，Price Check是否就會出現於Kindle Tablet上？不過依據TC的描述，Kindle Tablet並沒有Camera，Price Check的功能就派不上用場了。
+即便是共存於iPhone與iPad上的"Amazon.com" Mobile App，也是針對兩個硬體的差異有客製化的呈現。例如除了首頁不同外，iPad上的商品搜尋為文字輸入，而iPhone的版本則多了上述"Price Check" App中的條碼掃描與圖片比對的搜尋功能(以下圖片第一排為iPad版本，第二排為iPhone版本)。
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+Amazon.com的改版，可視為即將上市的Kindle Tablet所做的暖身。但於此之前Amazon於不同智慧型行動裝置上開發的Mobile Apps，已經提供消費者無縫的瀏覽與購物環境，可以大幅提昇消費者對Amazon.com的黏著度與貢獻度。Amazon這樣的用心與佈局，當Kindle Tablet正式推出時上面預載的Amazon Mobile Apps，精采可期！
+ 
+ 
+
+
+
+
+趙政宏:
+October 29th, 2011 at 6:52 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+莊淑斐:
+March 27th, 2013 at 5:36 am
+ 
+
+
+
+
+                

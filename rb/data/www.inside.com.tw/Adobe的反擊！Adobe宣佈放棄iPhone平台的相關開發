@@ -1,0 +1,30 @@
+
+
+Adobe於本週二正式宣佈放棄Flash CS5中對iPhone及iPad的支援，選擇將重心轉換到Android平台。這樣的發展對於Apple會有什麼樣的影響？而Android平台是否會因此獲得Flash開發者的青睞？
+
+Flash所製作的iPhone軟體
+在不久之前iPhone OS 4.0的Beta版釋出的同時，Apple也同時間修改了開發者的授權條款，將Adobe Flash CS5等其他第三方軟體所建立的iPhone應用程式拒於App Store門外。
+這樣的作法當然惹腦了Adobe，畢竟iPhone平台的支援一直都被視為Flash CS5的重點新功能之一，許多Flash的開發者、設計師都引頸期盼這樣的功能可以減少學習iPhone開發的門檻。而在Flash CS5正式上市前，在App Store上早已有超過百款的遊戲是由Flash CS5測試版本所開發。a
+Adobe與Apple的過往歷史
+事實上，Adobe與Apple的樑子也已經不是一兩天的事情了。或許是因為早年Mac的市佔率低迷，Adobe在十年前對於Mac平台的支援相當的敷衍。
+其中影響最大的莫過於Jobs數年前宣佈Mac OS X將全面改為Intel架構時，Adobe遲遲不肯配合推出新架構的Photoshop以及相關的軟體，造成許多購買了新Mac的使用者只能用模擬的方式執行繪圖工作，效率自然是相當緩慢。除此之外，Adobe的知名影片剪輯軟體Premiere Pro更是一直到了第三版（CS3）才正式推出Mac平台上的版本。
+然而，Apple也不是省油的燈，在Adobe暫停透過收購相關技術也自行推出了Final Cut Pro，在影片剪輯市場上與Adobe相抗衡，並取得相當不錯的成績。
+Flash on iPhone
+iPhone跟iPad不支援Flash一直以來都是抨擊者所強調的缺點，許多人也對於購買了iPhone但無法在Facebook上玩開心農場感到相當失望。
+而Adobe一直以來都對外宣稱他們的技術已經成熟，只要Apple點頭同意隨時都可以開放支援。但Apple卻認為Flash技術在iPhone上十分耗電、並拖垮效能，且不如HTML 5或H.264等開放的標準。
+像是Apple即將推出iAd廣告平台中的互動遊戲以及影片播放，以往在一般網站上都會使用Flash處理，但在iPhone平台上則是使用HTML5等相關網頁標準。
+Flash and AIR on Android
+在被Apple透過開發者協議擺了一道之後，Adobe選擇將開發重心移到Google所主導的Android平台上。目前他們正在與Google密集合作中，預計在今年前半年推出Flash 10.1以及AIR。
+
+而Adobe也保證那些原先為iPhone所開發的遊戲可以輕易的移植到Android平台上，或許會因此為Android平台帶來大量的Flash開發者，為Android Market增加更多有趣的軟體。
+目前Flash for Android以及AIR for Android已經開放測試申請，有興趣的讀者還請自行參考。
+結論
+正所謂商場上沒有絕對的朋友以及敵人，Google這次選擇與Adobe聯手就是個最好的例子。
+或許有讀者會擔心，那Adobe是否也會選擇停止開發Mac平台上的相關軟體？這個問題大可不用擔心，因為目前Adobe的軟體有40%的營收來自於Mac平台，若是選擇放棄這塊市場，Apple及其他虎視眈眈的軟體廠商勢必也會推出軟體來搶佔市場。
+Adobe是否會在Android平台上跨出其行動平台上的第一步，並證明他的實力？或者是說Flash將真的如Apple所言的效能低落？讓我們一起期待。
+
+
+
+
+
+ Tagged with: adobe, Apple, cs5, flash, iPhone 

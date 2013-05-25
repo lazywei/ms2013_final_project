@@ -1,0 +1,39 @@
+
+
+
+(圖片來源）
+若您在軟體或網路產業，由於產品服務設計必然有bug的本質，或多或少您會接觸到Bug Tracker這樣的管理工具。而如果您是開發工程師，那麼Bug管理工具則就會是你每天都會使用到的東西了。一個好工具可以帶您上天堂，一個爛工具則是每天的夢靨。為了提昇工作效率，知識工作者應該隨時隨地注意新資訊，若有好的東西就要趕快學習並導入工作流程中。
+對於Bug Tracker這樣的工具，Hacker News上日前有發起了這麼一個投票：
+你用什麼工具來追蹤bug，問題，新功能以及客戶意見？
+從投票結果可以看到一些熟面孔，以及一些可能竄起的新人，值得注意：
+Jira 83票
+Redmine 81票
+Trac 66票
+Pivotal 37票
+Bugzilla 37票
+FogBugz 36 票
+用紙筆，沒用軟體 36票
+用試算表 33票
+Lighthouse 28票
+Mantis 21票
+其他的Bug Tracker 88票
+截至目前為止，Jira排名第一。筆者目前任職的公司單位用的正是Jira，使用經驗還不錯。整體來看，前三名票數相距不遠，並都勝過後面名次的Bug Tracker兩三倍左右的投票數，加上筆者都使用過，是建議大家在採用Bug Tracker上的首選。
+儘管有主流使用的產品，在各個產業別或團隊上卻不見得適用。關於其他Bug Tracker的部份，從該討論串中也可看到一些或許值得注意的名字，在此列出參考，若後續有所研究，再跟各位分享：
+Github issues
+BugHerd
+Google Code
+youTRACK
+Indefero
+TrackJumper
+SimpleDefects
+Assembla
+TRAC
+ClearQuest + ClearCase
+Bug Genie
+您都用哪個Bug管理工具呢？
+
+
+
+
+
+ Tagged with: bug tracker 

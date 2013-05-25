@@ -1,0 +1,20 @@
+
+
+
+(image source)
+本部落格一直有提到37signals這家公司，常看我們文章的人可能清楚的不得了了。如果你是第一次來造訪，對37signals陌生的話，可以先看下列幾篇文章：
+想創業嗎？37 Signals的37個網路創業心法
+關於創業，你必須知道的13件事
+「工作大解放 Rework」團隊37 Signal的新辦公室
+37 Signals的差別訂價心法：利潤最大化，而非市占率最大
+37signals做出了Ruby On Rails這個開發架構，MVC加上精簡的設計概念，使得藉以開發的Web應用程式的程式碼變得容易閱讀，好維護，因而能加速開發流程，留在創意上的時間也能更多了。
+簡單談到這裡，本文要說的是，根據最新一篇對37signals成員Ryan Singer的專訪以及部落格揭露的消息：
+針對手機應用程式（iPhone, Android...），37signals用CoffeeScript以及Eco這個自行開發的模版語言正在打造一個類似Ruby On Rails那樣好用，維護性高的MVC開發架構。這個架構包括了本地端的javascript，因此不需要連線程式也能執行，而網路連線主要是用來存取資料用。現在還在測試，如果做好了，我們會開源釋出。
+雖然類似的架構不虞匱乏，例如Sencha或其他。但針對支援HTML5的智慧型手機應用程式開發，37signals確有令人期待的理由（Ruby on Rails的成功...），如果釋出了，必又將吸引一波手機上應用開發的開發者湧入。
+這個架構叫做什麼？ HTML5 on Rails?
+
+
+
+
+
+ Tagged with: 37signals, html5 on rails 

@@ -1,0 +1,127 @@
+
+
+（2010/12/6 5:21pm  更新：剛上中華郵政商城看，所有本文揭露的問題都已修正，給服務團隊鼓掌。）
+先承認，我昨天才知道中華郵政商城的網站，資訊很delay。知道的原因是因為在別人的部落格上看到了中華郵政商城在辦送百萬購物金的活動，只要註冊會員就有機會，活動到12/31日止，所以還有點機會。
+（在這裡，順便幫這個活動做個廣告，看看你有沒有機會賺到這個一百萬。）
+
+不過，註冊後就發現這個購物商城有幾個顯而易見的問題，這裡列出兩樣。而這些問題若經過適當的QA程序，在網站上線前都應該能被抓到，不應該到現在被我發現。
+1. 網站的安全標章VeriSign Trusted連過去看不到認證資料。
+通常購物網站為了告訴你他很安全，會跟你說用的是知名安全廠商的加密機制，因此可以安全在上面購物，傳輸的資料也不會有被竊取的問題。
+其中最有名的標章之一就是VeriSign，在中華郵政商城首頁往下拉之後，到最底下左邊就可以看到。
+
+通常，標章不是購物網站說了算，還是需要安全憑證廠商VeriSign說，"是的，我有跟他合作，他有認證"這樣類似的話。表現的方法就是提供一個證書，用滑鼠點過去就可以看到確認。
+不過，在中華郵政商城上對VeriSign這個圖示點下去之後，你會發現網頁跳轉到一片空白（因為太空白了，無圖可截） -- VeriSign並沒有提供出中華郵政使用他們憑證的證書給我們看！WTF~
+仔細去看連結的網址，會發現這個連結的網址 https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=mall.post.gov.tw%E2%8C%A9=zh_TW 是錯誤的。
+去掉後面奇怪的〈=zh_TW字樣後，再重新連接一次，這樣就可以看到認證標章，說明了中華郵政網站的確有用VeriSign SSL來加密傳輸的信息，所以很安全。
+或者是用這個連結：https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=mall.post.gov.tw&lang=zh_TW，還可以看到中文的標章。
+
+關於這個，學習到的事情是什麼？
+購物網站最重要的就是安全與信賴感，如果標章連過去看不到證明，這樣網站的公信度還不降低嗎？測試期間，對於安全標章，使用條款，隱私權聲明的連結或內容都應該再三審視檢查，一個broken link會帶來的衝擊不應被輕忽。
+另外，本文沒提的問題還包括了會員權益該文內有亂碼與排版上的錯誤。讀者可自行看看哪裡有問題。
+至於我為什麼會這麼無聊去點安全標章，其實是被另一件事情trigger的，因為網站最底下竟然寫了這麼一句話：郵政商城所銷售之商品或服務係由各該商家所提供與販售，與中華郵政無關.....太白話也讓人驚訝的描述方式。不知道讀者看到這行時，心中是什麼樣的感覺？
+因為無關，身為消費者的我就想去看看這個網站到底安不安全.....例如讀一下我的權益，以及東看西看，看看這個網站有沒有安全顧慮。
+2. 收不到會員開通電子郵件
+WTF!?這在搞什麼？收不到開通郵件，連一百萬的抽獎機會都沒了。
+不過，更準確來說的話，信件是收到了。只是出現在我的Gmail垃圾信件夾裡。
+
+至於為什麼在垃圾信件夾裡面？
+是Gmail誤判嗎？
+如果上線前的QA與測試人員這樣認知，就沒有找到重點，而應該請工程師介入了解問題點，必要時還得跟收件對方的郵件伺服器管理者溝通（例如Yahoo信箱，Google信箱...)。
+（接下來的這小段給技術人看）
+我繼續去打開這個被Google判定為垃圾郵件的Email，看了一下郵件的header，問題出在紅字那裡，看到了嗎？
+Delivered-To: [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+Received: by 10.217.6.65 with SMTP id x43cs63568wes;
+Sat, 4 Dec 2010 08:17:29 -0800 (PST)
+Received: by 10.229.91.138 with SMTP id n10mr2468082qcm.148.1291479449289;
+Sat, 04 Dec 2010 08:17:29 -0800 (PST)
+Return-Path: <easygo@mail[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+>
+Received: from tpe050201-00000.email.chpost.com.tw ([219.80.41.83])
+by mx.google.com with ESMTP id u9si3027386vbx.54.2010.12.04.08.17.28;
+Sat, 04 Dec 2010 08:17:29 -0800 (PST)
+Received-SPF: neutral (google.com: 219.80.41.83 is neither permitted nor denied by best guess record for domain of [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+) client-ip=219.80.41.83;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 219.80.41.83 is neither permitted nor denied by best guess record for domain of [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+) smtp.mail=[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+Received: from tpe05020d-00000.email.chpost.com.tw (172.17.44.133) by
+tpe050201-00000.email.chpost.com.tw (172.17.33.123) with Microsoft SMTP
+Server (TLS) id 8.2.254.0; Sun, 5 Dec 2010 00:17:29 +0800
+Received: from TPE07010D-00003.CHPOST.COM.TW (1.1.1.1) by
+tpe05020d-00000.email.chpost.com.tw (172.17.44.133) with Microsoft SMTP
+Server id 8.2.176.0; Sun, 5 Dec 2010 00:17:28 +0800
+Received: from TPE07010D-00003.CHPOST.COM.TW (TPE07010D-00003.CHPOST.COM.TW
+[127.0.0.1]) by TPE07010D-00003.CHPOST.COM.TW (8.13.1/8.13.1) with ESMTP id
+oB4GHSYN026679 for <[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+>; Sun, 5 Dec 2010 00:17:28 +0800Received: (from nobody@localhost) by TPE07010D-00003.CHPOST.COM.TW
+(8.13.1/8.13.1/Submit) id oB4GHODJ026678; Sun, 5 Dec 2010 00:17:24 +0800
+Date: Sun, 5 Dec 2010 00:17:24 +0800
+Message-ID: <[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+>X-Authentication-Warning: TPE07010D-00003.CHPOST.COM.TW: nobody set sender to [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+ using -f
+To: [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+Subject: =?UTF-8?B?6YO15pS/5ZWG5Z+O5pyD5ZOh5Lit5b+D
+Content-Type: text/html; charset="UTF-8″
+From: =?UTF-8?B?6YO15pS/5ZWG5Z+O5pyD5ZOh5Lit5b+D?= <[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+>
+Reply-To: =?UTF-8?B?6YO15pS/5ZWG5Z+O5pyD5ZOh5Lit5b+D?= <[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+>
+X-Mailer: PHP/5.2.8
+MIME-Version: 1.0
+Return-Path: [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+基本上就是nobody這個使用者想要將寄信的sender設定為[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+，但是寄信的伺服器自己不信任nobody這個user，所以發出警告。Gmail看到信件自己出現了這樣的警告，當然就判定為垃圾信，歸到垃圾信件夾去。
+解決方法是把nobody加到這個檔案就可以了：（linux系統的postfix或sendmail可用這個解法）
+/etc/mail/trusted-users
+關於這個，學習到的事情是什麼？
+購物網站的會員管理是最重要的課題之一。
+如果要會員，卻不去對會員開通帳號的流程好好做測試？這樣子會員能經營起來嗎？收不到開通信，後續購物的可能性基本上是零。這個網站存活能力也就下降了。
+應該注意吧～？
+
+
+
+
+
+ Tagged with: 中華郵政, 官方網站 

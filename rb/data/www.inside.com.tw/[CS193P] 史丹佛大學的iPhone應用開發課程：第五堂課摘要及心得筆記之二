@@ -1,0 +1,74 @@
+
+
+上一次的課程中，我們提到了View的一些實做上的觀念，包含座標系統以及如何建立自己的View。在這次的筆記當中，我們將進一步探討如何使用View來幫助我們繪圖以及操作圖片，趕快來一起學習吧！
+View繪圖
+在上次筆記中的最後一小節中我們曾經談到如何建立自己的View類別，而當我們如果想要修改這個View的繪圖方式時，我們可以重載- (void)drawRect:(CGRect)rect這個方法，如果我們沒有去重載這個方法的話，預設就是會使用backgroundColor來填滿整個View。
+然而，什麼時候我們需要在controller中呼叫drawRect呢？事實上，我們並不需要呼叫這個方法，在iPhone上有一個很重要的設計原則就是要盡量讓Cocoa去幫我們處理這些瑣事，也同樣能夠增進效能。而當我們真的需要重畫View的時候只需要呼叫- (void)setNeedsDisplay就可以了。
+在iPhone的平台上面，我們主要會使用CoreGraphics這組繪圖的API來進行View的繪圖，要注意的是，它是以C語言為基礎的函式庫，並非是Objective-C，而CG這套函式庫提供了一些簡單但是好用的功能，包括變形、路徑、顏色、字體及一些繪圖的操作等等。
+在我們開始繪製圖形之前，一定要先了解所謂的Context的概念，context在英文裡面可以背翻譯作為上下文或是背景，你可以想像成context是一片畫布，而且也存放了一些繪圖中的資訊，像是像在使用的字體大小或是路徑等等。而這些context的會在呼叫drawRect之前就被設定好，我們只需要呼叫(CGContextRef)UIGraphicsGetCurrentContext(void);就可以取得現有的context，在搭配上CG的一些函式，就可以修改context的設定值，以便完成我們的繪圖作業。
+雖然我們剛剛說CG主要是以C語言為主的API，但其實UIKit也有將一些API包裝成Obj-C的格式，像是UIColor就可以提供我們快速的設定顏色，而UIFont則提供了一個簡單的介面來存取系統的字體。在投影片的第42頁中有一些範例可以提供參考。
+接下來我們用一段簡單的程式馬來看看實際的運作情形吧！
+- (void)drawRect:(CGRect)rect {
+    CGRect bounds = [self bounds]; // 取得View的範圍
+
+    [[UIColor grayColor] set]; // 設定顏色為灰色
+    UIRectFill (bounds); // 將View的範圍塗滿灰色
+
+    CGRect square = CGRectMake (10, 10, 50, 100); // 建立一個方形
+    [[UIColor redColor] set]; // 設定顏色為紅色
+    UIRectFill (square); // 將方形塗滿紅色
+
+    [[UIColor blackColor] set]; // 設定顏色為黑色
+    UIRectFrame (square); // 將方形塗上黑色外框
+}
+成果如下圖，應該不難理解：
+
+但如果我們需要比較複雜的圖像，一般會透過以下幾個步驟：
+取得context
+建立路徑
+選擇顏色
+填滿路徑或是畫邊框
+重複以上步驟
+而路徑又可以包含直線、邊角、弧線或是四邊型，我們必須先建立好路徑，才能夠繪圖。在投影片的第47張中有一些常用的函式可以做參考，我們可以發現，針對context和路徑的函式其實相當類似，唯一的不同點是建立好的路徑可以重複使用，而context不行。下面是一個用路徑繪圖的範例：
+- (void)drawRect:(CGRect)rect {
+    CGContextRef context = UIGraphicsGetCurrentContext(); // 取得現在的context
+    [[UIColor grayColor] set]; // 將顏色設定成灰色
+    UIRectFill ([self bounds]); // 將現在的View填滿灰色
+
+    CGContextBeginPath (context); // 開始建立路徑
+    CGContextMoveToPoint (context, 75, 10); // 先移動到(75, 10)這個點
+    CGContextAddLineToPoint (context, 10, 150); // 從(75, 10)畫一條線道(10, 150)，注意，現在的定位點也同時移動到(10, 150)
+    CGContextAddLineToPoint (context, 160, 150); // 從(10, 150)畫一條線到(160, 150)
+    CGContextClosePath (context); // 關閉路徑
+
+    [[UIColor redColor] setFill]; // 設定紅色為填滿路徑的顏色
+    [[UIColor blackColor] setStroke]; // 設定黑色為邊的顏色
+    CGContextDrawPath (context, kCGPathFillStroke); // 將路徑繪製出來，kCGPathFillStroke代表要填滿顏色並且塗邊
+}
+而成果的圖如下，是不是很方便呢？
+
+圖片及文字
+UIImage是用來呈現圖片的UIKit類別，我們可以透過下幾種方法建立：
++[UIImage imageNamed:(NSString *)name] -- 讀取程式中的圖片，也就是存放在Project的Resource的圖片
+-[UIImage initWithContentsOfFile:(NSString *)path] -- 讀取檔案系統中的圖片
+-[UIImage initWithData:(NSData *)data] -- 讀取記憶體中的圖片
+而我們也可以透過剛剛學會的Core Graphic函式庫來動態產生圖片，一般的步驟是：
+建立特定大小的CGGraphicsContext
+繪圖
+將context存為圖檔
+清理context
+另外還有兩個很方便的功能：當我們如果有UIImage物件時，我們可以透過以下API來取得JPG或是PNG的檔案格式：
+NSData *UIImagePNGRepresentation (UIImage * image);
+NSData *UIImageJPGRepresentation (UIImage * image);
+而在投影片第57頁的地方，也提供了在UIImage上繪製NSString的API，大家如果有需要可以參考。
+結論
+在這次的筆記當中，我們學到了關於VIew繪圖的部份。在下一次的筆記當中，將會進入一些View的動畫效果，敬請期待！
+參考資源
+Lecture #5 -- Views, Drawing, Animation
+Quartz 2D Programming Guide
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

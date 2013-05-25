@@ -1,0 +1,90 @@
+
+
+在這一次的CS193P課程中，我們將學習如何使用Web View來在iPhone應用程式上顯示網頁內容，並且透過Core Location和Map Kit來取得使用者的地理位置和顯示地圖，就讓我們一起來看看吧！
+UIWebView
+UIWebView是UIKit所提供來顯示網頁內容的View，背後使用的瀏覽技術就如同iPhone的Safari一樣，換而言之，就如同Safari能夠開啟PDF/DOC等檔案格式，透過UIWebView這些內容也理所當然的能夠在我們的應用程式中顯示。
+UIWebView的資料來源主要有三者：
+本機上的HTML字串
+本機上的資料 + MIME type
+遠端的URL
+需要注意的是，UIWebView對於網頁的一些功能有所限制，像是JavaScript最多只能執行5秒，而最多也只能使用10MB的記憶體空間。
+而我們要如何建立UIWebView呢？我們當然可以透過Interface Builder來建立，也可以使用程式碼。而當我們建立好View之後，可以使用以下API來提供顯示資料給View：
+- (void)loadHTMLString:(NSString *)string baseURL:(NSURL *)baseURL;
+- (void)loadData:(NSData *)data MIMEType:(NSString *)MIMEType textEncodingName:(NSString *)encodingName baseURL:(NSURL *)baseURL;
+- (void)loadRequest:(NSURLRequest *)request;
+而這三種API也就是上面所說的三種不同的資料來源，分別是HTML字串、資料和URL。這邊的NSURLRequest是一個包裝過後的物件，負責紀錄所要擷取的URL和快取原則。此外，UIWebView也有以下Properties和方法：
+@property BOOL loading; // 是否在讀取中？
+@property BOOL canGoBack;  // 是否有上一頁？
+@property BOOL canGoForward; // 是否有下一頁？
+- (void)reload; // 重新讀取
+ - (void)stopLoading; // 停止讀取
+ - (void)goBack; // 回到上一頁
+ - (void)goForward; // 回到下一頁
+
+// 以下是設定值
+@property BOOL scalesPageToFit // 是否自動縮放頁面
+@property BOOL detectsPhoneNumbers; // 是否自動偵測電話號碼並轉成可點的連結
+就如同大多數複雜的類別一樣，UIWebView當然也會有對應的delegate方法：
+- (void)webViewDidStartLoad:(UIWebView *)webView; - (void)webViewDidFinishLoad:(UIWebView *)webView; // 開始讀取頁面
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error; // 讀取失敗
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request
+navigationType:(UIWebViewNavigationType)navigationType; // 判斷是否要讀取新的頁面
+Core Location
+Core Location是在Cocoa Touch中所提供用來處理地理訊息的framework，包含了以下類別：
+CLLocation -- 地理位置資訊
+CLLocationManager -- 用來協助取得CLLocation
+CLHeading -- 用來表示羅盤指向的位置
+要注意的是，Core Location並不包含任何UI元件，而是只負責單純的位置管理而已。而Core Location在運作上，會透過iPhone上得三種方式來定位：
+GPS -- 最準確但也最慢
+Wi-Fi -- 速度跟時間都處於中間
+基地台三角定位 -- 最快但也最不準
+而我們要如何確定iPhone使用的是哪一種定位方式呢？我們可以透過設定不同的準確度來達成，假設我們設定誤差只能在1公尺以內，那iPhone自然會使用GPS來取得位置。而當我們需要獲得當前的座標時，我們需要建立新的CLLocationManager，如下方程式碼：
+@property CLLocation *location; // 取得的位置
+@property id  delegate; // 設定delegate
+@property CLLocationDistance distanceFilter; // 當使用者移動多遠之後才會更新座標
+ @property CLLocationAccuracy verticalAccuracy; // 設定準確度
+- (void)startUpdatingLocation // 開始更新座標
+- (void)stopUpdatingLocation // 停止更新座標
+- (void)startUpdatingHeading // 開始更新羅盤方向
+- (void)stopUpdatingHeading // 停止更新羅盤方向
+此外，為了能夠接收得到的資料，我們也需要設定delegate，並且實做以下方法：
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation; // 取得座標
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading; // 取得羅盤方向
+- (void)locationManager:(CLLocationManager *)manager didFailLoadWithError:(NSError *)error; // 處理錯誤
+Map Kit
+最後我們要談的就是Map Kit，也就是iPhone上用來顯示地圖的元件。而想當然爾，背後的技術是透過Google地圖，所以地圖資訊算是相當完整，也因此支援衛星雲圖的功能。除此之外，Map Kit也可以用來轉換CLLocation，將其座標位置轉成平常使用的地址。
+
+而在Map Kit的API中，MKMapView顧名思義就是用來顯示地圖的View元素，除了顯示地圖之外，MKMapView也提供了地圖上的標記跟顯示使用者當下位置的功能，擁有以下Properties：
+@property MKCoordinateRegion region; // 顯示區域
+@property CLLocationCoordinate2D centerCoordinate; // 中央座標
+@property MKMapType mapType; // 地圖類型
+@property NSArray *annotations; // 地圖上的標記
+@property MKUserLocation userLocation; // 使用者的位置
+除了這些Property之外，也有許許多多的delegate方法，有興趣的讀者還請參考投影片21、22兩頁，或者是MKMapView的Class Reference。
+而我們剛剛有看到MKMapView有提供地圖標記的功能，而這些地圖標記並非獨立的類別，而是實做ProtocolMKAnnotation來完成。或者是也可以直接使用MKPlacemark：
+- (void)initWithCoordinate:(CLLocationCoordinate2D *)coordinate addressDictionary:(NSDictionary *)dictionary;
+至於使用者的當前位置，則是透過MKUserLocation，具有以下properties：
+@property BOOL updating (getter = isUpdating); // 是否在更新中
+@property CLLocation *location; // 目前的位置
+@property NSString *title; // 標題
+ @property NSString *subtitle; // 次標題
+最後，Map Kit也提供了從地理座標找地址的功能，透過MKReverseGeocoder：
+- (void)initWithCoordinate:(CLLocationCoordinate2D)coordinate;
+@property id  delegate;
+- (void)start; - (void)cancel;
+當然也有delegate：
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark;
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError *)error;
+結論
+這次的課程內容包含了UIWebView和Map Kit的相關介紹，這兩者在iPhone應用程式中常常出現，實用度也是相當的高！在下一次的課程中，我們將一同探討如何在iPhone中整合手機中的通訊錄設計一些應用程式，還請期待！
+參考資源
+Lecture #12 -- Web Views, Location and MapKit
+UIWebView Class Reference
+CLLocationManager Class Reference
+MapKit Framework Reference
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

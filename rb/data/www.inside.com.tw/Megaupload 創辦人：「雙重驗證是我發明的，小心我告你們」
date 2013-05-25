@@ -1,0 +1,17 @@
+
+
+圖片來源：Google Finance
+雙重驗證（Two-Step Authentication）的功能在許多網路服務如 Facebook 和 Google 上都有，這確實是個用來保護帳號安全的好方法。想必讀者應該還記得約一個月前美聯社 Twitter 帳號遭駭，使道瓊指數在瞬間重挫又強力反彈的事件。而為了保護使用者帳號安全並避免類似事件重演，Twitter 也終於推出了雙重驗證的功能（註一）。
+不過誰也想不到，在 Twitter 推出雙重驗證功能後不過才幾個小時，知名駭客同時也是 Megaupload、Mega 的創辦人 Kim Dotcom，就在 Twitter 上表示他的智慧財產權遭到美國公司的大舉侵犯。不是別的，正是指雙重驗證。
+圖片來源：Kim Dotcom’s Twitter
+此外，Kim Dotcom 還表示：
+過去我從不告他們（指侵權的公司），因為我相信知識和想法的分享對這個社會有益。但鑒於美國過去對我所做的一切，現在我可能會告他們。
+I never sued them. I believe in sharing knowledge & ideas for the good of society. But I might sue them now cause of what the U.S. did to me
+他直接在 Twitter 上指責了 Google、Facebook、Twitter 和花旗銀行。而雖然可能會有人對雙重驗證的發明者提出爭論，不過 Kim Dotcom 也不是省油的燈，他握有的專利 US 6078908 A 優先權日可追溯至 1997 年，並概述了我們現在所認識的雙重驗證（註二），也就是利用呼叫器或簡訊去接收認證碼的概念。（註：該專利是登記在 Kim Schmitz 的名下，那是 Kim Dotcom 的本名）
+Kim Dotcom 一向都是個容易引起爭議且吸引公眾目光的人物，而這次的舉動意義不明，究竟他會不會真的採取法律行動目前還很難說。如果讀者有任何想法，歡迎留言討論。
+ 
+（註一）After heightened hacks, Twitter releases two-factor authentication
+（註二）Method for authorizing in data transmission systems
+
+
+

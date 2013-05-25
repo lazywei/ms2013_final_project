@@ -1,0 +1,72 @@
+
+
+在這一次的課程內容中，我們將看到如何在iPhone上操作多媒體相關的內容，包含播放音樂、音效還有影片。此外，還會順便談到要如何讓應用程式出現在設定的程式中，還請讀者們多加指教！
+聲音播放
+一般來講，我們在iPhone平台上涉及聲音的操作大約可以歸類為以下幾種：
+播放音效
+按鍵聲
+提示音效
+操作的效果音效
+
+長度不固定的音樂檔（像是音樂或是Podcast等）
+線上串流的音訊
+錄音
+而以上這些功能，在iPhone上大多是由Core Audio這套Framwork來達成，這套Framework包含了許多不同層級的功能，如下面所列：
+較高層、包裝成簡單使用的介面：
+System Sound API -- 簡短的音效播放
+AVAudioPlayer類別 -- ObjC的音樂播放API
+低層級，需要花比較多功夫設定但提供較多的控制選項：
+Audio Toolbox -- 播放和錄製音訊、串流播放
+Audio Units -- 處理音效
+OpenAL -- 3D 環繞效果
+在我們的開發過程中，我們可以依照使用的情境來決定要用哪一種API，但大多數的情況，我們可以單純的就直接使用包裝過、抽象化的System Audio API和AVAudioPlayer就可以了。
+首先我們就先來看看System Audio API，誠如上面所提及的，這一系列的API是用來播放較短的音效，也就是五秒鐘以內的聲音檔，具有以下特色：
+沒有重複播放
+沒有音量控制
+立刻播放
+僅限.caf/.aif/.wav這幾種格式
+而在使用上可以分為兩步驟，首先我們要先註冊音效，在透過註冊所得到的ID呼叫另外一函式播放。範例程式碼如下：
+NSURL *fileURL = ... // 檔案位置
+SystemSoundID myID; // 建立 ID
+
+AudioServicesCreateSystemSoundID ((CFURLRef)fileURL, &myID); // 註冊音效
+AudioServicesPlaySystemSound (myID); // 播放音效
+
+AudioServicesDisposeSystemSoundID (myID); // 當記憶體不足時，刪除已註冊的音效
+有趣的是，iPhone預設有一組常數kSystemSoundID_Vibrate代表著iPhone振動的ID，所以我們可以透過呼叫AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);來讓手機振動。不過需要注意，由於硬體的缺乏，若是iPod Touch的話則不會有任何反應。
+而當我們如果需要播放比較長的檔案時，就得借助AVAudioPlayer了！此類別具備了那些Sound Audio API所沒有提供的功能，像是循環播放、控制暫停播放或是同時播放數個音效等等。簡單的使用範例如下：
+AVAudioPlayer *player;
+NSString *path = [[NSBundle mainBundle] pathForResource...];
+NSURL *url = [NSURL fileURLWithPath:path];
+player = [[AVAudioPlayer alloc] initWithContentsOfURL:url];
+要注意的是，雖然他建立的時候使用的是NSURL，但就如同Sound Audio API一樣，只支援本機端的檔案，並不能線上串流播放。至於何播放、暫停音樂時，只需要呼叫其play和pause方法就好了，相當的容易理解。
+就如同大多數的Cocoa Touch API一樣，AVAudioPlayer錄製音效
+除了音效的播放之外，我們也可以透過AVAudioRecorder來錄製音效，使用的方式與上面的AVAudioPlayer相當類似：
+AVAudioRecorder *recorder;
+NSError *error = nil;
+NSURL *url = [NSURL ...]; // 預計寫入的位置
+recorder = [[AVAudioRecorder alloc] initWithURL:url settings:nil error:&error];
+而錄製和暫停的方法名稱分別為record和pause，只需要對建立好的AVAudioRecorder呼叫即可。而delegate的方法也幾乎跟AVAudioPlayer相同，在這邊筆者就不加詳述。
+MediaPlayer
+除了上述的幾個API之外，Cocoa Touch也提供了MediaPlayer這個Framework，讓我們能夠輕易的取用使用者所儲存在iPhone中的音樂資料和影片。
+而就如同我們挑選照片時會使用UIImagePickerController一般，MPMediaPickerController則是用來存取使用者的音樂。這個類別可以指定讓使用者挑選單一或是複數個影音資料，對於可挑選的影音資料也可以進行設定。而當使用者挑選完之後，則是會呼叫delegate方法mediaPicker: didPickMediaItems:來進行回傳。
+經由MPMediaPickerController所回傳的會是MPMediaItemCollection物件，這個物件可以呈現播放清單、專輯等等，有興趣的讀者還請自行參考文件。
+影片播放
+在iPhone上若我們需要播放影片，必須透過MPMoviePlayerController
+
+設定
+
+我們在iPhone內建的設定程式中可以看到許多軟體的設定選項，這些設定的選項會在我們將軟體安裝進iPhone時一併加入到設定程式中。背後的運作則是透過修改應用程式的NSUserDefault來對應用程式進行溝通。
+雖然iPhone OS提供了一個統一的地方讓使用者作應用程式設定，但若是我們將所有的設定一股腦的統統放到其中，會造成整個iPhone OS的操作遲緩。因此Apple在他們的官方文件中建議，對於比較常用的選項，像是股票軟體的股票代碼、地圖軟體的顯示模式切換等，這一類的設定應該要直接放在應用程式中。而對於比較少修改的設定，像是Safari的搜尋引擎或是E-Mail帳號等，則就會適合放在設定程式中。
+而我們要如何建立設定的介面呢？事實上，這些介面是系統自動建立的，我們並不需要做額外的設定，只需要在XCode中加入Settings Bundle，裡面會包含著一個root.plist，其中就會紀錄所需要建立的設定選項，包含TextField、Switch和Slider等等有支援。詳細的使用方式請參考官方的文件說明。
+結論
+這次的內容主要對於多媒體相關的API做概略性的介紹。在下一次的課程中，我們將學到如何使用Bonjour這套Apple所制定的網路協定來讓iPhone之間進行網路的互動，還請各位讀者繼續支持。
+參考資源
+Core Audio Overview
+Media Player Framework Reference
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

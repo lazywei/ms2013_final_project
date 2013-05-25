@@ -1,0 +1,46 @@
+
+
+
+android market幾天前正式上市了In-App Billing的付費機制，類似iOS的In-app purchase， 使用者可以直接在App裡付費，讓Android 的開發者能多一個有持續性收入的營利機會。透過In-app Billing，開發商可以在應用程式內販售更多的數位內容，像是音樂、相片等多媒體內容，或是遊戲裡的關卡或是寶物。
+《Tap Tap Revenge 4》的In-app Billing展示
+使用In-app Billing最大的好處，就是可以讓使用者不用跳出程式，可以直接在應用程式裡面完成所有的交易，以下是知名的節奏跳舞機遊戲《Tap Tap Revenge 4》的In-app Billing展示：
+ 
+
+
+
+這款遊戲的本身是不用錢的，但是裡面只有幾首簡單的試玩歌曲，如果想玩更多好聽的歌的話，就要再另外使用In-app Billing模式購買。
+In-app Billing使用規則
+使用In-app Billing還是需要拆帳的，每筆交易成功後，Google會從中抽取30%的服務費用。除此之外，使用In-app Billing也有以下的規則：
+In-app Billing功能只能用在發佈在Android Market的應用程式。
+你必須有一個Google Checkout的商家帳戶。
+如果你是Android 3.0以上的系統，那In-app Billing只能用在MyApps 5.0.12以上版本，如果你是其他版本的Android系統，那麼In-app Billing只能用在Android Market 2.3.4以上的版本。
+In-app Billing只能用在搭載Android 1.6以上系統的設備中。
+In-app Billing只能用在數位內容的買賣，不能用來交易實體物品或是服務。
+Android Market不提供數位內容傳輸的服務，開發商須自行傳輸。
+不能在無法上網的機器上使用In-app Billing，如果使用者要完成In-app Billing的付費，必須先透過網路連線到Android market伺服器。
+Android Market裡的免費軟體還是佔大多數，除了廣告之外，相信In-app Billing的推出，會讓以後在Android market愈來愈多的免費App使用這個模式來獲得更多且持續性的利潤。
+Reference:
+http://developer.android.com/guide/market/billing/billing_overview.html
+http://android-developers.blogspot.com/2011/03/in-app-billing-launched-on-android.html
+
+
+
+
+陳韋帆:
+April 6th, 2011 at 4:30 am
+ 30%成了一種宿命式的數字。
+
+
+Bill Wen-Yen Sung:
+April 9th, 2011 at 8:58 am
+ 30%的分成！終究會是不合理的比例？還是一種壟斷市場的現實？從7-11來看，似乎對內容商來說是一種被壟斷的惡霸吧？
+
+
+趙政宏:
+October 30th, 2011 at 8:54 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

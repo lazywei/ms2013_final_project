@@ -1,0 +1,67 @@
+
+
+
+(Image Credit : uriba)
+今天(美國時間5/17) 看到一則TechCrunch文章，是說知名的VC Sequoia Capital (其投資過的網路公司包括Google，Yahoo，Paypal與YouTube等)投資了一家以色列的公司：Onavo，金額為300萬元美金。
+先不論金額多寡(300萬美金當然不少，但相較於Sequoia Capital其他的投資案，不算大投資)，可以讓大名鼎鼎的VC投資，Onavo應該是something，且TechCrunch非常推薦Onavo的服務，稱之為”Must-have App for Every iPhone Data User”，這是一個data compression的App，將iPhone使用者upload與download的data量於傳到carriers或是手機之前，先透過Onavo的cloud servers壓縮處理後再傳輸，因此降低使用者的data使用量。
+因為行動carriers大多逐漸取消吃到飽的mobile data plans，取而代之的是有上限超過之後另計費的plan，AT&T於2010年六月取消吃到飽的mobile data plans(還好筆者是在此之前申辦吃到飽的用戶，不受影響，但也因此只能死守AT&T了)，在美國引起消費者的不滿，例如現在AT&T的iPad 3G 每250MB收取美金15元，而Verizon則是每1GB 收取美金20元。所以，每一個位元都是錢啊！難怪TechCrunch這麼推薦Onavo，因為減少data傳輸量，也因此減少data費用，幫忙消費者看緊荷包(筆者此時有個疑問，這樣的服務，不是應該由carriers主動提供以協助使用者最有效使用頻寬，而不是一味地設限制或者恐嚇要block什麼應用之類？)！筆者看了馬上下載(目前是免費)測試，以下是筆者iPhone測試幾小時的結果。
+
+Onavo 主screen顯示截至目前節省多少頻寬 以及什麼應用節省%最多
+
+
+WiFi 環境下即停止運作
+
+
+各種應用的頻寬節省的細分
+
+ 
+以色列強力promote軟體產業
+但看了TechCrunch的報導與測試後，除了產品本身，另引起筆者高度興趣的是，Onavo是一家以色列的公司，且是美國加州以色列商會(California Israel Chamber of Commerce，CICC)於今年五月在矽谷舉辦一場”Israel Mobile Tour”中參展的15家startups中的一家。CICC邀請來的出席者不是重量級investors就是產業的leaders，非常盛大且有效率(或許Sequoia Capital就在其中且促成了投資Onavo？)。另外今年三月Facebook也併購了一家以色列公司：Snaptu(Sequoia Capital又是投資者之一)。
+創業與國際化的DNA
+以色列向來以軟體工業著稱，差不多十年前流行的ICQ(透露了筆者的年紀了)，就是以色列的公司開發的。以色列平均10,000人口中，有135位engineers(美國的數字是85位，台灣呢？筆者查不到相關數字，但相信密度也不低)，目前全國有超過3,000家的startups，數量相當多。這樣的群聚，加上如CICC的執行總監受訪時說的：”entrepreneurship is simply in the DNA of the Israeli people”以及”From day one, Israeli developers must think global.  They have absolutely no market at home (too small)”，普遍的創業精神與全面的國際化，讓以色列於全球的軟體/internet產業佔有一席之地。
+台灣其實更有機會
+以色列當地市場太小，某種程度是強迫developers國際化，這與芬蘭類似。而台灣呢？台灣的當地市場，說小不小，說大不大，好像有點尷尬，但其實是一個很reasonably sizable的市場，加上台灣的消費者對於新科技的接受與使用程度很高，所以比以色列與芬蘭有更佳的home market至少可以作為產品與服務的test bed(Skype與Facebook迅速於台灣成長就是很好例子)。
+但要更大的市場，勢必就要走出台灣，國際化是必要與必然的趨勢。國際化的市場於西方基本上是以美國為主，CICC的執行總監很直接地指出，“The country (Israel) is too small. So when they get started building a business, they are already thinking about how this product is going to work in the United States.”。所以產品要國際化的其中一個thinking(捷徑)，就是看美國市場需要什麼應用。舉例台灣目前行動上網都是吃到飽，如果沒有思考美國市場的不同找出消費者的需求，像Onavo這樣的產品可能不會在台灣出現，也就少一個可以吸引美國市場的機會。除了以美國市場為主的西方國際化市場外，台灣其實還有另一個很大的華人/文國際市場，這樣難得的優勢，台灣的創業者與開發者是會有更好發展的空間才是。
+But How?
+台灣的電子產業今天執全球重要的地位，但羅馬不是一天造成的，回顧電子產業發展的歷史，你可以看出當時政府主事者的遠見與執行的毅力與效率，以及民間資源的投入與配合。台灣軟體/Apps產業若要達一樣的地位，也不會是一蹴可幾，一樣需要政府與民間的共同努力。政府如何塑造與活絡這個產業，不是本文的重點，有興趣的讀者可以參考最近FOX這篇引起很大迴響的文章，有切題與中肯的建議。
+民間的部份最近例如appWorks的出現，確實為台灣的軟體產業挹注有效與必要的資源(資本與Know-how)。因筆者旅居美國，總是也希望可以看到台灣的創業也可以吸引美國創投與市場的關注。一旦台灣開發出好的產品，如何行銷到美國呢？看了以色列美國加州商會於矽谷舉辦Israel Mobile Tour的活動，筆者於此由媒體，團體與產業中提出三個well-built且有效的resources，可以協助行銷台灣的軟體產業。
+媒體 ：如果有一個具全球audience base且有影響力的媒體，可以長期關注與報導台灣的軟體產業的發展，於認知與印象上的推廣是有很大的幫助。台灣的電子時報，DigiTimes是可以扮演這樣的角色。DigiTimes以台灣龐大豐富且居世界重要地位的電子產業作為報導的基礎，是提供全球科技媒體台灣電子產業訊息的領導媒體與資料庫。例如這次Amazon可能會出tablet就是由DigiTimes首先報導，馬上就被美國主要的科技媒體引用，這是DigiTimes專業與品牌的優勢。如果DigiTimes可以多關注台灣的軟體產業，當然台灣的軟體產業要有一定的activities，讓DigiTimes可以長期持續地報導與介紹台灣軟體產業的發展現況，以其well-built全球的targeted audience，對promote台灣軟體產業會有直接的幫助。
+團體：類似CICC這樣的僑民商業組織，可以leverage其於當地建立的connections與資源，來promote該國的公司/產品於當地市場，某程度這比例如經濟部組團從台灣浩浩蕩蕩出發來得有效。因為當地的組織是持續於當地透過商業或者非營利的活動，建立網絡，基礎與conections較深也廣。更重要的是，比較了解當地不論是資本市場或是消費市場的喜好與趨勢，不會盲目地把一堆人帶來在另一堆不相干的人之前present。在美國，筆者認為玉山科技協會是一個可以勝任這個任務的組織。這是華人(台灣)在美國最大的科技協會，在矽谷已經成立逾20年，但與DigiTimes類似，主要的成員與活動還是偏向電子產業，不過近年來也開始關注其他的科技議題，例如最近的forum是討論cloud computing的相關議題。若玉山科技協會可以類似CICC舉辦Israel mobile tour這樣的event，將台灣的創業/軟體公司介紹到美國，會是台灣軟體產業與美國科技與創投界一個有效的bridge。
+CE品牌廠：軟體若可以pre-installed隨機出貨，是接觸使用者並鼓勵其使用的最好行銷管道(即便軟體可以上網下載或是由CD片安裝)，這也是當初筆者於台灣推廣Skype時，積極地與台灣的電腦廠商談pre-installed的原因。依此邏輯，筆者(讀者應該也是)馬上想到的是HTC。HTC今年全球出貨量挑戰6000萬支，明年上看1億支，試想若HTC定期挑選台灣開發的Apps pre-installed在HTC的手機或tablet上，等於就是隨機reach到全球千萬甚至上億個使用者，這是多直接與有效的軟體(Apps)行銷通路！先不論Apps被使用的數量，光是曝光率就是對軟體產業很好的投資。
+除了上述三個公司/組織外，當然還有其他有效的資源，筆者只是於此起個頭。也希望有讀者是服務於上述這三個單位，若認同筆者，可以呼籲一下決策者(或者本身已經是決策者)一同來support與promote台灣的軟體產業。當然inside.com.tw也自我期許，藉由insiders積極地觀察與提倡創業與軟體開發，與讀者熱情的參與討論，為台灣的軟體產業挹注新的思想與機會！
+
+
+
+
+Core Active:
+May 19th, 2011 at 9:52 am
+ Robert (請容我這麼稱呼您) 的文章真是有深度! 3個資源 (媒體、團體、產業)，軟體人要好好利用才行，這樣才能進行所謂的"有效行銷"。重點是要有人穿針引線才行。
+以色列人(猶太人)真的很聰明，不管在科技上，還是經商上，我以前賣化工原料 (阻燃劑)時，也有跟他們打過交道，他們絕對是狠角色，所以，小小的以色列，人口與香港相若(多幾十萬)，就有超過3000家的 startups，軟實力真是驚人。.
+台灣長期重"硬"不重"軟"，要現在立刻"軟"起來，根本不現實，同時，這也非一時一刻的事，唯有政府與民間一起來、一起配合、慢慢積累才行，不然，乾脆一點，政府不要插手也行，免得愈幫愈忙、愈亂。最後，也只能靠有志于軟體開發的人，自立自強，自成事業鏈、生態圈。
+穿針引線的人在哪裡?
+
+
+Johnson Wang:
+May 20th, 2011 at 12:50 am
+ 和昨天洛桑學院公佈臺灣競爭力躍升到第六名實在高興不起來，因爲看不到政府的作爲和產業政策。端賴我們企業爲求生存在國際上自己打拼。
+
+
+Yienge Lo:
+May 20th, 2011 at 4:00 pm
+ Pre-installed software的那個想法還蠻驚人的
+這的確是一招好棋
+
+
+幹誌 {flog} | 藝術人文創意誌:
+May 25th, 2011 at 12:12 pm
+ 最近正在看「新創企業之國 - 以色列經濟奇蹟的啟示」對於他們的文化氛圍實在很嚮往!
+
+
+趙政宏:
+October 30th, 2011 at 8:35 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

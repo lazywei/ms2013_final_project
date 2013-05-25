@@ -1,0 +1,75 @@
+
+
+
+ 
+本文編譯自readwrite.com，『HTML5: 10 Provocative Predictions For The Future』，對於HTML5 的開發者和公司決策者們而言，現在最重要的技術是HTML、JavaScript、CSS、行動平台和設備、以及不斷改進的HTML 平台（包括瀏覽器和作業系統）。這意味著，下面10 件事情將發生在2013 年：
+1 HTML5行動平台的崛起
+在開發跨平台app 方面，HTML5 發揮著越來越重要的作用。目前，這種開發一般都是通過本機封裝器完成的，例如Cordova（Cordova 使得HTML 和JavaScript 可以在iOS 和Android 等平台上驅動app）。這種技術稱為混合型app 開發。
+今年，許多新興平台把支持HTML5 app 作為平台基本功能——不需要封裝器了！這其中重要是Google 的Chrome OS；Firefox OS 則已經計劃通過低端的中興、TCL 設備上在歐洲開始出貨；以HTML 為中心新的平台Tizen 得到了英特爾和三星在內的多家重量級公司支持；同樣以HTML 為中心的Ubuntu 將帶來最具流行風味的Linux 手機；BlackBerry 10 也將HTML 和JavaScript 作為其下一代app 戰略的核心；還有Windows 8，Windows 8 引入了新的HTML、JavaScript開發模式來開發“Windows 8 的風格”app。這些平台中，有些一定會在2013 年取得成功。我最看好Chrome OS 和Tizen。
+Chrome OS 有Google 作為強大的後盾，重新修改了開發者和消費者推廣方式，並具有最寬廣的平台戰略的優勢（跨行動和桌面平台），Chrome OS 已經取得了先發優勢。
+而Tizen 同時得到了英特爾、三星、NEC、松下、Sprint、華為、Vodafone 等的業界巨頭最廣泛的支持，並擔任了Linux 基金會工程管理的職位。Tizen 因為更加開放（更加可客制），而具有了向Android 發起挑戰的潛力。這種開發性對設備製造商非常有吸引力。
+2 為Chrome定制（kit）
+越來越多的網站選擇只在一種瀏覽器上進行app 的測試。20 世紀90 年代是以『為Internet Explorer 打造』為標誌的，開發者們現在則以『為Chrome 打造』來標榜他們的app——針對Chrome 瀏覽器開發，不保證一定通用。在2013 年，這種趨勢可能會進一步加速。基於Webkit 的Chrome 瀏覽器效率非常高，不斷的快速改進，而且幾乎在所有主流作業系統（Windows、Mac、Linux、Android 和iOS）上通用。並且，同樣基於Webkit 的Safari 和Blackberry 瀏覽器，幫助Chrome 提供一些額外的相容性。因此，開發人員更願意專門為Chrome 瀏覽器開發程式。雖然這樣可能會疏遠某些用戶，但『為Chrome 打造』可以更充分地利用HTML5 API，節省寶貴的開發和測試時間。
+3 IE 10——幸福並痛苦著
+IE 10 被認為是古老IE 瀏覽器的一大進步。更深入支援Web標準，IE 10 使IE 瀏覽器進入了HTML5 的時代。但是，面對的快速持續更新Chrome 和Firefox 瀏覽器，IE 瀏覽器2013 年將再次被甩在後面。微軟有將IE 瀏覽器更新的更快些的希望：微軟IE9 時代建立的HTML5 實驗室在不斷發布IE10 的“實驗性”改進，使其成為一個更強大的HTML5 瀏覽器。雖然微軟的步伐並不大，但這仍然是一個好的開始。
+4。IE6、IE7和IE8的消亡
+IE10 處於關注的中心，而舊版本的IE 漫漫的消亡過程仍未完成。只有最頑固的企業(和中國)仍然要求支援I​​E6，世界許多地方都直接跳過了IE7。如果你還沒有停止支援IE6 和IE7，那麼在2013 年停止吧。放棄IE8 好像有點誇張，但是也沒有什麼堅持的必要。IE10 的發佈使IE8 落後了兩個版本（這通常被用來當做判斷是否應該放棄的標準），jQuery 2.0 將在2013 年加入Google app 而放棄支援IE8。到2013 年底，大多數開發者將發現IE8 不值得他們浪費時間。
+5 Android 2.X的消亡
+Android 2.x（Eclair, Froyo and Gingerbread）看上去就像我們的手中的另一個IE6。儘管，Google 已經開始出貨Android 4+ 的設備，但據Google 自己的統計，截止2012 年中期，所有的Andr​​oid 設備中2.x 系列的Andr​​oid（主要是2.3.x）佔90％以上！Google 未能保持其Android 的使用者和生態系統的升級。幸運的是，2012 年的假期（聖誕前後）似乎已打破這種僵局。Android 4+（Ice Cream Sandwich and Jelly Bean）的佔有率在2012 年年底飆升至近40％。到2013 年年底，Android 2.X 可能將佔不到15％的市場份額，而Android 開發者將把重心切換到4 + 版本。
+6 響應式設計(Responsive Design)成為主流
+到目前為止，響應式設計仍然不是Web 開發的主流——只是“如果你有時間”，才去做的事情。這種情況將要改變。隨著電腦和行動設備之間的界限越來越模糊，開發人員不得不讓網站和應用程式可以動態地適應各種不可預知的螢幕尺寸和螢幕解析度。
+7 行動開發超過桌面開發
+不需要高薪的分析師就能發現手機和平板電腦在增長，而傳統的PC 正在衰退。現在起，開發者將開始花更多的時間來開發用於行動設備的軟體，而不是傳統的PC 程式，並從消費市場延伸到各種規模的企業，以服務所有內部和外部使用者。如果你在2013 年開發的不是行動程式，要嘛你是在維護傳統軟體，要嘛已經錯失了良機。
+8 桌面HTML應用程式
+雖然手機應用程式在增長，但還沒有到放棄桌面的時候。傳統形式的桌面程式對許多資訊產業工作者仍然非常重要。但隨著PC 變成僅是您使用的眾多裝置之一，開發人員會希望寫的程式能跨PC 和行動設備執行。HTML 和JavaScript 是滿足這種需求的最佳選擇，比如Chrome Packaged Apps 和Windows Store Style (WinJS) apps 平台能讓之成為可能。微軟和Google 都在推動HTML 用於桌面應用程式的開發，開發者應及時響應並開始擁抱跨平台HTML 和JavaScript 桌面開發的時代。
+9 SPA時代
+隨著HTML 和JavaScript 應用於桌面開發和日益複雜的移動應用程序開發，開發人員將發現他們需要新的技術來構建可維護的跨平台應用程式。得益於Backbone、Knockout 和Kendo UI 等功能強大的框架的支持，單頁應用程式Single Page Application（SPA）上升勢頭迅猛。如果“RIA（Rich Internet Applications）是在2010 年的流行語，那麼”SPA“將是2013 年的流行語。如果你作為一個HTML 和JavaScript 開發人員，正在尋找一個值得學習新技術或新概念，那麼在2013 年必然是SPA 架構。
+10去掉HTML版本號
+現在，W3C已經“完成了”HTML5規範，媒體報導和大家關注的重點將會集中在“Web標準平台下面將推出什麼”上面。W3C已經開始致力於HTML 5.1標準，HTML 5.1是下一個網頁超文本技術工作小組（Web Hypertext Application Technology Working Group，縮寫為WHATWG）的標準的縮影。下一代的HTML平台的改進將從HTML5的較低層核心（DOM元素、CSS樣式、Simple JavaScript APIs，比如Geolocation），轉向對應用開發更為重要的改進上來（如ShadowDOM、Web Components、CSS和語音識別）。
+即使版本號不來湊湊熱鬧，關於HTML 討論將會繼續，HTML 技術也將繼續發展。
+
+
+
+
+Thinkpanda Hkhc:
+February 25th, 2013 at 5:18 am
+ 因為Windows XP 無法升級至IE9, IE8 勢必成為新時代的"IE6"... :(
+
+
+Dennis Zhuo:
+February 25th, 2013 at 3:52 pm
+ W3C已經“完成了”HTML5規範!!!! HTML5真的來了 @@
+
+
+Chander She:
+February 26th, 2013 at 1:55 am
+ 確實令人興奮
+
+
+廖晨凱:
+February 26th, 2013 at 9:20 am
+ 你的瀏覽器支援 HTML5 及最新的 WebSocket 通訊協定嗎? 台灣製的HTML5篏入式平台 http://www.embeda.com.tw/tw/?p=3841
+
+
+神劍闖江湖:
+February 27th, 2013 at 10:34 am
+ 現在還能不使用 HTML5 嗎?
+http://m8.tw-mo.com/twnews/
+
+
+Hai Feng Kao:
+February 28th, 2013 at 4:01 pm
+ HTML 5炒了很久了，但是相關的技術還是相當的不成熟，最好再觀望一段時間。
+
+
+Tsunami Sun:
+March 8th, 2013 at 1:56 am
+ 重點是css3...
+
+
+Aaron Chang:
+March 11th, 2013 at 5:52 am
+ 大概還要再五年吧
+
+
+

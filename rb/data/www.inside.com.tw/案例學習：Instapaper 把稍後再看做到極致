@@ -1,0 +1,82 @@
+
+
+
+最近的大新聞之一是 Facebook 提交 IPO 申請，同時也讓大家得以從文件中一窺 Facebook 自己提供的經營數字。可是也有人不需要 IPO，不需要大筆資金，照樣靠著自己一個人將事業經營得有聲有色，誰呢？Marco Arment。最近美國國家廣播電台（ NPR ）訪問了 Instapaper 的開發者 Marco Arment，請他以 Instapaper 為例談論 App 經濟（the app economy）（完整訪談內容請看 Instapaper Founder Marco Arment On The App Economy : Planet Money : NPR），我發現原來這是一個實踐《Rework（工作大解放）》書中觀念的絕佳例子。
+Instapaper
+Instapaper 提供的服務很簡單，他讓使用者可以把網路上看到一半或是沒空讀的文章內容先「存」在 http://www.instapaper.com/，等到有空的時候再看。更棒的是，Instapaper 可以直接顯示絕大多數網站文章的內容，不會出現廣告等干擾閱讀的東西（它也會記錄文章原始的連結供使用者連回去）。除了網站，Instapaper 還有 iPhone、iPad 專用的 app，甚至支援 Kindle 和 ePub 格式。（註1）
+先簡介一下 Insatapaper 的開發者 Marco Arment，他是目前很熱門的部落格平台 Tumblr 共同創辦人之一，只不過他已經不在那兒工作了——因為 Instapaper，一個目前只有他一個全職員工的公司。
+Instapaper，原本是2007年 Marco 在工作之餘開發出來「給自己用」的網路服務，後來在2008年初開放給大眾使用，而且隨著 Apple 設立 App Store ，Instapaper 開始提供 iPhone 專用的 app（它是最早在 App Store 上架的 app 之一），最後他乾脆辭掉原本的工作全力投入。Marco 雖然沒有在訪談中說出 Instapaper 的實際營收數字，但顯然他很滿意。
+一開始 Marco 的 Instapaper app 向使用者收取9.99美金的費用，儘管他說付費情形「還不錯」，卻一直無法達到理想的數字，於是一年之後，他將價格降為4.99美金，很快地，他的收入便增加了不只一倍（也就是說願意付費的人變成原本的四倍以上），後來 iPad 出現，更是為他增加了不少潛在的顧客。本站之前也有一篇文章「漫談手機應用程式的付費與免費之爭」曾經介紹過 Instapaper 開發者 Marco Arment 的 Instapaper app 收費策略。
+目標並非主宰市場，也不擔心競爭
+主持人問 Marco 會不會擔心其他強大的競爭者會威脅到 Instapaper，像是其他手握大筆資金，提供類似服務的人，例如 Apple。事實上 Apple 已經在2011年 WWDC 大會上宣布在所有平台的 Safari 免費加入了「Reading List（閱讀列表）」這項功能，等於是直接與 Instapaper 競爭。然而 Marco 並不是太擔心，他認為如果目標是主宰整個市場，那麼投入大筆資金並迅速擴張是個好方法，因此所有獨立（或是小規模的）開發者都會擔心，一旦自己想出來的好點子被資金雄厚的對手複製，市場將會很快地被吃掉。但 Marco 的目標並不是要主宰市場，而是要爭取廣大使用者當中的一小部分。數千萬甚至上億的 iOS 裝置使用者、數以億計在網路上閱讀的人口中，只要有一小部分的人願意付費使用 Instapaper app，便可以為他帶來不錯的收入。（別忘了，Instapaper 目前還是「一人公司」）
+Macro 也在自己的部落格上寫了一篇「What Safari’s Reading List means for Instapaper」談論他對 Apple 在 Safari 加入 Reading List（閱讀列表）功能的看法。他認為自己最大的挑戰不是從競爭者手中把用戶搶過來，而是向使用者說明 Instapaper 的功能，並且說服他們需要 Instapaper。因此 Safari 上的閱讀列表可以多讓使用者了解「先存起來，晚點再看」的概念，反而幫了 Marco 一把，何況它的功能比起 Instapaper 陽春得很。
+Marco Arment 的「Rework」創業法
+Marco Arment 經營 Instapaper 的方式和37signals 兩位創辦人 Jason Fried、David H. Hansson 在《Rework（工作大解放）》（註2）所強調的幾個觀念有異曲同工之妙：
+別那麼快辭職（註3）。
+一開始就賺錢（註4）。
+不輕易接受風險投資（Venture Capital）或是其他外部的資金（註5）。
+也許我們聽到太多「辭掉原本的工作，全力投入夢想，最後獲得成功」的例子，會覺得「如果我有一個好點子，就應該儘快辭掉工作全力去把它做好」，否則難以成功，因為這樣我無法投入全部的心力，效果將會打折扣。然而37signals 告訴我們：不應該立刻辭掉我們的工作。一有好點子就立刻全力投入聽起來很熱血，大家都想成為那個最終獲得成功的案例，但現實世界通常不是這樣運作的。只有繼續我們原本的工作，才有收入去支持那個工作之餘發展出來的計畫。
+此外，如果我們開發出一個好的服務或程式，儘早設法讓它開始賺錢吧，如此才能支持著這個事業，同時防止我們犯下另一個錯誤——過度依靠外部資金，以下我簡單列出《Rework》要我們別這麼做的幾個理由：
+接受投資意味著開始失去公司的控制權。
+外部投資者只想快點獲利。
+花別人的錢總是很容易，但是用越多，表示別人將會從我們公司拿回越多。
+我們才剛起步，大概很難向外部投資者爭取到對我們有利的投資計畫。
+拿了投資者的錢，最終會導致產品變成「投資者希望的樣子」，而不是顧客需要的東西。
+當我們把心力放在從外面找錢的時候，往往就很難專注於產品的開發。
+現在我們回頭過來看看 Marco Arment 跟他的 Instapaper，是不是很符合《Rework》一書提到的幾個概念呢？
+他沒有一下子就辭掉原本的工作，從2007年 Instapaper 被開發出來（註6），一直到2010年 Marco 九月才離開 Tumblur（註7）。他的 Instapaper app 一開始就收費，同時也提供免費版本。後來他做了一個有趣的實驗——偷偷地將免費版本下架三天，發現即便如此，也幾乎沒有對付費版本的銷售產生什麼影響（註8），於是他大膽地決定只提供收費版本的 Instapaper app。在 NPR 的訪談當中 Marco 更是提到自己沒拿過半分來自風險投資的錢，他一點都不需要。時至今日 Instapaper 已經邁入第五個年頭。
+我們知道 Mark Zuckerberg 輟學；Facebook 一開始沒賺錢；Mark Zuckerberg 沒多久就跟 Sean Parker 一起去找創投；前幾天甚至提交了 IPO 申請，但我們已經聽過多少最終失敗的例子？更不用說那些我們不知道的故事了。
+揭露：我是 Instapaper 的愛用者，不論是在 Mac 上還是 iPhone，每天都會用到它。2011年 Marco 增加了一個「subscription」的付費項目，每三個月付費2.99美金便可使用 Instapaper 的全文檢索功能（目前還不支援中文搜尋喔！是說這個功能跟「訂閱」有什麼關係啊？XD），我前幾天剛續訂了三個月。
+ 
+註1）關於 Instapaper 功能的詳細介紹，可以參考「電腦玩物」這篇「Instapaper 網路好文暫存，從稍後閱讀、舒適閱讀到認真閱讀」（幫作者更新一下，現在 Instapaper 支援「分享」功能囉）
+註2）關於《Rework（工作大解放）》這本書，讀者可以參考以下三篇文章：簡練而雋永的工作守則--《Rework! 工作大解放》讀書筆記 -- bestguy通信想創業嗎？37 Signals的37個網路創業心法 -- Inside 網路趨勢觀察你不能錯過的「創業流言終結者」 » MR JAMIE註3）Quit your job! -- (37signals)"I quit my job" applause -- (37signals)註4）Jason Fried談中小企業如何賺錢 -- Inside 網路趨勢觀察註5）“Outside money is Plan Z” -“Rework”
+註6）Instapaper -- Wikipedia註7）Marco Arment -- Wikipedia註8）Why Instapaper Free is taking an extended vacation – Marco.org
+ 
+
+
+
+
+Lin Dylan:
+February 8th, 2012 at 1:50 am
+ 這篇寫的很不錯，有內容又易讀。
+
+
+賈文安:
+February 8th, 2012 at 3:07 am
+ 提供了一些書中理論的實例 可以給想創業的人一些反思 不過話說回來 接不接受外部資金 是不是全職在創業上似乎無法有正相關XD
+
+
+上班族在大公司的奮鬥故事:
+February 8th, 2012 at 9:53 am
+ 我喜歡這篇文章，因為我總覺得那些網路大老，一直鼓勵大家辭職不要領薪水，去某些地方免費上班4個月到半年…然後成功分那些大老一些，總覺得很不合理。
+不是每個人都含金湯匙出身，能不工作又能快速有人脈來進行創業，總有人能夠邊工作邊實現夢想的，希望未來能有更多這樣成功的案例來鼓勵大部份想創業卻仍在上班的上班族呀。
+
+
+上班族在大公司的奮鬥故事:
+February 8th, 2012 at 10:37 am
+ 我還有另一個問題很好奇，這樣沒有版權問題嗎？合法嗎？把別人網站的資料變成自己的？就算是blog，不是也很多人不允許全文拿走嗎？但Instapaper卻按一下就全文拿走了，還能再share，有人有相關經驗嗎？
+
+
+Jui-Lin Kao:
+February 9th, 2012 at 2:13 am
+ 我是愛用者
+
+
+王亭吟:
+February 9th, 2012 at 5:57 am
+ 很棒的一篇文章！！！人要有衝勁也要有冷靜！
+複製前往: serpi5203.weebly.com
+
+
+Robert T. L. Lo:
+February 10th, 2012 at 12:25 am
+ 呵呵, 我想「subscription」之下...將會陸續有月租型功能出現 :)
+
+
+王人宏:
+February 15th, 2012 at 4:47 am
+ 別那麼快辭職！你可以一邊工作一邊創業的！！！
+前往 http://serpi5250.weebly.com/
+
+
+

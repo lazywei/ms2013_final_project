@@ -1,0 +1,118 @@
+
+
+本系列課程即將邁入最後的尾聲，而在這倒數第三堂課中，我們將學習到如何使用Apple的Bonjour來傳遞網路服務，以及透過NSStream來在網路上進行資料傳輸，此外還有iPhone OS 3.0中所新加入的GameKit套件，就讓我們一起來看看吧！
+Bonjour
+Bonjour是Apple在2002年所推出的一種網路服務搜索的協定，除了Mac和iPhone有支援以外，許多網路設備，像是支援網路列印的印表機也都使用Bonjour協定。
+為了能夠讓讀者了解Bonjour的概念，我們做一個簡單的舉例：假設我們想傳送要列印的資料給網路上的印表機，首先必須得先設定印表機的IP地址以及其使用的Port等等資料，我們的電腦才能將資料傳遞過去。然而，透過支援Bonjour服務的印表機，我們就不需要自己手動設定這些IP地址等資訊，因為當印表機連上網路的同時，便會自動通知網路上其他支援Bonjour的設備，並且傳遞相關的設定資料。
+很容易搞混的一點是，Bonjour只有負責網路服務的尋找，並不負責底層的功能實做，這點需要注意。
+在Bonjour協定下，每一個裝置都會有自己的代號，這個代號最後的Domain通常是以.local.代表本地的網路，像是iPhone3GS.local.。而裝置所提供的服務，也有不同的表示方式，如下圖所示：
+
+Service Name是用來讓使用者可以辨別的名稱，支援UTF-8的任何字元。Service Type則是最多14個字元的服務協定名稱，而這些名稱必須是有向IANA註冊過的。而Protocol Name則必須是TCP或是UDP。
+當我們決定好服務的命名之後，我們就可以透過NSNetService將服務發佈出去，如下列程式碼：
+NSNetService *_service;
+_service = [[NSNetService alloc] initWithDomain:@”” type:@”_ipp._tcp” name:@”Canon MP780” port:4721];
+如果我們將name設定為nil，則iPhone OS會自動使用裝置在iTunes上的命名。
+當我們順利建立了NSNetService物件後，接下來只需要設定delegate和呼叫publish方法就可以開始廣播了。而NSNetService會自動在背景執行，不需要另外建立執行緒。而在發佈服務的同時，會將發佈的狀況透過以下delegate方法傳回：
+- (void)netServiceWillPublish:(NSNetService *)sender // 即將開始發佈
+- (void)netServiceDidPublish:(NSNetService *)sender // 發佈順利
+- (void)netService:(NSNetService *)sender didNotPublish:(NSDictionary *)errorDict // 發佈失敗
+errorDict就如同其他delegate方法會傳回的NSError一般，不過同時包含了錯誤代碼和發生錯誤的domain。
+以上的NSNetService可以幫助主機端建立服務，而對於客戶端而言，我們則可以使用NSNetServiceBrowser來搜尋網路上可用的服務，如下程式碼：
+NSNetServiceBrowser *_browser;
+_browser = [[NSNetServiceBrowser alloc] init];
+[_browser setDelegate:self];
+[_browser searchForServicesOfType:@”_ipp._tcp.” inDomain:@””];
+而delegate方法則包含兩種，一種是用來表示狀態的，另外一種則是會在當找到服務或是服務消失的時候呼叫：
+- (void)netServiceBrowserWillSearch:(NSNetServiceBrowser *)browser  // 開始搜尋
+- (void)netServiceBrowserDidStopSearch:(NSNetServiceBrowser *)browser // 停止搜尋
+- (void)netServiceBrowser:(NSNetServiceBrowser *)browser didNotSearch:(NSDictionary *)errorInfo // 搜尋失敗
+
+- (void)netServiceBrowser:(NSNetServiceBrowser *)browser didFindService:(NSNetService *)service moreComing:(BOOL)more 找到服務
+- (void)netServiceBrowser:(NSNetServiceBrowser *)browser didRemoveService:(NSNetService *)service moreComing:(BOOL)more // 服務從網路上消失
+然而，從NSNetServiceBrowser得到NSNetService之後，必須另外進行解析的手續，才能做後續的資料傳遞，如下：
+[netService setDelegate:self];
+[netService resolveWithTimeout:5];
+而delegate方法則是：
+- (void)netService:(NSNetService *)sender didNotResolve:(NSDictionary *)errorDict; // 解析失敗，errorDict同上
+- (void)netServiceDidResolveAddress:(NSNetService *)sender; // 解析完成
+而經過解析過的NSNetService就會包含詳細的地址資訊，可以用來做接下來後續的資料傳遞。
+NSStrem
+NSStream是Cocoa包裝過後的網路傳遞物件，有點類似sockets的概念，但除了網路之外，資料的目標、來源也可以是檔案或是記憶體位置。
+NSStream又分成NSInputStream和NSOutputStream兩種子類別，顧名思義，一個是負責輸入，一個則是負責輸出。
+
+ 
+實際的運用上，NSStream會透過呼叫delegate方法來表示他目前的狀態，但要注意的是，讀取跟寫入仍然是同步執行的，也就是必須另外建立執行緒，否則程式就會卡在網路的傳遞上。
+而誠如剛剛所提到的，在我們解析完NSNetService之後，可以直接呼叫以下方法取得輸入跟輸出的NSStream：
+NSInputStream *inputStream = nil;
+NSOutputStream *outputStream = nil;
+[netService getInputStream:&inputStream outputStream:&outputStream];
+在取得NSStream之後，我們必須先開啟它，才能進行讀取或寫入，而使用完畢之後，也必須關閉，程式碼如下：
+// 開啟
+[stream setDelegate:self];
+[stream scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+[stream open];
+
+// 關閉
+[stream close];
+[stream removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+[stream setDelegate:nil];
+這邊可能大家有發現到，有個NSRunLoop的物件出現在呼叫方法中，什麼是Run Loop呢？在我們啟動iPhone應用程式之後，便會一直在Run Loop裡面等待事件的發生，像是觸控事件或是硬體開關的切換等等。而為了能夠讓我們傳輸網路資料，我們必須將NSStream物件加入到Run Loop上才行。
+
+而如前面所提及的，我們可以透過NSStream的delegate方法來確定狀況，如下：
+- (void)stream:(NSStream *)theStream handleEvent:(NSStreamEvent)streamEvent
+而對於已經開啟過的NSOutputStream我們就可以呼叫- (NSInteger)write:(const uint8_t *)buffer maxLength:(NSUInteger)length來進行資料的傳遞，該方法會回傳成功傳送出的資料長度，如下列範例：
+const char *buff	= “Hello World!”;
+NSUInteger buffLen = strlen(buff);
+NSInteger writtenLength = [outputStream write:(const uint8_t *)buff maxLength:strlen(buff)];
+if (writtenLength != buffLen) {
+    [NSException raise:@”WriteFailure” format:@””];
+}
+讀取NSInputStream的方法也很類似，透過呼叫- (NSInteger)read:(uint8_t *)buffer maxLength:(NSUInteger)length：
+unit8_t buff[1024];
+bzero(buff, sizeof(buff));
+NSInteger readLength = [inputStream read:buff maxLength:sizeof(buff) - 1];
+buff[readLength] = ‘\0’;
+NSLog(@”Read: %s”, (char *)buff);
+GameKit
+而在iPhone OS 3.0之後便加入了GameKit這個framework，而這個framework可以幫助我們透過Wi-Fi或是藍牙讓使用者進行配對、建立連線，此外，也有提供音訊聊天的功能。在GameKit中提供了以下的類別：
+GKPeerPickerController -- 呈現使用者配對介面並建立GKSession
+GKSession -- 傳遞資訊給單一的使用者或是所有的玩家
+GKVoiceChatService -- 管理音訊聊天的功能
+GKSession物件是整個GameKit的操作核心，我們可以用下列方法建立GKSession物件：
+- (id)initWithSessionID:(NSString *)sessionID displayName:(NSString *)name sessionMode:(GKSessionMode)mode
+而GKSession物件則包含了以下屬性：
+displayName -- 玩家的顯示名稱
+peerID -- 玩家的ID，每台iPhone均不會重複
+sessionID -- 你的程式ID，用來避免不同的應用程式會互相干擾
+然而，單純建立好GKSession並沒有幫我們完成使用者之間的配對，必須另外透過GKPeerPickerController，GKPeerPickerController而提供了兩種方法讓使用者配對，分別是"nearby"和"online"，前者透過藍牙進行配對，iPhone OS會玩成大部份的工作，後者則是要讓開發者自行建立網路主機，讓使用者可以線上與全球使用者進行配對。
+而使用上就如同其他PickerController一樣，設定好delegate並將view加入到畫面上後，物件就會接手處理，並且透過delegate方法建立GKSession：
+// 基本設定
+GKPeerPickerController *peerPicker;
+peerPicker = [[GKPeerPickerController alloc] init];
+peerPicker.delegate = self;
+
+// 選擇連線模式
+peerPicker.connectionMask = GKPeerPickerConnectionTypeOnline | GKPeerPickerConnectionTypeNearby;
+
+// 顯示alert
+[peerPicker show];
+而當我們取得建立、配對完成的GKSession後，就可以簡單的透過以下方法傳送、讀取資料了：
+// 傳送資料給特定對象
+- (BOOL)sendData:(NSData *)data toPeers:(NSArray *)peers withDataMode:(GKSendDataMode)mode error:(NSError **)error;
+// 傳送資料給全部人
+- (BOOL)sendDataToAllPeers:(NSData *)data withDataMode: (GKSendDataMode)mode error:(NSError **)error;
+// delegate方法，接收資料
+- (void)receiveData:(NSData *)data fromPeer:(NSString *)peer inSession:(GKSession *)session context:(void *)context;
+若有不清楚的地方，可以參考課堂影片中的範例教學，裡面有詳細的操作示範以及範例程式。
+結論
+這一次的課程中，我們學到如何讓使用者之間能夠進行網路連線的互動，並且使用GameKit來簡化整個操作流程。在下一次的課程中，我們將看到如何在iPhone上進行Unit Testing以及如何建立多國語系支援的應用程式，敬請期待！
+參考資源
+Stream Programming Guide
+Game Kit Programming Kit
+NSNetServices and CFNetServices Programming Guide
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

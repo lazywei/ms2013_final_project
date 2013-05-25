@@ -1,0 +1,67 @@
+
+
+
+本文為客座作者Robert Lo投稿，以下是他的自我介紹
+
+電機工程碩士，但畢業後沒當過一天工程師，卻當過三年公務員。曾擔任台灣龍頭電信公司董事長的特別助理。2004年擔任目前台灣上櫃最大網站公司副總經理，成功將目前全球最受歡迎的網路電話Skype於創業初期即引進台灣，讓台灣成為該服務的領導市場，消費者領先世界享受免費優質的電話服務，目前定居美國加州，2009年於美國創辦完全於網路行銷消費性電子產品新品牌的公司;2011年初於台灣創辦提供中小企業行銷DIY工具的網路公司。
+Amazon Cloud Music Service (Cloud Drive + Cloud Player)
+ 
+從前幾天(Mar 30， 2011)開始，進入Amazon.com的首頁， 就會看到這封Jeff Bezos的信 ：
+
+簡單說， 就是Amazon 開始推雲端音樂服務， 提供5GB 免費的Cloud Drive 空間來儲存(音樂)檔案(如果不夠， 可以花錢購買$1/GB/year， 或者你從Amazon MP3 store買一張唱片， 平均從美金五元到十元不等， Amazon就會upgrade 到20 GB/year)， 以及Web-based 與 Andriod OS-based 的Cloud Player來播放Cloud Drive中的音樂。
+非常有意思， 開宗明義Jeff以暗示Apple目前iTune model的壞處， 簡單扼要地明示”雲端”的意義與好處 ：
+“It’s possible to buy music from your phone， but then it might get stuck there。 It’s possible to buy music from your work computer， but then you have to remember to transfer it to your home computer…What’s more， if you’re not regularly backing up your music collection， you can lose it with a disk drive crash。”
+最近雲端音樂服務在美國吵得沸沸揚揚地， 首推Google即將要推streaming music 服務(今年五月?)， 當然Apple不會缺席， 一般認為雲端版iTune也即將問世(可能拖到今年秋季了)。 但Amazon在這亂集團中殺出重圍，率先於昨天推出了雲端音樂服務。
+Amazon於雲端技術的耕耘， 早從2006年推出Amazon Web Service (AWS)開始， 已經五年了。 不管是雲端的技術， 服務的提供， 與市場的經驗， 都是領先者。 由2007年尾推出Kindle與電子書下載以來， Amazon 把雲端應用在音樂服務市場也是預料之中與遲早的事。在digital media中， Amazon雖然已經藉由Kindle佔領電子書市場， 但也不是無往不利， Amazon的VideoOnDemand就明顯不是Netflix的對手。
+所以，在美國前有iTune盤據線上音樂下載市場，後有Pandora於streaming music的快速成長(Pandora是免費的streaming music服務， playback中會穿插廣告)， Amazon此時推出雲端音樂服務， 會有什麼利基? 筆者認為有一下的幾點優勢：
+第一， First mover advantage ： 最早進入市場者， 總是會有一些優勢， 例如媒體曝光優勢， 掌握先期使用者以及品牌知名度的優勢。 於美國， 在電子書市場的競爭(Amazon first mover)， 以及線上Video租賃市場的競爭(Netflix first mover)， 多少都證明這樣的優勢。 不過， 這次預期的競爭對手， Apple以及Google， 都是不好惹得傢伙， 也都虎視眈眈， first mover的優勢可能因此減弱些。
+第二， Content and the store already in place ： Amazon MP3 Music Store於2008年一月開開張， 是美國第一個銷售DRM-Free MP3的通路， 目前擁有1500萬首歌曲的龐大音樂庫。 不只是web-based的通路， 其也已經整合於Andriod OS 以及Palm’s WebOS中， 所以， mobile的delivery system也存在(但無iOS， 會缺一大塊)。 所以， Amazon Cloud Music服務， 不是一日之間形成的， 內容， 銷售通路與傳輸渠道早已到位。
+第三， Low cost of storage ： 5GB的免費空間， 大約可以儲存1000首歌曲， 若不夠， 一年美金20元租賃20GB(一天台幣兩塊不到)， 可以容納到4000首歌曲也很厲害吧。 這樣的線上儲存空間免費與低成本的優勢， 足夠吸引一票基礎客戶了。
+第四， Giant retailer ： Amazon是美國最大的線上通路， 去年十一月美國銷售旺季， 吸引了8400萬個unique visitors， 足足領先第二名的Walmart。com 3200萬個visitors。 這麼大的購物族群與流量， 本來就容易為任何新的產品與服務提供必要與足夠的潛在消費族群， 更何況是Amazon自己大力推廣的服務。
+以上是Amazon可能的競爭優勢，但Amazon其於business model上的專注，也是一個優勢。Amazon是一個線上通路，business的本質就是賣東西，實體與虛擬的，能賣就賣。以Amazon Cloud Drive + Cloud Player這樣的組合來看，如果使用者認為5GB空間以足夠，上傳自己的歌曲收藏到Cloud Drive，以Cloud Player來播放，這一切都是免費的，那Amazon要賺什麼錢？
+Amazon最厲害的地方就是精準的purchase recommendations：消費者於Amazon上瀏覽一個物品時，Amazon會告訴你有多少%的人看了之後購買，同時也告訴你還有其他加起來100%的人看了此物品卻購買了其他什麼物品，所以你可能也會有興趣(另外也會推薦組合商品)。而你曾經於Amazon購買某(些)物品後，如果你允許Amazon 寄給你marketing emails，你之後會收到 Amazon針對你過去的購買經驗提供的購買建議，當然這些建議的都是促銷中的商品。
+所以，當你上傳了1000首歌曲到Amazon Cloud Drive之後，Amazon當然會輕易的知道你喜歡的音樂類型與歌手，然後精準地由那1500萬首歌曲資料庫中，依照你的喜好，推薦你購買(我想一定也會是特價)你會感興趣的歌曲。所以，筆者認為，Amazon還是專注於線上銷售這個business model，這也是Amazon的消費者熟悉的服務型態。因此，類似Pandora這樣免費提供服務但收取廣告費為營收的model，應該不會出現在Amazon上，而類似KKBox這樣的月租型聽到飽的model，機會也不大，若有，也士商品(MP3歌曲)銷售的一種方式，但不是主要的型態。
+今年會是美國雲端音樂服務的沸騰年， Amazon已經領先對手至少一季的時間推出服務， 是不是因此就可以領導市場， 我們拭目以待!
+ 
+因為這個服務目前只提供美國地區的消費者， 筆者今天馬上試用， 也擷取一些畫面提供給台灣的網友參考!
+1. 簡單扼要的promotion
+
+ 
+2. Amazon Cloud Player (web-based)， 於左下角同時可以看到讓Andriod手機使用的QR code
+
+3. Amazon MP3 uploader (這需要先下載Adobe AIR， 嗯， 所以Amazon號稱的純web-based免下載， 應該是指從它的MP3 store買歌曲吧。 128MB上傳少於三分鐘， 可接受)
+
+ 
+4. 歌曲管理與Playback介面， 很友善
+
+ 
+5. Amazon MP3 Downloader， 可以把Cloud drive中的歌曲， 同步download到iTune與Windows Media Player上
+
+ 
+6. Amazon Cloud Player (Andriod-based Nexus S)， 介面操作方便。
+ 
+ 
+7. 於iOS上(iPhone and iPad)都不支援…聽說不是flash的問題， 是商業競爭的issue。
+
+ 
+
+
+
+
+
+Ton Ton Hsien-De Huang:
+April 3rd, 2011 at 5:36 pm
+ 實在是太清楚的解說了!
+
+
+Shengyang Weng:
+April 4th, 2011 at 4:18 am
+ 不過目前上門找碴的是 Sony....
+
+
+Craig Chen:
+April 6th, 2011 at 6:53 am
+ long time no see~~ Robert.
+
+
+

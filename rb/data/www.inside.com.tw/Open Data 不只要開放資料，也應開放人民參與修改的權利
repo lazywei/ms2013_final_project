@@ -1,0 +1,30 @@
+
+
+
+ 
+Inside 曾多次談論關於 Open Data 的消息，例如美國有許多主要城市在 Open Data 的政策支持與具體行動上有非常卓越的表現，美國的 Open Data 年度最佳應用一文中就提到了費城、波士頓、亞特蘭大、舊金山、芝加哥等城市個別在 Open Data 上的作為。
+而就在二月底，芝加哥市政府也進一步的將他們的 Open Data 推到了下個階段：放在 Github 上讓所有人都可以參與 Open Data 內容、格式的修改。就像任何開放原始碼的專案一樣，放在 Github 上的程式碼、資料不僅是公開的，你可以隨時發表意見、參與討論，並且可以在一定的授權範圍內使用、修改上面的程式碼、資料。
+目前芝加哥政府將街道地圖、建築物、自行車道等資料放在 Github 上，官方釋出的消息是這麼寫的：
+Anyone can now change the data when new bike paths are built, when roads are under construction, and new buildings are erected. When you want to improve our data, just fork it. Users are encouraged to improve data accuracy, combine it with other data sources, or download and use it for analysis or a new app.
+Users have the right to download, modify, or use it for any purpose, including commercialization.
+如今，只要有心的自行車道興建完成或是正在施工、有新的建築物興建完成，任何人都可以直接修改我們所開放的資料。當你想要改善我們的資料，你只需要 Fork1我們的專案即可。我們鼓勵使用者參與改善資料的精確程度、結合其他的資料來源或是用於進行分析、開發新的 app。
+使用者有權下載、修改或是用於任何的用途，包括商業使用。
+我自己曾在 2012 年參與台灣 Yahoo! 所舉辦 Open Hack Day 並得到佳作，我們團隊所做的主題很簡單：將台北市政府所開放的資料與 Google Maps 結合（你沒看錯，Yahoo! 的比賽，用 Google 的地圖，而且有得獎），兩天一夜的時間裡我們將所有可以放到地圖上的資料都呈現在地圖上，作品本身看起來創意有限，但整理資訊本身就是一件很有價值的事情，台北市政府所提供的資料有許多格式上的問題，例如：
+有提供地址的未必有提供座標
+有提供座標的卻不是常用的座標格式
+同樣的資料欄位在不同的資料來源有不同的欄位名稱，例如，同樣是「地址」，有的資料來源裡面用中文、有的用英文，有的有縮寫
+我可以體諒相關單位或協力廠商在配合開放資料的過程中因為專案時程緊迫或是規格尚未完全明確導致上述的問題，但比較可惜的是在這些資料開放出來給外部的使用者、開發者之後，這些開發者所貢獻的心力幾乎是沒有機會回饋到公部門本身的。
+未來陸續會有越來越多的資料釋出讓人民可以使用，然而資料的內容、格式、品質，是否會對應實際狀況進行持續進行維護，顯然也是一個值得關心的問題，這些開放出來的資料，是屬於全體人民的資料，人民不僅應該有權利使用，也應該有權利參與資料的改善，政府機關可以透過各種監督控管機制，對於外部開發者、民眾的修改、提議進行審核，儘管採納與否的權利依然是由政府掌握，但至少應該開放對應的管道，集結民間的智慧，才有助於開放資料之路走得更順利。
+我每天都會在 Facebook 上分享我的所見所聞，歡迎追蹤： https://www.facebook.com/yiru.lin
+註：
+1. Fork 意指在 Github 上複製出一個新的專案以便於進行修改，修改完成後可再透過發送 pull request 的方式 merge 回原有的專案
+
+
+
+
+Bruce Lee:
+March 5th, 2013 at 2:31 am
+ 推，好文章！
+
+
+

@@ -1,0 +1,59 @@
+
+
+
+VDIO要來踢館了!?
+
+美國時間10/17 GigaOM揭露了Skype共同創辦人Janus Friis於video streaming 的最新力作：Vdio(Skype另一位創辦人Niklas Zennstrom雖然這次對外表示他並沒有實際參與創辦Vdio，但兩人實在太密切了，外界還是會認為脫不了關係)。這個網站的命名，與他們另一個streaming music的服務，Rdio.com，有異曲同工之妙。
+筆者真要佩服他們對產品命名的功力，Rdio 與Vdio，不僅發音類似Radio與Video，看起來也像，要套漢字構成與使用方式的六書，象形與形聲兼具，好唸又好記，同時也給了GigaOM的作者挖掘出這個師出名門的蛛絲馬跡(Vdio隨後已經證實GigaOM的報導)。
+這件事情會值得關注，筆者認為是這樣的組合："Skype+Rdio+Joost"。
+Skype沒話說，最新的發展是歐盟准許Microsoft的併購案，第二次嫁入豪門(第一次是嫁給eBay)；
+而Rdio是類似由歐洲紅到美國的 無廣告月租型的music streaming 服務，Spotify(兩者比較可參考此篇文章)，於去年八月推出private beta測試之後，今年十月初正式於美國推出服務，逐漸受到歡迎，但台灣的讀者可能比較陌生；
+
+Joost Client
+
+Joost呢？台灣的ˊ讀者可能更陌生了。這是Niklas與Janus於創辦了Skype賣給eBay之後，將他們所向無敵的peer-to-peer技術應用於video streaming的產品。Joost是一個靠廣告營收的video streaming服務，類似Hulu的廣告營收模式，但有別於Netflix收取月租費的模式 。
+Joost於2007年2月推出beta版，一開始是以一個Mozilla-based的軟體提供服務，如上圖，後來改為Flash-based的web播放器。因為筆者之前服務的公司與Skype合作愉快的關係，Joost也順理成章地成為下一個合作的產品。筆者曾於2007年6月在數位時代發表一篇有關Joost的文章，分享了當時對Joost的一些想法。但Joost後來並未成功(當然也沒在台灣推出)，而且Skype的創辦人與Joost還一起告當時的CEO Mike Volpi竊取Joltid的智慧財產，搞得很難看。
+Skype兩位創辦人最早的創業為Kazaa，是一個P2P File sharing software，但因使用者多用來分享 music files，因此被美國唱片公司聯合提告，兩人一度因此無法進入美國。十年後再次進入music的領土，雖然整個music 與internet 產業已經有很大的改變與生態，但兩人不能重蹈覆轍，所以這次Rdio走的是Ads-free On-demand DRM-based 的subscription模式，music content是來自於唱片公司的合法授權。昔日被唱片業者視為必須除之的大禍害，如今則變成是緊密的合作夥伴，可見只要能夠創造出win-win solution，敵人也可以轉變為戰友。
+若說Rdio是Niklas與Janus繼Kazaa之後於internet music服務的東山再起，那Vdio可也視為兩人於Joost失敗之後的捲土重來之作嗎？
+筆者於2007年發表的文章中曾指出Joost可能遇到的挑戰是什麼，不過那時Joost才剛開始，所以屬於臆測。但現在來看，就有更多的資訊可以歸納出以下的幾點：
+服務內容取得的困難：Content，Content，Content ！內容取得是過去與現在都存在的根本問題。Joost的模式是與內容業者攤分廣告營收，不是向內容業者購買版權，因此內容業者需要有同樣的思維願意合作，這個模式才有可能做得起來。雖然一開始Viacom與CBS加入(也入故)，但後來證明多數的其他主流商業電影與電視內容業者並不買單，Joost缺乏足以吸引眾多使用者的內容，即便影片內置廣告，效果就大打折扣，連廣告主的意願也降低，這樣的惡性循環之下Joost也逐漸流失使用者。雪上加霜的是，由NBC與Fox這些主流內容的業者成立的Hulu在2008年初推出，類似的營運模式，但內容取得不是問題。有這些觀賞價值高的內容撐腰，Hulu迅速累積用戶，因此吸引更多內容業者的合作，再吸引更多的用戶，這樣的正向循環，廣告主自然上門(Hulu現在也有月租模式)。Hulu目前位居全美前十大online video sites第九位(by unique viewers)，但它卻產生最多的video廣告 impression(今年二月有超過11億 impressions)，這樣一比較，Joost還有立足之地嗎?
+使用者取得服務的不便與品質： Client vs. Browser！ 如前述Joost類似Skype，使用者必須要下載軟體才能使用服務(與p2p的技術有關)。但不同的是，Skype是一個要牽涉兩方或多方的通訊軟體，為了享受Skype的免費服務，使用者下載後會鼓勵通訊的另一方也下載軟體；看video主要是單方的行為，加上電腦使用者原本對於下載軟體的concerns會多於在瀏覽器上取得服務。Joost後來調整為browser-based的服務，不僅已經錯失時機，也因為主要資源都投注於Client-based的開發，。另外，Joost是架構於p2p技術的服務，這個p2p網路上的參與者越多，p2p越能發揮功效，反之效能越差。所以Joost的使用者少，影片於網路上傳輸的品質就會因此下滑，而Joost一開始是打著高畫質的旗幟，傳輸量更大，品質更糟，但另一方Hulu的影片品質就好很多。雖然這代表的是兩種截然不同營運成本，但影片品質是bottom line，使用者觀賞的經驗不佳，零營運成本也沒有競爭力。
+過度與快速擴張導致經營不善：赫赫有名且成功的Skype創辦人+第一輪就有美金4500萬的資金與重量級投資人(Sequoia Capital, Index Ventures,還有香港富商李嘉誠等)+內容業者Viacom與CBS，這樣的黃金組合，說Joost是含著金湯匙出生一點都不為過。加上兩位創辦人才剛因為把Skype高價賣給了eBay，沉浸於成功的喜悅中，反而讓Joost的野心過大，不僅公司規模快速擴大，且一開始就朝全球營運的方向發展，無法專心與聚焦於一個市場；且因為實在太醒目了，媒體大幅報導，引起產品正式上市前過高的期待，軟體beta時就吸引了超過250,000的測試者，這對p2p的軟體與一個新服務看似是好事，但當產品尚未ready，技術上的問題無法短期內客服時，過高的期待轉眼變成嚴重的失望，原本市場上的Hype變成有反效果的Killer。
+有了Joost的前車之鑑，Niklas與Janus這次新創的Vdio，果然有不同的布局。這次要不是被GigaOm挖出來，從2009年底先設立公司，2010年10月取得美金560萬的資金，到目前closed-beta的階段(筆者目前正努力地向創辦人索取中...)，Vdio其實是很低調地進行，一開始會提供服務的市場也僅限於英國。雖然目前網站沒有任何服務的訊息，但若由Rdio的營運模式來推測，Vdio應該是Ads-free On-demand DRM-based Video 的subscription模式，修正Joost的Ads-supported模式。
+即便Vdio盡量避免Joost的錯誤，此時streaming video的市場也與2007年大不同，尤其Netflix與Hulu雄據山頭，Amazon也虎視眈眈，即便在英國市場也有領先的LoveFilm(LoveFilm是英國類似Netflix，提供streaming video與online DVD rental的服務, 目前有超過150萬用戶)，Vdio又有什麼機會？GigaOm問了一個問題，Vdio的回覆持續保持神祕與耐人尋味：
+G:How is it different from Netflix and LoveFilm? 
+V:We think people will love using VDIO.
+輕描淡寫，但是很典型的Skype創辦人調調！所以，筆者再來臆測一些可能性：
+Born and Bred Social：Rdio的服務，Social是主要的feature，於這次Facebook  F8發表media partnership之前，Rdio的服務已經跟Facebook有深度的結合，形式類似Spotify，就是朋友可以知道你現在正在聽什麼音樂。朋友之間也可以share music list，可以由其他朋友聽的內容與被討論的程度讓使用者搜尋有興趣與合適的音樂等。這樣的Social feature，理所當然會複製於Vdio上。一開始就由Social出發的產品設計，與既有的服務再加上Social feature，是有不同的邏輯與思維，呈現給使用者的介面與功能也會不同。所以這可以是Vdio不同於Netflix或Hulu的切入點與市場區隔。
+Group watching + Communication ： 多人可以同時觀賞一部影片，並結合Skype的通訊功能，觀賞者之間可以透過 Video/Voice conference或者Group message 討論或交換意見。雖然現在Skype已經被Microsoft併購，不代表沒有合作的機會。
+Live Video Streaming：目前在Netflix或者Hulu上並沒有Live Streaming的服務，但Joost曾經測試過，當初筆者參與測試的經驗還不錯。若Vdio會有這樣的服務，加上上述Group watching+Communication的功能(其實這是Joost曾經有的規劃)，對於類似球賽這樣的live game的內容業者與觀眾，都會是很大的吸引力，於內容上也有差異化！
+Developers Friendly：從Skype開始，Joost到Rdio，都相當重視Developers Community，有完整的Developers Program讓第三方可以透過API開發相關的服務與裝置。這樣的精神相信也會落實於Vdio上，尤其若可提供硬體廠商embedded的支援，可以讓Vdio的服務除了電腦，智慧型手機與tablet上提供之外，透過例如Set-top-box，media player，PS3等game consoles可於TV上觀賞，滿足不同的使用族群的觀賞行為(筆者在美國銷售的硬體，想要embedded Netflix服務，困難重重，有切身之痛)。
+歐美streaming video服務的競爭逐漸白熱化，即便有大型的市場領導者如Netflix，Hulu與Youtube等，還是有例如大型電子商務商Amazon.com與WalMart(Vudu)也虎視眈眈，Blockbuster 也藉由Dish Network 重返市場，新進者如剛獲美金2000萬資金的international video site ViKi，這麼擁擠的情況下，Vdio仍要進入市場一搏，Skype的創辦人這回若不拿出類似當初創辦Skype這樣的disruptive technology / innovation壓箱寶，何來的信心？無論如何，有了競爭才有更好的服務，都是消費者之福。
+反觀台灣，似乎就只有中華電信MOD這麼一個服務，但其主戰場是客廳的電視，取得服務要先申請機上盒與網路服務，流程就跟申請有線電視服務一樣並不是隨手可得。消費者的選擇不多，或者都去使用像PPS這樣沒有合法取得內容的服務，消費者當然樂見免費使用，但對streaming video的市場發展並不是一件好事。
+筆者隨文做個簡單的調查，還請各位讀者踴躍回應！
+ 
+
+
+
+
+
+Tim Wu:
+October 22nd, 2011 at 1:42 am
+ "Developers Friendly：從Skype開始，Joost到Rdio，都相當重視Developers Community",
+完全不覺得, skypekit喊了整整一年一直到今年六月才真正deliver出來 (還要付$10), 感覺是被google voice/fring/viber 逼急才不得不放出, 在這之前skype 從來沒有被當做一個platform來經營, device 要embedded skype 幾乎得透過特殊管道取得資料. 
+"Born and Bred Social", "Group watching + Communication" , "Live Video Streaming" 這三點 justin.tv , ustream 已經做得不錯, 我想 Vdio 與兩者最大的不同就是走授權路線(創辦人錢多)
+
+
+Tenz Shih:
+October 28th, 2011 at 4:07 am
+ 台灣做 streaming VOD 的不只有CHT MOD 啊，我知道的就還有壹電視和兆赫，應該還有別人...
+
+
+趙政宏:
+October 29th, 2011 at 6:07 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

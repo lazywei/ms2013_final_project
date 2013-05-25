@@ -1,0 +1,117 @@
+
+
+
+本文為客座作者Robert Lo投稿，以下是他的自我介紹
+電機工程碩士，但畢業後沒當過一天工程師，卻當過三年公務員。曾擔任台灣龍頭電信公司董事長的特別助理。2004年擔任目前台灣上櫃最大網站公司副總經理，成功將目前全球最受歡迎的網路電話Skype於創業初期即引進台灣，讓台灣成為該服務的領導市場，消費者領先世界享受免費優質的電話服務，目前定居美國加州，2009年於美國創辦完全於網路行銷消費性電子產品新品牌的公司;2011年初於台灣創辦提供中小企業行銷DIY工具的網路公司。
+ 
+ 
+當台灣的朋友想看一部電影時，是到電影院看片商出版或引進台灣的院線片？或是到百視達租片？或是上hiChannel找？或是去辦個MOD？或是等有線電視台的片單？或是到PPS看免費的？或是…網路BT下載？
+如果是院線片應該都沒問題，但如果是像筆者喜歡看六零或七零年代的經典老片，例如1969年的The Italian Job，或是1968年的The Thomas Crown Affair (這兩部片分別於2000年左右重拍)怎麼辦？這些片在台灣不論是實體DVD出租店，或是線上movie stores，應該都找不到（我想更不要說MOD或者是有線電視台了），看來只有網路上下載一途。
+在美國，筆者可以輕易到Netflix.com上找到，不論是直接於線上streaming觀賞(台灣的IP恐怕無法access Netflix.com，所以筆者抓圖如圖一)，或者Netflix會郵寄DVD給筆者(如圖二)，筆者都可以輕鬆在家觀賞。
+圖一
+
+圖二
+這聽起來不稀奇，好像就是Netflix有的影片資料庫比較龐大罷了。
+直覺由網際網路的經營模式上來看，確實Netflix於網路上出租影片好像Amazon於網路賣書一樣，就是把”長尾效應”發揮到極致。因為一般實體影片出租店受限於店面可陳列商品的面積有限，大多只出租放映一段時間或者剛下檔的院線片，或者過去比較熱門的影片。不似網路上沒有陳列面積的限制，可以把所有可能取得的影片上架，這時候所謂的”長尾效應”就出來了。
+但在美國家喻户曉的Netflix如果只是這樣，也不會這麼容易把百視達這個影片出租店老招牌打得於2010年九月宣布倒閉並且透過拍賣等買主，且Netflix Co-Founder & CEO Reed Hastings也不會於今年2月18日與Apple Steve Jobs，Oracle CEO Larry Ellison ，Facebook CEO Mark Zuckerberg等人同為美國總統Obama宴請之矽谷科技最有影響力的幾位CEOs之一，有圖為證 。
+所以除了”長尾效應”之外，Netflix還有什麼能耐與獨到之處？
+剛剛提及一般的實體影片出租店的面積有限，因此限制的可出租的影片種類與數量，也因為是如此，為了要提高影片出租的流通率，實體影片出租店對大部分影片都會定一個歸還期限 Due date (視該影片熱門與多寡)以及若延遲歸還的罰金，就是所謂的Late fees。創辦人Reed Hastings因為延遲歸還於百視達租的Apollo 13，被罰美金$40元的Late fees之後，認為應該有更好的方式提供影片出租，因此於1997年創辦Netflix。
+這是創業守則其中一條：解決自身的需求，開發滿足自身需求的服務或工具。
+ 如同inside這篇文章中提及37signals說過的”解決自己的問題會讓你愛上你做的事(Solving your own problem lets you fall in love with what you’re making.)”。Reed因為不滿被罰這麼高的Late Fees，所以創辦Netflix來想辦法解決自身的問題與需求。
+不過於1999年9月之前，只能算是傳統影片出租的線上版本：每片DVD租金美金$4元，加上美金$2元郵資，Netflix並沒有獲得太多矚目，財務上的表現也不佳，Reed Hastings自己也說，” "an ugly financial story， with not much hope of breaking even."
+Netflix的契機是於1999年9月捨棄傳統pay-per-rental每片出租的模式(也是一般消費者對租賃影片的長期的習慣與認知)開始，其推出月租型服務無片數限制，免費雙向寄送，更沒有Due Dates與Late Fees。
+舉例說明，你可以申辦一個月美金$9.99的服務，於這個plan下，你可以在Netflix的網站上選多支影片租賃，但Netflix每次只會寄一支影片給你，同時附上回郵信封。隨便你多快(或多慢)要看完，反正沒有Due Dates與Late Fees。你看完後，用附上的回郵信封寄回給Netflix，Netflix收到後，再郵寄第二支影片(所以你要多選幾支放在queue中，不然Netflix不知道要寄什麼給你)，從寄回到收到第二支影片，Netflix都會以email通知你狀態，且通常三到四天之內就會收到。
+算一算，如果你勤快一點，收到影片馬上看，且當天(或隔天)寄回，有時候最高一個月可以看到五支影片，這樣一支影片的租金就下降到美金$2。基本上一個月可以看到兩支到三支影片，就算合理。
+如果你申辦一個月美金$14.99的服務，Netflix一次就寄兩支影片給你，最多到一個月美金$27.99的服務Netflix一次寄四支影片給你(以下兩張圖就是Netflix設計的回郵信封，看到這火紅的信封，it’s showtime! 這也是一種很有效的視覺行銷，筆者2005年剛到美國時，就是在友人家看到這種信封，詢問下才知道Netflix這樣的服務)。
+
+圖三
+
+圖四
+所以，這樣的business model，控制權已經由影片出租者(制定Due Dates與Late Fees)，移轉到影片租賃者(自行決定歸還時間)。這是一個很重大，革命性且具破壞力(disruptive)的經營模式的改變，因為沒有Due Dates，沒有Late Fees，消費者趨之若鶩，自此也逐漸奠定了Netflix於線上影片出租的市場地位，甚至動搖了百視達的立業根基(百視達於2004年也推出線上影片出租，但為時已晚)，連WalMart或是Amazon都只有望其興嘆的份(Netflix於2003年5月IPO，目前擁有超過兩千萬的subscribers，2010年全年營收超過美金21億)。
+創業我們常談要創新，大部分想到的是技術的創新，例如Skype以P2P提供voice service，是disruptive的技術創新。但經營模式的創新，也會有disruptive的效果，Netflix就是最好的例子。Inside一篇文章中提到，創業者要深思，什麼樣的經營模式會提供顧客新的價值？
+ Netflix創新的影片出租模式，改變了消費者對該市場根深蒂固的認知，提供給客戶的價值第一個就是沒有Due Dates與Late Fees的壓力，第二個就是月租型服務由消費者決定了換片的速度與頻率，而不是出租者。沒有Late fees嗎？想想若你出國一陣子，結果Netflix寄來的影片沒機會還，你每個月仍然會被收取月費，其實是另外一種形式的Late fees。但這不是罰金，消費者的認知與感覺就完全不同了。
+但創新的經營模式可以被複製，Netflix如果只沈溺於領先市場推出新的影片出租模式，很快會被競爭者追上(別忘了此時百視達仍是影片出租龍頭，Walmart.com也於2002年於全美推出類似的影片出租服務，不過於2005年退出市場轉而與Netflix進行cross-promotion)。
+如同筆者前一篇文章提及Amazon的利器是精準的purchase recommendation，Netflix發展一個video recommendation engine，叫做Cinematch，是由29，000 unique lines of code以及1億八千萬個影片ratings資料庫組合產生的演算法。Netflix藉由Cinematch，不僅只是郵寄消費者挑選的影片，他還告訴消費者他們可能會喜歡的影片是什麼。統計說大約80%的影片租賃行為是發生在200部影片上，這些影片可能是強檔院線影片與大力行銷的熱門影片，所以這是傳統的影片出租店例如百視達可以於陳列面積限制下生存的因與果。
+但Netflix的Cinematch不著眼於如此通俗的大眾市場，而是針對每個影片出租者獨立的觀看行為。Netflix鼓勵消費者對其租賃與觀看過的影片評價，Cinematch會因此推薦該消費者類似與可能感興趣的影片，不論這些影片是否為熱門賣座影片。
+這樣的推薦機制，延伸與擴大該消費者的觀看影片的品味與範圍，產生的結果是Netflix消費者70%的租賃影片是Netflix推薦的，80%的租賃行為發生在2000影片上。這不但降低了熱門片需求的壓力(畢竟Netflix還是有購買copies的費用)，增加其他影片的出租率與流通率，也因此再強化”長尾效應”。
+Netflix於2006年開始舉辦一個Netflix Prize的競賽，徵求最佳的演算法可以依照消費者過去的影片評價來”臆測”消費者接下來的觀看喜好與行為。最大的獎項，美金100萬於2009年頒出，獲勝者設計的演算法的臆測表現優於Netflix自己的Cinematch 10%。這樣的影片推薦機制，是百視達這樣的實體影片出租店是陌生且無法做到的，因此深獲消費者好評！Inside這篇文章提到，「了解你的用戶Understand your users.」這是創業團隊要開始創造營收很重要的關鍵，這點Netflix以技術做到了，而且做得很徹底，更進一步拉開與競爭者的距離！
+Netflix以線上影片出租 Video-by-Mail起家，但隨著網際網路頻寬的增加，PC的運算處理能力增強，Netflix於2007年出開始”Watch Instantly”的線上streaming videos的服務。
+一開始是streaming selected videos到PC或者Mac上，只要你申辦月租型郵寄影片的服務，就可以無限制片數與次數看streaming videos(於2010年尾推出streaming-only一個月美金7.99的月租型服務)。除了PC之外，Netflix近年來積極與硬體廠商合作，例如各大電視廠商如LG，Samsung，SONY，Vizio，Netflix已經是這些連網電視必備的feature之一：Xbox Live與PS3的Game consoles上有Netflix的服務：像TiVo這樣的Set-top boxes也有Netflix：與硬體廠商的合作，把Netflix的streaming videos服務更進一步地推向消費者的家中(客廳)。而近年風行的智慧型手持裝置如iPhone，iPad與WP7等，都有Netflix的app可以streamding看影片(如下方的demo影片，iPad2上的Netflix app來看streaming videos，影片中出現筆者的影子請見諒)。
+行動裝置晶片大廠Qualcomm於今年2月宣布其Snapdragon 處理器未來將可以解碼Netflix的streaming videos，可適用於Andriod OS，更是把Netflix推向高峰。Video-on-demand的便利與行動裝置上的開發，不僅讓Netflix站穩線上影片出租的市場，也快速擴大與新增其使用族群，一般預計2011年底Netflix總用戶數可以成長到3000萬用戶。
+Netflix一開始是創辦人想要解決自身遇到的問題(Late fees)而創辦，經營遇到瓶頸時，以創新的經營影片出租模式(月租型，No Due Dates and No Late Fees)創造消費者的價值。以積極了解客戶的態度提供客製化的影片推薦機制而提高營運的效率。與硬體廠商合作，擴大服務的傳輸通路與使用機會。由此可見，Netflix之所以會建立今日的線上影片出租王國，不是偶然與僥倖的，值得創業者與事業經營者參考與深思。
+結束以上嚴肅的話題，筆者於美國的辦公室，距離Netflix的總部不到1 miles。Netflix的總公司坐落於矽谷的南端一個風景優美且富裕的市鎮，Los Gatos。外表看起來像是一個很漂亮的度假旅館，它其實是一個集合式住宅的一部分。筆者拍了幾張照片，與各位讀者分享，羨慕一下(至於辦公室內的照片，遊戲公司的員工都在辦公室內玩遊戲，那Netflix的員工是不是就正大光明地在辦公室內看電影？先賣個關子，下次有關Netflix的文章再分享，對，Netflix還有題材可以討論！)。
+
+ 
+
+
+ 
+ 
+ 
+
+
+
+
+Aaron Yang:
+April 13th, 2011 at 3:00 pm
+ 很用心的一篇好文章 ^^ (推讚).
+
+
+Mona Hu:
+April 13th, 2011 at 3:23 pm
+ netflix的成立後，就立馬把它的 business model 拿去申請專利，所以之後 blockbuster 要學他，就立刻被告。現在好像是和解了，有一說是 blockbuster 得以使用此 business model 但是每年要支付 netflix 大筆的專利金。因此這也拉大兩家人的競爭距離，加速 Blockbuster 的倒閉。（http://arstechnica.com/old/content/2006/04/6528.ars）所以，大家想到什麼，要快快去申請專利喔！XD.
+
+
+許郁棋:
+April 13th, 2011 at 3:38 pm
+ 好文章
+
+
+Jill Chen:
+April 13th, 2011 at 3:53 pm
+ 從不滿足的消費者身分中找到了創新缺口,進而做破壞式創新.
+人都有貪小便宜的心態,換個思考角度來操作,結果大不同.
+
+
+Eugene Wang:
+April 13th, 2011 at 4:10 pm
+ 真是篇用心又精采的好文章！
+
+
+柯力中:
+April 13th, 2011 at 4:22 pm
+ 寫的好詳細 推一下
+
+
+東尼克:
+July 18th, 2011 at 1:01 am
+ 有內容 有想法 有行動 就是財富的開始
+
+
+Shangyuan Xuan:
+July 29th, 2011 at 7:26 pm
+ loving this...
+
+
+Ching Li:
+August 29th, 2011 at 10:42 am
+ 好故事, 有啟發!
+
+
+邱妤:
+October 4th, 2011 at 12:53 am
+ 寫的真好~~對我的個案分析有幫助
+
+
+趙政宏:
+October 30th, 2011 at 8:52 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+Patrick Chang:
+December 29th, 2011 at 5:40 pm
+ 為什麼台灣沒有像Netflix這樣的線上影片服務!
+
+
+

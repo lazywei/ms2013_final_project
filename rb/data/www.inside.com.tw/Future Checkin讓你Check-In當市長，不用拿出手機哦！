@@ -1,0 +1,19 @@
+
+
+
+您也和筆者一樣，每天打開Foursquare到處Check-In搶市長、拿徽章嗎？然而總是會有些時候，遇到戰況比較激烈的戰區，人人都想搶當市長，一個不留神忘了Check-In，市長的寶座可能就會拱手讓人了。現在，已升級到iOS 4.0的iPhone的用戶們，你們的Check-In福音來了！Future Checkin提供了一個自動簽到的服務，讓你不再忘了Check-In。
+
+
+
+簡單來說，就是這個Future Checkin App可以讓你自行設定「我的最愛地點」(favorites)，當你離這些地點的距離在三百公尺內時，就可以自動Check-In，相當方便。Future Checkin不是免費軟體，要0.99美金。
+遊戲規則改變？
+嚴格來說，Future Check-In是沒有作弊的，因為是當使用者真的離這些地點很近時，才會做Check-In的動作，這個App只是讓你省掉拿出手機的動作罷了。然而，省掉了拿出手機的動作，可能同時也讓Foursquare的失去了社交功能，畢竟當你不拿出手機，你也就不會知道你的朋友最近在那Check-In了，也不會發現這附近是不是又多了什麼新地點。
+另一方面，隨著Gowalla API的推出，本程式的作者也計畫將此App應用在Gowalla上面，然而筆者查了一下Gowalla的API文件，它有特別提到：「不可自動”Check-In，這樣就很不好玩了」(Never “auto check-in” a person without their explicit permission. This is seriously uncool)。
+你覺得呢？LBS的Check-In遊戲如果變成自動的，你覺得會變的更有趣或是更無聊？(我想最大的問題可能會是GPS要一直開著，過不久手機就沒電了…)
+reference:techcrunch
+
+
+
+
+
+ Tagged with: foursquare, LBS 

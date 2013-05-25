@@ -1,0 +1,25 @@
+
+
+
+今天 Facebook 網頁版同時推出「優惠券」和「更改粉絲專頁名稱」兩個功能，還更新了 Android Facebook app 和 Facebook 手機即時通，特別是後者，在 Google Play 的評價為 4.5 顆星。
+下載連結：
+Facebook
+Facebook 手機即時通
+  全新設計的 Android 版  Facebook 手機即時通
+加快腳步，四到八週更新一次 app
+照片來源：fronx
+同時 Facebook 的工程師 Christian Legnitto 在他們的工程專頁（Facebook Engineering）上貼出一篇文章（註 1），表示未來 Facebook 平均每一至兩個月就會更新一次旗下的 app。
+上個月 Facebook 推出全新的 iOS 版 app，最引人矚目之處就是一改過去使用者抱怨連連的效能問題。Facebook app 經過團隊重新打造成 iOS 原生 app 後，運作速度出現顯著的提升。
+不過從原本 HTML 為主切換成以 iOS 原生技術也是有代價的。
+我們知道「駭客精神」一直是 Facebook 文化中非常重要的一部分，他們隨時都在 facebook.com 測試各種新功能，這樣快速又有效，八月起甚至每天會更新程式碼兩次（註 2），過去他們可以用相同的步調處理以 HTML 為主的行動版 app，然而這樣子佈署程式的節奏無法套用在新版的 iOS app 上：因為現在更新 app 不像以前重新讀取網頁般容易。要嘛就是把新功能套到所有使用者身上，不能像網頁版那樣只對少數使用者測試新功能；一些讓網站速度變慢或是影響少數使用者的問題程式到了 app 上則會影響所有使用者。
+目前 Facebook 的開發團隊將 app 功能的開發、測試、調較等等，都訂出明確的時程，一切就是為了加快開發的速度。
+至於為什麼將更新的時程設定為一至兩個月？Christian Legnitto 說明，這是為了在快速開發與顧及使用者體驗中間取得平衡，他們希望能夠儘量降低對使用者造成的不便，而四到八週會是個經過取捨之後還不錯的時間。
+相信用過新版 iOS Facebook app 的使用者都對 app 品質有不錯的評價，Christian Legnitto 說他們已經適應了這樣的開發節奏，可以讓使用者儘快體驗更穩定、功能更新的 app。行動平台的發展已經是 Facebook 未來的發展重點，而 app 的品質更是最優先的項目之一。
+ 
+ 
+註 1：Timed releases for mobile apps註 2：Ship early and ship twice as often
+
+
+
+
+

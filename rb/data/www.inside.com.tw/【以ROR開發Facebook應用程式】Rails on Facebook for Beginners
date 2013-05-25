@@ -1,0 +1,14 @@
+
+
+
+以下是筆者今天於Ruby Tuesday社群聚會分享使用Ruby on Rails開發Facebook應用程式的經驗之投影片。裡面包括許多實際在使用中的程式碼並且都有提供Gist的網址，有需要的朋友可以直接到該網址複製使用。
+其中有提到iPK這個Facebook應用程式，是筆者參與Inside部落格團隊所開發的應用案例，投影片中所有的程式碼片段皆整理自該程式，若您對於程式的寫法有任何建議或疑問，歡迎在本文提出以進行交流、討論。:)
+投影片內容除了團隊共同的研究、開發經驗之外，也感謝Cardinal Blue經驗上的分享，關於Cardinal Blue分享的投影片請見：Cardinal Blue的Facebook應用程式開發經驗分享：使用Ruby on Rails與Heroku
+
+本文同步發表於 Cyberpunk Blog -- http://punk.tw/2009/12/22/1008.html
+
+
+
+
+
+ Tagged with: facebook教學, facebook開發, ror開發 

@@ -1,0 +1,16 @@
+
+
+ 
+你也是Foursquare的重度使用者，到處不停Check-In搶當市長嗎？Check-In的次數多到都讓你忘了你曾在那裡Check-In過了？現在你可以透過Foursquare feeds，輕鬆的在Google Map上顯示你曾到Check-In的地點。
+第一步：先從網頁登入Foursquare後，再點http://foursquare.com/feeds/進入Foursquare feeds介面。
+ 第二步：把in KML:後面的網址複製下來，接著貼到Google Map的搜尋框裡，就完成了。
+可以在網址最後的的.kml的後面加上「?count=400」，代表你想要查詢的Check-In記錄數量為400個，數字可以自行決定。
+
+就這麼簡單，快去試試吧！
+reference:aboutfoursquare.com
+
+
+
+
+
+ Tagged with: foursquare 

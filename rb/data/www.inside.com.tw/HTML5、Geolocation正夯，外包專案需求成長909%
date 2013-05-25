@@ -1,0 +1,19 @@
+
+
+Freelancer.com是世界知名的專案外包網站，從資訊系統建置、網站建置、行動應用開發、寫作、設計、工程或科學相關領域、銷售與行銷、產品製造與設計、商業上的各種需求，只要你能想到可以外包的事情，都可以在Freelancer.com上試試看能否找到來自世界各地的優秀人才進行勞務外包的合作機會。
+Freelancer.com的流量不小，從2009年十月時有100萬個中小企業會員在上面委託專案，截至目前為止已經成長到有160萬個中小企業會員，從過去到現在也有超過72.5萬個專案在其網站上找到合作機會。Freelancer.com統計了2010年第一季、第二季在外包專案類型的成長率，發現成長最驚人的幾種技術分別如下：
+Geolocation
+HTML5
+Cloud services（其實就是Amazon Web Services, 簡稱AWS）
+Mobile Phone
+也就是說Web development、Mobile application development兩類的需求是非常顯著的在成長，其中HTML5、地理位置服務（LBS）則是在這兩種開發需求中逐漸受到重視的特殊功能（features），尤其HTML5在未來逐漸普及後，或許可以為我們的各種雲端應用程式帶來更豐富的使用者體驗，這就好比過去AJAX概念剛開始普及時，開發者、使用者都會為AJAX所帶來的便利性、使用體驗感到興奮一樣，HTML5將會為網頁應用程式帶來更多的驚喜。
+而在人們高喊雲端運算的年代，使用的平台如何提供具有延展性的技術架構便顯得相當重要，Amazon提供的Amazon Web Services在這方面顯然是非常有能耐的（例如國外知名的Social game公司Zynga就說沒有AWS的話，他們無法活到今天），顯然有越來越多的公司會希望能依賴AWS所帶來的便利性與強大的運算能力。
+未來我們將針對HTML5、Geolocation以及雲端運算相關的概念進行更多介紹，有任何的議題也歡迎提出與我們討論。
+
+Reference: http://techcrunch.com/2010/07/06/freelancer-geolocation-html5-jobs/
+
+
+
+
+
+ Tagged with: Cloud Computing 

@@ -1,0 +1,129 @@
+
+
+
+如果你以前覺得 Amazon 這家公司不太會在使用者體驗下功夫，這篇文章可能會改變你的看法。
+Amazon 首頁的左上角有一個商品分類瀏覽的下拉式選單。當滑鼠從選單中的選項上滑過時，子選單的顯示速度超級快。我們可以看一下：
+
+這個顯示速度基本上是與滑鼠移動同步的，但是絕大多數網站的下拉式選單在顯示子選單時會有一定的延遲，例如：
+
+這個延遲反應是必須的，因為如果沒有，當你想把滑鼠從一個主選單挪到一個子選單時，子選單會消失。就像這樣：
+
+ 
+但是 Amazon 的下拉式選單沒有這個延遲，而且子選單也不會在不應該的時候消失。它是怎樣做到這一點的呢？答案是透過偵測滑鼠移動的方向和軌跡。
+ 
+
+想像將滑鼠當前的位置、子選單的左上角和左下角三個點連成一個三角形。如果滑鼠在這個三角形的範圍之內移動，那使用者很有可能是想把滑鼠從主選單移到子選單上，所以就不應該立刻更新子選單。但是如果滑鼠移動到這個三角形之外，則可以馬上更新子選單。這就是 Amazon首頁反應速度超快的下拉式功能表背後的演算法。
+上帝就在細節中（God is in the details）。
+揭開一個前端細節的秘密，我們看到的不僅是一個精妙的演算法，而是一家大型網路公司對於產品和使用者體驗的態度。Amazon 的數百億市值有多少是從這些很小很小，但是很明顯有用心的產品細節中積累出來的呢？
+如果想把這個選單功能運用到你的網站上，這是 Khan Academy 工程師 Ben Kamens 寫的 jQuery 程式。
+如果你覺得這個很神奇，很想做這方面的工作，或是覺得這沒有什麼，你的 UX 設計比這個好，可以考慮給研發出這個細節的 Amazon 團隊（[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+）投一份履歷，因為他們正在招募新員工。
+ 
+原文出處：Breaking Down Amazon's Mega Dropdown
+延伸閱讀：[HCI] 費茲定律Fitts’ Law與使用者介面設計
+
+
+
+
+Jenny Shen:
+March 21st, 2013 at 5:28 am
+ Good finding, but I think you should link to the original post or credit the author for the screenshots.
+
+
+Phil Ko:
+March 21st, 2013 at 5:32 am
+ 標題如果是"魔鬼藏在細節中"我可能就很自然忽略不看了，但標題把魔鬼改成上帝，會讓人多停一下，就有機會把訊息送進腦袋。
+
+
+Bin Hsu:
+March 21st, 2013 at 5:58 am
+ 沒想過的問題，就是大問題
+
+
+Caesar Chi:
+March 21st, 2013 at 6:05 am
+ 既然是翻譯文章，請著名出處，
+http://bjk5.com/post/44698559168/breaking-down-amazons-mega-dropdown
+
+
+Yi-Hung Peng:
+March 21st, 2013 at 6:40 am
+ 「上帝」藏在細節中！
+
+
+Hao Zheng:
+March 21st, 2013 at 8:04 am
+ 太強了
+
+
+Han Wei Chen:
+March 21st, 2013 at 8:38 am
+ 智慧型手機跟平板不知道會不會破功
+
+
+Jimmy Ding:
+March 21st, 2013 at 3:24 pm
+ 利害
+
+
+王子彥:
+March 22nd, 2013 at 4:09 am
+ 好方法，上了一課
+
+
+郭先生:
+March 22nd, 2013 at 6:44 am
+ 其實這篇文章的GIF也做得不錯，用循環方式， 來消除GIF一直重複播放的閃爍感
+
+
+Brian Ling:
+March 22nd, 2013 at 8:04 am
+ 寫UI的夥伴們，借鏡一下吧！
+
+
+KC Chen:
+March 22nd, 2013 at 12:34 pm
+ 太厲害了!! 雖然很小, 卻是很有用的改進...
+
+
+Derek Chen:
+March 25th, 2013 at 10:21 am
+ 一切都是細節細節細節，細節真的重要...
+
+
+溫小溫:
+March 27th, 2013 at 5:35 am
+ cool耶
+不愧是上帝啊~*
+
+
+Misia Zhong:
+March 29th, 2013 at 7:38 am
+ 但是 我覺得 這樣的下拉式選單 讓我視覺上感覺很亂 沒有稍等片刻休息 不太喜歡
+
+
+James Chen:
+April 9th, 2013 at 2:18 am
+ 三角理論老早出現 並且應用了 在桌面右鍵選單也都有應用三角範圍
+但是Amazon將它應用在Web上
+
+
+Yi-lun Shie:
+April 10th, 2013 at 12:38 pm
+ 很COOL~!
+
+
+單瑩:
+April 14th, 2013 at 10:12 am
+ 媽媽看到你的貼文讚!!
+
+
+江俊穎:
+May 16th, 2013 at 1:13 am
+ 用心…處處留心皆學問
+
+
+

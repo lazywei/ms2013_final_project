@@ -1,0 +1,65 @@
+
+
+
+(Reference: New Media Rights)
+
+投稿作者：Leon Lu ([email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+)
+當能力所及時-就嘗試，力有未逮時-就膜拜 ! 喜歡研究軟體架構的美、專案管理方法論的妙、與三五好友大談移動科技的樂
+自從 iPhone App Store 引領風潮後，那一把夯 App 的火到現在還在持續蔓延中，尤其是智慧型手機已經佔據大部份人的生活了，皮夾丟了可能是幾個小時不知不覺，但手機可是每小時都可能要把玩一次。
+Mobile App真的有這麼夯嗎? 有一項重要的變化在這三年內快速發酵中，參考FLURRY以美國市場為母體的研究分析顯示，每一天人們花費在 Mobile Application上的時間已超過Desktop上以及 Mobile Web的使用量。
+ 
+ 
+那擁有智慧型手機的人到底有多少? 依據市調機構Canalys於2011年第4季的資料顯示，智慧型手機銷售量已經首度超越PC以及平板電腦的總數，這個變化的背後隱含著一個未來的重要課題，就是 BYOD(Bring Your Own Device) 的管理問題，相信這議題將是未來企業IT單位的重點專案之一。
+ 
+BYOD？ 就是“Bring Your Own Device”，簡單的說，就是帶自己的電腦/Pad/手機到公司工作。套用專業術語來解釋，那就是 2012 年起將有較多的企業允許或鼓勵員工攜帶他們自己的設備(智慧型手機/平板電腦)進入工作場所並且存取企業應用系統(參考自網路公司 Brocade)。
+ 
+正因為智慧型手機以及Mobile App已是勢不可檔的態勢，所以各方企業精英們，都在思考如何作行動行銷，或是企業高階主管們有行動決策的需求時，IT單位如何將內部重要資訊整合到Mobile App上? 是要自行開發或是藉助工具? 有鑒於此，一定要與大家一起分享這個有意思的發展，隨著夯App效應那Mobile Platform 的市場究竟長的是方是圓。
+各個Mobile App 的開發目的不盡相同，面對 Consumer  端，大都是以行動行銷為主軸，面對Enterprise端則是以行動辦公或是介接內部MIS系統為導向；再加上BYOD的風潮正在蘊釀中，想當然此時讀者您的被交辦任務應該是提出一份 Proposal 吧 ! 其實 Gartner 於 2011年已經針對Mobile App Platform市場作過分析並主要區分成二類平台(MCAP以及MEAP)，但我認為就現在的發展態勢來看，將整個應用分述為四個大類別較為清楚。
+(1).   MCAP(Mobile Consumer Application Platform)
+MCAP 簡單一句話，就是提供一個快速的開發框架，讓開發人員可以利用Web Skill(HTML5、Script)完成 Mobile App的開發。
+它是開發平台，用來提供一個產生及發佈 Consumer-Facing 的 Mobile App，平台重點在於提供Mobile Web、Native App 的整合應用以及跨 OS Platform(iOS、Android、RIM、Mango) 的開發工具。
+Gartner 於 2011 年的分析報告中表示市場上還沒有 Leader 等級的MCAP 廠商或應用平台，但指出市場上扮演重要角色的 MCAP應用有 “Andanza、Antenna Software、Appcelerator、Nitobi Software、Sencha” 等平台，這些應該也是目前很多 ISV 開發商或個人 App 開發者較耳熟能詳的開發框架。
+(2).   MEAP(Mobile Enterprise Application Platform)
+MEAP 的概念相似於 MCAP，主要差異點將是以企業內部既存MIS系統或業務為需求，提供企業一個更有效率的進行開發、測試、發佈，並且能進行管理 Mobile App的平台框架。
+參考 Gartner 於 2011 年的分析報告，依然表示市場上還沒有 Leader 等級的 MEAP 廠商或應用平台，但指出市場上扮演重要角色的 MEAP應用有 “IBM、SAP-Sybase、Apple、Rhomobile”等重要軟體供應商。
+(3).   MDMP(Mobile Device Management Platform)
+MDM 的管理機制，簡單解釋就如同一般 IT 單位藉由 Microsoft AD 的 Group Policy 來管理公司員工的 Desktop 是一樣的道理。因應企業對於智慧型設備在工作環境上作業的管理需求，以及在智慧型設備上的 Mobile App 有那些依公司政策不能安裝，或一定得安裝的 App 服務等等情境，只能藉由 MDM 的管理平台來達成。
+依據 Gartner 於 2011 年的分析報告指出，目前重要的 MDM 廠商有 “Good Technoloy、SAP-Sybase、MobileIron、McAfee”等等。
+(4).   Hybrid Mobile Solution Platform
+整合型的行動服務平台，我認為會漸漸成型的一種平台應用，參考 Ovum 於 2011 年針對企業所作的調查發現，約有 3 成左右的企業將投入行動應用，主要會投注在“行動應用(Mobile App)”、"行動管理(Mobile Management)”、”行動平台及整合(Mobile Platform & Integration)”之上。
+所以 MCAP/MEAP/MDM 等行動化方案將會產生一種整合效應來更加強化平台的功能性，同時更能迎合企業所需要的多面向需求。這個現象從一些主要的軟體廠商身上，可以窺見一些端倪。
+例如 IBM 於 2012 年初併購了 MCAP 廠商 WorkLight 後，自 IBM 自家的產品報告中可以發現，其 Mobility Platform 的規劃將會是包含 MEAP/MDM 以及融合自家產品線(例如：WebSphere)的一種整合型的行動服務平台；相同的現象自 SAP-Sybase 的合併中，我們也可以窺見 MEAP/MDM 再搭配 SAP 在 ERP/BI 上的產品線組合。
+很精簡的將 Mobile Platform 的市場狀況作了以上分類，相信有興趣的 ISV 廠商、企業主，或者疲於交作業的 IT 人員應該有方向可遵循了。最後再次強調，Mobility 的市場還在持續創新及進化中，也許再次分享這個相關主題時，已是 Mobile Platform 的合縱連横的新局面。
+ 
+
+
+
+
+Hsiu Wu:
+April 27th, 2012 at 2:15 am
+ 不錯，很好的企業APP應用架構分享。
+
+
+Lin Fang:
+April 27th, 2012 at 3:18 pm
+ 财富+健康+自由
+是你一直想要的吗？
+您是否厭倦日以繼夜加班為別人賺錢?
+您是否想創業但沒有足夠的經驗與資金?
+您是否想要更多的時間給自己及所愛的人?
+您是否也想加入網路熱錢的商機卻沒有方法?
+想知道详情请点击（ http://whoamme.weebly.com ）.
+看完如有意願，請在網站留下資料，再做線上交談!
+PS:如有打擾版主很抱歉..祝您順心 愉快！~
+
+
+Howlin Yang:
+April 30th, 2012 at 5:23 am
+ 好文章
+
+
+

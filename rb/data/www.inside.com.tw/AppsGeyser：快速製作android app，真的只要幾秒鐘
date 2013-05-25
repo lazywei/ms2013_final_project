@@ -1,0 +1,31 @@
+
+
+智慧型手機愈來愈普及，想把自己公司的服務或是網頁做成手機應用程式的需求也愈來愈高。其實很多時候，手機應用程式和網頁的功能一樣，只是單純的把資訊傳達給使用者知道。那有沒有辦法快速把網頁做成App的方式呢？
+AppInventor + PhoneGap = AppsGeyser
+先前Inside曾經分享過「跨越行動網頁與原生軟體的隔閡 – PhoneGap」，目的就是透過PhoneGap的包裝，可以把網頁包的像是原生應用程式一般。而我們也分享過「寫Android App再也不是開發人員的專利」，介紹Google推出AppInventor，讓使用者可以在網頁上拖拉點選的方式就寫出一個Android App。
+今天要介紹的AppsGeyser就有一點像是PhoneGap和AppInventor的綜合體，使用者只要在網頁上填寫一些簡單的選項，就可以快速的把網頁做成一個Android的App。
+
+用AppsGeyser把網頁做成一個App非常的快速，使用者可以選擇三個方式，包括直接輸入一個手機網頁的URL、直接輸入一小段widget的html碼、或是直接在網頁裡選取區塊。
+AppsGeyser實作
+筆者試著選用抓取網頁區塊的方式來做一個android app。選了WEB PAGE CONTENT後，輸入pchome的購物網站。
+
+因為筆者想要做一個可以自動更新24小時優惠資訊的app，所以把24小時優惠訊息的區塊圈起來後，選GRAB!！
+
+很難想像吧！這樣一個Android App就完成了！功能非常完善的儀表板系統還可以讓你看到現在安裝和下載的次數，還可以讓你測試、發佈甚至開始用這個App賺錢。
+選擇TEST後，可以直接透過QR code下載app。
+ 
+
+ 
+如果你本身已經是android market的publisher，強大的Appsgeyser還可以讓你直接把剛做好的app發佈到android market上！或是也可以透過其他方式來分享。
+
+ 
+小結
+AppsGeyser的使用者體驗仍然不是很好！這三種製作方式，筆者都有試做過了，其中使用web版的網頁url的方式寫成的app使用者體驗最好，因為打開app的感覺就和打開網頁的感覺一模一樣。而筆者也把plurk的widget程式碼做成了一個app，和pchome用grab的方式做的一樣，都有黑邊太多，使用者體驗很差的問題，歡迎讀者也分享實作後的心得。
+開發androd App的方式愈來愈多種，以這種方式開發的網頁app也直接丟上android market的話，雖然也許可以讓Android market的app數量愈來多，但是我想android裡app的平均品質也只會愈來愈差。
+網址：http://www.appsgeyser.com/
+
+
+
+
+
+ Tagged with: android, android app, android market, appsgeyser 

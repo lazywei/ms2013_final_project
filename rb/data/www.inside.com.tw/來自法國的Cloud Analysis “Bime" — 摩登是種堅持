@@ -1,0 +1,83 @@
+
+
+ 
+
+
+A picture paints a thousand word. 很多事無需言語，看圖就能說出一堆故事，將數字百轉千回化為圖表分析則需要功力。一則Google+目前使用者分析是否也讓你留下深刻印象？整頁是帶有互動性的圖表組成，職業或地域分布等圖像表現也很不同。這份分析報告由Bime生成，Bime是什麼服務? 現在跟各位介紹，來自歐洲專攻雲端分析的 We Are Cloud。
+We Are Cloud正式創立於2009年，算得上也是網路與雲端時代的新創公司，創辦人之一 Rachel Delacour是個很有活力的法國女性，專長財務分析。而另位創辦人看照片應屬法國型男的Nicolas Raspal專精技術部分，他之前曾在法國知名百貨公司Le Bon Marché（屬LVMH集團）負責business Intelligence系統，洞察消費者行為與需求。由以上兩位創辦人的背景，可以了解他們對產業對於分析的需求（渴求）有著切身的了解。
+
+
+(G+ users analysis by Bime)
+無聊數字變摩登？
+所謂雲端分析，是不用下載任何軟體在你的電腦端而是登入服務的方式來達到一切分析的目的，Bime就是一種SaaS(software as a service)，之前沒有特別研究過法國企業，但Bime產品可是多少體現了法國人優雅的堅持-- "Modern Interactive Data Analysis and Dashboards."  是他們的slogan。
+Bime簡介影片↓
+
+ 
+說到重點了，modern到底在哪？
+首先，分析的第一步是匯入分析資料，以往你可能必須從別處下載excel回來，但在Bime你可以輕鬆的介接既有的Google Analytics數據，這樣就可以直接拿來作圖或是任何交叉比對，對於已經在使用Google Analytics的網路服務，是非常方便的事。當然也可以使用excel表，或其他資料庫數據，例如已經使用salesforce的企業可直接串接。
+
+(Bime analysis Sample)
+再者，經常與數字為伍的朋友，盯著excel 剪貼拉圖設公式，多少會出現胸悶的症頭，現在Bime介面令人眼睛為之一亮，除切換有特殊過場處理，也盡量設計好用易懂的拖拉介面，一旦使用上手可以在短時間內交出漂亮的整頁互動式分析報告。
+
+
+拖拉可視化分析
+迅速看一下Bime介面，及幾個常用功能，畫面可能太小並不是非常清楚，請至此看詳細操作。
+
+A- 當你建立完connection之後（例如是連到某google analytics)，就進入分析階段。
+B- 資料內的欄位，可以拉取到"欄"或"列"位置，並拖拉分析主體至meatures欄位，例如是visit，但想知道不同的月份（拉到欄）與停留時間（拉到列）。
+C- 選擇合適的圖表種類。
+D- 圖表的設定，例如是否增加趨勢線/排列等。
+E- 預設圖表，像圖中是預設在"列"order priority "high"的數據，使用者可以切換值，圖表會跟著變化，也可以選擇全部一起show出。
+F-對 meatures值的設定。
+本人用陳舊的資料嘗試Geo Analysis圖表...
+
+
+
+創辦人專訪
+  Founder之一 Rachel 百忙之中回覆了我的信件，翻譯中文如下：
+ Q：在Bime上線之前你們花了多少時間準備，為什麼當初會想創立Cloud Analysis的相關服務？
+我們2009年正式在法國南部的Montpellier成立，但是其實2007年就已經開始開發工作，因為我和Nicolas看到了企業端非常渴望能夠有一個簡單好用又強大的分析工具。現在，我們希望能靈活掌握顧客需求，配合各種網路上的整合應用來讓雲端產品更加符合新世代，而剛好目前也正是SaaS 的概念被廣為接受的時刻。
+Q: 這是你第一次的創業嗎？Bime是否有創投資金？
+Bime是我們第一次的創業。 我們拿到了一些來自美國、歐洲和新加坡的私人天使投資（private angel）。
+Q: Bime的營運模式和主要客戶是？
+Bime主要針對兩種使用情境--
+1) 中小型企業，他們通常無法負擔龐大的資本支出在傳統的BI（Business Intelligence) 投資上，也沒有足夠資源可以協助做資料分析，所以採用雲端解決方案非常經濟有效。
+2) 已經使用了傳統軟體卻想要改變的大公司，傳統BI不僅需要人力維護也要專業人員才會使用，從資料擷取到分析成果往往花去不少時間，現在使用雲端分析後，不需要每日維護工作，IT人員能空出更多時間去開發重要的事情。
+Q：之後在全球的拓展計畫？
+現在Bime已經有了英文、法國、荷蘭文與中文版，在歐洲我們最大的客戶是殼牌石油公司，其他中小企業也超過了一百家，部分來自美國。團隊剛進入上海設立辦公室不久，希望能增加中國商業用戶。
+ 
+
+
+最近頻獲獎
+Bime今年在英國舉辦的第三屆Cloud Computing World Series大獎中，獲得“最佳雲端應用”殊榮，六月底又拿到ICT Spring （歐洲重要的創新科技論壇，新創公司或新科技上台演示，投資者或重要產業人士也會出席的一場盛會）頒與"歐洲年度新創公司”。
+筆者和Rachel聯絡的同時，她正在舊金山出席8月底雲端界的重要聚會-- Dreamforce，由Salesforce主辦 。 （Marc Benioff 在聚會中對雲端前景提出We Were Born Cloud, Now We’ve Been Reborn Social 的看法）
+
+↑Rachel 接受ICT Spring頒獎，European Startup of the Year。(圖片來源:Bime)
+若要說試用Bime時有何困難之處，我想頻寬非常重要，不然速度會非常之緩慢，尤其是執行複雜運算時，個人執行地理分析時就等了快半小時...，另外就是依然需要時間熟透裡面的各種分析，根據經常使用excel做市場分析的朋友表示，還是很不習慣Bime的介面，畢竟已經被excel制約這麼久了。
+
+整體來說在資料串接與多種變數分析和圖表介面呈現上，的確是個別樹一格的雲端分析服務，各位分析專家或常需要分析的企業內部多了一種modern的選擇，期待它繼續進化！
+ 
+[ update ] Bime特別為了台灣的朋友開了一個email帳號，如果對Bime有任何問題的個人或感興趣的企業都可以透過這裡來聯繫他們  [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+ 。 以上。
+
+
+
+
+
+
+Rachel Delacour:
+September 16th, 2011 at 3:16 am
+ Thank you for this post Effie ! I google-translated it: 非常感谢您 !
+
+
+趙政宏:
+October 29th, 2011 at 6:56 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

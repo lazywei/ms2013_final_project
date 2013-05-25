@@ -1,0 +1,63 @@
+
+
+在這一次的課堂上，我們將學習在iPhone開發平台上關於觸控事件的處理，而多點觸控的功能更是iPhone應用程式開發的重點，就讓我們一起來看看吧！
+觸控的序列
+在iPhone的操作上面，像是如下圖般一筆劃的觸控動作，會被轉成一系列的UITouch物件，儲存在UIEvent之後傳遞給view。
+
+UITouch物件描述了某支手指頭在觸控螢幕上得動作，包含以下這些屬性：
+@property(nonatomic,readonly) NSTimeInterval	timestamp; // 觸控的時間點
+@property(nonatomic,readonly) UITouchPhase	phase; // 觸控中的哪一階段（後面會有敘述）
+@property(nonatomic,readonly) NSUInteger	tapCount; // 連續點了幾下
+@property(nonatomic,readonly,retain) UIWindow	*window; // 在哪個Window上點擊
+@property(nonatomic,readonly,retain) UIView	*view; // 在哪個View上點擊
+- (CGPoint)locationInView:(UIView *)view; // 在某個view上的座標位置
+- (CGPoint)previousLocationInView:(UIView *)view; // 在某個view上的前一個座標位置
+而UIEvent如同我們剛剛所提及的，是UITouch的容器，當我們有多點觸控的時候，這個容器就會包含數個UITouch物件。UIEvent具有以下類別：
+@property(nonatomic,readonly) NSTimeInterval timestamp; // 觸控的時間點
+- (NSSet *)allTouches; // 所有的UITouch物件
+- (NSSet *)touchesForWindow:(UIWindow *)window; // 回傳某個windows上的UITouch物件
+- (NSSet *)touchesForView:(UIView *)view; // 回傳某個view上的UITouch物件
+而以上這些物件均會傳透過UIResponder的方法傳遞給我們的應用程式，包含以下幾個方法：
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event; // 觸控開始
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event; // 觸控點移動中
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event; // 觸控結束
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event; // 觸控取消
+上面所謂的觸控取消，雖然僅會發生在很少的機會，像是忽然接到來電，但仍然不能忘記對這些物件進行處理，詳細的原因在課堂的稍後會在做解釋。
+多點觸控
+在我們要開始接收包含多個UITouch的UIEvent物件之前，我們必須先將UIView的BOOL multipleTouchEnabled;屬性設定成YES才行。
+而當使用者若同時將兩隻手指放在iPhone上時、或者是兩隻手指頭同時在螢幕上移動時，我們就會接收到包含多個UITouch物件的UIEvent。但需要注意的是，如果使用者將兩隻手指同時放在畫面上，但只有一個手指在移動，這樣我們所接收到的UIEvent物件只會包含在移動中的UITouch物件！
+
+而若是兩隻手指分別在不同的View上呢？那兩個View分別會接收到touchesMoved: withEvent:的呼叫，並且除了自己view上的UITouch物件之外，也會收到另外一個View上得UITouch物件。
+
+然而，有時候我們不希望使用者可以同時操作兩個UIView物件，特別是我們在開發遊戲的時候，我們可能會禁止使用者同時移動並且開火，這時候我們就可以設定UIVIew中的BOOL exclusiveTouch;屬性為YES，這樣一來就可以避免同時有兩個以上的View接收到UIEvent物件了。
+或許當讀者看到上面的方法會感到好奇，那iPhone是如何判斷某個Touch是屬於哪個View呢？事實上，iPhone會透過呼叫hitTest:withEvent:這個測試方法，測試UIWindow上的每一個view是否符合以下三個條件：
+userInteractionEnabled屬性是否為YES
+hidden是否為YES，或是alpha設定在一個很低的數字（也就是透明）
+透過呼叫pointInside:withEvent:檢查觸控點是不是在view的範圍內
+當某個UIView符合以上條件的話，iPhone就會繼續測試其底下所包含的subviews，直到找到最適合的view為止。
+
+而當找到View之後，會對其UIViewController呼叫(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;等方法傳遞UIEvent物件。但若是最底層的View沒有實做這個方法回應觸控事件的話，則會往superview傳遞UIEvent物件。然後重複這個循環，直到找到可以回應觸控事件的View為止，而若是所有的superview對於目前的UIEvent物件沒有處理的話，則會轉而呼叫UIWindow甚至是UIApplication進行處理。整體的階層架構如下圖：
+
+最佳作法
+iPhone開發平台釋出也有一段時間了，隨著越來越多的應用程式開發完成，開發者們也對於觸控事件有一些常見的錯誤及解決方法，以下就是幾個常見的開發好習慣：
+當某個View被- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event;方法回傳，也就代表他應該要處理所有的觸控事件，包含以下四個：
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event;
+由於大多數的觸控處理都會暫時將UIEvent儲存起來以跟後續的觸控行為進行比對、計算，而如果我們漏掉處理其中某一種（特別是觸控取消時），就很有可能造成物件產生無法預期的錯誤。
+而當我們需要繼承UIView建立自己的View類別時，也必須遵守以上的慣例，也就是處理每一個階段的觸控事件。而且要注意，在這些處理方法中千萬不能向上呼叫父類別的處理方法。
+至於若是繼承其他UIKit的類別，像是UIButton時，你可以選擇處理某些觸控事件即可，但是跟上面相反的是，你必須在每個觸控事件處理方法呼叫父類別的相對方法，否則物件原有的觸控反應將會無效。
+最後，如果你萬不得已，非得需要將某個觸控事件轉移給別的View的話，那要記得那些View必須是自己設計的UIView子類別，因為UIKit內建的類別並不保證可以在這樣的狀況下正確運作。
+結論
+相信各位讀者應該在這次的課程中，對於觸控的事件處理有很詳細的了解，也已經可以透過這些知識設計出多點觸控的應用程式了！在下一次的課程中，我們將探討那些在iPhone SDK中所附的模擬器中無法測試的硬體功能，像是羅盤、GPS或者是加速度計等等，請繼續鎖定本連載！
+參考資源
+Event Handling -- iPhone Application Programming Guide
+UIResponder Class Reference
+Lecture #14 -- MultiTouch
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

@@ -1,0 +1,33 @@
+
+
+
+如果你是軟體相關產業的從業人員，尤其是從事研發相關背景的讀者，你應該有聽過《約耳談軟體(Joel on Software)》或是早已拜讀過其中的文章，例如我們曾在關於創業，你必須知道的13件事中引用Joel的邊開火邊移動(Fire and Motion)一文：
+對我們這種小公司來說，邊開火邊移動有兩個意義，你必須爭取時間，另外每天都得要前進，你遲早會贏的。
+東西會愈來愈好，我們的軟體每天每天都會變得更好，而且客戶會愈來愈多，這就夠了。在我們變成Oracle這種規模的公司前都不用管什麼偉大的策略。我們只要每天早上來公司，想辦法要自己打開編輯器就好了。
+Joel on Software除了在網路上有許多精采的繁體中文翻譯文章之外，近來也有中文翻譯書籍的出版：
+約耳趣談軟體
+約耳續談軟體
+這位大師級的人物在2008年創立了一個有趣且實用的網站，我們曾在Stack Overflow：程式設計領域的問與答網站一文介紹過：
+Stack Overflow是專門設計給程式設計師的問答平台，您可以想像他就是一個專門開給程式設計師的Yahoo!知識+，在上面的各種問題都與程式設計相關。「Stack Overflow」這個名字也相當有創意，學過程式設計的人或許都有機會遇到這樣的錯誤訊息，因此網站的品牌設計似乎在告訴人們：「又遇到Stack Overflow了嗎？來這裡尋求解答吧！」
+根據TechCrunch的報導，Stack Overflow每個月的不重複訪客已經達到千萬，並且已經擠進Alexa全球排名255名（全美排名235），如果在Alexa上拿台灣的知名網站Mobile01以及iT邦幫忙來比較，可以發現差距是越來越懸殊，事實證明，專門提供給程式設計人員的全球社群也是滿有市場的。（另外也可以發現，Mobile01與iT邦幫忙在到達率上似乎沒有成長）。
+
+Stack Overflow在今年5月份募資後取得了600萬美金的投資，目前共有24名員工，這是一個持續在成長中而且顯然是非常實用、持續在為相關從業人員創造價值、解決問題的網站，值得持續觀望。
+Joel對於目前的流量表現，是這麼認為的：
+全世界幾乎每個程式設計師都知道而且經常造訪Stack Overflow，因為他們在Google上輸入問題時，我們總是能給他相關的解答。
+Stack Overflow除了在SEO(Search engine optimization, 搜尋引擎優化)上有持續努力經營之外，在網站本身的運作機制也經過一番巧思，例如在每個問題的解答下方，還設計了類似Wikipedia的共筆、協同作業機制，讓網友們可以持續的補充最佳解答，非常像是Quora這類問答社群網站希望可以透過「群眾智慧」的累積來將各種問題的最佳解整理在網站上。
+以下再分享幾個關於Stack Overflow的相關資訊，供各位讀者參考：
+創辦人：Joel Spolsky與Jeff Atwood（你或許曾經逛過他的部落格：Coding Horror）
+目前已經有上百萬個問答在網站上
+網站由ASP.NET 3.5開發，利用ASP.NET MVC作為主要的開發框架
+沒有註冊的使用者也可以正常瀏覽所有問答，如果想註冊只需要透過OpenID登入即可
+Stack Overflow還有許多姊妹站台，你可以參考前文Stack Overflow：程式設計領域的問與答網站。
+References
+Stack Overflow Hits 10M Uniques, Boldly Goes Where No Q&A Site Has Gone Before
+Stack Overflow on CrunchBase
+Stack Overflow on Wikipedia
+
+
+
+
+
+ Tagged with: joel-spolsky, stack-overflow 

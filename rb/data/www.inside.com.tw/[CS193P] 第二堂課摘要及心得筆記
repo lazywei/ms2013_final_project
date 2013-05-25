@@ -1,0 +1,57 @@
+
+
+Stanford大學所提供的iPhone開發課程，本學期開課到現在已經有一個多禮拜了，不知道大家是不是已經跟上iPhone開發學習的腳步了呢？這個禮拜我們將繼續上一回的連載，跟大家分享第二堂課的上課筆記、心得。
+在第二堂課中，主要有三個部份的內容，分別是物件導向的概念、Objective-C語言的導覽，和Foundation Framework的一些常用類別。
+物件導向
+
+物件導向的三大重點：封裝(Encapsulation)、多型(Polymorphism)和繼承(Inheritance)，這部份的概念在大多數的語言，包含Obj-C都是相同的。礙於課程的設計，物件導向的基礎概念在本課程中並沒有多加描述，如果有疑惑的網友，或許可以參考網路上得一些資源、或是其他物件導向語言的相關書籍，必然都有涵蓋到這些基礎的內容。
+而在Objective-C裡面，所有的物件都會繼承自NSObject這個物件。而透過繼承了NSObject這個物件，記憶體管理的相關函式也會一起被繼承下來，這在未來的開發中會扮演很重要的功能。
+Objective-C的特色
+在上一堂課的筆記中，筆者曾經提過，Objective-C是C語言的延展。相對於C++而言，他有一些不同點：
+單一繼承，而不是多重繼承。
+承上，Obj-C透過Protocol來取代多重繼承。
+Duck Typing
+所有物件都是執行期中動態產生。
+這些相異的不同點，會在接下來的幾堂課中逐漸被解釋、示範。
+訊息傳遞
+Obj-C透過了訊息（message）的傳遞來讓物件互相溝通，而我們在傳遞訊息之前，必須先定義訊息對應的方法，而針對類別（class）和物件（instance），以下為兩種常見的方法定義：
+
+- (id) init;
++ (id) alloc;
+正負號代表了是class method(+)還是instance method(-)，而括號中的則是method的回傳值，而init和alloc則是方法的名稱。而如果我們要傳遞訊息給物件，則是透過下列的方式：
+
+[receiver message];
+[receiver message:argument];
+[receiver message:arg1 andArg:arg2];
+receiver是訊息的接收者，而後面都是message的一部分。參數的傳遞則會放在冒號的後方。注意，"andArg"也是方法名的一部分。
+在投影片39到42張的部份有許多範例，可以參考、學習。
+Objective-C的型別
+除了C語言本身的型別之外，在Objective-C當中又增加了id、BOOL和SEL型別。
+id型別是Obj-C中的一個特色，id物件可以的內容可以是任何的物件，換句話說，也就是dynamic typing。
+而BOOL物件則是布林變數，內容可以是YES或是NO。注意，不是true和false，切記不要搞混了。在第47張投影片的部份有一些使用的範例。
+而SEL物件則是類似像C語言的函式指標，可以指向任何一個method，並作為以後訊息傳遞之用。而NSObject裡面有幾個相關的methods，像是判斷物件是否可以處理的：
+- (BOOL)respondsToSelector:(SEL)aSelector
+或是像讓物件執行selector所包含的method：
+- (id)performSelector:(SEL)aSelector
+Foundation Classes
+在基礎架構中，我們曾經學過，Foundation Framework有很多基本的類別可以使用，而在本堂課程中便介紹了以下幾種：
+NSString
+NSArray
+NSDictionary
+NSSet
+NSNumber
+而除了最後一項，其他的類別都有Mutable的版本，也就是可以在物件建立之後改變內容。舉例來說，像是NSArray在物件建立之後就不能新增，而NSMutableArray則可以。
+在課程的投影片56頁之後，有很詳細的範例解釋各種類別的用法，也有介紹針對這些物件的列舉(enumeration)方式。
+iTunes U
+最後順道一提，本課程已經在iTunes U上線。透過iTunes訂閱iTunes U課程，你就可以在每個禮拜第一時間從iTunes U上下載課程的錄影、投影片，可以說是十分的方便！不過，作業和一些額外的檔案下載，仍然要從課程網站上面下載，這點需要多加留意。
+結語與預告
+這次的課程內容可以算是相當充實，我相信大家應該已經對Objetive-C有了粗略的介紹。在下次的連載中，筆者將針對第一次作業的內容做討論，在作業中有很多Obj-C的練習，若對於本次課程內容感到很手癢，這將會是個很好的機會！
+參考資源
+Introduction to the Objective-C Programming Language
+Lecture #2 -- Objective-C and Foundation Framework
+
+
+
+
+
+ Tagged with: CS193P, iphone應用開發, Stanford 

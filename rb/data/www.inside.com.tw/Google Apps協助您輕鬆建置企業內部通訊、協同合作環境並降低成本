@@ -1,0 +1,28 @@
+
+
+
+您知道什麼是Google Apps嗎？倘若您使用的公司信箱，擁有與Gmail相似的外表、強大的功能，但卻掛載在公司自有的網域名稱中，那麼或許貴公司所使用的信箱就是來自Google Apps所提供的服務。
+在過去，無論是郵件代管或是其他協同合作的群組軟體（Groupware），大概都是Microsoft、IBM或是其他開放原始碼的解決方案一統天下，然而近年來有越來越多的中小企業紛紛採用Google Apps作為公司通訊、協同合作的解決方案，尤其對於許多非IT領域或IT專業能力、預算投入較少的公司來說，可以透過幾乎免費的Google Apps來進行郵件代管或協同合作；即使是付費版的Google Apps，Google也提供了試算的網頁協助您評估採用Google Apps後可節省的經費。
+使用Google Apps後的應用可分為兩種類型：
+通訊，包括電子郵件（您註冊的網域名稱也可變身為Gmail）、Gtalk IM（即時通訊軟體）
+協同合作，包括行事曆、通訊錄、協作平台、文件等各種可提昇組織內部協同合作的工具
+目前Google Apps有以下版本：
+標準版（免費版，只要您擁有一個網域名稱、開設的使用者帳戶在50個帳號以內就可完全免費使用，只需支付網域名稱的費用）
+教育版（提供給教育、學術單位使用）
+企業版（付費方案，保證99.9%的uptime，每個帳戶擁有25GB的空間並有全年無休的客服支援，並且有更多其他的企業版專有功能）
+服務夥伴版（提供給ISP業者的版本）
+Google Apps所提供的服務對於某些特殊需求來說其實是相當不足的，這也導致某些企業在評估是否要導入Google Apps的過程中有所顧慮，已經導入的企業也發現某些功能、情境下Google Apps的功能顯得相當不足。Google當然不會放著龐大的商機不管，一如Google一直以來在各種產品的持續創新，Google Apps也少不了，例如去年Google推出Google Apps Script讓企業可以自行強化現有Google Apps不足的功能，官方的文件中提到可建立下列的Google Apps Script：
+建立試算表中的巨集或常用函式
+自動化重複性的工作事務，例如針對Google Docs forms表單收到新訊息後自動處理（回信、轉寄、進行工作流程等）
+整合不同的Google產品，例如大量寄信給試算表中整理好的郵件清單
+客製化Google產品，例如建立額外的功能選單來執行客製化的程式供員工使用
+過去若您曾經使用過Microsoft Office系列產品，或許您也曾經使用過公司內部自行客製化的功能，例如在Excel中可以結合大量發送郵件或是手機簡訊的功能，透過Google Apps Script，在Google Apps中您也可以完成如此的情境。
+最近，Google公開了Google Apps Marketplace，未來可預見的是會有越來越多的企業導入Google Apps，並且透過Google Apps所提供的各種資源，包括Google Apps Script以及Google Apps Marketplace來強化企業內部的IT能耐。
+延伸閱讀
+App經濟學：Google Apps Marketplace協助企業輕鬆強化Google Apps各類應用
+
+
+
+
+
+ Tagged with: google apps 

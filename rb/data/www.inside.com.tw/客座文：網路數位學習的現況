@@ -1,0 +1,111 @@
+
+
+ 
+
+(image credit)
+
+本文來自Ben Jian投稿，以下為他的自我介紹：
+曾做過四年硬體OEM的工程師，目前專職開發Web App。人生的跳tone是必然中的偶然，「體驗人生、勇敢做夢」是我的座右銘，做出翻動世界的App則是我一生的志業。我熱愛網路，喜歡挑戰，對創新瘋狂。連絡我：[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+
+
+2011年數位學習(E-Learning)的產品和服務在北美的產值是182億美元，預測到了2015年將達到242億美元，成長5.9%。以下圖來說，亞洲區的成長將是北美區的六倍左右，並且可以看出數位學習市場的需求在數個區域是急遽地增加。
+另外因為目前行動裝置越來越普及，如smartphone和tablet，再加上應用服務和網路平台的成熟，如blog、wiki、video podcast、online discussion、text-to-speech、e-reading、augmented reality和social network等，都讓未來的數位學習開發有很大的想像空間。這是一篇針對對數位學習有興趣但不太了解，或者是從事教育工作卻不熟悉網路技術的讀者所寫的入門文章，主要是描述目前數位學習發展的現況。
+
+＊E-Learning 1.0
+E-Learning一詞是首度由Jay Cross在1999年被提出來。美國教育訓練發展協會(ASTD，American Society of Training and Education)對數位學習的定義是：
+
+E-learning is essentially the computer and network-enabled transfer of skills and knowledge. E-learning applications and processes include Web-based learning, computer-based learning, virtual classroom opportunities and digital collaboration. Content is delivered via the Internet, intranet/extranet, audio or video tape, satellite TV, and CD-ROM. It can be self-paced or instructor-led and includes media in the form of text, image, animation, streaming video and audio.
+
+ 
+我國的資策會也有對數位學習作定義，他們認為：
+
+數位學習是以數位工具透過網路取得數位教材，進行線上或離線的學習過程。於是包括數位學習網路環境的建置、數位學習工具的使用、數位學習活動設計和數位教材的開發。
+
+ 
+以下是幾個國內外數位學習網站的例子--
+K12是美國一個為4歲到17歲提供數位教育的網站。K12宣稱它們的線上課程不是將書本掃描成影像檔這樣而已，而是請一些專家幫忙製作高品質的線上教學課程，其特色包括互動式的動畫、精美的書畫和線上討論版等，甚至還進行usability的測試來確保這些課程內容是可以很容易被操作使用的，各位可以試試Sample Lessons。
+Annenberg Learner是一個內容相當豐富的學習網站，裡面有藝術、歷史、數學、語言和科學等領域的知識，值得一看。在台灣也可以找到很多數位教學的資源，像是政府單位、大專院校、補教團體和工商企業都有規劃線上課程放在自己建置的數位學習平台上，學習大眾都可以很容易地透過網路來取得，達到遠距學習的目的。
+這些例子有幾個E-Learning1.0的特點：
+教學的方向性是單向的 -- 由上到下 (top-down, one way)
+教材內容是由一個人或一群人來製作
+教學安排的主動權是在教育者而不是受教者
+你個人也可利用免費的工具，如CourseLab(課程製作軟體)和Audancity(錄音軟體)來製作個人的數位教學影片，並將其放在Youtube個人頻道上或是graspr上供大家學習。也可以放置在Learning Management System(LMS)，LMS還可以紀錄學習者的進度、管理教材內容、追蹤學習者的成績、發佈消息、分享資源和開放線上討論等，目前免費的LMS主要以Moodle和ATutor為最多人使用。其中ATurtor根據OpenSocial的標準開發出ATutorSocial的模組可以讓學習者們互相交流學習，營造出Social Learning Environment，其實所謂的「最好的學習方法就是去教別人」就是這個意思囉，所以E-Learning2.0這個詞就提了出來。
+＊E-Learning 2.0方興未艾
+E-Learning2.0跟隨Web2.0所主張之一：集結眾人的力量和智慧。E-Learning2.0也特別強調是social learning，教學和學習的互動主要建立在學習者們在某特定學習主題上的討論和對話，也就是透過互相教學的過程，達到「教學相長」的效果。因為E-Learning2.0的概念也徹底顛覆上述幾個例子所擁有的特點，至於效果如何目前還沒有統計數據可以參考。
+最後，如果您想在數位學習上做出一些貢獻的話，除了製作數位教學內容以外，筆者認為會到inside來吸收資訊的大部分應該是developer，而面對未來如何開發更聰明的LMS讓學習更全面且更有效率，我想是一個很值得研究的題目。筆者認為將來的LMS也許會涵蓋更廣泛功能：
+擴增實境：在任何教學材料上增加虛擬效果
+體感互動：可以進行一些肢體運動的學習課程
+3D影像：用在抽象概念的說明上，如相對論
+語音辨識：與LMS互動和討論
+智慧型Crawling and Editing：主動收集和編輯教材內容
+解答問題：如Wolfram Alpha讓使用者給定特定問題後得到解答
+Learning Analytics：分析每天學習狀況的數據做出建議並安排學習課程
+有力的認證制度：幫助就業或進修
+如果您還有什麼讓人興奮的idea，請不吝分享給我們喔。筆者將來也會就E-Learning2.0持續觀察和分享。
+
+
+
+
+Neter Chao:
+April 7th, 2011 at 1:12 pm
+ 「E-Learning2.0跟隨Web2.0所主張之一：集結眾人的力量和智慧。E-Learning2.0也特別強調是social learning，教學和學習的互動主要建立在學習者們在某特定學習主題上的討論和對話，也就是透過互相教學的過程，達到「教學相長」的效果。」
+這就是為何我要把所有實體課程與FB社團結合的原因了~
+
+
+Eric Chuang:
+April 7th, 2011 at 1:20 pm
+ 好幾年前 數位學習一度成為 政府口中的新星........好奇現在是什麼狀況呢?
+
+
+Cosmo Chang:
+April 7th, 2011 at 3:02 pm
+ http://www.smelearning.org.tw/ 這是我所知屬於台灣政府的數位學習平台 不知道還有沒有其他台灣政府提供的數位學習平台?
+
+
+Jazz Yao-Tsung Wang:
+April 7th, 2011 at 5:14 pm
+ 國內 E-Learning 2.0 的一個典範：.
+http://sls.weco.net/
+宅學習 - Social Learning Space | 社交學習空間@FJU CSIE.
+
+
+Eric Chuang:
+April 7th, 2011 at 11:24 pm
+ http://www.smelearning.org.tw/ 這應該算是個標案... 以前還有推過數位學習網路科學園區.. 但我個人覺得不算成功...
+
+
+Ben Jian:
+April 8th, 2011 at 12:36 am
+ 假設去搜尋，會發現國內外較具規模的數位教學都是E-Learning1.0的類型，不過有一個組織(http://nextgenlearning.org/)是由Gates Foundation所支持，只要你有好的proposal在new generation learning方面上，這個組織願意提供資金協助你。因為他們看到美國在高中生或大學生能完成學業的比例上不理想，是個警訊，所以希望幫助開發更好更有效率Learning App。OpenStudy就是一例，可以參考看看。.
+
+
+Eric Tsai:
+April 8th, 2011 at 1:03 am
+ 學習的技術一直往前進，但學習的本質是不會變的。不停的想再教學過程中加料，不管是1.0、2.0或者加入正熱門的什麼social network，這樣的作法我覺得一點也沒有幫助，頂多是個噱頭，就像是壹電視把女色加入氣象報導一樣？改變了什麼嗎？如果把氣象報導加入social network？又能改變什麼？.
+
+
+Leah Kao:
+April 8th, 2011 at 1:37 am
+ 學習的本質當然是不會變的 但E-Learning提供學習者更彈性也更多元的學習空間 加入social network也有其價值 像http://lang-8.com/就是一個很好的例子 使用者用外語寫的日記會有母語人士幫忙批改 自己則訂正其他使用者寫的中文日記 教學相長豈不樂乎~.
+
+
+趙政宏:
+October 30th, 2011 at 8:54 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+Eddie Sung:
+April 29th, 2012 at 8:54 am
+ 我想做一個也是屬於互動式教學平台 主要結合VIDEO檔 WORD檔 (能線上修改)
+以及有會員制的平台 看有沒有人有興趣 (目前還是初期) 很多方案跟計畫都思考過
+先從台灣學校慢慢推廣到國際去 ｍｙ　ｅｍａｉｌ
+eddie33178583@yahoo.com.tw
+
+
+

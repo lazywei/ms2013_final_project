@@ -1,0 +1,31 @@
+
+
+
+隨著先前的預告，Stanford的iPhone課程正式在這個禮拜開始，我們也將隨著課程的進度提供對應的中文心得筆記，每週作業的詳細內容都在第一份的投影片中，歡迎大家一起加入討論作業的行列。
+本次史丹佛的課程網站已經全面更新，本週兩次上課的投影片、講義都也已經公佈在網路上提供下載。
+根據去年的經驗，iTunes U上面的課程錄影會在一個禮拜後釋出，有興趣的讀者還請鎖定本部落格的更新文章。在正式開始學習課程內容之前，我們先來看一下本堂課程中我們可以學到什麼？根據課程大綱的規劃：
+第一週：Cocoa Touch和相關工具介紹、Objective-C的Foundation Objects
+第二週：物件及記憶體管理、MVC架構及UI操作
+第三週：View跟OpenGL動畫、View Controllers
+第四週：Navigation/Tab Bar Controller跟Search、TableViews
+第五週：資料處理和網路服務、Thread/Notification/KVC
+第六週：Text/Responders/Modal Views、通訊錄的整合
+第七週：WebViews/MapKit、Multitouch/Gestures
+第八週：硬體的API、影音播放
+第九週：Bonjour網路和GameKit、Unit Test/localization
+第十週：尚未決定
+誠如我們之前所預見，iPhone 3.0新的API幾乎都有涵蓋到這次的課程裡頭，課程內容相當的豐富。根據課程大綱的說法，他們並沒有將課程內容侷限於iPhone開發的小框架，而也會涵蓋到軟體工程和物件導向的規劃設計。在課程過程中，將會有四個主要的作業，分別是：
+HelloStanford 和 Obj-C的小工具（一週）
+HelloPoly（兩週）
+Paparazzi（四週）
+期末專題（三週）
+參考資源：
+CS 193P iPhone Application Development
+iPhone Dev -- CS193P Official Community
+Apple Developer Connection
+
+
+
+
+
+ Tagged with: iphone應用開發, 史丹佛 

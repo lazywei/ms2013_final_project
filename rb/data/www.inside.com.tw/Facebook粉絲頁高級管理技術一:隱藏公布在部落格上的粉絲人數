@@ -1,0 +1,29 @@
+
+
+
+現在經營Facebook粉絲頁面時，常會把facebook粉絲視窗widget裝到官方網站或個人部落格上。
+裝的方法也很簡單，就到這個網址去：
+http://www.facebook.com/facebook-widgets/fanbox.php
+
+只要你是某個粉絲頁面的管理者，就可以透過視窗拖拉，就會產生一段程式碼讓你可以放到你的wordpress或blogger部落格上。
+放好code之後，你的部落格上面就會出現漂亮的facebook fans page的小框，顯示您目前的粉絲狀態，例如以下這個例子：
+FB.init("f366fa0da2698be691866671ebcef29b");Stingtao.info on Facebook
+不過，如同上述這個例子來看，粉絲人數很少，初期搭配部落格行銷的時候，覺得反而有反效果。
+因此，有人會想要把那行＂目前有xx粉絲數＂去掉。
+按照Facebook的設計，你可以做的做法是把粉絲相關顯示整個拿掉，就像這樣：
+
+但是，這樣顯得單調多了。
+如果又想保持可能的頭像，但不要讓人輕而易舉知道你的粉絲數有多少，例如顯示一個問號，就像底下這樣
+FB.init("f366fa0da2698be691866671ebcef29b");Stingtao.info on Facebook
+要怎麼做哩？
+有這樣需求的人，需要修改Facebook提供的script，在 fb:fan profile_id這行裡面加上css的設定，以本例來說，加上了這行：
+css="http://stingtao.info/fanspagecss_stingtao.css?41″ 
+而該css的內容如下：
+.total {display: inline-block; width:25pt;height:13pt;font-size:13px;text-align:left; color: white;background-image:url(‘http://stingtao.info/question-mark-red.png');background-repeat:no-repeat;background-position:center; }
+懂css的人應該知道這是甚麼意思吧？
+需要修改這個facebook fans page box widget，但看不懂本篇技術文章的朋友們請來信洽詢技術支援。
+
+
+
+
+

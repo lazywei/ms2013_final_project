@@ -1,0 +1,41 @@
+
+
+
+當我們在開發iPhone應用程式時，必然會對Cocoa Touch的平台功能感到不足，在接下來的幾篇文章中，筆者將介紹一些在Cocoa上熱門的第三方函式庫，還請多多指教！
+json-framework
+在所有的第三方函式庫中，最有名且被廣泛使用的不外乎便是json-framework了，就連iPhone OS本身也有用到這個函式庫。JSON是目前網路服務API中很常見的資料格式，幾乎所有的API都是使用JSON格式，因此當我們需要開發網路服務相關的軟體時，便會需要這個函式庫。
+而顧名思義，這個函式庫便是提供開發者可以透過Objective-C方便的建立JSON字串或是解碼JSON字串，讀者可以在專案的網站上下載。
+安裝方式
+在下載完json-framework並且裝載後便會看到許多資料夾，而其中的JSON資料夾便是我們所需要的檔案。就如同加入其他檔案到專案中一般，只需要將這個資料夾拖放到Xcode的視窗畫面中，便可以完成安裝。
+而在那些需要使用json-framework功能的程式中，只需要在程式碼開頭加入：
+#import "JSON.h"
+這樣就算完成所有的設置工作了，很簡單吧！
+使用方式
+以Facebook的Open Graph Protocol為例，首先我們必須先取得JSON字串：
+NSURL *url = [NSURL URLWithString:@"http://graph.facebook.com/cyberbuzz"];
+NSString *JSONString = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+再來便是呼叫json-framework所提供的方法來解析字串，將解析的結果儲存在NSDictionary中：
+NSDictionary *items = [JSONString JSONValue];
+最後便可以透過透過NSLog來確認解析的結果、或是透過objectForKey等方法來取得JSON中的值：
+NSLog(@"Parsed JSON : %@", [items description]);
+至於要將NSDictionary轉成JSON字串也相當容易，只要呼叫：
+NSString *JSONString = [items JSONFragment];
+這樣就可以順利建立出JSON字串了。
+補充
+以上的例子是使用NSDictionary作為解碼、編碼的主要物件，但是實際上JSONValue的回傳值以及JSONFragment的呼叫物件也可能會NSArray、NSNumber、NSString或是NSNull，就看所需的資料格式而定。
+此外，若是讀者在呼叫JSONValue或其他方法出現錯誤時，根據官方FAQ的說法，這有可能是iPhone OS 3.0的Bug。為了解決這個問題，讀者可以試著在專案的Build的設定中對linker加入-all_load選項，這樣一來就可以執行無誤。
+參考資料
+json-framework Project Home
+
+
+
+
+:
+August 13th, 2012 at 3:27 pm
+ 想要“不必看老板臉色”， “不必隨時被資遣”
+就要盡快找到讓錢自己流進來的方法，並且模仿和實做。
+推薦給適合的人，可以免費體驗!!^^ >>>http://ppt.cc/xBiu
+
+
+
+ Tagged with: Cocoa Touch, iPhone, json, library 

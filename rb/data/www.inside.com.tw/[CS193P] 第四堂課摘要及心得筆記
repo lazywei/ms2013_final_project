@@ -1,0 +1,80 @@
+
+
+在歷經前面幾堂課的洗禮，相信各位讀者一定已經對Obj-C有個深刻的體驗。接下來在這堂課中，我們將進一步的前進到iPhone的程式運作以及MVC的架構，你準備好了嗎？
+iPhone程式運作週期
+在一般正常可以運作的iPhone程式當中，通常會包含以下四個部份：
+編譯過的程式碼，包含framework的程式以及自己所撰寫的部份
+Nib檔案，包含了UI元素和物件以及物件的關聯
+相關資源，像是圖片、音效等等
+info.plist檔案，裡面有關於這個程式的相關資訊
+
+而一個程式的生命週期又可以分成五個階段，分別是：
+啟動程式
+初始化程式
+讀取main nib
+等候event
+處理event，然後回到4
+離開程式
+UIKit Framework
+我們在前面幾次的筆記中曾經屢次談到UIKit Framework在iPhone開發上扮演著很重要的功能，它不僅提供了基本的UI元素，也幫助了我們解決了許多問題。
+UIKit也幫助我們啟動應用程式，所有的應用程式都會有一個單獨的UIApplication物件，這個物件會幫助我們協調處理上面所提到的物件的各個階段，也會幫我們分配event、管理狀態列和程式在主畫面上的數字顯示。
+不過為了使用這個UIApplication這個類別，我們並不會產生一個子物件去繼承UIApplication，我們使用的是delegation的概念。所謂的delegate就是委派的意思。也就是當我們要使用UIApplication及許多其他的UIKit類別時，我們並不會繼承這個複雜的類別，而是用一個類別去包含這些物件變數。
+誠如我們上面談的，因為UIApplication是每個iPhone軟體必備的，所以在Xcode建立專案的同時，他就會幫我們建立起一組UIApplication的Delegate，並且讓我們可以自行實做一些UIApplication會呼叫的方法，像是：
+- (void)applicationDidFinishLaunching:(UIApplication *)application;
+- (void)applicationWillTerminate:(UIApplication *)application;
+- (void)applicationWillResignActive:(UIApplication *)application;
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url;
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application;
+這些方法包含了當然程式結束、或是記憶體過低等狀況時，所需要做的一些處理。
+Info.plist
+在這個檔案中，他記載了：
+Icon的樣子
+狀態列的樣式（正常、黑色、隱藏）
+應用程式的方向
+是否使用Wifi網路
+系統需求
+要修改這些內容，在Xcode下左手邊的清單中，對Targets中你的程式按右鍵選擇Get Info，然後選擇Properties就可以看到這些設定了！
+Model/View/Controller
+
+MVC架構是現代軟體設計中很常見的一種設計模式，就如同他命名一般，軟體被分成了三塊：
+Model負責管理程式的資料以及狀態，同樣的Model在程式中的不同介面應該要能夠擁有一致的操作，以便重複利用。
+View負責把Model呈現到使用者介面，作為使用者操作資料的介面。它本身不處理資料相關的程式邏輯，所以如果即便套用上不同的Model，理論上同一份View都能夠搭配顯示。
+Controller負責處理Model跟View中間的程式邏輯，使用者面對View進行資料的操作，而當View接受到這些指令，他就會把這些訊息傳遞給Controller，Controller在根據不同的Model進行操作。
+在iPhone中，一個Controller會包含了outlets和actions，outlet就是View跟Model，而當使用者對View，也就是使用者見面做操作的時候，就會呼叫Controller的action，而Controller在針對Model去處理。
+Nib
+
+Interface Builder所產生的Nib檔提供了我們一種視覺化、簡易的方法，來設計MVC中的View，雖然在新版的Cocoa中副檔名已經改為xib，不過在蘋果的官方文件中仍然統稱為Nib檔。而Nib檔除了可以排列UI元素之外，也可以用增加controller物件並且連結controller到UI上，這些動作會在Nib檔被讀取的同時完成。
+然而，我們可以透過實做- (void)awakeFromNib這個方法，讓程式在讀取完Nib檔後進行一些客制化的操作，像是把程式恢復到上次關閉的狀態、或是自動開啟最後一隻檔案等等。
+Target-Action
+每個View的物件可能會發生很多不同種的事件（event），像是有：
+觸碰事件
+touchDown
+touchDragged
+touchUp
+
+值的改變
+編輯事件
+開始編輯
+編輯中
+編輯結束
+
+當一個事件發生時，iPhone程式會自動呼叫目標(target)物件的相對應動作(action)，而這個物件就是MVC架構中的controller。在課程投影片的第42張有很詳細的圖解，如果有不清楚的部份，可以提供參考。
+至於我們要如何設定這些event和target還有action的關係呢？我們可以在Interface Builder上透過簡單的拖曳就可以完成設定，並不需要自己慢慢去撰寫物件的關聯性。
+
+而event所要呼叫的action，有三種不同的形式，都可以使用：
+- (void)actionMethod;
+- (void)actionMethod:(id)sender;
+- (void)actionMethod:(id)sender withEvent:(UIEvent *)event;
+最後面一種，其傳入的UIEvent物件會詳細紀錄關於事件發生的一些細節，如果需要一些比較細微的處理，就很適合最後一種的形式。
+值得注意的是，在iPhone平台上，一個事件可以同時觸發多個不同的action，跟Mac上的開發環境有所不同。
+結論
+在這次的心得筆記連載中，我們針對了UIKit跟MVC架構做了粗淺的介紹，也學習了關於Nib檔的知識以及如何將View連結到Controller上。在下一次的連載當中，我們將會先就第二次的作業進行討論，以及講解一些作業中困難的部份，還請大家繼續收看！
+參考資源
+Lecture #4 -- Anatomy of an App, MVC, Nib files, Controls & Target-Action
+Interface Builder User Guide
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

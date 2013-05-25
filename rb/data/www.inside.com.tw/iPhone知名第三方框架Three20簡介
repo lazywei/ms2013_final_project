@@ -1,0 +1,38 @@
+
+
+Three20是由Facebook所發展的一套iPhone框架，最初的目的是為了建構Facebook的iPhone版應用程式，後來便將framework開放原始碼提供給廣大的iPhone開發者使用。
+
+使用Three20的軟體
+雖然一般各位在使用iPhone軟體的經驗中，對於Three20的存在沒有特別的印象，但是事實上Three20出現在相當多的應用軟體中，像是Facebook、Flickr的官方軟體或是最近剛被Twitter收購的Tweetie及Gowalla的官方軟體，都是使用Three20的作品。
+
+Three20
+或許會有人好奇為什麼這套框架要取名作為Three20呢？那是因為iPhone的螢幕解析度為320×480，所以就取名叫做Three20了。
+誠如序文中提過，Three20是一個開放原始碼的框架，任何的開發者都可以自由的使用。而秉持著開放原始碼的精神，許多開發者也有貢獻一些程式碼回饋，像是Tweetie的下拉後重新讀取便是一例。
+Three20所提供的功能
+而究竟Three20提供了哪些好用的功能、如此的吸引開發者呢？
+像是在UI上面，Three20提供了類似iPhone內建的相簿瀏覽介面：
+兩種不同的訊息發佈介面，前者適合撰寫長篇訊息：
+後者適合微網誌等的狀態更新：
+此外也有一些通用的介面元素：
+或是製作漂亮的按鈕：
+及等待畫面：
+除了在UI上提供了眾多方便、漂亮的介面之外，這些UI元件的使用上也比Cocoa Touch本身所提供的API容易不少。
+而在底層的方面也提供了開發者許多方便的工具，像是：
+HTTP Request Cache -- 將原本的HTTP呼叫加入快取等功能
+XML/JSON Parser -- 簡易的JSON/XML Parser
+URL-based Navigation -- 類似Web Framework般使用URL作為程式中的Controller切換
+Internet-aware Table Data Source -- 表格中的資料來源可以容易的變成網路上的資料
+透過Three20提供的這些方便好用的API，將無疑的可以替開發者節省下大量時間。
+Three20入門方式
+雖然Three20是一個很方便的Framework，透過這套框架我們可以快速的搭建出許多複雜的功能，然而由於Three20的開發資源幾乎都投注在框架本身的改版上，因此API文件可以算是相當的缺乏，對於剛接觸Three20的開發者可能會感到相當的困擾。
+所幸的是，Three20的文件標頭檔(headers)註解相當齊全，對於每個類別的Property、Methods都有很詳細的註解，故開發者可以透過閱讀這些註解學習這些API。
+而且當你下載Three20的同時，你也會得到許多範例程式，像是TTCatlog這個包含大多數Three20 UI元件的展示程式以及TTTwitter和TTFacebook這兩個分別搜尋Twitter和Facebook上的Three20相關內容的範例。
+結論
+筆者在今年參加了Google Summer of Code這個由Google贊助的暑期開放原始碼活動，讓學生們能夠實際參與開放原始碼開發的工作。而我所作的專案便是替Three20增加iPad的支援。
+在接下來的幾個禮拜中，筆者將陸續撰寫Three20相關的文章，希望能夠帶領各位讀者深入淺出Three20這個框架，還請各位讀者拭目以待。
+
+
+
+
+
+ Tagged with: Cocoa Touch, Three20 

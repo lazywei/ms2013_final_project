@@ -1,0 +1,164 @@
+
+
+
+Facebook的強大後，有些有志之士在做創新服務網站有時會喊出，“打造下個Facebook社交網站..."之類的話。
+Facebook上面撐了數億人，很快會到十億人。這個網站到今天速度還是很快，背後到底用了哪些技術？
+幾個禮拜前Facebook的技術經理Jason Sobel在Qcon中有精彩的介紹，要看影片可到InfoQ去看。
+另外，在Quora上，則有飽讀詩書的Michaël Figuière做了完整整理，讓大家很容易地一次就看到Facebook目前採用的技術架構與元件有哪些，筆者特地翻譯整理如後。
+為了台灣網路產業技術提升，對於您現在手中的網路服務，不仿參考一下Facebook做些提升或優化改變：
+前端程式採用PHP撰寫。寫完之後透過Facebook做的HipHop翻譯成C++程式碼，然後用g++來編譯。這樣的結果是前端在生成網頁以及執行網站邏輯的時候可以超快，高效能。
+商業邏輯的元件都用Apache Thrift，以服務形式提供。撰寫語言可能是PHP, C++或是JAVA。
+由於使用了Thrift來提供服務，運行JAVA程式碼的伺服器都是用Facebook自行研發的軟體，而不採用tomcat或Jetty這種，又再提升了些效能。
+資料儲存的部份用了MySQL, Memcached, cassandra, 還有HBase。Memcached拿來做MySQL的暫存，也用作其他一般用途的暫存。近來，cassandra使用率有下降趨勢，而HBase在Facebook內的使用有日益提高的趨勢。
+離線處理資料用的是Hadoop跟Hive。
+紀錄檔，點擊數與feed等等是用Scribe來整合，並存在Scribe-HDFS裡。如果要分析，就用MapReduce。
+為了加速瀏覽器上畫出網頁這件事，Facebook自製了BigPipe這個技術。
+Varnish Cache用來做HTTP proxying。
+Facebook數十億張的照片由Haystack來處理。這是Facebook自行研發的技術，低階且僅支援新增寫入動作。
+Facebook訊息用了自己的動態叢集管理架構。商業邏輯跟儲存一併封裝成一個Cell，每個Cell處理一部份的使用者，因此使用者增加只需要增加Cell。儲存的部份用的是HBase。
+Facebook訊息中的搜尋是透過在HBase上建立了反向索引。
+聊天室是用Erlang開發的Epoll來完成，一樣透過Thrift服務界面來存取。
+那這樣的元件可以達成怎樣的效能哩？底下是相關公開資訊：
+Facebook估計擁有超過六萬台伺服器。最近建置的奧樂岡資料中心中的機器都是自行設計的硬體。
+所有Memcached的執行程序所有儲存的資料總量達300TB。
+Hadoop跟Hive叢集是由三千台伺服器組成。每台都是八核心，32GB記憶體，12TB硬碟。結果是24000核心，96TB記憶體與36PB的儲存空間。
+每天有一千億次的點擊，光log也有130TB。（2010/7）
+ 
+看完了！很刺激對吧！
+你還想打造一個Facebook等級的社交網站嗎？如果想，Inside 100%支持你！趕快把您的服務介紹寫好，我們會幫您推廣喔！
+
+
+
+
+林明杰:
+April 21st, 2011 at 5:48 am
+ facebook實在太強大了!
+
+
+Tenz Shih:
+April 21st, 2011 at 5:57 am
+ 最後那句實在太故意了 XD
+
+
+Richard Wang:
+April 21st, 2011 at 6:17 am
+ 擁有數億人的Facebook~強大的後端
+
+
+Lober Hu:
+April 21st, 2011 at 6:17 am
+ 硬體廠商賺翻了
+
+
+HeChien Hsu:
+April 21st, 2011 at 6:19 am
+ 130TB的log是怎樣的概念=_=
+
+
+王丫智:
+April 21st, 2011 at 6:40 am
+ 很好很強大~
+
+
+Kevin Feng:
+April 21st, 2011 at 6:43 am
+ 要做到Global營運的架構..真的沒那麼簡單~
+
+
+Wano Choy:
+April 21st, 2011 at 9:03 am
+ 我P1用電腦,當時用win 3.1,處理數據既單位係KB同MB
+到P5,6用win 95/ 97,用既單位係MB同GB.
+到F5,6,用vista, 認識既單位係TB(雖然到而家我仲未需要用到)
+但竟然而家發展到PB!
+1條小一數學題: 1PB =? b
+
+
+Alen Yeh:
+April 21st, 2011 at 9:35 am
+ 這真不是簡單的系統....
+
+
+Palk Zhong:
+April 21st, 2011 at 1:22 pm
+ 同學必推~ ^^;;;
+
+
+陳炳宏:
+April 22nd, 2011 at 12:54 am
+ 真的是背後很強大....
+
+
+Luke Lu:
+April 22nd, 2011 at 2:44 am
+ 不要想太多了，FB也不是一開始就這個規模，就算是大型企業有足夠的資金要弄一套出來打對台，相信也不會一次就把所有設備都攻頂，而是預留方便擴充升級的後路然後視情況加碼，講白一點，沒有那麼多人用你有那麼多設備是要供著好看的喔 Orz....
+
+
+Ryan Pan:
+April 22nd, 2011 at 5:16 am
+ 厲害...
+
+
+Ah Lam:
+April 22nd, 2011 at 5:37 am
+ 如果用FB的server 跟IBM的深blue比賽,結果如何? XD
+
+
+Kenny Huang:
+April 22nd, 2011 at 6:24 am
+ 光一個公司的資訊流量就大到這種地步，若是當地球的每台機器都有資訊處理能力的那天呢？
+
+
+Carson Yu:
+April 23rd, 2011 at 6:05 am
+ 軟件服務做到位，end to end才有機會在cloud service market當中，取得位置！.
+
+
+Stan Hsu:
+April 24th, 2011 at 2:35 pm
+ 有錢就來堆呀！
+
+
+Scott Lin:
+April 25th, 2011 at 4:32 pm
+ 這就是成功!
+
+
+王立銘:
+April 26th, 2011 at 2:28 am
+ 每天有一千億次的點擊，光log也有130TB=..=
+
+
+黃健瑋:
+April 30th, 2011 at 10:22 am
+ 太強大啦~~
+
+
+Rick Chin:
+May 10th, 2011 at 9:08 am
+ 請問Sting, PHP經HipHop翻譯成C++程式碼，然後用g++來編成機械碼後, 除了執行上加速外, 若把這程式碼當作服務提供給其他網站, 其他網站是否可以逆工程解讀原碼?
+
+
+吳致宏:
+May 20th, 2011 at 6:04 pm
+ 做出Facebook規模，你所需要的技術元件總覽
+
+
+歐烜誌:
+June 2nd, 2011 at 2:32 am
+ 太...............看不懂ㄌ..
+
+
+Alvin Ku:
+October 25th, 2011 at 4:04 pm
+ 我們只看到目前的Facebook成果,當然他也不是第一天就是這樣的規模,有錢有人加上不斷的開發才是關鍵
+
+
+趙政宏:
+October 30th, 2011 at 8:48 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

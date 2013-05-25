@@ -1,0 +1,57 @@
+
+
+在這一堂課程中，我們將看到OCUnit這套Objective-C的Unit testing framework，還有看到Objective-C一些有趣的使用方式，可以幫助我們深入研究Cocoa Touch中framework的內部結構，最後還會提到如何幫應用程式設計多國語言版本，以下是筆者的一些整理，還請多多指教！
+Unit Testing
+Unit Testing是近年來很熱門的一種測試方法，特點有：
+測試特定某部份的功能性
+盡量減少外部的相依性
+在開發期間頻繁測試
+伴隨著Unit Testing，Test-Driven Development（簡稱TDD）也逐漸的受大家矚目、採用，TDD顧名思義，就是在開發程式之前先行撰寫測試的cases，並且隨著開發一一通過這些預先撰寫的cases。
+用個比喻，編譯器是用來檢查程式的語法正確性，而unit test則是檢查語意是否正確。因此，許多unit testing的framework會在每次編譯完成後進行測試，以確保程式的開發順利。而這樣的框架在Python平台有PyUnit、Java平台有JUnit，同樣的，在Cocoa的平台上也有OCUnit來幫助我們撰寫各種cases並且進行unit testing。而OCUnit跟XCode也做了完美的結合，可以自動在每次build完成後進行測試，並且顯示錯誤。
+雖然聽起來有點奇怪，不過OCUnit在Cocoa中是被稱作SenTest，所以如果你在文件中看到任何SenTest有關的類別，其實就是OCUnit測試框架的一部份。
+那我們要如何開始撰寫測試程式呢？首先我們必須先建立一個SenTestCase的子類別，而這個子類別中所有以test開頭的方法都會自動被執行進行測試，而在那些方法中，我們可以使用SenTestCase.h中所定義好的Macros，像是STAssertNotNil(someObject, @"Some object was nil");可以檢查某物件是否並非為nil，若為nil則顯示第二個參數的字串。
+此外SenTestCase還提供了- setUp和- tearDown兩個方法可以重載，而這兩個方法分別會在每個test方法的執行前和執行後被呼叫。也就是說，我們可以在這兩個方法中建立新的物件，這樣就可以確定每個測試方法之間所使用的物件不會互相干擾。
+在課程影片以及投影片的第14到第20張中有簡單的測試範例，有興趣的讀者還請自行參考。
+Objetive-C的樂趣
+Objetive-C本身是個相當有趣的語言，或許讀者在剛剛閱讀前一部分的時候曾經感到疑惑，為什麼SenTestCase可以找到所有以test開頭的方法呢？還是有什麼其他有趣的技巧呢？
+在學習這些技巧之前，我們得先看看電腦中的/usr/include/objc目錄，這裡面包含了Objetive-C中的許多定義標頭檔，包含以下：
+objc.h -- 定義了id、nil、BOOL等基本類型
+message.h -- 定義了objc_msgSend()這個方法，用來處理[foo bar]這樣的方法呼叫
+runtime.h -- 在執行期間檢視以及操作class、protocol和methods
+而這裡面最有趣的莫過於runtime.h，裡面包含了以下檢視類別和方法的函式：
+Method *class_copyMethodList(Class cls, unsigned int *outCount); -- 取得某類別的所有方法，outCount為方法總數，以陣列方式回傳
+SEL method_getName(Method m); -- 取得某方法的名稱，也就是selector
+IMP method_getImplementation(Method m); -- 取得某方法的實做，也就是實際執行的程式片段
+char *method_copyReturnType(Method m); -- 取得某方法的回傳值
+而得到了這些資訊之後，我們甚至可以修改內容：
+BOOL class_addMethod(Class cls, SEL name, IMP imp, const char *types); -- 增加方法到某個類別中
+IMP method_setImplementation(Method method, IMP imp); -- 修改方法的實做
+void method_exchangeImplementations(Method m1, Method m2); -- 交換兩個方法的實做
+你可能會很好奇，那為什麼不用Category來加入、修改方法就好了呢？背後的原因是，Category先天上就限制了我們只能做有限的修改，假使我們想要呼叫類別原本所擁有的方法，在Category上是無法做到的。
+然而，Apple建議大家盡量不要使用以上這些技巧在公開發佈的軟體當中。事實上，這些修改會影響整個程式的執行，假使你使用了其他人所撰寫的類別方法，你所作的修改很有可能也會影響到那些由他人撰寫的程式碼，而造成一些難以理解的bugs產生。
+多國語系
+大家都知道iPhone OS本身就是一個多國語言的作業系統，我們可以輕易的在設定中切換所想要使用的語言，而整個系統中的內建應用程式也會隨之改變，而對於應用程式開發者而言，我們也可以透過同樣的機制處理。
+要注意的是，iPhone OS會自動的幫我們判斷在取用多國語系的資源時所要使用的語言，在做後續的操作時都不需要另外做去指定語言。
+多國語言化的整個過程可以分成兩個步驟：
+國際化(i18n) -- 將程式修改成可以支援多國語言的版本
+在地化(l10n) -- 針對每個語言設計所需要的資源
+在iPhone OS上，我們可以所需要處理的部份僅制於使用者端的顯示元素，這些元素可能會是字串、圖片或是Nib等。
+以字串來講，對於那些使用者介面上的文字，我們可以將其另外存成.strings檔案，這檔案透過UTF-16編碼紀錄了一組組key-value的值。而我們可以透過下列方法來取用這些字串：
+// 讀取 Localizable.strings 中的字串
+NSLocalizedString(@"Hello", @"Greeting for welcome screen");
+// 讀取特定某個table的字串，本例為 Greetings.strings
+NSLocalizedStringFromTable(@"Hello", @"Greetings", @"Greeting for welcome screen");
+而為了方便我們能夠快速的建立這些strings檔，我們可以在終端機下面使用genstrings這個指令，會自動的掃描我們的.m檔並且產生出.strings的檔案。
+至於對於其他的圖片、nib檔這類資源而言，我們則是可以透過XCode中的下列選項建立多重語系的版本：
+而在之後我們就可以在XCode中看到同一個資源擁有了多個版本：
+結論
+我們逐漸走向了課程的尾聲，不知道大家是不是也跟我一樣從CS193P的一系列課程中學到很多呢？在下一次，也就是最後一次的正課中，我們將看到如何在iPhone平台上使用OpenGL ES建立3D應用程式，還請各位讀者繼續指教。
+參考資源
+Test Driving Your Code with OCUnit
+Objective-C 2.0 Runtime Reference
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

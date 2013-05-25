@@ -1,0 +1,83 @@
+
+
+
+Inside作者Eugene長期關注電子書的趨勢與發展，最近一篇文章：《如何用iPad在圖書館借本書》受到讀者及大的回響，可見電子書已是不可擋的趨勢，而相關的服務例如借閱電子書，會是一個很大的需求。有興趣的讀者，可以閱讀Eugene其他相關的文章如《由電子書借閱的本質，論「On demand business」的應用與否》與《「Kindle電子書借閱俱樂部誕生！」出版社開心嗎?》，了解更多電子書借閱的服務內容以及Eugene的論述，作為閱讀本文的參考。
+電子書借閱的模式，可以簡單區分為"消費者彼此之間借閱"以及"圖書館借閱"兩種模式。Inspired by Eugene，筆者此文主要目的是分享在美國前者，即消費者彼此之間借閱電子書，的實際借閱經驗，供台灣的讀者參考。美國主要的兩個電子書服務提供者，Amazon與Barnes & Noble，目前都有電子書借閱的服務，但筆者只有Kindle，所以只介紹Amazon的電子書借閱服務。
+Amazon是於2010年底推出Kindle電子書借閱的功能，幾個主要遊戲規則為：
+
+不是每個電子書都能借閱，必須要由該電子書出版商開放借閱的功能；
+因為版權的問題，目前只有美國Amazon帳戶的客戶可以"出借"自己購買擁有的電子書。但"借閱"電子書不限美國客戶；
+出借者的電子書，每本只能出借一次，且只能出借給一個人，出借期間該出借者無法閱讀該電子書；
+欲借閱的電子書available時，借閱者可以有7天的時間考慮。但確定借閱後，有14天的閱讀期，過後即失效，該電子書會歸還於出借者(出借者可於Kindle account中查詢)；
+借閱者可以於Kindle上，或者是安裝Kindle Apps的裝置上(Android, iPad, iPod touch, iPhone, PC, Mac, BlackBerry, 或 Windows Phone)閱讀：
+
+Amazon並開放API讓第三方提供借閱平台服務，目前以此API開發Kindle電子書的主要服務提供者為Lendle以及BookLending。兩個服務筆者都使用過，且比預期中來得簡單以及迅速！以下以圖示依序介紹。
+Lendle ：
+要使用Lendle借閱他人電子書，Rule #1，你要擁有電子書，且願意先出借。Lendle的理由很簡單也很有道理 :
+We require you to be willing to lend books in order to borrow for two key reasons: first, we want to ensure that our selection of books is not depleted by users who only want to borrow, without giving anything back to the community. And more importantly, we strongly believe authors should be compensated for their work. Lendle is not a place to get free books—it’s a place where you can share books you’ve purchased with others, and they can share books they’ve purchased with you. By not letting you borrow unless you have books to lend, we ensure that you are, indeed, buying books and paying authors for their great work.
+所以開宗明義這不是一個只提供借閱的服務，而一個可以"分享"與"交換"電子書的社群。出借與借閱的過程，Lendle並不收取任何費用，那Lendle的營收來源呢？因為有些書目前無開法出借，或者太熱門的書要求借閱者眾，等待時間太長，Lendle可以引導需要的讀者到Amazon上購買，若因此完成交易，Lendle會得到Amazon的commissions。
+1. 出借你擁有的電子書：
+
+Amazon雖然開放Kindle lending的API，但沒有開放可以直接查詢使用者擁有的電子書清單，所以筆者必須要自行輸入書名查詢(這因此也無法驗證是否確實擁有)。筆者有圖片中第一本電子書，雖然此書目前不開放出借功能，但還是可以先納入資料庫。
+2. 提出借閱需求：
+你可以輸入書名查詢，也可以直接由Lendle的"Available Now"的清單中找，筆者選擇了圖示中的這本電子書，系統顯示有320本出借中，當時有9個人欲借閱此書，筆者排到的順位是第九位，過去平均要等18位後才能借得到。讀者可以看到該書下有一個"BUY 4.69″的按鈕，若筆者透過此按鈕到Amazon購買此電子書，Lendle就會獲得佣金。
+3. 完成借閱：
+
+當Lendle收到借閱需求之後，會對出借該電子書的Lendle用戶發出通知，有意願出借者回應後，筆者就會收到如圖示Amazon Kindle的email通知，可以去下載該書了。
+BookLending：
+前身即為Eugene介紹過的Kindle Lending Club，但後來被Amazon要求改網站名稱。BookLending的出借/借閱模式與Lendle差不多，但例如欲出借的電子書尚未開放出借時，可以方便透過facebook來呼籲出版商儘快開放；以及出借者可以看到借閱者的清單，與等待時間，方便出借者選擇合適的借閱者出借等功能，是較Lendle的服務為友善的設計。
+1. 出借你擁有的電子書：
+
+一樣是輸入自己擁有的電子書查詢，加入出借資料庫(如上圖)，但若電子書尚未開放出借功能，可以利用"Ask the publisher to make this book lendable"這個功能透過facebook呼籲。
+2. 提出借閱需求：
+選擇了欲借閱的電子書後，這是借閱的需求清單。對於需要等待較久的電子書，BookLending會提供小偏方，例如建議借閱者要出借越多書越好，多參與BookLending社群的討論等，因為這些活動都是讓出借者決定借閱者重要的參考訊息。
+3. 完成借閱：
+BookLending也一樣會進行出借者與借閱者的撮合，當有出借者願意借出此電子書後，筆者一樣會收到Amazon kindle的email通知，到Amazon上下載該電子書，如上圖顯示，這個借閱權7 天之後會失效，一旦完成借閱，借閱者有14天可以閱讀此書。
+上述兩本借閱的電子書，可以在Amazon的"Manage Your Kindle"中查詢，如下圖會顯示是"borrowed"的狀態。
+
+當然筆者的Kindle中，也看到這兩本電子書(下圖中有"New"標籤者)完成下載入庫(此為iPad 2上的Kindle App)。
+
+ 
+這兩本電子書從提出借閱需求到收到通知可以借閱，筆者只花了不過10分鐘的時間。所以當欲借閱的電子書available時，Amazon電子書借閱的服務是相當的簡單，友善與快速的。且透過釋出API，Amazon可以讓更多的第三方提供出借者與借閱者的撮合平台服務，因此讓出借/借閱的行為更為活絡。
+上述Amazon電子書借閱的規則，基本上是參考實體書本借閱的行為以及有效保護出版商權益的來設計，不盡完善但也達一定的需求。不過當Amazon上賣出的Kindle eBooks數目已經超越實體書本數時，且越來越多獨立作者藉由Kindle出版電子書成為暢銷作者之際，也表示不久將來更多讀者將不再購買實體書而完全擁有電子書。若可於滿足消費者需求與保障著作權/出版商權益取得平衡點，適時調整規範與開發新服務以符合更多實際的需求，例如不再限制一本電子書只能出借一次，同時也要考慮到出借的電子商務以及二手電子書交易與贈與的可能性時，也會是電子書服務提供者於市場競爭可以勝出的關鍵。
+ 
+ 
+ 
+ 
+
+
+
+
+Jeff Wu:
+June 26th, 2011 at 3:58 am
+ Great idea
+
+
+Chih-En Wu:
+June 27th, 2011 at 6:38 am
+ 感覺很雞肋的功能 還不如書賣便宜一點
+
+
+周德鑫:
+June 27th, 2011 at 11:14 pm
+ 這樣的方式轉換個平台換家廠商，以後很多內容，像是DIY工具或者是防毒軟體也可以用這樣的方式來經營，是個有趣的經營手法，我還蠻好奇借不到而去買的人有多少？還有使用借閱功能需要付多少費用？
+
+
+Huai Chen Ting:
+July 3rd, 2011 at 8:08 am
+ 到現在 我還是覺得 kindle所使用之e-ink是個不怎麼樣(白話文：很X)的技術 低技術門檻 低複合發展性 甚至在全彩化 或響應速度上更是敬陪末座 更遑論現在連實驗室階段都仍如火如荼中的rollable or foldable 技術 積極建置良好的商業mesh分享或共用模式的系統架構下 或許這是更好的誘因~~讓閱讀 成為零負擔的品味
+
+
+李騏任:
+September 3rd, 2011 at 12:55 am
+ 我想這是一個不錯的主意！就如同實體書可以上圖書館和跟朋友借來看一樣！
+
+
+趙政宏:
+October 30th, 2011 at 8:02 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

@@ -1,0 +1,175 @@
+
+
+
+ 
+（Photo by CEThompson）
+國外知名的問答網站Quora上最近有人提出一個問題：程式開發者們最常說的謊話是什麼？發問者先把自己認為的寫出來：
+這是hack，我晚點會修好（This is hacky, but I'll fix it soon.）
+這很簡單呀（This task will be easy.）
+我快做好了（I'm almost done.）
+如果有Bug，不可能是我寫的（If there's a bug, it can't possibly be in my code.）
+我會在下次版本釋出時再加測試（I'll add the Unit Test case in the next release.）
+我會晚點再做註解與文件（I'll comment and document my code later.）
+這不是Bug，這是功能（It's not a bug, it's a feature.）
+我會在下午前完成（I will finish it by evening.）
+以下則是在網友們所提出的：
+我以後再給程式碼加註解。
+只是臨時的做法，正式版本裡我當然不會這樣寫。
+這已經開發完了。只剩下幾個小問題需要處理。
+這很簡單，我幾天就能完成。
+開發者：這需要10天。老闆：5天能完成嗎？開發者：可以！
+待辦事項（TODO）
+在我機器上是好的…
+這不需要測試，這肯定是好的！
+以前就有這個問題。
+只需要改一行程式，不會影響其它程式的
+這是硬體問題，跟軟件沒關係。
+而還有其他經典的程式設計師們會講的話：
+見鬼了….
+以前從來沒出過問題過
+昨天還好好的。
+這怎麼可能？
+一定是機器出了問題。
+應該是資料有問題。
+我好幾個星期都沒碰這塊程式了耶！
+你一定弄錯了版本。
+我不可能把所有的問題都測到。
+這不可能是因為它引起的。
+本來好好的，只是沒測試過。
+為什麼你會覺得應該出那個結果才是正確的？
+你做了什麼才讓程式出錯的？
+這問題我改了呀！
+這些你聽過哪些呢？還是有想要補充的呢 ^^
+部份參考翻譯參考自：程序员的十大谎言
+
+
+
+
+姚人豪:
+January 31st, 2013 at 6:11 am
+ 見鬼了...
+
+
+Benny Lee:
+January 31st, 2013 at 6:29 am
+ 戒慎恐懼
+
+
+Xing-Chen Pan:
+January 31st, 2013 at 6:32 am
+ 我笑了
+
+
+Yang GH:
+January 31st, 2013 at 6:35 am
+ 好懷念的歲月
+
+
+黃千千:
+January 31st, 2013 at 6:51 am
+ 第一名：「這個程式在我電腦明明能跑呀！！」
+
+
+Bo Harry:
+January 31st, 2013 at 6:52 am
+ 推"昨天還好好的。"
+
+
+Clayton Mu:
+January 31st, 2013 at 7:15 am
+ 這很簡單，我幾天就能完成。
+
+
+Caca Lin:
+January 31st, 2013 at 7:16 am
+ 「奇怪」
+
+
+Scott Chou:
+January 31st, 2013 at 7:17 am
+ 我笑死了...........
+
+
+Shih Yu Liu:
+January 31st, 2013 at 7:22 am
+ 該死，我笑了.....XD
+
+
+Chia-Hsun Lu:
+January 31st, 2013 at 7:32 am
+ 被看透了XDDD
+
+
+Bear Hsieh:
+January 31st, 2013 at 8:03 am
+ 這個不算在當初需求裡喔...
+
+
+Shirley Liou:
+January 31st, 2013 at 8:21 am
+ 在我機器上是好的...，哈哈哈哈哈
+
+
+Zong Yu:
+January 31st, 2013 at 8:22 am
+ 見鬼了...
+
+
+陳友巍:
+January 31st, 2013 at 8:30 am
+ 等你能寫出0bug的程式再來指責開發人員吧~
+
+
+Peggy Huang:
+January 31st, 2013 at 8:38 am
+ 真的有我常說的...>//
+
+Johnson Wang:
+January 31st, 2013 at 8:47 am
+				「一定是因為你用盜版的！」
+				
+
+Fish Yeh:
+January 31st, 2013 at 9:04 am
+				還有這需要一點時間~
+				
+
+Fox Yang:
+January 31st, 2013 at 9:17 am
+				以前就有這個問題~
+				
+
+張旭:
+January 31st, 2013 at 9:22 am
+				ha  ha   ha  .....
+				
+
+Sean Chi:
+January 31st, 2013 at 9:31 am
+				RD說是系統工程師的問題，系統工程師說是IDC的問題，最後他們一起說是User的問題，User的問題就是老闆的問題，就這樣一直循環、一直循環 ...
+				
+
+李宗勳:
+January 31st, 2013 at 10:19 am
+				這是我故意做出來的特效！
+				
+
+Joan Cheng:
+January 31st, 2013 at 10:34 am
+				趕快跟著笑。真的很熟悉，浮現了幾個人臉
+				
+
+Yu-Hsuan Pan:
+January 31st, 2013 at 11:41 am
+				見鬼了......
+				
+
+Dayo Choul:
+January 31st, 2013 at 11:52 am
+				世界上不存在0 bug的程式
+				
+
+
+
+
+                

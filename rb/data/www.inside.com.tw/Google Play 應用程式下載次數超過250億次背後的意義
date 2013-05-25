@@ -1,0 +1,35 @@
+
+
+圖片來源：Android Official Blog
+昨天是 Google 的14歲生日，而 Google 也就在前一天公開宣布 Google Play（原Android Market）的下載次數突破250億次（註一）。為了慶祝達到新的里程碑，Google 將會舉辦與上次達到百億次下載相似的活動，也就是推出一系列25美分的 app，以及其他25個推薦的影音與電子書籍，只可惜台灣無緣參與這項慶祝。
+Google 宣布此消息讓大家注意到，目前在 Google Play 上已經有將近67萬5千個 app，而他們的競爭對手 Apple 目前 app 的數量則是70萬個。有別於過去，雙方 app 數量差距正在縮小，這值得我們來回顧一下 Google 與 Apple過去在 app 市場的成長狀況。
+本文編寫自「 Tracking growth: the iTunes app store vs Google Play」（註二）
+iTunes App Store vs Google Play
+Apple 與 Google 剛好都在2008年啟用各自的 app store，分別在七月與十月。然而雖然在同一年發布，但是 iTunes App Store 卻很快地在 app 的市場中取得先機，只花了11個月就突破了5萬個 app 的數量門檻，然而 Google Play 卻多花了7個月。
+類似的差距也發生在接下來的幾個重要指標，Google Play 晚了 iTunes App Store 11個月才達到10萬個 app，甚至晚了15個月才達到25萬個 app。
+圖片來源：Inside Mobile Apps
+但我們可以從圖中看到自2010年五月開始，Google Play 的 app 成長速度開始有了變化。當時剛好有兩款規格較高的 Android 手機 ─ HTC Incredible 和 HTC Evo ─ 發表了在未來幾個月內上市的聲明，硬體規格的提升使得 Android 平台的推廣更為容易。而2011年七月推出了新的 Android Market（註三），包含提供電影、電子書和新的下載平台介面（註四），更進一步增加了對 Android 平台的需求。
+圖片來源：Android Community
+今年 Google Play 與 iTunes App Store 達到60萬個 app 的時間點分別在三月和五月，與先前比較起來已經非常接近，表示目前市場上對於 Android 的需求似乎不輸給 Apple，然而 Flurry 和 Appcelerator 卻不這麼認為。
+對 Android 的需求不增反減
+Flurry 2011年的調查報告（註五）中提到，開發者依然向著 iOS 靠攏。據開發者所說，在 iOS 上開發一個 app 的獲利是在 Android 上的三到四倍。而 Flurry 在比較了熱門 apps 的 app 內消費後，結果如下：
+圖片來源：Flurry
+同樣的 app，在 iOS 上每獲利一塊錢時，在 Android 上只有0.24元。
+而 Appcelerator 則是對使用偏好做出分析（註六），並有了下表：
+圖片來源 : Appcelerator
+Appcelerator 將這結果歸因於兩點：裝置太過多樣性和付費方式的不一致。Android 平台有太多不同規格的裝置，各個裝置的大小不盡相同，解析度也不一樣，造成許多開發者的困難。而付費方式就更多樣了，有許多官方或半正式的付費形式，在獲利上更增加了一道阻礙。
+雖然目前看來，在年底以前 iTunes App Store 和 Google Play 都會達到75萬，但消費者與開發者的偏好似乎不只這麼簡單而已，大家覺得哪一邊會先達到目標呢？
+ 
+（註一）Google Play hits 25 billion downloads（註二） Tracking growth: the iTunes app store vs Google Play
+（註三）Google Updates Android Market, Now with Books and Movies（註四）Android Market 3.0.26 Review and Hands-On（註五）App Developers Bet on iOS over Android this Holiday Season
+（註六） Appcelerator: fragmentation, monetization issues hurting interest in Android development
+
+
+
+
+Shane Huang:
+September 28th, 2012 at 8:02 am
+ 當App數量多到某一個程度，質量就比數量重要了。
+
+
+

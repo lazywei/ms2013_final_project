@@ -1,0 +1,101 @@
+
+
+
+Facebook 創辦人與執行長 Mark Zuckerberg 最近喜事連連，除了上週五自己創辦的公司公開上市，他自己也在隔天與女友結婚。不過也許是因為要公開上市，最近市場冒出許多質疑 Facebook 的聲音，例如美國通用汽車（GM）認為在 Facebook 投放廣告不划算、分析師認為 Faecbook 執行長「不夠成熟」（例如在路演期間穿的是招牌連帽外套而非西裝）、Facebook 的市值被高估等等，其中跟使用者最為相關的，就是 Facebook 搞不定行動裝置。
+目前 Facebook 有半數的使用者透過行動裝置（iOS、Android app 或行動版網頁等等）使用這個全世界最大的社交平台，可是他們的 app 在行動裝置上的兩大平台 iOS 與 Android 最近飽受批評，而這些批評不外乎是速度太慢、bug 太多⋯ 舉例來說，也許有讀者看過 Facebook 的 iOS app 出現類似以下的畫面：
+
+Facebook App 評價下滑
+最新一版的 Facebook iOS app 在 App Store 上評價只有兩顆星（但是過去的總體評價是四顆星），而給予評價的 23303 名使用者當中有 12809 人打了一顆星。通常一個 app 有超過半數使用者在五星評等中只給出一顆星的評價，說明這個 app 必定很有問題。
+來源：App Store
+來源：App Store
+請注意截圖中，每則給予一顆星的評論都獲得九成以上的認同。
+無獨有偶，最近 Android 的使用者對 Facebook app 也很有意見：
+來源：Google Play
+一開始 Facebook 的 iOS app 不是長這樣
+其實一開始 Facebook 的 iOS app 不是現在這樣，最初它是由 Firefox 瀏覽器的共同創造者 Joe Hewitt（他另一個有名的作品是 Firefox 的附加元件「Firebug」，目前有超過三百萬人（註 1）天天使用）所開發出來的，用了一部分他自己的開源碼專案「Three20 project」（註 2），堪稱當時 iOS app 的範本，許多有名的 app 也是參考他的設計（例如 LinkedIn）。但是在 Joe Hewitt 離開 Facebook 後，接手的團隊重寫了 Facebook app。
+幾天前 mobtest 在他們的部落格上發表了一篇文章〈Here’s why the Facebook iOS app is so bad (UIWebViews and no Nitro)〉（註 3），說明為什麼 Facebook 的 iOS app 會這麼糟糕。
+他們列舉出幾個 Facebook iOS app 的問題：
+app 的速度太慢
+不一致的訊息
+有時候代表「通知」的圖示告訴你有新的通知（例如妳的留言有人按讚），但其實沒有。
+app 甚至比行動版網頁還慢
+大家都在用速度越來越快的 iOS 原生 app 時，Facebook app 竟然比行動版網頁還慢，而後者提供了幾乎與前者一模一樣的功能。
+一大堆 bug
+超慢的顯示、照片上傳會失敗、文字框會消失、缺乏分享功能⋯
+問題：HTML、UIWebView、沒有 Nitro JavaScript 引擎
+HTML
+超文件標示語言（英文：HyperText Markup Language，HTML）是為「網頁創建和其它可在網頁瀏覽器中看到的信息」設計的一種標示語言。（參考來源：維基百科）
+UIWebView
+You use the UIWebView class to embed web content in your application.
+您可用 UIWebView 這個類別（class）將 web 內容嵌入到您的 app。 （參考來源：Apple iOS Developer Library）
+Nitro JavaScript 引擎
+JavaScript 引擎是一個專門處理 JavaScript 腳本的軟體程序，一般會附帶在網頁瀏覽器之中。而 Nitro JavaScript 引擎是 Apple  為旗下的瀏覽器 Safari 開發出來的 JavaScrip t引擎。（參考來源：維基百科）
+Facebook iOS app 是從 facebook.com 下載 REST（XML 格式而非 JSON）與 HTML。HTML 負責使用者的 timeline、個人資訊及社團的 timeline。我們可以發現有時候 Facebook app 在下載 HTML 和圖片/樣式（stylesheets）/JavaScript。為了在 app 裡顯示 HTML，開發者就用了 iOS 瀏覽器 Safari 裡的一個物件（component）「UIWebView」，它雖然方便，卻也很危險。HTML 檔案不小（15kb），包括了圖片、樣式和 JavaScript 的連結。由於 UIWebView 無法讓開發者對內容做有效的快取，每一次 Facebook 都會重新下載整個 Timeline 的 HTML 檔案，而 UIWebView 的效能又比不上行動版的 Safari，不但缺乏 Nitro JavaScript 引擎，也有安全上的疑慮。
+mobtest 的作者特地用自己的 iPhone 4（搭載 iOS 5.1.1）執行 SunSpider JavaScript Benchmark，結果在行動版 Safari 的效能是 iOS 原生 app 裡 UIWebView 的三倍快，也難怪使用者會覺得慢。而且為了 UIWebView 跟原生 app 之間的溝通，必須靠 JavaScript bridge，這東西很棘手，不但慢而且還不安全。
+對於相同資訊的呼叫無法同步
+前面提到資訊不一致的問題，是因為 REST 呼叫完成後，會回傳 XML 資料，先確認「通知」的數量（https://api.facebook.com/restserver.php），然後再透過一個獨立的呼叫擷取通知的內容（https://api-read.facebook.com/restserver.php）。由於 Facebook 會回傳不一致的訊息，導致使用者遭遇通知數與實際內容不相符。
+那為什麼 Facebook 不乾脆全面使用原生 app 的技術就好？
+因為 HTML 比 Objective-C 更容易調整內容的呈現方式，後者在處理一些狀況時候很麻煩，例如文繞圖的樣式。
+使用 HTML 跨平台容易許多。iOS、Android、BlackBerry、Windows Phone 使用技術都不同，造成開發者極大的困擾。要在不同的平台中分享內容及功能，靠 HTML 容易的多。
+HTML 更符合 Facebook 的連續佈署程序。Apple 的審核時間太長，不符合 Facebook 佈署程式碼的流程（每次都要送審的話那還得了）。
+世界上還有許多不是 iPhone/Android 的功能手機（feature phone）。一些比較沒那麼富裕、先進的地區（例如非洲），很多人都是透過功能手機來使用 Facebook。
+全世界只有一個 Facebook。當你我的朋友都在用 Facebook 的時候，就算它的 app 再糟糕，我們也只好繼續忍耐。
+至於 Facebook app 到底有多困擾使用者，我們可以參考一下 Facebook 產品總監（Director of Product）、Firefox 瀏覽器的共同創造者 Blake Ross 在 Facebook 公開上市前夕發出的一個訊息（註 4），他說明天 Facebook 要公開上市，問使用者們今天晚上 Facebook 是不是該做點什麼、各位使用者們希望加入什麼功能（或是修好哪些問題），結果就有人回應：
+“Fix the Android app. It is ridiculously slow.”
+“A mobile app that works.”
+“Fix the iPhone app.”
+“Please fix the mobile app.”
+（大家可以去 Blake Ross 的訊息網頁，在大家的留言中搜尋「app」XD）
+ 
+ 
+註 1：Firebug :: 統計資訊顯示板 :: Firefox 的附加元件
+註 2：Three20
+註 3：Here’s why the Facebook iOS app is so bad (UIWebViews and no Nitro)
+註 4：Blake Ross 的 Facebook 牆上照片
+
+
+
+
+Aslan Chen:
+May 21st, 2012 at 3:29 am
+ 速度太慢+1
+
+
+Pony Weng:
+May 21st, 2012 at 4:24 am
+ 世界上只有一個Facebook,即使再爛還是得用它....
+
+
+YaJing Liu:
+May 21st, 2012 at 4:51 am
+ 我android和iOS都用過，兩者相去不遠。沒有分享功能真的有荒謬到，你不是就是為了分享而存在的嗎？但全世界只有一個Facebook也是事實，大部份的人只能邊用邊罵...
+
+
+羽瀬川 小鳩:
+May 21st, 2012 at 5:15 am
+ 速度慢、功能不比行動版網頁多、吃的記憶體多、吃得內存容量也大
+什麼時候才有一個比較完美的Facebook app？
+真的受不了的時候還是跑去用FriendCaster for Android...
+
+
+Singuan Iap:
+May 22nd, 2012 at 12:15 am
+ 裝潢不好怪鐵鎚，不會開船嫌溪窄。就算UIWebView較慢，UIWebView也只是個工具。NTT DoCoMo是第一個成功的Mobile App Store，所使用的不過只是9.6K的連線。寫App的人亂寫的話，用什麼都危險，原生App也一樣。最重要的還是--人。工具是無辜的，別一知半解，胡亂造謠。
+
+
+陳宏綱:
+May 22nd, 2012 at 6:20 am
+ 還以為是我手機的問題，原來真的沒有分享功能...
+
+
+Taroa Chang:
+May 23rd, 2012 at 5:19 am
+ 真正的問題是apple與google都沒有意願與義務去讓html canvas的功能與效率提昇，因為他們都不會希望開發者只用html開發app，這樣尤如腳踏兩條船，事實上等html5有關getusermedia等手機周邊媒體存取的標準在今年或明年確立後，就會知道facebook自己也來做app market是憑什麼了。.
+
+
+Francis Lou:
+July 3rd, 2012 at 8:39 am
+ 那為什麼3rd party的FB client不會有問題呢?
+
+
+

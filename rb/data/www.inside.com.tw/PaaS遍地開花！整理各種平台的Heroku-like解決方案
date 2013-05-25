@@ -1,0 +1,83 @@
+
+
+
+[Image Credit]
+隨著雲端的概念逐漸發酵，像是Heroku這樣的新一代網站代管服務越來越受到歡迎，以Heroku為首許多不同平台的類似服務也相繼誕生，包含了Python、Java和PHP等都有相對應的服務，一起來看看吧！
+什麼是PaaS？
+PaaS是Platform As A Service的簡寫，便是以提供平台作為一種服務。以目前最具盛名、不久前才被Salesforce所收購的Heroku而言，就是提供了大家一個以Ruby為基礎的平台，讓大家可以自行在平台上開發各種網站，並且由Herkou來提供平台的架設管理。
+透過PaaS的最大好處，便是可以減少維護管理系統底層的成本。相對自己架設機器而言，必須要自己管理的系統、機器和軟體，其中只要一個環節一不小心出錯了，就有可能像某些網路服務一樣，將資料庫的帳號密碼等重要資訊通通曝光，造成敏感資料暴露在危險當中。
+除此之外，架設在PaaS的服務也可以透過簡單的介面來調整所需使用的硬體設備等級，程式完全不需要修改馬上就可以處理突如其來的龐大瀏覽量，而當使用者逐漸退去時，也可以馬上的將硬體降為一般的水準，省下額外的開支。
+就如同先前本站文章所提到的：
+網路創業實例：意外起飛、24小時累積10,000名用戶的Rapportive
+Rapportive的服務是放在知名廠商Heroku上，對於突然湧進的流量只需要增加Dynos的數量（Heroku提供服務的基本單位），基本上你是不需要修改你的程式的；當然，程式的優化、調整可以在同樣能耐的硬體等級上容納更多人。
+使用Heroku、不需要調整程式、只需要增加Dyno數量？真的有這麼美好嗎？事實上Rapportive就是這麼辦到的，在來自全世界的流量突然湧進時，Rahul Vohra手邊沒有電腦，於是他隨即拿起iPhone並且利用Nezumi這個設計來管理Heroku的應用程式，將Rapportive的Dynos增加到20個，就這麼簡單，可能不到一分鐘吧？！系統的能耐馬上就提昇了。
+而在台灣也已經有團隊使用Heroku作為主要的環境：
+Cardinal Blue的Facebook應用程式開發經驗分享：使用Ruby on Rails與Heroku
+使用Ruby on Rails並搭配知名的Ruby雲端運算平台：Heroku，特色是應用程式隨著流量的成長，無需擔憂系統管理（System Administration）或是硬體水平擴展的問題，Heroku提供了優越的Scalability能耐，透過簡單的應用程式指令或是Web介面便可依照需求調整所需的硬體資源。（類似Amazon EC2 Instance的計費方式，每小時有一定額度的費用）
+然而並不是每個團隊都是使用Ruby作為主要的開發語言，在市場上目前使用PHP/Java/.Net/Python的使用者仍然佔了很大部分的比例，隨著Heroku的流行，許許多多不同語言但類似的平台服務陸續竄出，以下便是我們的整理：
+Python的Heroku
+與Ruby相同熱門的Python是現在很多新一代網路創業者的首選，包含Instagram、Quora和Dropbox等服務在內都是使用Python。
+Google App Engine
+
+Google App Engine算是相當早期的PaaS服務，是Google所提供的雲端網站服務，搭配了webapp這套輕巧簡單的Python web framework和Datastore這套NoSQL的資料庫系統。
+除了webapp之外，任何支援Python wsgi標準的web framework包含最熱門的Django在內都可以在GAE上面運行。
+順道一題，台灣也已經有由知名開發者ericsk所撰寫的Google應用服務引擎開發實戰一書可以供入門者作為參考。
+Djangy
+
+顧名思義，Djangy所提供的便是Django的平台服務，支援背景工作（background job），如同Heroku一般是使用git作為上傳佈署的方式，並提供了shell下所使用的管理指令，看起來相當的不錯且完整。
+Djangy目前仍然在封閉測試當中，有興趣的使用者可以在其官方網站上索取邀請函。
+DjangoZoom
+
+另外一個專門為Django打造的PaaS服務，同樣是使用git作為上傳佈署的方式，目前也仍然在測試當中，有興趣的使用者可以在其官方網站上索取邀請函。
+ep.io
+ep.io則是另外一個我相當看好的選擇，相對於Djangy是以Django的支援為主，ep.io支援了透過Python標準WSGI所設計的網頁框架，所以包含Django在內，其他熱門的選擇像是Flas或者是Quora所使用的Pylons都可以支援。
+ep.io目前也在封閉測試當中，有興趣的使用者同樣可以在其官方網站上索取邀請函。
+Java的Heroku
+Java在網路的開發領域上算是具有數一數二的份量，許許多多的企業都是透過Java作為其網站開發的主要語言，且具有龐大的使用者基礎，故仍然在雲端時代相當的受到歡迎。
+Google App Engine for Java
+
+是的，Google App Engine同樣有提供Java的服務，使用標準的servlets和JSP等技術，搭配上JDO和JPA介面的DataStore，讓Java的使用者同樣可以透過GAE來開發程式。
+AWS Elastic Beanstalk
+
+談到雲端時代，最重要的網路公司之一莫過於Amazon了，其所提供的EC2、S3或是Cloudfron服務都是許多先進網站的重要底層架構（包含Heroku實際上便是運行在EC2上），而最近他們所推出的Elastic Beanstalk便是提供了PaaS的服務，讓開發者可以快速的部屬Java程式到Amazon的機器上。
+雖然目前此項服務仍在測試當中，但我相信Amazon所提供的雲端服務一向是具有相當水準的，在未來一定會有很好的發展。
+PHP的Heroku
+PHP是專為網路服務所打照的語言，由於其相對好上手的特性，在網站中是相當的普遍，包含Inside部落格在內，許許多多的網站、部落格論壇都是用PHP所開發，其中最著名的代表莫過於就是Facebook了。
+phpfog
+
+phpfog是PHP的Heroku類服務中最受矚目的一個，標榜秉持著N-Tier的概念，就是將資料庫、平衡負載和網頁伺服器等等通通分配在不同機器上，來達成最佳的效能和穩定度，並且提供許多PHP Apps的快速安裝功能，和git為主的程式上傳功能。
+目前phpfog也是在測試當中，有興趣的讀者可以透過網站上的表格加入等候邀請函，或是參加其Facebook/Twitter的活動來獲得搶先的測試機會。
+cloudcontrol
+
+cloudcontrol也是針對PHP所提供的Heroku-like服務，其特殊的地方是在計費的方式是透過所謂的boxes，也就是透過access_log分析來顯示出使用的直線圖，然後選定一個方形的大小來付費。
+另外一點特殊之處在於，cloudcontrol不需要邀請函，已經是一個正式開放的服務了。
+.Net的Heroku
+ASP.Net雖然是微軟的解決方案，一般需要較高的授權金而讓許多網路創業者卻步，但是仍然有包含像是stackoverflow等知名網站使用。
+Windows Azure
+
+提到C#的Heroku，一定要提到微軟官方所提供的Windows Azure平台了，隨著雲端時代的到來，微軟也提供了許多相關的服務，主要分為Windows Azure和SQL Azure，也就是運算平台和資料庫的平台提供開發者使用。
+目前Azure的成功案例大多為企業用戶為主，不過在微軟的努力推廣之下，也逐漸有越來越多的開發者陸續投入。
+AppHarbor
+
+AppHarbor則是.Net平台上的另外一個非官方的選擇，其官方網站強調的他們為「Azure done right」，也就是改善了許多Windows Azure的缺點，比如說像是佈署時間過長，或者是操作設定上的不方便等等。
+個人認為AppHarbor具有相當的潛力可以和Azure抗衡，無論是在操作的簡便度或者是收費的策略上，都相對於官方的平台好上一些。
+綜合型PaaS
+Makara
+
+Makara是前陣子被Red Hat（知名Linux領導廠商）所收購的PaaS平台，現階段提供PHP和Java的平台服務，未來可以支援包含Ruby/Python等在內的各種語言。而相對於其他一般的PaaS，Makara提供了更好的彈性讓開發者可以選擇佈署到不同的雲端上，包含Rackspace和Amazon EC2等。
+由於背後有Red Hat的加持，加上高度的延展性，我認為Makara也會是未來市場上相當具有競爭力的。
+結論
+在創業過程中，我們往往需要對於人力資源的分配斤斤計較，許多創業者都曾經感嘆好的人才是需要花上很多時間才能找到的，而千辛萬苦找到的程式設計夥伴，當然要讓他們能夠專心撰寫程式，而不是浪費時間在系統的管理、維護上面。
+此外，若是您的網路服務具有極大潛力，隨時有可能受到網友關注、一夕爆紅，那們更應該要使用PaaS的服務，便可以隨時增加硬體的負荷能力，而不會錯過任何一位寶貴的使用者。
+有更多的PaaS使用經驗想要與我們分享？歡迎大家的留言與討論！
+
+
+
+
+张志超:
+December 27th, 2012 at 4:37 am
+ 怎么没有介绍新浪的SAE
+
+
+
+ Tagged with: Cloud Computing, heroku, PaaS 

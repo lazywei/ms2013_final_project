@@ -1,0 +1,34 @@
+
+
+credit: Facebook Developer Blog
+Facebook 今天於開發人員部落格上宣佈推出 App Center，作為協助 iOS、Android 及 web app 開發者們推廣 app 的中心。在接下來的幾週，使用者將可陸續從 Facebook 的 iOS app 或 Android app 登入 App Center。
+目標是成為最大的 app 集散地
+目前 Facebook 已經擁有超過九億名會員，他們相信對於 app 開發者而言 App Center 會是一個有利於產品曝光的平台，使用者在此將會更容易找到好 app。
+Facebook 表示他們會將流量導向 Apple App Store 及 Google Play。當使用者點擊 App Center 中的某個 app 連結時，會自動將使用者導向該 app 所屬的應用程式商店。
+協助開發者掌握品質
+而 App Center 除了利於開發者推廣 app，還會在「洞察報告（Insight」（註 1）頁面為「上架（well，不是 App Store 那種『上架』）」的 app 提供品質相關數據，告知使用者評價 app 的狀況。品質優良的 app 將較有機會被「醒目」地在 App Center 上展示出來，至於使用者評價過低、不符合「App Center Guidelines（註 2）」的 app 將會被除名。
+協助開發者掌握使用者評價的「洞察報告」
+Facebook 已經提供 app 上架流程的說明（註 3），如果開發者在5月18日以前將 app 頁面的各項細節（例如 app 的截圖、功能描述等）設定完畢後提交，那麼他們的 app 便有機會率先在 App Center 上曝光。
+Facebook 有多認真？他們甚至為了美感問題對開發者在選擇圖片上給予建議：
+圖片請不要有圓角。
+請不要為圖片加上邊框。
+logo 必須要有底色，不能空白。
+logo 周圍請留點空間，不要大到邊緣被裁掉。
+
+開發者將可在 Facebook.com 提供付費 app
+Facebook 同時宣布他們計畫讓開發者在 facebook.com 提供付費 app，他們將會提供很簡便的付費機制，如果開發者們有興趣，可以加入他們的 beta 計畫（註 4）。
+為了克服弱點？
+先前 Facebook 在他們為了申請 IPO 所遞交的文件中陳述過，他們的風險因子之一是行動科技方面較為不足，顯然這次的 App Center 是 Facebook 為了向投資人展示他們正努力地克服自己的弱點。
+如何挖掘好的 app 已成為令人頭痛的問題
+今年初 Apple 併購了提供行動 app 搜尋服務的 Chomp，一般相信就是為了要加強 App Store 的 app 搜尋、推薦功能，以協助使用者在數十萬 iOS app 當中找到所需的 app。如果 Facebook 企圖成為 web、iOS、Android app 的推廣中心，那麼如何協助使用者從多如繁星的 app 中進行搜尋、獲得推薦，勢必是將來要面臨的課題，而比起 Apple，Facebook 所擁有的大量使用者資料或許更具優勢。
+事實上 Facebook 也不是第一個以第三方身分協助開發者推廣 app 的網路巨人，Yahoo! 與中國的騰訊皆已分別推出 Yahoo! App Search 與騰訊應用中心的服務。
+ 
+註 1：Insights
+註 2：App Center Guidelines
+註 3：App Center Tutorial
+註 4：Paid Apps Sign Up
+
+
+
+
+

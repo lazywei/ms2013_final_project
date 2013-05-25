@@ -1,0 +1,71 @@
+
+
+開課至今已經過了一個多月了，在第五堂課之前的內容大多都是一些基礎的觀念，是用來幫助我們建立iPhone應用程式的基本概念。而在這堂課開始，我們將深入了關於iPhone應用程式的深入細節。而在第五堂課中，主要的內容就是關於View的部份，也就是介面的呈現。
+Views
+在前面幾堂課中我們曾經提過MVC的概念，也大概解說了View主要負責功能：顯示內容、處理事件。而在實做上，每個View都是UIResponder的子類別，在畫面上以方形呈現。此外，每個View下面都可以包含其他的View，形成一個階層的形式，要注意的是，每個View中涵蓋的子View是用陣列存放，根據Index不同會決定顯示的優先順序。
+而在iPhone程式中，每個程式裡面會有唯一一個UIWindow這個View，而剩下的所有的View都會包含在UIWindow中。我們要如何新增一個View到程式裡面呢？有兩種作法，一種是透過Interface Builder新增，另外也可以透過UIView的一些相關方法：
+ - (void)addSubview:(UIView *)view;
+ - (void)removeFromSuperview;
+透過- (void)addSubview方法新增的view會自動被retain，需要注意的是，當要移除某個View的時候直接對那個View呼叫- (void)removeFromSuperview即可。當然，UIView也提供了一些方法讓我們可以手動調整View的優先順序：
+ - (void)insertSubview:(UIView *)view atIndex:(int)index;
+ - (void)insertSubview:(UIView *)view belowSubview:(UIView *)view;
+ - (void)insertSubview:(UIView *)view aboveSubview:(UIView *)view;
+ - (void)exchangeSubviewAtIndex:(int)index withSubviewAtIndex:(int)otherIndex;
+如果當我們只是想要暫時隱藏某個View的顯示，我們可以直接透過theView.hidden = YES;就可以把View藏起來，不需要將View移除掉。
+UIView的定位系統
+
+UIView掌管了畫面上元素的顯示，自然會需要精準的計算，與座標系統有關的物件結構有以下幾個：
+CGPoint -- 座標上的點，包含x和y
+CGSize -- 物件的大小，包含width和height
+CGRect -- 結合以上兩者，包含origin和size
+相對應的建立函式有以下幾種，其中的參數均為浮點數：
+CGPointMake(x, y)
+CGSizeMake(width, height)
+CGRectMake(x, y, width, height)
+在iPhone的畫面上，最左上角的為原點，x軸將往右延伸而y軸則是往下，如下圖所視：
+
+View的座標和大小又可以有兩種表達方式 ：Frame和Bounds。Frame就是以上層View的角度來看的座標系統，而Bounds則是自己本身的座標系統
+，而對最上層的View來說，其Frame等同於Bounds。需要注意的是，Frame並沒有被儲存在物件中，是透過物件的中心點座標以及長寬的資訊被計算出來的。對於Bounds和Frame有疑惑的朋友，可以參考下圖：
+
+你或許會感到好奇，這樣看起來Frame跟Bonuds的功能大同小異，但是當物件若進行旋轉，則Frame會變成上層View中能涵蓋此View的最小的四邊形，如下圖所示：
+
+那我們要在什麼時候使用Frame，而又在什麼時候使用Bounds呢？可以用以下方法區隔：
+當你在使用View的時候，透過Frame去操作，像是當我們建立View的時候或是將View加入另一個View時
+當你在實做View的時候，透過Bounds去操作，例如處理事件或是畫View的元素時
+建立View
+要如何建立View的物件呢？其實相當的簡單。我們只要在Interface Builder中將想要的UI物件拉到Nib檔中就可以了，就像作業2B一樣的操作。
+
+不過我們也可以用程式碼來建立新的View，透過UIView物件的;- (id) initWithFrame: (CGRect) frame就可以依照Frame建立新的View。但千萬要記得，剛建立出來的View要透過addSubview將它加入到正確的View當中。
+那我們要如何建立自己的View類別呢？其實我們只要創立一個UIView的子類別這樣就可以了！
+UI動畫
+UIView中提供了許多可以作成動畫效果的相關property，像是frame、bounds或是alpha和transform都是常見的例子。而除了這些可以作成動畫的元素之外，也有一些相關的選項。下面是一個簡單的範例：
+- (void)showAdvancedOptions {
+    // 假設polygonView和optionView的存在
+    [UIView beginAnimations:@”advancedAnimations” context:nil]; // 開始動畫
+    [UIView setAnimationDuration:0.3]; // 動畫時間設定為0.3
+
+    optionsView.alpha = 1.0; // 將optionView的alpha值設到1（也就是完全顯示的狀況，目前為0，也就是隱藏）
+
+    CGRect polygonFrame = polygonView.frame;  // 取得polygonView的frame
+    polygonFrame.origin.y += 200;  // 移動 frame
+    polygonView.frame = polygonFrame; // 將移動過後的frame指派給polygonView，也就是讓polygonView往下移動
+
+   [UIView commitAnimations]; // 執行動畫
+}
+在以上這個範例中，我們將可以看到當此方法被呼叫之後，polygonView將會往下移動，而optionView則從原本的透明狀態恢復成正常顯示，就如同下圖中的顯示：
+
+然而，iPhone上的動畫是非同步的，誠如上面程式所見，我們其實不知道什麼時候動畫執行完畢。為了解決這個問題，我們可以使用[UIView setAnimationDelegate:myController];來設定delegate類別，當動畫要開始或結束時都會分別呼叫delgate類別的對應方法。詳細的方法介紹在投影片的第73頁可以參考。
+以技術上的角度來講，雖然iPhone是透過硬體加速來完成這些絢麗的動畫，但實際是每一張View的繪圖結果是會被快取起來的，只有當內容有做改變的時候-drawRect才會被再度呼叫。
+最後，除了以上的物件移動及透明度的修改之外，UIView也有提供變形的property，也就是transform。透過這個property和Core Graphic的函式，我們可以設定像是縮放、旋轉等複雜的變形效果。有興趣的朋友還請參考下面的參考資源。
+結論
+在這次的內容中我們學到了關於View的概念以及如何使用View來建立一些動畫的效果，而在下一次的筆記中，我們將前進到第六堂課，還請各位讀者敬請期待！
+參考資源
+Lecture #5 -- Views, Drawing, Animation
+UIView Class Reference
+Core Animation Programming Guide
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

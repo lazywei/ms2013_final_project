@@ -1,0 +1,36 @@
+
+
+ 
+
+ 
+社群網站提供了一個新的交流平台，可以説是市場意見與想法的金礦，但是要如何在這當中真的挖到金子，則不是每個人都可以辦到。同時在網路上流竄的資訊量對於市場分析來說都很重要，但是一直以來都沒有辦法突破情感分析（sentimental analysis）這一個領域。一般的分析都是二元分類以及關鍵字搜索，但這個準確度非常低。情感分析依然無法突破人類語言的多樣性，所以目前階段可能先不要放太大的希望在情感分析的準確性上。一開始，我們先談一下最近WiseWindow這間公司，因為他的Mass Opinion Business Intelligence服務而默默的受到一些關注。
+ 
+
+WiseWindow是Rajiv Dulepet在2007年創立的公司，他之前是Standford的管理與工程學院的客座教授，帶領2004年及2008年總統大選的選前預測統計計畫。
+公司介紹：
+Wise Window, Inc. provides mass opinion business intelligence solutions. The company offers Mass Opinion Business Intelligence, a solution that translates mass opinions expressed on the Web into an actionable data for business. It serves market researchers, marketing strategists, and business leaders. Wise Window, Inc. was founded in 2007 and is based in Irvine, California.
+他們和一群網路測量，雲端運算，以及市場分析專家開發了這個叫Mass Opinion Business Intelligence（簡稱：MOBI）的雲端運算程式，目的是要正確解讀／翻譯在部落格、新聞報導、線上論壇及社交網站上，市場對於特定產品，服務，人物或新聞議題的即時反應以及意見走向。
+WiseWindow認為之前的情感分析（Sentiment Analysis）策略是不可行的，情感分析的做法是先搜尋一切產品關鍵字，再根據其做簡單的二元分析，也就是 ‘罪惡’等於‘壞’，‘愛’ 等於‘好’，來判讀一個句子是正面還是負面，但是當以關鍵字做搜尋時候，整體內容就會被忽略，而且，每個人都會用不同的字眼來表達自己的情感，這種運算抓不準人類語言的特別用法，如反諷，俚語，或揶揄。因此WiseWindow指出他們的MOBI是用主題為主，帶出所有相關的談論意見，並且根據相關的意見再做出分析。
+ 
+
+［Image Credit： Kia］
+例子一
+像是Kia汽車就選擇了跟他們合作，因為他們對於市場會對2012年的Kia五門掀背車車款Rio在4月的車展有甚麼樣的反應很在乎，因為這會影響到他們接下來要推出的三門掀背車車款。原本主打省油及價廉物美的他們想要改變他們的品牌形象，變成 ‘設計時尚及高科技的結合’，但是最重要的還是消費者的反應。他們必須要即時以及長期監控消費者的意見，而不是只要一個時期的意見就好了。結果Kia在2月的超級盃（Super Bowl）中觀察到除了他們和其他9間汽車公司的廣告放送後，除了即時獲得正面的討論，連接下來的幾周內依然有很多正面的意見，結果，他們目前相信他們應該是可以轉型成功。
+例子二
+
+他們對馬莉與我（Marley and Me）這部電影做了調查，片中主角為 Luke Wilson與Jennifer Anniston，他們一開始釋出的宣傳片段是以Luke Wilison為主角，但是根據他們對網路做出調查，他們發現Jennifer Anniston比較有吸引力，因此最後預告片改成用Jennifer Anniston為焦點。
+社群網路分析對於市場調查來說非常的重要，以上的例子可以看正確的判讀資訊會影響到一個產品的銷售。
+那麼MOBI如何區別自己與其他用關鍵字作為市場調查的公司呢？
+舉例來說，美國藝人Pink如果用關鍵字式搜尋然後分析，勢必出現很多不相干的訊息，如顏色，或者另外一些藝人的歌名，但是如果是MOBI的方式，就會先用Pink以及音樂產業的關係分類，把大部分的雜訊去除，然後再分析市場的反應。另外一個例子是美國藝人Lady Gaga，如果用一般關鍵字的分析，可能會得到負面的市場反應，但是以MOBI的角度來看那些負面的字眼，其實對於該藝人來說是正面的效應，如果純粹用關鍵字作為參考，得出的調查報告可能不夠客觀。
+例如我們可以來看看tweetfeel作為關鍵字搜索的情況會出現甚麼樣的狀況，如果我在搜尋欄打上上列的例子，我們會看到網友們即時的Tweet，而綠色的字代表正面，紅色代表負面：
+
+ 
+結果我們看到這樣的判讀還是出現了一些誤差，如果今天企業拿到的調查報告是根據這樣的關鍵字搜索而得出的數據，那倒不如繼續請人在路邊做問卷調查，有興趣的網友也可以繼續使用Tweetfeel以及其他的網路情感分析小工具來做實驗。
+利用社群網站的特色來做市場分析的產業最近在美國出現越來越多的趨勢，優點是能夠獲得大量的資訊，但是缺點是由於提供資訊的人並不是在問卷導向的情況下（或者知情的情況下）提供這些資訊，因此就會出現很多雜訊，要成功的在各家市場分析公司中妥引而出就要看誰能夠正確的篩選並且過濾雜訊，否則目前看來大家提供的市場報告都非常的不可靠。（就像是每次預測選舉都很不準確）
+ 
+
+
+
+
+
+ Tagged with: Mass Opinion Business Intelligence, MOBI, sentiment analysis, wise window 

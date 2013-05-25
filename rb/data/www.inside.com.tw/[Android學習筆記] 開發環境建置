@@ -1,0 +1,46 @@
+
+
+之前分享了許多Android的報告，Android的市佔率在短時間內大幅成長。你是否也想要參與開發Android了呢？或是你也想要在你的Android手機上，放一支自己寫的程式呢？而且，Android的開發環境在網路上都可以免費下載哦，網路上也已經有相當多Android開發環境的教學了。以下是筆者的做的開發環境建置紀錄分享。
+下載Android SDK
+選擇你的作業系統版本下載android SDK，並解壓縮。(解壓縮位置可以自行決定)
+http://developer.android.com/sdk/index.html
+
+
+下載並安裝JDK
+http://java.sun.com/javase/downloads/index.jsp
+
+選擇你的作業系統版本並下載安裝(筆者的作業系統是64位元)
+
+接著打開剛剛解壓的Android SDK，打開SDK Setup.exe選擇Setting，勾選Force https://…sources to be fetched using http://…. 後關閉。
+
+下載並解壓Eclipse
+至http://download.eclipse.org/eclipse/downloads/drops/R-3.5.2-201002111343/index.php#EclipseSDK選擇你的作業系統版本的Eclipse版本並解壓，打開點選eclipse.exe就會進入Eclipse畫面。
+選擇Help->Install New Software
+
+接著點選Add
+
+Name可以任意輸入英文，Location輸入：http://dl-ssl.google.com/android/eclipse
+ 接著下方會出現Developer Tools，把所有Checkbox都打勾後按下OK
+
+接著就是一直Next…Next…Accept，然後按下Select All後按下OK。
+接下來，選擇Window-> Preferences
+ 打開Android標籤，在SDK Location中輸入你剛剛解壓縮Android SDK的位置。後按下OK。
+ 打開Window-> Android SDK and AVD Manager
+ 選擇Installed Packages接著按下 Update All
+
+按下Accept後就可以Install了。，此時會花一點時間下載更新。
+
+大功告成^^，趕快打開Window-> Android SDK and AVD Manager 按下New
+ 下一步
+Name：可以任意輸入英文的模擬器名稱，筆者是輸入New_GPhone
+Target：可以選擇你需要的Android版本
+下方還可以設定SD Card和螢幕外觀等詳細設定。接著按下Create AVD
+
+以上的設定都完成後，就可以點選你剛才設定好的模擬器，按下Start->Launch。然後就可以看到Android 2.2的介面囉！大功告成，是不是很簡單呢？快來寫你的第一支程式吧！
+
+
+
+
+
+
+ Tagged with: android, android學習筆記 

@@ -1,0 +1,45 @@
+
+
+Chirp是Twitter在4/14以及4/15在舊金山所舉辦的開發者大會，內容包含Twitter的未來規劃以及平台的新功能。在會前許多媒體紛紛猜測Twitter將在這次的會議中公佈關於地理位置資訊的整合，以迎戰目前最火熱的Foursquare以及Gowalla等LBS。此外，前幾天Twitter推出官方版的Twitter軟體，這件事情所引起開發者的憤怒也獲得了解釋。就讓我們一起來看看Twitter的最新策略吧！
+
+數據
+在開始討論最新的平台策略之前，我們或許可以看看Twitter目前的亮眼數據：
+Twitter目前有105,779,710位用戶，也就是一億五百多萬的註冊使用者。
+每天新增30萬個使用者。
+每個月有一億八千萬個unique visitors。
+平均每天有三十億個API呼叫。
+目前有十萬個Twitter應用程式，去年這個數字只有五萬。
+75%的流量都是來自Twitter網站外。
+這裡面最值得開發者注意的，莫過於「75%的流量都是來自Twitter網站外」。換而言之，四分之三的Twitter流量，都來自於Twitter API所開發出的相關程式，而並非Twitter官方網站。
+此外，目前Twitter有175個員工，而去年只有25位。
+對於官方版Twitter軟體的回應
+前幾天Twitter收購了知名iPhone Twitter軟體Tweetie的開發商，將其改為免費的Twitter for iPhone軟體。而在同時，Twitter也與RIM合作推出Twitter for BlackBerry的軟體。許多開發者對於此事感到相當憤怒，認為Twitter以官方的名義推出軟體，這樣的作法是在傷害開發者對平台的信任關係。
+針對這件事情，Twitter的執行長Evan Williams在演講中解釋了這策略背後的動機：在數個禮拜前，他們針對潛在的使用者進行測試，發現使用者沒辦法在iPhone的App Store上找到一款免費、官方的Twitter軟體，雖然App Store上不乏一些設計精良的軟體，像是Twitterrific等，但這些軟體大多數是收費的。
+因此，Twitter想要透過推出官方的軟體，來讓更多的使用者能夠在手機上使用Twitter。Twitter提出了數據證明：前三天的新增使用者中，7~8%均來自於BlackBerry上的官方軟體，而在全部的tweets中，BlackBerry的官方軟體也佔了1.7%。
+「我們對於開發者最好的幫助，便是讓Twitter上可以有更多更多的使用者。」
+地理位置
+在目前的Twitter API中，關於地理位置的功能，僅僅能夠在每則tweets中加入座標以及高度的資訊，這樣的功能顯然是不夠的。因此，在這一次的大會中，Twitter宣佈將建立景點的資料庫，並稱這些位置為「Points of Interest」。而在發表tweets的同時，我們就可以一併紀錄下目前所在的景點為何。
+或許有些讀者已經注意到，這種作法其實跟Foursquare等LBS網站所提供的check-in功能相去不遠。但Twitter表示，他們並不只是想複製Foursquare或是Gowalla的模式，Twitter更專注於景點上所發生的內容。
+筆者不禁猜想，若使用者可以直接透過更新Twitter就一併紀錄下目前的位置，那使用者為什麼還要另外去其他網站check-in呢？
+@anywhere
+@anywhere平台也是這次的重點，就如同Facebook Connect一般，@anywhere的目標便是讓Twitter能夠被嵌入到開發者所開發的網站中，而只需要透過數行JavaScript。
+
+透過@anywhere，Twitter與開發者的網站可以作更緊密的結合。像是可以直接在第三方的網站上取得Twitter上的訊息，也能夠即時更新網站上的最新活動到Twitter上。
+而在目前，包含Foursquare、Gowalla以及Wall Street Journal都已經開始使用這些功能，相關的程式以及文件也已經公佈。
+User Stream
+在以往的時候，當我們電腦、手機上的Twitter軟體必須定期呼叫API，去檢查使用者是否收到新的tweets或是favorites等。但在這次開發者會議中，Twitter公佈了新的User stream技術，當使用者在Twitter上收到新的訊息時，User stream便會將這些訊息即時的送到應用程式中。
+對於開發者而言，User stream的功能也代表Twitter解除了長久以來的API呼叫限制。在以往，每小時所能呼叫API的次數是有限制的，若是開發者想連續呼叫Twitter API來模擬即時更新，便會遭到Twitter禁止。
+透過User stream，Twitter的即時性將與傳統的即時通訊軟體逐漸拉近，而這樣的即時性是否能帶來更多講究時效的應用？這值得許多開發者仔細思考。
+Annotations
+此外，Twitter也宣佈將在下一季整合Annotations的功能到Tweets中，開發者將可以在任何一則Tweets中自由加入相關資料，並且從Tweets中取得這些附加的資料。
+這樣的新功能帶來許多可能性，開發者將可以直接使用Twitter的Tweets作為其網站、程式的動態更新Feed，進一步的再搭配上@anywhere的整合，未來的網站將可以架構在Twitter之上，而不需要重新造輪子。
+結論
+Twitter在這一次的大會中，宣佈了許多未來的新功能以及整體的Roadmap。不僅是加入了地理位置的功能，並且將整個Twitter轉變成更加開放的平台，讓各路開發者能夠在平台上自由發展應用服務。
+而在今天，Twitter也公佈了新的開發者網站，API的參考文件已經全部翻新，有興趣的讀者可以自行閱讀參考。
+而Inside也將陸續刊載後續的消息以及報導，還請各位讀者敬請期待！
+
+
+
+
+
+ Tagged with: api, chirp, LBS, location, Twitter 

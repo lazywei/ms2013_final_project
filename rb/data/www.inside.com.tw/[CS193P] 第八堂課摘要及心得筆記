@@ -1,0 +1,73 @@
+
+
+在上次探討了Navigation Controller等內建的類別之後，在這一次的課程內容中，我們將看看要如何在iPhone開發平台上使用資料表格以及可以捲動的View，還請各位多多指教！
+Scroll Views
+在iPhone應用程式中，像是內建的地圖程式，我們可以自由的用手指在畫面上移動，而畫面也會隨之而捲動。而這樣的功能可以透過UIScrollView這個UIKit內建的View來完成。除了地圖之外，像是記事軟體中的文字顯示或是相簿的顯示也都是透過UIScrollView或其子類別完成的。此外，除了捲動之外，UIScrollView也支援了放大縮小的功能，這將會在等會的內容中提到。
+而建立一個UIScrollView的方法就如同其他UIView一般，我們可以透過Interface Builder或是在程式中完成：
+    CGRect frame = CGRectMake(0, 0, 200, 200);
+    scrollView = [[UIScrollView alloc] initWithFrame:frame];
+當然，我們也需要加入需要顯示的圖片作為subView：
+    frame = CGRectMake(0, 0, 500, 500);
+    myImageView = [[UIImageView alloc] initWithFrame:frame];
+    [scrollView addSubview:myImageView];
+最關鍵的步驟是，我們需要替UIScrollView設定兩個屬性，分別是contentSize和contentInsect，前者是將要顯示的view尺寸，後者則是顯示的view四周的留白，關於這兩者的差異，可以參考以下的示意圖：
+
+那我們要如何得知使用者開始捲動畫面或是進行其他動作呢？我們可以使用delegate，也就是讓某一個物件來負責接收這些訊息，並且做出對應的處理。在實做上，我們需要讓這個物件類別去實做<UIScrollViewDelegate>這個Protocol中所需的方法以及一些選擇性的方法，像是下面這個：
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    // 對捲動的動作進行回應
+    if (scrollView.contentOffset ...) {
+    }
+}
+至於放大縮小，我們則需要先設定：
+scrollView.maximumZoomScale = 2.0; // 最大放大倍率
+scrollView.minimumZoomScale = scrollView.size.width /myImage.size.width; // 最小縮小倍率
+然後還要實做這個delegate方法：
+- (UIView *)viewForZoomingInScrollView:(UIView *)view {
+    return someViewThatWillBeScaled; // 回傳某些可以被放大縮小的View
+}
+另外，我們也可以直接呼叫函式- (void)setZoomScale:(float)scale animated:(BOOL);來直接放大縮小到某個特定的倍率，也可以用- (void)zoomToRect:(CGRect)rect animated:(BOOL);來放大縮小到某個特定的位置，UIKit會自動幫我們找到最適合的縮放倍率以做顯示。
+Table View
+在iPhone中的大大小小程式都會看到Table View的出現，除了一般的表格資料呈現之外，設定的呈現也往往用Table View，主要分成以下兩種：
+
+而針對UITableView，我們有一些特別的慣用術語，我們稱作每一行為Cell，而許多Cell可以組成Section，每個Section上下又分別有Header和Footer，而許多個Section則組成了整個Table，當然Table也有Header和Footer，整體來說，如以下兩張圖所示：
+
+
+在Table View中顯示資料
+重點來了，我們要如何在Table View中顯示資料呢？一開始我們可能會猜測是否是直接設定一個陣列給Table View，然而這樣做會造成所有的資料都必須一口氣讀入記憶體，對於效能將是很大的危害。所以在Cocoa中，我們使用的是一種有彈性的方法，藉由指定資料來源(Data Source)，並且實做以下的方法：
+// 回傳TableView中的section數量，若不需要使用section，則預設為1
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)table;
+// 回傳某個section中所包含的rows數量
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+// 回傳某section某row的cell，也就是資料欄位
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+至於這個NSIndexPath到底是什麼？其實他是一個特別用來在巢狀的資料結構中定位的類別，包含了row和section兩個property可以設定、使用。在投影片69頁中有個簡易的Data Source實做，大家可以參考。
+然而，雖然動態產生cell回傳比起直接建立所有cell來說在效能上有所增進，但仍然會遇到一些瓶頸。事實上，這些cell在同一張table中往往可以重新利用，只需要修改內容就可以了，因此UIKIt提供了這樣的方法：- (UITableViewCell *)dequeueReusableCellWithIdentifier: (NSString *)identifier;，在應用上，當我們init一個UITableViewCell的同時需要設定reuseIdentifier，這個參數將會替cell做標籤，未來我們就可以用這個reuseIdentifier去取得同樣的cell並重複使用。
+在投影片的72頁到79頁之間也介紹了一些重新讀取資料的方法可以呼叫，有興趣的讀者還請自行參考。
+Table View的動作行為
+就如同一般的UIView一般，當cell被使用者點選時，我們需要做出相對的動作，像是push一個新的View到NavigationController上等。要完成這樣的功能，我們可以實做- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath這個方法。
+而我們也可以禁止使用者點選某些特定的Row，只要實做- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath，回傳NSIndexPath代表允許使用者點選，而回傳nil則代表不能點選。
+UITableViewController
+誠如我們上面所見，要建立一個UITableView除了要設定Data Source之外，還有許多方法需要實做。為了方便我們能夠快速開發，Cocoa提供了一個UITableViewController，這個特別的ViewController包含了一個TableView，並且定義了以上大多的方法還有少數的實做，此外，這個Controller也會處理一些預設的行為，像是在TableView出現之前，會幫我們呼叫 -reloadData這個方法等等。
+Table View Cells
+在Data Source那邊我們曾經透過 (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;這個方法來建立Cell，想必大家有注意這裡有一個UITableViewCellStyle參數，下圖就是幾種常用的：
+
+而對於每個UITableViewCell，我們可以設定 ：
+cell.textLabel.text -- 主要的文字
+cell.detailTextLabel.text -- 補充文字（灰色的文字或是藍色的文字）
+cell.imageView.image -- 顯示的圖像
+除此之外，也可以藉由- (UITableViewCellAccessoryType)tableView:(UITableView *)table accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath;設定Accessory Type，也就是每個Cell的小按鈕，如下圖所示：
+
+除了使用這些現成的的UITableViewCell方法之外，我們也可以直接修改cell.contentView，自行加入想要的UIView作為subView。
+結論
+在這一次的心得筆記中，我們涵蓋了iPhone中最常見到的Table View顯示，相信大家應該很有收穫。在下一次的筆記中，我們將會進入資料的儲存以及讀取，還請讀者敬請期待！
+參考資源
+Lecture #8 -- Scroll Views and Table Views
+UITableView ClassReference
+UITableViewController Class Reference
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

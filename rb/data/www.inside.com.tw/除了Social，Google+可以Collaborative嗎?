@@ -1,0 +1,82 @@
+
+
+
+
+(Google+與Google Apps 合成圖)
+
+ 
+這幾天大概讀者都籠罩在一片Google+的大雲下，已經受邀啟動服務者，開始玩他的功能；還拿不到邀請者，頻頻找朋友或方法要一個；而Google這次釋出invitations，走走停停，也釣足胃口。
+Inside的作者們即時且親身體驗的連續兩篇相關文章，Mono的"Google+測試版 開箱文，谷?歌牌社群網站"與Lawacne的"愛上Google+的 5+1個理由"，按"讚"數一天不到快速地超過1k(截至目前為止，後者已經突破2k)，可預見Google+受讀者關注的熱浪，還會隨著未來Google釋出邀請與更多人使用而持續高漲不退。因為上述兩篇佳文已經把Google+的主要功能介紹得很仔細，所以若再介紹Google+是多此一舉，筆者想由不同的角度來看Google＋：
+Google+不論Google是否極力想撇清與Facebook的competition，但不可否認的，Google+的骨子裡就是Social，這是Google進入Social network相當重要的一役。但除了Social之外，還有其他的可能性嗎?
+筆者日前在台灣創業，team members主要在台北，但筆者大部分時間是在San Jose，所以筆者非常需要一些工具，盡量與台北的team可以有效的溝通。最主要的兩個工具為使用Basecamp(付費)來管理專案，以及利用Skype來開會(語音或視訊會議)。
+而最近發現使用Facebook的Group來作debug的tracking也很方便，一個bug一個post，team members都可以在同一個post上回應意見與更新debug進度。上述除了basecamp需要付月租費(美金$24)，其餘皆免費，這對一個新創公司來說，可以把有限的資源($$)運用於團隊的建立與核心產品的開發，又可以有效地進行內部的溝通，幫助很大。
+上述這些工具，雖然已經算便利，但需使用不同平台，不同軟體，且其中的各種訊息無法集中於一處呈現方便搜尋與追蹤。如果有一個平台是可以包含這些服務，統一訊息流，就會更方便。而Google+一出現，筆者其實第一個於腦中閃過的想法就是，Google+可以成為collaboration的平台嗎？
+Google Apps已經提供中小企業與新創公司好用又免費的協同工作工具，如Gmail，Google Calendar與Google Docs等。相信讀者中已經不少人使用Gmail來設立公司的email accounts。而Google Calendar + Google Docs基本上已經可以達到專案管理的目的(當然功能與操作上略遜於專業的Basecamp)。這些協同工作工具上的內容與文件的分享，通常是透過email或者URL。如果將Google+ 的Social( 更容易"溝通分享"的DNA)與Google Apps的Collaboration進一步整合，會產生什麼火花呢？
+如下二圖，筆者測試了於Google + 的team Circle 中分享Google Docs與Google Calendar(兩者皆設定以URL的方式分享)，都沒有問題。
+
+Share Google Docs in a Google+ Circle
+
+ 
+
+Share Google Calendar in a Google+ Circle
+
+所以目前即便Google+尚未整合Google Apps(未知數)，也可以如上述的作法陽春地於Google+ 的team circle中，team members於同一個Post針對某一個文件或者某一個Project (一個Google Calendar可以對應到一個Project，Calendar中的Events可以夾帶Google Docs的附件)，以增加Comment的方式進行討論，更新與追蹤。
+而從另一個操作的角度來看，若Google+與Google Apps能整合，例如於Google Calendar與Google Docs的分享設定，將可以很方便地分享給Google+的team Circle，如以下的示意圖。
+
+Google Docs sharing settings with Google+ Circle
+
+或者Google Calendar中的Event reminder 可以多一項Google+的Circle，將reminder的訊息於設定的時間直接顯示於team Circle的Post中提醒team，如下示意圖。
+
+Google Calendar Reminder with Google+ Circle included
+
+ 
+Google+中另一個可成為協同工作的功能，就是Hangout(這邊有詳細的技術分析)。多方視訊會議主要的用途是發生於商業行為上，這也是為何Skype會於企業服務產品中推出付費的多方視訊會議服務。Hangout可以很方便地對一個Circle進行多方視訊會議，若沒有視訊的必要，參與者可以於Hangout的功能列將視訊關閉，只進行語音的溝通。也可以利用Hangout中的Chat功能於視訊(語音)會議中傳文字訊息(這麼忙？)。這基本上也滿足了中小企業的視訊(語音)會議的需求了(這也是知名Blogger Om Malik會說Google+不會影響Facebook，但Skype可能會不爽的原因吧)。當然，若HangOut也能整合Google Apps，比如說可以讓視訊會議者看到同一份簡報(如下圖示意)，協同工作的能力就更強了。
+
+ 
+以Google+ 的Circle為起點，結合Google Apps的協同工作工具，必要時Google+的Hangout進行視訊(語音)會議即時溝通，目前的產品設計，其實已經可形成一個滿足中小企業與新創公司大部分需求的協同工作平台與訊息整合中心。Google+是否會朝協同工作的方向開發，以及整合Google Apps等相關工具，這是個未知數。但經過這幾年的經營，Google的一大利器就是Google Apps，以及廣大使用Google Apps的SOHO與中小企業客戶。所以由企業服務的角度開發適合企業使用的Google+，整合企業已經習慣使用的Google Apps，應該不失為一個Google+要與Facebook競爭，或與Facebook有差異化(講競爭太沈重的話)的切入點！
+ 
+ 
+ 
+
+
+
+
+Josh Ho:
+July 2nd, 2011 at 2:02 am
+ Robert 大，有blog嗎？您的文章必讀。
+
+
+香蕉:
+July 2nd, 2011 at 4:48 am
+ 好文～謝謝Robert大分享～
+可是它分享的Google Docs還不能依標題做分享…
+
+
+于文強:
+July 2nd, 2011 at 1:41 pm
+ 非常認同的好文！Google+若從企業員工的social出發，幾年後就會見真章了。真正的social不是純social，而是互有利益關係的social，Google+這次出手非常狠！
+
+
+何百年:
+July 4th, 2011 at 4:39 am
+ 要走企業應用取向,才能與蘋果做出區隔,正式與微軟競爭,不然夾在他們兩家之間,輸只是時間上的問題
+
+
+jimmy chang:
+July 7th, 2011 at 1:10 am
+ 身為行銷人員 當然希望google+可以變成行銷工具的一種 目前看起來不太可能(還沒有廣告) 有商業行銷價值的網路媒介 才有被不斷被填充內容的可能
+
+
+AmosGamer 的遊戲世界:
+August 16th, 2011 at 2:24 pm
+ Google 最強的就是整合自家的服務，一旦作好，Facebook 有可能會受到極大的影響
+
+
+趙政宏:
+October 30th, 2011 at 6:38 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

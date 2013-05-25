@@ -1,0 +1,43 @@
+
+
+
+Gmail已經是許多人日常生活或是工作上不可缺乏的重要工具，擁有許多人用不完的容量、各種強大的功能與令人放心的垃圾郵件過濾機制，加上可以輕易地整合其他Google產品，例如Google Contacts、Google Calendar、Google Docs等等，幾乎是用過之後都會讓人說讚的一個好產品。今天要為各位介紹的Rapportive可以很簡單地讓你的Gmail升級成一個簡單的CRM（Customer relationship management，顧客關係管理）系統，而且是整合了社群媒體的Social CRM。
+從上圖我們可以看到，在閱覽信件時，信件旁邊列出了幾點關於寄件人的資訊，包括：
+Twitter訊息
+Facebook連結
+LinkedIn連結
+Skype帳號
+CrunchBase上的個人資料（這是美國知名網站TechCrunch經營的網路公司資料庫）
+根據筆者實際測試，除了以上幾個主要網站，Rapportive背後的機制還會針對下列幾個資料來源進行搜尋：
+Google Reader
+Google Profile
+Google Picasa
+Plurk噗浪
+Hi5
+Friendster
+MySpace
+Flickr
+以上的資料來源，也是可以另外再自行新增的。目前官方宣稱他們的資料來源包括了Google Profiles, Gravatar,Plancast, Rapleaf, Stack Overflow以及Twitter。
+除了單純把資料來源找到，告訴你「寫信給你的人在哪些地方出沒」、「寫信給你的人最近的Twitter更新訊息、在LinkedIn上的履歷摘要」（省去你還要另外開新視窗的時間），Rapportive還很貼心的做到以下幾件事情：
+某些大公司寄來的信件（包括Apple, Dell），在信件旁邊會列出該公司網站上提供的資訊
+如果是在自己的信件串裡，會列出自己的資訊，並且告訴你「你的個人資料在Rapportive被其他人看了幾次」（人氣指標？）
+來自Twitter的email，Rapportive會很貼心的幫你把信件中的Twitter user找出來（意思是Rapportive讀到了你的郵件內文？）
+如果以上的資訊都還不夠用，你也可以針對個別的聯絡人進行註解的動作，例如：「愛打籃球」、「喜歡看電影」、「很難纏」、「拒絕往來」、「不要合作」之類的註解。
+Rapportive的安裝方式非常簡單，它是以瀏覽器的外掛方式來補強你的Gmail，目前提供有Firefox、Safari、Chrome等瀏覽器的外掛。如果你是Mac OSX的使用者，並且利用Mailplane這套好用的Gmail多帳戶管理軟體，Mailplane內建支援Rapportive，請在帳戶設定中的進階選項將Rapportive打開即可。
+更厲害的是，如果Rapportive不夠你用，你還想補強其他功能，Rapportive還提供了Raplets（猜測這命名應該是從bookmarklet學來的），目前有支援一些國外的服務。
+
+如果你是開發人員，現階段你可以直接與Rapportive團隊聯繫來取得如何開發Raplet的相關資訊，或許可以讓你的網站、應用程式所能提供的資料也出現在Rapportive中。
+Rapportive是在2010年1月才成立的，兩個月後他們就一夕爆紅並獲選進入Y Combinator，在2010年8月募得100萬美元的資金，其中也包括了Gmail發起人（Paul Buchheit，我們曾在另一篇文章關於創業，你必須知道的13件事提及這位先生）的投資，顯示了身為Gmail項目的發起人，對於Rapportive也感到相當程度的欣賞與實質的認同。
+然而，我認為目前Rapportive有兩個問題是非常值得討論的：
+隱私議題
+顯然，Rapportive可以讀到你的信件內文、寄件人資料（幾乎就是完整的信件往來紀錄），儘管Rapportive在他們的隱私權條款上聲明他們是如何妥善運用、保護你的資料，但我想這是會持續引起討論的一個議題。
+去掉Google廣告
+目前可以發現Rapportive呈現在Gmail中的位置是原本顯示關鍵字的地方，不知道Google官方對於這類的行為是否有任何規範，以及在未來是否會有任何積極介入的動作，這也是對於Rapportive來說一個潛在的隱憂。
+儘管如此，目前我對於Rapportive是滿喜歡的，因為就使用情境上來說，第一次收到陌生的來信，可以快速的掌握對方的基本資訊（可以省去部分人肉搜索的時間）；而經常往來郵件的朋友，也可以快速從Gmail中就看到對方最近的動態（儘管目前只有Twitter、LinkedIn是比較完整的）。就CRM系統的觀點來看，其實Rapportive所做的事情是非常簡單的，目前Rapportive官方也不以CRM的定位進行宣傳，但在這個社群媒體當紅的年代，類似的概念要發展成結合社群媒體的CRM系統是非常可以發展的一個方向。
+如果你對於Rapportive相似的服務有興趣，可以參考看看Xobni。（Inbox倒過來，最早以前他們是先從Microsoft Outlook中開始做一些簡單的聯絡人分析、管理起家的）
+
+
+
+
+
+ Tagged with: CRM, gmail, rapportive 

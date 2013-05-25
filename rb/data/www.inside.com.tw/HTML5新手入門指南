@@ -1,0 +1,116 @@
+
+
+HTML5的發展越來越邁向成熟，很多的應用已經逐漸出現在你我日常生活中了，不只讓傳統網站上的互動Flash逐漸的被HTML5的技術取代，更重要的是可以透過HTML5的技術來開發跨平台的手機軟體，讓許多開發者感到十分的興奮！
+
+當你開始想要學習、試圖想要投入相關的開發時，由於HTML5的技術還在持續發展、進化當中，學習的資源也都比較零散，較難有一個整體的方向。在本篇文章中，筆者將會導覽HTML5的主要技術組成，並且提供一些學習資源讓大家參考。
+HTML5到底是什麼？
+一般廣義而言的HTML5則包含了HTML、CSS和JavaScript三個部分，不單單只是HTML部分而已，CSS 3和JavaScript也有許多的創新，讓整個網頁程式功能更加繽紛。
+HTML5的技術組成
+離線功能
+HTML5透過JavaScript提供了數種不同的離線儲存功能，相對於傳統的Cookie而言有更好的彈性以及架構，並且可以儲存更多的內容。
+WebStorage -- 比Cookies更大、更有彈性的的儲存
+Web SQL Database -- 本地端的SQL資料庫
+Indexed DB -- Key-value的本地資料庫
+Application Cache -- 將部分常用的網頁內容cache起來
+即時通訊
+以往網站由於HTTP協定以及瀏覽器的設計，即時的互動性相當的受限，只能使用一些技巧來「模擬」即時的通訊效果，但HTML5提供了完善的即時通訊支援。
+WebSocket -- 即時的socket連線
+Web Workers -- 以往JavaScript都是single thread，透過Worker可以有多個運算
+Notifications -- 原生的提示訊息，類似像OS X的Growl提示
+檔案以及硬體支援
+不知道大家有沒有發現，在Gmail等新的網頁程式當中，已經可以透過拖拉的方式將檔案作為郵件附件？這就是這部份HTML5檔案的功能中的Drag'n Drop和File API。
+Drag'n Drop -- HTML元素的拖拉
+File API -- 讀取使用者本機電腦的內容
+Geolocation -- 地理定位
+Device orientation -- 手持裝置的方向
+Speech input -- 語音輸入
+語意化
+語意化的網路是可以讓電腦能夠更加理解網頁的內容，對於像是搜尋引擎的優化（SEO）或是推薦系統可以有很大的幫助。
+New tags -- 新的標籤，像是<header>、<section>等
+Application tags -- 也是新的標籤，像是<meter>、<progress>等
+Microdata -- 加入語意的資料讓搜尋引擎等網站可以正確顯示
+Form type -- <form>可以加入的type便多了，包含email和tel等屬性，瀏覽器會協助進行資料格式的驗證
+多媒體
+Audio、Video的標籤支援以及Canvas的功能應該是大家對於HTML5最熟悉的部份了，也是許多人認為Flash會被取代的主要原因。先前Inside有一些相關的技術展示可以參考（如何使用HTML5的影片播放？、HTML5火力展示！九個讓你驚奇的HTML5應用）。
+Audio video -- 影片和音樂的原生播放支援
+Canvas -- 2D的繪圖功能支援
+Canvas 3D -- 3D的繪圖功能支援
+SVG -- 向量圖支援
+CSS 3
+CSS3支援了字體的嵌入、版面的排版，以及最令人印象深刻的動畫功能。
+Selector -- 更有彈性的選擇器
+Webfonts -- 嵌入式字體
+Layout -- 多樣化的排版選擇
+Stlying radius gradient shadow -- 圓角、漸層、陰影
+Border background -- 邊框的背景支援
+Transition -- 元件的移動效果
+Transform -- 元件的變形效果
+Animation -- 將移動和變形加入動畫支援
+JavaScript
+在比較JavaScript的基本面也新增了DOM的API、和瀏覽器上下頁的紀錄修改。
+DOM API -- 更方便的查詢DOM元件
+History API -- 瀏覽器的上下頁內容修改，方便AJAX可以保留瀏覽記錄
+現在就開始用HTML5
+截至目前而言，主流的網頁瀏覽器Firefox 5、Chrome 12和Safari 5都已經支援了許多的HTML5標準，而且目前最新版的IE 9也支援了許多HTML5標準，隨著使用者陸續升級到新版的瀏覽器，開發者應該在現在就可以著手開發！
+而對於舊的瀏覽器相容性而言，先前Inside曾經撰文介紹過的CSS3 Pie便是一個讓舊版瀏覽器也能支援CSS 3功能的JavaScript函式庫。
+
+而Modernizer也是一個相當重要的JavaScript函式庫，提供開發者輕鬆的方式判別目前使用者的瀏覽器是否有支援特定的HTML5功能。
+
+學習的方向
+在看完本篇文章之後，大家或許可以針對自己有興趣的方面透過關鍵字搜尋去尋找相關的學習資源以及內容。
+Google的HTML5Rocks網站也是我相當推薦的，其中的透過HTML5開發的HTML5介紹投影片更是值得一看，可以將上述的內容都實際試玩（推薦使用Chrome瀏覽器以獲得完整的功能效果）。
+
+
+
+
+Wallace Weng:
+August 1st, 2011 at 3:27 am
+ 新的方向，看樣子flash會面臨大挑戰
+
+
+Vincent Huang:
+August 1st, 2011 at 4:37 am
+ WebSocket 挺有搞頭。然後到目前為止，沒有一個主流的瀏覽器支援 Notification。XD
+
+
+Serenity Lo:
+September 16th, 2011 at 4:37 am
+ flash .... bye 0.0"
+
+
+Sie Yao-Huei:
+October 1st, 2011 at 4:12 pm
+ Indexed DB, Application Cache....Cool!
+
+
+Mi Chun Chiu:
+October 11th, 2011 at 3:32 am
+ HTML5...攻佔市場
+
+
+趙政宏:
+October 29th, 2011 at 11:34 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+廖某允:
+February 2nd, 2012 at 10:23 am
+ 對於一些傳統產業的行政人員沒有用，
+因為他們該死的還在用IE6.......也不會更新。
+但是這些人還是顧客阿~~
+
+
+蘇玉貞:
+March 10th, 2012 at 6:12 am
+ 不能停止的學習
+
+
+酷企鵝:
+March 17th, 2012 at 9:09 pm
+ 大家一起邁向 HTML5 的腳步吧
+
+
+
+ Tagged with: html5 

@@ -1,0 +1,81 @@
+
+
+圖片來源：Google
+Inside曾報導過 Google 的工作環境，但僅限於辦公空間。而就在昨天，Google 向全世界揭露了他們的資料中心，公開了三所資料中心的照片，這三所分別位在比利時、芬蘭、愛荷華州（註一）。此外，還利用了 Google Map 的室內街景功能來向大家展示位於北卡羅來納州的勒努瓦資料中心（Lenoir, NC），並邀請 Wired 的資深作家 Steven Levy 獨家參訪。
+Google 資料中心的規模難以想像
+Steven 在 Morning Edition 接受訪問時這樣敘述他的感觸（註二）：
+What strikes you immediately is the scale of things. The room is so huge you can almost see the curvature of Earth on the end. And wall to wall are racks and racks and racks of servers with blinking blue lights and each one is many, many times more powerful and with more capacity than my laptop. And you're in the throbbing heart of the Internet. You really feel it.
+最先讓人感到驚訝的是每樣東西的規模。房間非常大，大到幾乎在房間內就可以看出地球的弧形，而伺服器的機架竟放滿了如此大的房間。藍色的光到處閃爍著，每一台伺服器都比我的筆電要厲害上不知道多少倍。我正身處在網際網路的心臟地帶，而且真的能感受到那股脈動。
+Google 在全世界一共有八所資料中心，Steven 指出在勒努瓦的伺服器數量將近五萬台，而所有伺服器的數量總計已累計超過一百萬台。
+伺服器機房的耗電
+據統計，全球所有的資料中心在 2011 年的耗電量占全世界電用量的 1.3%（註三），Steven 表示這個數字目前上升到了 1.5%，而伺服器機房的冷卻是耗電主因之一。傳統的機房通常都採用 CRAC（Computer Room Air Conditioning）模式，也就是透過空調控制室內溫度，以替數量龐大的伺服器降溫，但這個冷卻方式的耗電量相當的高。
+圖片來源：Google
+為此，Google 想出一個新的機房冷卻方法─用水來散熱。Google 的伺服器機房有兩種通道——冷通道和熱通道。冷通道位在伺服器的前端，也是工作人員檢查伺服器狀態的地方，溫度約華氏 80 度左右。熱通道則位在伺服器的後端，溫度約華氏 120 度。伺服器所產生的熱都向這一側排出，並利用管線中的水將熱能吸收，排出室外冷卻後再送回室內吸收熱能。
+由於如此大量的冷卻用水的來源也不容易找，因此 Google 會先評估資料中心的地理位置，以找到適當的水源。如比利時資料中心使用的是從工業回收的水，芬蘭資料中心用的則是海水。根據 Google 網站上的敘述，這些水雖然還需要經過處理才能用在冷卻，但是比起飲用水的處理過程可以說是簡單多了。
+
+圖片來源：Google
+圖片來源：Google
+然而，還有另一個造成資料中心相當耗電的原因─不斷電系統 UPS（Uninterrupted Power Supply）。關於這點，Steven 在「Google Throws Open Doors to Its Top-Secret Data Center」一文中提到 Google 的解決方式（註四）：
+Not only did they leak electricity, they also required their own cooling systems. But because Google designed the racks on which it placed its machines, it could make space for backup batteries next to each server, doing away with the big UPS units altogether. According to Joe Kava, that scheme reduced electricity loss by about 15 percent.
+不斷電系統不僅會漏電，而且還需要屬於它自己的冷卻系統。然而，Google 自己設計的伺服器機架有足夠的空間在每一個伺服器旁放置電池以備不時之需，也就不需要採用如此耗電的不斷電系統。根據 Google 資料中心的總負責人 Joe Kava，這種作法減少了約 15% 的電量消耗。
+小結
+Google 的資料中心不只是規模驚人，而且也與其它傳統的資料中心不同，能源的處理非常有效率。畢竟要處理這麼多的伺服器，能夠想出一個提升能源使用效率的方式，對於成本甚至是對整個地球環境來說都是一件好事。
+最後一起來看看 Google Map 是怎麼導覽他的資料中心吧。
+
+（註一）Google Data Centers
+（註二）The Brain Of The Beast: Google Reveals The Computers Behind The Cloud
+（註三）Data Centers Use 1.3% of World’s Total Electricity. A Decline in growth
+（註四）Google Throws Open Doors to Its Top-Secret Data Center
+
+
+
+
+Chris Chen:
+October 18th, 2012 at 3:32 pm
+ 把整個機房當成是個人主機的思維做散熱的動作.....
+
+
+Mercy Peng:
+October 18th, 2012 at 5:03 pm
+ 100萬台伺服器, 用電量達全球1.5%! 真的驚人!!
+
+
+Robert Liu:
+October 19th, 2012 at 12:14 am
+ 散熱工程，還是很熱…門。
+
+
+Lin Yu-Ting:
+October 19th, 2012 at 4:25 am
+ 真好呢 :)
+
+
+Su Kuan-Wu:
+October 19th, 2012 at 4:31 am
+ 想想人腦也是極度耗能, 卻不是極度需要散熱的器官... 或許以後我們會找到更有效率的可生物啟發式的設計來幫忙解決這問題
+
+
+Hong-Tze Chen:
+October 20th, 2012 at 12:50 am
+ Wow
+
+
+Johnny Sung:
+April 6th, 2013 at 7:06 am
+ Google的Data Center...哇wow
+
+
+Siu-Chung Wong:
+April 6th, 2013 at 7:40 am
+ "傳統的機房通常都採用 CRAC（Computer Room Air Conditioning）模式，也就是透過空調控制室內溫度，以替數量龐大的伺服器降溫，但這個冷卻方式的耗電量相當的高。
+為此，Google 想出一個新的機房冷卻方法─用水來散熱。Google 的伺服器機房有兩種通道——冷通道和熱通道。冷通道位在伺服器的前端，也是工作人員檢查伺服器狀態的地方，溫度約華氏 80 度左右。熱通道則位在伺服器的後端，溫度約華氏 120 度。伺服器所產生的熱都向這一側排出，並利用管線中的水將熱能吸收，排出室外冷卻後再送回室內吸收熱能。"
+其實，簡單點說，直接使用冷水 (chilled water) 系統為伺服器進行冷卻，
+而省卻了用 CRAC 把冷水變成冷風的步驟，真的有那麼難解釋嗎？
+
+
+陳銘銘:
+May 8th, 2013 at 3:12 pm
+ 這個Idea的確不錯,不過water pipe和server之間的熱交換真的是一個大學間...
+
+
+

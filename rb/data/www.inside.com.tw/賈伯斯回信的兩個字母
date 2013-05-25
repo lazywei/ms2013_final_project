@@ -1,0 +1,134 @@
+
+
+
+我們知道賈伯斯生前對於任何關於新產品的「洩密」甚至外型「意外曝光」等等感到深惡痛絕，一般人也別想在正式發售前就先摸到產品。不過最近一位在 Apple 工作超過 12 年、隸屬圖形與影像團隊的工程師在部落格寫了一篇短文1，顯示出賈伯斯也有通融的時候。
+我在 Apple 上班的 12 年裡，我從來沒有因為工作而跟賈伯斯見面——當然，就跟其他的 Apple 員工一樣，我曾在員工餐廳看過他、看過他跟 Jony Ive 走在 Infinite Loop 園區（Apple 總部的名稱）裡，也在他主持的通訊會議看過他，但我們不曾有過任何接觸，直到……
+2010 年三月的時候，就在 iPad 正式開賣的幾個禮拜前，我有了一個去找賈伯斯的理由。我的一位朋友因為肝臟方面的疾病快死了，而我要趁還來得及之前去舊金山見她一面。她是我在 Adobe 時期的朋友，對科技非常著迷，我認為讓她親眼看看 iPad 也許可以算是某種治療，而我手邊就有一台，但是除非取得 Apple 高層的許可，在 iPad 開賣以前不能秀給任何人看。
+所以我不可能就這樣把 iPad 帶走，除非賈伯斯同意。我知道去詢問直屬管理鏈裡的任何一個人都不是好主意，因為他們沒人願意冒這個險，只有 iOS 開發團隊裡的高層會具備同意這種要求的資格，但是去找他們很可能只是浪費時間，然後得到一個簡單的答案：「No.」沒人會在乎。
+所以我寫了一封 E-mail 給賈伯斯：
+From: David Gelphman [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+Subject: 不尋常的請求（unusual request）
+Date: March 23, 2010 9:04:55 AM PDT
+To: Steve Jobs [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+Hi,
+今天（星期二）我要去舊金山探望一位病得很重的朋友，我被告知她很有可能撐不過週五。二月底的時候她做了肝臟移植手術，我們滿懷希望，然而不幸的是她無法康復了。
+因為某個「機密」軟體，Apple 給我攜帶 iPad 的許可，對此我非常謹慎小心。但我希望能取得你的許可，讓我在 4 月 3 日發售日之前，用 iPad 秀幾張照片給那位朋友看。正常情況下我不會提出這種請求，我也不認為這種請求會被同意。
+感謝你的考慮。
+David Gelphman
+* * *
+超瞎的，我竟然在最後關頭才想到要問這件事，也沒期待賈伯斯會有所回應，更別說他會答應。沒想到三分鐘過後我就收到回信了：
+From: Steve Jobs [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+Subject: Re: 不尋常的請求
+Date: March 23, 2010 9:07:04 AM PDT
+To: David Gelphman [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+OK
+Sent from my iPhone
+* * *
+我難以形容自己收到這個回覆有多開心。「OK」不過兩個字母，對我來說卻是意義重大。賈伯斯在很多 keynote 場合說過：「這就是為何我們要這麼做。（This is why we do what we do.）」而那天他同意讓我朋友被我們的產品感動，即便沒有按照規矩來。過去我在 Apple 的職業生涯中一直對身為公司「心臟」的賈伯斯感到很好奇，這個小小的互動使我精神大為振作。
+令人難過的是，我去探望那位朋友的時候她已經沒有意識，iPad 也就躺在我的包包裡沒有拿出來，沒人知道我帶了那個東西去探病。她當天就過世了，我很慶幸自己能在最後見上她一面，賈伯斯回信的兩個字母同樣令人感動。
+CJ R.I.P., SJ R.I.P.
+
+2 Letters from Steve↩
+
+
+
+
+
+Scott Chou:
+April 1st, 2013 at 2:25 am
+ OK
+
+
+Douglas Liu:
+April 1st, 2013 at 2:57 am
+ This is why he is who he is
+Steve Jobs R.I.P.
+
+
+王祥懿:
+April 1st, 2013 at 3:10 am
+ Ok一個字也能有很大的力量
+
+
+Girvan Liu:
+April 1st, 2013 at 3:16 am
+ 還好不是 NO 或 GG
+
+
+Jeff Jen Der Lin:
+April 1st, 2013 at 3:32 am
+ great sharing
+
+
+蔡秉和:
+April 1st, 2013 at 4:16 am
+ 兩分零九秒的"OK" 有很大的威力！
+
+
+Johnnie Chiu:
+April 1st, 2013 at 4:18 am
+ 職場硬漢也是看事情
+
+
+Yo-An Lin:
+April 1st, 2013 at 4:20 am
+ 阿宅的浪漫
+
+
+黃哲誠:
+April 1st, 2013 at 5:07 am
+ OK !
+
+
+Threesecond Lin:
+April 1st, 2013 at 6:25 am
+ 意思跟「如擬」沒什麼兩樣
+
+
+應龍信男:
+April 1st, 2013 at 7:34 am
+ 閱畢
+
+
+楊哲豪:
+April 1st, 2013 at 8:21 am
+ 好懷念賈伯斯
+
+
+鍾其:
+April 1st, 2013 at 9:02 am
+ Wow
+
+
+王得安:
+April 2nd, 2013 at 10:33 am
+ 很感動...
+
+
+克里姆王:
+April 3rd, 2013 at 7:59 pm
+ OK
+
+
+Chen Hong Ming:
+May 6th, 2013 at 5:20 am
+ ok
+
+
+

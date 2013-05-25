@@ -1,0 +1,69 @@
+
+
+
+Skullsecurity的Ron Bowes發表了一篇部落格文，表示他寫了一隻網路爬蟲，並利用https://www.facebook.com/directory這個Facebook所提供的使用者目錄，很暴力的把在上頭所有能夠被搜尋到的使用者資料給爬了下來。
+也就是說，如果使用者如果沒有在隱私設定裡把自己設定為不能夠被搜尋的到的話，那麼很可能您就已經在這個名單裡頭；原則上其實這樣的資料早就可以被搜尋引擎給找到，只是一般人不會把所有人整理起來變成一個檔案。Ron Boews利用這個表單，做了一些簡單的統計：
+Facebook上最常用的使用者名稱為：
+
+ 129369 jsmith
+  79365 ssmith
+  77713 skhan
+  75561 msmith
+  74575 skumar
+  72467 csmith
+  71791 asmith
+  67786 jjohnson
+  66693 dsmith
+  66431 akhan
+
+中間以.為分隔的使用者名稱排行：
+
+  17204 john.smith
+   7440 david.smith
+   7200 michael.smith
+   6784 chris.smith
+   6371 mike.smith
+   6149 arun.kumar
+   5980 james.smith
+   5939 amit.kumar
+   5926 imran.khan
+   5861 jason.smith
+
+最常見的姓或名
+
+ 977014 michael
+ 963693 john
+ 924816 david
+ 819879 chris
+ 640957 mike
+ 602088 james
+ 584438 mark
+ 515686 jason
+ 503658 robert
+ 484403 jessica
+
+ 913465 smith
+ 571819 johnson
+ 512312 jones
+ 503266 williams
+ 471390 brown
+ 386764 lee
+ 360010 khan
+ 355639 singh
+ 343220 kumar
+ 324972 miller
+
+ 
+原文作者提供了BT種子下載，以饕後進省去麻煩。這個種子裡包含的檔案大小約2.8G，裡頭包含了：
+ 
+每一個可以被搜尋到的Facebook使用者檔案的連結
+上述使用者的姓名
+處理過的名單，像是最常見的名字以及姓氏
+用來產出這些內容的程式
+為什麼Bowes敢這樣大剌剌的公開檔案呢？實際上，這似乎看起來完全合法，這些資訊都是公開可被取得的，藉由這樣的訊息，還是透露出，如果您不想要，就盡量不要把您的資料上網，因為我們完全不知道是不是有更多可能的漏洞會造成自己更多的困擾。
+
+
+
+
+
+ Tagged with: Facebook, 個資 

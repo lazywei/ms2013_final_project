@@ -1,0 +1,71 @@
+
+
+
+延續上一篇文章的介紹，在這次的文章中我們將繼續探索Three20的UI部份，這也是Three20中最令開發人員喜愛的部份。
+整體架構圖
+在開始之前，我們先複習一下Three20的階層架構，我們在先前的文章中介紹了Three20Core、Three20UICommon和Three20Network這三個底層framework，而這一次我們將轉到上面三個比較高階、與UI相關的framework，也是Three20讓人感到最驚奇、最強大的部份。
+------------------------------------------
+|                    UI                  |
+------------------------------------------
+| UINavigator  |            |   Style    |
+|--------------|            |------------|
+|   UICommon   |            |  Network   |
+------------------------------------------
+|                   Core                 |
+------------------------------------------
+Three20UINavigator
+在Three20中一個很重要的創新突破便是URL-based navigation，透過這個機制我們可以將程式中原本切換畫面（Push、ModalView、TabBar）的繁瑣程式碼，簡化為開啟URL的動作。 這個概念對Web開發者而言應該相當熟悉，誠如我們在Three20介紹文章中提到過，Three20的誕生起源於Facebook的iPhone版應用程式，所以我們很容易在Three20這個framework中看到許多關於Web framework的概念。 在Three20UINavigator中我們可以看到以下類別：
+TTBaseNavigator -- 負責開啟URL的工作，只有部份功能、完整的TTNavigator則包含在Three20UI中
+TTURLAction -- 除了要開啟的URL位置外，也有一些其他的Property可以設定、作為開啟URL的選項
+TTURLMap -- 負責URL與View Controllers之間的轉換、Mapping
+除此之外，Three20UINavigator也有提供一些取得Frame、Bounds以及狀態列高度的方法，有興趣的讀者可以參考TTGlobalNavigatorMetrics.h這隻檔案中的內容。 URL-Based Navigation的內容較多，筆者會在未來另外撰文解釋、說明。
+Three20Style
+除了上述提到的URL-based Navigation外，Three20也引入了一個在Web開發上相當常見的Stylesheet概念。一般而言，我們若是在iPhone上面設計使用者介面時，必須針對每一個UI元件手動設定樣式，像是文字的字體、大小，或者是工具列的顏色等等。然而透過TTStyle和TTStyleSheet的設定，就可以免除我們每次重複設定UI元件樣式的麻煩。 此外，也有TTStyleLayout、TTStyleText等相關的類別，和一些UIKit的新增方法，像是：
+UIImage
+- (UIImage*)transformWidth:(CGFloat)width height:(CGFloat)height rotate:(BOOL)rotate; -- 轉換圖片大小、旋轉圖片
+- (void)drawInRect:(CGRect)rect radius:(CGFloat)radius; -- 畫出有圓角的圖案
+
+UIColor
+- (UIColor*)highlight; -- 回傳一個比現有顏色在更亮的顏色
+- (UIColor*)shadow; -- 同上，不過相反地回傳一個較暗的顏色
+- (UIColor*)copyWithAlpha:(CGFloat)newAlpha; -- 回傳一個同樣的顏色，但alpha不同
+
+關於Style的部份的內容筆者也同樣會另外撰文介紹，敬請期待。
+Three20UI
+在先前framework的層層堆疊後，總算是到了最上層、也是最重要的Three20UI了。Three20UI這個framework中包含了相當多的類別，大概可以分成三類：
+UIKit內建類別的新增方法
+Three20新增的View Controllers
+Three20新增的UI元件
+以UIKit的新方法而言， 以下幾個是比較有趣、值得注意的：
+UINavigationController
+- (void)pushViewController:(UIViewController*)controller animatedWithTransition:(UIViewAnimationTransition)transition; -- 加入新的Controller、但是使用非預設的動畫效果
+- (UIViewController*)popViewControllerAnimatedWithTransition:(UIViewAnimationTransition)transition; -- 同上、但是是移除Controller
+
+UITabBarController
+- (void)setTabURLs:(NSArray*)URLs; -- 傳入一組URL作為tabs
+
+UITableView
+- (void)scrollToTop:(BOOL)animated; -- 將Table捲動到最上方
+- (void)scrollFirstResponderIntoView; -- 捲動到目前開啟虛擬鍵盤的元件
+
+UIView
+- (void)removeAllSubviews; -- 移除全部subviews
+
+UIWebView
+- (CGRect)frameOfElement:(NSString*)query; -- 回傳某DOM物件的frame，傳入值為一JavaScript expression
+
+
+而Three20UI中所提供的額外View Controllers也是相當的豐富，像是：
+TTViewController -- Three20所使用的View Controller基礎類別
+TTWebViewController -- 一個功能完整的網頁瀏覽Controller
+TTActionSheetController -- 將UIActionSheet包裝成Controller的形式，傳入URL作為按鈕
+TTAlertController -- 同上，將UIAlertView包裝成Controller方便使用
+另外還有許多View Controller，有興趣的讀者可以參考先前介紹文章中的螢幕截圖、還有TTCatlog這個範例程式。
+結論
+在這兩篇文章中我們針對了Three20的各個模組做了一個概要性的簡介，在下一篇文章中我們將談談Three20中的額外擴充framework，也就是JSON/XML framework，還請各位讀者多多指教。
+
+
+
+
+
+ Tagged with: Cocoa Touch, iPhone Dev, Three20 

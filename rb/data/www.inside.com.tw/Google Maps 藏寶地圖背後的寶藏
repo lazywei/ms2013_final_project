@@ -1,0 +1,77 @@
+
+
+
+編按：本文為客座投稿文，作者的部落格筆名為 St. Threath，以網路領域為自己的志業，同時喜歡科技和人文這兩個極端，夢想是到矽谷的偉大航道創業。目前任職於網路公司Genie Capital。
+原文刊載於作者的個人部落格「St. Threath」。
+Google Map 在日前推出了大海賊時代版的藏寶地圖，根據官方說法， 這個地圖是 Google Map 海底團隊在製作街景時，意外找到大海賊 William "Captain" Kidd 的藏寶地圖。Kidd 在被處決前，曾經高喊:『兩百個裝滿金條和銀幣的寶藏盒，就藏在這個世界的某個角落。』而這個寶藏到現在還沒有被找到。而 Google 用它的高科技將這個藏寶地圖數位化後，邀請廣大的使用者群一起尋找寶藏。下面是 Google 的介紹影片。
+
+這個地圖是在 4/1 號推出的，理所當然的，又是 Google 一個大大的愚人節遊戲。但這次 Google 做的相當認真，它是一個真的可以玩的尋寶遊戲，而且國外的使用者群真的團結起來，找到了 Google 藏起來的寶物。
+寶藏有兩個，一個是 http://www.google.com/mapfiles/treasure1.zip，另一個是 http://www.google.com/mapfiles/treasure2.zip，這兩個寶藏都被密碼加密了，沒有辦法解開來。
+要找出寶藏的鑰匙（密碼），必須要在藏寶圖版的 Google Map 上面找到帶有線索的圖示，像是下面這張圖，圖上會帶有下一個線索的座標，只要在 Google Map 的搜尋列上打上座標，就可以跳到下一個線索的位置，找到最後就會發現「一個」寶物：
+線索: http://goo.gl/maps/G5FF4
+寶物: http://goo.gl/maps/FSD5y
+要找到這些小小的線索必須把 Google Map 放到很大才能看到，但 Google Map 其實就是世界地圖，當我們把地圖放到很大時，要搜尋的範圍就變得很廣，幾乎不可能可以隨機找的到上面圖中的那種線索。因此 Google Map 有提供一個起始點給玩家們做搜尋，那就是 Captain Kidd 的維基百科頁面。例如維基中有一段寫著:
+The belief that Kidd had left a buried treasure contributed considerably to the growth of his legend. The 1701 broadside song Captain Kid's Farewell to the Seas, or, the Famous Pirate's Lament[23] lists “Two hundred bars of gold, and rix dollars manifold, we seized uncontrolled”. This belief made its contributions to literature in Edgar Allan Poe‘s "The Gold-Bug", Washington Irving‘s The Devil and Tom Walker, Robert Louis Stevenson‘s Treasure Island and Nelson DeMille‘s Plum Island. It also gave impetus to the never-ending treasure hunts conducted on Oak Island in Nova Scotia, in Suffolk County, Long Island in New York where Gardiner's Island is located, Charles Island in Milford, Connecticut; the Thimble Islands in Connecticut and on the island of Grand Manan in the Bay of Fundy.
+若我們在 Google Map 上面搜尋 "Gardiner's Island" 的話，就可以找到帶有座標的線索。
+Gardiner's Island: http://goo.gl/maps/qd1p1
+有了線索，尋寶就開始了。國外的使用者群使用Google Doc開了一個Excel檔，將自己找到的線索寫在上面、共同編輯，找到了所有的寶藏。
+
+每個線索會引導到下一個線索，而線索的終點會是一個英文字母寶藏，總共有十個英文字母寶藏，它們拼起來可以解開第一個寶藏。而在尋寶途中，會看到一些紅色的文字，那些紅色的文字拼在一起則可以解開第二個寶藏。
+第一類的字母寶藏拼起來是 APRIL FOOLS：
+
+第二類的紅色字母拼起來則是：MMC-900913
+MMC 是什麼大家還不知道，900913 是 google（是 leet 語...）
+於是 http://www.google.com/mapfiles/treasure1.zip 就可以用 APRIL FOOLS 這個密碼解開，解開來裡面是個沒有副檔名的檔案，把它改成 png 檔就得到第一個謎題的寶藏。
+而 http://www.google.com/mapfiles/treasure2.zip 可以用 MMC-900913 解開，解開來後還是一個沒有副檔名的檔案，這次不是 png，要把它改成 zip 檔。改完再解壓縮，裡面有兩個檔案，第一個是去年的 Google 製作的 8bitmap：
+
+另外一個則是檔名叫做 aprilfools 的空白檔案，而它的檔案大小是 4,012,013 bytes（4/01/2013 直到最後Google還是有鋪個梗在這。）
+這就是今年 Captain Kidd 的尋寶遊戲，感謝 Google 總是帶給我們歡樂！
+後記
+有時候看到 Google 做這樣的東西，會覺得裡面的工程師（或是公司文化）真的很像是一群小孩，做什麼 Project 也不是為了要賺大錢或是要改變世界之類的，有時候他們就只是認真的把一樣覺得好玩的東西做到最好，讓全世界看到的人會會心一笑、或是驚訝的說：「!!這個東西做的也太好了吧~」
+我覺得長期來說，這對於 Google 的品牌形象是好的，也期待它們未來有更多有趣的東西可以讓全世界一起來欣賞、玩樂。
+最後附上去年的 8bits Google Map 介紹影片，配音十分的懷舊，聽了都會想要回去再玩一下任天堂說。
+
+
+
+
+Yiling Chen:
+April 11th, 2013 at 5:36 am
+ google map 藏寶圖開!
+
+
+姜姜:
+April 11th, 2013 at 5:49 am
+ treasure1.zip 解開後的PNG 是甚麼圖啊? 好在意.............
+
+
+Tracker Hsu:
+April 11th, 2013 at 8:35 am
+ 原來真的有寶藏，不是愚人節玩笑
+
+
+Yan-Ting Chen:
+April 11th, 2013 at 11:52 am
+ GOOGLE也太認真過愚人節了!! 真的很有創意^^
+
+
+Peter Lee:
+April 12th, 2013 at 1:55 am
+ 真有創意!
+
+
+Allen Pan:
+April 12th, 2013 at 2:23 am
+ 太有創意了，比電動還難破啊
+
+
+Crystal Lin:
+April 16th, 2013 at 3:44 am
+ 好好玩, 就是有人這麼認真, 生活就是這樣才有樂趣.
+
+
+Jian Nan Lin:
+April 16th, 2013 at 7:20 pm
+ 上次愚人節尋寶的結局~
+
+
+

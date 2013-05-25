@@ -1,0 +1,81 @@
+
+
+
+[image credit : laihiu]
+PhoneGap是一個跨平台行動開發解決方案，它把行動網頁的介面包成像原生軟體一樣，在先前本站的Richard曾專文介紹過：請參閱：跨越行動網頁與原生軟體的隔閡 – PhoneGap，其中談到的例子是以iPhone為範例，今天筆者參照官網的教學範例，簡單的分享如何用PhoneGap在Android上開發一支Hello Inside程式。
+首先，如果你還沒有安裝Android SDK和Eclipse的開發環境，請先參考：[Android學習筆記] 開發環境建置。
+接著請到http://www.phonegap.com 下載最新版的PhoneGap，並且解壓縮
+打開你的Eclipse，到[Flie] -> [New] –> 新增一個[Android Project] 
+
+並建立一個專案本文以 [helloinside]為名稱，分別輸入專案的屬性為
+Application name：helloinside
+Package name：com.phonegap.helloinside
+Create Activity：app
+註：經筆者的測試，目前PhoneGap 0.9.3用Android 2.3以上版本會出錯，所以Build Target請選 Android 2.2以下的版本。
+
+解開你的PhoneGap資料夾，選擇Android，裡面會有一個phonegap.js和phonegap.jar檔
+
+ 接著在你建立Android的workspace的根目錄，新增二個目錄
+/libs
+/assets/www
+把phonegap.jar複製到/libs裡，而phonegap.js複製到/assets/www裡
+修改程式碼
+在Eclipse裡展開專案，並點開[src] –> [com.phonegap.helloinside] –> [app.java] 並執行以下步驟：
+把Class extends 名稱從Activity 改成 DroidGap
+把最後一行的setContentView(R.layout.main);改成 super.loadUrl(file:///android_asset/www/index.html);
+在程式碼上方加入 Add import com.phonegap.*;
+
+照理說現在程式碼裡會出現一堆錯誤訊息，別擔心，這是因為程式沒有抓到你剛複製進去的phonegap.jar，右鍵點專案名稱，並refresh後
+右鍵點選你剛複製進去的libs/phonegap.jar，選擇[Build Path」-> [Add to Bulid Path]
+錯誤訊息就會消失了！
+
+右鍵點選專案中的AndroidManifest.xml，並選擇Open With -> Text Editor，接著把以下的程式碼都複製到android:versionName="1.0″>後面
+<supports-screens
+android:largeScreens="true"
+android:normalScreens="true"
+android:smallScreens="true"
+android:resizeable="true"
+android:anyDensity="true"
+/>
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.RECEIVE_SMS" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.permission.READ_CONTACTS" />
+<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+再把android:configChanges="orientation|keyboardHidden"加到activity裡的android:label="@string/app_name" 的後面，如下圖：
+
+存檔後，一個phonegap 的開發環境就算完成了。
+建立你的第一個Phonegap程式：Hello Inside
+
+在assets/www裡新增一個名為[index.html]的空白檔案，把以下網頁程式碼複製進去，並存檔
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hello Inside</title>
+<script type="text/javascript" charset="utf-8″ src="phonegap.js"></script>
+</head>
+<body>
+<h1>Hello Inside</h1>
+</body>
+</html>
+大功告成
+完成了？對，就是這麼簡單！
+在專案上按右鍵選擇[Run As] –>  [ Android Application]，(你可以選擇android 2.2版以下的模擬器，或是將你的Android手機的USB偵錯模式打開，用USB接上你的電腦)，然後剛剛的網頁就會出現了！(如下圖)
+如果你曾經設計過網頁，你可以把assets/www想成是你電腦裡的網頁根目錄，你想要做的內容就可以用網頁的方式搭配Phonegap，變成一個很像原生程式的Android App，還可以上架Android Market。這是不是很酷呢？
+reference:http://www.phonegap.com/start#android
+原文教學影片：http://www.youtube.com/watch?v=MzcIcyBYJMA
+
+
+
+
+
+ Tagged with: android學習筆記, PhoneGap 

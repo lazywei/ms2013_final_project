@@ -1,0 +1,82 @@
+
+
+
+向龜速的舊版 Facebook iOS app 說再見吧！Facebook 剛剛宣布針對 iOS 推出 iPhone 與 iPad 皆適用的新版 Facebook app（台灣 App Store 下載連結），特色如下：
+快！
+快！
+快！
+整體運作速度明顯提昇
+  
+新版 Facebook app 除了介面（照片、打卡等）有些許變化之外，最明顯的改變就是整體運作的速度變得很快。原因在於這個 5.0 版的 Facebook 是完全原生（native）的 iOS app，不再像過去採用 HTML + UIWebView。Facebook iOS 產品經理 Mick Johnson 表示，他們意識到直接將行動版網頁的內容以 HTML 形式塞進 app 並非使用者所期望的（註 1），現在新版的 Facebook app 會是舊版的兩倍快。
+
+新版的 Facebook app 會自動更新動態，並在時間軸上方自動顯示「新動態 [1]」，點一下即可瀏覽新的動態，不必再將畫面下拉（要這麼做也行）。
+畫面捲動更順暢
+使用者會發現畫面捲動變得更加順暢，朋友的動態、分享的文字、圖片都會在更短的時間內顯示。
+照片載入速度變快
+
+新版 Facebook app 顯示照片的速度也明顯提昇，在呈現上則是採用與 Facebook Camera app 相同的風格。唯一可惜之處在於，Facebook 仍然沒有加入「分享照片」的功能。
+更加適合單手操作
+使用者點擊照片放大觀看後，直接用拇指將照片往下拉（往上也行）就可以重新回到時間軸上，不必再費心尋找按鈕，非常棒的設計。
+
+Mick Johnson 解釋，新版的 Facebook app 採用了許多「Facebook 手機即時通 app」和 Facebook Camera 的程式庫。舉例來說，Facebook app 裡的「訊息」介面變得跟 Facebook 手機即時通 app 一樣。同時他也指出新版的 Facebook app 是由一個獨立的團隊所打造。就在前一天，Facebook 也釋出了 Android 版本的小改版。
+有得必有失
+但是新版的 Facebook app 為了速度也必須付出代價。過去因為使用 HTML 技術的關係，Facebook 可以像修改行動版網頁一樣隨時修改 Facebook app，如今原生的 Facebook app 已不再有過去的彈性。
+關於新版 Facebook app 的開發細節，可參考這篇由開發團隊成員 Jonathan Dann 所寫的文章 〈 Under the hood: Rebuilding Facebook for iOS 〉。
+大家有沒有覺得新版的 Facebook app 真的變快了呢？歡迎留言與我們分享。（Facebook App 台灣 App Store 下載連結）
+ 
+ 
+註 1：Facebook for iOS goes native, waves goodbye to HTML 5
+
+
+
+
+楊峻宇:
+August 23rd, 2012 at 7:04 pm
+ 還不錯,個人專頁讀取還是有點小慢
+
+
+Sheng-Bo Chen:
+August 24th, 2012 at 1:56 am
+ 原文標題：Facebook for iOS goes native, waves goodbye to HTML 5
+原文重點：EMBEDDING HTML 5 INSIDE AN APP ISN'T WHAT PEOPLE EXPECT
+所以 Facebook 拿 HTML5 嚐完鮮後，終於肯面對使用者，放棄用 HTML5，改開發原生 APP，提供更好的使用者體驗。
+
+
+歐颯克:
+August 24th, 2012 at 2:08 am
+ 點一下即可瀏覽新的動態，不必再將畫面下拉（要做麼做也行）。
+
+Kay Wang:
+August 24th, 2012 at 2:42 am
+				快更新 fb app，手機臉書終於不再卡卡～
+				
+
+Odin Chen:
+August 24th, 2012 at 4:17 am
+				真的快很多！
+				
+
+Noski Liu:
+August 24th, 2012 at 7:12 am
+				這好像意味著往後android原生FB APP, 與IOS FB APP, 可能將開始分道揚鑣
+android FB APP看來依賴硬體強大動力驅動HTML5, 所以可以隨時修改APP, 但IOS卻被限制住而很多東西是android做不來的
+是這樣來著的嗎? 有高手可以解答嗎?
+				
+
+吳鴻賢:
+August 24th, 2012 at 10:36 am
+				跟鬼一樣快!!!!!!!!!!!!!
+有哀鳳的感覺了
+				
+
+Weinyan To:
+August 26th, 2012 at 5:51 pm
+				但是沒辦法刪照片或抓照片了
+還有打卡位置無發再繼續新增照片了
+現在上傳要3思而行了
+				
+
+
+
+
+                

@@ -1,0 +1,133 @@
+
+
+
+（圖為 Timekiwi 網站的使用者個人頁面，可以將 Facebook、Twitter、Instagram 等服務上的訊息整合在同一個時間軸上）
+如果有在使用 facebook 的朋友，最近應該已經漸漸開始有機會使用到新版的時間軸介面了，儘管網友對於時間軸的介面褒貶不一，但實際來看，時間軸的瀏覽介面有幾個好處：
+迅速看到男朋友與前女友多年前的親密對話與照片你與朋友的美好回憶
+迅速認識一位新的朋友在過去五年分享過的訊息並挖出他做過的蠢事在下次碰面製造話題
+看起來比較厲害，尤其使用者可以選擇性的放大某些訊息
+時間軸瀏覽介面可以方便的讓你新增過去發生過的人生大事
+其實時間軸介面不是創舉，以國人愛用的服務 Plurk 噗浪來說，很早就有橫向捲軸的時間軸頁面了。
+
+（圖為已經關閉的 Nifty Timeline）
+日本前 25 大、全球前 300 大的入口網站 Nifty 在幾年前也有很棒的時間軸服務，使用者可以在線上建立各式各樣的時間軸表格，例如幫政治人物寫編年史、把自己交過的女朋友都放到時間軸上，不過後來或許是因為 Nifty 找不到獲利模式，或是使用率太低，目前這個服務已經GG了，唯一能看到的剩下網站的線上說明頁面。
+（有讀者表示 GG 是宅男用語，我特別說明一下，GG 是線上遊戲玩家用來表示「這場打得真好！」，也就是「Good game!」的縮寫，有點類似 good job，後來反正不管是贏是輸，總之快結束了就可以喊 GG 了，也有玩家表示，GG 是 “Good bye, Garbage” 的縮寫）
+扯遠了，其實目前還有很多與時間軸有關的網站，讓我來一一介紹這幾個網站與相關的開發資源，或許你也可以開發出一個不錯的時間軸應用，記得要上來 Inside 分享一下呀～ :p
+TimeKiwi
+
+（圖為我的 Twitter + Instagram 串在一起之後的時間軸）
+TimeKiwi 是最近幾天才推出的新服務，很顯然的是在向 Facebook 致敬，使用者除了可以將 facebook 上的訊息呈現在 Timekiwi 之外，還可以將 Twitter、Instagram、Tumblr、Flickr、Foursquare 等當紅網站的資料拉進來一併在同一個時間軸呈現，我個人認為這個概念挺不錯的，早期的 FriendFeed 提供的功能就是單一介面整合來自多個服務的訊息，現在光是加個時間軸，好像就是另外一個不錯的服務了。（微創新，Micro innovation）
+Google Timeline
+ 
+
+Google Timeline 不是一個服務，而是 Google 公司簡介的其中一個頁面，網頁上以橫向時間軸的方式呈現了 Google 公司從創辦以來的關鍵里程碑。點擊畫面上的連結會出現的則是事件的簡介，這算是相當陽春的時間軸應用。
+Preceden
+
+Preceden的時間軸功能看起來是相對單純的，做起來其實很像一般的甘特圖，而且看起來簡簡單單的功能，居然是要收費的（儘管看起來不貴）。
+TimeToast
+
+TimeToast 的服務看起來稍微炫一點，除了依時間序列呈現資料之外，直接就可以看到各個時間點的資訊內容，可惜的是時間軸的繪製使用的是 Flash 的技術，在這個 HTML5 當道的年代，要趕快跟著用，免得被人家發現我們不懂加上越來越多人使用行動裝置瀏覽網站，已經宣稱不繼續發展的行動版 Flash 勢必會逐漸式微，這是網站經營者必須面對的議題。
+
+（圖：看起來似乎有學生利用 TimeToast 做了台灣貿易史的 Timeline）
+Tiki-Toki
+
+Tiki-Toki的時間軸看起來很炫，製作出來的時間軸圖表不僅可以包含多媒體的內容，還能自定樣式、背景圖片，如果好好設計肯定可以做出很棒的時間軸圖表。
+此外，Tiki-Toki 的時間軸是以 HTML5 技術製作的，因此使用者不需要額外安裝軟體，只要有支援 HTML5 即可瀏覽（當然，HTML5 目前還是個尚未定案的標準 :p），換句話說你也可以很輕易的嵌入自己的網站，不需要強迫你的使用者裝 Flash 當閃電俠。
+dipity
+
+dipity目前首頁的時間軸是剛過世不久的蘋果電腦創辦人 Steve Jobs 的生平年表。
+Timeline Reader of Associated Press（美國聯合通訊社）
+
+Timeline Reader是美國聯合通訊社的實驗室產品，利用時間軸介面讓使用者瀏覽、閱讀新聞。
+Hiiir 好時光
+
+Hiiir 好時光，這是國人自製的時間軸部落格外掛，早期是用來讓部落客、網站經營者可以利用他們提供的時間軸外掛來呈現網站上的文章、資料，並且將時間軸外掛作為廣告嵌入的工具，協助網站創造另一種獲利的可能。
+SIMILE Widgets: Timeline
+
+SIMILI Widgets相當特別，這是由麻省理工學院（MIT）某個實驗室的專案計畫獨立出來的一個開放原始碼專案，提供了幾個網站開發人員可能有機會用到的資料視覺化元件。其中我覺得 Timeline 是最棒的（其他的應該都有更好的替代品）
+其他開發資源
+
+jQuery Timelinr 網頁上的 demo 效果不錯，不過這看起來比較適合拿來接案XD
+Pure CSS Timeline 很不錯的一個範例，單純利用 CSS 的技巧將列表（也就是 HTML 中的 li 標籤）以時間軸的方式呈現。
+TimeGlider 本身是一個製作時間軸圖表的網站，同時也提供了一個 jQuery 的外掛：(timeglider.js)[http://timeglider.com/jquery/]
+Evolution of Web（網際網路的演變）
+
+最後再補充一個時間軸圖表的運用，Evolution of Web不是讓網友製作時間軸圖表的工具，而是以時間軸來呈現 HTTP 通訊協定、Web 與各家主流瀏覽器自 1990 年以來的演進。當然，這個網站是利用 HTML5 技術製作的。
+
+
+
+
+Chris Chen:
+December 20th, 2011 at 8:20 am
+ 還有 memolane ! http://memolane.com
+
+
+蔡正信:
+December 20th, 2011 at 8:25 am
+ 大陸的時間軸網站：時庫 http://www.timeku.com/
+
+
+李世安:
+December 20th, 2011 at 10:18 am
+ 想不到有這麼多呀！真令人眼花瞭亂
+
+
+陳廷:
+December 20th, 2011 at 12:26 pm
+ 哈哈, 我們那一群都把GG當成GameOver的疊字, 然後拿來嘲笑對方XD (玩BG時)
+
+
+Abai Cheng:
+December 20th, 2011 at 5:56 pm
+ 原來"時間軸"已經不是什麼新鮮事了...
+
+
+Jennifer Shanli Chen:
+December 21st, 2011 at 5:31 am
+ 补充一下，还有memolane，http://memolane.com/site
+
+
+Duye Chen:
+December 21st, 2011 at 4:52 pm
+ http://plurk.com 不算嗎QQ
+
+
+Felix Tang:
+December 21st, 2011 at 5:12 pm
+ 整理得很棒！Nifty Timeline真的是很精緻的網站，也有很多歷史年表知識，關掉得令人錯愕。
+
+
+Kuan-Yao Tseng:
+December 27th, 2011 at 6:31 am
+ Cool
+
+
+謝文琮:
+January 2nd, 2012 at 10:03 am
+ facebook 最近推出的好用嗎?
+
+
+趙政宏:
+January 6th, 2012 at 1:01 pm
+ 想賺全世界的錢沒門路? 想要擁有更多旅遊機會?
+這裡有一份可以省錢又能賺錢的優質事業
+只需要利用網路就可以創造意想不到的收入
+誠心邀請你免費了解>>> www.happyball008.weebly.com/
+
+
+盧珮瑜:
+January 14th, 2012 at 2:54 pm
+ 妳好~打勞了你是否還有夢想,或者對未來充滿願景？
+問問自己,常常一個人努力是不是很累？
+常常一個人獨自慢跑是不是很疲倦,你需要夥伴和妳一起奔跑！
+如果你渴望一個一起打拼的團隊，
+一起完成心中不敢想像的夢想,現在我們就在這裡！
+你一定要好好了解這個訊息★http://zzb.bz/KTMLo
+
+
+Fan-chieh Lin:
+January 15th, 2012 at 2:16 pm
+ 開眼界了(讚)
+
+
+

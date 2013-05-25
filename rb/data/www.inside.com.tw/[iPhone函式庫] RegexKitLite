@@ -1,0 +1,37 @@
+
+
+許多平常習慣於開發Web應用程式的開發者，當他們轉換跑道到iPhone開發上時，往往會對於Cocoa Touch不支援Regular Expression感到相當困擾。本篇文章將介紹RegexKitLite，這套在Cocoa Touch上的主流第三方Regular Expression Framework。
+Regular Expression
+Regular Expression在台灣的翻譯名稱有相當多種，像是「正規表達法」、「正則表達式」等，主要的作用是用來表達字串的Pattern，並且以表達出的Pattern進行搜尋、替換或是刪除等字串操作。
+像是在進行表格驗證、或者是分析網頁資料的時候，RegEx便是很常用的工具，在各種網頁開發語言中均有支援。
+RegexKitLite
+而在iPhone的開發環境Cocoa Touch中在OS 3.2前對RegEx沒有任何支援，而OS 3.2所提供的RegEx支援也僅只提供搜尋字串而已。因此，RegexKitLite這套第三方的函式庫便是大多數開發者的選擇。
+RegexKitLite為Cocoa Touch中原有的NSString提供了許多方便的方法來使用RegEx，背後的的原理則是使用iPhone OS內建的ICU函式庫來進行RegEx的操作。
+安裝方式
+我們首先從RegexKitLite的網站上下載最新版本，解壓縮後會得到範例程式、授權說明以及最重要的檔案：RegexKitLite.h/RegexKitLite.m，而我們首先便是要將這兩個文件拖放到Xcode的專案視窗中，讓RegexKitLite讓加入到我們的程式中。
+在順利加入RegexKitLite後，我們需要將我們的程式與RegexKitLite背後所使用的ICU函式庫進行連結。我們先打開我們專案的Info畫面，在Build分頁下搜尋Other Linker Flags選項，加入-licucore便完成了！
+當然，我們也需要在我們要使用RegexKitLite的程式碼中加入：
+import "RegexKitLite.h"
+這樣就可以在我們程式中呼叫相關的方法了。
+使用方式
+RegexKitLite提供的方法都是透過NSString來操作，並且有相當多種功能，以下是幾個筆者常用的方法：
+- (NSArray *)captureComponentsMatchedByRegex:(NSString *)regex;
+這個方法是透過傳入一個Regex來進行字串的比對，並且會將第一組比對出來的結果以NSArray回傳群組。
+- (NSArray *)arrayOfCaptureComponentsMatchedByRegex:(NSString *)regex;
+這個方法如同上者，一樣會回傳Regex所比對出來的字串群組，但會回傳全部的配對組合。
+- (BOOL)isMatchedByRegex:(NSString *)regex;
+判斷字串是否與Regex配對，在進行資料驗證的時候很實用。
+- (NSString *)stringByMatching:(NSString *)regex;
+這方法則是會回傳配對出來的第一個完整字串。
+- (NSString *)stringByReplacingOccurrencesOfRegex:(NSString *)regex withString:(NSString *)replacement;
+將字串中與Regex配對的結果進行替換。
+補充
+由於RegexKitLite所提供的方法相當的豐富，因此他們也提供了與Xcode文件整合，在Xcode 3.2版後可以在Xcode的設定畫面中看到Documentation的選項，點擊Add Publisher後輸入以下網址：
+feed://regexkit.sourceforge.net/RegexKitLiteDocSets.atom
+之後在同畫面中便會看到RegexKitLite Reference Library這個項目，點選旁邊的Get按鈕便會開始下載、加入到Xcode的文件查詢中。
+
+
+
+
+
+ Tagged with: iPhone, library, regex 

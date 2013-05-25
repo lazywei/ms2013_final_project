@@ -1,0 +1,107 @@
+
+
+
+ 
+筆者在研究web 3.0這詞代表的意涵時，看到了howstuffworks網站上的這份"web 3.0 小考題"，覺得還算有趣。一共有十個題目，原文是英文，筆者盡量翻譯成能理解的中文，在這裡分享給讀者。若想直接做英文版，可以上"web 3.0 小考題"。
+準備好了嗎，把答案照順序寫在旁邊的白紙上，做完後有答案與解說可對照。 看看你能答對幾題？或許你發現你已經是Web 3.0大師了喔～
+ 
+前言：
+根據網路媒體專家Tim O'Reilly的說法，像是Amazon與Facebook這樣的網站已經帶領第三代網際網路的變革。但什麼是Web 3.0?來做做這個考題吧！
+ 
+題目：
+1. 把Web用號碼分世代（web 1.0, web 2.0...）的想法是從哪裡來的？
+A. 從網際網路所需運作之軟體與通訊協定的版本模仿來的
+B. 從一個媒體大會的腦力激盪會議中誕生
+C. 網際網路發明者 Tim Berners-Lee說的
+
+ 
+2. Web 3.0這個詞有些人使用的是另一個詞，那是？
+A. the Semantic Web
+B. The InterWebs
+C. WiMax
+
+ 
+3. API是哪三個英文字的縮寫？
+A. automatic platform information
+B. application programming interface
+C. analogue partition ideology
+ 
+
+4. 網際網路(Internet)存在好幾十年了，請問網站（Web）什麼時候發明的？
+A. 1992
+B. 1990
+C. 1989
+
+ 
+5. 就網站來說，什麼是 ontology(本體，本體論)？
+A. 定義不同詞組之間關係的資訊構成的資料庫（a database of information that defines relationships between different terms）
+B. 一組追蹤網站演化記錄的歷史檔案（a history file that keeps track of the evolution of a Web site）
+C. 關於存在的抽象評論（a metaphysical comment on existence）
+
+
+6.什麼是metadata?
+A. 約會網站用這個資訊可幫忙用戶找到他們的對象
+B. 網頁設計師用來建立網站的程式碼
+C. 是個描述"網頁"給電腦理解的看不見的資訊
+
+ 
+7.用來說明一大群一大群的電腦一起工作來解決問題用的是哪個詞？
+A. virtual private networks（虛擬私人網路）
+B. parallel processing(平行運算）
+C. distributed computing(分散運算）
+
+ 
+8. 我們說Web 3.0將會是 contextual(上下文相關)，這意思是什麼？ 
+A. 你的上網經驗將跟你從哪裡上網而會有所不同
+B.搜尋引擎將會了解詞彙或關鍵字的意義
+C. 瀏覽器將變成3D立體化。
+
+ 
+9.如果Web 1.0的體驗像去圖書館：Web2.0的體驗像是跟一群朋友談話；Web3.0的體驗將像什麼？
+A. 有個人助理
+B.去上大學大講堂的課
+C. 去電影院，自選電影任意時間觀看
+
+10.Web 3.0個人檔案會怎樣影響使用者的瀏覽經驗？
+A. 每個人的瀏覽經驗都會不同。
+B. 因為所有事情都在背後發生，不影響瀏覽經驗。
+C. 利基型網站將式微，最後消失。留下數個壟斷的大型網站。
+
+ 
+ 
+答案：
+1. B. 從一個媒體大會的腦力激盪會議中誕生 
+2001年時，O'Reilly Media副總裁 Dale Dougherty在準備一個大會前的腦力激盪議程中跳出這個想法。該大會關注的是網際網路在泡沫後的狀態。
+2. A. the Semantic Web
+語意網能理解使用者輸入的目的與意義，提供更個人化與更相關的瀏覽經驗。
+3.  B. application programming interface
+非常多的web 2.0網站提供API讓外部開發者與之連結，存取資料，發展應用程式。Facebook就是個明顯的例子。
+4. C. 1989
+Tim Berners-Lee 在1989發明了World Wide Web。第一個網站是為了CERN的核子研究機構。
+5. A. 定義不同詞組之間關係的資訊構成的資料庫（a database of information that defines relationships between different terms）
+清楚完整的Web ontology對於瀏覽網頁的準確與相關性來說非常重要。
+6. C. 描述網頁給電腦理解的看不見的資訊
+Metadata存在於網頁原始碼裡面，瀏覽網頁時人看不到。但你的機器會閱讀這些資料，以了解網頁的內容。
+7. C. distributed computing(分散運算）
+使用分散運算，科學家能解決很大的問題。每台電腦僅做問題中的一小小部分。
+8. B.搜尋引擎將會了解詞彙或關鍵字的意義
+9. A. 有個人助理
+Web 3.0的瀏覽器將表現的像個個人助理，幫你抓取資訊，在你搜尋資訊時甚至會提供你沒想到的建議。
+10. A. 每個人的瀏覽經驗都會不同。
+網路瀏覽器將在每次瀏覽行為中學習使用者的行為。隨著對使用者的了解，將回應個人化後的結果。即便兩個人輸入相同的搜尋字詞，將可能看到完全不同的搜尋結果，而這搜尋結果是依據個別的Web 3.0個人檔案。
+答對了幾題哩？歡迎留言分享！
+ 
+想了解更多Web 3.0?
+ 
+Web 3.0這個詞雖然還沒被明確定義，但背後代表的世代交替正在悄然發生，例如行動網路，智慧手機，平板電腦，電子閱讀，社群媒體，雲端運算，HTML5，LBS服務，Open Graph，網路電視， 3D影像等等....這些都會帶來更個人化的網路，更相關的瀏覽經驗，更結合實體的虛擬經驗，值的我們提早關注。
+SlideShare上有些投影片有空的時候可以看看：
+Web 3.0: The way forward?
+Emerging Web 3.0 Technologies You Need To Know
+Web 3.0 -- What you may not know about the new web
+ 
+
+
+
+
+
+ Tagged with: web 3.0 

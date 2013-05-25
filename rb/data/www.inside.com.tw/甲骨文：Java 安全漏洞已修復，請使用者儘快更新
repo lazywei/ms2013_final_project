@@ -1,0 +1,19 @@
+
+
+
+在傳出 Java 安全漏洞的消息後，甲骨文於昨天緊急釋出了 Java 7 Update 11 的更新以修補相關的安全漏洞。（註一）
+使用者可以直接在甲骨文的網站上找到最新版本的更新：Java SE 7u11，在 Java 的官方網站上也有下載連結。在甲骨文的官方更新說明中（註二），指出這份最新版的更新修復了安全漏洞的問題，而在 Oracle Security Alert for CVE-2013-0422（註三）這份說明文件中更詳細說明了這兩個安全漏洞的情形。
+
+甲骨文於上週六確認了這項 Java 7 的零時差漏洞，而 Java 近來陸續出現的零時差漏洞，也讓許多公司不得不更加警惕。在安全漏洞的消息傳開後，Mozilla 於上週五宣布已經將有安全疑慮的 Java 附加元件加進了 Firefox 的黑名單（註四），分別是 Java 7 Update 9、Java 7 Update 10、Java 6 Update 37、Java 6 Update 38，至於更早以前的 Java 版本則早就因為安全問題而通通進了黑名單。而 Apple 隨後也將 OS X 10.6 及以上版本中的 Java 7 加進了黑名單（註五）。
+甲骨文呼籲使用者儘快進行更新。
+ 
+（註一）Oracle ships Java 7 Update 11 with vulnerability fixes, increased security level for Java applets
+（註二）Update Release Notes
+（註三）Oracle Security Alert for CVE-2013-0422
+（註四）Following active exploits, Mozilla adds all recent versions of Java to its Firefox add-on blocklist
+（註五）Apple takes no prisoners, immediately blocks Java 7 on OS X 10.6 and up to protect Mac users
+
+
+
+
+

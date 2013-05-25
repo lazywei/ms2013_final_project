@@ -1,0 +1,73 @@
+
+
+(圖片來源）
+請確認
+閱讀本篇前，請確認您已經看過前一篇文章：
+免費玩雲端運算，Amazon Web Service 雲端運算平台攻略 【1】
+並且，已經開通了AWS帳號及收到Amazon的Signup confirmation的電子郵件。
+本文目標
+在免費的AWS帳號下，建立一個Linux Micro Instance，並確認的確是免費使用。
+安裝步驟
+1. 登入Amazon EC2管理主控台，輸入電子郵件跟密碼。登入後應該會看到類似底下的畫面。
+
+2. 滑鼠點選中間最大顆的按鈕 -- Launch Instance，會出現你要安裝的系統，有各種Linux版本及Windows可以選擇。因為免費的只有10GB的root device，我們選擇Basic 64-bit Amazon Linux AMI 1.0 (AMI Id: ami-2272864b)這個系統，按下他右邊的Select按鈕繼續：
+
+
+3. 在這個畫面中，記得把Instance Type下拉選單拉開，選擇Micro(t1.micro)這個形式後繼續。
+
+
+4. 選擇Kernel ID, Ram Disk ID，直接按下繼續按鈕
+
+
+5. 接下來給這個Instance做一些taggin，以利管理搜尋用，可隨便給些有意義的組合：
+
+
+6. 現在我們得產生公開/私密金鑰。私密金鑰會下載到你的電腦上，以後連線到這個雲端都會需要使用這把鑰匙，請好好保存。自行取一個鑰匙的名字後，按下那個黃色的大按鈕來下載private key。本例子假設你存在你的linux desktop上面，檔案名稱叫做aws1.pem。
+
+7. 接下來這步設定防火牆:請依照下圖，在1的地方輸入防火牆規則名稱，在2的地方選擇要讓通過的通訊協定，本例選擇了SSH;接下來在3的地方按下Add Rule，最後就會在4的地方看到新增的防火牆規則。好了的話按最下方的Continue。
+
+8. 然後你就會看到總結設定，如果一切都沒有錯誤，請按下Launch。到此稍微等待幾分鐘，等著系統跑起來！
+
+
+
+9. 按這裡查看目前你的EC2安裝情況。
+如果你看到類似這樣的圖以及綠燈，你的AWS EC2 instance就是正常運作中了！
+
+
+10. 用Linux或Mac桌機或筆電連上Amazon的這台機器。
+打開terminal，把剛剛存的那個aws1.pem(或是你自己取的名字）拷貝到你現在terminal的目錄。然後執行這兩個指令：
+# chmod 400 aws1.pem
+# ssh -i aws1.pem ec2-user@xxxxxxxx.compute-1.amazonaws.com
+上面紅字的部份是你的Instance的Public DNS，先按下這個連結，並照下圖方式了解怎麼查詢你的Public DNS: 用滑鼠點1所指的地方，底下就會看到Public DNS，如2所示：
+
+如果連結順利，你就會登入屬於你的雲端Linux Instance了！
+Last login: Tue Nov  2 12:01:19 2010 from xxx-169-ooo-205.dynamic.hinet.net
+__|  __|_  )  Amazon Linux AMI
+_|  (     /     Beta
+___|\___|___|
+See /etc/image-release-notes for latest release notes. :-)
+[ec2-user@ip-10-122-123-98 ~]$
+若需要執行root相關指令，要加一個sudo在前面，例如
+# sudo /bin/cat /etc/image-id
+image_name="amzn-ami"
+image_version="0.9.9-beta"
+image_arch="i386″
+image_file="amzn-ami-0.9.9-beta.i386.ext3″
+image_stamp="8b90-2738″
+image_date="20101022231728″
+recipe_name="amzn ami"
+recipe_id="7b8ceb26-4178-40b4-9915-3ee78e68f833″
+11. 檢查是否是免費AWS EC2 Instance
+到此，你已經建立完成了一個AWS Linux Micro Instance。
+但是你心中還是有個疑惑，到底這是不是免費的？由於這個方案剛推出，Amazon Web Services討論區上很多人也搞不清楚自己到底是用免費的還是要錢的。如果流量超過了，又要怎麼看費用？
+由於現在你的Instance剛建立好，系統還沒有幫你產生流量報告，經過幾小時候，可點Account Activity來了解你的費用情況。按下1的部份展開所有服務內容，如果你看到$0.00以及free tier字樣，那就可以確定你用的是AWS Free Tier，可用一年免費！
+但如果畫面上顯示每小時需要0.01美金之類的數字，那就糗了。可能是你的帳號在10/21以前就註冊過了，不符合新客戶資格。遇到這種情況可以選擇cancel 這個服務囉。
+
+小結
+本篇完成之後，你應該知道你用的是否是免費的free tier。並且，你也可順利連上Amazon雲端上的Linux instance。隨時可以開始玩一些東西了。下篇文章將找個實際網路案例來試做一下，開始使用Amazon 的相關服務。敬請期待。
+
+
+
+
+
+ Tagged with: aws free tier 

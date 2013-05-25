@@ -1,0 +1,88 @@
+
+
+
+筆者牛仔褲口袋可塞kindle fire與kindle
+
+這是筆者這一系列有關Amazon.com 創辦人兼CEO Jeff Bezos文章的最後一篇，第一篇「Be Afraid of our customers....」筆者試著藉由Jeff Bezos講過的幾句話，來描述其以客戶為尊創造Amazon.com商務王國的部分故事；第二篇「由線上書店到kindle fire ...」，筆者則是分享了Jeff Bezos為何於17年前的創業是選擇於網路上賣書開始，與搖身一變成為硬體商的故事(也簡單展示了kindle fire的功能)。
+kindle fire是Jeff Bezos要將Amazon.com的觸角延伸到個人與隨身多媒體消費的showcase與旗艦，本篇筆者試圖由其設計與定價的策略，來看Jeff Bezos的企圖心。(有關kindle fire目前在台灣的實測，有興趣的讀者可以參考Mona這篇文章)
+1. 功能與價格區隔的全系列 kindle，低價策略刺激銷售
+
+今年9/25 Jeff Bezos對外發表了售價美金$199的kindle fire的同時，也發表了價格由最低美金79到最高美金189的全系列 Kindle e-readers(不包括kindle dx)，都是6吋的E-ink display，差別在Wifi / 3G，或者有無廣告，有無鍵盤，觸控式操作與否。最低價格美金79的Kindle e-reader只有Wifi， 非觸控操作，會看到廣告(但只會於非閱讀中顯示)，美金79差不多是到書店購買五六本書的價格，且目前Amazon.com上銷售的實體書與Kindle Version平均差價為美金$5的情況下，只要買了15本Kindle ebooks就划算了。
+這是一個所謂no-brainer的價格，如此積極的定價策略會創造無需太多思考的衝動購買行為，Amazon.com可以藉此爭取更多kindle的用戶。而以kindle用戶平均會比擁有kindle之前多買70%的書的狀況來看，Jeff Bezos視硬體為銷售更多內容/服務的策略顯而易見，這與Apple主要藉由內容/服務來銷售硬體是截然不同的。
+2. 犧牲硬體利潤，擴大市佔率，以銷售內容為獲利來源
+Tablet由Apple推出iPad開始兩年多了，可以說Apple佔據了tablet的市場，其他Andriod陣營，或者RIM，HP等推出的tables，都無法由售價，功能與使用者經驗中取得一個對的組合方程式(也可以說，即便售價與iPad一樣，甚至較低，但帶給消費者的感受價值不足，因此認知上是over-priced)，只能吸引非常少數的消費者，至今都無法與Apple匹敵。
+而售價與成本接近，且是不到最便宜的iPad售價一半的Kindle Fire(IHS iSuppli估計一台Kindle Fire的成本是美金$201.7)，就是更積極的以補貼硬體來擴大市場的策略了。Amazon以較低的價格銷售硬體，因為相信它的內容商品將會創造更多的價值以彌補補貼的成本，這是一個長期獲利的戰略，與例如Nintendo等在遊戲機市場的策略類似，一開始先犧牲利潤將硬體推到消費者手中，而這些消費者通常會回饋更高的消費營收。
+Amazon這個策略是否奏效現在說還太早，但最近美國一個調查顯示於預計購買tablet的消費者中，22%考慮購買kindle fire(65%欲購買iPad)。雖然這只是意向調查，不是真正的購買數字，但上週美國感恩節銷售旺季，Amazon.com宣稱kindle系列的銷量是去年的四倍，而其中kindle fire據Digitimes的報導出貨量為三到四百萬台，且曾是bestbuy.com (不包括實體店)銷售最好的tablet，說明是一個很好的開始。分析師預估今年kindle fire的銷量會達到500萬台，而Citi分析師Mark Mahaney更推測2012年Amazon會售出1200萬台kindle fire，攻佔15%的tablet市場，如果真有這個數字，tablet市場將有另一個訴求與進入方式與Apple不相同的主要player了，這樣市場才會更有趣，也是消費者之福！
+除了消費者，驅之若騖的還有developers。今年11月初北美一份針對兩千多位mobile developers做的調查，有49%非常有興趣開發kindle fire的Apps，主要理由就是kindle fire便宜的售價可以吸引更多iPad以外的tablet用戶，以及Amazon豐富的content ecosystem，精準的目標消費者管理行銷與電子商務的高度整合。
+***UPDATE***(Dec 7,2011) : GigaOM這一篇報導，呼應了筆者的看法，請參考！
+3. 優化數位商品消費的設計與高度的服務整合
+筆者於第二篇中對kindle fire下的定義，是Amazon為了消費者容易瀏覽，購買與使用其所銷售的數位內容商品，包括電子書，音樂與影片等所設計的tablet vending machine(無線平板販賣機)。從硬體產品的角度來看，Amazon.com現在有了以不同功能與價格區分的kindle系列，但從推出kindle之初，Jeff Bezos始終著重於與Amazon.com服務高度的整合以及數位商品消費的優化設計，而非類似其他硬體著重的general-purpose computing。
+從筆者第二篇的demo video中可以看出，Amazon把kindle fire設計為一個wall-gardened的操作介面，對於與筆者一樣是Amazon.com的重度消費者而言，從數位到實體商品的瀏覽與消費，真的非常便利，甚至比於電腦前使用的經驗更佳，也可以吸引非重度或者潛在的消費者。對於使用者經驗的優化，Jeff Bezo對使用者經驗講究龜毛之處，可以從kindle fire上預設提供的Andriod Apps，都只能由Amazon.com的AppsStore for Andriod中取得看出。
+因為這些Apps都是Amazon.com嚴選，雖然因此會犧牲不少出現於Andriod market上的Apps，但把關過的Apps，確保適合於kindle fire上執行順暢，提供較佳的使用經驗，不見得是壞事(當然若把kindle fire root成為一般的andriod tablet，就可以到Andriod market上下載，這是另外一回事了)。這樣的把關，其實也對第二點中提到的developers有幫助，因為開發出來的Apps，能被Amazon挑選，就好像有了Amazon的背書，可以提高能見度與消費者購買意願。
+容易上手與友善的使用環境，是會刺激消費的(方便到筆者有時沒考慮太多就會多買幾本書)，這是落實上述第二點策略的必要配套措施。
+4. 雲端運算 Thin-Client與線上作業系統的實現
+為達降低硬體售價以降低購買的門檻，除了補貼的策略，也要從硬體的規格上來降低製造成本，所以Jeff Bezos把與kindle fire主要用途"數位商品販賣機"不相干的元件例如camera移除，且僅使用512MB的RAM ，與內建容量較少的8GB儲存空間等，但也代表效能會打折扣，如何彌補，此時Jeff Bezos倚賴的利器就是cloud computing。
+kindle fire是透過利用Amazon EC2 (Elastic Compute Cloud) 核心技術的Silk browser(Amazon專為kindle fire開發的browser)，由cloud分攤原本在tablet上進行的運算。Silk會由過去的活動來"猜測"消費者接著想要做什麼，來加速瀏覽(以及消費行為)的速度與順暢，這些智慧與判斷是累積在cloud上，而非kindle fire上。加上今年推出的Amazon cloud drive服務來儲存消費者的數位內容，還有streaming VOD，意味著Jeff Bezos正在打造可能是第一部會受大眾歡迎且銷售成功的cloud computing與consumption的thin-Client 硬體(2011年中Google推出使用light作業系統 Chrome OS，大量使用雲端運算的Chromebooks，也是thin-client-to-cloud架構的硬體，但銷售狀況慘不忍睹)。
+同時，Amazon也於kindle fire上展示了真正的價值，其實是可以透過控制使用者介面，瀏覽活動以及消費行為的運算過程中獲得，而不是透過擁有硬體或者是作業系統。wired.com比較Apple與Amazon於設計tablet上的運算思維差異，稱Apple為Post-PC，而Amazon為Post-Web，因為Apple以硬體為中心，擁有OS，但Amazon是以雲端為中心，以優化的瀏覽器取代OS的重要性。
+ 
+不是iPad-killer，是Jeff Bezos' unique kindle fire
+Jeff Bezos一宣布kindle fire時，認為Amazon要來搶攻Apple獨佔的tablet市場，這樣的解讀沒什麼不對，但也太簡化了Jeff Bezos的企圖。Jeff Bezos不會是follower，而是開拓者。他打造的不是一個"iPad-killer"，而是有清楚的目標市場與族群，結合Amazon.com獨特的優勢且豐富的服務內容設計的kindle fire，創造出有別於iPad(與其他Andriod tablet)的另一個tablet大眾市場。
+別忘了，Amazon是一個網路零售商，是一個服務提供者，Jeff Bezos的kindle與kindle fire，是服務的載體，是Amazon.com提供服務的開始，而不是最終的硬體數字。
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+筆者習慣長篇大論，本文原本應該到此就結束了，但因提到AWS，Amazon Web Service，既然已經閱讀至此的讀者朋友們，就允許筆者再囉嗦一下。
+Amazon.com從賣書本到銷售各種實體商品，這樣的發展是理所當然。而即便推出kindle 銷售電子書，雖然歷經困難重重的開發過程，數位化的趨勢是不可擋，對於Jeff Bezos而言，重要的是到消費者手上的content，不論是於紙本上或者由網路上傳輸到電子閱讀器上。而產出與傳遞電子書遠比紙本書來得低廉時，推出kindle就是一個勢在必行的策略。但AWS，一個連目前佔北美網路頻寬25%以上的Netflix都使用的服務(EC2)，實在是Amazon.com這個網路零售商最大的驚奇。
+起因是2000年時Amazon幾位工程師想要加強Associates(其他網站可以轉單到Amazon.com)以及MarketPlace的功能，發現如果這些合作廠商有機會可以接取龐大的資料，以及使用Amazon.com已開發為內部用的銷售軟體與工具，會不會讓其他網站更容易幫忙Amazon.com銷售？把資料與工具提供給第三方，Amazon.com其實是不用花一毛錢就可以外包新產品的開發，所以Amazon.com於2002年推出AWS，developers開始開發與建立可以引導消費者到Amazon.com購物功能的網站。
+Jeff Bezos 的 Why Not 思考哲學
+這個服務推出之前在Amazon.com內部有很大的爭議，除了認為Amazon.com應該要專注於本業-網路購物外，因為developers在開發的網站上也可能加入其他購物網站的資訊讓消費者選擇，等於是把客戶送給別人。但如同筆者第一篇文章中提的Amazon MarketPlace(Amazon.com之外的賣家可以在Amazon.com上面銷售商品)於內部省產生很大的反彈，Jeff Bezos再次用他"Why Not"的哲學看這個問題，今年11月wired.com的專訪時，他說過：
+"The common question that gets asked in business is, why? That’s a good question, but an equally valid question is, why not? This is a good idea, we have a lot of skills and assets to do this well, we’re already going to do it for ourselves—why not sell it, too?"
+他於2007年接受Harvard Business Review專訪，被問到認為發生過最大決策性的錯誤的性質是什麼時，他回答是："Most big errors are errors of omission rather than errors of commission"；而被問到該如何避免時，他就是提到可以用這個"Why Not"的思考邏輯來判斷與下決定。
+而AWS從最初網站之間互享服務的功能，一路擴展到今日的EC2。除了吸引到以下這幾個具代表性的客戶之外，AWS讓中小企業與新創公司可以用彈性與經濟的方式來取得運算資源，美國還有些創投會送Amazon.com的gift cards給新創公司去購買AWS服務，節省初期的硬體投資費用。
+
+AWS代表性的客戶 (資料來源 : wired.com)
+
+Amazon.com AWS於2010年的營收約為5億美元，雖然佔不到總營收的2%，但今年2011年會超過10億美元，依這樣的成長速度，顯然UBS去年做出其2014年會達到25.4億美元的預估是被低估了。
+
+
+
+
+Omar Ca:
+December 5th, 2011 at 6:42 am
+ 「與例如Nintendo等在遊戲機市場的策略類似，一開始先犧牲利潤將硬體推到消費者手中，而這些消費者通常會回饋更高的消費營收。」
+挑個小錯：Nintendo是不賠錢賣硬體的，Sony & Microsoft才是。舉錯例子了。
+
+
+于文強:
+December 5th, 2011 at 7:24 am
+ 我也覺得"XX-killer"很無聊，那是follower才有興趣的事
+
+
+Kuan-wei Lee:
+December 6th, 2011 at 7:39 am
+ 作研究的時候，要問的是Why Yes? 不過再作商業思考的時候似乎要聞說，why Not?
+I'm not sure...
+
+
+王正德:
+December 7th, 2011 at 3:25 pm
+ 多數人都會看Google、Apple和Facebook模式，但Amazon更值得研究。這系列三篇寫得真讚。
+
+
+Robert T. L. Lo:
+December 7th, 2011 at 6:19 pm
+ GigaOM對developers於Kindle Fire推出後的追蹤報導, 呼應了筆者的看法, 請參考 : http://gigaom.com/2011/12/05/the-kindle-fire-the-next-big-haven-for-developers/.
+
+
+趙政宏:
+December 14th, 2011 at 4:26 am
+ 居家網路創業兼職，建立屬於你的事業
+在家工作，不用外出奔波勞累
+免費索取資訊 www.happyball007.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+Carol Lin:
+January 20th, 2012 at 7:58 pm
+ How about Apple's iBook and Kindle Fire..
+
+
+

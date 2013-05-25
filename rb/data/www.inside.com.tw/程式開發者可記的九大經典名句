@@ -1,0 +1,195 @@
+
+
+
+剛逛到Dan的部落格，我不認識他，從部落格內容看起來他應該是位優秀的C#, .net程式設計師。看到他的新文記錄了九個對他自己有重大影響名句佳言，大部分筆者自己都沒聽過，學到了並試著翻譯並加入自己的心得，分享如後：
+ 
+
+設計是關於找問題，自身並不是解答。
+Leslie Chicoine
+
+正好最近用ipad 2在看itune上姚仁祿先生的"設計邊境" podcast，他也說設法從現狀想辦法靠近期望的能力等於「設計」。這跟Leslie說的有異曲同工之妙。
+ 
+
+功能規格書根本不起作用。
+37signals
+
+這話很嚴重，但從37signals口中說出來就不意外。他們認為功能規格書是在資訊不充足下，就得做出關鍵性決定，這樣寫出來的文件可說只是在幻想，而更糟的是功能規格書還可能限制了改變，重新評估與版本演進的可能性。37signals說，"不要寫功能規格書！"。
+
+什麼是Legacy Code?就是一堆沒有留下測試的程式碼。
+Michael Feathers
+
+Michael是敏捷開發與XP社群的活躍成員，對於各類軟體開發方法論都有深入的見解。對於需要維護公司舊系統的你，是否心有戚戚焉？但只要你寫的新程式沒有寫測試，你的程式碼交出去之後馬上也就會變成legacy code。
+ 
+
+任何傻瓜都能寫出電腦看的懂得程式碼。但只有好的程式設計師能寫出人看得懂的程式碼。
+Martin Fowler
+
+Martin是位大師，專長在物件導向分析與設計， UML，敏捷開發方法論...等。如果你熟悉Dependency Injection ，而且發現這東西很難懂卻又偉大，你就知道Martin有多強了，因為那是他發明的詞。
+ 
+
+Testing shows the presence，not the absence of bugs.
+Edsger 
+
+得過1972 Turing Award的大師Edsger W. Dijkstra講了這句話，真是難翻譯，若有網友有好翻法，請留言告知。我去翻了這句話的原文出處，在1969 年的NATO軟體工程會議中，針對測試方法與技巧進行討論時，他說了這句經典，測試無法辦法顯示出臭蟲不存在，
+ 
+
+簡化不先於複雜發生，而是在之後。
+Alan Perlis
+
+對於真正困難的問題類型，如果沒有知道複雜的全貌，是無從簡化起的。相反地，一開始就能簡化的問題，大概那個問題真的是簡單的不得了。
+ 
+
+真正的開發者會交出產品。
+Jeff Attwood
+
+如果身為一個開發者，不以交出產品給市場為前提來工作，常常喊著需要更多的時間來開發，或因未知的技術問題裹足不前，猶豫不做行動等等，嚴格來看他不是個真正的開發者。面對各種的未知與挑戰的最好方法，就是交出產品，讓市場驗證。
+ 
+
+沒有什麼是萬靈丹。
+Frederick Brooks
+
+人月神話作者Frederick說相較於硬體開發，軟體開發不存在單一技術或管理技巧的發展能確定在十年內提昇軟體的生產力也好，穩定度也好，簡單易用也好，統統不行。軟體發展的萬靈丹並不存在。他也說，每兩年要提昇兩倍也是不可能的。
+ 
+
+如果今天是我生命的最後一天，我會想要做我今天將做的事情嗎？
+Steve Jobs
+
+這是名言了。知道的人很多很多，因此只翻譯一小段。完整原文請到這邊去看。
+ 
+你還有什麼樣的名句，大家交流交流吧。
+在Inside寫稿的每一天，筆者可覺得都是自己想做的事情喔～
+明天上班您要做的事情，也是你生命最後一天會想做的事情嗎? 如果不是，想想Jobs怎麼做的吧，共勉之！
+ 
+
+
+
+
+Harvey Chen:
+April 27th, 2011 at 2:33 pm
+ Testing shows the presence，not the absence of bugs.
+我想可以翻成: 測試是為了抓出bug,而不是為了抓不到bug
+
+
+Mona Hu:
+April 27th, 2011 at 2:37 pm
+ LOVE THIS.
+
+
+Jersey Su:
+April 27th, 2011 at 3:16 pm
+ 人月神話真是經典中的經典
+Testing shows the presence，not the absence of bugs. => 非常同意
+
+
+Eric Li:
+April 27th, 2011 at 3:27 pm
+ 「功能規格書根本不起作用」，對這句話不能同意得更多了！
+Testing shows the presence，not the absence of bugs.
+測試是為了抓出臭蟲，而非為了表示臭蟲不存在？也就是說，一定會有臭蟲，你抓不到表示你的測試方法有問題。
+
+
+Jacob Mei:
+April 27th, 2011 at 3:51 pm
+ Testing shows the presence，not the absence of bugs. 我覺得可以翻譯成：有蟲故有測 :P
+
+
+Simon Chung:
+April 27th, 2011 at 4:15 pm
+ 找不到，不代表蚤不到。
+
+
+Richard Tsai:
+April 27th, 2011 at 4:23 pm
+ 「功能規格書根本不起作用」, 深有同感。其實也不是沒作用，要看產品或專案特性，stakeholder的期待。如果所謂的"完成" 只是要符合規格，那就看規格書吧。如果所謂的 "完成"，必須不斷追求更好的產品品質及使用經驗，那麼規格書真的是不用也罷！.
+
+
+Hilary Cheng:
+April 28th, 2011 at 12:01 am
+ "Legacy Code is Code Without Tests", 我認為應翻成 "Legacy Code 是一堆沒測試的程式碼".
+
+
+Chien-Hung Lai:
+April 28th, 2011 at 1:37 am
+ Testing shows the presence，not the absence of bugs. 也許可翻成：「測試通過，不代表程式沒錯。」
+
+
+Sheng Wang:
+April 28th, 2011 at 2:38 am
+ 妙…
+
+
+Gregory Chen:
+April 28th, 2011 at 6:32 am
+ 測試只能告訴你有沒有"發現"bug, 無法告訴你程式確實沒bug
+
+
+Yu-Sheng Huang:
+April 28th, 2011 at 7:34 am
+ "測試是為了找出錯誤(臭蟲)的存在，而非證明被測物(程式)的無暇。"
+
+
+Jay Chen:
+April 28th, 2011 at 12:17 pm
+ 找不到的蟲才大條！
+
+
+黃聖元:
+April 28th, 2011 at 3:00 pm
+ 衝！
+
+
+葉龍泉:
+April 28th, 2011 at 4:25 pm
+ Testing shows the presence，not the absence of bugs.
+這句話如果從邏輯的觀點來想，就很清楚了。我們都知道 『若p則q』只能得到『若~q則~p』的結論，但是萬萬不能得到『若~p則~q』的結論。
+把『抓到臭蟲』代入p, 『程式有問題』代入q，你就會知道：抓到臭蟲 代表 程式有問題，但是抓不到臭蟲呢？充其量只能說在你有限的測試方法裡找不到問題，但是它並不是bug free的保證.
+
+
+XiangCheng He:
+April 29th, 2011 at 2:10 am
+ 程式只會照你"寫"的跑，不會照你"想"的跑
+
+
+Palk Zhong:
+April 29th, 2011 at 2:38 am
+ 同學推~ ^o^
+
+
+虞敬業:
+April 29th, 2011 at 6:34 am
+ Testing shows the presence of bugs，.
+not the absence of bugs.
+這樣分兩句會比較清楚吧
+
+
+Tom Tan:
+April 29th, 2011 at 11:33 am
+ 規格書真的沒有作用，因為規格一直在變。只要把要解決的問題濃縮成一句話貼在螢幕的邊框上，有新的想法就抬頭看看它。
+
+
+Chienyu Chen:
+April 30th, 2011 at 10:00 am
+ 簡化不先於複雜發生，而是在之後。
+過度的流程和保守的想法會讓程式複雜
+想反的簡化來自於過度的簡化流程和過度自信的想法
+
+
+陳志偉:
+June 13th, 2011 at 12:21 pm
+ Great! 推推!
+
+
+Kevin Lee:
+August 24th, 2011 at 1:57 am
+ http://kiwi-grid.blogspot.com/2011/08/blog-post.html
+希望也可以與大家分享
+
+
+趙政宏:
+October 30th, 2011 at 8:46 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

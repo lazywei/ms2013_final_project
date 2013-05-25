@@ -1,0 +1,51 @@
+
+
+在這次的課程中，請到了在Apple開發軟體鍵盤的工程師來跟跟大家說明iPhone中的軟體鍵盤使用，以及Modal View的顯示。此外，針對上次的執行緒相關問題也會做個簡單的複習，就讓我們一起來看看吧！
+NSOperation
+NSOperation是將工作抽象化後的類別，每一個物件就是一個需要執行的工作。在使用上，我們需要將一個工作包裝在它的子類別中，而NSOperation本身的機制就會幫我們負責執行緒的建立與管理。在那個子類別中，我們除了需要重載自己的init方法之外，也需要重載-main方法並在其中加入所需要被呼叫執行的方法。
+而Cocoa也提供了NSOperationQueue的機制來幫助我們使用NSOperation，我們只需要為這個queue設定同時間operation的上限，之後只需要將所需要執行的NSOperation加入這個queuer就會依照順序執行了！
+然而，為了創造新的執行緒而建立新的NSOperation子類別有時候未免略顯麻煩，因此Cocoa也提供了NSInvocationOperation的類別，讓我們可以直接建立新的NSOperation並且加入到queue中，如同下方範例程式碼所示：
+- (void)someAction:(id)sender {
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc]
+                                         initWithTarget:self 
+                                         selector:@selector(doWork:)
+                                         object:someObject];
+    [queue addObject:operation];
+    [operation release];
+}
+比起自己建立NSThread，是不是很容易許多呢？
+虛擬軟體鍵盤
+曾經使用過iPhone一段時間的使用者們應該都對於虛擬軟體鍵盤相當熟悉，除了一般的文字鍵盤之外，針對不同的用途也會有不同的鍵盤呈現。下面就是幾種常見的鍵盤類型：
+
+此外，除了不同種類的鍵盤之外，文字編輯又分成了單行跟多行，鍵盤的操作上也略有不同。
+那我們要如何設定軟體鍵盤呢？在iPhone OS中，軟體鍵盤會依照各個文字容器中的設定而改變，常見的文字容器像是UITextField或是UITextView都會實做一個UITextInputTraits這個protocol，而這個protocol包含以下設定值：
+autocapitalizationType --- 首字大寫
+autocorrectionType --- 自動更正錯字
+enablesReturnKeyAutomatically --- 確認使用者有輸入文字後才啟用return鍵
+keyboardAppearance --- 鍵盤外型
+keyboardType --- 鍵盤種類
+returnKeyType --- return鍵的類型
+secureTextEntry --- 隱藏輸入的文字
+詳細的設定可以參考iPhone SDK中的說明文件。
+Modal View
+在iPhone中，我們除了Navigation和Tab bar兩種導覽方式之外，我們也會看到從下方浮出來並且佔據整個螢幕的View，這種View就稱作為Modal View，適合像是選取資料、或是新增資料等獨立的功能。
+實際上使用也相當的簡單，只需要對現在的View Controller呼叫方法：
+- (void)showAddRecipe {
+    RecipeAddViewController *viewController = ...;
+    [self presentModalViewController:viewController animated:YES];
+}
+而要移除Modal View，我們必須對於原本建立Modal View的Controller加入新的delegate方法：
+- (void)didAddRecipe {
+    [self dismissModalViewControllerAnimated:YES];
+}
+結論
+這次的課程中，我們學到了iPhone上關於鍵盤的知識以及如何透過Modal View呈現新的View，這兩者都是建立iPhone應用程式中不可或缺的元素。在下一次的課程中將介紹Web View以及地圖定位相關的API，敬請各位讀者繼續鎖定本部落格的連載！
+參考資源
+Lecture #11 -- Text Input, Presenting Content Modally
+UITextInputTraits Protocol Reference
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

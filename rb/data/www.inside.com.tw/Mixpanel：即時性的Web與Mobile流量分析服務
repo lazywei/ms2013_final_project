@@ -1,0 +1,42 @@
+
+
+Mixpanel（註：此連結為Inside專屬推薦連結，點擊註冊後可幫助Inside獲得點數）
+Mixpanel是個號稱「即時網站流量分析」服務，最近一陣子引起了一些關注，號稱不僅可以讓你追蹤使用者在網站上的各種行為，還是即時產生報表讓你知道這一刻網站上發生了什麼事。據說目前一個月追蹤了10億次使用者的個別行為（例如一次點擊、一次造訪），換算下來每秒至少是385次。
+事實上，目前最知名的流量分析服務Google Analytics也可以協助網站經營者追蹤使用者在網站上的各種行為，包括是否有點擊某個連結、是否播放了某一段影片或是追蹤購物車、下單過程等等。以Google提供服務的規模與品質來說（加上多數情況我們可以免費使用），要另外推出流量分析服務顯然要有一些吸引人的特色。
+即時性（Realtime）
+由於流量分析涉及大量資料的蒐集、彙整、儲存與分析等細節，實務上要做到真正的即時是非常不容易的，尤其伴隨服務規模、客戶數量的增加，流量分析系統的能耐更是必須要禁得起考驗（不僅要Scalable，還要Robust，最好還要Reliable、Secure）。
+因此，敢號稱自己是即時分析的廠商，大概都要有一定的規模，例如Yahoo!站長工具裡面的數據據說是即時的，或是像Reinvigorate，雖然號稱即時，但服務本身其實也不怎麼好用、近年來也沒有明顯的成長與進步。
+就一家提供流量分析的新創公司來說，在第一刻就宣告自己要做即時流量分析是非常需要勇氣的，但事實證明他們做到了，這當然也是拜軟硬體技術持續在進步所賜。
+多元化的分析方式
+Mixpanel在Getting Started的畫面中列出了以下幾個追蹤的功能：
+Event tracking
+Funnel tracking
+A/B testing
+iPhone analytics
+Android analytics
+Email analytics
+
+畫面中很直接的讓使用者知道：Mixpanel就是提供這些功能給你，你需要的話馬上就可以照著教學指南開始進行各種行為的追蹤，其中最重要的是提供了iPhone、Android這兩種目前最熱門的智慧型手機原生的追蹤方式，讓應用程式開發人員可以直接在iPhone裡面使用Objective-C的語法、在Android手機中使用JAVA語法直接追蹤使用者在應用程式中的各種行為。
+與Google Analytics之異同
+Google Analytics是個非常棒的服務，而且Google仍然持續的在讓它持續進步，每隔一段時間總會有新功能、新修改的消息釋出（包括使用者條款中告訴我們：單月500萬PV以內免費這件事也是有在考慮Google Analytics的未來），上述的Event tracking、Funnel tracking、A/B testing、Email analytics等行為其實Google Analytics也都有提供對應的作法（A/B testing的部份可能需要依賴Google Website Optimizer），只要花點時間學會Google Analytics的使用並閱讀相關的教學、API文件就可運用。
+Mixpanel與Google Analytics最大的不同是：Mixpanel追蹤的是行為，而不是Pageviews這種我們早就已經有各種管道可以追蹤的數字，Mixpanel希望協助你更深入的了解使用者的行為。
+此外，Google Analytics並不是一個即時性的服務，同時它在追蹤手機行為方面的能耐也非常有限，這方面Mixpanel是很直接的告訴你：我就是直接提供API給你進行追蹤！這顯然是目前市場上最需要的一種服務，過去大家以Web analytics、Web mining等技術研究使用者在網路上的行為，如今人手一台iPhone、Android手機的時候，我們需要更方便、更先進的技術了解、研究使用者們在手機上、在Apps裡面的行為，以作為手機使用介面、App功能調整、改進的最主要參考依據。
+除了行動裝置的行為追蹤之外，Mixpanel也可以追蹤ActionScript 3.0版本的API，讓Flash/Flex的開發人員可以直接利用原生的程式碼在熟悉的環境中追蹤使用者行為。Data API也提供了完整的存取介面，讓程式開發人員可以將Mixpanel上的資料匯出進行更深入的分析（這部份Google Analytics也可以），目前還提供了包括Python、PHP、Ruby、JavaScript等語言的client libraries。
+我認為，在定位、目前已經提供的服務內容、API與說明文件等方面，Mixpanel顯然是一家來勢洶洶的公司，或許也很有機會成為被現有的流量分析公司收購的對象，畢竟它又Realtime、又支援手機（而且還有各種語言的API可以用），實在沒有不買的道理。
+又是一家Y Combinator旗下的公司
+Mixpanel又是一家Y Combinator旗下的公司，如果你還不知道Y Combinator這個成功的創投育成平台，可以參考育成創投先鋒：Y Combinator一文，包括知名的雲端儲存服務Dropbox也是Y Combinator培育出來的成功案例。過去我們已經跟各位讀者介紹過許多關於Y Combinator的故事與團隊，包括：
+關於創業，你必須知道的13件事
+美國新銳網路服務點兵錄：Y Combinator歷來規模最大的Demo日
+網路創業實例：意外起飛、24小時累積10,000名用戶的Rapportive
+EmailOracle：協助你在Gmail追蹤收件者是否已經閱讀郵件
+Opzi：企業版的Quora，讓組織的知識管理更有效率
+Hipmunk：介面超簡潔的機票搜尋引擎
+服務與趨勢數據分析
+有越來越多的服務是同時提供Web介面與手機介面，同樣的在了解使用者行為上，我們就需要蒐集更多的資料與數據來提升服務的品質、持續改善使用者的體驗，Mixpanel或許是希望能藉由這樣的模式與定位，在市場中先佔有一席之地。若你是行動應用開發人員，不妨試試Mixpanel所提供的追蹤功能吧！
+如果你對Mixpanel有興趣，歡迎點擊連結註冊，試用看看！Mixpanel（註：此連結為Inside專屬推薦連結，點擊註冊後可幫助Inside獲得點數）
+
+
+
+
+
+ Tagged with: analytics, mixpanel, y-combinator 

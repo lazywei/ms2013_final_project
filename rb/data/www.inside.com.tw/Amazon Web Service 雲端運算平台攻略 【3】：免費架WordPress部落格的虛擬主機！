@@ -1,0 +1,114 @@
+
+
+
+Photo credit: Alan Sealls, chief meteorologist, WKRG-TV
+本文目的
+如果你需要一個能自己管理控制的部落格平台，基本上需要的是租用一台伺服器加上安裝部落格軟體。本文要告訴你，如何運用Amazon的雲端平台AWS提供的一年免費Free Tier，來安裝使用屬於你自己的Wordpress部落格發佈平台！
+請注意
+如果要進行本文攻略，請確定你已經能夠用ssh連上一個AWS的linux micro instance。最好的方法是閱讀前兩篇供略：
+免費玩雲端運算，Amazon Web Service 雲端運算平台攻略 【1】
+Amazon Web Service 雲端運算平台攻略 【2】
+如果全部照著先前的攻略作，本文使用的相關指令與步驟應可百分之百不用修改。若選擇了約略不同的步驟，則讀者需視自己的情況，對指令或步驟做些微的調整。
+安裝步驟
+設定相關環境
+1. 修改防火牆安全設定
+登入AWS管理介面，查看目前Instance使用的安全檔案是哪個名字，以本例來說是quick-start-1，把這個名字記下來：
+
+
+左邊選單選Security Groups，在圖示中0的地方滑鼠點一下，在2的地方下拉選單選HTTP，到右邊3的地方按下SAVE。
+
+2. 新增Instance的Elastic IP：
+按下選單左邊的Elastic IPs，出現畫面如下圖。然後點2的Allocate New Address，確認後就會拿到一個新的IP。接下來務必按下3的Associate讓這個新IP掛在你的Instance上，這樣就會在4的位置看到你的IP以及你的InstanceID都出現了。如果只有IP，沒有InstanceID，Amazon會收取每小時0.01美金的費用，請小心。
+
+3. 設定domain name
+在你的domain name的管理伺服器上把剛得到的IP設定到你的網域名稱上。這樣才能在瀏覽器裡用http://test.com看到你的網頁。否則都得用IP來連你的網站。這部份的教學不在本文內容，請自行處理。
+
+4. 修改本地的SSH設定。
+在你用來連AWS的linux或mac上面，編輯~/.ssh/authorized_hosts檔案（mac上面編輯~i ~/.ssh/known_hosts ），將  ec2-xx-oo-ww-82.compute-1.amazonaws.com那行的授權資料刪掉，存檔。由於你在Amazon上的linux產生了新的IP，若你用原來的方式連接，由於安全憑證資料不同了，系統會告訴你安全顧慮，不讓你連接，顯示訊息如下：
+# ssh -i demo1.pem [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that the RSA host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+8a:df:1f:01:79:61:d4:b1:fe:1a:19:6d:aa:xx:oo:xx.
+Please contact your system administrator.
+Add correct host key in /Users/xxxxxxx/.ssh/known_hosts to get rid of this message.
+Offending key in /Users/xxxxx/.ssh/known_hosts:3
+RSA host key for ec2-xx-oo-xx-82.compute-1.amazonaws.com has changed and you have requested strict checking.
+Host key verification failed.
+修改authorized_hosts資料後，新的連接方式是：
+ssh -i demo1.pem [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+        //100.100.100.100的部份請換成你的IP
+以上做完，相關環境設定告一段落。請確認你能夠用IP連上你的Amazon AWS Instance。如下：
+$ ssh -i demo1.pem [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+Last login: Sun Nov  7 03:48:12 2010 from 118-111-111-90.dynamic.hinet.net
+__|  __|_  )  Amazon Linux AMI
+_|  (     /     Beta
+___|\___|___|
+See /etc/image-release-notes for latest release notes. :-)
+[ec2-user@ip-10-122-111-111 ~]$
+如果一切都順利，我們就往下一步走吧！
+安裝Apache, php與MySQL，開資料庫，下載wordpress
+接下來是一系列的指令，請照做：
+1. 更新系統
+# sudo yum update
+2. 安裝必要的apache, php與mysql，並啟動服務。
+# sudo yum install apache mysql php php-mysql mysql-server
+# sudo service httpd start
+# sudo service mysqld start
+3. 建立給wordpress用的MySQL資料庫
+假定你要建立的資料庫名稱叫做 wpdatabase，管理使用者叫做wpadmin，密碼是1234：
+# mysql
+# sudo mysqlWelcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 3
+Server version: 5.1.47 Source distribution
+Copyright (c) 2000, 2010, Oracle and/or its affiliates. All rights reserved.
+This software comes with ABSOLUTELY NO WARRANTY. This is free software,
+and you are welcome to modify and redistribute it under the GPL v2 license
+Type ‘help;' or ‘\h' for help. Type ‘\c' to clear the current input statement.
+mysql> create database wpdatabase;
+Query OK, 1 row affected (0.00 sec)
+mysql> create user wpadmin;
+Query OK, 0 rows affected (0.00 sec)
+mysql> set password for wpadmin = password("1234″);Query OK, 0 rows affected (0.00 sec)
+mysql> grant all on wpdatabase.* to wpadmin@localhost identified by '1234′;Query OK, 0 rows affected (0.00 sec)
+4. 安裝wordpress檔案
+# cd /var/www
+# sudo wget http://wordpress.org/latest.tar.gz
+# sudo tar xvzf latest.tar.gz
+# sudo mv wordpress/* html/
+# sudo chown -R apache.apache html
+設定wordpress
+到此為止，如果沒有出什麼差錯，接下來就很簡單了。
+1. 打開瀏覽器，輸入你的Elastic IP或是你的domain name，例如 http://www.inside.com.tw。會看到簡單的設定要做，請在資料庫設定上輸入剛剛的內容：
+
+
+2. 下一步，輸入部落格標題，管理者帳戶，然後就.....完成了！
+
+
+現在，你已經擁有了一個自己的部落格，跑在Amazon EC2雲端運算系統上！接下來你應該要改變頁面設定，然後配合你心中設定的主題，開始發佈第一篇文章吧！
+如果做成功了，也歡迎留言留下你部落格的網址，好讓其他網友能連過去看看。關於Wordpress怎麼詳細設定或安裝，可以去看相關書籍，不在本文贅述。若您需要顧問協助，可以來信洽詢。
+
+結語
+部落格是目前熱門的行銷工具與發聲管道。採用無名部落格、Pixnet部落格或Blogger等平台，功能擴充上往往有些限制。若自建設備環境來架設部落格系統又常受限於相關知識技術，在突發性的大流量下也不容易處理。使用雲端系統AWS的好處是安全，擴充性強，擁有一個自主管理的部落格系統更是只有個爽字可以形容。
+讀完本篇，趕快動手跟上進度，架設一個自己的部落格吧！
+
+
+
+
+
+ Tagged with: Amazon 

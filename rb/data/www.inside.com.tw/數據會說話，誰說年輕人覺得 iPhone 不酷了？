@@ -1,0 +1,56 @@
+
+
+
+目前 Android 在智慧型手機的市佔率已經領先其他競爭者，然而如果資源有限的開發者僅以此作為平台選擇的根據是很危險的。數據分析公司 comScore 公布了一份資訊圖表1，，比較美國市場的 Android 與 iOS 兩大陣營使用者特性，其中有幾個值得我們注意。
+根據 comScore 的「MobiLens」去年 12 月的資料顯示，Android 在美國無疑是智慧型手機的市場領先者，市佔率為 53%，第二名的 iPhone 市佔率約 36%，已經有超過三分之一的美國人口擁有 iPhone 或 Android 手機。以 app 數量來看，iOS 陣營 77.5 萬，Android 則超過 70 萬。
+iPhone 的使用者更年輕、更富有
+就像「年輕人覺得 Facebook 不酷了」，一直以來我們也很常聽到一種說法：「年輕人早就覺得父母也在用的 iPhone 不酷了」。Well，這要看我們怎麼定義。在美國，iOS 使用者中，年紀在 18-24 歲的，佔了 19%，Android 為 16%。（我們用市佔率簡單算一下可以發現 Android 的「年輕使用者」實際數量較多，但這不足以支撐「年輕人覺得父母也在用的 iPhone 不酷了」這樣的說法。）
+iPhone 使用者花更多時間、也花更多錢
+家庭年所得超過 10 萬美金的 iPhone 使用者佔了 41%，5 萬到 10 萬的佔 36%；而 Android 使用者家庭年所得超過 10 萬美金的佔了 24%，5 萬到 10 萬的佔 37%。家庭年所得不到五萬美金的是 Android 陣營中的最多數（39%），iPhone 則是 23%。考量到每次新款 iPhone 的售價，這應該不是太意外的結果。
+iPhone 的使用者更常透過手機購物，有 23% 的使用者曾經用 iPhone 完成購物，要比 Android 的 17% 高。而 comScore 更進一步指出 iPhone 使用者更習慣透過手機消費，不論是購買付費 app 或是 in-app purchase 都較 Android 使用者更為顯著。
+iPhone 使用者滿意度高
+由於 Apple 將硬體設計、製造一把抓，因此 iPhone 獲得使用者較高的滿意度和品牌忠誠度也沒什麼好意外，有 62% 的使用者對自己的 iPhone「高度滿意」，80% 以上 iPhone 使用者他們上一支智慧型手機也是 iPhone。對 Android 手機「高度滿意」的使用者佔了 48%，也是很不錯的數字，但顯然跟 Apple 不是同等級。
+Google 或許不是那麼在乎 Android 使用者對手機品牌的忠誠度，但是對手機製造商來說可不是這麼一回事，目前幾乎只有三星能夠真正從銷售 Android 手機獲利，甚至從去年起，無論國內外都開始出現與三星「獨家」合作的 app 開發者。
+Android 使用者接觸的內容類型更加廣泛
+相較於 Android 手機使用者，iPhone 使用者更像「power user」，在使用上的投入程度方面，iPhone 在 comScore 所調查的行動金融、地圖、搜尋和天氣等，都高過 Android。iPhone 使用者更喜歡投入主流類型的內容消費：10% 每天最常用社群網站 app，7% 最常看新聞，最常用來瀏覽購物網站的甚至高達 15%。雖然 Android 使用者「投入」程度不如 iPhone 使用者，但是他們接觸的內容類型要廣泛得多。開發者或許可將一些著眼於利基市場或是特殊工具的 app 納入開發的選擇。
+Android 在美國的成長趨緩？
+剛好今天分析師之王 Horace Dediu 也根據 comScore 的數據在 Twitter 上發表了一系列圖表（大家可以去他的 Twitter 看更多資訊），顯示出 Android 最近在美國似乎遇到了一點麻煩：
+
+圖片來源：Horace Dediu
+首先是 iPhone 與 Android 成長的比較，Asymco 將 iPhone 的成長數字減去 Android 所得到的結果會製成曲線圖，結果顯示去年購物旺季以來一直到今年一月，iPhone 的表現是超過 Android 的。
+
+圖片來源：Horace Dediu
+而另外一張圖則是各大主要智慧型手機陣營的使用者變動情形，Asymco 發現在今年一月，Windows Phone（圖表的黃色部分）成長情形幾乎要等同於 Android，而 iPhone 則是遙遙領先，至於黑莓則是唯一負成長的。
+開發者投入資源前應仔細思考兩大陣營的使用者特性
+除了技術與成本考量之外，使用者也是 app 開發者應關注的重點。今天 Android 手機的市佔率無疑已經超越 iPhone，不過長期觀察下來，仍舊可以發現許多特性是沒有什麼太大變化的，例如花費的意願、使用時間的長短、產生的網路流量等。開發者選擇 Android 或許有機會獲得更多使用者支持，但若談到獲利，說不定 iPhone 又會是更好的選擇。
+當然，兩大平台上開發者們共同的金雞母依舊是遊戲 app，以日本市場為例，iOS 上最賺錢的 app 發行商前 20 名只有兩家不是做遊戲的，一家是擁有 LINE 的 NHN，另一家就是 Apple。
+下圖是 comScore 的完整資訊圖表：
+圖片來源：comScore
+
+Android vs. iOS: User Differences Every Developer Should Know↩
+
+
+
+
+
+Alexander Lin:
+March 7th, 2013 at 11:32 am
+ 恩! 我在ios 消費很多....
+
+
+陳柏江:
+March 7th, 2013 at 4:16 pm
+ 商業運用上，還是要確認自己的使用者在哪裡比較重要
+
+
+Shirley Chen:
+March 7th, 2013 at 4:43 pm
+ I like APPLE.
+
+
+Vanix Hsiang:
+March 8th, 2013 at 3:10 am
+ 是因為ios 上很多需要消費，而Android 為提高普遍性，大多在免費使用的階段吧...
+
+
+

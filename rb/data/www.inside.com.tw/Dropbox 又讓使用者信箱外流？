@@ -1,0 +1,26 @@
+
+
+圖片來源：Flickr
+最近國外有一些 Dropbox 使用者表示（註一），他們註冊 Dropbox 所使用的信箱居然收到垃圾郵件，讓 Dropbox 的資安問題又再一次浮上檯面。許多服務的註冊都要求留下信箱，甚至要求以信箱作為註冊帳號，一不小心就會成為垃圾信件的攻擊對象。然而，如果信箱只為了註冊單一服務而存在，卻還是收到垃圾信件，那該怎麼解釋呢？
+那些使用者表示該信箱除了用來註冊 Dropbox 之外就沒有其他用途，但卻在今年 2 月 19、20 日左右開始收到垃圾信件。由於在這個時間點之後才陸續有許多使用者反映，因此似乎不能歸咎於少數使用者的粗心大意才導致信箱外流。此問題在 Dropbox 論壇和 Hacker News 上引起熱烈討論，有人猜測事件發生的可能理由有三：
+使用者的信箱被亂數猜出
+Dropbox 出售使用者的信箱
+Dropbox 的資料庫被駭客入侵
+官方沒有針對任何可能性做出回應，不過一位 Dropbox 的員工作出了公開回應（註二），大意是：
+「我們很嚴肅地看待這個問題並已經開始著手調查。在去年七月已經發生過資料外流的事件，然而目前我們尚未看到任何證據指出這是一個新的資安問題。但由於近日許多科技公司都發生資安上的問題，我們會隨時保持警惕。如果你的信箱有收到垃圾信件，且該信箱是只為了使用 Dropbox 而存在，請寄信到 [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+ 反映該問題並協助我們的調查。」
+Dropbox 去年也傳出資料遭竊，導致許多使用者收到垃圾信件（註三）。當時是因為 Dropbox 一名員工在其他網站的帳號、密碼遭竊，讓駭客藉此登入該員工的 Dropbox 並取得 Dropbox 使用者的信箱，並散播垃圾信件。
+Dropbox 的資安問題連帶在 Hacker News 上引起了網友對 Dropbox 客服品質下降的抱怨（註四）。而雖然筆者的信箱並非專為 Dropbox 而申請，不過在今早也收到了一封垃圾信件，甚至前幾天在手機上還收到了數則來自 Dropbox 的推播廣告。如果讀者對信箱隱私的顧慮很高，那麼把 Dropbox 換成專屬信箱似乎是目前最快也最能隔絕問題的方式。
+
+（註一）Dropbox users claim email addresses leaked to spammers, company blames 2012 security breach
+（註二）Dropbox employee response
+（註三）Security update & new features
+（註四）Why was my email leaked?
+
+
+
+
+

@@ -1,0 +1,42 @@
+
+
+ 
+
+上週三(美國時間七月六日)Facebook由創辦人Mark Zuckerberg口中宣布了所謂的"Awesome"新功能(Facebook的live記者會中還有網友開玩笑地計算Mark說的幾次"awesome")，就是與Skype合作的video calling。
+當然這個新功能馬上受到各大媒體與部落客的報導與討論，且最常被提及的問題就是這個新功能與Google+中可以多方視訊的"hangout"的差異何在，尤其目前只能一對一進行視訊，功能上顯然略遜一籌；當然，也因為晚了Google+差不多一週的時間，加上正式宣佈之前就被猜透透，所以失去了新鮮感，讓這個進行半年多開發的合作案，於公關上的造勢有，但爆點不足，失色不少。姑且不論功能的差異與公關操作的問題，筆者想藉此文來看一下這個合作案的本質是不是makes sense？
+沒有足夠的控制，Facebook的支持與誠意不足：
+雖然記者會中Zuckerberg開宗明義指出此宗合作對於是展現Facebook專心建構Social infrastructure的最佳例子：
+“We want to leave as much as possible to independent entrepreneurs and companies who are going to be best in class at doing these things.” Facebook is going to continue to focus on maintaining and building the social infrastructure that underlies new apps, rather than on building the apps themselves. “We build the infrastructure, and we’re years ahead in wiring it up.”
+惟筆者覺得對於以合作的形式推出Video Calling，顯示Facebook沒有足夠的支持與誠意！當然Skype是當今最受歡迎的P2P網路通訊軟體，且有成熟的營運經驗，Facebook與Skype的合作，對Facebook而言，如虎添翼，而對Skype而言，可以因此接觸到全球最大的網路社群，看起來是win-win solution。當然不是什麼都要自己做，但當你對你認為的重要產品與功能沒有100%的控制權，反而操之於別人的手中時，筆者就不認為你重視這個產品與功能。
+ 先拋開後續開發新功能的彈性，速度與深度不談，若Skype再次如同今年五月與六月接連發生全球大當機時(Skype過去服務當機多半是其P2P網路出了問題，無法登入)，Facebook可以迅速地解決問題嗎？還是只能被動地等待靠Skype來修復？然後發個announcement："我們很重視Video calling，也非常相信是您需要的功能，但，喔，不好意思，現在Skype全球大當機，正在全力搶修中，我們將與Skype保持聯繫，一有消息，將馬上更新，請稍後！"
+除了上述服務當機時的處理權與速度之外，與Skype的合作也限制了Facebook於Video Calling功能上開發與競爭力。活生生的例子就是無法推出如同Google+ hangout的多方視訊功能，馬上被比下去。當記者會中被問及目前只能一對一視訊功能的限制時，Facebook創辦人Mark只能美其言地說，"not to rule anything out but (he added) that one-to-one calling makes up the vast majority of video calling"。
+話是沒錯，但大家心知肚明的是，目前每個月使用量高達3億分鐘數，且佔整個Skype通訊量50%的Video calling，是Skype視為除了主要營收SkypeOut(也只有6%是付費用戶)之外另一個重要營收來源的金雞母，所以Skype將Group Video設計為月租型付費服務，月租費由美金$4.99到$8.99不等(視合約期限)，雖然換算台幣最貴一個月不到500元，但相較於免費的服務，就是貴。既然是Skype的引以為重的收費項目，怎麼可能到了Facebook上就變成免費的呢？這有嚴重的利益衝突。
+而且Skype CEO Tony Bates已經於記者會上指出："Skype is talking with Facebook about having some paid products available through the web format"，言下之意就是希望Facebook可以為Skype帶來更多的付費用戶(例如可以於Facebook上直接撥打SkypeOut？？)。如此一來，要Facebook馬上提供免費的Group Video Calling，更是遙不可及了(但也不是不可能，筆者於稍後章節會有一些假設)。不過當與Google+ 的hangout硬碰硬競爭，Facebook可能只是此項功能遜色罷了，但對Skype而言，卻是使用率與營收上的一大威脅。
+Facebook使用者行為對即時通訊互動的需求？
+再來看可能的使用行為。筆者認為Facebook提供的Social Networking，本質上主要是讓你於人際網路(Connection)中進行"分享(Sharing)"的"互動(Interaction)"，而非"通訊(Communication)"的"互動(Interaction)"。
+我們於Facebook上分享心情，想法，文章，照片，影片與去了什麼地方等，部分好友們回應這些分享；這些好友之間，不論是否相互認識，有的還可以繼續針對"回應"來回應(讀者應該多少都有這樣的經驗，一個分享的回應討論到最後可能跟分享的事物完全無關)，不參與回應者也可以看熱鬧。所以因為分享產生的互動，以及持續發展的回應動態，是使用者高度黏著於Facebook的主因。
+Facebook上的Message與Group功能，相對於"分享(Sharing)"，雖然具有"通訊(Communication)"的"互動(Interaction)"性質，但並非即時性的互動，且Group中的"通訊"，討論成分居多，且"分享(Sharing)"仍是主要的活動。Video calling是一個即時性的通訊互動，這時候啟動者要考慮到對方是否上線？能否使用此功能？此刻是否方便進行Video Calling(人在工作中)？或者是否有意願？
+ 所以這些使用前的考量與動作(註：大致上跟Skype目前使用者的使用行為差不多，除了SkypeOut功能外，大都不會像使用手機一樣，拿起電話就撥)，加上前述Facebook上的活動以Sharing與回應動態為主，Video Calling的使用率可能會大打折扣(或許是因為這樣，所以Facebook採合作而非自行開發??)。老實說，使用Video calling，筆者寧可stick on Skype，至少知道Skye list上常通訊的parties，是有意願的。
+Skype上Facebook的整合嘗試：
+其實早於去年十月，Skype已經於軟體上完成Facebook整合，Skype使用者可以於軟體右邊看到Facebook的訊息(可選擇全部Facebook 朋友/pages或者其中也是Skype List者)，可以直接post文字訊息上Facebook(但無法上傳圖片與影片)，mouse over朋友上還可以直接Skype或者SkypeOut，如圖示。這算是Skype朝具有Social sense的一大嘗試，但因為會影響開啟Skype的速度，呈現的方式不同於Facebook，加上功能有限，以及瀏覽於Facebook的時間多於Skype上，筆者自己的使用率偏低(讀者可以回應筆者進行的這個隨文問卷調查，看看其他讀者的使用率如何)。
+
+所以不論是由Skype端整合Facebook訊息，或者是由Facebook端整合Skype提供Video Calling，要達普及與受歡迎的程度，恐怕還有一段長路要走。
+Microsoft將扮演重要角色?
+雖然筆者對於Facebook與Skype的目前合作，保持保留的態度。但Skype剛被富爸爸Microsoft以美金85億買下，以及Microsoft目前持有部分Facebook股份的事實，卻讓Facebook+Skype未來的發展有很大的想像空間。Miscrofoft向來習慣高毛利的軟體，資訊服務與廣告的銷售，對於Skype主要營收來源SkypeOut的低毛利，這麼辛苦賺錢，應該覺得很不可思議與無法接受。
+因此筆者認為，Microsoft未來將會大幅改變Skype的營利模式，在消費者市場，於Skype軟體上以銷售廣告為主，提供免費的服務(廣告換取部分SkypeOut的點數)；於企業市場，將Skype整合於Microsoft的企業產品中，尤其是企業通訊與協同工作的服務；對於電信業者，可以將Skype的P2P技術平台提供電信業者經營IP telephony。
+若以這樣的方向發展，對於Facebook+Skype的合作，除了提供免費的Group Video Calling不再有顧慮之外，Facebook也可以發展Enterprise Social Networking，結合Microsoft的企業通訊與協同工作，企業管理與資安產品等，提供企業具有QoS(Quality of Service)的服務，以進入較陌生且產品多樣性不如Google的企業市場，與Google一較高低！
+(註：筆者於此文提及Google+可以藉由Google於企業市場的既有優勢切入企業市場與Facebook走不同的路，這篇報導中也引述Google+產品經理Christian Oestlien有關Google+會針對企業用戶優化的可能)。
+筆者作個有關Facebook+Skype的隨文調查，有興趣的讀者可以於此回應問卷，或者於此觀看最新的回應統計。
+ 
+
+
+
+
+趙政宏:
+October 30th, 2011 at 6:34 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

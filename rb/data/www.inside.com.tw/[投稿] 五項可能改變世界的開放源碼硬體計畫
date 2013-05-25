@@ -1,0 +1,95 @@
+
+
+
+本文為投稿，作者是Pofeng Lee，底下為作者自介：
+一個在空閒時會幫忙推廣開源軟體的阿宅。
+二月初，The H (Heise Media) 專文介紹五項可能改變世界的 開放源碼硬體計畫，
+雖然華文世界陸續有文章提到其中幾項開源硬體計畫，但好像一直沒有完整的專文談過這五項計畫，筆者嘗試翻譯並蒐集一下資料，希望能拋磚引玉，引起更多的討論。
+
+
+
+
+RepRap
+RepRap 是個設計圖完全開放的 3D 印表機 (3D 成型機) 特色是自身的塑膠元件可以由自己製作出來。運作的實況可以參考下面兩支影片:
+
+
+RepRap Mendel with Pololu Electronics from Adrian Bowyer on Vimeo.
+
+
+
+
+2011 開源人年會 非凡電視報導
+
+Arduino
+Arduino 是一塊基於開放原始碼所發展出來的 I/O 介面控制板，市面上的開發版很多，Arduino 的成功因素之一在於傳統開發板往往過於複雜，而 Arduino 功能簡單，容易開發，如果要擴充功能，只需增加 Shield 即可。
+除此之外，他背後廣大的使用者社群也是強大的助力。最 近幾年 Arduino 受到了更多注意，因為 Google 採用其設計，發表了 Android Open Accessory Development Kit。
+而之後 Arduino 社群也修改了 Google 的設計，推出了 Arduino Mega ADK for Android， 台灣比較知名的應用之一，是台北花博會夢想館第四廳的「花械花開 Florbot」。
+
+
+
+
+
+Global Village Construction Set
+Open Source Ecology 社群希望能開發一系列模組化的機械元件，用來組成一些更大的機器，比如說 Power Cube 可提供車輛與牽引機的電源，設計中的 CNC Circuit Mil 則用來製作電路板。2011 年時有 8 個機器原型，目前 (2012) 已有 12 原型機器正在製作文件。這裡有一份碎土機 (Soil Pulverizer) 的製作文件可以參考。整個計畫的起源可觀看 Marcin Jakubowski 在 TED 的演說。 
+
+
+OpenCores
+這裡並不是指 Android 裡面的 OpenCore，而是指設計了一系列的晶片 IP 的 OpenCores  計畫。OpenCores 社群設計了各式的晶片，從 RISC 微處理器，Gigabit 乙太網卡控制器，一直到多媒體與加密的硬體都有。這些設計會以 LGPL 或 BSD 的方式釋放出來，所以可以整合到商用的系統單晶片(System on a chip, SoC)。其中 OpenRISC1200 是最新的 32 位元的 RISC 處理器，一般認為其性能介於 ARM7 與 ARM9之間，適合一般嵌入式系統使用。
+ 
+OpenPCR
+PCR (Polymerase Chain Reaction) 是一種複製 DNA 的技術，而 OpenPCR 是一台便宜用來複製 DNA 的機器，我們可以將採集到微量 DNA，用 OepnPCR 複製之後，拿來診斷疾病，也可以用來判斷食品是否有受污染，或者檢查食品是否有使用基因改造作物。如果你有興趣的話，也可以拿來在家裡弄個基因實驗室。
+
+
+
+
+看似彼此無關五項開源硬體計畫，但其實 RepRap 與 OpenPCR 是站在 Arduino 的肩膀上所開發出來的，而 RepRap 與 OpenPCR 的出現，不但擴大了 Arduino 的應用，將來也很有可能對 Arduino 的發展產生回饋。
+開放源碼硬體計劃正在改變世界
+而近來風起雲湧的各式網站服務也促成了上述計畫的發展，比如說 OpenPCR 剛開始開發的費用，就是在 kickstarter 上面募集的。( Inside 之前的介紹： Kickstarter：夢想家、創業家向全球募資的舞台 ，  Kickstarter 網站的五大成功案例，以及其成功原因  )
+提到開放源碼，大家可能又會擔心開源硬體是慈善事業，無法商業化，但就像開放源碼已衍生許多公司，開源硬體發展至今，已經有相當多相關的衍生商業計畫正在推動。
+
+比如說，Makerbot 就是以 RepRap 為基礎所研發出來的開源 3D 印表機，而其母公司 Makerbot Industry 已獲得美金一千萬的投資，其中也包括 Amazon 創辦人 Jeff Bezos 的資金。
+
+
+對於只想列印成品，不想自己組裝 3D 印表機的朋友，Sculpteo 則提供的一款免費的 iPhone App。它可以將普通的圖片轉換成 3D 模型，然後便可將設計好的模型上傳到伺服器上用 3D 印表機製作出來。
+
+三星數款數位電視的系統單晶片則採用了 OpenRISC 1200 的設計 ( SDP83 B-Series, SDP92 C-Series, SDP1001 and SDP1002 D-Series )
+
+福特汽車與 Bug Labs 共同開發了 OpenXC 平台，用來存取車上的各式資訊，並希望將來開發車用軟體，能夠像開發手機軟體一樣的方便，目前 OpenXC 使用的作業系統是使用 Android ，參考平台則是使用相容於 Arduino 平台的 chipKIT。
+
+思考
+開源硬體看似潛力無窮，但困難也不少，之前大眾電腦所投資的 OpenMoko (我本墨客) 開源硬體手機公司，在後來 Android 平台的崛起之後，已經慢慢消失。在此同時 iPhone 則帶動了台灣的工具機產業，而精密機械業者同時也抱怨，開出百萬高薪，但是人才還是全部往電子業跑。
+
+開放源碼運動與網際網路的發展，一同改變了整個軟體產業的焦點，在開放源碼運動進入硬體領域的時候，台灣向來重視硬體，輕忽軟體的發展策略，要如何改變並因應？
+僅以此文，拋磚引玉，希望能引起諸君一點點的思考。
+
+
+
+
+
+鄭鴻旗:
+February 19th, 2012 at 2:30 pm
+ 想多了解ARDUINO的故事，請看這邊社群翻譯好的紀錄片。
+http://www.openlabtaipei.org/2011/11/blog-post.html
+
+
+衍輝杜:
+February 20th, 2012 at 2:56 am
+ 有趣
+
+
+Jeff Liu:
+February 20th, 2012 at 3:55 am
+ 會不會入門的門檻高呢? 我想好不想上手會是open source project成不成重要的因素!
+
+
+潘維平:
+February 20th, 2012 at 12:07 pm
+ Open hardware sources
+
+
+王欣平:
+February 21st, 2012 at 8:23 am
+ 有價值的文章，如果能附原著出處就更好
+
+
+

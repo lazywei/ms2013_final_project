@@ -1,0 +1,70 @@
+
+
+
+eBay集團的接連併購
+繼eBay宣布併購location-based媒體與廣告公司Where.com後，兩週之內同一集團的線上金流領導者Paypal於美國時間四月二十八日也宣布併購一家行動付款solution的startup：Fig Card。
+有關eBay併購Where.com的企圖，讀者可以參考Inside這篇O2O文章第四段，FOX清楚點出eBay的企圖，尤其指出「eBay在併購這家公司後，首先就是會把Paypal的金流串到裡頭去，讓使用者可以更即時的付費買下商家服務，所以Where.com將從原本的地區商店廣告平台，搖身一變變成了行動購物平台。」這個重點。現在Paypal併購了Fig Card之後，提供實體商家可以讓消費者即時行動付費的機制，進一步complete eBay的布局。
+Fig Card是什麼服務呢？讀者可以看參考這段video demo，簡單說，商家只要於收銀機或POS(Point-of-Sale 終端機)插入一個價值美金5元的USB設備，與安裝一個軟體，然後就可以接受於iPhone，Andriod phones以及部分Blackberry安裝Fig Card App的消費者的行動付款。而且透過這個機制，商家的收銀員沒有機會可以看到或是記錄消費者信用卡的號碼與細節，避免資訊外露。
+Paypal目前在全球190個市場總共擁有2億3千2百萬個accounts，其中8千7百多萬個accounts是active的，雄踞web-based transaction的市場，但Paypal深知他們無論如何也要跨入non-web transaction的business，尤其是Mobile與Online-2-Offline的金流商機。Paypal這些accounts中都有正確且有效的銀行帳戶與信用卡，同時也有現金餘額，所以若Paypal將其accounts整合於Fig Card的App中後，可以想見這個行動付款機制對商家會有多大的吸引力。
+手機刷卡，Square的爆發式潛力
+這宗併購案之前，市場也曾謠傳Paypal想要併購另一家行動付款裝置廠商：Square。Square提供商家一個體積很小，可以插在iPhone耳麥插座上的讀卡機（很少iPhone Apps會應用到耳麥插座，從這一點就可以看出Square非常unique的approach），如圖。
+
+該讀卡機運作的方式很創新：其讀取信用卡的資訊後，轉變成audio訊號，由iPhone的麥克風接收傳到processors，然後由iPhone上的Square App開始加密透過mobile or Wi-Fi networks傳送資料給後端處理payment並完成交易。Square四月中開始於Apple Online Store開賣，售價只要美金9.95元，也即將要於Apple實體店面銷售。
+Square是由大名鼎鼎的Twitter co-founder Jack Dorsey與好友Jim McKelvey於2009年2月於舊金山創辦，緣由是因為Jim先前離開科技公司變成一位吹玻璃藝術家（對，筆者沒寫錯，讀者你也沒看錯），因為有一次一位客戶身上沒現金也沒支票，只有信用卡，但他無法接受信用卡，因此錯失銷售一件重要創作的機會，所以找上他的好友Jack Dorsey想找解決之道因而創辦了Square（讀者可以回顧一下這是創業守則其中一條：解決自身的需求，開發滿足自身需求的服務或工具）。
+根據Jack最新的tweet，Square現在每天可以處理超過美金2百萬的交易額，從三月初的tweet中揭露每天可以處理美金1百萬的交易額來看，Square上架Apple Online Store後快速成長的潛力無窮。Square自己預估全美有大約兩千六百萬的各種sellers，因為規模以及business nature的關係，無法像一般商家取得銀行核發的讀卡機(或者無法mobile使用)，這就是他們要target的市場。
+讀者可以想像，就好像拍賣最原始的面交交易行為，有Square的sellers可以隨時隨地收取buyers的信用卡來完成交易，可以更進一步活絡person-to-person (或peer -to-peer) economy的市場。
+NFC近場通訊大舉進場搶市
+今年三月Google才宣布要與MasterCard以及CitiGroup共同合作將於Android phones上加入NFC的功能，讓這些手機變成行動錢包，現在又有上述的Fig Card與Square加入，行動付款solution現在可以說是群雄並起，各有各的獨道技術與商業模式（Square是行動讀卡機，Fig Card是消費者iPhone App與商家收銀機App的Solution，Google的就很像非接觸式的debit card與讀卡機）。
+誰會勝出，或者是各擁山頭，還有待觀察，只要讓商家與消費者以最低成本與最簡單的方式導入與取得服務，就有最大的市場機會。但Solution只是Solution，如何串起整個消費活動與行動交易的eco-system，才是讓行動付款的應用能活絡的最重要關鍵（沒有刺激商業活動與消費，哪來的付款？）。
+從這個角度來看，eBay有比較完整的布局與策略，以及比較快的腳步，看起來這個網拍巨人似乎可以於此搶得先機。我們可以這樣這樣想像，消費者用Where.com可以查詢附近的正提供優惠或折扣的商家，找到合適商品後，直接用Fig Card的服務完成行動付款，這些動作都只要在一支iPhone上就可以完成，是不是很吸引人也很方便？目前正夯的團購服務，都還需要先於電腦上完成付款購買與列印coupons，其實都沒有上述的例子於商家處付款來得直接與有效(這也是最大宗與最自然的交易行為)。
+台灣的適法性問題待解
+美國行動付款市場的競爭一觸即發，反觀台灣，連像Paypal這樣的服務都還有適法性的問題，該如何急起直追？政府(資策會等)於大力推廣無店舖的電子商務同時，保守的金融管理法規必須要順應網路發展的時勢而鬆綁，電子商務中最重要與最根本的金流更為開放時，像上述創新的mobile payment這類上層軟體與硬體的應用自然因應而生，就可以期待台灣的電子商務市場更為蓬勃發展。
+
+
+
+
+Daniel Tuan:
+May 10th, 2011 at 4:24 am
+ 查了一下wiki 文中應該是要寫「2億3千2百"萬"個accounts，其中8千7百多"萬"個accounts是active的」
+
+
+雅典娜:
+May 12th, 2011 at 3:09 am
+ 好期待喔！快速又便利的服務一定能廣獲N世代消費者的喜愛，商機無窮啊~
+
+
+Max Jhuang:
+May 14th, 2011 at 7:39 pm
+ NFC 與 Mobile 的結合是最佳交易工具，台灣不開發就被攻陷.
+
+
+陳建文:
+May 26th, 2011 at 1:02 pm
+ 有人研究過如果網站支援paypal,然後我用iPhone上網使用paypal付款。會過嘛？
+
+
+Terence Shieh:
+June 20th, 2011 at 6:27 am
+ 只要有智慧手機或終端裝置，加上app，整間shopping mall就帶在口袋裡了。
+
+
+顏祥:
+June 26th, 2011 at 6:59 am
+ good
+
+
+趙政宏:
+October 30th, 2011 at 8:39 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+黃聖儒:
+June 17th, 2012 at 7:56 pm
+ 手機刷卡，紅陽SWIPY APP的爆發式潛力。
+http://esafe.21tw.net
+
+
+
+ Tagged with: ebay, mobile payment, nfc, paypal 

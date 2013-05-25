@@ -1,0 +1,36 @@
+
+
+
+(photo by  JD Hancock)
+Gartner研究總監 Svetlana Sicular 近日在部落格裡發表一篇名為『大數據光環破滅』的文章，指出大數據正處於新技術廠商炒作週期和使用企業預期的頂峰，但是Hadoop的過時與失敗的使用案例不斷增多，意味著大數據泡沫即將破裂。
+在Gartner研究人員與MapR、HortonWorks和Cloudera等Hadoop大數據廠商的一次會議中，與會者趨於兩點共識：MapReduce一直是Hadoop的瓶頸，Hadoop是原始且過時 (“primitive and old-fashioned.” )。這兩個觀點代表大數據的光環已經幻滅。Gartner繪製出了新技術的『炒作週期圖』（如下圖）。
+解釋是，當一個新技術出現時，如果開發者宣稱該技術可以『改變一切』，那麼它就會佔據各大媒體的頭條，然後也會有許多調查機構進行相關調查；而當這一炒作達到一定階段時，便不會繼續下去。
+一旦到達期待頂點，關注度開始急速下降；隨後的一兩年之內，有些企業進入實戰階段，從實務中歸納出確實可以『改變一切』的作法 ，同時負面言論也會越來越嚴重；18個月之後，這一新技術再次興盛並穩定發展並且可以提高生產力。
+ 
+
+(圖片來源：Gartner，Gartner Hype Cycle: Where is Big Data Now?)
+此外，Sicular與多家Hadoop使用企業溝通後發現，最先嘗試大數據的企業鮮有成功案例。
+企業們一開始對大數據抱以極大幻想，期望值很高，好像得到數位水晶球，但是他們很快就發現，要獲得可靠的大數據解決方案是件很困難的事情，例如一些嘗試輿情分析的企業感到失望，因為大數據廠商們無法提供成熟的方案。
+此外，面對大數據的水晶球，提出正確的問題，並將問題拆解成眾多子問題進行解答，是企業運用大數據面臨的最大挑戰。其次，確定答案本身是應用大數據的另外一個難處。大數據分析面對的是不確定性（尤其是預測性分析），滿足和滿意是兩個不同層次的境界。
+雖然應用大數據案例失敗居多，但是也有例外，比如說，Sicular的一位客戶使用Splunk分析日誌中找到非常理想的成果。這表明成熟的大數據工具（例如Splunk）才是現階段企業在大數據裡淘金時最需要的。
+Sicular最後總結表示，2013年將會看到更多有關大數據無用的負面報導。不過希望仍在，2013年下半年將會出現有效的大數據分析工具，2014年將再重回榮景。
+不過樂觀的如 Ovum的報告則提出另種正面看法，您也可以參考看看。
+
+
+
+
+Scott Chen:
+January 25th, 2013 at 3:10 pm
+ 其實 Gartner 很愛引用自家的 Hype Cycle 來說明許多現象，其實並不科學，可參考 http://en.wikipedia.org/wiki/Hype_cycle 的 Criticisms 那段 (the outcome does not depend on the nature of the technology itself)
+
+
+Chin-chi Chang:
+January 28th, 2013 at 3:28 am
+ "Big Data"在古時候叫做"Data Mining"
+"微電影"在古時候叫做"短片"
+半導體界在10年前就在用EDA(Engineering Data Analysis)軟體找出資料間的關連性。一開始是單純的linear correlation，近幾年用上了Neural Network去找尋非線性關連。技術上應該是很成熟的。
+倫敦有幾個做algorithm trading的公司，也利用軟體做market arbitrage很多年了，本質上也是data mining市場上的大量訊息。
+我不知道"Big Data"到底有多Big，但是上面兩種成熟應用的data也很BIG呀!
+
+
+

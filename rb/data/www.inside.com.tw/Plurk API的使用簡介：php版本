@@ -1,0 +1,83 @@
+
+
+
+Plurk在使用上雖然有下降的趨勢，但還是台灣地區最重要的微網誌平台。
+為了取得河道上的資料，以及上頭使用者情況，使用API顯然是個好方法，以下簡述Plurk API的使用，以及相關注意事項，讓開發者容易入門：
+1.  相關資源
+API官方網址：http://www.plurk.com/API (頁面往下捲有官方HTTP API)
+問題聯絡：http://www.plurk.com/contact
+2. 使用PHP Plurk API
+步驟一：申請API key，上官方網址，輸入＂想做的應用是甚麼？＂、＂開發者全名＂與＂開發者email＂，按下＂Issue API key＂，幾分鐘後就會收到key。
+步驟二：下載PHP client library，目前是1.4.1版。解開後可看到這樣的檔案：
+
+-rw-r--r-- 1 sting sting   239  1月 20 13:45 ChangeLog
+-rw-r--r-- 1 sting sting  1128  1月 14 13:18 common.php
+-rw-r--r-- 1 sting sting   388  1月 14 13:18 config.php
+-rw-r--r-- 1 sting sting  4298  1月 14 13:18 constant.php
+-rw-r--r-- 1 sting sting     0  1月 14 13:18 cookie
+-rw-r--r-- 1 sting sting  5865  1月 20 13:44 example.php
+-rw-r--r-- 1 sting sting     0  1月 14 16:15 log
+-rw-r--r-- 1 sting sting 44526  1月 20 13:43 plurk_api.php
+-rw-r--r-- 1 sting sting  1003  1月 14 13:18 README
+
+
+config.php裡面定義了一些錯誤訊息，如果執行期間希望顯示中文錯誤訊息，可以修改這個檔案。
+constant.php裡面定義了Plurk HTTP API網址。除非Plurk修改官方API URL，否則不需要更動。
+plurk_api.php就是主要的library了。若有function或變數定義，可找這個檔案深入了解。
+
+步驟三：寫一個應用。
+使用這個API Client Library很簡單。可以把example.php 複製一份新的出來，對新檔案進行修改。裡頭有大部分的使用方法：
+例如，取得你帳號所看到所有的plurk中最新的20則plurk，程式碼如下：
+
+
+<?php
+
+$api_key = ‘xxxxxxxxx';   // xxxxxx的部分填入你得到的API key，隨著郵件寄來
+$username = ‘oooooo'; //oooooo的部分填入你的plurk帳號
+$password = ‘ppppp'; //pppppp的部分填入你的plurk密碼
+
+require(‘plurk_api.php');
+
+$plurk = new plurk_api();
+$plurk->login($api_key, $username, $password);
+
+echo "\n\n ----- get plurks ----- \n";
+print_r($plurk->get_plurks(NULL, 20, NULL, NULL, NULL));
+
+
+
+
+?>
+
+藉由觀察列印出來的plurk欄位，你就知道怎麼取用相關資料了。
+其他有用的函式如下：
+$plurk->get_plurk(123)   //取得某個特定的plurk訊息。123代表那個plurk訊息的id，是整數。
+$plurk->add_plurk(‘en', ‘says', ‘Hello World')　//新增plurk，第二個欄位有以下這些選擇：
+
+
+loveslikessharesgiveshateswantshaswillaskswisheswasfeelsthinkssaysis:freestylehopesneedswonders
+
+
+
+
+
+
+$plurk->get_responses(123)  //取得特定plurk的回應訊息。
+$plurk->get_friends(123)　//取得某人的朋友列表。
+
+$plurk->become_fan(5366983)　 //變成某人的fan。
+$plurk->search_plurk(‘php-plurk-api')　//plurk搜尋
+....
+其他提供的API還非常多，您可參考example.php快速上手。
+
+3. 注意事項
+一天單一API Key有上限五萬請求的限制，如需做更多的請求需要與Plurk官方連繫。
+如果真的發超過上限的請求，你就會得到這樣的錯誤訊息：
+You have reached your daily limit of 50000 calls. Contact Plurk support to get white listed.  
+解決方法就是寫信給Plurk或是申請新的API key了。
+
+
+
+
+
+ Tagged with: plurk API, plurk.com 

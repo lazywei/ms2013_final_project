@@ -1,0 +1,67 @@
+
+
+ 
+本文為投稿，作者是Pofeng Lee，底下為作者自介：
+一個在空閒時會幫忙推廣開源軟體的阿宅。
+何謂開放資料呢 ? 我們先來看看維基百科的看法:
+Open data is the idea that certain data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control.
+The goals of the open data movement are similar to those of other "Open" movements such as open source, open content, and open access
+「開放資料」指的是將資料開放給任何人自由出版使用，
+不論是要拿來出版或是做其他的運用，不受著作權、專利權，以及其他管理機制所限制。「開放資料」運動希望達成的目標與開放源碼、內容開放、開放獲取等其他「開放」運動類似。 
+
+推廣開源軟體的朋友常常使用 "開放源碼運動" 來描述這個風潮，會採用 "運動" 這個詞，除了技術的轉變，同時也暗示了開放源碼的風潮蘊含社會運動的本質。 從蕭景燈博士的投影片我們可以瞭解， 開放源碼運動，不但推動了後來開放內容 ( Open Content ) 的演化，如：Wikipedia，OpenStreetMap，爾後也促成了開放資料 ( Open Data ) 的風潮。開放資料，跟開放內容運動有點類似，但許多開放資料的推廣者，是希望官方機構能夠本於資訊透明的原則，釋出有利於民眾的資料，所以 Open Data 常常會與 Open Government  一同談論。
+
+
+從 Google Trend 我們可以發現，從 2007 年底開始，越來多人開始談論 Open Data 。在台灣，感謝 Schee ( 2010，2011 )， Jamie 與 FOX 等人的推動與報導，台北市交通局對 Open Data 的態度從一開始 「申請單位針對交通資訊之內容或於加值處理後不得對外收費。」轉變到「原始介接資料不得轉介接及出售，資訊加值過後之產品不在此限制」(2012.1.30) 。
+
+
+而目前 臺北市政府公開資料平台 所釋放的 135 種資料，不需書面同意，在加註資料來源後，即可無償使用。這對很多 App 開發商應該是好消息，即使是小型的開發團隊，應該也可以利用這些公共開放的資料來製，加值可收費的 App，而不需要付出高額的費用，網站業者也可以利用這些資料開發出更好的服務。
+
+今年， Open Data 的關注層級更高，行政院科技會報舉辦了  "我國公開資料加值(open data)推動策略會議" ，會議中所有的投影片可在這裡下載 ， 當天 Twitter 上的討論可以在這裡找到。主要就是希望能開放並推廣三個資料庫：故宮數位典藏資料，國土地理資料，健保資料。同時並採用了蠻炫的 Buzz Word ：雲端運算 ( Cloud Computing ) 與 開放資料 ( Open Data ) 。
+
+ 
+
+
+
+雖然當天會議的主軸是討論如何對這些資料加值，有點不太符合開放資料的原始意涵，但官方開始討論總是第一步，有了台北市政府的優良的前例，真心希望這三項資料庫將來能夠有合理的授權。數位典藏資料，地理資料，比較單純，但比較有爭議的健保資料庫，消息一見報之後，便引來了許多民間團體的關切。這裡先不論「醫療雲端運算系統」(!?)的加值型資料庫所引起的爭議 ( 下略三千字 )。
+
+
+
+
+ ( 原圖 by Walkingice Chu， 原文 by John CY Lee )
+
+Mark Wu 所提到的 Paitent Like Me ( 重症/特殊疾病患者自發的將自己的醫療紀錄放上網，讓其他患者與醫生可以參考然後研究如何用藥或是改變治療方式 )， 或是 Schee 所提到的 Asthmapolis 似乎才是比較正確的方向。
+
+身為一個阿宅，其實搞不太懂這些複雜的專有名詞，但是除了開發(引進?)本土微創新的服務，或是加入外國的微創新團隊之外，或許在 政府6月底完成9類公開資料盤點 之後，可能有另一個 App 與網站服務的新契機。
+
+
+除此之外，將來眾多法案的變化，如：個人資料保護法的延期實施，智財法準備納入封鎖重大侵權網站條款 ( 類似美國的 SOPA 條款， Inside 之前的報導 - 我在美國看SOPA )，明年台灣評估加入 ACTA ，跨太平洋經濟戰略夥伴協定，還需要各位網民與意見領袖的的持續關心。
+ 
+
+
+據筆者瞭解，三月份的確有個機會可以反應醫療雲的問題，還望各位業界先進不吝批評指教。
+
+
+
+
+
+T.h. Schee:
+February 25th, 2012 at 4:20 pm
+ 台灣不知是否有類似的會議 HIMSS12
+http://www.ihealthbeat.org/features/2012/himss12-officials-stump-for-open-data-consumer-health-tools.aspx
+不過 HHS.gov 關於 open data 的說法，可以給點國內民間團體比較準的參考.
+
+
+T.h. Schee:
+February 25th, 2012 at 4:21 pm
+ 台灣不知是否有類似的會議 HIMSS12:
+http://www.ihealthbeat.org/features/2012/himss12-officials-stump-for-open-data-consumer-health-tools.aspx
+不過 HHS.gov 關於 open data 的說法，可以給點國內民間團體比較準的參考。.
+
+
+Samuel Liang:
+February 27th, 2012 at 3:22 pm
+ Open Data的概念, 應該是把Data的應用權力、解釋權力、加值權力開放給使用Data的人, 但對於政府單位而言, 這種把Data開放給民間單位來應用的情況, 會有很多的顧慮, 一旦應用或解釋上有不同的見解, 被有心人提供給媒體, 就會衍生許多爭議, 因此政府要釋出Data的過程, 總是會考慮再三. Open Data的議題牽涉到法規的鬆綁, Data品管、存取、交換、加值、應用等諸多面向的探討, 以個人接觸較多的國土資訊系統而言, 即提供了九大資料庫, 這些資料庫皆逐漸可以Web Service方式對外提供服務, 並已有TGOS(http://tgos.nat.gov.tw/)及MAKOCI(www.makoci.com)等平台可提供存取服務, 相信政府相關單位是願意推動朝向開放的, 但凡事仍須謹慎, 不能為開放而開放, 而是要能有利創新應用, 但又能避免錯誤的資料及錯誤的應用。
+
+
+

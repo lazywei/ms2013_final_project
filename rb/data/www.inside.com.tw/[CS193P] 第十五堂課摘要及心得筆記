@@ -1,0 +1,60 @@
+
+
+在先前的課程中，我們所學習到的大多都是軟體上API的呼叫，並沒有使用到太多硬體上的裝置設備。而在這一次的內容中，我們就會看到如何使用Cocoa Touch的API來操作iPhone的硬體，使用像是加速度感應器、羅盤和地理定位系統等裝置來創造出更多有趣的應用，還請多多指教！
+Image Picker
+在前幾次的課程內容中，我們在學習Modal View的呈現時，曾經有看過如何使用UIImagePickerController來讓使用者選取影像。而當我們需要使用照相機、攝影機的硬體功能時，也同樣是透過Image Picker來達成。
+在iPhone平台上，我們主要有以下幾種影像來源：
+UIImagePickerControllerSourceTypePhotoLibrary -- 照片資料庫（包含同步而來的照片）
+UIImagePickerControllerSourceTypeCamera -- iPhone上的照相鏡頭
+UIImagePickerControllerSourceTypeSavedPhotosAlbum -- 相片膠卷（也就是拍過的照片）
+而Image Picker提供了-(BOOL) isSourceTypeAvailable這個方法讓我們檢查所需要的影像來源是否可以使用（像是iPod上就不能使用照相機）。在確定影像來源之後，我們可以設定sourceType屬性，來決定使用者可以在這個Image Picker中使用哪種影像來源。
+此外，UIImagePicker也有提供allowsImageEditing屬性，當這個屬性被設定成YES之後，我們就可以讓使用者移動、裁剪照片後再回傳，如下圖所示：
+
+透過delegate的設定，在使用者挑選完照片或是拍完照片之後變會呼叫delegate方法，或者是使用者取消選取之後，也會呼叫delegate方法。這些方法都定義在UIImagePickerControllerDelegate中，分別是：
+- (void)imagePickerController:(UIImagePickerController*)picker didFinishPickingImage:(UIImage*)image editingInfo:(NSDictionary*)editingInfo; // 選取完畢
+- (void)imagePickerControllerDidCancel: (UIImagePickerController*)picker; // 取消選取
+透過這些方法的呼叫，我們可以取得使用者所挑選的照片，包含裁剪過後的照片和原始檔。要注意的是，在UIImagePicker呼叫了這些方法之後，我們必須自己在程式中將Picker從畫面上移除，並且release。投影片的第18、19頁有簡單的範例程式碼可以參考。
+而我們前面有提過，UIImagePicker有提供讓使用者自行裁剪照片的功能，在我們開啟這項功能之後，delegate方法所回傳的UIImage就會是裁剪過後的照片。而如果我們希望同時也可以取得原始檔的話，則是透過editingInfo中的UIImagePickerControllerOriginalImage來取回。
+最後，當我們完成照片的操作之後，若有需要將照片存回使用者的相簿中則可以透過呼叫UIImageWriteToSavedPhotosAlbum這個由UIKit所提供的函式，而這個函式也可以在存檔完成後另外呼叫一個callback方法作為通知。
+整體來講，大概有幾個重點：
+確認影像來源是否可以使用
+delegate方法要清理畫面和記憶體
+影像佔記憶體很多空間，盡量都寫到檔案系統中
+可以在iPhone Simulator中模擬大多數的操作
+Core Location
+Core Location是iPhone上用來存取地理定位系統的Framework，主要透過CLLocationManager來取得CLLocation，後者即包含了各種我們所需要的座標資料。
+需要注意的是，不同於其他的delegate設計，CLLocationManager只會在使用者更新座標的時候呼叫delegate方法，而不是在固定的時間間隔呼叫。
+其他Core Location的細節說明，還請參考筆者的第十二堂課摘要及心得筆記，其中對於CCLocationManager等類別的使用均有說明。
+加速度感應器
+iPhone除了優異的多點觸控螢幕之外，也具備了加速度感應器讓開發者可以發揮想像力，設計許多創新的互動方法。如下圖所顯示的，當我們將iPhone或是iPod側向一旁的時候，其具備的加速度感應器也會偵測到改變。
+
+而加速度感應器最基本的應用莫過於旋轉畫面的顯示了，這樣的功能在Safari和iPhoto等應用程式中都很常見。我們可以透過UIDevice類別來取得目前裝置的方向：
+beginGeneratingDeviceOrientationNotifications -- 開始傳遞方向訊息
+UIDeviceOrientationDidChangeNotification -- 方向改變中
+endGeneratingDeviceOrientationNotifications -- 停止傳遞方向訊息
+而UIDevice中也有orientation屬性可以直接取得目前的方向。
+然而，硬體的方向跟目前介面上的方向有可能會是不一致的，我們可以從UIApplication的statusBarOrientation屬性知道目前介面的方向，並且透過UIViewController的以下方法來設定介面選轉的功能：
+- (BOOL)shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation)interfaceOrientation
+在大多數的情況下，我們只要設定好以上UIViewController的方法，就可以讓介面進行正確的旋轉動作了。
+而在iPhone OS 3.0之後，Cocoa Touch也新增了一種UIEvent叫做Shake。就如同多點觸控一般，我們可以透過重載UIResponser的– motionBegan:withEvent:等一系列的方法來取得shake的動作，並且進行相對應的處理。
+一般而言，在iPhone上的shake動作通常代表著「還原」的功能，或者是「隨機播放」這樣的意思。所以如果在設計的過程中需要賦予shake動作不同的意義，要記得一定要對使用者詳加提示，避免混淆。
+針對一般的應用程式，或許以上的功能已經相當的夠用，但針對遊戲等來講，我們會希望能夠有詳細的加速度數字，以便提供細微的操作。在iPhone平台上，加速度感應器分成六軸，如下圖：
+而加速度感應器的使用上，與Core Location可以說是相當的類似，UIAccelerometer會以每秒10~100的頻率傳遞UIAcceleration給delegate，程式碼如下：
+- (void)enableAccelerometerEvents {
+    UIAccelerometer* theAccel = [UIAccelerometer sharedAccelerometer];
+    theAccel.updateInterval = 1/50;
+    theAccel.delegate = self;
+比較特別的是，不同於CLLocationManager，我們不需要建立個別的UIAccelerometer，只需要呼叫+ sharedAccelerometer來取得共用的實體物件即可。此外，我們也不需要呼叫某個方法來「開始」，只需要將delegate設定好就會開始接收資訊了。至於如果要停止更新的話，則是將delegate設定為nil就可以了。
+在投影片第85到99頁中，有對實務操作上的一些範例，像是如何透過簡單的數學運算來過濾加速器的資料等等，有興趣的讀者還務必參考。
+結論
+在這一堂課程中，我們看到許多iPhone硬體資源的使用範例以及學習了相關的操作方法。在下一次的課程中
+參考資源
+Lecture #15 -- Device APIs, Power Issues
+UIAccelerometer Class Reference
+CLLocationManager Class Reference
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

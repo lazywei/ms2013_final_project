@@ -1,0 +1,55 @@
+
+
+本文來自The Setup部落格上的訪談，由筆者翻譯而成。該站提供了一系列的人物訪談，只focus在一件事情上，就是“他們用什麼東西來完成工作，創造出他們想做的東西。”
+筆者將從中挑出幾個有趣的人物，看看他們做的事情，跟他們用的軟硬體設備。所謂工欲善其事，必先利其器。透過瞭解別人怎麼工作的，我們也有機會透過學習，改善自己的工作設備條件。
+
+John Resig
+程式設計師(jQuery)
+你是誰，你做什麼？
+我是JavaScript程式設計師，我在Khan Academy工作，工作內容是發展下一代的教育平台。我是jQuery Javascript 函式庫的創建者與首席開發者。另外，我是兩本JavaScript專業書的作者：Pro Javascript Techniques與Secrets of the JavaScript Ninja。
+你用什麼硬體？
+主要的工作電腦是27吋的iMac(i7 processor, 8GB 記憶體)，外接22吋的第二螢幕。筆電用的是13吋的 Macbook Pro (Core 2 Duo, 4 GB 記憶體)。網際網路我用的是RCN，速度達到60Mb/s。我有一堆備份機器，大部份用來做測試，包括了一臺Windows XP的PC，一臺Chromebook，還有一臺 MacBook。我還有測試一堆電話跟平板電腦，大部份放在Filament Group，也就是jQuery Mobile背後的開發者。
+另外，我有好幾台Mac Minis，我用來看多媒體。有一臺接到能播放720p視訊的投影機(BenQ W500)，另外一臺接到我桌上的19吋LCD螢幕。
+我用 iPhone 4 ，最近也拿到了一臺 iPad 2 。
+在我的廚房裡，我放了一個iPod/iPhone底座跟喇叭。這樣我煮菜的時候就可以邊聽音樂。我在車上也有這樣的設備一套。
+我有一組5 Bay RAID-5 NAS (Thecus N5200BR) ，共放了五顆1 TB的硬碟（總共提供了3.6TB的儲存空間）。我把所有的多媒體都儲放在上面，我還多留了一顆可以熱插拔的備用硬碟，以備不時之需。除此之外，我還把我的文件多放了一份在Dropbox上面。
+那軟體哩？
+每台電腦我都用Firefox瀏覽網頁(我會打開兩個tab放 Google Mail 與 Calendar )。我用 Google Docs 寫很多文件， Keynote 是我的簡報工具， 發佈部落格則用 Textmate。我用 Skype，Google Chat (在GMail界面下用)， 以及IRC (用的是 IRSSI in a screen session) 作為溝通工具，並用Gyazo 來作畫面擷取分享。
+開發我用Chrome， vim (vim 設定)， Textmate以及 iTerm2。我的螢幕上隨時隨地都有開啓各種版本的瀏覽器 ：各種版本的Firefox, Chrome， Opera以及 Safari。我會跑 VMWare Fusion 虛擬機， 裡面跑更多的瀏覽器（包括各種版本的 IE，Firefox，Opera，Chrome與Safari）。我用MAMP來作簡單的伺服器，配合 MySQL DB 作測試工作。 我的程式碼都用Git 管理(放在 Github上面），並且用Dropbox備份。
+我的手機上的主畫面從左上到右下，依序是這些app：
+iPod，時鐘，記事，相機， 設定, NOAA (可打開 weather.gov)，行事曆， Twitter， Foursquare， Carcassonne， MassTransit (可查波士頓的公車GPS位置)， Yelp， Facebook， 與 iSSH (可用ssh連上伺服器)，地圖， Safari，訊息，最後是 電話。
+我用VLC 與 Boxee來播放影片。 也用iTunes來播放音樂（跟Last.fm同步）。我用AirVideo把電影串流到我的iPhone跟iPad上面。
+多媒體的來源則是iTunes，Amazon MP3，Netflix 串流，與Usenet。對Usenet使用來說，我用 SABnzbd+。找一臺Mac Mini在上頭執行，連接到Giganews，從NZBs.org或Newzbin去抓資料。
+遊戲的話，我玩Starcraft 2， Minecraft ，還有一些iPhone遊戲（包括Carcassonne與 Words with Friends)
+你的夢幻配備組合是？
+我現在差不多就用的是接近夢幻狀態。不過，我還是有幾個願望：希望我的MacBook內建3G連線能力。希望iPad輸入能再容易一點。希望Chrome能變得更好。希望SABnzbd+能聰明點，不要一再重新下載檔案。希望iPhone再快一點。希望。希望不用dongle就能用我的MacBook座簡報。我希望Boxee不要常當機，希望我的車子能夠用語音操控，另外希望Dropbox可以備份我的Google文件跟郵件。
+ 
+小結
+除了閱讀本文，也歡迎在大家都用怎樣的電腦設備工作？討論串上添加您現在工作或自用的軟硬體設備工具等等，大家多多交流。
+
+
+
+
+Anson Chen:
+August 1st, 2011 at 2:11 am
+ 很多人以為擁有那些設備，自己就是高手
+
+
+Joey Chang:
+August 1st, 2011 at 2:42 am
+ 它用 benQ 投影機耶!!
+
+
+Hans Lu:
+August 1st, 2011 at 6:12 am
+ Thecus N5200BR! GOOD PRODUCT!
+
+
+趙政宏:
+October 29th, 2011 at 11:34 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

@@ -1,0 +1,66 @@
+
+
+課程逐漸進入了中盤，不知道大家還跟的上進度嗎？這次要帶給大家的是第六堂課的心得筆記，還請多多指教！
+第六堂課中主要談三個重點，分別是：
+iPhone程式的介面設計
+Model-View-Controller的原理及方法
+View Controller
+iPhone程式的介面設計
+iPhone的螢幕解析度相當有限，只有320×480這麼大，所以以往在桌上型的軟體介面並不能直接套用在iPhone平台，大體而言，在設計上有三大重點：
+專注於使用者本身的資料
+一個畫面只做一件事情
+而許多的的頁面組成一個軟體
+而我們在iPhone軟體上面，可以看到兩種常見的模式，第一種是在最上方有個導覽列，當我們按了畫面中某個內容後，新的頁面就會從左邊推進來，這種模式我們稱作Navigation Bar。而另外一種模式則是在程式最下方會有許多按鈕，類似像iPhone中的通話軟體一樣，每個按鈕都代表著不同的頁面，而這種模式叫做Tab Bar。下面這張圖片清楚的展現了兩者的差別：
+
+而這樣的軟體設計模式，是可以被歸納成MVC的概念的。以通訊錄軟體為例，Model所負責的資料也就是通訊錄中的聯絡人，而View則是做介面上的呈現，最後Controller則是居中進行協調處理。
+
+Model-View-Controller的原理及方法
+之所以在Cocoa中採用MVC的設計模式，有一個很大的原因是為了能夠將程式碼切割，每個部份的程式碼各司其職，這樣可以大幅減低我們後續維護的難度。此外，當我們落實了MVC架構並且盡量減少類別之間的相依性，這些類別就都可以經過小幅修改而重複使用。
+然而，我們要如何在減少相依性的前提下，讓物件能夠互相溝通呢？
+在MVC架構中，三者其實並非互相制衡的，事實上是由Controller來負責整個程式的邏輯、管理物件們關係。所以一般的狀況下，Controller的程式碼很少有機會能夠重新使用。詳細的溝通方式可以用下面這張圖來說明：
+
+以Model而言，Model並不會知道View和Controller的存在，一切的操作都由Controller來達成，所以通常Model也是最容易能夠重新使用的。然而，當我們需要從Model主動傳遞訊息到Controller或是View的時候，則需要透過Key-Value Observing或是Notification，前者會指定某特定Key，讓Controller能夠持續觀察，當這個Key所代表的Value有做修改時，Controller就會進行對應的動作。而Notification則是透過NSNotificationCenter來進行傳遞。
+而對於View來說，View不會知道Controller的存在，但是有可能需要知道某些Model物件以便顯示資料，通常也是可以經過調整而重新使用。而View要如何跟Controller溝通？則是透過我們早已熟悉的Target-Action模式，也就是在Interface Builder中將UI元件的event和Controller的IBAction進行連結。此外，透過delegation也是一種方式，也就是將View所需要的Delegation設定為需要溝通的Controller，以便物件們互相溝通資訊。
+View Controller
+View Controller代表是操作View的Controller，除了View Controller之外，在下一堂課中，我們還會陸續碰到Navigation Controller和Tab Bar Controller等等，但概念上都是相同的，只是操作的方法不同。
+View Controller就如同UIView之於MVC中的View一般，VIewController也就是MVC架構中的Controoler的部份，已經預先定義了許多Controller所需要用到的方法，當我們需要建立自己的Controller時，通常也會先繼承ViewController再做修改。
+在一般的程式中，我們會建立許多ViewController的子類別，每個子類別都將負責一個螢幕畫面，而在這些類別之上，則是會使用Cocoa本身設計好的Controller，像是NavigationController，來負責整個軟體的動線。
+
+那我們要建立ViewController的子類別時，程式的大致架構如下：
+#import <UIKit/UIKit.h>
+@interface MyViewController : UIViewController {
+// View Controller 通常需要同時管理View和Model
+    NSMutableArray *myData;
+    IBOutlet UILabel *myLabel;
+}
+// 也需要設定property方便操作
+@property (readonly) NSArray *myData;
+// 此外也有Action讓UI能夠操作
+- (IBAction)doSomeAction:(id)sender;
+而有從父類別中，我們也繼承了@property (retain) UIView *view;這個property，可以讓我們設定Controller所對應的View。而當View需要讀取時，Cocoa會自動呼叫 -loadView這個方法，在大多數的狀況，我們是不需要自己呼叫的。
+而我們有兩種方式能夠建立VIewController所對應的View，第一種是透過程式碼去重載 -loadView方法，大概的程式碼如下：
+- (void)loadView {
+    MyView *myView = [[MyView alloc] initWithFrame:frame];
+    self.view = myView; // View Controller會retain myView
+    [myView release];
+}
+第二種作法是透過Interface Builder建立nib檔來設計View，就如同以往設計nib檔一般，但不同的是記得要將File's Owner換成我們所設計的ViewController，並且將View Outlet與File's Owner連結。當我們在程式中要建立Controller時，需要改呼叫：-initWithNibName:bundle:這個方法，程式才會將正確的nib檔讀取進來。
+
+在課程影片的[27:20]處有第二種方法的示範，講解的相當清楚，讀者有興趣可以參考。
+View Controller的生命週期，主要是由View的顯示來掌控，我們有以下幾個方法可以讓我們重載並加入自己的程式碼：
+- (id)initWithNibName:(NSString *)nibName bundle:(NSBundle *)bundle -- View Controller的初始化
+- (void)viewDidLoad -- View讀取完畢時
+- (void)viewWillAppear:(BOOL)animated -- View即將要出現在螢幕時
+- (void)viewWillDisappear:(BOOL)animated -- View要從螢幕上被移除時
+透過重載以上這些方法，我們可以在程式的進行過程中找機會存取一些資料，或是上網下載一些檔案等等。
+最後，View Controller也提供了一些方法可以重載，包含像控制介面旋轉的- (BOOL)shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation)interfaceOrientation或是記憶體過少的處理等等，有興趣的朋友還可以參考Xcode裡面的文件，有詳細的解說。
+結論
+這次的內容可以算是相當精彩，將我們以往所學的所有概念一口氣統整起來，讓我們對iPhone的開發有個全然的了解。下一次的課程內容將聚焦於UIKit所提供的一些View Controller，透過這些Controller，我們就可以將整個軟體的介面流程設計出來，還請各位讀者繼續收看！
+參考資源
+Lecture #6 -- View Controllers
+View Controller Programming Guide for iPhone OS
+
+
+
+
+

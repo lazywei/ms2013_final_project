@@ -1,0 +1,17 @@
+
+
+許多人對於iPhone的開發環境感到相當陌生，本篇文章將用簡短的篇幅介紹iPhone OS的架構、以及平台上的一些相關資源和最重要的，如何在這個平台上進行開發。
+iPhone OS其實就是簡化過的Mac OS X，而此作業系統採用的是分層的架構，總共分成四層。在最底層的核心是用FreeBSD和Mach所改寫的Darwin，是開放原始碼、符合POSIX標準的一個Unix核心，負責處理與硬體的溝通、記憶體的管理以及各種基本系統功能。
+而往上一層則是核心服務，主要包含了SQLite、POSIX的thread、Unix的Sockets和Apple的Bonjour網路功能，這部份的功能主要由C寫成，而裡面最重要的是Foundation Framework，主要是用Objective-C的介面將這層中的很多功能包裝起來，提供了比較容易使用的介面，像是基本的資料型態、字串處理、網路功能或是URL的存取都在這裡面有對應的類別。
+而第三層則是混和了Objective-C和C的一些多媒體功能，像是C語言的OpenGL ES、Quartz或是Core Audio，也有Objective-C介面的Core Animation。
+最上層則是我們最常接觸的Cocoa Touch，大多數的介面都是Objective-C，而中間最重要的就是UIKit framework，主要負責了UI的顯示、操作等。在這一層中也提供了存取使用者相簿和音樂等功能。
+總結以上幾點，當我們要開發iPhone應用程式的時候，首先要先從上層著手，盡量使用Objective-C包裝後的介面來存取系統的功能，也就是透過UIKit framework搭配Foundation framework來進行開發，而當面對一些比較複雜的功能，像是多媒體的處理或是繪圖，再往下層去找尋相關的framwork來完成。
+參考資料：
+iPhone OS Technologies
+iPhone OS Overview
+
+
+
+
+
+ Tagged with: Apple, iPhone, 架構, 開發 

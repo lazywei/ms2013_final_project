@@ -1,0 +1,38 @@
+
+
+筆者在近日寫了數篇文章談論HTML5在影片播放的優勢、以及其對於Flash所產生的威脅，但對於大多數的讀者來講仍然感受不到 HTML5的威力，在這一篇文章中，筆者將介紹十個精選的HTML5應用，請各位讀者一同體驗HTML5的魅力！
+瀏覽器需求
+目前IE的HTML5支援仍然相當有限，無論是6/7/8均只提供了有限的HTML5及CSS3支援。而對於其他的瀏覽器而言，各家目前的實做進度不一，因此若是讀者有興趣試玩以下介紹的網站，還請安裝Google Chrome或是Mozilla Firefox等對新的網頁標準支援較佳的瀏覽器，並且根據網站上的建議瀏覽器進行瀏覽，這樣才能確保得到完整的效果。
+Sketchpad
+Sketchpad是一個完全建構在HTML5的canvas功能上的線上繪圖軟體，雖然與一般桌面上的Photoshop等繪圖軟體還具備一定程度的差異，但是與使用Flash的Photoshop線上版比起來，執行時明顯順暢很多。
+另外值得注意的一點是，在最後儲存的時候也是使用canvas中的toDataUrl()函式，即時的將畫面在瀏覽器即時轉換成為一般可以下載的png檔。
+
+CanvasPaint
+CanvasPaint同樣也是透過HTML5的canvas功能所設計的繪圖軟體，但比較不同的是整個繪圖軟體的功能、介面都是模仿Windows系列中所內建的小畫家軟體，十分的復古！
+Tetris
+俄羅斯方塊相信是許多人年輕的回憶，而Tetris便是透過HTML5在Web上重現這個經典的遊戲。就如同我們以往在遊戲機上所玩的操作一般，透過左右鍵移動方塊，上鍵變換方塊方向，下鍵來讓方塊快速的移動到底。
+
+Sticky Notes
+Sticky Notes讓使用者能夠在這個網頁上建立新的便條紙筆記、移動這些便條紙，有趣的是，這個網站同時使用了HTML5的localStorage功能，也就是當你關閉視窗後，在下次開啟時會自動的還原顯示上次關閉時所紀錄的筆記。
+
+Calendar
+同樣類似Sticky Notes的概念，Calendar透過了HTML5的本機儲存功能提供了一個瀏覽器介面的行事曆軟體。
+Things
+Things是一套在Mac/iPhone上相當熱門的時間管理軟體，介面設計優雅、功能強大，而在近日他們也推出了HTML5的Demo版，雖然只是一個實驗性質的測試版，但未來他們將考慮將Things移植到網頁上讓更多使用者能夠使用。
+Super Mario Kart Online
+Super Mario Kart Online試圖在HTML5上重現家用遊戲主機的經典名作、馬力歐賽車，透過canvas的幫助，Super Mario Kart Online重現了簡單的模擬3D跑道，而使用者可以透過上下左右來操作、移動賽車。
+雖然目前這個只是一個略顯粗糙的Demo，但仍然讓人相當期待是否在未來會有完整的版本呈現。
+Bespin
+Bespin是由開發Firefox的Mozilla所推出的一項網路服務，將一般程式師的軟體開發工具透過HTML5的技術來在瀏覽器上實現。除了提供一般程式開發中常見的syntax highlight之外，也支援了Mercurial這套版本控制系統的整合。另外，也有支援多人協作程式碼，讓多位開發者能夠在Bespin上編輯同一份程式碼。
+
+Guacamole
+在眾多HTML5的運用中，最重量級的應用莫過於現在要介紹的Guacamole了。Guacamole是一套透過HTML5及Canvas來實做的VNC軟體，所謂的VNC便是遠端桌面的概念，讓我們能夠透過網路來操作另外一台電腦。而一般的VNC軟體都得透過安裝桌面的程式才能進行操作，但透過Guacamole我們只需要使用支援HTML5的瀏覽器並連上網站就可以操作遠端的電腦了！
+
+結論
+在看過以上這些HTML5的應用之後，相信各位讀者對於HTML5的威力應該可以親身感受，就讓我們一起期待這個網頁新標準會為市場帶來什麼更多有趣的應用！
+
+
+
+
+
+ Tagged with: canvas, css3, html5, Web Standard 

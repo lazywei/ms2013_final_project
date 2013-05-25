@@ -1,0 +1,50 @@
+
+
+
+近日，Google 和 Mozilla 展示了 Firefox 和 Chrome 瀏覽器的最新功能：透過支援 WebRTC 技術，兩大瀏覽器可以互相撥打 VoIP  電話和視訊電話。
+最新的 Chrome 23 Beta 以及Firefox Nightly 已經包含這項功能。
+WebRTC 是一個開源 VoIP 和視訊技術，來自於W3C 和 IETF 開源開發（open source）社群，並基於一系列開源技術，包括 Opus 和 VP8 編解碼器、DTLS-SRTP 加密等。
+WebRTC 互用性意味著， WebRTC 應用程式相互之間，可以在任何支援 WebRTC 的瀏覽器上直撥 VoIP 電話或者視訊電話。因為此功能是建立在雙方的瀏覽器上，因此使用者不必安裝任何應用程式，同時開發者也能更方便的開發 Apps 。如果你是開發者，可以看一下 Firefox 官方部落格裡的程式範例。
+這項最新功能會對誰帶來最大的威脅？微軟曾經在 2011 年以 85 億美元的高價收購 VoIP 服務 Skype ，而這項最新功能，可能將影響到 Skype 的使用者。
+Mozilla 和 Google 的官方部落格中，都附上了同樣的 YouTube 影片，內容是 Google 的產品總經理 （Director of Product Management）Hugh Finnan 和 Mozilla 的創意長（Chief Innovation Officer） Todd Simpson  之間的 WebRTC 視訊電話：
+編譯來源: [ 1 ]
+
+
+
+
+Vincent Chang Chien:
+February 5th, 2013 at 9:56 am
+ 微軟收購 skype 85億 應該會被打臉了，我開broswer就可以視訊，幹嘛還裝一個軟體呢? 哈哈
+
+
+莊承展:
+February 6th, 2013 at 2:35 am
+ 看來微軟又花大錢做傻事...
+
+
+Richard BJ Wang:
+February 6th, 2013 at 3:18 am
+ CHROME應該是25 beta版～
+
+
+Wei-Jie Hsiao:
+February 6th, 2013 at 7:19 am
+ WebRTC 才不是什麼技術，它是未來可能會成為HTML5 標準的其中多個API 的合稱，一開始也不是W3C 跟IETF 開發，而是一個被Google 買下來的公司發展的。況且Google Chrome 跟Firefox 支援WebRTC 也不是新鮮事了。什麼是WebRTC 可以看看維基百科的條目：http://en.wikipedia.org/wiki/WebRTC
+再說W3C 跟IETF 也不是開源開發社群而是制定開放標準的組織... 有沒有做功課啊= =
+是說微軟早就以WebRTC 不足以廣泛支援所有裝置為由提出了CU-RTC-Web：http://chinese.engadget.com/2012/08/07/microsoft-no-fan-of-existing-webrtc-standard-proposes-its-own/
+也打算利用這個標準將Skkype 整合到自家的服務，取代Hotmail 的outlook.com 中：http://www.skype6.com/blog/read.php/?568
+還有，我不認為「一套API」可以對Skkype 產生威脅... = =
+
+
+李介介:
+February 6th, 2013 at 4:03 pm
+ 被打臉了~
+
+
+iPhone 5:
+February 8th, 2013 at 6:08 pm
+ 這個技術是 HTML5 的 API 而已，開發者也可以做出即時網頁通訊的功能
+http://m3.tw-mo.com/2012/11/08/07/
+
+
+

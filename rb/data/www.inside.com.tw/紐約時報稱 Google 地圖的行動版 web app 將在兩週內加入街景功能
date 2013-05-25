@@ -1,0 +1,42 @@
+
+
+
+Inside 曾在 〈 升級 iOS 6 前需要知道的 6 件事 〉 提醒讀者：
+提醒各位，如果您在日常生活中非常仰賴原本 iOS 5 內建的 Google 地圖 app，經常用來查詢路況或是安排大眾運輸/轉乘路線，請審慎思考後再決定是否升級，因為 iOS 6 的內建地圖 app 將不再是 Google 地圖，無法在台灣使用諸如路況、大眾運輸/轉乘路線等功能。不過別忘了，還有網頁版的 Google 地圖可用。
+26 日紐約時報的科技專欄記者 David Pogue 在他的專欄文章中指出，Google 正在著手將 Google 地圖的街景功能放到行動版的 web app 中（就是 Google 地圖的行動版網頁），大約兩週之內 iOS 6 使用者就可以享受到這個功能1。
+事實上 David Pogue 文章的重點是在評價 iOS 6 上 Apple 自家的地圖 app，不過卻有眼尖的人指出文章中的一段話顯示 Google 正在強化他們地圖行動版 web app 的功能2：
+You can still use Google’s maps — on the Web. Visit maps.google.com and accept the offer to create a Home-screen icon for you. You won’t get spoken directions, but you’ll get written directions, public transportation details, live traffic reports and, of course, Google’s far superior maps and data. (In two weeks, you’ll be able to get Street View this way, too, says Google.) And you can install the Google Plus Local app for full access to Google’s more complete database of shops and businesses.
+粗體字的內容即是說使用者在兩週內就可以在 Google 地圖的行動版 web app 見到街景功能。而這正是 Apple 自家地圖所欠缺的功能之一，也是一些使用者在找路時所依賴的重要功能。
+David Pogue 在他的文章中提出幾個問題：
+First, why did Apple jettison Google’s map service, which is polished and mature?
+首先，為何 Apple 要捨棄 Google 如此優雅而成熟的地圖服務？
+Second, how did Apple and its elite squad of perfectionists misfire so badly?
+其次，為什麼 Apple 那批完美主義者組成的菁英團隊這次會有這種失誤？
+Third, what, exactly, is the underlying problem, and how long will it take to fix?
+第三，到底潛在的問題是什麼？要花多久時間才能解決？
+對此，Apple 的回應是 Google 老是將最好、最棒的功能保留給自家的 Android 系統，包括語音 turn-by-turn 導航，而且 Google 還能藉由 Apple 的客戶蒐集資訊來強化他們自家的地圖服務（這些資料當然不會與 Apple 分享），所以想也知道 Apple 並不喜歡這樣。
+Apple 說他們的地圖 99% 來自多個第三方的資料都是精確的，但的確有 1% 的資料有問題。不過 David Pogue 也說 Apple 的主管也直接了當地承認這是他們自己的問題，會投入更多資源去解決。
+同時，David Pogue 也確認了 Google 正在積極地準備 iPhone 版與 iPad 版的地圖 app，但仍需要耗時幾個月。
+Apple 在 Google 地圖的授權時間還有一年的此刻就放棄繼續在新版 iOS 內建 Google 地圖3，John Gruber 針對 Apple 這麼做的時間點發表了一篇文章4，他認為 Apple 必須趕在授權到期前推出自己的地圖服務，因為現在兩家公司已經擺明了在行動平台上是競爭者，Apple 若等到授權到期才開始與 Google 協商，那事不智之舉，因為像地圖服務這樣的產品推出後需要時間來打磨、修正，不能等到協商失敗後才緊急推出，到時候只能任憑 Google 處置。所以這個時間點 Apple 推出自家地圖服務是他完全可以理解的。
+John Gruber 更指出，Google 聲稱他們很意外、很不解為何 Apple 要提早把 Google 地圖從 iOS 中移除，換成自己的服務，這樣的說法其實很有問題，因為 Apple 早在 2009 年就開始收購地圖技術相關的公司，大家覺得 Apple 這樣的企業收購公司只是買來放著讓它爛嗎？而且 Google 董事長 Eric Schmidt 早就在 2011 年五月底的 AllThingsD 大會公開說過他們更新了與 Apple 之間地圖的授權5，那可是在 Steve Jobs 過世前說要「花盡 Apple 每一分錢與 Google 展開熱核戰」6之後的事，如果說 Google 這等成熟的公司沒有考慮到事情發展的可能，讀者們願意相信嗎？
+當然，Apple 這麼做必須付出代價——接受自己的地圖比不上 Google 的事實，面對所有來自消費者的抱怨他們也只能閉嘴，埋頭苦幹把產品做好，而且在這個過程中也勢必會面臨使用者出走的情況。至於這樣對 Apple 的損害有多嚴重，就要看他們要花多久時間才能把地圖功能做得「好用一點」，因為他們得跟時間賽跑。萬一幾個月之後 Google 真的推出 iPhone 與 iPad 版的 app，而 Apple 的地圖還是缺乏競爭力，那麼可以預料會有大批的使用者轉用 Google 的地圖 app，這對 Apple 完備自家地圖服務可是一點好處也沒有。
+
+Apple’s New Maps App Is Upgraded, but Full of Snags -- Review ↩
+Street View coming to Google Maps mobile web app in two weeks ↩
+Apple had over a year left on Google Maps contract, Google scrambling to build iOS app ↩
+On the Timing of Apple’s Map Switch ↩
+Google’s Eric Schmidt: We Just Renewed Maps Partnership With Apple ↩
+Steve Jobs Said He’d ‘Go Thermonuclear War’ On Google Over iPhone ‘Theft’ ↩
+
+
+
+
+
+陳秉哲:
+September 28th, 2012 at 8:58 am
+ APPLE與GOOGLE世界地圖戰爭
+1.誰掌握通路誰就有權力操控生死
+2.誰掌握優質產品誰就有市場競爭能力
+
+
+

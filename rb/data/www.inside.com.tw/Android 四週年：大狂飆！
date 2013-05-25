@@ -1,0 +1,25 @@
+
+
+
+今天是 Android 的生日。四年前的今天，9 月 23 日（美國時間），Android 開發者部落格發表 Android 1.0 SDK，宣告 Android 系統的誕生。Android 這個曾經在 Andy Rubin 腦海中的雛形如今羽翼漸滿，毫無爭議地成為行動裝置產業的一方霸主。
+我們簡單回顧一下過去四年 Android 的進化——
+2008 年 10 月 22 日，第一款 Android 裝置 T-Mobile G1 在美國開賣。當時 iPhone 3G 上市不過兩個月，Android 面對的競爭來更多是來自 LG 和三星。
+照片來源：romainguy
+搭載 Android 1.0 的 G1 非常不完善，沒有虛擬鍵盤、不支援多點觸控、錄影。但它也有許多 Android 的指標性特點，比如下拉通知中心、widget、內建 GMS（Google Mobile Services） 以及 Android 市集（當初還不叫 Google Play）。
+G1 發售三個月後，Android 升級到 1.1，除了增加首創的 OTA（Over the air）無線升級，該版本沒有什麼實質性的提升。真正成為一個里程碑版本的是 Android 1.5，代號 Cupcake，它引入了之前所欠缺的幾項必備功能——螢幕鍵盤、錄影功能，同時還開始支援第三方 widget，並擴張了剪下/複製/貼上的使用範圍。有意思的是，從 Cupcake 這個版本起，Android 每個版本代號第一個字母都按照字母順序，而且都全是甜點名稱。
+2009 年 11 月初，1.6 版本（éclair）發布，支援 CDMA 網路、增加語音輸入系統（Text-to-Speech）、系統層級的快速搜尋、支援 VPN。同時，這個版本還支援多種螢幕解析度，這對整個 Android 生態發展有非常深遠的影響。
+從 Android 2.1 起，除了繼續在軟體功能上推陳出新，Google 開使摸索與製造商之間的合作模式。一種是讓部分製造商優先取得新系統，進行客製化；一種是讓手機製造商代工推出 Google 貼牌的機種，提供原生的 Android 體驗，可說是第一支「Google 牌」手機的 Nexus One 就是此一時期的產物。
+2.2 版本（Froyo）則開發出更多 API 給 Web app 使用，推出了全新的市場。還增加了 3G 個人熱點功能。
+Android 2.3（Gingerbread）在界面上帶來的諸多創新。系統之外，Google 也加強了硬體方面的開發，與三星合作的 Nexus S 就是第一款搭載 NFC 晶片的手機，Google 試圖透過行動技術改變人們的付款方式。
+面對 iPad 開拓出來的平板電腦市場，Android 從 3.0（Honeycomb）起，對平板電腦的體驗做了最佳化。然而市場推出的數款 3.0 平板裝置並沒有為 Android 平板帶來繁盛，反而引導 Android 硬件的改變，比如減少部分實體按鍵。從 3.0 起，Android 的分裂、碎片化（fragmentation）情況也達到了一個新的高峰，專為 3.0 設計的 app 無法在 2.x 上執行，而 2.x 的 app 在 3.x 系統運作上也相當糟糕。
+2011 年 10 月 19 日，隨者第三款 Google 與手機製造商（還是三星）直接合作的 Galaxy Nexus 的發表，Android 有史以來變化最大的版本 4.0 ICS（Ice Cream Sandwich）問世。 全新的 UI、Gmail、相機、People hub 等系統 app、虛擬按鍵、更好的文件夾、Android Beam 等多達 26 個更新讓 Android 變得更加成熟。更重要的是，Android 4.0 發表了統一的使用者互動界面設計指南，顯示出 Google 對 Android 長期分裂、碎片化的重視。
+今年 6 月，Android 4.1（Jelly Bean）正式發布，新增了 Google Now 特性，對通知系統的改進，app 可以在通知中心內顯示圖片和功能鍵，使用者也可以在通知中心內做快速操作。Android Beam 可以直接與其他裝置配對。此外，Project Butter（黃油計畫）也讓 Android 系統的流暢度大幅提昇。
+小結
+這是 Android 狂飆的四年。Android 以開放的姿態和快速更新走出了一條異於 iOS 的生存之路，儘管老生常談的分裂和碎片化這樣的沉痾依舊存在，但就系統生態方面，Android 的地位已日漸穩固。Google Play 目前已經擁有 60 萬個 app。根據 IDC 公布的 2012 年第二季統計數據，Android 的市佔率已經增加到 68.1%，穩居行動裝置作系統的霸主地位。
+從長遠來看，Android 將繼續維持「量」的優勢，其全球市佔率也將隨著越來越多的人使用智慧型手機而進一步增加。但誠如〈 你來是因為產品，你留下是因為生態系統 〉 一文所言，面對 iOS 陣營較高的使用者忠誠度，Android 唯有提供更好的體驗才能培養出使用者更高的忠誠度。此外 Windows Phone 陣營在軟體和硬體方面也逐漸趕上，而 Windows Phone 市集的 app 數量則是 10 萬個，以 Windows Phone 平台作為第一選擇的開發者也在增加中；製造商方面，Android 龍頭廠商三星為 Windows 行動裝置產品單獨啟用了 ATIV 品牌，NOKIA、HTC 也相繼發表了 Windows Phone 8 手機，這都會對 Android 形成壓力。
+未來行動裝置的競爭將是操作系統的競爭。Android 過了快速發展的四年，將來會有怎樣的發展呢？歡迎留下您的意見與大家分享。
+
+
+
+
+

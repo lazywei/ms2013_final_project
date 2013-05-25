@@ -1,0 +1,30 @@
+
+
+在蘋果的官方開發網站上會公佈各種最新的開發者訊息，隨著iOS 4以及iAd的推出，近個月來AppStore的上架審核等也有許多重大變革，筆者在此篇文章中將為各位整理這個月來的消息發佈，讓各位讀者能夠掌握應用程式的上架重要訊息！
+iOS4支援
+
+雖然這是上個月的消息了，不過我想在這邊還是要強調一下。隨著iOS 4推出，未來所有在AppStore上架的軟體都需要透過iPhone SDK 4編譯，否則無法通過軟體審核。此外，蘋果的AppStore也將結束對iPhone OS 2.x的支援，因此未來所有的軟體都必須支援iOS 4、並且選擇性的向下支援到iPhone OS 3.x。
+這對開發者的影響應該是不言可喻，由於必須透過iPhone SDK 4編譯的要求，所以現在每個在AppStore上架的軟體將都會有基本的iOS 4背景支援，而對於iPhone OS 2.x的終止支援，也將能迫使那些還未升級的iPhone/iPod使用者早日升級作業系統到新的版本，讓開發者們能夠減少同時支援多個版本的維護困擾。
+Application Loader
+
+以往的軟體要若是要上架審核，我們可以透過iTunes Connect的網站進行上傳。然而，從這個月的二十二號開始，所有的軟體將必須透過iPhone SDK中內附的Application Loader進行上傳。
+換而言之，我們必須先在iTunes Connect上進行資料的登記，當網站的軟體狀況顯示為Prepare For Upload時，在開啟上述的Application Loader軟體將軟體的封裝檔上傳，整個軟體送審手續才算完成。
+iAd for Developers
+
+在先前的iAd的相關介紹中，展示了許多種不同的互動式廣告應用，以宣傳各種產品。而在這個月中，蘋果也正式宣佈了新的iAd for Developer，也就是讓軟體開發者們能在iAd上宣傳軟體。
+就如同其他的廣告一般，iAd for Developers一樣會有廣告的看板。但更令人驚奇的是，當使用者點下廣告時便會進行軟體的下載、而卻不需要跳出目前正在使用的軟體！就如同當初iAd的當初宣傳訴求，在透過廣告宣傳軟體的同時，卻也確保了使用者能夠擁有無干擾的使用環境。
+有興趣的讀者可以前往蘋果的iAd官方頁面，以了解更多詳細的資訊。
+Version Release Control
+
+除了軟體的上傳方式有所改變之外，iTunes Connect現在也新增了選項，讓開發者們能夠選擇在軟體通過審核後不會立即上架、而是等到開發者同意之後才會上架。
+
+特別是針對一些需要搭配特殊檔期宣傳的軟體，這樣的功能將可以讓開發者們提早將軟體送審、並且等到需要的時候在將軟體釋出到AppStore上。
+參考資源
+News and Announcement for iOS developers
+iTunes Connect Developer Guide
+
+
+
+
+
+ Tagged with: Apple, AppStore, iOS 

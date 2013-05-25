@@ -1,0 +1,58 @@
+
+
+
+圖片來源：The Magazine
+昨天，打造出稍後閱讀服務 Instapaper 的 Marco Arment （他同時也是部落格平台 Tumblr 共同創辦人、CTO）在 iOS 平台上的「書報攤（Newsstand）」推出「The Magazine」，要挑戰新的數位出版形式。這本雜誌設定的讀者群就是你我——愛好科技的人。其特別之處在於，雜誌內容探討的主題將不只是科技，而是「愛好科技的人同樣會感興趣的議題」。
+照片來源：webstock
+Marco 在他的創刊文章「Foreword」寫道1：
+The Magazine delivers meaningful editorial and big-picture articles.
+The Magazine 提供經供有意義、有論點、綜觀全局的文章。
+科技愛好者喜歡的不只是科技
+科技愛好者不就喜歡科技嗎？不。
+Marco 目前在開發、營運 Instapaper 之餘（對，Instapaper 算是他的一人公司），還跟 Dan Benjamin 共同主持了一個 podcast「Build and Analyze」，主題都是在討論科技圈的事，聽眾以開發者為主。但是他在介紹 The Magazine 的時候提到2，每當在節目中討論他自己跟軟體、程式開發未必那麼相關的興趣時，例如咖啡、汽車，聽眾的反應特別好。
+科技愛好者也喜歡音樂、美食、體育，就跟大家一樣。
+iOS 的 Newsstand 是個機會
+此外，Marco 相信市場上在個人出版與大眾出版品中間仍有 The Magazine 這類出版品的一席之地。他說這樣的一本數位雜誌讀者不會比紐約時報多，但是會比一般我們說的「利基市場」再更大一些。而 iOS 的 Newsstand 提供了開發者一個絕佳的機會製作自己的雜誌。不但平台的使用者多，付費訂閱也很方便。
+Marco 在 〈 Foreword 〉 一文以 Louis C.K. 為例，這位喜劇演員靠著在網站上發行自己現場表演的影片，繞過製作公司和出版商，將自己的表演以每個授權 5 美金銷售給全世界的觀眾，在 12 天內創造出 100 萬美金的營收（他自己租戲院、請專業攝影團隊、製作網站耗資約 20 萬美金）。Marco 認為傳統出版商一直不願意嘗試新型態的出版形式，這是實話，因為各大出版社在沒有 Kindle、沒有 iPad 前，並未發展出什麼成功的數位出版，他們不過是被其他領域的人拉著跑。
+以上種種原因，讓 Marco 想要自己試試看。
+形式與設計
+如同前面提到的，The Magazine 是一本可在 iOS 平台上免費下載的雜誌，在 iPhone、iPod touch、iPad 上都可以看，唯一的條件是裝置必須升級到 iOS 63，下載後會出現在「書報攤」中。
+ 
+使用者可以透過向右撥的手勢叫出文章列表，可惜目前沒有辦法直接在文章中用手勢進入下一篇文章，也沒有翻翻頁功能，只能傳統的捲軸來捲動內容。
+然而不同於時代雜誌、經濟學人、彭博商業周刊、WIRED 等雜誌的數位版。The Magazine 強調的是文字閱讀體驗，不放圖片、沒有影片或互動設計，當然也就沒有複雜花俏的排版。The Magazine 走的路線跟 Marco 的 Instapaper 如出一轍，襯線字型「Lyon」、排版看起來簡單大方，僅提供縮放字型和一般/夜間閱讀模式。值得一提的是，Marco 加強了 The Magazine 的「輔助使用」功能，讓看不見或是有眼疾的朋友也能方便使用。
+ 
+除了分享功能與整合 Instapaper 之外（Marco 說他不會提供「Pocket」、「Readability」等競爭者的稍後在讀服務），另外一個我很喜歡的設計是，Marco 設計了一個簡單、漂亮的彈出式視窗來顯示註解或是說明文字，就跟 Instappaer 一樣，非常方便。
+ 
+Marco 認為這才是真正現代化數位雜誌該有的樣子，真正的數位雜誌不是把紙本那一套搬進來，由一百人製作，最後變成一個 300 MB 大的檔案。
+至於雜誌上的廣告，Marco 並沒有把話說死，只說現在不會有，未來也會極力避免在 The Magazine 放上廣告。
+The Magazine 營運模式
+The Magazine 是一本需要付費的雜誌，一個月 1.99 美金，每月出刊兩次，每兩週刊登四篇文章（未來可能會更多）。現在訂閱的話提供一週的免費試用。
+Marco 提到，他創辦 The Magazine 不拿投資人一毛錢、也不靠群眾募資，他說目前最大的固定成本就是設計、開發 The Magazine（這是一本在 iOS 平台底下書報攤發行的雜誌），其他就是付給作者的稿費囉。Marco 更說，如果The Magazine 在兩個月之內沒有開始營利，那麼他就會毅然地結束這本雜誌。
+其實就像我們在 〈 案例學習：Instapaper 把稍後再看做到極致 〉所提到的，Marco 很堅持產品「必須一開始就賺錢」，無論是 Instapaper 網站每個月一美金的訂閱服務或是其定價 3.99 美金的 app，他相信：
+Give people an easy way to support something they like, and they will.
+提供人們一個簡單的方式去支持他們喜歡的東西，他們就會去做。
+而且 The Magazine 推出沒多久之後 Twitter 上就有人幫 Marco 做了一番計算4：
+算賬：The Magazine 每個月八篇文章。假設是四個作者每人寫兩篇（也就是四個專欄作家），Arment 付給每個作者 $2000 / 月，一個月稿費 $8000。訂費 $1.99，Arment 到手 $1.393。我估計有 8000 個固定訂戶即可打平。
+沒有 Android 版
+同時開發 Android 版本有可能延長第一版上架的時間，而且目前也沒人知道 The Magazine 的實驗會不會成功。只是 Marco 也提到，他很懷疑這樣的模式在 Android 行得通。他的 Instapaper 直到今年才授權給別的團隊開發 Android 版本，他自己開發的 iOS 版本可是在 2008 年跟著 App Store 一起推出。他說不進入 Android 市場或許少了一些營收（revenue），但他可不確定是否有少掉利潤（profit）。
+不過對於 Kindle，Marco 友善多了，他說現在沒有 Kindle 版本，但他正在評估。（Instapaper 也對 Kindle 做了特別的支援）
+會有另一波的閱讀內容革命嗎？
+我們經歷過部落格、微網誌和電子書對閱讀內容帶來的衝擊。但是面臨多如繁星的內容，相信許多讀者光是負擔每天要接觸的資訊就已經覺得吃不消。於是最近出現了另一波強調內容品質（例如 Medium），以及針對微網誌內容流於破碎所發展出來的服務（Branch），現在雜誌這個類別又多了 The Magazine。
+其實這很有趣，載具不變的情況下，我們竟然又看到閱讀內容出現新的變化，這距離 iPad 上第一本「大家以為那就是數位閱讀」的雜誌 WIRED 出版不過兩年多。
+過去 Marco 曾經搭配 Instapaper 服務在 2008 年三月推出「Give me Something to Read」，從 Instapaper 使用者收藏的中挑選文章刊登，後來有全職編輯加入，網站功能有所提昇，也更名為 The Feature。
+我們可以發現 Marco 對於閱讀本身就有極大的熱情，他參與的所有產品開發都與閱讀有關，並且很熱切地設法改善閱讀體驗，轉化成 Instapaper 和後來的這些服務。
+對於 The Magazine，Marco 自己的想法是：
+It’s a risk, but I’m confident. Here goes.
+這是冒險，但我有信心，來吧。
+The Magazine 下載連結（目前這個 app 有一個 bug，使用者同時有兩個裝置，例如 iPhone 跟 iPad，一旦先在其中一個做了「訂閱」，另一個裝置就會無法載入訂閱的內容，所以我們建議大家先用 iPad 訂閱，這樣閱讀體驗會好很多。剛剛新版 The Magazine 在 iTunes Store 上架了，問題已被解決。）
+
+Foreword ↩
+The Magazine ↩
+The Magazine launch day FAQ ↩
+Twitter / liruyi: 算賬：The Magazine ... ↩
+
+
+
+
+
+

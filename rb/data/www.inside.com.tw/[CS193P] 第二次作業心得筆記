@@ -1,0 +1,43 @@
+
+
+學習過Objective-C的基礎概念之後，想必讀者們一定躍躍欲試，想要測試看看自己的實力吧！在第二次作業裡面增加了物件導向的練習以及iPhone的MVC操作，讓我們一起來看看吧！
+作業2A -- What the Tool（第二部份）
+在上一週的作業中，我們曾經實做過What the Tool這個工具程式的前四項功能，而在第二部份的作業中，我們將開始撰寫自己的Objetive-C類別，並且建立類別的實體、列印相關資訊。
+這次要建立的類別是PolygonShape，也就是多邊形的類別。這個類別將會在作業2B中被使用在iPhone軟體開發練習上，所以在設計上要特別用心。
+根據作業要求，在PolygonShape中會有6個property，分別是：
+numberOfSides -- 透過int儲存多邊形的邊數
+minimumNumberOfSides -- 透過int儲存此多邊形最多少需要的邊數
+maximumNumberOfSides -- 透過int儲存此多邊形最多可容納的邊數
+angleInDegrees -- 由float表示的角度，是readonly
+angleInRadians -- 由float表示的弧度，也是readonly
+name -- 由NSString表示的多邊形的名稱，也是readonly
+前三個property在物件中會有相對應的變數儲存，而後三個則是在使用property時（也就是呼叫getter方法）的時候透過前面三個變數動態計算出來，並且回傳值。要注意的是，作業中有要求要自己實做setter方法並且加入一些限制，在作業的公告中有詳細的規定。
+此外，你也需要宣告、實做以下init方法：
+	- (id)initWithNumberOfSides:(int)sides minimumNumberOfSides:(int)min maximumNumberOfSides:(int)max;
+注意，你應該會先設定minimumNumberOfSides和maximumNumberOfSides，最後在設定numberOfSides，這樣才能確定多邊形的邊數有介於最大值和最小值中間。
+此外你也要重新實做通用的- (id)init方法，並在方法中呼叫你剛剛建立的 initWithNumberOfSides，並且使用初始值建立一個5邊的多邊形，最大跟最小分別是3到12。
+至於angleInDegrees和angleInRadians這兩個property所回傳的角度計算公式，可以參考Wikipedia上的條目，而name這個property所需要回傳的名稱也一樣可以在另外一個條目中找到。
+你也需要實做- (NSString) description方法，範例輸出如下：
+Hello I am a 4-sided polygon (aka a Square) with angles of 90 degrees (1.570796 radians).
+為了能夠確定你有正確的記憶體觀念，也要實做dealloc方法，並且在物件被從記憶體移除前加入一行NSLog作為紀錄。
+最後，在What A Tool的程式當中，加入PrintPolygonInfo這個function，就如同上次作業般一樣。記得在檔案開始的地方加入：
+#import "PolygonShape.h"
+而在PrintPolygonInfo當中，你需要建立一個NSMutableArray並且加入數個PolygonShape物件，測試setter的限制是否有發揮作用，並且列印出description的內容。
+這個作業內容略為複雜了點，不過筆者相當鼓勵各位能夠練習看看，一定可以獲得很多收穫。而且此作業實做的PolygonShape類別也將在作業2B中使用。
+作業2B -- Hello Poly（第一部份）
+
+這個作業以及下次的作業中，我們將撰寫一個iPhone程式來顯示多邊形，使用者可以在使用者介面上設定多邊形的邊數（此次作業），並且使用custom view在iPhone上畫出對應的多邊形的圖案（下次作業）。
+或許聽到這邊你已經開始擔心這次作業複雜度了，不過別擔心，在課程網站上有提供額外的walkthrouh講義下載，也就是一步步的教學以及說明。
+在第四次的上課錄影當中，最後的三分鐘中也有介紹關於Hello Poly的架構，以及其相對應的MVC架構。
+結論
+這次的兩個作業鄉對於上週比起來困難度增加不少，不過卻是一個熟悉Objetive-C的物件機制和記憶體機的很好機會，也能讓我們能夠初步的了解iPhone程式的MVC架構。
+兩個作業筆者也已經完成，有興趣的讀者，歡迎在這篇文章留言，我會一一寄給各位提供參考。
+下次的連載內容將再度回到課堂上，針對第五堂課程的內容做心得整理，還請大家繼續支持！
+參考資源
+Lecture #3 -- Custom Classes, Object Lifecycle, Autorelease & Properties
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

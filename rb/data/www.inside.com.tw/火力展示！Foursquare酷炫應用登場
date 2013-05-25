@@ -1,0 +1,46 @@
+
+
+
+(by nan palmero)
+自從Foursquare開放API以來，已經有許多的開發商投入Foursquare的應用開發。讓Foursqaure不只是能Check In，透過API，開發商就能提供更多的LBS社群應用服務，今天筆者就來介紹幾款Foursquare的酷炫應用。
+
+Checkoutcheckins
+記得之前筆者曾分享過，要如何在Google Map上顯示自己曾Check In過的地點嗎？現在不用這麼麻煩了，透過Checkoutcheckins，你可以在地圖上看到自己的市長版圖、曾Check In過的地點等資訊，相當的方便。 http://www.checkoutcheckins.com/
+
+UberMayor
+UberMayor可說是市長爭奪戰的最佳軍師，會建議你幾個地方，再多幾次Check In次數就可以得到市長寶座。同樣的，也可以在地圖上顯示你的Check In與市長的地點。
+http://www.ubermayor.com
+
+Mayor Fight
+類似UberMayor的功能，可以讓你查詢你最近Check In的60個地點，還差幾次的Check In就可以搶下市長的寶座。
+http://mayorfight.com
+
+φ² Scanner
+一個很酷的Foursquare二維條碼應用。可以讓你用二維條碼來做Check In的動作。
+http://phi2.mobilelifecentre.org/
+
+assisted serendipity
+一款可分析每個Check-In地點男/女生比例的網站(經筆者測試的幾個台灣地點無法正常顯示)
+http://www.assistedserendipity.com/
+where do you go
+可以讓你在Google Map上，透過類似紅外線效果，顯示你的Check-in次數。(也許是Check-In次數太少？筆者實際測式的結果，地圖上顯示的並不明顯)
+http://www.wheredoyougo.net/
+
+iPhone應用：
+Singles for Foursquare：一款基於Foursquare的交友服務
+http://itunes.apple.com/us/app/singles-for-foursquare/id378480595?mt=8
+FourMinder：一款提醒您要記得Check-In的軟體
+http://itunes.apple.com/app/fourminder/id385464756?mt=8
+Android應用：
+Pee*Free-找附近那裡有廁所的軟體
+http://foursquare.com/app/peefree
+Fourcash-基於Foursquare的記帳軟體
+http://foursquare.com/app/fourcash_finance_by_location
+其他應用，可參考businessinsider原文：
+http://www.businessinsider.com/foursquare-apps-2010-8#last-nights-texts-meets-foursquare-11
+
+
+
+
+
+ Tagged with: foursquare, LBS, LBS服務 

@@ -1,0 +1,176 @@
+
+
+
+前言
+有想玩自建雲端雲算平台，並開始踏出第一步嗎？多虧internet, 開放源碼以及虛擬化技術，要玩個小規模的雲端運算，自建平台，只要花點時間研究一下英文文件就可以。等玩出興趣了，也有實際應用需求了，隨時就可上手將服務雲端化。
+在台灣，除了自己玩，也可以參與CloudTW雲端運算社群。可以加入社群的討論區或Facebook粉絲專頁，跟著社群成長，參與聚會（剛好11/17有第四次的社群meetup活動）或討論增廣見聞，交流心得新知。
+既然有這些資源與社群，對雲端運算有興趣者應可放手大膽下來玩玩看，下個引領Web服務變革的人可能就是你了！
+系列文
+本系列文規劃數篇，希望能將Apache上相關雲端技術的安裝實作經驗記錄下來，拋磚引玉，提供互相學習的管道。若有錯誤之處，也歡迎指正。本文為系列文的第一篇，談Hadoop單機版的安裝。
+
+什麼是Hadoop?
+Hadoop專案的目標是希望提供開放源碼的軟體，來建立穩定可擴充的分散式運算平台。
+本文目標？
+在一個CentOS 5的Linux系統上安裝Hadoop單節點版。初步了解相關使用。
+參考資料
+Hadoop Common 0.21版英文文件 + 安裝經驗
+安裝步驟
+第一步：準備Linux環境 + JDK
+1. 安裝CentOS5.5, 將軟體進行補丁更新。
+2. 安裝Sun JDK，在本練習中下載的是jdk-6u22-linux-i586-rpm.bin，可上Sun官網找一模一樣的版本就可完整照著做。
+# sh ./jdk-6u22-linux-i586-rpm.bin   //用root
+3.確認系統用的是SUN JDK
+# java -version
+CentOS 5的預設JAVA套件是Open JDK，所以執行上面這行後會出現
+java version "1.6.0_17″ OpenJDK Runtime Environment (IcedTea6 1.7.5) (rhel-1.16.b17.el5-x86_64) OpenJDK 64-Bit Server VM (build 14.0-b16, mixed mode)
+如果系統目前預設OpenJDK，用以下步驟換成‭ ‬SUN JDK
+‭#‬‭ ‬alternatives‭ --‬install‭ /‬usr/bin/java java‭ /‬usr/java/jdk1.6.0‭_‬22‭/‬bin/java 20000
+‭# ‬alternatives‭ --‬install‭ /‬usr/bin/javaws javaws‭ /‬usr/java/jdk1.6.0‭_‬22‭/‬bin/javaws 20000
+‭# ‬alternatives‭ --‬install‭ /‬usr/bin/javac‭  ‬javac‭ /‬usr/java/jdk1.6.0‭_‬22‭/‬bin/javac 20000
+‭# ‬alternatives‭ --‬config java
+有‭ ‬3‭ ‬程式提供‭ ‘‬java‭'‬。
+‭  ‬選擇‭        ‬指令
+-----------------------------------------------
+‭ + ‬1‭           /‬usr/lib/jvm/jre-1.6.0-openjdk.x86‭_‬64‭/‬bin/java
+‭   ‬2‭           /‬usr/lib/jvm/jre-1.4.2-gcj/bin/java
+‭*  ‬3‭           /‬usr/java/jdk1.6.0‭_‬22‭/‬bin/java
+請輸入以保留目前的選擇‭[+]‬，或輸入選擇號碼‭:‬3
+做到現在，系統預設的JDK就變成Sun的JDK，檢查一下：
+‭# ‬java‭ -‬version
+java version‭ "‬1.6.0‭_‬22‭"‬
+Java‭(‬TM‭) ‬SE Runtime Environment‭ (‬build 1.6.0‭_‬22-b04‭)‬
+Java HotSpot(TM‭) ‬Client VM‭ (‬build 17.1-b03‭, ‬mixed mode‭, ‬sharing‭)‬
+‭#‬javac‭ -‬version
+javac 1.6.0‭_‬22
+
+第二步：單機版Hadoop安裝
+0‭.‬    建立hadoop這個使用者
+‭# ‬useradd hadoop
+‭# ‬passwd hadoop
+接下來的操作都用hadoop個使用者來做。
+‭# ‬su‭ -- ‬hadoop
+1‭.‬    下載Hadoop 0.21
+‭# ‬wget‭ ‬http‭://‬ftp.tcc.edu.tw/pub/Apache‭//‬hadoop/core/hadoop-0.21.0‭/‬hadoop-0.21.0‭.‬tar.gz
+2‭.‬    解開並作初步修改後安裝
+‭#‬ tar xvzf‭ ‬hadoop-0.21.0‭.‬tar.gz
+‭# ‬cd hadoop-0.21.0
+‭# ‬vi‭ ‬conf/hadoop-env.sh
+vi 打開haddop-env.sh後，找到底下這行，在後面添加JAVA_HOME的位置
+‭# ‬The java implementation to use‭.  ‬Required‭.‬
+‭# ‬export JAVA_HOME‭=/‬usr/lib/j2sdk1.6-sun
+export JAVA_HOME‭=/‬usr/java/jdk1.6.0‭_‬22
+這樣，已經完成了Hadoop的安裝！
+3. 測試Hadoop安裝是否正確
+# bin/hadoop
+Usage: hadoop [--config confdir] COMMAND
+where COMMAND is one of:
+fs                   run a generic filesystem user client
+version              print the version
+jar <jar>            run a jar file
+distcp <srcurl> <desturl> copy file or directories recursively
+archive -archiveName NAME -p <parent path> <src>* <dest> create a hadoop archive
+classpath            prints the class path needed to get the
+Hadoop jar and the required libraries
+daemonlog            get/set the log level for each daemon
+or
+CLASSNAME            run the class named CLASSNAME
+Most commands print help when invoked w/o parameters.
+看到hadoop這個指令怎麼使用的英文說明如上，代表可以使用了！
+4. 單機操作模式
+Hadoop預設是單機就可執行的JAVA應用程式。通常用來作為測試除蟲用。我們先來執行看看：
+以Hadoop官網上的例子：我們想查看某個目錄裡面的xml檔案內容中，是不是有dfz開頭的字存在，如果有，就找出來。假如那個目錄裡面有百萬個xml檔案，這樣的工作用一台電腦找就會很辛苦，但是我們有Hadoop，這件事情就可以分散到很多機器上去執行，再蒐集結果回來。
+不過，這裡只是做個試驗，因此我們把conf/這個目錄裡的xml檔案當做要找的問題，複製到input/目錄中，並把結果放在output/目錄裡。
+# mkdir input
+# cp  conf/*.xml input
+# bin/hadoop jar hadoop-mapred-examples-0.21.0.jar  grep input output ‘dfs[a-z.]+'
+執行上述行，接下來螢幕會跑出非常多的訊息，看起來電腦跑的很忙，真令人高興。執行完了看結果，果然找到一個字 -- dfsadmin，出現一次。
+# cat output/*
+1       dfsadmin
+我們用Linux上的grep指令來驗證一下，果然在hadoop-policy.xml中有看到dfsadmin這個字。
+# grep dfs input/*
+input/hadoop-policy.xml:    dfsadmin and mradmin commands to refresh the security policy in-effect.
+5. 單節點分散式操作
+剛剛做的是用單一個java執行程序來跑這個問題，基本上跟grep做的方法差不多，是傳統的Unix process，沒有分散運算。
+這小節要用到Hadoop的分散特性，在單台電腦節點上做模擬分散運算的作法，讓每個Hadoop的守護進程(daemon)各自跑一個java process起來，各司其職。
+我們先把結果照做出來，相關名詞後續文章會進行介紹解釋。
+5.1 修改Hadoop設定檔：
+# vi conf/core-site.xml
+<configuration>
+<property>
+<name>fs.default.name</name>
+<value>hdfs://localhost:9000</value>
+</property>
+</configuration>
+# vi conf/hdfs-site.xml
+<configuration>
+<property>
+<name>dfs.replication</name>
+<value>1</value>
+</property>
+</configuration>
+# vi conf/mapred-site.xml
+<configuration>
+<property>
+<name>mapred.job.tracker</name>
+<value>localhost:9001</value>
+</property>
+</configuration>
+5.2 設定SSH無密碼連接
+# ssh-keygen -t dsa -P " -f ~/.ssh/id_dsa
+# cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
+# chmod 400  ~/.ssh/authorized_keys
+現在你應該可以直接連接SSH，不需要敲密碼了，試試看。
+# ssh localhost
+5.3 格式化分散式檔案系統，很酷吧。
+英文文件說要執行 bin/hadoop namenode -format
+不過，在這一版的hadoop裡，如果用上述指令，你會發現下面這行訊息：
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+照他的意思，我們就改用hdfs這個指令來做格式化。不過，可能是因為script寫的不完整，他找不到HADOOP_HOME這個環境變數，所以我們得依照自己安裝的環境設定一下這個環境變數。以我的環境為例，我把HADOOP解壓縮在/home/hadoop/hadoop-0.21.0：
+# export HADOOP_HOME=/home/hadoop/hadoop-0.21.0
+# bin/hdfs namenode -format
+格式化完之後，系統會建立/tmp/hadoop-hadoop/dfs的目錄。
+注意，如果hadoop已經在執行運算了，千萬不要執行格式化的指令，免得把資料刪除了。
+5.4 啟動hadoop daemons：
+官方文件上寫說執行bin/start-all.sh，不過看起來也是要Deprecated了。因此執行底下的指令：
+# bin/start-dfs.sh
+starting namenode, logging to /home/hadoop/hadoop-0.21.0/bin/../logs/hadoop-hadoop-namenode-localhost.localdomain.out
+localhost: starting datanode, logging to /home/hadoop/hadoop-0.21.0/bin/../logs/hadoop-hadoop-datanode-localhost.localdomain.out
+localhost: starting secondarynamenode, logging to /home/hadoop/hadoop-0.21.0/bin/../logs/hadoop-hadoop-secondarynamenode-localhost.localdomain.out
+# bin/start-mapred.sh
+starting jobtracker, logging to /home/hadoop/hadoop-0.21.0/bin/../logs/hadoop-hadoop-jobtracker-localhost.localdomain.out
+localhost: starting tasktracker, logging to /home/hadoop/hadoop-0.21.0/bin/../logs/hadoop-hadoop-tasktracker-localhost.localdomain.out
+啟動完成了，看一下帶起來的Hadoop daemons吧：
+先用root把Firewall關掉：
+# /etc/init.d/iptables stop
+若是用本機的Xwindows上的Firefox看，只需要指向localhost:
+http://localhost:50070/
+看到NameNode的狀態
+
+http://localhost:50030/
+看到JobTracker的狀態
+
+看起來真是有模有樣了～
+5.5 執行先前單機版跑的搜尋dfs開頭關鍵字的那個問題：
+# bin/hadoop fs -put conf input
+# bin/hadoop jar hadoop-mapred-examples-0.21.0.jar grep input output ‘dfs[a-z.]+'
+接下來，你會看到終端機上吐出一大堆的訊息。執行了很久，終於回到系統提示符號。同一時間，可用browser連上NameNode與JobTracker看目前執行狀態。
+跑完了的話來看結果（當然還是一樣！）：
+# cat output/*
+1       dfsadmin
+你會發現，用雲端運算跑的速度簡直是比單機跑的速度要慢上一大截！這是因為我們只用了一個節點做運算，而他把問題用Map/Reduce的方式來執行，多出了一些功夫，整體花費時間就長了。不過，這個架構才能擴充到數十數百數千台運算節點，先從單節點練習起，多節點的時候才好上手。
+5.6 本文的單節點安裝與練習到此結束，停掉hadoop服務：
+# bin/stop-dfs.sh
+# bin/stop-mapred.sh
+本文小結
+以上內容，應該可了解：
+1. 台灣的Cloud社群加入方式。
+2. Hadoop的基本概念。
+3. 安裝好一個單節點的Hadoop系統。
+若有相關問題，請用留言系統回覆或溝通。謝謝。
+
+
+
+
+
+ Tagged with: hadoop 

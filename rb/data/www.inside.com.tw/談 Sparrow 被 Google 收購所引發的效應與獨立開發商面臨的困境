@@ -1,0 +1,80 @@
+
+
+
+上週末 Mac/iPhone 知名的電子郵件軟體 Sparrow 被 Google 收購。本來嘛，小公司被收購在矽谷是很常見的事，發生的頻率長則數週，短則幾天，例如 Facebook 在 IPO 前收購攝影分享社群 app Instagram，最近又陸續買下臉部識別公司 Face.com、稍後再讀 app Spool 和獨立軟體開發商 Acrylic（這個收購案甚至跟 Google 收購 Sparrow 發生在同一天）… 然而 Sparrow 的收購案卻是餘波盪漾，在國外的開發者圈引起不小的討論。
+例如 Twitter 上開始出現一些抱怨的聲浪，認為 Sparrow 拋棄了支持他們的使用者。Apple 的線上軟體商店 Mac App Store 甚至出現了大量的負面評價。不過 App Store 上使用者對 Sparrow iOS 版本的負面評價就沒那麼明顯。
+▲ Mac App Store 使用者最近給的負面評價明顯變多
+事情真的有這麼嚴重嗎？為什麼 Google 這麼一樁與過去沒什麼不同的併購案會掀起網路圈的陣陣漣漪？
+我們先檢視一下這次的收購案。
+Sparrow 是個好產品
+從前面的截圖我們可以發現 Sparrow 在被收購以前無論是 Mac 版或 iPhone 版確實獲都得了媒體與使用者的讚揚，我自己也是他們的付費使用者（Mac 版與 iPhone 版）。
+收購價格不低
+根據 The Verge 的報導（註 1），他們聲稱 Google 用低於 2500 萬美金的價格收購 Sparrow。我們知道 Sparrow 是一家五個人組成的法國公司，只接受過一次來自法國 Kima Ventures 的小額種子基金投資（註 2）。
+這是一次人才收購
+Google 被認為是為了改善 Gmail 在各大平台的使用體驗而收購 Sparrow 團隊。從 Sparrow 網站上的聲明稿來看，這是一次「人才收購」。他們寫得很清楚：
+While we’ll be working on new things at Google, we will continue to make Sparrow available and provide support for our users.
+我們在 Google 有新的任務，與此同時我們會繼續販售 Sparrow 程式並提供支援服務。
+Sparrow 團隊也寄了一封 E-mail 給使用者，寫道：
+We will continue to make available our existing products, and we will provide support and critical updates to our users. However, as we’ll be busy with new projects at Google, we do not plan to release new features for the Sparrow apps.
+大意就是說他們繼續支援 Sparrow 現有的產品，但因為他們去 Google 負責新計劃後會變得很忙，所以 Sparrow 以後不會再有新功能了。甚至連尚未完成的 iPad 版 Sparrow 也很可能就此胎死腹中。
+▲ Sparrow 上個月才剛釋出 iPad 版 Sparrow 的消息
+事實上 Google 今年已經買過一家 iOS 電子郵件 app「reMail」的開發商，同樣是一樁人才收購案。還有其他一連串的人才收購案（註 3）。
+銀貨兩訖，互不相欠
+Sparrow 團隊已經做了他們該做的事：完成設計與開發，並且實際推出了好的產品。而使用者付費後也得到了產品。說實話我們不覺得這樣兩邊有互相虧欠什麼。
+開的條件好，有何不可？
+Tumblr 共同創辦人，目前正單獨營運 Instapaper 的 Marco Arment 在他幾天前針對 Facebook 與 Google 談論人才收購的文章中提到（註 4），過去 Instapaper 也曾收到來自大公司關於收購可能性的徵詢，但雙方從未進一步談下去，因為 Marco 不希望自己一手建立的服務和 app 因為大公司的「人才收購」而關閉，當然，最重要的是，對方開的條件不夠好。
+Sparrow 選錯戰場？
+Marco 在他與 Dan Benjamin 共同主持的 podcast「Build and Analyze」中提到（註 5），他認為 Sparrow 很不幸地處在競爭激烈的電子郵件軟體領域，以 Sparrow Mac 版來說，它的競爭對手是系統內建的 Mail.app、微軟的 Mac 版 Outlook、Mozilla Thunderbird，更不用提一般人常用的網路信箱打開網頁就能使用，還有多少人需要花錢去買電子郵件軟體呢？
+而在 iOS 上更不用說，除了 Sparrow 必須付費這點，而且 iOS 不讓使用者將第三方 app 設定為預設電子郵件 app 也降低了使用者購買的意願。何況 Google 已為自己旗下的 Gmail 推出了免費 app（儘管評價只有三顆星），這樣還有多少人會去買 Sparrow 呢？讀者們您願意花 2.99 美金購買 iPhone 電子郵件 app 嗎？
+在商言商，簡而言之就是收入不夠
+另一位 iOS app「Launch Center Pro」的開發者 David Barnard 從產品銷售的角度分析 Sparrow 的收入（註 6），他認為 Sparrow 雖然在產品推出的初期表現不錯，但後續的收入根據他的估計並不能為團隊帶來穩定、長期的收入。他以自己的產品和 Sparrow 做比較，估計出截至 2011 年 8 月，Sparrow Mac 版推出半年後的收入大約是 35 萬美金，這是當初三人團隊投入一年之後的收入，而且很大一部分是在 app 推出後的一個月內產生的。而今年的 iPhone 版在推出四個月後的銷售額大約是 40 萬美金，同樣大多集中在前幾週（排名較高），這時他們的團隊已經有五個人。
+幾十萬美金聽起來不錯了，但是跟八位數的收購價相比呢？Sparrow 的投資人會滿意嗎？
+付費的使用者還能怎麼辦？
+Marco 在他的文章中提到：
+If you want to keep the software and services around that you enjoy, do what you can to make their businesses successful enough that it’s more attractive to keep running them than to be hired by a big tech company.
+如果你希望自己喜歡的軟體或服務存續下去，那就盡你所能地讓這些開發者寧願發展他們自己的事業也不要為大公司工作。
+然而許多人心中的疑問跟 Rian van der Merwe 一樣（註 7）：可是我們已經付費買了所有版本（Mac 和 iOS 版）的 Sparrow，也把他們介紹給親朋好友，把身為消費者基本上所有可以做的事都做了，卻還是不能讓 Sparrow 繼續走下去，那我們該怎麼辦？
+獨立開發商的困境
+當然，市場上還是有像 37signals、Panic、Culturedcode（想想看他們多久沒更新產品了，也還是好好的 XD）或 The Omni Group 等狀況不錯的獨立開發商。不過 Sparrow 的情況反映出大多數獨立開發者可能面臨的困境，並且很可能影響使用者將來購買獨立軟體開發商產品的意願，App Store 與 Mac App Store 上都可以發現許多針對 Sparrow「要求退費」、「竟然沒有新功能了？」等類似的評價。
+最近 Inside 一篇 〈 2012年中，App在台灣市場的概觀 〉 提過獨立開發者的困境。App 的市場不但對手多、競爭激烈，David Barnard 更進一步指出，一旦消費者已經習慣軟體的售價偏低，並且期望用「一次性的消費」換取長期的免費升級或產品維護，那麼對於獨立開發商來說是相當不利的。而且 App Store 目前缺乏「付費升級」的機制恐怕會使這樣的狀況加劇（過去曾出現過開發者在 app 推出第二版後將第一版下架的作法，但這並非解決之道），Apple 看來也沒有要提出對應方案的意思，儘管早在 2008 年就有人呼籲 Steve Jobs 重視低價對軟體開發生態的傷害，以及大公司收購獨立開發商等情況（註 8）。
+我們可以等著看，Apple 自己的 OS X/iOS 付費 app 總有要「升級」的一天，屆時他們應該會推出新的機制。（當然，他們有可能會直接將舊版 app 下架，但相信開發者並不樂見）
+每個人都有一個價碼
+Every man has his price.
+每個人都有一個價碼。
+聽起來很像是黑幫電影的台詞？但其實是出自美國富豪、航空業鉅子 Howard Hughes 之口，他說：
+Every man has his price, or a guy like me couldn’t exist.
+每個人都有他的價碼，否則也不會有我這樣的人了。
+我們相信 Sparrow 不是那種「以被收購」為目的的公司，他們的狀況比較像是昇陽電腦創辦人 Vinod Khosla 說的：「團隊不過是在出現吸引人的報價時選擇接受。」
+而這就是環境的現實。
+按照往例，Google（或是其他公司）進行完「人才收購」後，原本的產品就會被棄置。往好處想，有了 Sparrow 團隊的協助，起碼 Gmail 的 app 以後會好用一點 XD
+至於 Apple，最好開始加倍關心 App Store 與 Mac App Store 的開發者與消費者，提供更進步的機制，確保大家願意留在他們的平台。除非 Apple 已經忘記自己在上世紀 80 年代是如何因為缺乏軟體開發商的支援而在一定程度上導致顧客流失（當然，這僅僅是一部分原因）。
+ 
+ 
+註 1：Sources: Google’s Sparrow purchase cost under $25 million, will bring ‘beauty’ to Gmail註 2：Google Acquires iOS/Mac Email Client Sparrow, Apps To Remain Available But Development Stopped註 3：You shall know Google by its trail of dead—a Sparrow user’s lament註 4：Talent acquisitions註 5：Close the Window and Hope for the Best註 6：The Sparrow Problem註 7：The real reason we’re upset about Sparrow’s acquisition註 8：Ringtone apps
+
+
+
+
+Kuan-Hung Kuo:
+July 28th, 2012 at 8:09 am
+ 修正個錯字是「一手」
+
+
+Edward Chiang:
+July 28th, 2012 at 11:52 pm
+ 甚至連上未完成的 iPad 版 Sparrow 也很... -> (尚)未
+
+
+:
+August 18th, 2012 at 2:31 pm
+ 有發現有錢人，擁有的收入都不只一種嗎？
+也就是說如果我們的收入只有上班的工作薪水，
+那一輩子很難成為有錢人！
+所以特別邀請你 親自評估這一個利用
+"下班2-4小時兼職"能超越原本收入的機會
+www.lupeiyu.ftp.cc 複製到網址列執行.
+聰明的你評估看看這賺錢機會否值得您投資...
+（謹慎評估了解才是上策 決定當下既是決定未來）
+
+
+

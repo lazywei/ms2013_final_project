@@ -1,0 +1,42 @@
+
+
+CS193P是Stanford與Apple合作提供iPhone開發課程，全系列的課程影片、講義均在網路上以CC授權開放網友使用。Inside部落格在2010年春季的時候曾經刊載了一系列的心得筆記，在這篇文章中做一個簡短的回顧，讓首次接觸的讀者能夠獲得一個整體的全貌。
+課程簡介
+
+誠如前面所提到的，CS193P是一個線上開放的免費課程，目前已經有兩屆的課程內容，分別為2009的春季課程和2010的冬季課程，而目前正在進行的2010春季課程則沒有開放課程內容上網。
+本系列連載的內容便是2010的冬季課程內容，讀者可以透過iTunes U下載課程的影片、投影片，而在課程的官方網頁上面，也有提供作業以及課程中的一些範例程式提供下載。
+課程綱要
+以下是CS193P的課程綱要，以及Inside上筆記的連結：
+第一堂：iPhone開發平台概論
+第二堂：Objective-C以及Foundation framework
+第三堂：自訂類別、記憶體管理以及Property
+第四堂：iPhone程式週期及MVC架構
+第五堂：View以及其繪圖、動畫效果
+第六堂：iPhone中的MVC原理以及ViewController
+第七堂：NavigationController以及TabBarController
+第八堂：TableView以及ScrollView
+第九堂：本機、遠端的資料存取
+第十堂：效能優化及多執行緒
+第十一堂：Modal View以及軟體鍵盤
+第十二堂：WebView、Map Kit和Core Location
+第十三堂：Core Foundation及AddressBook
+第十四堂：多點觸控事件處理
+第十五堂：iPhone上的硬體元件操作
+第十六堂：多媒體以及設定面板
+第十七堂：網路服務以及Game Kit
+第十八堂：Unit Testing及Objective-C的技巧
+第十九堂：OpenGL ES
+作業心得
+CS193P中也有提供七次的作業練習，而Inside連載中，也針對了前四次的作業做了簡單的筆記，還請參考：
+第一次：Interface Builder操作及Foundation framework的熟悉
+第二次：建立自訂類別及設定動作按鈕
+第三次：繪製多邊形的完整iPhone程式
+第四次：使用NavigatorController及TabBarController建立多頁Flickr程式
+結論
+在經過這一系列的課程訓練後，相信讀者能夠對iPhone開發有一個很扎實的基礎，而Inside團隊也將會在部落格上報導更多iPhone及iPad平台上的開發心得分享，還請各位讀者繼續鎖定！
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

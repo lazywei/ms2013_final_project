@@ -1,0 +1,40 @@
+
+
+
+［image credit：Martijn Streefkerk］
+在Twitter發推的時候可能會遇到的問題是有很多不同國籍的Follower，這個時候除了自己打中英對照的推文外（但會佔用140字數的限制），現在可以用主題標籤(#Hashtag）的方式翻譯，這個程式是由Chi Poon（@NoUpload）做的，起因是之前日本地震，海嘯，及輻射事件發生後，他認為消息的傳播不能因為語言障礙而中斷或延誤，因此使用了Google Translate的API來做了這麼一個Twitter翻譯小工具。做法很簡單：
+1. 先到Translate Twitter Tweets的網站用自己的Twitter登入，就可以開始使用了。
+
+2. 每次在Twitter上寫好要發出的訊息後，在以下的＃Hashtag語言選出自己需要翻譯成的語言（一次可以選多個）：
+3. 然後把＃Hashtag打在推文後面，發出訊息。大功告成。
+
+例子： 我用中文打完後就加上翻譯成英文（＃en）及日文（＃ja）的hashtag，因此就發表了3次同樣的Tweet。
+但是由於是翻譯軟體，因此翻譯出來的內容不管如何都怪怪的，不過有了這個方便的Hashtag讓Twitter在資訊傳播上變的更方便。
+
+
+
+
+Bruce Qi:
+April 18th, 2011 at 2:09 am
+ 果然是个好办法,也可以翻译别人发的日文推什么的了
+
+
+Jong Luen Kang:
+July 19th, 2011 at 4:07 pm
+ good
+
+
+趙政宏:
+October 30th, 2011 at 8:54 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+Richard BJ Wang:
+October 3rd, 2012 at 1:15 am
+ 依樣畫葫蘆卻沒有效，傷腦筋～
+
+
+
+ Tagged with: hashtag, Twitter 

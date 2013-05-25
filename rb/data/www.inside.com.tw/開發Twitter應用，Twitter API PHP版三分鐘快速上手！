@@ -1,0 +1,66 @@
+
+
+
+Twitter在歐美相當流行，地位跟台灣的plurk與大陸的新浪微博一樣。
+若要對其進行加值，必須使用API。而上頭的API Client Library相當成熟又多樣，開發者使用起來實在很方便。本文目的是讓你在三分鐘內就能快速上手Twitter API，並成功地取出朋友最近發的tweets，以及調出目前follow你的人的資料。
+第一分鐘：
+ 下載PHP Client Library（本文以Arc90版本進行解說），並unzip ，本文假設解開這個函式包後的目錄是
+/home/sting/twitter/arc90-service-twitter
+第二分鐘：
+ 編輯測試php程式，本例中，命名為test.php，置於/home/sting/twitter/arc90-service-twitter目錄下。
+test.php的內容可直接copy底下這段：
+
+<?php
+$path = ‘/home/sting/twitter/arc90-service-twitter/lib';　　　//改成你的實際解開位置
+set_include_path(get_include_path() . PATH_SEPARATOR . $path);
+require_once ‘Arc90/Service/Twitter.php';
+$username = ‘xxxxxx';   //xxxxx改成你的twitter帳號
+$password = ‘oooooo';   //ooooo換成你的twitter密碼
+$twitter = new Arc90_Service_Twitter($username, $password);
+$twitter->setSSL(FALSE);
+try
+{
+$response = $twitter->getFriendsTimeline();　//取得朋友的tweets
+$follower_response = $twitter->getFollowers(); //取得你的followers
+if($response->isError()) {
+echo "Error response: ".$response->http_code;
+} else {
+echo "Else response: ".$response->http_code;
+}
+}
+
+catch(Arc90_Service_Twitter_Exception $e)
+{
+// Print the exception message (invalid parameter, etc)
+print $e->getMessage();
+}
+$response_json= $response->getData();
+$response_object= json_decode($response_json);
+print_r($response_object); //印出取得的tweets
+echo "\n";
+$follower_json = $follower_response->getData();
+$follower_object = json_decode($follower_json);
+print_r($follower_object); //印出取得的朋友
+?>
+
+
+第三分鐘：
+ 測試一下吧。
+
+php test.php
+
+
+
+從列印出來的物件結構中，你可看到傳回資料的結構，接下來就看你怎麼處理了喔！加入你的應用流程吧！
+
+
+延伸閱讀：
+
+Arc90 Twiiter API Client函式庫文件：http://www.arc90.com/_assets/Arc90_Service_Twitter/docs/
+Twitter API官方頁面：http://apiwiki.twitter.com/
+
+
+
+
+
+ Tagged with: twitter api 

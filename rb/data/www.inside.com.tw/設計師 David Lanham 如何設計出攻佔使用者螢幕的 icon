@@ -1,0 +1,59 @@
+
+
+照片來源：The Verge
+上禮拜我們曾經聊過 app 的設計，而美國的科技網站 The Verge 最近訪問在 iconfactory 工作的設計師 David Lanham（@dlanham）1，請他跟大家聊聊他是怎麼設計出這些美好的圖示。
+David Lanham 曾經設計出許多知名程式的圖示，例如許多設計師、網頁開發者喜愛的 Coda、Acorn 等，Twitter 程式 Twitterific 和評價很高的行事曆程式 Fantastical（Inside 的作者之一 Richard 一直在等 Fantastical iPhone 版）。
+圖片來源：David Lanham • Coda
+2010 年時 David Lanham 因為腳受傷休息了一段時間，但他反而利用那段時間在網路上靠著 iOS 的「FaceTime」功能為客戶繪製畫像2，大家可以到 Flickr 欣賞他繪製的作品3。
+說不定有讀者看過這張圖喔 : p（圖片來源：dlanham）
+起點
+David Lanham 說自己從小就喜歡塗塗抹抹，總是隨身帶著三孔活頁夾或是剪貼簿，發揮自己的想像力，在空白的紙張上畫著火箭或是恐龍大戰等場面。跟所有的小孩一樣，他從蠟筆和廣告顏料入門，後來才慢慢接觸其他媒材。
+17 歲的時候父母送他一個 Wacom 的繪圖板當做聖誕禮物，從此一頭哉入 Illustrator，那是他開始玩向量繪圖的起點。
+給開發者的 icon 設計建議
+David Lanham 認為 icon 要能夠規縮放，而且無論尺寸大小，都應該要能持續傳遞出圖示上的訊息——而且還要很好看。
+
+照片來源：Susan Kare -- Alumni Profiles -- NYU Steinhardt
+然而這不代表每一個圖示都必須是史詩級的巨作。事實上，許多 icon 靠著極少的像素就能傳遞訊息，在電腦史上最有名的一套圖示之一大概就是 30 年前由 Susan Kare 為麥金塔電腦所繪製的4：除了帶著笑臉的麥金塔電腦螢幕，還有筆刷、剪刀、手掌狀的指標（算是日後被用於 Adobe Photoshop、Illustrator 等繪圖相關軟體圖示的始祖），以及所有人都忘不了的——垃圾桶圖示。
+ 圖片來源
+如同 David Lanham 所說，有些很棒的圖示都是由非常簡單、非常少的元素所構成。這必須具備扎實的美術與設計知識，明白圖示畫出來後會是什麼樣子，並且懂得如何用最佳的方式去設計和調整圖示的大小。
+為何 icon 如此重要？
+Icons are the face and branding of an app.
+圖示就是一個程式的臉孔、一個程式的品牌商標。
+David Lanham 認為圖示就是一個程式的臉孔、一個程式的品牌商標。圖示能夠定一下一個程式的基調，並且讓使用者明白程式可能的用途。大多數情況，使用者第一眼會看見的就是程式的 icon（甚至在名稱之前）。無論是在桌上型電腦、平板電腦或智慧型手機，程式的 icon 妝點螢幕，程式內的圖示則與使用者的操作息息相關。如果我們希望使用者注意到自己設計的程式，那麼 icon 非常重要。
+設計流程
+David Lanham 說儘管他的設計流程取決於他所處的地點和想要呈現的概念，然而通常他的設計流程都是從紙筆開始。一旦出現某個他認為大有可為的草圖，就會著手數位化，在 Photoshop 上進行繪製——它是如此具有彈性，無論是筆刷、橡皮擦、上色，還有那個充滿光輝的「復原」功能。
+使用工具
+David Lanham 最常用的當然是 Photoshop 跟 Wacon 繪圖板——他幾乎不用滑鼠，都用繪圖筆跟觸控版代替（他用 Mac）。David Lanham 也會用 Illustrator（用於個人繪圖），其他像是「訊息（Messages）」、Safari（瀏覽器）、iTunes、Mail 和 Dropbox 都是不可或缺的，還有 Alfred、Versions、Twitteriffic、Slicy、Icon Slate、Candybar、Coda、ImageOptim、Image Capture 和 xScope 等，有必要的話他也會使用 Xcode。
+熱愛動畫
+圖片來源：Dribbble
+David Lanham 很喜歡動畫，舉凡迪士尼、皮克斯和宮崎駿，都是他學習的對象。David Lanham 在自己的 Dribbble 頁面5上臨摹了許多宮崎駿動畫的角色。他個人最喜歡的經歷是參觀皮克斯。其實 David Lanham 自己也有著手在進行動畫的繪製，他告訴 The Verge 的記者未來大家會有機會看到他的作品。
+身為一位設計師，David Lanham 平常除了逛 Pinterest，還會去 Naimoka、Pasa La Vida、Drawn、Lovely Package 和 Little Big Details（這個網站匯集了許多介面設計上的細節）等網站。iOS 遊戲中他最欣賞的設計之一是「Sword and Sworcery」6。（如果您對 app 名稱沒印象，看到下方的 icon 卻立刻想起來在哪看過，那麼表示這個設計應該成功地在您心理留下印象了）
+
+圖片來源：App Store
+The Verge 問他如何放鬆自己，David Lanham 回答：
+Just observing life around me, or walking through the woods or a park or even just getting outside recharges my batteries and makes me really appreciate everything that’s around us. There are so many little details that are never noticed until you really start looking, and relaxing is essential to appreciating those details even more.
+觀察自己的周遭，在森林、公園中散步，或者單純外出為自己「充電」，讓自己能夠好好地去欣賞周圍的事物。有太多小細節是我們不曾注意過的，除非你開始用心去看。讓自己放鬆很重要，這樣才能去欣賞那些細節。
+ 
+
+The Iconfactory’s David Lanham on what it takes to build home screen-worthy icons ↩
+David Lanham’s FaceTime Portraits ↩
+Portraits ↩
+The Sketchbook of Susan Kare, the Artist Who Gave Computing a Human Face ↩
+Dribbble -- David Lanham ↩
+Sword and Sworcery ↩
+
+
+
+
+
+Ben Lin:
+November 21st, 2012 at 1:26 pm
+ Dribble -> Dribbble
+
+
+駱駱:
+November 22nd, 2012 at 12:42 am
+ 經典icon
+
+
+

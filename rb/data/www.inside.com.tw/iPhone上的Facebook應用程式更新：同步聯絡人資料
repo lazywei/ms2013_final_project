@@ -1,0 +1,17 @@
+
+
+iPhone上的Facebook應用程式今天推出了更新，主要是以下兩點：
+同步您的Facebook好友與iPhone上的聯絡人資料，包括照片也可以直接使用Facebook上的個人頭像取代iPhone通訊錄中的照片。
+訊息更新通知（Notifications），會以類似簡訊通知的方式在您的iPhone待機時直接跳出訊息通知，即使您不在Facebook應用程式內依然會像iPhone平常收到簡訊一樣，直接有彈出視窗，內容可能是好友請求、塗鴉牆上的新訊息或是您回應過的訊息有了新的留言等等。
+以下是範例圖片：
+ 
+以筆者的通訊錄管理方式來說，所有的資料一律是以Google Contacts/Google Calendar/Gmail為主要管理核心，因此iPhone上的通訊錄資料是與Google Contacts同步的（透過IMAP的設定），同步後Facebook會在iPhone聯絡人的資料中新增 fb://profile/xxxxxxx 的資料內容，因此在Google Contacts可以搜尋到有多少聯絡人已經跟 Facebook 連接起來（包括取代個人頭像）。
+
+
+紅線中即Facebook應用程式新增的資料欄位，而從Facebook同步過來的聯絡人頭像，右下角會有個小小的Facebook logo。
+
+
+
+
+
+ Tagged with: Facebook, iPhone 

@@ -1,0 +1,71 @@
+
+
+在歷經許多堂的開發課程後，大家對於iPhone開發已經算是相當熟練了。在這一次的課程內容中，我們將深入探討iPhone應用程式的效能問題，看看我們要如何透過iPhone SDK所提供的相關工具來調校我們的軟體，你準備好了嗎？
+Lazy Loading
+在iPhone中最容易影響程式要能的莫過於記憶體的管理了！在之前的每堂課程中，我們多少都有介紹一些關於記憶體上使用所需注意的細節。其中Cocoa Touch中最重要的精神莫過於Lazy Loading了，也就是只在真的需要資料時在做讀取。一個簡單的例子是，我們可以將多個使用者介面分別存放於不同的Nib檔，只在View被呼叫之後在讀取對應的Nib，而非將所有使用者介面一起放到MainWindow.xib檔中。
+此外，對於一些物件所擁有的變數，我們也可以透過實做自己的Property方法來進行Lazy Loading，而非在init時就初始化變數。透過這樣的作法，不僅可以節省記憶體的使用，也可以加速讀取的時間。請參考以下程式碼：
+- (UIImage *)myImage {
+    if (myImage == nil) {
+        myImage = [self readSomeHugeImageFromDisk];
+    }
+}
+Memory Leak
+Memory Leak中文翻譯叫做記憶體漏洩，也就是某些物件在記憶體中沒有被釋放，反而留在記憶體中。在Objetive-C中，會發生這種問題往往都是因為沒有正確的平衡release和retain的呼叫，讓retain count數字無法正確的歸零。很幸運的是，在iPhone SDK中內建了一套相當容易使用的檢測工具，我們可以很方便的找到Memory Leak。在XCode開啟檢測工具的方法如下圖所示：
+而下面這個畫面就是檢測工具的執行畫面，檢測工具會打開iPhone模擬器並且執行我們的軟體，而同時間也在背後以10秒鐘為間隔幫我們對記憶體取樣並且找尋忘記釋放的物件。上面的曲線圖就顯示了目前總共漏失的記憶體大小，下方的列表則是所漏失的物件，而當我們點選下方的圖示開啟右邊的面板後，還會顯示物件的詳細資訊，也就是其中所經過的每一個方法呼叫。
+Autorelease Pool
+在一開始前幾次的筆記中我們曾經提過，我們可以對物件呼叫autorelease使其加入autorelease pool，而當這個pool被release時，其中所有物件也會被呼叫release。而透過這樣的機制，我們得以將物件從方法中回傳，而又可以減少其retain count。
+然而autorelease pool也並非萬能，因為在Cocoa Touch的機制中，每當使用者觸發一個event時就會建立一個新的autorelease pool，並在event結束時release這個pool。問題是，這個pool可能會在event中容納過多的物件，而在event結束前這些記憶體用量將會變得十分龐大。
+為了解決這樣的問題，我們可以自行建立pool，在有需要大量建立物件的地方用pool包起來，並且在使用後release該pool。以下為範例程式：
+for (int i = 0; i < someLargeNumber; i++) {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    NSString *string = ...;
+    string = [string lowercaseString];
+    string = [string stringByAppendingString:...];
+    NSLog(@“%@”, string);
+    [pool release];
+}
+根據講者說法，與其擔心autorelease pool的問題，他個人較偏好盡量減少使用autorelease的機制，像是以上面的程式碼而言，其實我們可以透過NSMutableString來達成一樣的效果。
+此外，我們也可以透過iPhone SDK的附加工具來觀察記憶體的使用量，使用方式就如同剛剛所提到的Memory Leak檢查工具一般，有興趣的同學還請觀看課程影片中的示範。
+記憶體警告
+即便我們在如何的小心處理記憶體問題，我們仍然可能會面臨記憶體不足的困境，此外，由於使用者可能在背景同時播放音樂或是收信等等，記憶體的可用量是隨時會改變的。而為了保護iPhone能繼續運行，若應用程式的記憶體用量超過一定極限後，iPhone OS便會強制終止程式的運行。
+值得慶幸的是，iPhone OS在中斷我們的程式執行之前，會對controller呼叫- (void)didReceiveMemoryWarning這個方法，提醒我們要適當的減少記憶體用量。這個方法預設會自動release那些暫時沒有顯示的View，我們也以自行加入一些程式碼以release其他一些用不到的資源。
+而Application Delegate也會收到-applicationDidReceiveMemoryWarning:，我們同樣可以在這邊釋放一些記憶體。
+多執行緒
+目前我們所設計的應用程式大多為單一執行續的軟體，換而言之，當使用者的操作涉及了長時間的資料操作時，我們的使用者介面就會暫時卡住，使用者將暫時無法操作介面。而這樣的軟體設計將會是糟糕的，所以我們可以借重多執行緒來幫我們改善。
+在Cocoa Touch中，Foundation framework提供了一套以POSIX為基礎的多執行緒相關函式。以下就是一段簡單的範例：
+- (void)someAction:(id)sender {
+   // 建立新的執行緒
+    [NSThread detachNewThreadSelector:@selector(doWork:) withTarget:self object:someData];
+}
+- (void)doWork:(id)someData {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    [someData doLotsOfWork];
+    // 通知主執行緒
+    [self performSelectorOnMainThread:@selector(allDone:) withObject:[someData result] waitUntilDone:NO]; [pool release];
+}
+值得注意的是，針對每一個新建立的NSThread，我們都需要自己加入autorelease pool。
+Locks
+然而，在我們有了多執行緒的支援後，伴隨而來的就會是資料一致性的問題。針對某些程式碼，我們會希望他不會受到其他執行緒的干擾，我們就可以使用locks。程式碼如下：
+- (void)init {
+myLock = [[NSLock alloc] init];
+}
+
+- (void)someMethod {
+}
+    [myLock lock];
+    // 做某些事情
+    [myLock unlock];
+}
+此外，針對producer/consumer的model，Cocoa也有提供condition lock可以使用，有興趣的讀者還請參考投影片41頁的程式碼。
+結論
+在這次的內容中，我們學到了如何使用iPhone SDK中內建的工具來幫助我們調校應用程式的效能，也針對多執行緒以及其相關的類別做了一粗淺的介紹。在下一次的課程中，我們將探討如何使用文字輸入以及其他UIKit的類別，敬請期待！
+參考資源
+Memory Usage Performance Guidelines
+Threading Programming Guide
+Lecture #10 -- Performance
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

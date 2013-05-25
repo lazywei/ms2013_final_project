@@ -1,0 +1,52 @@
+
+
+圖片來源：Flickr
+Hacker News 是一個由國外著名的創投公司 Y Combinator 創辦的討論網站（註一），內容多為創業與創投議題，以及全世界頂尖的駭客們齊聚討論許多的駭客技術。本篇文章便是集結自一篇駭客們討論 Windows Phone 開發的議題（註二），包含該平台的趨勢以及現有問題。
+把開發者當白老鼠
+許多開發者認為微軟平台的開發工具依然不夠好，造成開發上的困難，例如 Visual Studio 2012 常發生程式崩潰、XAML 在 ARM 處理器上的表現水準平平……等。在不同的平台發生的問題自然有所不同，但普遍而言，開發者認為微軟的平台和整個 Windows Phone 的開發生態系統還不夠好。即便這些缺點在未來都會改善，但是現況就是如此，有些微軟平台上的開發者認為自己現在就和 Beta 版的測試者差不多。
+即便微軟平台的確有些許缺點，但也有人提出不同看法：「現在微軟的平台還不夠好，但是遲早會變好。當初所有程式都是用 C++ 寫出來的時候，我也曾經想過 Java 會成為未來的趨勢。只是因為微軟的這個趨勢太過龐大，以至於我們目前還很難去相信它。」
+趨勢確實可能存在，但是 iOS 和 Android 兩大平台早已遙遙領先，Windows Phone 該如何創造趨勢呢？
+使用者人數太少
+如果是在 Android 或 iOS 平台上的 app 出現下載量成長 100%，一定一堆人會想問開發者是怎麼辦到的。但 Windows Phone app 的下載量如果出現成長 100%，大家會問的第一句問題卻是：「下載量的實際成長數量是多少？」
+Windows Phone 的使用者目前依然是小眾，app 數量和下載量也遠遠落後他的兩大競爭者。於是有些人認為在 Windows Phone 上面讓自己的 app 進入排行榜是相對容易的，希望在這個平台還不算成熟的時期就先佔有一席之地，當然也有人認為這根本沒有用。
+對於擴大 Windows Phone 平台的市佔率，開發者幾乎可以說是使不上力。
+Windows Phone app 價格過高
+有相當多的開發者認為，目前在 Windows Phone 平台上還不需要自己原生創意，只要將別的平台上的點子移植過來彌補 Windows Phone 平台的不足就可以了。因此部分開發者認為，如果使用者在其他平台上使用過了這個 app，到了 Windows Phone 平台如果依然想要使用，那麼這個 app 對他的價值顯然就不只一、兩塊美金，那麼把 app 賣貴一點似乎也是合理的。從經濟學的角度來看，這個觀點就是剝削消費者剩餘。
+提出此論點的該為開發者還認為，app 的訂價是基於購買風險的期望值，如果買了卻幾乎不使用，那這個 app 對使用者的價值就是零；如果買了又常常使用，那這個 app 對使用者的價值就不只是購買價格。
+當然也有開發者認為價格提高對於購買意願會有影響，而導致使用者不再願意使用，但這部分的因素是否造成 Windows Phone 平台成長緩慢還不得而知。
+小結
+Google Apps 的產品管理部門經理 Clay Bavor 曾說過（註三）：
+We are very careful about where we invest and will go where the users are but they are not on Windows Phone or Windows 8.
+我們對於我們的投資目標非常謹慎，我們會朝著使用者的方向前進，但不會是 Windows Phone 或 Windows 8。
+Windows Phone 的開發生態體系在全球市場上尚未成熟，台灣也沒有看見特別不錯的開發例子。從駭客們的討論中看來，這個市場目前還有很多變數，而且大家普遍都不抱持樂觀態度。但就像前面提到的某一位駭客所講的：「微軟的這個趨勢太過龐大，以至於我們目前還很難去相信它。」究竟這個平台未來會不會失敗，或是成為一個巨大的商機，現在想斷言似乎就有點言之過早了。
+ 
+（註一）Hacker News
+（註二）Ask HN: Anyone Making Money on Windows Phone 8 Apps?
+（註三）Google rules out Gmail and Drive apps for Windows 8
+
+
+
+
+Timothy Wu:
+December 13th, 2012 at 11:43 pm
+ We are very careful about where we invest and will go where the users are but they are not on Windows Phone or Windows 8. 
+翻譯錯誤，應為：
+我們對於我們的投資目標非常謹慎，我們會跟隨使用者的腳步，但他們不在 Windows Phone 或 Windows 8 上。.
+
+
+沈海沉:
+December 14th, 2012 at 1:17 am
+ 糟糕XD沒人要相信MS
+
+
+邦邦熊:
+December 14th, 2012 at 2:18 am
+ 一方面說有很大成長空間，一方面投資大量人力時間下去開發.....
+
+
+Ekman Hsieh:
+December 16th, 2012 at 5:01 pm
+ 有了WM7的案例......誰知道WM8的下場
+
+
+

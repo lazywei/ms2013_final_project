@@ -1,0 +1,91 @@
+
+
+在深度探討完iPhone基本的MVC架構後，接下來的課程內容將轉向Cocoa Touch中各式各樣不同的API，以便解決我們開發上的各種問題，並且增加程式的多樣度。而在這一次的課程內容中，將主要談iPhone中的資料讀取以及儲存方法，還有網路上的資料存取，請多多指教！
+Property List
+在所有的資料儲存辦法當中，最容易的莫過於Property List了，陣列、字典、字串和資料都可以存成XML格式的Property List，事實上，我們之前所用到的NSUserDefaults就是一個Property List。
+然而，並非所有的資料都是適合用它來儲存，像是過多的資料或是自己設計的一些複雜物件都不太適合，因為Property List會一次將整個文件內容讀到記憶體中，不管是效率或是空間上都不是很理想。
+至於實際的使用方式，則是搭配NSArray或是NSDictionary來使用，配合以下幾個方法：
+// 寫入
+- (BOOL)writeToFile:(NSString *)aPath atomically:(BOOL)flag;
+- (BOOL)writeToURL:(NSURL *)aURL atomically:(BOOL)flag;
+// 讀取
+- (id)initWithContentsOfFile:(NSString *)aPath;
+- (id)initWithContentsOfURL:(NSURL *)aURL;
+關於Property List的更多細節，有興趣的讀者可以參考Property List Programming Guide for Cocoa，裡面有詳細的說明。
+iPhone的檔案系統
+因為安全性的因素，在iPhone OS下，每一個軟體的檔案以及資料夾都是被獨立隔開的，而每一個軟體可以讀取、寫入的檔案系統，大概可以用下列的結構顯示：
+<程式根目錄>
+我的程式.app （程式的主要資料夾，只能讀取）
+我的程式
+MainWindow.xib
+其他在Xcode中所加入的Resources
+
+Documents
+Library
+Cache
+Preference
+
+
+以上這些資料，大多都會在iTunes同步時備份起來，而那我們要如何取得這些資料夾的路徑呢？請參考以下方法：
+// 基本的目錄
+NSString *homePath = NSHomeDirectory(); // 根目錄
+NSString *tmpPath = NSTemporaryDirectory(); // 暫存目錄
+// Documents 資料夾
+NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
+NSString *documentsPath = [paths objectAtIndex:0];
+// <程式根目錄>/Documents/foo.plist
+NSString *fooPath = [documentsPath stringByAppendingPathComponent:@“foo.plist”];
+值得注意的是，我們可能會想在程式的軟體中預先搭載一些檔案，這些檔案會存在.app的資料夾中。但這些資料夾read-only的，所以若是這些資料要拿來修改並且做紀錄的話，可要記得先將檔案複製到Documents資料夾下，再進行後續的動作。
+Archiving Object
+就如同Property List一般，透過Archiving Object的技巧，我們可以將任何一個物件存到檔案系統中，當然也可以讀取。為了讓我們自訂的類別能夠儲存為Archiving Objects，我們需要讓物件實做NSCoding這個Protocol：
+// 將物件編碼
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [super encodeWithCoder:coder];
+    [coder encodeObject:name forKey:@“Name”];
+    [coder encodeInteger:numberOfSides forKey:@“Sides”];
+}
+// 從檔案中解碼
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    name = [[coder decodeObjectForKey:@“Name”] retain];
+    numberOfSides = [coder decodeIntegerForKey:@“Side”];
+}
+而當我們要將物件儲存、讀取時，只需要呼叫下列方法：
+BOOL result = [NSKeyedArchiver archiveRootObject:polygons toFile:path]; // 儲存
+NSArray polygons = [NSKeyedUnarchiver unarchiveObjectWithFile:path]; // 讀取
+是不是很容易呢？更進一步的資訊還請參考Archives and Serializations Programming Guide for Cocoa，相信一定會有收穫的。
+SQLite
+SQLite是一個輕量級的SQL資料庫，整個資料庫就是一個檔案，並且使用標準的SQL語法來純取資料，相當的方便有效率。而在iPhone的平台上就內建了SQLite的支援，使用方法如下：
+// 開啟資料庫
+int sqlite3_open(const char *filename, sqlite3 **db);
+// 執行 SQL指令
+int sqlite3_exec(sqlite3 *db, const char *sql, int (*callback)(void*,int,char**,char**), void *context, char **error);
+// 自訂的Callback函式
+int callback(void *context, int count, char **values, char **columns);
+// 關閉資料庫
+int sqlite3_close(sqlite3 *db);
+更詳細的使用方式，請參考SQLite in 5 Minutes Or Less和Intro to the SQLite C Interface。
+Core Data
+Core Data是在iPhone OS 3.0後所新增的功能，是高階抽象化的物件儲存管理系統，我們可以使用NSPredicate和NSEntityDescription兩個類別來代替複雜的SQL指令，詳細的使用方式可以參考Core Data Tutorial for iPhone OS。
+XML
+在iPhone平台上，要處理XML的資料格式可以透過libxml2或是NSXMLParser，前者是Unix下面常見的Open Source函式庫，主要是透過Event-Driven的方式進行parse。而後者是高階抽象過的API，較為容易使用，但功能比較沒有那麼強大。就筆者自己的心得，如果只是要parse RSS feeds，透過NSXMLParser就可以有很好的效果了。
+請參考libxml2 + xmlTextReader on Macs和Parsing XML in Cocoa，兩者的內容都相當實用。
+JSON
+相信對於本部落格的讀者來說，JSON應該是個相當熟悉的格式，也就是JavaScript中常用的資料格式，就如同Property List一般的容易使用。雖然在iPhone中並沒有內建JSON的支援，但我們可以在網路上找到一個Objective-C的JSON Framework，在許多iPhone應用程式中都被廣泛的使用。
+推播通知
+由於iPhone OS的先天限制，我們開發者沒辦自行設計在背景執行的程式，當使用者關閉應用程式之後，我們就沒被法傳送新的資料到使用者的iPhone上了。然而，這件事情在OS 3.0後產生了變化，因為Apple推出了推播通知的Framework，讓我們能夠隨時傳送文字訊息並且播放音訊提醒使用者。而這樣的作法除了省電之外，也可以大幅減少網路的流量。
+而要使用這項服務，我們必須自行架設主機，然後在需要更新資訊時通知Apple的Push Notification Server，由Apple的Server統一將資訊推播到使用者的iPhone中。大概的流程如下：
+程式向iPhone提出推播的要求
+iPhone通知Apple Push Service將使用此程式的推播，並取得Token
+iPhone將Token傳給開發者的Server
+而當我們需要傳送資訊時，開發者則傳送JSON並且內含Token給Apple Push Service，而Apple就會將我們的資訊轉達給使用者的iPhone了。詳細的範例程式，大家可以參考投影片59到75頁，裡面有上述每一個步驟的詳細說明。
+結論
+在這一次的課程內容中，我們學習到了在iPhone中的各種五花八門的檔案操作方法。在下一次的課程中，我們將討論iPhone應用程式的效能優化方法，包含多執行緒的使用以及遠端檔案操作的技巧，還請拭目以待！
+參考資源
+Lecture #9 -- Data in iPhone Apps
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

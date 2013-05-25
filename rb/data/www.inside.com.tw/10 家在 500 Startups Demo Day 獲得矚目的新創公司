@@ -1,0 +1,56 @@
+
+
+
+昨天矽谷知名的創新育成機構 500 Startups 在舊金山的山景城舉辦了他們一系列 Demo Day 的第一場。一共有 32 個團隊上台簡報，包括來自台灣的 Cubie。我們為大家挑選了幾個獲得矚目的團隊。不過話先說在前頭，這些都是參與創新育成的團隊，請不要將他們與市場上已經成熟的服務混為一談。
+Cubie來自台灣的 Cubie 同時提供 iOS 與 Android 使用者通訊與塗鴉功能。目前全球下載數已經超過 500 萬次，平均每天新增兩萬名使用者，每日活躍使用者與每月活躍使用者的比例是 25%。曾在 16 個國家奪得社群類 app 第一名。去年他們已經獲得一筆 110 萬美金的投資。對 Cubie 的開發或技術方面感興趣的可以參考這篇〈 工程師談 Cubie Messenger 350 萬次下載背後的功夫 〉。
+CompStakCompStak 企圖透過「群眾外包（crowdsourcing）」的方式讓使用者貢獻房地產資訊，為房地產經紀商與買家提供房地產資訊平台，創辦人本身就是紐約的房地產經紀人。
+DealflicksDealflicks 想要降低電影院的「空座率」。根據他們的統計，有 88% 的電影院座位其實都是空的，也因此，他們能夠以四折的價格銷售電影票，在最後關頭提供高額的折扣吸引使用者，這種作法在航空業或旅館業都很常見。目前 Dealflicks 的年度電影票銷售額有 500 萬美金。
+GazeMetrixGazeMetrix 很有趣，他們能夠偵測「品牌」在「何時」、「何地」被使用者拍照並上傳到網路上。如果您是品牌的經營者，當品牌的照片在網路上出現病毒式散播的現象時，GazeMetrix 會通知您。換言之，他們提供品牌行銷活動的成效評估工具。
+iDreamBooks愛看電影的人上電影院前會先去 IMDb 或 Rotten Tomatoes 調查電影的評價，iDreamBooks 想要當出版業的「Rotten Tomatto」（仔細比較會發現它們的版面跟 Rotten Tomatto 有幾分相似）。他們認為目前市場上缺乏一個好的書籍評價機制，即便是 Amazon 亦然，上面充斥著假造的評價。不同於 aNobii 這類的書籍網站，iDreamBooks 會先蒐集、彙整專業評論家的意見（當然，也開放讀者評論）。目前 iDreamBooks 的評價系統已經獲得紐約即舊金山的公共圖書館系統採用。
+Kickfolio以 iOS 為例，目前 app 開發者要進行 app 先期測試時，有人會選擇 TestFlight 的服務，讓未上架的 app 也能讓沒有綁訂開發者帳號的 iOS 裝置安裝。但 Kickfolio 則是採用 HTML5 的技術，讓開發者開發中的 app 可以直接在網頁上透過模擬器輸出畫面。而參與測試的人只需要打開 iPhone 或 iPad 的瀏覽器連到特定的網址即可。然而這樣的作法在效能上恐怕會打折扣，對於 app 效能方面的判定幫助不大。
+WalletKit
+他們針對 iOS 的 Passbook 功能，提供店家自製折價券的服務。類似的服務已經有不少網站在做了，例如 Passdock、PassSource 等等。
+TouristEye出國旅行總是令人愉快，但是計畫起來並不輕鬆。TouristEye 是一個讓使用者「安排旅遊行程」的網頁程式，強調圖像化的操作。
+WayGo（外國）
+中文使用者需要的即時翻譯服務通常是英翻中，不過外國人需要的恐怕就是中翻英了。跟 Word Lens 很類似，WayGo 這個 app 可以透過 iPhone 的鏡頭「即時」將中文翻譯成英文（不過就技術上來說前者更厲害一些）。
+Hunie許多新創公司最苦惱的往往不是產品的技術，而是在 UI、Logo 設計的部份，Hunie 提供一個媒合新創公司與設計師的平台，從中收取 12% 類似「仲介費」的費用。Hunie 的平台上目前有 1000 位設計師可以提供服務，他們聲稱還有約 10000 名設計師在等候名單上。
+以下是 500 Startups Demo Day 的完整影片（偏心一下：台灣的 Cubie 在大約 23:30 處）。
+
+Watch live streaming video from 500startups at livestream.com
+另一個消息則是日本最大的電信商 NTT Docomo 宣布投資 500 Startups1，並且另外準備了 100 億日圓（合約 1.09 億美金）的創投基金，將會特別著重於以下幾個領域：
+媒體/內容
+金融/支付
+商務
+醫療/健康照護
+物聯網（machine-to-machine，M2M）
+集成/平台
+環境/生態
+資安
+
+DOCOMO to Establish Venture Fund and Incubation Program↩
+
+
+
+
+
+Jimmy Chen:
+February 8th, 2013 at 1:55 am
+ .
+
+
+Guan Ting Ling:
+February 8th, 2013 at 2:39 am
+ 突然覺得自己也應該要多注意這方面的訊息
+整天看台灣的新聞看到自己的心情都很糟
+但是看到有不斷在各領域開發進步的創意者
+就覺得原來世界是有在不斷前進的
+心情就釋懷不少
+
+
+證交所:
+February 8th, 2013 at 5:34 pm
+ 世界是不斷在進步的
+http://m3.tw-mo.com/2012/11/08/07/
+
+
+

@@ -1,0 +1,79 @@
+
+
+
+無可否認，Facebook Open Graph 發展得極為成功，而且 Facebook 帳號註冊機制還能有效降低使用者註冊新服務的障礙。人們總是好奇新創公司如何透過 Facebook 平台取得成功，但其實說不定最佳時機已經過去。
+Andrew Chen 前幾天在部落格發表了一篇文章 〈 Why developers are leaving the Facebook platform1 〉，針對 Bill Gruley 解釋各大平台如何管理生態圈的手法2做了一番討論。尤其是 Facebook，Andrew Chen 指出他與矽谷的創業家友人們談過，發現有個共識正在浮現——Facebook 不再是個吸引新創公司前來倚靠、作為發展基礎的平台。
+Andrew Chen 說，有位了不起的 VC 告訴他：
+If your audience comes primarily from Facebook, that’s just uninvestable.
+如果你的客戶來源主要是 Facebook 的話，那就不值得投資。
+三、四年前，人們對於開發 Facebook apps 可是趨之若鶩。到底發生了什麼事，讓情況有如此劇烈的轉變？
+Andrew Chen 總結了以下幾點：
+缺乏病毒式傳播
+廣告費率越來越高
+平台不斷在變動
+人們的注意力有限
+得跟老大哥競爭
+行動平台的機會更加誘人
+缺乏病毒式傳播
+Facebook 平台剛上線時，像狂野的西部般，你想做什麼都行。像 iLike 那樣成長的 Facebook app 到處都是，例如生日月曆之類的，會問使用者要不要邀請所有好友一起使用，然後所有的朋友都會被通知轟炸一次，這樣的使用者經驗爛斃了。於是 Facebook 改掉了這種設計，即便 Zynga 或 Viddy 等很希望繼續使用，因為這能幫助他們快速獲得使用者。
+如今那些在過去可以快速散播的 Facebook app 很難再出現往日病毒式的成長。開發者紛紛改回「在 TechCrunch 首發」的作法（透過大型科技部落格發表產品，由該站導入使用者和流量）。
+廣告費率越來越高
+不論是 Facebook 或 Google 都有「自然」和「付費」的擴散機制（Facebook 是出現在動態訊息中，Google 的則是在搜尋結果）。幾年前有不少公司瘋狂地在 Facebook 上追逐著 Facebook 上「價格被低估」的廣告欄位，那是因為 Facebook 正在努力打造廣告系統的基礎設施，許多開發者也因此取得了大量相對而言便宜的廣告效果。
+不過這項優點最近消失了，廣告費率還一直不斷提高，而且隨著病毒式擴散的效果變差，你能「免費」從 Facebook 上拉來的使用者就變少了。過去 Zynga 和 Groupon 可以在 Facebook 上買到數以億計的使用者，並得益於 Facebook 龐大的流量，但現在要繼續如法炮製變得更加困難，他們紛紛轉往他處。Inside 本月中也曾在 〈EA 的死亡筆記本：Facebook 版模擬市民、模擬城市與寵物社會〉提過：
+實際上，在 Facebook 弱化遊戲在 Facebook 網站上的位置與擴散性後，現在社群遊戲的表現都大不如前，開發者們也大多都轉向往行動平台開發遊戲，求取下個機會。
+關於遊戲開發商在 Facebook 平台上遭遇的問題，可以參考這篇 〈 八個變化導致Facebook遊戲開發商流失 〉
+Facebook 平台難以掌控
+相信最近幾天有些人會注意到來自 Facebook 的流量出現了一點變化——Facebook 跟 Google 一樣，隨時會調整演算法，而 Facebook 調整演算法造成的影響對那些經營粉絲專頁的品牌/網站影響可不小。
+另外，Andrew Chen 也指出，由於 Facebook 的文化使然，他們追求快速，平台變動的激烈程度可能更高3。那句「Move fast and break things（行動迅速，打破事物）」後面的「Things」有時就是 Facebook 的夥伴或是平台上的開發者。換言之，開發者必須密切注意、去追逐 Facebook 平台上的變化，有時還得因此臨時抽出團隊最優秀的工程師放下手邊工作去處理，這有可能大大影響新創公司的運作。而且平台政策的變化不僅影響程式或產品，還可能一舉改變公司賴以為生的商業模式4。
+得跟老大哥競爭
+跟每個平台（不管是否號稱「開放」）一樣，Facebook 自己也想做的服務，勢必會影響到開發者的生存。這裡舉一個台灣的例子，開發出食譜分享社群網站「愛料理」的新創公司 Polydice, Inc.，曾在去年開發過一個 app「Moments」，用的是他們參加香港 Facebook 駭客松活動的點子——只顯示使用者 Facebook 動態訊息上的照片，也可以拍照後上傳。只不過在開發過程中先是發生 Facebook 併購 Instagram，接著 Moments 上架後 Facebook 又推出了自家的相機 app，功能恰巧跟 Moments 一樣，而且由於是 Facebook 自己來，在擷取「照片類動態訊息」這件事做得更好。
+人們的注意力終究有限
+使用者每天在 Facebook 瀏覽的訊息有限，每次登入 Facebook 大概只會看 10-20 則訊息（以及群組裡發生的事）。而人們是因為以下幾個行為導致待在 Facebook 上的時間增加：
+按更多讚
+加更多好友
+訂閱更多粉絲頁訊息
+使用更多 app
+用 Facebook 帳號註冊別的服務
+Andrew Chen 認為這麼多的事要爭奪使用者的注意力，最終會導致開發者跟所有人競爭，而那是場零和賽局。他特別提到 Michael Dearing（前 eBay 員工，目前在史丹佛教書）的說法：
+bigger like-base = bigger retention tax cost
+Like 的人越多，「回頭稅」越高。
+
+來源：Twitter
+在 Facebook 上，你的粉絲專頁越多人按讚，要維持/增進使用者回頭率的成本越高。這點同為網路人、NBA 小牛隊的老闆庫班也曾大大地抱怨過。
+行動平台更具吸引力
+我們談過「行動優先」、「行動第一」。Andrew Chen 認為這是再明顯不過的事實，最近還有誰聽說哪個成功故事是由 Facebook app 起家嗎？行動平台已經成為新一代新創公司大紅大紫的舞台。他暗示現在沒有投資人會買單 Facebook app。
+Facebook 平台能重拾往日榮光嗎？
+從各方面來看 Facebook 都是個很成功的平台，像他們這樣大方地送出免費流量（當然啦，不能說完全免費 XD），除了 Google 之外大概沒什麼公司堪可比肩。所以 Andrew Chen 說：「別再唉唉叫了。」自從 Facebook 平台化以來，大家都學到不少，現在大家知道讓開發者滿意（為開發者帶來大量使用者）和打造好的使用者體驗（請回想一下早期 Facebook app 糟糕的體驗）是兩件截然不同的事；Facebook 因此成為一家好公司，而非一個為開發者帶來大量使用者的好平台。
+話雖如此，做為平台，Facebook 到底能不能像幾年那樣讓開發者為之瘋狂呢？Andrew Chen 認為可以，但 Facebook 需要弄清楚他們要的到底是哪一種應用/服務，然後好好地合作，證明給大家看 Facebook 真的是一個可靠的平台，就像微軟的平台一樣（不過 Andrew Chen 也警告，若是微軟發現開發者做的東西有市場潛力，很可能立刻砸下大筆金錢跳進來做）。未來如果人們又開始聽到哪個新創公司的成就源自 Facebook 平台，應該會樂意跳下來試試看，但是現在呢，人們的注意力都在 iOS 跟 Android 上。
+
+Why developers are leaving the Facebook platform ↩
+A Rake Too Far: Optimal Platform Pricing Strategy ↩
+Completed Changes開發者對這個網頁應該不陌生 XD↩
+通路商 vs 研發商 ↩
+
+
+
+
+
+Mei Chen:
+April 25th, 2013 at 2:01 pm
+ 就像我都已經不用噗浪了.....
+那fb可以撐多久哩？
+
+
+駱駱:
+April 26th, 2013 at 12:30 am
+ 平台不斷在變動，fb真得讓人很不開心
+
+
+于文強:
+April 26th, 2013 at 8:44 am
+ http://wendellyu.com/p/191 這一篇的第三點也有講到
+
+
+Eddie Sung:
+April 27th, 2013 at 5:05 pm
+ 很多台灣公司覺得 臉書有這麼多的使用者 然後上面做粉行團去行銷 但其實忘記一點 如果用繁體中文的話 機本上只有小台灣 或小香港看的到~~ 絕大多數還是不會去觀看~~
+
+
+

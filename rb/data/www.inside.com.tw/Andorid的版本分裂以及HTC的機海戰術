@@ -1,0 +1,16 @@
+
+
+在一月初的時候，曾經在Inside上寫到過「漫談iOS以及Android版本分裂狀態以及對於開發者的影響」，當時的數據引用是來自於Chitika，這次，我們就單拿Android來看（iOS的部份可以參考這邊），但請記得，單拿「版號」這件事來作為OS版本是否分裂是過於簡化的說法，實際上仍需要看各版本間的差異、各硬體商的支援度等等而有所歧異。
+以整體來說，Android 上的2.2以及2.2.1兩個版本的相加比重已經由80%上升到90%
+
+這樣的數字看起來也跟目前Android官方所釋出的數字相仿。
+
+而Chitika則更深入的看看目前採用的Android 2.3 薑餅人（Gingerbread）的機種有哪些，第一名是Nexus One、次之則為Nexus S，而再下來則是Motorola的Droid，我們的HTC大軍則是以Evo、Vision、Droid Incredible、Glacier、Hero佔據 4、5、6、7、8名，合計大概占有23%左右的市占率，如果再把由HTC代工的Nexus One計入，那麼HTC的機海可以說成功占有薑餅人6成以上的市占率，至少開發者們也許可以選擇支援HTC以及Nexus One為先、Samsung與Motorla次之的戰略。
+當然，實務上有沒這麼順利筆者就不敢斷言了。
+
+
+
+
+
+
+ Tagged with: android, iOS 

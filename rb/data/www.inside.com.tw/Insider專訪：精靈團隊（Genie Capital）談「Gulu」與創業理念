@@ -1,0 +1,94 @@
+
+
+
+楔子
+Inside將開始一系列的網路產業人物專訪，也歡迎其他的網路產業相關的朋友向我們提出邀約（透過這裡），我們會盡力排出時間與各位專訪，當然，如果有提供職缺在Inside JobBoard上的話更好：）
+［inside］Featuring Jimmy/Ryan/Justin@Genie Capital
+日期：2011/3/22
+地點：台北大安區
+專訪對象：
+Genie Capital CEO Jimmy Chen
+Genie Capital COO Ryan Carag
+Genie Capital CTO Justin Hsiao
+
+關於Genie Capital
+精靈數位科技（Genie Capital）的Gulu由Jimmy，Justin及Ryan三人合力創辦，是一個位於亞洲的產品開發經營團隊。著重於使用django、mongoDB和Html5技術來發展亞太地區的區域及時服務市場。目前的研發專案有「Gulu.com」和「雲端巫師」。
+Genie Capital主要成員：
+
+[image credit:geniecapital.com]
+執行長Jimmy
+Genie Capital的CEO，充滿創業熱情，談起話來眼睛就會發光的人，主要負責精靈數位科技的一切事務，這次他也帶領了精靈創業團隊的其他成員跟我們分享他們創業的心得以及簡單介紹目前的計劃Gulu。
+技術長Justin
+Genie Capital的CTO，早期出國到加拿大，畢業後幫政府工作一段時間，後來在自家廚房跟朋友做了一個Startup，叫Element CMS，之後做了一個加拿大的餐廳搜尋系統。回台灣後專注在Mobile Development的部份，後來就跟Jimmy合作做Genie Capital 的Gulu。
+運營長Ryan
+Genie Capital的COO，一個執著的Product Guy，負責產品的設計以及人手召募，覺得最重要的是要如何設計一個容易使用，又有趣的產品給大家。另外認為Inspiration很重要，希望可以啓發每個精靈成員的潛能，讓他們能夠超越自己的能力。
+Gulu以Social Dining為中心
+
+根據Gulu官網，Gulu是一跟食物有著密切關係的行動社交網路。大家可以利用Gulu跟朋友分享用餐經驗以及共同完成以食物為中心的一些遊戲/任務，Gulu的功能包括：
+
+
+跟朋友分享食物的照片及評價，搜尋好吃的食物/餐廳所在。（連夜市小吃的資料都有！）
+可以自己設計一些征服餐廳的任務/遊戲，並邀請朋友共同完成任務。
+使用即時聊天/通訊功能邀請朋友一起用餐。
+利用Gulu上累積的點數換取優惠。
+兩種社群：自己的朋友以及共同喜好的網友。
+使用界面國際化：有三種基本語言，中文，英文及日文界面。
+
+Gulu的誕生源自於LBS的啓發
+ Gulu的設計概念源自於整個精靈數位科技團隊。CEO Jimmy在找到合適的網路好手後，組成現在的精靈數位科技團隊（簡稱：精靈團隊）後才開始著手整合Gulu的構思。
+一開始的構思從LBS開始，Jimmy好友的學長是做社交簽到網站Hot Potato的iPhone程式，Hot Potato上線後很快就被Facebook收購，他們學長極力鼓勵他們往行動社交網站（Mobile Social Network）方面發展，Jimmy認真的跟團隊討論一番後決定向行動及社交的方向發展。
+除了去年開始投入LBS的Check-in（簽到）在Gulu的服務內，Jimmy他們也表示今年二月他們關注到即時聊天（Real Time Chat）以及即時分享（Real Time Sharing）的重要性，因此也打算在Gulu內加入群組聊天的元素。他們希望做一個成熟的多功能，多元化的產品（Multi-feature Product），而不是做很多個功能單一的產品（Multi Product）。
+Jimmy認為Gulu的目標以及定位一直都跟著時代的腳步在移動，他覺得多元化才是一個好產品的構成要素。
+精靈的危機同時也是轉機
+ 在Startup裡，決策力非常重要，Inside多次說過了執行力大於創意，有好點子也要有良好的執行力才能夠產出優秀的產品/服務，本站前文「個人理財網站Mint的成功創業啟示」中提到過：
+點子不重要，不要怕別人偷的另個重要原因是執行力。因為即便別人知道了你的點子，他沒法把東西徹底的執行完成，完整的把東西做出來，一切都是白搭。
+精靈的技術長Justin就很坦誠的跟我們説他們的大危機就在一夜之間決定改變Gulu的整個模型。也就是把之前11月寫好的Data Model整個砍掉重寫，因為他覺得原本使用的framework在長遠來說，可能無法承載他們未來可能會面對的資訊流量，Justin強調他們主要改變的不是程式語言的部份，而是framework的部份，原本Justin他們都比較習慣php，因此開發時一定是採用大家熟練的phpfox，後來經過個人測試，他還是決定改成Python的Django，因此整個計劃延後了3個月。
+募集好的團隊成員比計劃構思重要
+ 整個Startup的過程都很有趣（Fun），唯一最困擾的是募集好手（Recruiting），成立精靈科技的前半年幾乎都花在尋找合適的工作夥伴上，而且他們對於應徵對象有很多特別的要求，這些要求更好呼應了本站前文提過的「如何避免雇錯人！（尤其是創業初期）」中幾個要點：
+不只考慮對方是否能力適合，還考慮文化上是否也適合。
+態度比能力重要。
+找信任的朋友介紹。
+與有這些特質的人合作：正直，正面，熱情，熱愛執行，溝通能力強，EQ高，好奇，具開創精神及志向遠大者。
+確定他有熱情，且對你要做的startup會有熱情。
+雇用過程花多點時間，慢慢來。開除時則請果斷迅速。
+詢問他在音樂，運動或其他嗜好上的東西，了解是什麼樣的價值是他每天行動的動機。並看看那是否是你要的。
+精靈團隊經過各種管道募集得來的好手來自世界各地（美國，印度，加拿大等），他們非常歡迎熱情，勇於冒險的畢業新鮮人加入他們的精靈團隊。
+精靈團隊談Gulu成功的定義
+Jimmy認為成功就是要改變世界，創造出讓生活變美好，變有趣，變簡單的科技。Ryan認為成功的科技應該要將人跟人之間的距離拉近，像一些LBS服務一開始只能自己Check-in，後來才慢慢變成可以Tag朋友，科技應該是群體的活動。
+Justin的想法跟Jimmy及Ryan一樣，也是覺得成功就是做出讓使用者喜歡的，生活變有趣跟美好的科技。
+小結：Gulu的目標就跟Genie Capital早期的Slogan一樣：
+Digitalizing the world one bit at a time.
+意思是要一步一步的將世界數位化，例如以Gulu來說，就是要將真實的生活與虛擬的生活作結合。也就是將食物與用餐這基本的生活經驗，經由科技及網路的數位化，去跨越空間及時間的障礙，利用網路與科技增進人與人之間的關係，皆此改變這個世界以及人類的經驗。
+Genie Capital釋出的職位如下，讀者可以直接上Inside Job Board求才版，有更詳細的資訊。
+
+資深軟體開發工程師（Software Engineer）
+行政助理
+Business Development Manager/Associate
+資深Python開發工程師
+網路產品行銷企劃助理 （Brand Associate）
+
+
+
+
+
+Yenwen Feng:
+March 27th, 2011 at 6:26 am
+ 產品還未上市就因為擔心未來效能不足而砍掉重練 (還換了個程式語言), 聽起來是個 anti-pattern.
+
+
+Jimmy Chen:
+March 27th, 2011 at 7:55 am
+ yeah... you should never pre-planned too much. It is indeed "anti-pattern"! I still have nightmare about it. It just isn't lean... but in the end, the reason we end up switching the database is that we just don't feel mysql is the most efficient database for messaging and that phpfox's framework is just too rigid for feature development... hence, we made a really tough decision to make a change now before it's too late...
+
+
+Ryan Carag:
+March 27th, 2011 at 11:56 am
+ There is always tension between shipping something fast and shipping something great. Either way, the fundamental goal is still the same: Delight users, whether you have one (lean) feature or 100 features and whether there are a handful of users or millions. The decision really is about placing our bets on what we think gives us the best shot at achieving this fundamental goal in scale.
+
+
+Hai Feng Kao:
+May 4th, 2013 at 1:31 pm
+ 最後Gulu的結局是什麼？
+
+
+

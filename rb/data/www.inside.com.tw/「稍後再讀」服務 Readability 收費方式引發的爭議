@@ -1,0 +1,45 @@
+
+
+
+ 
+前情提要
+Readability 是一個類似 Instapaper 與 Read It Later 等「稍後再讀」服務，幫助使用者在電腦端或或行動裝置將網路上的文章「轉」成乾淨、沒有廣告且適合閱讀的排版。
+導火線
+前幾天，美國知名的部落客 John Gruber（@gruber）在他的部落格「Daring Fireball」寫了一篇文章（註1）砲轟「稍後再讀」服務 Readability 犯下大忌，未提供連結讓使用者連回文章原始出處（註2），並且稱 Readability 的人是「scumbags（卑鄙的人）」。儘管 Readability 很快地修正了這個問題（註3），然而這件事卻牽扯出另一場持續延燒的爭論—— Readability 收費模式的正當性。
+Readability 的商業模式
+Readability 與其他提供「稍後再讀」服務的網站不同之處在於前者接受使用者自由選擇是否每個月付出五美金以上（只要高於五美金都行）成為「訂戶」，免費使用者只能保留最新三十篇作為稍後再讀的文章。Readability 會將收入的 70% 平均分配給使用者讀過的文章來源，他們在網站上的 FAQ 舉例說明（註4），今天使用者付給 Readability 十美金，然後在 14 個網站上分別讀了 14 篇文章，那麼這 14 個網站將會分別收到 0.5 美金的費用（10*0.7/14=0.5）。
+聽起來是不是有點像 Apple App Store 的模式？一個三方多贏的好辦法。
+可是 Readability 的作法有個問題，他們只會將錢付給那些有來「註冊」此方案的文章出版者。（Apple 的作法是 app 開發者必須先註冊並且繳交一定費用，他們的 app 才能於通過審核後在 App Store 上架 ）萬一出版者根本不知道有 Readability 的存在怎麼辦？Readability 怎麼能在沒有合約、未經出版者同意的情況下「代為收費」呢？
+沒發出去的錢該怎麼辦？
+Readability 會替那些沒註冊的網站「保留」那些錢十二個月（註5、註6），如果他們在這段期間內來註冊，Readability 會將錢付給他們。十二個月？這可不是什麼失物招領規定，那些錢是 Readability 向使用者聲稱為文章提供者「代收」的費用。
+打個比方，今天如果有人（姑且稱之為 A）舉辦一場義賣，並且宣稱70%義賣所得將平均捐給八八水災的每一個受災戶，然而事後卻有新聞報導指出 A 並沒有真正捐出收入的70%，A 只捐出一小部分給那些有跟 A 登記（注意，不是跟政府登記喔，是跟 A 登記）接受這次捐助的人，為什麼只捐一小部分？因為要平均分配啊，沒有捐出去的部份屬於其他（沒跟 A 登記過的）災民。
+剩下的錢呢？A 說他會幫沒登記的人保留十二個月。咦？那十二個月之後呢？
+假如您是花錢參與義賣活動的人，做何感想呢？這就是為什麼 John Gruber 如此不滿的原因。
+批評與辯護
+這件事情後來引發各方的討論，批評者認為 Readability 的作法是不道德甚至有違法疑慮，因為他們並沒有在訂閱服務的頁面做出說明（註7）。另一方則是認為 Readability 的作法或許不是那麼面面俱到，但該服務的確有他的價值，其出發點是好的。
+至於這場口水戰究竟是文人相輕還是雙方（John Gruber 與 Anil Dash 等人）另有所圖？事實上，早在去年十一月就有人提出它對 Readability 收費模式的疑慮（註8），而 John Gruber 則在 Twitter 上聲稱已經注意這件事大概有一年了（註9），不過當然也有人不同意他的看法，撰文為 Readability 辯護（註10），並指責 John Gruber 立場不公正（Instapaper 創辦人 Marco Arment 與他是朋友，不過後者從頭到尾都沒有拿 Instapaper 做比較，只是單純批判 Readability 的作法錯誤），倒是這位 Anil Dash （@anildash）後來被揭露出他持有 Readability 的股份（註11），才又更新自己的文章。
+Readability 的收費模式確實有欠妥當，因為大多數網站其實都還不知道 Readability，更別說是這樣的收費機制，也就不會去註冊，所以十二個月後，大部分使用者付的錢可能都「下落不明」，但使用者在付費前卻完全沒有被告知。
+究竟此類「稍後再讀」服務該如何收費？
+這次事件也讓許多人再次討論起這類稍後再讀服務的商業模式，Instapaper 是為它的服務及 app 收費，而 Readability  的收費方式比較傾向為內容收費。也有人提出 Readability、Instapaper 提供的服務就像是提供錄影帶和錄影機，讓大家把想看的節目錄下來（說不定還去掉廣告）等「有空的時候再看」，可是錄影帶或錄影機的製造商有付錢給電視台或片商嗎？沒有（註12）。John Gruber 則是在昨天與 Dan Benjamin 共同主持的 podcast「The Talk Show（註13）」再度談到此事，他認為這些稍後再讀的服務就像是提供讀者們特別的瀏覽器，用不同的方式去呈現網站內容，如此而已。
+您的網站流量來源有這些稍後再讀的服務嗎？您有使用任何稍後再讀的服務嗎？該怎麼收費比較好呢？歡迎留下您對這次事件的看法。
+ 
+註1：Daring Fireball Linked List: Readability Directs Shared Articles to Own Servers, Cuts Out Original Publishers
+註2：Updated: Readability Directs Shared Articles To Own Servers, Cuts Out Original Publishers
+註3：Readability tweaks sharing feature in response to copyright theft accusations
+註4：http://www.readability.com/publishers/faq#pub-earning
+註5：http://www.readability.com/publishers/faq#pub-previous
+註6：http://www.readability.com/publishers/faq#pub-unregistered
+註7：https://www.readability.com/readers/register/contribute
+註8：Readability and Collection of Money for Others
+註9：https://twitter.com/#!/gruber/status/186305556036845568
+註10：Readability, Instapaper, the Network and the Price we Pay
+註11：Daring Fireball Linked List: Anil Dash on Readability and Instapaper
+註12：What the Betamax Case Teaches Us About Readability
+註13：5by5 | The Talk Show #86: Well-Intentioned Scumbags
+ 
+ 
+
+
+
+
+

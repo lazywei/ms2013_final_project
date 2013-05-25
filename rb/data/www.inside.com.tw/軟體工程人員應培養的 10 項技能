@@ -1,0 +1,117 @@
+
+
+ 
+(Reference: shatterbox)
+
+投稿作者：Leon Lu ([email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+)
+新鮮活運動! 喜歡研究軟體架構的美、專案管理方法論的妙、與三五好友大談移動科技的樂 ^^
+
+ 
+當你的職業或興趣跟軟體或系統程式設計相關時，除了會碰觸到專業資訊書籍外，當然還會有不少專精領域的學者或資深人員所提出的「經驗法則」。記得 Inside 於 2011 年三月的一份專欄主題中提到“程式設計師應讀的十本好書”，是經由Stack Overflow的討論內容所帶領出的十大好書，相信 Inside 讀者們應該都還有印象。
+因為一直記得當時的那篇 Inside好文章，這次就借題發揮，回顧一些筆者看到所謂的「經驗法則」，記得Alex Iskold 曾列舉過“十大高桿開發人員特徵”， 以及最近有一位軟工專家 Markus Sprunck也分享所謂的“十大軟體人員須養成特質”。其實這二篇分享文，若不去嚴格追究其立論基礎，單純以身為軟體開發的愛好者去看待它，真的是滿有意思的文章。所以筆者特地作了綜合分析，並且摘錄下“10 項軟體工程人員應培養的技能”與各位 Inside 讀者們及軟體工程同好們分享。
+
+訓練情緒智商(Emotional Intelligence)
+
+ (Reference: harmonicagoldfish)
+EI這個名詞，單純就 Wiki 上的定義，是指有能力去識別、評估和掌控自己或是他人的情緒，甚至是對群體的影響。就軟體工程的角度來看，「情緒智商」是一種 Soft Skill，是需要仰賴經驗以及個人特質的一種養成。尤其在專案經理或是軟體架構師的作事方式中可以窺見。
+經營與專案利害關係人之間的互動、仔細去觀察客戶或合作夥伴們的真正需求及意圖，更重要的是自己要能以理性去看待這些需求及變更，因為很多需求往往是 Business/Sales 訴求，站在軟體開發人員的眼光來看待可能會感到不 Make Sense，所以在血壓上升準備解釋被抱怨的前因後果時，請先花個幾秒鐘思考一下會有那些衝擊，這就是EI的訓練。
+
+釐清根本需求(Business of Customer, Be reasonable and realistic)
+
+ (Reference: brizzle born and bred)
+當我們不知道 WHAT時要如何定義HOW？故軟體工程的藝術在於將客戶需求反映成實體化，通常經由 Prototyping 是一種最為熟悉的方式，還有一些 Agile 方法論中的 Iteration 其目的也是要確切抓住客戶的業務需求。故釐清根本需求，在合理需求以及現實作法間取得平衡點，才能設計出符合商業價值的系統。
+
+抓住程式設計精髓(Multi-paradigm programming)
+
+(Reference: stebulus)
+如果您的唯一工具是鐵槌，那所有的問題對您而言都會像是釘子。一位好的軟體人員要努力的方向是了解「程式設計精髓」，而不要固執或沉迷於某種程式設計語言(雖然筆者也特別喜歡 Java)。
+開放的去收納那些有特質、有潛力的程式語言，架構或特定用途的語言(例：對 Parsing 特有力的 Perl、對跨平台跨前後端皆合宜的 Java、對 Usability 以及函式庫特豐富的 C#、XSLT、RoR 等等)。依據適當的產業、專案需求、個人喜好的綜合評估下，從您的工具箱中用適合的工具，去解決問題將是事半功倍(例：要拔釘子嗎? 請放下鐵槌用老虎鉗試試)。
+
+專注易使用性及維護性 [Focuses on Usability and Maintainability]
+
+(Reference: x-ray delta one)
+如果認知上，我們開發中的軟體系統是要給自己使用的，則會很自然的思考到易了解、易操作(Usability)的問題，當然具規模的專案會有 UX 工程師參與，但多多充實UX思維是軟體工程人員不可或缺的基礎，若開發人員不能了解用戶是如何與系統作互動，將是軟體專案上的嚴重隱性風險。
+若把這個軟體系統當成我們的參賽作品來設計，則架構設計上、程式模組上的維護性(Maintainability)便會自然的去仔細考量。無論是命名規則、鬆散偶合的模組設計等 Coding Discipline，不只是習慣培養，亦是軟體工程人員跨入軟體架構規劃的養成重點。
+
+測試是信賴基礎 [Don't Trust Code without Adequate Test]
+
+(Reference: Anthony DeLorenzo)
+相信具有經驗、或受過 De-bug折騰的軟體人員，應該很認同測試是信賴基礎，無論是對自己的交付項目負責，也是團隊之間協同合作及客戶驗收的基礎。業界有測試導向的方法論(例：TDD…) 以及測試項目 (單元測試、整合測試、壓力測試、程式碼覆蓋率…)，無所謂的必要與否，端視軟體開發過程中如何去調適現實環節中必需被驗證的測試項目。
+
+關注設計模式及演算法 [Uses Design Patterns and Algorithms]
+
+(Reference: mrbill)
+現今的高階程式開發提供了大量的 Library(Data Structures, List, Vector, Binary Search, Graph Traversals…)供使用，一位優秀的軟體人員要關注設計模式及演算法嗎? 看來好像不需要，但擁有這方面的know-how能讓我們更正確的作出軟體設計規劃。並且有些時候，為了應付商業需求是需要建立獨特的解決方案，故多涉獵這方面的知識，將獲得更多軟體設計上的正確思維。
+
+了解工具或操作工具 [Use and Know your Tools]
+
+(Reference: illum)
+在軟體開發、專案管控、需求管理等系統開發過程中，有太多工具軟體值得我們去學習及使用(例：RM、CM、Debugging、Performance Tuning、Log Analysis…)，但重點是了解這些工具的特性及關鍵技術，當有需求發生時，才有挑選合適工具的能力。
+其次是對自己主要的工具更要熟悉操作及應用，這將是影響生產力和開發質量的關鍵因素(例：MS Excel 不只是記錄，更要懂得運用函數或巨集去簡化例行公事)。
+
+善用方法論及衡量指標 [Management Concepts and Key Metrics]
+
+(Reference: Panda Face)
+除了安排個人的工作、對於專案的管控、對技術團隊的指導，很多時候是需要軟體工程上的經驗，藉由 PM Skills或是 Scrum 方法論的應用，將會對自己以及團隊合作上大大提昇品質。
+很多時候當您在評估團隊成員所提的開發時程時，大部份情況有80%是低估該項工作的 Efforts 或 Risks。更有趣的是當團隊成員告知您該項工作完成時，有時候所指的是該項工作在技術面的需求已完成。
+所以對那些精采的軟體衡量公式(例：可維護性指數 MI)，當我們不是100%了解它以及如何去應用它時，請不要貿然使用於開發過程中，反而是找出合適於您軟體開發過程中的真實衝量指標(Real-World Measure)更為重要。
+
+持續整合及重構[Continuous Integration and Refactoring]
+
+(Reference: psiaki)
+如同藝術家持續的雕刻著作品一般，針對程式代碼進行調整就是“重構”。重構並不是要改變業務需求，或是目前的設計架構，而是如同藝術家的雕刻工作將部份代碼稍作調整或精煉的過程。持續重構作業，讓我們有機會解決部份只經由Black Box 測試的舊有程式碼問題。
+持續整合(CI)是近年來滿火熱的議題之一，簡單的說就是經由CI可以讓系統開發過程中，提早嗅出那個環節有壞味道，進而提早清潔的軟體品質概念。持續整合及重構，雖然是整個開發團隊要一起進行及養成的，但對自己的代碼作Refactoring、對自己每次的代碼變更試著作CI，將是建立軟體品質思維及架構師的重要養成。
+
+完成與完美的迷思 [Get things done than to be perfect]
+
+(Reference: yakobusan Jakob Montrasio)
+一位優秀的軟體開發人員，是指花費大量時間或精神去設計出複雜的、具備彈性的 Library來符合軟體系統需求嗎? 答案有可能不是。但會嘗試著找出最簡單的作法，在有限時程及資源下解決專案問題或需求的軟體人員，將會是大多數 Project Stakeholders 所認為的優秀開發人員。
+或許在軟體領域中沒有“完美”的解決之道，但存在著“完成”需求並達到高測試品質的解決方案，方法就在前述的九大特質之中(根本需求、善用工具、注重易用性、測試、持續重構…)。
+不曉得這十項軟體工程人員的技能，有多少已經融入在您的工作型態之中了，這些想法無關乎正確與否，僅在於是否適用於您或是您的團隊之中，若您也有一些受用，並且不吐不快的經驗法則，請留言分享，讓所有關注的 Inside 讀者們一起成長。
+
+
+
+
+Jame Whang:
+June 9th, 2012 at 3:23 pm
+ It's really difficult about software.
+
+
+Ray Shih:
+June 10th, 2012 at 6:54 am
+ 修一下吧
+把RoR歸類成語言，然後說自己「研究軟體架構的美」
+會被笑死
+
+
+Hsiu Wu:
+June 11th, 2012 at 5:13 am
+ 文章不錯，很值得分享給週糟的PG朋友.
+
+
+Leon Lyu:
+June 11th, 2012 at 1:12 pm
+ 感謝 Ray 的回應, 當天晚上有感而發, 就趕緊將想法敲下來, 沒有多花心思好好 review, 腦子裏只是想到以前寫 Ruby 時的想法 : "簡潔", 就順手敲了 RoR (雖然 Rails framework 也是很值得學習啦, 但對應到該段落寫 RoR 的確會語意不明) ; 非常感謝您的訂正, 希望日後有機會與您多互動討論, 多多學習. 感恩 ^^
+
+
+Leon Lyu:
+June 11th, 2012 at 3:53 pm
+ 感謝 Ray 的回應, 當天晚上有感而發, 就趕緊將想法敲下來, 沒有多花心思好好 review, 腦子裏只是想到以前寫 Ruby 時, 語法的 "簡潔" 特質, 就順手敲了 RoR, 雖然 Rails framework 也是很值得學習啦, 但對應到該段落特別標註了 "程式" 二個字, 寫 RoR 的確會語意不明。.
+哈, 不好意思, 當時心理還在想要寫 "Architecture" 或 "Code", 手已經不自覺的打好字了! 非常感謝您的指正, 更重要的是希望文章內容對軟體同好們有所幫助, 即是給予小弟的鼓勵, 希望日後有機會與您多互動討論, 多多學習. 感恩 ^^
+
+
+Eric Yeh:
+June 12th, 2012 at 10:06 am
+ 這篇文章內容, 個人認為是滿優的分享, 很適合作為我部門同仁的 Learning & Brainstorming 題材, 要讓約 20 人的團隊引起共鳴的 Study Meeting, 總是讓人疲於找題材.
+
+
+林暉恩:
+June 25th, 2012 at 3:39 am
+ 心中有好多疑問在這裡找到解答，個人認為程式設計是技術加上管理，單會寫程式不是什麼困難的事，更重要的是持續精進及培養解決問題的能力
+
+
+

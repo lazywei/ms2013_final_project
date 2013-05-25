@@ -1,0 +1,23 @@
+
+
+Google Friend Connect是什麼？
+簡單來說，這是Google所推出的一個社群機制，2008年底推出時最具體的應用就是讓部落客在部落格的側邊欄上掛著類似粉絲俱樂部以及留言簿的部落格插件，例如右圖便是筆者自己所經營的部落格 Cyberpunk 中的 Google Friend插件，而後Google也陸續推出越來越完整的功能，網路上也出現越來越多的進階應用。
+當時筆者認為，Google Friend Connect是一個Google打造分散式社群網路的策略性工具，相對於Facebook是將社群、內容集中於自身網站的作法，Google是從各個分散在網路上的所有網站來打造一個超級龐大的社群。
+對網站經營者來說，Google Friend Connect所提供的價值，有一小部分是與Facebook Connect相似的：既有的會員系統、免去重複註冊的程序。然後在社群(Social)上來說，筆者比較看好Facebook Connect。
+今年Google Friend Connect持續推出了很多小功能，以下是筆者登入後所看到的畫面：
+
+其中筆者認為最有趣的是「電子報」的部份，Google直接提供了編輯介面讓網站經營者可直接發送電子郵件（支援Rich Text Format）給有訂閱部落格電子報的粉絲們（您可直接設定使用者加入粉絲團後，直接詢問使用者是否訂閱電子報），對於某些尚未擁有派報系統的網站經營者來說，這或許是個不錯的選擇。
+除此之外，Google Friend Connect個人認為是個比Facebook Connect更為陽春的社群API，畢竟從出發點來說就不一樣，就使用者的特性來說，目前在台灣的Facebook使用者應該是比較接近一般消費大眾，而Google帳號的使用者，除了使用Gmail之外的，估計大多是比較進階的網路使用者，因此本部落格未來仍會以Facebook的發展為主，而Google在社群發展上對應的發展我們仍會持續介紹（就如同Facebook也在發展自己的Web search、Google想搜尋Facebook的內容，這都是很有趣的議題，雙方各自握有強大的武器，並且有可能在未來開始成為直接競爭者）。
+那麼，什麼是Facebook Connect呢？
+若您經營的網站目前尚未規劃Facebook app的開發，但希望使用Facebook的社群機制、會員機制，您可以利用Facebook Connect讓您的網站跟Facebook的會員資料庫串連起來，當使用者造訪您的網站並想要註冊時，他可以使用Facebook登入以免去註冊程序，並且在登入後就可以直接在網站上發現Facebook上的某些好友也登入了您的網站，對於網站的第一印象或許能有加分效果。
+之前曾經與各位讀者分享Facebook Connect的好處，筆者認為在Facebook App經濟當紅的情況下，網站經營者、網站開發者不妨將著眼點放在Facebook Apps之後，思考Facebook Connect是否有可能帶來下一波的影響？尤其Facebook Connect機制上線至今僅僅一年，是個還在持續成長中的開放平台機制，未來的發展相當值得持續觀望，例如經濟學人網站即將深入結合Facebook Connect或是已經有超過80,000個網站都已經實作了Facebook Connect，XBOX、PS3(Sony PlayStation 3)遊戲機也支援Facebook Connect，這都是非常值得深入探討、分析的現象，包括導入Facebook的好處、限制以及實際運用在各種應用程式中的比例、互動模式以及使用者的回饋等等，未來我們也會繼續針對這部份進行一系列更深入的探討。
+延伸閱讀
+Facebook Connect上線週年現況
+Facebook Connect: The Pros and Cons
+Facebook Connect… what is is, pros & cons(and do we really need another online ID system?)
+
+
+
+
+
+ Tagged with: facebook connect, Google, google friend connect 

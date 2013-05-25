@@ -1,0 +1,40 @@
+
+
+以往的網頁設計師在設計網頁的時候，時常會遇到一個問題便是可使用字體的不足。在以往的瀏覽器中，即便我們設定了特定的字體，但若是使用者的電腦中沒有該字體則無法顯示。而Google Font API的出現便是替廣大網頁設計師、開發者們解決這個問題！
+以往的狀況
+誠如序文所提到的，以往在網頁上，我們能使用的字體大多侷限於使用者端所安裝的字體，也就是，即便網頁設計者使用了多炫的字體，若是使用者沒有安裝同樣的字體，則仍然無法顯示。
+因此在以往，網頁設計者往往會如下圖一般將字體作成圖片，並且搭配CSS的一些技巧來將文字替換為文字：
+這樣作有不少缺點，除了缺乏彈性之外，使用者也沒有辦法複製圖片上的文字。
+@font-face
+為了解決這個問題，CSS2（不是CSS3）就有提供一個@font-face屬性可以讓CSS設計者加入自己喜歡的字體。但問題是，各家瀏覽器對於@font-face的支援進度緩慢，一直到去年大多數的瀏覽器才開始正式支援@font-face，而問題並未結束，每個瀏覽器所支援的字型格式又有不同，對於大說數網頁設計者而言仍然不易上手。
+除此之外，@font-face必須將字體上傳到網路上、讓讀取頁面的使用者瀏覽器可以下載、並且顯示，而這又帶來兩個問題：首先、字體檔案一般而言檔案都相當的大，若是將檔案存放在自己的主機上必然會對流量造成一定的負擔。另外一個問題則牽涉到字體的授權問題，由於一般我們所購買的字體授權都僅能提供個人使用，而@font-face實際上如同於將字體放在網路上提供給大家下載，會有一些侵權的疑慮。
+Typekit & WebFonts
+
+而Typekit及WebFonts這兩間雲端字體服務便是替大家解決上述的兩個問題，除了提供各種沒有授權問題的字體外、我們也不需要擔心字體存放、流量的問題，這部份統統都交給服務商的雲端主機管理。
+然而，這些服務當然並非免費，以Typekit而言最基本的收費是$24.99美金起跳，如下圖：
+
+雖然如此，但許多網頁設計師們仍然趨之若騖，畢竟這些服務的確解決了長久以來的字體問題。
+Google Font API
+Google Font API是在今年剛落幕的Google I/O開發者大會中所公佈的新服務，提供了一個簡單的介面讓網頁開發者、設計師能夠嵌入漂亮的字體到自己的網頁當中。如Google新聞稿中所說，這項服務是Google與上述所提到的Typekit一同合作打造出來的，且是完全免費的。
+在Google Font Directory中可以看到Google在公佈API的同時也開放了如下圖十八種不同的字體：
+除此之外，Google Font API對於各瀏覽器的支援也相當不錯，如下：
+Google Chrome: version 4.249.4+
+Mozilla Firefox: version: 3.5+
+Apple Safari: version 3.1+
+Opera: version 10.5+
+Microsoft Internet Explorer: version 6+
+使用方法
+在使用上，我們只需要在HTML文件中加入以下CSS檔（後方參數可以替換為Google Font Directory上的任一字體）：
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+然後針對需要修改字體的段落加入CSS片段、如：
+h1 { font-family: 'Yanone Kaffeesatz', arial, serif; }
+這樣就可以順利使用這些漂亮的字體了！
+參考資源
+@font-face browser support
+測試混合fontface雲端服務，Web Fonts+Typekit
+
+
+
+
+
+ Tagged with: font, Google, Google I/O 

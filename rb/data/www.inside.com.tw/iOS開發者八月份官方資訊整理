@@ -1,0 +1,26 @@
+
+
+
+又到了一個月的結束，各位iOS開發者們在這個月中開發軟體還算愉快嗎？在這篇文章中將整理這個月來官方的最新資訊，讓大家不錯過任何最新動態。
+版本上架控管（Version Release Control）
+以往在App Store上架軟體時，一當軟體通過蘋果的審核就會馬上在App Store上提供給大家下載，這對於某些行銷用、或是搭配特定檔期的軟體其實是很不利的，畢竟我們可能並不是想馬上公開我們的軟體。
+因此，在這個月iTunes Connect的更新中蘋果便在軟體送審的流程中加入了手動上架的選項，當軟體通過審核後不會馬上放上App Store、而是要等開發者到iTunes Connect中手動選擇釋出後，蘋果才會將軟體放到App Store上。
+App Store大量購買方案（Volume Purchase Program）
+由於iOS裝置逐漸的在教育的市場中獲得採納，越來越多的教育機構使用iPad或是iPod touch等裝置作為教學上的使用，也因此有了大量採買軟體的需求。
+因此在這個月中蘋果便宣布了新的App Store大量購買方案，針對在美國的教育機構，當同時購買超過二十套以上可以獲得一定的折扣。
+
+開發者可以自由在iTunes Connect中選擇是否要加入這個方案，或者是針對各個軟體進行不同的設定，折扣的比例也可以有不同的調整。
+Game Center成就與排行榜
+
+蘋果官方的Game Center遊戲平台也逐漸邁入最後的測試階段，在這個月開始，開發者可以在iTunes Connect上設定軟體的Game Center相關資料，包含成就和積分排行榜的類型等。而當開發者設定好這些相關的選項、在軟體中也加入Game Kit的相關程式碼，也可以在Game Center的測試環境（Sandbox）做相關的測試了。
+iTunes Connect付款與財務報表調整
+最後一項消息則是蘋果為了讓開發者能夠更明確的理解到收入的情況，在iTunes Connect加入了新的付款與財務報表模組，開發者將可以從中獲得iTunes Connect的各種付款資訊，包含目前尚未領取的款項、上次領取的數字等等。
+除此之外，iTunes Connect也將調整他的付款頻率、方式，有興趣的讀者可以再登入iTunes Connect中得到相關的變更資訊。
+參考來源
+News and Announcements for iOS Developers -- August 2010
+
+
+
+
+
+ Tagged with: App Store, iOS 

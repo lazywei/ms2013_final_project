@@ -1,0 +1,37 @@
+
+
+[Image Credit]
+在上個禮拜的時候蘋果公布了新的App Store收費方式，讓開發者和應用程式的開發商可以提供給消費者訂閱的方式，來進行服務的付費，然而卻帶來了一些後續意想不到的效應。
+In-App Subscription
+
+在這個月初蘋果宣布推出The Daily的iPad版線上媒體刊物，同時間也公布了App Store的新的付費方式，也就是許多開發者們引頸期盼的訂閱模式。
+App的開發者可以自由決定軟體的訂閱長度（每週、雙週、每個月、兩個月、一季、半年或是一年）和訂閱的價格，讓使用者可以透過固定的付費來換取服務。
+舉個例子而言，像是音樂的付費聆聽便是很適合的例子，像是國內的ezPeer、KKBox或者是Pandora便可以透過IAS的方式提供更方便的付費管道。
+30%的蘋果稅
+
+事情並不如同想像中的美好，因為就如同所有App Store上的付費一樣，蘋果在這個過程中需要收取30%的手續費，以作為App Store營運的資金。
+或許你會想，30%既然是App Store常見的數字，那對於現有的開發者而言影響應該差距不大，畢竟如果使用者像先前一樣透過App Store單獨購買每個月的服務、或是個別的項目，那也是要被收取30%的費用，並不會有太大的反彈。
+可是換個角度來看，實際上大多數可以透過訂閱購買的內容服務，大多都像是先前提到的音樂付費無限聆聽，或者是雜誌書報刊的閱讀等等，對於這些內容服務而言，跟遊戲中的虛擬道具或是寶物等相比多上了很多授權的費用，像是音樂服務必須向唱片公司支付授權金、書報刊也需要有編輯製作的成本，30%的蘋果稅對他們而言真的是有些許過高了。
+App Store的最新條款
+雪上加霜的是，蘋果還調整了App Store審核條款：
+11.12 提供訂閱服務的apps一定要透過In-App Purchase的方式，蘋果會透過70/30的拆分方式。
+(Apps offering subscriptions must do so using IAP, Apple will share the same 70/30 revenue split with developers for these purchases, as set forth in the Developer Program License Agreement.)
+簡單點說，就是你的軟體若要提供內容訂閱的服務，你只能選擇使用官方的付費方式，不能透過自行的付費方式。
+更糟糕的是下面這條：
+11.13 若軟體可以播放任何在App Store以外購買的內容，像是雜誌、報紙、書、音樂和影片等，也必須在軟體中以相同價格或各低價格的付費方式提供IAP的購買方式。
+Apps can read or play approved content (magazines, newspapers, books, audio, music, video) that is sold outside of the app, for which Apple will not receive any portion of the revenues, provided that the same content is also offered in the app using IAP at the same price or less than it is offered outside the app. This applies to both purchased content and subscriptions.
+也就是針對那些已經提供線上付費服務的軟體，你的iOS app必須提供相同的服務，但是透過IAP的方式購買。
+其首當其衝的，當然就是Amazon Kindle的電子書下載服務，以往Amazon透過其網站提供付費購買電子書的服務，然而現在卻必須同樣提供IPA的付費管道，否則就會被App Store拒絕在門外。
+目前的狀況
+截至目前為止， Sony Reader是蘋果開槍的第一號目標，前陣子Sony的旗下電子書閱讀軟體在上架iOS的過程中被拒絕在外，原因就是沒有提供IAP的管道在軟體中購買書籍。
+而Readability則是在昨天時被同樣的理由拒絕在App Store門外，Readability的iOS軟體是讓使用者可以在網站上將想看的文章加入到收藏當中，並且透過手機軟體在稍後瀏覽。
+前者Sony有提供自己的閱讀器和閱讀軟體，所以對於失去iOS平台或許影響不是這麼大，然而Readbility只是一個具有前景的新創網路公司，iOS一直都是其相當重要的服務內容之一，被App Store拒絕於門外對其的傷害影響相對的嚴重。
+結論
+隨著App Store開始強推In-App Subscription，除了許多原有的內容供應商會受到影響之外，像是Readability這類的新創小服務更有可能因此而無法生存，扼殺了很多可能的明日之星。
+回首國內，ezPeer或KKBOX等音樂訂閱服務也是App Store這次的條款波及的對象，後續是否會跟進加入IAP值得我們繼續關注。
+
+
+
+
+
+ Tagged with: In-App Subscription 

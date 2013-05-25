@@ -1,0 +1,39 @@
+
+
+
+根據華盛頓日報上看到的報導，美國聯邦政府上週批准了十一家雲端運算（Cloud Computing）技術服務供應商，若任何的聯邦機構需要購置相關服務，可以透過這個簽訂的一籃子採購協議（Blanket Purchase Agreement）直接聯繫這幾家廠商，購買相關的雲端服務。
+這個協議透過聯邦政府出面作莊，在政府專用的雲端應用平台apps.gov上，引入IaaS模式（Infrastructure as a Service），提供一個有彈性的資訊基礎建設（Infrastructure)，各級政府使用這個服務提供的雲端資料儲存空間，或是上頭的虛擬機器，還是網頁伺服器服務，用多少才付多少錢，而且臨時有大需求也可隨意擴增容量或速度。
+政府各單位做的網站一年很多個，大部份的規劃都會購置完整的資安與電腦容量，但很多投資其實是重疊的。透過實現apps.gov與IaaS。必可增加IT預算的使用效率與創新服務。
+很酷，歐巴馬政府果然有一套，走在世界的潮流前面。
+接下來讓我們關心一下批准的廠商名單。透過進一步的調查，瞭解這些廠商提供的服務內容：
+1. Apptis
+這是一家已經承包政府專案超過二十五年的系統整合商。採用Amazon的雲端服務作為底層，加上自行開發軟體的能力，提供平台與應用的服務。
+2. AT&T
+對於政府單位，AT&T提供永續營運，安全無虞的機房網路等的管理服務，並能提供先進的Call Center與行動通訊連結服務。這個角色跟中華電信頗為類似。
+3. Autonomic Resources
+一個做機房自動化與Open Source的專業整合服務商，也是專接政府專案。背後採用Carpathia Hosting, Enomaly與Dell的整合方案。
+4. CGI Federal
+系統整合，顧問及流程方面的專家。從名字就看得出來也是專接政府專案的公司，來自加拿大。
+5. Computer Literacy World
+合作的廠商有軟體開發商Electrosoft Services, 電信網路公司XO Communications 以及 Secure Networks
+6. Computer Technologies Consultants
+提供網路機房代管服務，雲端機房的合作夥伴是SoftLayer Technologies
+7. Eyak Technology
+專精政府的主機代管服務。
+8. General Dynamics Information Technology
+擁有一萬六千名員工的IT技術公司，主要客戶為軍方。採用Carpathia Hosting的雲端機房方案;
+9. Insight Public Sector
+專門提供政府採購如Adobe軟體，桌機或筆電產品的公司，也作諸如機房或雲端服務等的專業服務。與Microsoft合作;
+10. Savvis Federal Systems
+專業的機房廠商。
+11. Verizon Federal
+電信網路服務商。
+以上名單看到的廠商有大有小，包括雲端運算平台商一哥Amazon;或是電信大咖 AT&T 與 Verizon；再不然就是跟國防部關係良好的General Dynamics。這幾個以外，其他廠商則相較起來小的多。其中數個透過兩家公司以上合作的方式進到這個採購合約裡，最基本的組合是懂政府與有相處經驗的公司帶著有技術能力的公司，攜手來為政府服務。
+其實apps.gov作為美國政府雲端運算軟體即服務(SaaS)的入口網站已經出現有一年了，但各單位須自行去談妥雲端機房廠商，並走公家招標流程，普及情況較為緩慢。這次的十一家雲端架構的廠商名單出列，等於是有立即可採購的對象。加上了IaaS模式的apps.gov應可進一步加快政府單位對雲端運算的採用速度。
+台灣有中央信託局電腦集中採購合約，對電腦設備提供類似的一籃子採購服務，讓政府機關不用再各自協調標案而能簡易地進行電腦設備採購。在這樣的經驗上，或許美國的apps.gov關於政府採用雲端運算SaaS與IaaS兩個模式的案例與做法值得我們政府參考看看。
+
+
+
+
+
+ Tagged with: 美國, 雲端 

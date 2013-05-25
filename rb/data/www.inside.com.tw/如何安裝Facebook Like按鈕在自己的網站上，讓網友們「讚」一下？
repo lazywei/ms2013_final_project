@@ -1,0 +1,71 @@
+
+
+
+在Facebook讓你可以到更多網站「讚」一下上提到，包括CNN、IMDb、ESPN等全球知名網站都已經成為Facebook的合作夥伴，未來在這些網站上的內容都可以直接以Like按鈕讓網友們表示意見並且分享給自己在Facebook上的社群好友。
+Facebook已經提供了與Facebook Like的外掛程式供網站經營者們安裝：Facebook Social Plugins，在這個頁面上可以看到許多社群小工具，本站會在未來陸續為您介紹。
+安裝「讚」的按鈕對於網站經營者來說有兩個好處：
+提供一個基本的互動介面給網友表達意見，同時這樣的表達形式只有正面而無負面效果（不會有被噓的風險，頂多是沒人推）
+網站的任何一個頁面都可能因為被網友送了一個「讚」而在Facebook上曝光，進而帶來更多新的流量
+安裝Like按鈕到自己的網站上非常簡單，首先請到Like功能的頁面，會看到以下的設定介面：
+
+主要是針對呈現的方式進行基本的設定，設定完成後選取Get code就可以看到Iframe或 fbml的版本，將程式碼複製到自己的頁面上便可出現「讚」的按鈕，分享後可以看到以下效果。（若程式為動態產生，請記得將每個頁面的網址放進Facebook所提供的語法，而且應該很快就會有網友製作出各種部落格外掛可以使用）
+
+若您想自定頁面出現在Facebook頁面上的結果，根據網頁上的說明您可自行設定以下兩個參數：
+og:title -- The title of your page; if not specified, the title element will be used.
+og:image -- The URL of the best picture for this page. The image must be at least 50px by 50px and have a maximum aspect ratio of 3:1.
+使用的方法將以上兩個參數定義在meta標籤中，例如：
+<meta property="og:title" content="The Rock" />
+<meta property="og:image" content="http://ia.media-imdb.com/rock.jpg" />
+Facebook的願景是讓未來Web上的世界「預設就是Social化的」，從最輕量化的可以Like，到可以Facebook Connect，或許未來Facebook的影響力確實會持續發酵，無論是全球龍頭Google、Yahoo，或是台灣的Yahoo!無名小站，都勢必會受到衝擊並持續努力來面對。身為網站經營者，在這波浪潮中透過網站的改版、調整，搭配Facebook以及各種社群媒體的成長，究竟會有何效益，讓我們拭目以待。
+倘若這篇文章對你有用，別忘了「讚」一下，給我們一點點鼓勵。 :)
+
+
+
+
+Tiffany Yang:
+August 13th, 2012 at 5:34 pm
+ good
+
+
+Anthony Chan:
+August 31st, 2012 at 6:46 am
+ Good
+
+
+App網頁設計:
+October 25th, 2012 at 2:07 pm
+ 讚
+
+
+EasyBuy GroupBuy:
+December 12th, 2012 at 10:08 am
+ Easybuy.com.hk
+
+
+Renren Liang:
+December 13th, 2012 at 7:06 pm
+ this is cool!
+
+
+Gaojin Hsu:
+December 25th, 2012 at 6:03 am
+ 赞
+
+
+Yu Sky:
+January 25th, 2013 at 3:27 am
+ 你好. 我想问一下. URL To Like 是写自己的网站还是写FACEBOOK的链接?
+
+
+Emily Ng:
+January 29th, 2013 at 11:51 pm
+ http://www.facebook.com/pages/%E6%9C%80Love%E5%88%86%E4%BA%AB/204994872958631
+
+
+钱云志:
+May 9th, 2013 at 7:22 am
+ 不错。
+
+
+
+ Tagged with: Facebook social plugins 

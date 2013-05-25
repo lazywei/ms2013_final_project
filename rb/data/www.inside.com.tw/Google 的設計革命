@@ -1,0 +1,39 @@
+
+
+
+做為一個以數據（data）為本的公司，Google 在設計上有著不怎麼輝煌的過去。公司的第一位視覺設計師 Douglas Bowman 就因無法忍受這種文化而離開。不過，自從 Larry Page 擔任 CEO 以來，公司的設計出現了令人贊賞的突破。從 web app 到行動 app，Google 似乎漸漸找到了適合自己的視覺語言，並且開始以統一的風格來打造使用者體驗。在此前的一些報導中，我們已經了解到，這是 Larry Page 在公司內部推動產品重設計，以及各部門設計師合作的結果。The Verge 最近深入 Google 內部，與他們的設計師們進行交流，得到了更多的內幕資料。
+根據 Google 搜尋首席設計師 Jon Wiley 的說法，Larry Page 就任 CEO 後的一個命令就是重新設計所有產品。Jon Wiley 有兩個月的時間把 Google 搜尋改頭換面，並且開始從整體上思考 Google 的整體風格，「我們必須使所有產品變得漂亮」。
+Jon Wiley 將這項計劃命名為「Kennedy」，公司的資深設計師們聚一起，定下了一些設計上的原則，同時還得到 Google 創意實驗室的協助。Google 創意實驗室集合了公司紐約辦公室的頂級設計師，做了絕佳的產品行銷而廣為人知。
+「Kennedy」計劃影響了 Google 的一系列產品。在 Larry Page 擔任 CEO 的三個月後，Google 發表了全新版本的 Google 搜尋、Google 地圖、Gmail 和行事曆。接下來，Google 發表了 Google Now 以及一系列 iOS 應用（Google+、Youtube Capture、Chrome、地圖）。這些產品都遵循了「Kennedy」計劃產生的設計理念。Jon Wiley 說，曾經的布朗運動已經變成了設計理念的流動溪流，雖然路上會有分支，但都流向一個統一的方向。對此，Android 使用者體驗主管 Matias Duarte 說，「Google 正在經歷一場設計革命」。
+在這次採訪中，The Verge 網站了解到，Google 仍然沒有一位總設計師。不過，公司有統一的流程來貫徹設計理念。「Kennedy」計劃中誕生了一個非常重要的團隊：UXA。團隊的成員是紐約的一些設計師。Google 並不公開提到 UXA 團隊，這使它顯得有些神秘。UXA 是一個小團隊，但是它和 Google 重要產品的頂級設計師們進行日常合作。它的任務是「設計和開發一套真正的 UI 框架，將 Google 應用轉變為對使用者可用的漂亮、成熟、易接近和統一的平台，」並將這種理念貫穿到所有的產品中。
+關於設計師們的交流，Jon Wiley 說，「我們走到一起，我們吃午餐，我們不停地交流」。Google 地圖行動版首席設計師 Darren Delaye 說，開發 iOS 應用的設計師們會討論產品獲得的反應以及設計上的一些嘗試。
+要了解 Google 的設計流程，Google Now 是一個很好的切入點。Android 的產品主管 Hugo Barra 曾經告訴 The Verge 網站，它開始於一項 20% 計劃，結果變成了更加龐大的計畫。
+「當談論設計、設計文化的崛起以及 Google 的設計流程時，Google Now 從許多方面來說都是是一個很好的例子」，Android 使用者體驗主管 Matias Duarte 說。Google Now 團隊需要將 Google 不同的服務融入一個界面之中，而且「看起來是 Android 的自然延伸，同時不失去 Google 風格」。為此，Android 團隊采用了與「Kennedy」計劃一樣的流程，在整個公司內部進行合作。
+「我們和 Jon Wiley 的搜尋團隊緊密合作，因為他們構建的是 Google Now 的一大部分——知識部分。我們和倫敦的 Android 團隊緊密合作，他們開發的是語音部分。在 Moutain View 的 Android 團隊可以了解你的位置訊息。我們聚在一個很大的作戰室，攪拌，混合，重新開始，試圖創造出最簡單的體驗。」
+Duarte 強調了字體的重要性。Google Now 使用了大量的空白，而不是人工的分割。「我們真正想要的是大膽的字體、空白和大圖片帶來的強調作用、風格和層次感，並呈現在我們給予你的卡片上」。這是 Google 的新風格，並且會在整個行動產品中推行。
+Google Now 關鍵的設計隱喻正是他以前在 webOS 上使用過的卡片。它完成了形式和功能的統一。Google Now 的設計完全有可能影響整個 Android 設計。Duarte 說，Android 的設計指導 Holo 是非常靈活的，它可以處理 Google Now 提供的設計線索，因為 Holo 不強迫視覺和感覺上的一致。
+Google Now 的卡片，以及」Kennedy「計劃產生的理念，為 2012 年的所有重設計定下了調子：一種現代的內容框架，它拋棄了笨拙的人工陰影，代之以乾淨的線條、生動的顏色和高度可讀性的字體。卡片影響了搜尋結果上的知識圖譜、Google+ 的賬號界面以及 iOS 上的 Google 地圖。
+Jon Wiley 說，Google 風格應該介於蘋果的擬物化和微軟的 Metro 設計之間。新的 Google 有深度，但並不浮華。
+對於設計師來說，最大的挑戰是設計一個跨平台的界面，同時保持原生感。Gmail 的首席設計師 Jason Cornwell 說，Gmail 重設計的目標是「使 Gmail 在網路、Android 和 iOS 上有統一的視覺感，但是要找出這些平台的特別元素，將其和 Gmail 推行的整體風格融合起來。」
+Gmail 的 iOS 版經過了多次重設計，才找到了正確的方向。應用上有一個表示新內容加載的「spinner」動畫，其靈感直接來源於 Google+ 上獨特的下拉動畫。從這個小細節裡，可以看到 Google 不同產品設計團隊的合作。
+Google 地圖 iOS 版是新設計理念的實踐。Google 地圖行動版的首席設計師 Darren Delaye 說，這個全新起步的產品是一次非常好的機會，「我們可以試驗、起步，做出全新的東西」。Google 地圖 iOS 版結合了「Kennedy」、Google Now 和 Google.com 的許多元素。許多人認為 iOS 版的地圖甚至超過 Android 版，對此，Darren Delaye 說，這兩個應用是同一個硬幣的兩面，反映的是不同時間段的 Google。他說，地圖的成功之處並不是它的界面，而是你操作步驟是否足夠簡單。
+Google 地圖 iOS 版最完整展示了 Larry Page 的願景：簡單、有用、賞心悅目的設計。它展現出 Google 的一種新趨勢：跨平台、跨團隊和跨產品的合作。「每個人的工作都基於 Google 最新的做法」，Daleye 說，「當產品中出現了新的或有意思的東西，而且可以被廣為採用的話，我們就會把它們放入整體的設計語言中」。他說，這是「我們開放文化的一個特性」。
+在採訪中，每一個人都會重復這樣的話，「一個簡單、漂亮、有用的 Google。」Jon Wiley 說，不同團隊開發的應用，都是「Google 化」的，「這只是通過彼此交流做到的，而不是跟隨嚴格的設計規則。」
+Android 使用者體驗主管 Matias Duarte 說，「我們正在 Google 整體內部緩慢構建一個真正的設計文化。團隊是獨立的，但是交流、友情和合作正在不斷成長。」
+與 Eric Schmitt 擔任 CEO 不同，Larry Page 更樂意讓人來做出設計決定，而不是數據。不過，Google 的設計過程仍然是自身文化的體現，Larry Page 並沒有進行微觀管理，他讓員工處理具體的設計過程，同時用核心的設計師進行指導。對於 Google 的設計革命，The Verge 所下的總結是：
+如果說 Eric Schmitt 時代最為人所知的是「不作惡」，或許 Larry Page 的 Google 很快就會以「不醜陋」來定義了。
+
+
+
+
+Yi-Hung Peng:
+January 28th, 2013 at 4:54 am
+ 難怪最近很多Google的東西都變漂亮了XD
+
+
+Darcy Tsai:
+January 28th, 2013 at 8:26 am
+ 原始內容 http://www.theverge.com/2013/1/24/3904134/google-redesign-how-larry-page-engineered-beautiful-revolution
+
+
+

@@ -1,0 +1,119 @@
+
+
+
+(圖：筆者透過Skype恭喜Skype兩位創辦人....)
+美金85億，Microsoft併購Skype
+今天(美國時間五月10日)可能是所謂的好日子，好不熱鬧，一年一度的Google I/O Developer conference於San Francisco隆重登場，是科技網路媒體爭相報導的題材。但此同時，於San Francisco幾條街之隔，同樣也發生重量級的PR事件，就是Microsoft宣布以美金85億併購Skype。
+Microsoft的PR頭竟說 ”heard there wasn’t much happening today.”，所以選擇今天開記者會，顯然故意要漠視Google的存在(大概也想藉此消遣一下Google於這次追逐Skype中失利的窘境吧)，不過這麼大條的新聞，於美國科技重量級blogger Om Malik在五月8日首先揭露除了Facebook與Google之外，Microsoft也加入Skype併購談判的行列後(Om果然是大哥大，不僅有內線消息，且一言九鼎，消息完全正確)，這件事情已經是紙包不住火，尤其是在些大公司的併購競賽中，一分一秒都很重要，一旦得手，當然要儘快發佈，以免節外生枝。筆者於四月中這篇inside文章中曾提及Skype可能delay IPO以求出售，沒想到事件果然是朝這個方向快速發展至今成真。
+這是第二次Skype被併購了
+這是Skype於2003年創辦以來第二次被併購，前一次是2005年九月被eBay以美金41億元併購，事隔五年多，歷經幾次高層以及股東的重整，再次被併購，金額double。eBay當初併購Skype時，雖然其自圓其說認為Skype可以complete其電子商務(拍賣)重要的一環：通訊(於此之前已經完成Paypal 金流與UPS/USPS物流的整合)，稱這個併購是Power-of-Three(感謝筆者好友Phil Wolff還保存這份eBay的presentation)，但eBay並未好好地將Skype整合於其電子商務的服務中，以致於eBay的買賣家無法便利的使用Skype，Power-of-three之說大大折扣。
+而且因為這宗併購案的金額中，有一大筆美金15億元是所謂的bonus獎勵金，亦即Skype需要於一定時間內達到設定的財務target，創辦人才領得到，這本來是美意的incentive program，後來卻演變成Skype刻意追求營收的成長，忽視了其核心的價值，因此擴張的毫無章法且大亂陣腳。這些原因讓這個併購成了近年來internet business併購案最常被討論的一宗敗筆(這是eBay前CEO Meg Whitman所主導的，也成了她退休後揮之不去的夢靨)。不過eBay藉這次Microsoft併購，加上去年十一月Skype重整時出脫了70%的Skype股份，Om幫eBay算了一算，eBay於這宗併購案上整體而言還是賺錢的。賺錢是其次，對eBay重要的意義是，從此可以專注於電子商務的本業了(因為eBay實在不知道要如何經營Skype)。
+Skype創辦人一屋二賣？？
+至於Microsoft為何要花這麼多錢買一個目前還在虧損中的Skype，有很多說法，有興趣的讀者可以閱讀Om或是TechCrunch的報導，都有很獨到且精采的分析，筆者不在此重複與贅述。而筆者以曾參與過Skype於台灣的發展與長期觀察Skype的過程，於此想要分享一個小小的心得，是跟Skype創業者高明的商業布局有關。眼尖的讀者會看到Om這篇文章中最後提到：” Niklas Zennström and Janus Friis, the co-founders, with their 14-percent stake, take home about $1.19 billion. Damn, these guys know how to double-dip!”(語氣看不出是恭維還是…)，可能會有一個疑問，Skype於2005年賣給eBay，創辦人不是應該賣光持股了，為何2011年這次，他們又能賺了一筆？
+高明的商業布局
+Skype不是H.264或者是SIP的VOIP，而是利用P2P技術來完成real-time的voice communication，P2P於file sharing上的應用早於Skype之前就很普遍，但要做到real-time且有一定的voice quality，這是創舉，也是disruptive，即便至今還是無人能匹敵。Skype因此用很低的成本維持一個很大的customer base與通訊量，如果是用SIP的技術來開發，以同樣的通訊量來計算與business model來算，大概全世界沒有幾家電信公司可以run這樣的事業。
+Skype的兩位創辦人，把這門技術稱為”Global Index”，而擁有這個技術的公司，不是Skype，而是同樣由這兩位創辦人創辦的Joltid Ltd。所以商業上的安排是，Joltid授權Skype使用”Global Index”的技術來開發Skype software(註：失敗的Joost也是這樣的模式)，亦即Skype並未擁有最核心的P2P技術。2005年eBay併購Skype時，是買Skype的software，brand，以及customer base等properties，並沒有連同Joltid一起併購，所以eBay並沒有因這個併購案取得P2P的技術。eBay這麼大的公司，有一群最優秀的經營團隊與法律顧問，花了大筆銀子，難道不知道這個P2P核心技術的重要性嗎？怎麼看都覺得怪異。當時的rumors是，可能要一起買Joltid太貴了而作罷，而且eBay覺得自己有能力開發這樣的技術。
+這樣個狀況，後來演變成於2009年九月Skype兩位創辦人以Joltid的身分告eBay(Skype)違反雙方P2P licensing agreement，侵權access其P2P的技術(很詭異吧，Skype創辦人告Skype)，Joltid要停止授權，Skype還因此於其為了IPO的SEC Filing文件上特別聲明此dispute將可能會影響Skype的部分營運與通訊品質，但Skype已經著手開發類似的技術來support。
+很顯然Skype所仰賴的這個P2P技術，真的不是隨隨便便就可以被取代的，因為於2009年11月eBay與其他Skype大股東終於跟Joltid達成協議，以Skype 14%的股權以及董事席位交換了Joltid這個P2P的技術，這也是今日Skype兩位創辦人藉由Microsoft的併購Skype再度獲利了結的始末，Double-Dip！。這次Microsoft不會重演eBay不堪的歷史，且取得Joltid這個關鍵的P2P技術，絕對是這個併購案的重大benefit。
+Joltid分別授權P2P給KazzaKazaa(Skype兩位創辦人最早的創業，為P2P File sharing software，但因使用者多用來share music files，因此被美國唱片公司聯合提告，創辦人一度無法進入美國，後來官司無罪)，Skype以及Joost，雖然KazzaKazaa吃官司，但不影響創辦人開發Skype；雖然賣掉了Skype，但可以繼續開發Joost。這樣的商業布局，將產品/服務/品牌與核心技術切割為不同的資產，不見得是完全著眼於之後的商業利益(當然有最佳)，但確實可以讓核心技術有更多的彈性與發展的空間。所以，各位有心創業或創業中的讀者，若您自認產品或服務的背後是一個獨門的核心技術來support，且這個核心技術未來可以開發其他不同的產品，Skype兩位創辦人成立Joltid授權核心技術的作法，是一個很好的case study值得參考。
+小記
+這次Microsoft半路殺出程咬金，從最早傳聞有興趣且已經進行接洽的Facebook與Google中奪走Skype，最嘔的應該是Google。從2005年Skype第一次到這次的被併購，Google都是積極的併購者，但都以失敗收場。Facebook早已經與Skype於產品上有深度的合作了，加上Microsoft又是Facebook的股東，Microsoft吃了Skype對Facebook其實有正面的幫助，看來Google真是是最大的輸家。
+
+
+
+
+Billy Hsu:
+May 11th, 2011 at 2:57 am
+ 這樣的合併
+對Microsoft和NOKIA合作
+會不會有加成效應?
+
+
+張碩思:
+May 11th, 2011 at 3:02 am
+ 學習了！原來創辦公司該這樣辦！這樣的布局實在令人充滿想像！
+小記：奪標的人不一定贏啊! XD Google 只出價40億，Facebook 早就與Skype合作了所以也只是意思意思，微軟居然花了85億！我想Skype, Facebook 和 Google 都在偷笑 :P
+Facebook 早與Skype 深度整合加上微軟是他的股東之一所以沒差；Google 有Google voice ，Android 3.1 也支援視訊對話，Skype 的技術對他來說也不是無可替代；反之微軟花這麼多前買下Skype 令人匪夷所思＠＠ OS 的社群化跟Skype 實在很難聯想在一起...
+我覺得Win 8 要是沒有與Facebook 或是 Kinect 體感技術深度整合的話，Windows 很快就要成為歷史了...
+
+
+于文強:
+May 11th, 2011 at 3:10 am
+ typo reminder: Kazaa.
+
+
+曾大鍵:
+May 11th, 2011 at 4:03 am
+ 高明
+
+
+Sam Yeh:
+May 11th, 2011 at 5:07 am
+ 值得參考~
+
+
+Justin Huang:
+May 11th, 2011 at 6:07 am
+ 所以Microsoft買下之後，會直接整合進Lync吧？然後下一步是和SharePoint Workspace整合，改進P2P效率？最後打造P2P版的SharePoint/Office平台？
+這樣的話確實是有助於UC的市場啦（挖）
+
+
+Harrison Lien:
+May 12th, 2011 at 5:29 am
+ 真正有趣的是品牌與核心技術竟然在第一次分開，真是厲害!
+
+
+Chen Lin:
+May 12th, 2011 at 9:36 am
+ 就只能夠說合併是應該的
+
+
+Yifang Lin:
+May 12th, 2011 at 5:48 pm
+ 如果只是因為討厭Microsoft就感覺對此新聞的不爽，自認很小氣，但寧願如此，因為太討厭了。
+至於，skype兩位創辦人只能以佩服以三個字送他們：“有遠見”
+
+
+陳建文:
+May 15th, 2011 at 4:05 pm
+ 原來還有這招，厲害。
+
+
+許益銘:
+May 16th, 2011 at 12:06 am
+ 哇, 好厲害....
+不過, 為何軟體技術也能成為專利呢? 誰能回答我? >"
+
+Akamonet Huang:
+May 16th, 2011 at 5:32 am
+				p2p 技術的開發真的有一定的難度，以  hd radio.net 這個軟體來說，p2p 串流引擎花了兩年左右才到達比較穩定的階段，改版真的是不計其數: http://hdradionet.wordpress.com/.
+				
+
+Jing Chen:
+May 16th, 2011 at 11:40 am
+				Very smart
+				
+
+趙政宏:
+October 30th, 2011 at 8:39 am
+				我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+				
+
+趙政宏:
+November 10th, 2011 at 2:53 pm
+				我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> happyball008.idv.st
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+				
+
+Violet Kuo:
+November 8th, 2012 at 2:22 pm
+				值得參考
+				
+
+
+
+
+                

@@ -1,0 +1,24 @@
+
+
+本文整理自 Facebook Developer Blog: December 2009 Platform News
+
+在2009年即將結束前釋出了幾個重要的更新，包括新的JavaScript SDK、stream publishing政策、stream API methods、四個新的FQL資料表、新的Dashboard API。
+新功能（New Features）
+釋出四個新的FQL tables: family, developer, video, video_tag
+釋出一個 early version 的 Dashboard API並且已經改善了之前在測試期間使用者反應的一些問題與建議；您可以查看 developer roadmap 來得到更多詳細的資訊。
+若您的公司建立了高品質的 Facebook Connect 網站、Facebook 應用程式或是 Facebook 專屬頁面，您希望能更進一步與更多的客戶合作以擴張您的版圖，您可以申請 Preferred Developer Consultant Program.
+更新（Updates）
+目前針對stream已經有幾個重要的更新（使用者、粉絲專頁的 News feeds 以及塗鴉牆）
+新的 Feed form 政策：Feed form只能在使用者進行特定的動作後出現。進一步的資訊請看 Developer principles and Policies 以及 stream roadmap。
+Streamlining publishing methods: 從2010年1月5日起，您只能使用下列幾個函式來發送內容到Facebook上（stream.publish, FB.Connect.streamPublish, and Facebook.streamPublish
+Action link: action links往後不可包含句號(.) 字元以及驚嘆號(!)
+
+目前已經更新開放源碼的 Facebook Connect JavaScript SDK。並且增加某些 XFBML tags 的支援以及 advanced data layer 來優化 FQL 查詢。您可以從最新版的文件查閱相關資訊。
+公告（Announcements）
+f8 2010即將於2010年四月21-22日兩天舉辦。f8 Page連結。
+
+
+
+
+
+ Tagged with: facebook動態, facebook開發 

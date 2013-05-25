@@ -1,0 +1,53 @@
+
+
+筆者在前幾篇文章中曾經談過HTML5在影片播放上與Flash相比之下的優點，也提到現在許多先進的瀏覽器、網站均已經開始使用HTML5作為影片播放。而在這篇文章中，筆者將會在簡短的篇幅內介紹如何使用HTML5的標籤來播放影片，並且討論跨平台的播放方法。
+Safari、Chrome
+這在一次的實做中，我們將先採用Apple Safari跟Google Chrome作為練習的對象，並逐步擴展所支援的瀏覽器。之所以使用Safari/Chrome，乃是因為其對於H.264編碼器提供了完整的支援，而H.264證是目前iPad/iPhone上唯一支援的編碼格式、也是大多數數位相機、攝影機所拍攝出來的格式。
+要使用H.264作為影片播放，首先我們當然得先取得H.264的檔案，誠如前面所提及的，若是你是從手機、攝影機或照相機等裝置拍攝影片，那大多數的影片便是H.264格式。而若是其他來源的影片，則可以參考網路上眾多的轉檔教學先行進行轉檔。
+在HTML5中的影片播放均得透過標籤，架構大約如下：
+<video width="640" height="480" poster="_YOUR-POSTER_PATH_.JPG" controls>
+    <source src="_YOUR-FILE-PATH_.MP4" type="video/mp4"></source>
+</video>
+我們可以看到在<video>標籤中存在著許多不同的屬性，如下：
+width/height -- 長寬
+poster -- 影片播放前的預覽圖
+controls -- 開啟影片控制功能、像是快轉等
+autoplay -- 自動播放
+而下方的<source>標籤自然就是記載你影片檔案所存放的路徑，這樣就能正常使用了！
+Firefox、Opera
+筆者前一篇談HTML5影片播放的文章曾經提過，由於H.264並非免費開放的授權，故Firefox/Opera雖然支援HTML5影片播放，但source並不能使用H.264作為影片的格式、而是使用OGG作為影片格式。
+聰明的讀者可能已經注意到，在HTML5中的標籤中含有可以指定影片來源，所以我們只需要在H.264的後在新增一個OGG的影片來源就可以了！
+因此程式碼變成如下：
+<video width="640" height="480" poster="_YOUR-POSTER_PATH_.JPG" controls>
+    <source src="_YOUR-FILE-PATH_.mp4" type="video/mp4"></source>
+    <source src="_YOUR-FILE-PATH_.ogv" type="video/ogg"></source>
+</video>
+這樣一來，當使用者使用iPad/iPhone或是其他各種支援H.264的瀏覽裝置讀到這段程式碼時，便會優先使用H.264格式的檔案，若是使用的瀏覽器無法讀取時，則會跳到下一則<source>所提供的ogg格式檔案作為播放。
+Internet Explorer與其他
+但若是遇到完全不支援HTML5的瀏覽器時又該怎麼辦？別擔心，我們可以在<video>標籤內的最後放入無法播放影片時的替代選項，像是顯示影片下載連結、或是提示使用者更換瀏覽器播放，或者是使用Flash作為最後的播放選擇。
+透過加入Flash的支援，便可以幾乎確保所有瀏覽裝置用最佳的影片播放方案。程式碼如下：
+<video width="640" height="480" poster="_YOUR-POSTER_PATH_.JPG" controls>
+    <source src="_YOUR-FILE-PATH_.mp4" type="video/mp4"></source>
+    <source src="_YOUR-FILE-PATH_.ogv" type="video/ogg"></source>
+    <object width="640" height="480" type="application/x-shockwave-flash" data="_DO-YOUR-FLASH-EMBEDED">
+    </object>
+</video>
+在 <object>中，你可以如同一般的Flash嵌入一般的自由設定、加入<parms>標籤。或者是你也可以直接加入YouTube、Vimeo等外嵌程式片段。
+範例
+以下範例為HTML5的影片播放實做，只提供H.264的檔案編碼，還請各位讀者使用Safari或Chrome等瀏覽器瀏覽。
+結論
+在這一次的內容中，我們簡單的介紹了如何透過HTML5在網頁中加入影片播放，並且使用Flash作為IE相容的解決方法。若是讀者有任何疑惑、心得，還請留言與我們討論！
+參考資源
+Video for Everybody
+SublimeVideo HTML5 VideoPlayer
+
+
+
+
+Jean Lin:
+January 9th, 2013 at 8:17 am
+ 您好~ 這篇文章真是受益很多。其中想問 的 data="_DO-YOUR-FLASH-EMBEDED 這邊應該輸入甚麼? 網頁只加入一個MP4檔，能讓他自動轉換為FLASH而在IE撥放嗎? 我目前測試了您的語法，在PAD、安卓系統+CHROME都是可以撥放影片沒有問題。但如何能讓同一檔案在IE上也能正常撥放呢? 再次感謝解惑~ :)
+
+
+
+ Tagged with: H.264, html5, ogg, video 

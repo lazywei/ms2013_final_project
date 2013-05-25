@@ -1,0 +1,47 @@
+
+
+
+ 
+日前，新聞指出「遭Google施壓 宏碁與阿里雲手機發表會意外喊卡」，引一起陣嘩然，網友對於Google 的處置都非常的驚訝。關於阿里雲一事，各方都有不同的猜測。由於之前 Acer 和Google 沒有發表聲明，不免使人懷疑這件事是否屬於炒作。不過，Google 對這件事情發表了的最新聲明可以證明其中並無炒作，的確是Google 對 Acer 施加了影響。
+根據 The Verge 的報導，Google的聲明如下:
+相容性是Android 生態系統的核心，確保了開發者、製造商、和消費者一致的體驗，不相容的Android 版本，比如阿里雲，會削弱生態系統。所有開放手機聯盟的成員都承諾開發統一的Android 平台，而不是發佈無法相容的Android 設備。當然，這不會阻止開放手機聯盟的成員參與其他競爭性的生態系統。
+這是Google 第一次對開放手機聯盟成員做出警告。在此之前，開放手機聯盟給人的感覺一直是鬆散的組織，沒有什麼責任存在，這次的事件證明，開放手機聯盟成員是有限制存在的。從這次事件，還可以看出，Google 目前對Android 相容性的重視態度，顯然阿里雲系統已經超出了Google 所容忍的範圍。當然，那些不屬於開放手機聯盟的成員，比如亞馬遜或RIM 就不會受到這樣的限制。
+今天，Android部門主管Andy Rubin在android官方部落格發表了一篇文章《相容性的好處和重要性》，雖然沒有提到最近的阿里雲事件，但是發表的時機卻很有深意。
+在文章中，Andy Rubin 首先強調了良好生態圈的重要性，而開放手機聯盟的建立，就是為了創造一個開放、良性的生態圈，Android 間的不相容是破壞生態圈的重要因素之一。什麼是不相容，Andy Robin 的解釋是：
+設想這樣一種狀況，在銷售的每個手機上，平台都有一點不同。這種不同足以導致Google 地圖在一個手機上運行良好，另一個手機上運行非常緩慢。讓我們舉個例子，Android 上某個API 是這樣實現的，當螢幕上沒有任何動作的時候，使手機休眠幾毫秒，以提高電池續航能力。這樣一個功能的API 原型看起來像是這樣的：SystemClock.sleep(millis)，其中的參數millis 是設備休眠的毫秒數。
+如果某個手機廠商不正確的使用了SystemClock.sleep()，將參數Milliseconds 換成了Seconds，手機休眠的時間將比預期長1000 倍！這個廠商的手機在執行Google 地圖時候會非常糟糕。如果因為不相容，導致應用程式不能在不同設備間正常執行良，消費者會離開生態圈，接著就是開發者。良性生態圈會結束。
+Andy Rubin說，Google希望在為設備提供商提供區分性的同時，避免開發者和消費者遭受不相容的困擾。為此，Google提供了免費的「相容性測試工具包」，（相容性測試包遵循Apache協議，點擊這裡了解）這確保不同廠商的設備有相容性。
+雖然Android 是免費使用的，但是只有相容性設備才能從完全的Android 生態圈獲益，加入手機開發聯盟的成員，應該構建統一的Android 平台，而不是一堆不相容的版本。
+【更新】Andy Robin在 Google+發佈對阿里雲系統的看法：
+我們很吃驚的看到阿里巴巴集團首席曾明的話「我們想要做中國的Android」，但事實上阿里雲系統使用了Android 的runtime，很顯然是從Android 衍生的。根據我們對http://apps.aliyun.com 上應用程式的分析，這個平台試圖去做到相容，但是沒有成功。與Android 相容是很容易的，開放手機聯盟提供了所有的工具以及執行的細節。
+ 
+
+
+
+
+Ben Liong:
+September 15th, 2012 at 9:59 am
+ So much for Android not having central point of control
+
+
+Li Peng:
+September 16th, 2012 at 1:07 am
+ I supports Google
+
+
+Lillian Sung:
+September 16th, 2012 at 7:38 am
+ 是說...大團裡頭不可以搞無法融入許多人的小團體....
+
+
+Nelson Duann:
+September 16th, 2012 at 3:18 pm
+ I doubt this stretagy can win.
+
+
+連武夫:
+September 16th, 2012 at 6:01 pm
+ 完全同意Google的關點,分享..
+
+
+

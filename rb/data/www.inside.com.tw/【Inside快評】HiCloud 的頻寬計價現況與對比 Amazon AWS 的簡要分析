@@ -1,0 +1,100 @@
+
+
+
+作者為 Ecowork Inc. 總經理 ：Michael Su，原文出處
+最近包括 @ben-jai 發表的「電費是經營idc的最大成本-搞錯了吧」以及 Inside 發表的「別鬧了，沒有競爭力的台灣 IDC 們」 都有提到頻寬計費的問題，但都還沒有比較深入的針對可能的費用進行預估。
+ 
+我想將 Ecowork 團隊常向合作伙伴簡單試算的內容提供給大家參考，有幾個背景是：
+1. 分析對象為 HiCloud 以及 Amazon AWS EC2 日本東京區頻寬部份
+2. 假設使用量為 330GB 每個月，每日平均為 11GB，其中每日流入服務區的頻寬為 1GB，送出服務區的頻寬 10GB
+3. HiCloud 部份則有分為有購買 300GB 流量折扣包以及完全計量計算。
+4. 另外多計算一個剛 Startup 的網站，每日流量為 100MB，每月流量為 3GB
+5. 美金匯率使用 USD 1 = TWD 30 計算
+6. 不計算 Amazon 贈送的 1GB 免費送出頻寬（對 Amazon 較為嚴苛）
+ 
+HiCloud 的部份的規定如下：
+1. 每 1 GB 要價 TWD 15，送出及流入的流量合併計算
+2. 每日結算當日費用，若不滿 1GB 的以 1GB 計算
+3. 上網包 300GB 折扣價為 3,600 元，超過的照上述費率計價
+
+CaaS 雲端伺服器規格及費用列表
+資料來源：http://hicloud.hinet.net/files/hicloud%20CaaS雲端伺服器規格及費用.pdf
+ 
+Amazon EC2 日本東京區規定如下：
+1. 流入頻寬免費
+2. 送出頻寬每 1GB 要價 USD 0.201，相當於 TWD 6.03
+3. 每月照實際頻寬計價，報表可追蹤到每小時的合計流量
+
+Amazon EC2 Pricing (Asia Pacific Tokyo)
+資料來源：http://aws.amazon.com/ec2/pricing/
+ 
+HiCloud 部份結果及分析：
+1. 沒有購買流量折扣者，每月要價 TWD 4,950 （11 GB x TWD 15 x 30 天）
+2. 有購買 300GB 上網包，每月要價 TWD 3,495（TWD 3,000 + 1GB x TWD 15 x 30 天）
+3. 剛 Startup 的 3GB 網站，每月要價 TWD 450 （因為每日的頻寬不足 1GB，仍然會以 1GB 計費， 1GB x TWD 15 x 30 天）
+ 
+Amazon EC2 日本東京區：
+1. 每月費用 TWD 1,809（10GB x TWD 6.03 x 30 天 ）
+2. 剛 Startup 的 3GB 網站，每月要價 TWD 18.09 （0.1GB x TWD 6.03 x 30 天）
+ 
+總結：
+1. 剛 Startup 的網站，HiCloud 的頻寬費用是 Amazon 日本東京區的 24.87 倍
+2. 沒有購買上網包的 330GB 小型網站，HiCloud 的頻寬費用是 Amazon 日本東京區的 2.74 倍
+2. 有夠買上網包的小型網站，HiCloud 的頻寬費用是 Amazon 日本東京區的 1.93 倍
+ 
+（本文歡迎全文轉貼，但請標示原始出處的網址及作者姓名）
+
+
+
+
+Itia Chang:
+April 18th, 2012 at 4:30 am
+ 而且東京區還是 AWS 裡面收費比較貴的 XD.
+
+
+蔡宗益:
+April 18th, 2012 at 4:35 am
+ 不過AWS的英文介面實在讓人看不懂，有沒有高手出教學XD
+
+
+Tim Wu:
+April 18th, 2012 at 4:59 am
+ 每月超高流量業者還可以選擇 softlayer, 頻寬更便宜https://outlet.softlayer.com/Sales/orderServer/134/14013.
+
+
+鍾坤晉:
+April 18th, 2012 at 5:16 am
+ 據說hicloud是用openVZ，不知道真的假的
+
+
+Ben Jai:
+April 18th, 2012 at 5:25 am
+ 嚴重錯誤: 每天 10G 的資料能做什麼? 這個頁面就 3.5M 了. 10G只能傳 3000 頁. 假設一個 user 看 10 頁, 你只有 300 個 daily active users, 如何賺錢? Google 每個 DAU 每個月賺不到 US$1. 你 300 個 DAU 大概最多每個月賺 US$100=NT3000 就偷笑了. 你能負擔 NT$3495 的 HiCloud 嗎? 薪水也不用付了. 請用每天 1T 再算一次.
+
+
+Yu-Hsuan Lai:
+April 18th, 2012 at 5:25 am
+ 要把 Linode 也拿來比比看嗎 XD.
+
+
+元智 5308 互動科技實驗室:
+April 18th, 2012 at 10:42 am
+ 好屌的中華電......
+
+
+Alex Wang:
+April 18th, 2012 at 11:21 am
+ 還沒把薪水和物價一起算進去比較呢....
+
+
+葉樹青:
+April 18th, 2012 at 3:20 pm
+ 最近連台灣固網的 IDC 也吹起漲價風, 機櫃出租金額漲價幅度高達 20%, 只能夠說台灣的網路優勢與競爭力漸漸不再了, 越來越多的網站使用國外的主機商, 實在是很感慨, 真的很希望 IDC 的經營者能夠看看這些文章與聲音
+
+
+Sheena Lee:
+April 19th, 2012 at 10:27 am
+ HiCloud 的頻寬計價現況與對比 Amazon AWS 的簡要分析
+
+
+

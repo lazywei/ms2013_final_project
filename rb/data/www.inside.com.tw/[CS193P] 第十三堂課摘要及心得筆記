@@ -1,0 +1,91 @@
+
+
+在這一堂的課程中，我們將學到如何在Cocoa Touch上使用Core Foundation和AddressBook這兩個Framework將我們的應用程式與iPhone OS上的通訊錄做結合，創造出更多有趣的應用程式。就讓我們一起來看看吧！
+Core Foundation
+Core Foundation是Cocoa Touch底層的Framework，以C語言為主。其所提供的功能就如同我們常常使用的Foundation Framework一般，一樣有提供Array、String、Dictionary等API。例如：
+NSArray => CFArrayRef
+NSString => CFStringRef
+retain = CFRetain
+release = CFRelease
+事實上，大多數的Foundation Framework API底層也是透過Core Foundation實做的。因此，幾乎兩個Framework的函式和物件都可以通用，如下方程式片段：
+CFArrayRef array = ABAddressBookCopyPeopleWithName(...);
+NSLog(@“%d”, [(NSArray *)array count]);
+NSMutableArray *mutableArray = [(NSArray *)array mutableCopy];
+[mutableArray release];
+if (array) {
+    CFRelease(array);
+}
+而在記憶體管理上，Core Foundation所提供的物件也都有retain count的概念，物件一樣在使用完畢後也得release才行。在Core Foundation的命名慣例上，所有以Create結尾的函式都會回傳已經retain過的物件。
+值得注意的是，C語言並不像Objective-C一樣可以對nil物件呼叫函式，在C語言中，所有的函式呼叫都要先檢查是否不等於NULL：
+CFStringRef string = CreateSomeCFString...;
+if (string != NULL) {
+    DoSomethingWith(string);
+    CFRelease(string);
+}
+當然我們也可以使用Foundation Framework來操作，方便許多：
+NSString *string = (NSString *)CreateSomeCFString...;
+NSLog(@“%@”, [string lowercaseString]);
+[string autorelease]; // autorelease也可以使用
+那 為什麼我們要談Core Foundation呢？原因是AddressBook Framework也是以C語言為基礎，所回傳的物件也都是Core Foundation的物件，所以在我們使用AddressBook的API之前，必須要先熟悉Core Foundation的一些使用方法。
+AddressBook
+在這次的課程中，講者透過打造一個社群網路的網站作為主軸，向大家示範AddressBook的使用方式。而這個應用程式的運作流程為如下：
+從網路下載資料
+搜尋本機中是否已經有對應的聯絡人
+更新資料
+顯示資料
+
+在進行後續步驟之前，我們必須先建立AddressBookRef的物件，這個物件會協助我們連接通訊錄所儲存的資料庫，而這個資料庫是全系統共通的，換句話說，我們可以建立很多AddressBookRef，但最後都是存取同一份資料。如下段程式碼所示：
+ABAddressBookRef ab = ABAddressBookCreate();
+而在AddressBook中，每一筆聯絡人的資料就是ABRecordRef，這裡面包含了聯絡人的所有properties，像是姓名、電話或是頭像等等。每個property會有不同的型別，像是CFString、CFDate等等。而有些property會有多重value，像是E-mail就又可以分成工作的E-mail和私人的E-mail。這些properties都被定義在ABPerson.h裡面，有興趣的讀者還可以參考。
+對於只有單一value的property，可以使用以下程式片段：
+CFStringRef first = ABRecordCopyValue(person, kABPersonFirstNameProperty); // 獲得property
+CFDateRef date = CFDateCreate(...);
+ABRecordSetValue(person, kABPersonBirthdayProperty, date, &error); // 設定property
+ABMultiValueRef則是用來處理多重value的property類別，以一個樹狀的結構呈現，每個不同的value都會有相對應的label，如下圖所示：
+
+而我們可以透過以下API來取得資料：
+CFIndex count = ABMultiValueGetCount(multiValue); // 有多少不同value
+CFTypeRef value = ABMultiValueCopyValueAtIndex(mv, index); // 取得value
+CFStringRef label = ABMultiValueCopyLabelAtIndex(mv, index); // 取得label
+CFIndex identifier = ABMultiValueGetIdentifierAtIndex(mv, index); // 取得identifier
+也可以透過以下API儲存資料，除了設定聯絡人的property之外，我們也需要將整個AddressBook存回系統：
+ABMultiValueRef urls = ABRecordCopyValue(person, kABPersonURLProperty); // 取得原有的URL property
+ABMutableMultiValueRef urlCopy = ABMultiValueCreateMutableCopy(urls); // 建立新的URL property
+ABMultiValueAddValueAndLabel(urlCopy, "the url", "social", NULL); // 加入新的value和label
+ABRecordSetValue(person, urlCopy, kABPersonURLProperty); // 將新的URL property存回聯絡人
+ABAddressBookSave(ab, &err); // 將整個AddressBook存回系統資料庫
+而當完成更新資料後，下一個動作就是要在畫面上顯示聯絡人，而在顯示之前，可以先做排序：
+CFMutableArrayRef people = // 取得存放聯絡人的array
+CFRange fullRange = CFRangeMake(0, CFArrayGetCount(people));
+ABPersonSortOrdering sortOrdering = ABPersonGetSortOrdering();
+CFArraySortValues(people, fullRange, ABPersonComparePeopleByName, (void*)sortOrdering);
+也可以透過Objective-C的Framework：
+[people sortUsingFunction:ABPersonComparePeopleByName context: (void*)sortOrdering];
+而最後，AddressBook也提供了ABRecordCopyCompositeName(person);以取得使用者的名稱。
+以上大概就是簡單的AddressBook操作流程。
+PersonViewController
+當我們需要顯示ABPerson的詳細資料時，ABPesonViewController就會提供很好的幫助，如下圖：
+
+而ABPersonViewController有以下幾種Property：
+displayedPerson -- 顯示的person
+displayedProperties -- 顯示的properties
+allowsEditing -- 是否允許修改
+而當我們要新增聯絡人資料時，則可以使用ABUnknownPersonViewController，當使用者編輯完成之後，會呼叫delegate的方法：
+- (void)unknownPersonViewController:(ABUnknownPersonViewController *) unknownCardViewController didResolveToPerson:(ABRecordRef)person
+透過以上這兩個View Controller，我們就可以完成AddressBook中Person的顯示和新增，更多資料請參考AddressBook Programming Guide for iPhone OS。
+ABPeoplePickerNavigationController
+除了顯示AddressBook的Person之外，有時我們也得提供使用者一個選擇的清單，而這個介面就可以透過ABPeoplePickerNavigationController來完成，如下圖：
+
+想必大家在iPhone平台上開發也有一段時間了，自然可以猜想到這個類別也提供了很多delegate方法，像是當使用者選擇了聯絡人或者是取消時，都會呼叫對應的delegate方法。
+更多的內容請參考ABPeoplePickerNavigationController Class Referecne。
+結論
+在這一次的課程中，我們獲得了許多關於Core Foundation和AddressBook的基本觀念，透過這兩個Framework我們可以將iPhone的通訊錄整合到我們的應用程式中，而不需要另外自行建立資料庫及相關程式。在下一次的課程中，內容將會轉移到iPhone上的多點觸控事件以及相關的使用方法，還請各位讀者敬請期待！
+參考資源
+AddressBook Programming Guide for iPhone OS
+Lecture #13 -- AddressBook
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

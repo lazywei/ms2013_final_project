@@ -1,0 +1,34 @@
+
+
+
+在前陣子LBS相關應用的話題引起了非常多討論，包括Google、Facebook在內也都有越來越多關於地理位置相關的服務出現，Yahoo!當然也不甘示弱，曾經一度傳出想收購Foursquare，不過目前答案揭曉：Yahoo!選擇收購印度尼的LBS網站：Koprol。
+若你還不知道LBS現在有哪些應用，或許你可以先看看筆者過去所分享的五個2010年值得觀望的社群媒體網站（一）：Foursquare一文，有針對Foursquare的簡短介紹：
+Foursquare是一個以地理位置為基礎的服務（Location-based service, 簡稱LBS），使用者可以透過手機（iPhone/Android/Blackberry）將您所在的地點發佈到Foursquare上，比較特別的是，Foursquare的概念是你每到一個定點，例如是一家餐廳、商店、電影院，或是每個捷運站，你就可以check-in這個定點，然後發佈到網路上之後，你就可以看到同一個地點有哪些人也曾經check-in。
+比較有趣的是，Koprol網站早在2009年的Yahoo! Southeast Asia Open Hack Day就亮相了，當時便與Yahoo!相關的服務有不少結合，例如使用Yahoo! BBAuth'、Fire Eagle以及Yahoo! Application Platform。簡報內容如下：
+koprol.com & Yahoo!
+View more presentations from daniel.armanto.
+
+筆者自己也曾經兩度參與Yahoo! Open Hack Day（2008 & 2009），該活動鼓勵所有的開發團隊盡可能的表現各種創意並試圖充分利用Yahoo!的開放平台上鎖提供的資源。兩天的比賽過程中除了可以認識來自全台各地的開發者之外，在最後也可以看到非常多有趣的創意在台上發表。
+在Yahoo! Open Hack Day中，有不少服務甚至都是到了比賽當天才花時間開發出來的，Koprol也不例外，簡報中直接跟大家說：DONE IN ONE WEEK!（不過這顯然是強調整合Yahoo! API所花費的時間，Koprol網站在2009年第一季就上線了）
+筆者從這個有趣的現象，有幾點心得分享：
+Yahoo! Open Hack Day除了可以拿獎品、發揮創意、當產品發表會之外，也是值得認真投入的，說不定參賽作品有機會藉此登上Yahoo!的世界舞台。因為倘若Koprol沒有結合Yahoo!技術，恐怕未必有機會被Yahoo!注意到。筆者在2009年的Yahoo! Open Hack Day結束後，筆者與Richard、Fox的作品也因為有得獎，事後Yahoo!內部也有再次與我們接觸，但顯然我們作品的完成度跟吸引力不足。XD
+Yahoo!面對Google、Facebook、Microsoft、Twitter等強大競爭，顯然需要藉由強化服務來提昇自身的競爭力，收購像Koprol這樣的小朋友，比起收購Foursquare相對顯得划算。現在買了LBS，下一個要買什麼呢？（但效果如何，看來是要觀望了，但Yahoo!總不會是想要買好玩的吧？）
+在台灣的開發者們，或許幫無名小站、Yahoo!奇摩開發新的應用也是一種不錯的方式。
+Koprol網站上對於他們所提供的服務是這麼介紹的：
+You don’t need a fancy smartphone or GPS to use Koprol. Just open koprol.com in your phone browser, check in, and Koprol will tell you what’s happening nearby.
+你不需要使用很棒的智慧型手機來使用Koprol，只要打開手機中的瀏覽器、登入，Koprol就會告訴你附近發生了些什麼事情。
+這類的LBS應用主要是透過行動網路、社群網路以及地理位置提供各種服務，包括周邊店家的資訊、優惠訊息、有哪些朋友來過等等，更多LBS應用的介紹可以參考下列文章：
+五個2010年值得觀望的社群媒體網站（一）：Foursquare
+五個2010年值得觀望的社群媒體網站（二）：Gowalla
+SXSW結束，從LBS大戰的幾個數據看地理位置服務的發展機會
+Foursquare的獲利模式初探
+另外還有更多與LBS有關的文章在此：http://www.inside.com.tw/tag/lbs
+目前Koprol在Alexa上查到的數據，全球排名為60,000左右，在印尼為排名將近1,000的網站。
+
+
+
+
+
+
+
+ Tagged with: koprol, LBS, yahoo 

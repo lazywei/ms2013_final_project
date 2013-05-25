@@ -1,0 +1,23 @@
+
+
+ 
+《一位數位移民的告白》作者、任職於紐約時報的 Nick Bilton 昨天撰文透露，根據 Facebook 內部一位工程師的說法，Facebook 很有可能要對官方那個老是被嫌慢的 Facebook app 進行翻修，讓它的效能大幅提昇。Nick Bilton 更是提到自己有機會一窺尚未完成的新版 Facebook app，他的感想是：運作起來超快。（註 1）
+在 App Store，Facebook app 大約 38000 個評價當中有 21000 個是一顆星的評等，比率約為 55.2%，當一個 app 得到如此評價的時候，相信讀者們不論是 app 使用者或開發者都明白這代表什麼意思。
+而 Facebook app 評價不佳的主因是效能太差，執行速度極慢。Nick Bilton 的評價更狠，他認為 Facebook 比絕大多數的 app 都還慢。
+不過他所得到的消息指出，下個月這個令人厭惡的情況狠可能就會改善，因為 Facebook 要重新打造他們的 app 了。Facebook 的工程師告訴他，新的 Facebook app 會以 Objective-C 為主，一改過去只是用它打造一個殼子來擺放網頁內容的情況。
+過去 Inside 曾在 〈為什麼使用者不喜歡 Facebook 的 iOS app？〉 一文解釋過為何 Facebook 現有的 iPhone app 會這麼慢，並且列舉了 Facebook 為何會選擇「讓 app 執行速度較慢」的方式來開發 app 的幾個原因：
+
+因為 HTML 比 Objective-C 更容易調整內容的呈現方式，後者在處理一些狀況時候很麻煩，例如文繞圖的樣式。
+使用 HTML 跨平台容易許多。iOS、Android、BlackBerry、Windows Phone 使用技術都不同，造成開發者極大的困擾。要在不同的平台中分享內容及功能，靠 HTML 容易的多。
+HTML 更符合 Facebook 的連續佈署程序。Apple 的審核時間太長，不符合 Facebook 佈署程式碼的流程（每次都要送審的話那還得了）。
+世界上還有許多不是 iPhone/Android 的功能手機（feature phone）。一些比較沒那麼富裕、先進的地區（例如非洲），很多人都是透過功能手機來使用 Facebook。
+全世界只有一個 Facebook。當你我的朋友都在用 Facebook 的時候，就算它的 app 再糟糕，我們也只好繼續忍耐。
+
+由於 Facebook 拒絕針對未發佈的產品做評論，這樣的說法並沒有得到他們官方的背書。至於我們會不會在下個月有速度更快的 Facebook app 可用，到時候就知道了。
+ 
+註 1：Facebook Plans to Speed Up its iPhone App
+
+
+
+
+

@@ -1,0 +1,82 @@
+
+
+跨平台的夢想一直是大家所想要追求的，畢竟若是能以單次的開發便同時支援多個不同的平台，對於企業而言在時間和成本上都是有很誘人的考量。
+跨平台的夢想
+從1990年代的Java標榜著「Write once run anywhere」、一直到Adobe AIR等技術，其追求的一個理想便是可以透過一次的開發後在不同的平台上運行。這樣的理想持續了二十多年中一度隨著Web的技術越來越熱門而逐漸沉寂，一直到了最近的行動應用程式開發熱潮出現，這跨平台的夢想又再度被喚起。
+簡單的歸納，跨平台的應用程式大多會遇到以下的問題：
+安裝執行的步驟與原生軟體相比來的複雜
+效能相對於原生的軟體而言慢上不少
+介面沒辦法符合各種平台的使用習慣
+像是以行動版網頁來取代原生應用程式為例子：
+ 沒辦法像App Store或Android Market一般的安裝並且收費
+ 跑在Web畫面中的行動版網頁效能有所限制、所能操控的硬體資源也有限制（像是相機就無法使用）
+ 介面必須透過網頁技術來搭建、模擬，沒辦法直接做出內建程式般的介面效果
+像PhoneGap這樣的半網頁式的解決方案（Inside也有教學文章可以參考），試圖補強App Store上架以及硬體資源操作這方面的弱點，但網頁應用程式終究不是原生應用，介面以及效能上仍舊沒辦法突破。
+在本站作者fOx的文章中便曾經強調過：
+「開發手機應用程式前，您可能想問的10個問題」：
+請記得一件最重要的事，一個iPhone應用程式必須看起來並使用起來像是一個iPhone應用程式；而Android應用程式必需像是一個Android應用程式；如果想要跨平台，先確保你要先知道原生應用程式的樣子，才不會犧牲掉使用者經驗。
+Titanium
+
+Titanium為Appcelerator於2008年底所推出的跨平台應用程式開發解決方案，目前支援了iOS/Android/Blackberry/WM7等行動平台，以及Windows/Linux/OS X這三種主流的桌上型平台，幾乎是已經將所有的平台一網打盡。其開發工具為開放原始碼的專案，在官方網站上可以免費下載，若是需要開發行動裝置的應用，則需要一併安裝iPhone SDK/Android SDK。
+Titanium的跨平台開發語言為JavaScript以及HTML等網頁標準技術，搭配上其專用的函式庫，讓開發者可以不用學習Java/Objective-C或其他各平台的原生應用開發語言以及環境，便可以使用常見的網頁技術來開發各個平台的應用程式。
+然而Titanium最厲害的地方是cross-compile的跨平台編譯技術，也就是將透過Titanium的函式庫撰寫的網頁程式轉換成各種平台中原生的應用程式！像是Titanium所轉換成的iPhone應用程式原始碼，甚至是可以直接用Xcode開啟並編譯執行的，就和原生開發的一模一樣！
+所以實際上執行的過程中就如同原生應用程式一般（因為真的是原生），效能以及介面的呈現都有超過一般跨平台應用程式的水準，與傳統跨平台應用解決方案相比是很重大的突破。
+在其官方網站上面有許多的案例可以提供大家參考，而在App Store和Android Market中也已經有許多軟體是透過Titanium開發並且上架。
+
+其中有一套Wunderlist特別值得大家一看，是一套高品質的todo軟體，在各個平台上皆有相對的版本推出，並且有相當好的使用者體驗。
+
+Titanium的收費方式，則主要是販售額外的擴充模組Titanium+Plus，裡面包含了像是BarCode的條碼掃描功能、Apple的In-App Purchase服務、PayPal付費功能，但若是不使用這些額外的擴充模組就不需要額外的費用。
+學習資源
+讀到這邊或許你已經對Titanium產生興趣了，官網上有相當好的學習資源以及範例參考，建議讀者可以先閱讀Getting Started with Appcelerator的線上指南，或者是觀賞網站上影片教學，並且搭配範例的專案Kitchen Sink來做練習以及測試開發。
+
+
+
+
+Jerry Chen:
+March 30th, 2011 at 11:06 am
+ 很讚阿～感謝分享！！
+
+
+Brian Chen:
+April 4th, 2011 at 8:13 pm
+ we are going to launch Ti business in Taiwan so stay tune.everyone can follow our twitter first.
+http://twitter.com/appcelerator_tw#
+
+
+曾乾凱:
+April 7th, 2011 at 5:46 am
+ Titanium 真的可以嗎?
+
+
+黃咪咪:
+July 7th, 2011 at 2:17 am
+ good
+
+
+Allen Shi:
+August 26th, 2011 at 4:22 am
+ 感謝分享，太給力了!!XD
+
+
+許淳堯:
+August 26th, 2011 at 3:39 pm
+ Good
+
+
+呂豐昌:
+September 2nd, 2011 at 10:54 am
+ 如何解決跨平台 Mobile Apps? Titanium 提供一個不錯的解決方案
+
+
+Renee Ko:
+November 21st, 2011 at 9:10 am
+ good!!
+
+
+Andyjon Wei:
+June 15th, 2012 at 3:01 am
+ Cool! 馬上來試試看^^
+
+
+
+ Tagged with: iOS, mobile, Titanium 

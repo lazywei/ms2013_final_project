@@ -1,0 +1,137 @@
+
+
+
+人類會不會因為某些事情大量滅亡，我們無法知道，但是如果真實發生了，Facebook的資料儲存又能夠逃過一劫的話，那麼很顯然的，8億會員的資料將成為非常有用的資料。
+在一年多前，友站的Mr.Friday就已經在『當Facebook統治了世界，你還有隱私可言嗎？』討論過一樣的話題，而在今年的F8揭露了最新的Open Graph之後，這件事就更加的明確。
+在過去，你利用Google搜尋自己的名字，會很意外的發現自己得獎上榜的紀錄或者是在網路做過某些愚蠢的事，都可以通通被挖出來，2009年，Google的前 CEO Eric Schmidt 針對Google 所帶來的隱私權爭議就曾經說過：
+『If you have something that you don’t want anyone to know, maybe you shouldn’t be doing it in the first place.』
+現在不只是Google可以印證這件事情，Facebook也已經大刀闊斧的從事這件事。
+人生數位典藏
+接下來，Facebook即將上線的『時間軸 Timeline』，將會取代掉個人檔案，目前你利用開發者模式就可開啟此一介面。
+你將會看到從你加入Facebook後的每一則重要訊息，比如說，你曾經標示過哪一天從學校畢業了？哪一天加入/離開公司，他就會提示你加入照片，也許你可能沒照片，但是幫著你照大合照且熱情的同事/同學們，就會主動的幫你標示出來。如果你願意的話，你甚至是可以像我一樣，把出生後沒多久的照片放上來，當作是你Facebook的第一張照片。有人打趣的說，甚至告別式都可能會有人把你Tag在棺木上，作為檔案終結。
+當然，你也可以開始為自己的小孩開始建立Facebook，然後開始把各階段的照片放上來，分享給自己的親朋好友，這比之前的Gmail廣告更非常合乎常理，不是嗎？
+是的，你都可以利用Facebook的隱私權設定，將這些變成最隱密的部份，不過，我相信，在大部份時候以及大部份人都不會這樣做。
+每個動作都被記下
+透過新的Facebook Open Graph，網友們再也不是針對某一件事情按『讚』，以後開發者將可以定義出各式各樣的動詞以及對應的名詞或物件，比如說 『煮(動詞)一道紅燒魚』、『騎(動詞)腳踏車』、『想要看(動詞)賽德克巴萊』，這些動詞將沒有極限，只要你想得到的，未來都有可能出現在Facebook的牆上 (當然，這些動詞要經過Facebook審核先 :P)
+
+而這些事件都將出現在 Timeline 時間軸、 NewsFeed 動態消息 以及 Ticker 即時動態裡頭，你把這三者想成三種時間方式，長、中、短三種訊息曝光方式，就可以知道其存在的原因。
+
+再加上未來這些新應用程式都只需要取得一次授權，就可以自動記住這些動作；比如說，這次你已經使用某電影網站的Facebook應用程式授權 (類似像下面這樣，不過他是記錄跑步的應用程式)，來紀錄你這次看了『賽德克巴萊』，下一次你在同一個網站裡，按下想看『變形金鋼5』 或者已經看了 『超級8』鈕，就再也不需要取得授權。
+ 
+
+美國Yahoo 已經將 Facebook 此一功能整合到他們的新聞頻道，你可以看到當你透過Facebook登入，並授權給Yahoo後，你就可以看到朋友們『閱讀』過哪些新聞，照理說，朋友關心的新聞，也會是你想看的新聞；但注意，那些你想偷偷看的蘋果或Nownews新聞，不按讚，別人也會知道了！
+雖然這些都可以透過官方隱私設定處理，但一時半刻間，肯定又會有許多沒有注意到的人漏了料；而長久來看，勝利仍然是屬於Facebook的。
+
+網路行銷的新西部
+儘管上面看起來所有功能都可能會使你的隱私權完全不保，但八億的臉書使用者們有多麼在意這件事呢？我不知道。
+但如果你身為一個網路相關從業人員，卻想要把Facebook Ticker (即時動態)關掉，或者抱怨著他想用某種插件擋住它，基本上你已經先失去一分。
+還記得不久前，Facebook因為遊戲功能加上訊息大量散發，而造成台灣使用者劇增，最後Facebook再進行訊息量的抑制，讓遊戲的病毒擴散力道不再像以前那麼強嗎？現在大概可以算是這件事的2.0版，Facebook在其Open Graph Beta裡的介紹這樣寫道：
+透過一個單支API，你將可以深層的與Facebook裡幾個主要散佈點作結合：時間軸、App View、動態消息以及即時動態。當使用者一旦與你的應用程式互動，行為將立刻顯示在使用者的時間軸與朋友的動態消息與即時動態上。透過Open Graph，你將可以與你的使用者們建立深度且連續的聯結，並引領新的使用者到你的應用程式。
+Through a single API, you’re able to deeply integrate into the key points of distribution on Facebook: Timeline, App Views, News Feed, and Ticker. As users interact with your app, actions are displayed on the users’ Timeline and their friends’ News Feeds and Tickers. With the Open Graph, you’ll be able to create a deep, persistent connection between you and your users, and drive new users to your app.
+這次將不再是遊戲，而是各式各樣的網站應用，你可以想像使用KKbox的朋友不斷的告訴你他正在聽什麼、喜歡什麼歌、聽了幾次、最喜歡聽哪類型的歌曲；喜歡打魔獸的朋友，可能立刻在Facebook上發佈他打到了什麼寶、剛屠了什麼魔；喜歡騎單車的朋友，環台到了哪裡、累計跑了幾公里等等；喜歡購物網物的人，可能會立刻發佈買了一件什麼衣服、看上某件褲子；每個都會是一個獨立的應用程式或網站。
+甚至，未來如果你願意的話，隨著你的行動裝置以及其上的NFC裝置，也許你下次在7-11買杯咖啡、新光三越買件衣服或者是彩券行買張彩券，都可以同步到Facebook上， (並擁有發票號碼以及彩券號碼)。
+到目前為止，根據本次有現場參與F8會議的Tempo大所說，動詞申請的部份目前尚不支援中文，但在這當口，已經可以預料到各路人馬，包含色情業者以及垃圾郵件者已經開始在絞盡腦汁在搶這塊新興的寶地。
+小結
+對個人來說，如果你非常注意隱私，卻又愛用Facebook，那麼你就是自己用石頭砸自己腳。有點擔心隱私的話，你必須越來越審慎面對你未來無論在Facebook站內外所按的任何按鈕，每一個動作，都是曝光在外。當然，不使用任何網路服務，可能會是終極解。
+因為接下來，大量的潛在流量轉換誘惑，將使得網路從業人員將會試圖利用各種方式，把自己的服務接上此一Facebook Open Graph，並導引你使用，就好像現在你可以到處看到按讚的按鈕一般習慣。
+對於網路從業人員來說，開始啃Facebook的開發者文件，將是你最佳的解答，因為遲早會被問到要怎麼做。
+
+
+
+
+Art Jow:
+September 26th, 2011 at 1:40 am
+ 對於網路從業人員來說，開始啃Facebook的開發者文件，將是你最佳的解答，因為遲早會被問到要怎麼做。
+是ㄚ ... 努力 K 相關文件中 ^^
+
+
+HeChien Hsu:
+September 26th, 2011 at 1:52 am
+ 世戒？
+
+
+林佳佳:
+September 26th, 2011 at 2:34 am
+ 寫的好
+借轉
+我有+你的FB喔
+
+
+周德鑫:
+September 26th, 2011 at 2:39 am
+ 發展出這一套方法，以後會不會有：我正在Inside讀fox的內心世界？ＸＤ
+
+
+Robert T. L. Lo:
+September 26th, 2011 at 3:00 am
+ FB一步一步挑戰隱私的限度, 之前還沒什麼感覺, 現在我是越來越卻步了..是一個很好的反省與反思的機會!
+
+
+Guo-Heng Sung:
+September 26th, 2011 at 3:01 am
+ 人類社會正被Cybermen入侵中...
+
+
+Arthur Chen:
+September 26th, 2011 at 6:39 am
+ 隱私問題現在變成了FB最重要的議題，開放性與私密性的平衡點爭論或許是永遠不會有終結的一日吧....應該可以建議FB開發一個功能叫做[離群索居]，這樣就可以讓自己徹底消失吧XD
+
+
+Herman Wang:
+September 26th, 2011 at 7:31 am
+ 簡單講：不爽不要用，沒有人拿槍逼著你用FB
+
+
+Chueh-Pin Ko:
+September 26th, 2011 at 11:34 am
+ 寫得真好...
+
+
+Chi Yun Chien:
+September 27th, 2011 at 12:00 am
+ 是時候退出…還是深入？！
+
+
+Ying-Cheng Huang:
+September 27th, 2011 at 3:06 am
+ 人生數位典藏
+
+
+Abbygail ET Wu:
+September 27th, 2011 at 5:05 am
+ 應該要加入 Arthur Chen 說的功能，英文可叫做"leave me alone",還要有可以把自己資料一次從所有朋友動態移除的功能..
+
+
+車庫一姊:
+September 27th, 2011 at 8:45 am
+ FOX小時候好可愛~(畫錯重點)
+
+
+北川烈:
+September 29th, 2011 at 10:17 am
+ = =買尬
+
+
+Dzz Hen:
+October 2nd, 2011 at 9:10 am
+ 我以沒有隱私的回頭路……
+
+
+Alan Sha:
+October 4th, 2011 at 12:23 pm
+ 好可怕
+
+
+Bert Liu:
+October 10th, 2011 at 10:59 am
+ Google的+1 可以有相同的應用?
+
+
+趙政宏:
+October 29th, 2011 at 6:51 am
+ 我的電腦不只幫我花錢，還能幫我賺錢!!
+免費索取資訊>>> http://www.fr02.weebly.com
+ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
+
+
+

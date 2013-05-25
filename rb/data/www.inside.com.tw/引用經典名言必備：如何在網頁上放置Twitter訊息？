@@ -1,0 +1,28 @@
+
+
+
+Twitter推出新功能：Blackbird Pie（中文或許可翻譯為黑鳥派），當你想要在自己的網頁上引用某一則訊息時，除了可以用複製、貼上，或是放置該訊息的連結之外，現在也可以使用黑鳥派來達成目的。
+在黑鳥派的網頁上輸入推特訊息的網址後，會出現下列畫面：
+ 
+第一個區塊是實際貼到網頁後的呈現樣式；第二個區塊就是供您複製的程式碼。底下還有目前Twitter官方待處理的工作項目，包括更短的程式碼以及更好的時間標記格式。
+（當然您也可以說這是「嵌入」訊息，但筆者認為如果是以嵌入的方式，透過script語法或許會更方便，當然，純HTML除了有利於SEO之外，也方便各式各樣的網站系統、瀏覽裝置都得到盡可能相同的結果）
+有幾個重點值得注意：
+由於是使用HTML語法，只要您使用的網誌、網頁編輯器可插入HTML程式碼，畫面就可正確顯示。 
+Blackbird-Pie會根據您指定的推特訊息主人的背景設定，給予不同的樣式。 
+目前引用的方式是透過HTML以及inline CSS，包括訊息內容都直接讓使用者自行複製貼上，也就是說實際在引用的時候是可以自行加工的。（筆者本來預期會以script方式推出，但顯然目前Twitter不打算這麼做）
+實際使用後的效果如下：
+ .bbpBox{background:url(http://a3.twimg.com/profile_background_images/2372799/want3to.jpg) #050505;padding:20px;}p.bbpTweet{background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:18px!important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px}p.bbpTweet span.metadata{display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6}p.bbpTweet span.metadata span.author{line-height:19px}p.bbpTweet span.metadata span.author img{float:left;margin:0 7px 0 0px;width:38px;height:38px}p.bbpTweet a:hover{text-decoration:underline}p.bbpTweet span.timestamp{font-size:12px;display:block}
+新Macbook Pro 登場，該是敗家的時候了嗎Orz http://www.apple.com/macbookpro/less than a minute ago via webfox hsiaopirrer
+
+  
+
+
+
+
+莊淑斐:
+November 28th, 2012 at 6:24 am
+ Great!
+
+
+
+ Tagged with: blackbird-pie, Twitter 

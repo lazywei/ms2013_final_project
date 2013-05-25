@@ -1,0 +1,18 @@
+
+
+經過這幾堂課的學習之後，相信大家現在對開發iPhone程式一定更有心得了，就讓我們來看看這次的作業內容吧！
+這次的作業結合了前幾次課程中的大部分內容，在接下來這幾週中將會實做一個叫做paparazzi的線上照片顯示軟體，在過程中將會學習到如何完整開發一個iPhone程式的各項技巧，你準備好了嗎？
+
+在這一個禮拜的作業中，我們需要實做：
+顯示好友清單的View Controller
+顯示照片列表的View Controller
+顯示單張照片的View Controller
+兩個Navigation Controller和一個Tab Bar Controller
+建立View Controller的方法在第六次的課程中曾經提及過，而使用Navigation Controller和Tab Bar Controller的細節則是在第七次的課程中有詳細的解說。在這一次的作業中，課程建議我們盡量使用Interface Builder來建立Nib，也就是使用者介面，並且將每個不同的畫面建立在不同的Nib檔。
+或許讀者會很好奇，那本週的作業要如何處理資料讀取的部份呢？這部份的問題，就留待下次作業及心得筆記的內容囉！還請大家繼續鎖定本連載！
+
+
+
+
+
+ Tagged with: CS193P, Stanford 

@@ -1,0 +1,38 @@
+
+
+在前兩篇介紹Three20模組架構的文章中，各位讀者應該已經對於Three20的各個模組有大致的了解，在這篇文章中我們將看看Three20的擴充模組，也就是JSON/XML的framework。
+模組相依性
+如同Three20本身的模組，擴充模組也有一些相依的模組，如下圖：
+    -------------   ------------
+    |  extJSON  |   |  extXML  |
+    -------------   ------------
+    ----------------------------
+    |          Network         |
+    ----------------------------
+    |           Core           |
+    ----------------------------
+這些以ext開頭的模組便是這次所要談額外的擴充模組。
+extThree20XML
+extThree20XML提供了一個方便的介面讓開發者們能夠進行XML的解析，而負責的類別正是TTXMLParser，相比於NSXMLParser繁瑣的delegate方法呼叫，TTXMLParser則只需如下的程式碼便可以進行解析：
+TTXMLParser* parser = [[TTXMLParser alloc] initWithData:xmlData];
+[parser parse];
+經過解析之後，parser.rootObject就會是一個包含XML root node資訊的NSDictionary，裡面會有以下key/value：
+___Entity_Name___ -- 名稱，透過[parser nameForXMLNode]可以取得
+___Entity_Type___ -- 類型，透過[parser typeForXMLNode]可以取得
+___Entity_Value___ --  包含的值，透過[parser objectForXMLNode]可以取得
+而若是取得的值也是多個XML Node，則會包裝成NSArray。
+要注意的是，根據Three20文件記載，這個TTXMLParser並沒有針對記憶體、效率進行優化，所測試過的XML文件都為1MB以下，若是讀者有需要解析檔案較大的XML文件則需多多注意。
+extThree20JSON
+而extThree20JSON自然是處理JSON物件的類別了，相對於TTXMLParser，extThree20JSON並沒有提供自己的JSON Parser，而是引入了筆者以前曾經撰文提到過的json-framework及YAJL.framework。
+上述的這兩套framework所負責的都是JSON的解析，我們只需要選擇一套來使用即可，透過Build Target的指定，我們便可以選擇其中一套作為使用。
+TTURLXMLResponse & TTURLJSONResponse
+除了上面提到的Parser之外，extThree20XML和extThree20JSON另外分別提供了兩種不同的TTURLResponse子類別。
+在TTURLRequest中，我們可以將response設定為這兩種類別，而當Three20將網路上的資訊下載回來時，便會呼叫TTURLJSONResponse或是TTURLXMLResponse的解析方法進行處理、驗證，省去自行呼叫方法的時間。
+結論
+在這篇文章中我們看了JSON、XML此兩個Three20所提供的外掛模組，特別是在網路相關的應用程式中頻繁的會使用到。在下一篇文章中，我們將深入探索Three20的URL-based Navigation，請各位讀者多多指教！
+
+
+
+
+
+ Tagged with: Cocoa Touch, iPhone Dev, json, Three20, xml 

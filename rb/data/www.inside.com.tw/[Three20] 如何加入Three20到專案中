@@ -1,0 +1,44 @@
+
+
+在前一篇文章中我們大致簡介了Three20背景、在哪些程式中有被使用，並且大概提到了這個框架所提供的功能。而在這一篇文章中，我們將帶領各位讀者學習如何安裝Three20到專案中，以便進行後續的使用。
+Three20的變革
+Three20以往受到詬病的一點便是其龐大的程式庫檔案，有時候開發者或許只是想要使用其中的一個類別、方法，就必須將整個框架加入到專案當中，造成不便。
+而在五月初的時候，Three20便針對這一點進行架構上的改變，從此之後Three20成為多個模組所組成的框架，開發者便可以只加入自己所需要的模組，而不需要如從前一般將整個Three20函式庫加入。
+下載Three20
+安裝的第一步當然便是要下載Three20的檔案，我們可以從github的頁面上點右上角的Download Source下載壓縮檔。
+
+而在下載完畢後點擊進行解壓縮，這個路徑在最後設定的時候會用到，請各位讀者注意。
+加入Three20.xcodeproj
+接下來我們打開我們的Xcode專案，將下載下來的檔案資料夾下面的：
+
+/three20/src/Three20/Three20.xcodeproj
+
+以滑鼠拖曳到專案中的Framework群組下，而跳出來的畫面選項，請如下圖選擇：
+加入QuartzCore
+由於Three20使用了一些額外的繪圖函式，故我們也需要將QuartzCore這套framework加入到專案中。
+首先我們一樣在Framework群組上按右鍵，選擇加入框架：
+並且選擇QuartzCore.framework：
+編譯設定
+接下來我們必須對Three20的編譯進行設定，分別在兩處。第一個部份，我們先選擇Framework群組下剛剛加入的Three20.xcodeproj，然後在右手邊的視窗下喙看到libthree20.a，並在右手邊的框框中打勾確認：
+接下來在我們的Targets群組下選擇所編譯的程式，按右鍵選Get Info修改設定。在General的分頁下，我們將Three20加入為Direct Dependencies：
+連結設定、標頭檔搜尋
+接下來我們在左邊的畫面中，選擇最上方的Project並按右鍵打開Info畫面。在Build頁面下會有一處需要修改、以讓我們能順利的將專案與Three20進行linking、header searching。
+第一個是Other Linker Flags這個選項，我們必須分別加入-ObjC和-all_load兩個選項，如下圖：
+第二個則是Header Search Paths，我們必須加入下載檔案中的這個目錄：
+YOUR-PATH/three20/Build/Products/three20
+注意，這部份各位讀者要自行將解壓縮的路徑代換，否則會出現找不到headers的錯誤。
+大功告成
+當以上的工作的設定結束後，便可以在程式碼當中加入：
+
+#include "Three20/Three20.h"
+
+正式開始體驗Three20的各種功能！
+結論
+這一次的文章中我們簡介了安裝Three20的方法，希望各位讀者能夠順利的在自己的專案中順利安裝。
+在下一次的文章中，筆者將介紹Three20的各個模組，讓大家能夠對整個框架的架構有初步的認識，敬請期待！
+
+
+
+
+
+ Tagged with: Cocoa Touch, iPhone, Three20 

@@ -1,0 +1,59 @@
+
+
+圖片來源：incredibleguy
+
+過去，小規模團隊思考 app 開發的重要考量之一會是平台選擇：Android 優先還是 iOS 優先比較好？還是乾脆兩個平台同時推出？
+去年六月紐約時報曾經在 〈 Google Outsells, but Apple Cultivates Loyalty of App Developers 〉1 討論過 app 平台選擇的議題。2011 年 12 月，Google 董事長 Eric Schmitt 曾指出半年後開發者將會以 Android 平台作為首選，然而儘管一些從 iOS 起家，廣受歡迎的高品質 app 紛紛在 2012 年推出 Android 版本，例如 Instagram 和 Flipboard 等等。然而半年之後市場上並沒有出現什麼明顯的「Android 優先」熱潮。
+開發者們可能已經看過許多從技術和開發成本分析 Android 與 iOS 平台的討論，不過昨晚有一篇開發者寫的文章引起了我們的注意。跨 Android 與 iOS 平台的付費 Podcast app「Pocket Casts」開發者之一，Russell Ivanovic 在 〈 Why Android first? 〉2 指出五個要點，告訴大為什麼即將推出的新版 Pocket Casts 只會先發行 Android 版本：
+1. 團隊大小
+Shifty Jelly（開發 Pocket Casts 的公司）是一個只有兩名開發者和一位設計師的小團隊。去年他們明白了一件事，如果真的想要再兩個平台上都推出 app，那勢必要擇一先做。要解決這個問題很容易：變得更大就行。
+2. 過去的銷售數字
+Pocket Casts 的 Android 版本上賣得比 iOS 好，比例大概是 5:1。請注意，Pocket Casts Android 版本的定價 2.99 美金還比 iOS 版本的 1.99 美金貴了一美金，相信讀者們很少看到這種情況（當然啦，先撇開台灣 Google Play 的 app 都是免費這點不談）。
+3. 未來的銷售
+由於 Android 並沒有內建的 podcast app，Russell Ivanovic 認為這是他們的優勢（Apple 有推出自己的 podcast app）。儘管市場上有競爭者，但他相信 Pocket Casts 可以取得最終勝利，主宰市場。
+4. 為什麼不？
+Russell Ivanovic 認為其實沒理由不「先在 Android 開發」或「先在 iOS 平台開發」，兩個平台都有大量願意為好 app 付費的使用者。因此平台選擇的重點會落在「目標使用者在哪個平台」以及「哪個平台適合你想做的 app」等問題，這不再是個「iOS 優先」的世界了。
+5. App 的品質
+Russell Ivanovic 直言兩年前 Android 的確很爛，OS 本身一團糟、app 市集一團糟、SDK 一團糟，當然硬體也是一團糟。但今日情況已經改變了，這是個很棒的平台。儘管現在整體來看 iOS 的 app 品質還是遠比 Android 的好。不過 Russell Ivanovic 認為 Android app 的品質提昇只是時間早晚的問題。更何況以現在來說，有著優良設計的 app 在 Android 比在 iOS 上更容易受到矚目。
+開發者對平台的重要性
+不只是 iOS 和 Android，智慧型手機系統能否持續受到歡迎，除了系統和手機本身好壞與使用者滿意度之外，開發者是否願意支持、為其開發 app，將很大程度決定平台的存亡。這也是為什麼 Marc Andreessen 在評論蘋果的策略時要說3：
+In the long run in these markets, if you’re not the majority market share, you don’t have the majority of the apps.
+這些市場長期而言，如果你的市佔率不多，那 app 也不會多。
+這番言論的推論在於，如果 iOS 的市佔率太低，將會面臨過去跟麥金塔電腦相同的困境——沒有開發者願意為它開發程式。
+蘋果當然也明白開發者的重要性，自從推出 App Store 之後，每一次的發表會總是要提醒大家 iOS 平台上有多少 app、蘋果付給開發者的費用有多少（最近一次是一月初他們公布 iTunes Store 數據時提到的，開發者已從 App Store 上「獲利」 70 億美金）。蘋果或許不必害怕對手一年推出多少 Android 手機，但是開發者的動向蘋果忽視不得。
+Inisde 曾在 〈 Google Play 強勢崛起，去年第四季銷售額翻倍 〉提到，儘管 App Store 的營收還是遠遠高過 Google Play，但後者正在快速追趕中。聰明的開發者不會等到 Google Play 營收超越 App Store 才來思考哪一個平台應該優先投入。
+
+Google Outsells, but Apple Cultivates Loyalty of App Developers↩
+Why Android first?↩
+Marc Andreesen explains the difference between Apple CEOs Steve Jobs and Tim Cook↩
+
+
+
+
+
+陳俊宏:
+February 21st, 2013 at 2:50 am
+ 有甚麼用？台灣又沒辦法購買android正式版軟體！
+
+
+Harris Fan:
+February 21st, 2013 at 3:34 pm
+ 台灣政府在搞什麼? 一堆白痴把開發者的環境搞爛
+
+
+Cjin Cheng:
+February 21st, 2013 at 3:36 pm
+ Android first is the new mobile first. via @andrewchen
+
+
+Eddie Sung:
+February 21st, 2013 at 4:20 pm
+ 台灣市場那麼小沒差吧 大陸市場那麼大 但又要防備 盜版 模仿 越獄 很多人都以為APP很鑽前 跳進去才發現 鑽的錢可能都不夠付工程師薪水
+
+
+Jeremy Chen:
+March 4th, 2013 at 8:35 am
+ 可以當做資訊慘考參考
+
+
+

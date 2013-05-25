@@ -1,0 +1,158 @@
+
+
+照片來源：racheocity
+美國一家公司的工程師被發現用自己五分之一的薪水作為代價，將工作外包給中國瀋陽的承包商，然後自己整天在公司上網玩耍，還因此成為最佳員工！
+由於這家公司為了讓員工在家也能工作，採用電信商 Verizon 提供的專屬虛擬網路（VPN）服務，結果 Verizon 從記錄檔發現主系統一直出現一系列來自中國瀋陽的登入記錄，用的竟然是該公司最頂尖工程師的帳號「Bob」。
+公司原本還以為是受到零時攻擊或者系統被植入木馬程式，但種種跡象都顯示與前述的情形無關。於是 Verizon 在經過該公司同意後，深入研究 Bob 公司電腦的使用記錄，發現原來他從中國雇用了一間軟體顧問公司來負責自己的工作，Bob 再用 FedEx 將授權快遞過去，讓對方可以登入公司的系統進行工作。
+Bob 在公司領六位數美金的薪水，他用其中五分之一付給承包商，然後將自己的時間花在別的地方。Verizon 的分析員還在 Bob 的工作站發現一大堆中國承包商開給 Bob 的 PDF 發票。
+那 Bob 本人在做什麼呢？
+9:00am： 抵達公司，花幾個小時逛 Reddit、看貓的影片。
+11:30am：吃午餐。
+1:00pm：逛網拍（eBay）。
+2:00pm：逛 Facebook 或 LinkedIn。
+4:30pm：寫 E-mail 向主管匯報工作進度。
+5:00pm：回家。
+Bob 這招運作得非常好，根據公司人力資源部門的紀錄表示，他是公司最頂尖的程式設計師，而且是 C、C++、Perl、Java、Ruby、PHP 和 Python 等各種語言的專家。調查還發現，積極進取的 Bob 還從其他公司承攬了許多工作，然後通通外包出去。
+這件事看似好笑，但其實是美國電信商 Verizon 在自家部落格的資安宣導案例1。
+更新（1/17）
+BBC News 已經在昨天晚上與 Verizon 部落格文章的作者 Andrew Valentine 聯繫2，證實了上面這個案例的真實性。至於大家最關心的，到底 Bob 還有沒有在原來的公司上班——
+The employee no longer worked at the firm, Mr Valentine said.
+該名員工已經不在那家公司上班了，Valentine 先生說。
+這件事很快地就被傳到了 Hacker News 上3，不少人還是質疑事件的真實性，有些人寧可相信這又是另一則都市傳說，大家反而不太在意資安問題。
+
+Case Study: Pro-active Log Review Might Be A Good Idea ↩
+BBC News -- US employee ‘outsourced job to China’ ↩
+US employee ‘outsourced job to China’ | Hacker News ↩
+
+
+
+
+
+Ashiula Tsai:
+January 16th, 2013 at 8:15 am
+ 這個員工玩很大
+
+
+Roff Abel Xu:
+January 16th, 2013 at 8:21 am
+ 厲害就不怕被槓吊
+
+
+Alex Lin:
+January 16th, 2013 at 8:25 am
+ 玩的大 風險自然大~
+這也代表錢領得夠多
+
+
+Dorian Leya:
+January 16th, 2013 at 8:25 am
+ 聰明人賺聰明錢～
+
+
+江俊逸:
+January 16th, 2013 at 8:26 am
+ 他該做的不是工程師，而是自己開公司..
+
+
+Anson Tung:
+January 16th, 2013 at 8:33 am
+ 說明了 美國人 比 中國人富有 很多
+
+
+林育正:
+January 16th, 2013 at 8:34 am
+ 我笑出來了....真是聰明呀！
+
+
+Shinry Luo:
+January 16th, 2013 at 8:41 am
+ 這新聞沒有說到一個關鍵 , 就是Bob 本人必須要有一定程度的實力才能做到這樣 , 如果能力不夠要如何去做到監督工作品質 ...
+
+
+陳冠州:
+January 16th, 2013 at 8:52 am
+ 其實從另一角度來看 自己做老闆才是王道...
+
+
+劉彥辰:
+January 16th, 2013 at 8:54 am
+ 只要能做好事情~不就是好員工嗎?
+聰明人的賺錢方式是一般人想不透的
+
+
+舟水:
+January 16th, 2013 at 8:59 am
+ 真是太帥了，這傢伙。但這也表示他有那樣的實力與可觀的薪資，不然怎麼可能玩這種把戲？
+
+
+Jeff Liu:
+January 16th, 2013 at 9:02 am
+ 管理品质和盯进度不是简单的呀, 对方还是内地公司
+
+
+James Lee:
+January 16th, 2013 at 9:05 am
+ PM 比單純工程師需要的能力更高 .
+
+
+Tzungru Lin:
+January 16th, 2013 at 9:06 am
+ 好猛
+
+
+Ken Lu:
+January 16th, 2013 at 9:15 am
+ 記得以前看過一本書「一週工作4小時，晉身新富族」，這就是書中真實的實踐
+
+
+徐海程:
+January 16th, 2013 at 9:21 am
+ 能這樣做，也要自己本身的功力有一定水準了...
+
+
+Howlin Yang:
+January 16th, 2013 at 9:39 am
+ 他根本不該當工程師，應該轉去作人資!!
+
+
+Chang Huiyuan:
+January 16th, 2013 at 9:42 am
+ 哈哈～我也喜歡看貓的影片～
+
+
+Amy Huang:
+January 16th, 2013 at 9:47 am
+ 真是天才阿~這樣我應該也可以去應徵工程師了XDDD
+
+
+曾建勛:
+January 16th, 2013 at 9:53 am
+ 乾 有誰要幫我做 我可以分出MTK一半的薪水 科科.
+
+
+Michael Wang:
+January 16th, 2013 at 10:20 am
+ it's so~smart
+
+
+張智堯:
+January 16th, 2013 at 10:52 am
+ 真是王道
+
+
+Richard Chou:
+January 16th, 2013 at 10:55 am
+ 這個真的不容易，我自己也是軟體工程師，和阿六溝通沒那麼簡單，他們答應你時說的很輕鬆，等交貨你就知道厲害....如果這個案例是真的，那他的專案管理非常的厲害....
+
+
+Joanne Chang:
+January 16th, 2013 at 11:06 am
+ 聰明人作聰明事啊...
+
+
+Eve Lyn:
+January 16th, 2013 at 11:23 am
+ !!!
+
+
+

@@ -1,0 +1,47 @@
+
+
+圖片來源：自由時報網站
+Inside 曾經介紹過、全球最大的線上古典樂平台「Muzik Online」，針對自由時報報導該站遭駭客竄改個資事件1發表公開聲明，全文如下：
+
+Muzik Online 新聞說明（關於「駭客界林志炫盜改 1.2 萬筆個資事件」）
+2013 年 5 月 6 日
+針對 2013 年 5 月 6 日自由時報「國內首屈一指的古典音樂網站 muzik-online 日前遭駭客入侵，1 萬 2 千餘筆會員資料全被竄改，整個網站大亂，警方追查發現，原來是北部某 國立大學休學研究生施孟甫，為證明自己突破網路資安的能力，才挑上有資安達人坐鎮 的該網站，進行了這場駭客任務」之新聞，敬說明如下:
+一、 Muzik Online 平台在上述事件發生之同時，立刻責成技術團隊以備份資料即時完成還原、並迅速修補了當時的漏洞。
+二、 該事件並未導致任何會員的資料外洩;但在案發當時，確有資料庫異常、以及會員無法使用音樂服務以及存取會員功能之狀況。我們對於該不法入侵行為所導致會員的不便，深致歉忱。
+三、 Muzik-online.com 是全世界唯一以「古典音樂大眾化」為目標而設置的數位音樂 平台，收羅豐富的古典音樂及相關介紹、報導、分析。儘管我們建置並維護專業 古典音樂內容及資料庫的成本極高，但在未來正式商轉之後，仍將使大多數之服 務維持免費，以實現創辦人善意發揚古典音樂文化、致力於古典音樂數位典藏之 本意。發生新聞報導之憾事，我們不會因此而氣餒，反將堅持不懈、改善網站資 安、繼續提供最優質的音樂服務給全球的使用者。
+四、 承上，本公司也鄭重聲明，倘若日後 Muzik-online.com 有任何程式上之漏洞，歡 迎來信告知本公司之技術長（Email: [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+）並副知客戶服務部門（Email: [email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+）；我們將洽請專業之資安檢測公司確認，一旦查證屬實，將視狀況提供最高達 NT$30,000 之酬謝。然而，倘若以非法之手段入侵，本公司必將訴追到底，以維護使用者之權益。
+五、 另報導中提及「至於他針對的資安達人『KEN』，據說是業界頗負盛名的資安高 手，其所管理的網站號稱無人可入侵；警方認為，施某挑上該網站，應是為了與其較勁」云云，本公司謹此聲明 KEN（Ken Hsu）係營運部門主管，其職掌與專長係在行銷、營運、管理、產品規劃等領域，並非資安。該報導內容，在此部分 與事實略有出入。
+Muzik Creative Digital Ltd. (BVI) 英屬維京群島商希幔數位有限公司
+新聞連絡人：徐國鎧
+手機：0975-155-716
+Email：[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+
+
+駭客界林志炫 盜改1.2萬筆個資↩
+
+
+
+
+
+溫書樵:
+May 6th, 2013 at 7:33 am
+ 一旦查證屬實，將視狀況提供最高達 NT$30,000 之酬謝。然而，倘若以非法之手段入侵，本公司必將訴追到底，以維護使用者之權益。
+
+
+Clement Tang:
+May 7th, 2013 at 3:19 am
+ 有提供獎金不錯啊，之前某服務有熱心人士找到問題聯絡他們，他們還打死不改甚至惱羞成怒。迄今該 bug 還健在呢，嘖嘖。
+
+
+

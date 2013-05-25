@@ -1,0 +1,20 @@
+
+
+
+來自於Inside mobile apps的消息，Angry Birds開發商Rovio在上週的舊金山遊戲開發者大會（Game Developers’ Conference in San Francisco）中表示，Angry Birds近期擁有每月4千萬的活躍使用者，且總計被下載了近1億次，絨毛玩具也賣了近200萬個。
+統一金流/登入
+他們開始提供一個名為「Mighty Eagle」的虛寶服務，讓使用者可以付錢跳過某些關卡，也在開發者大會中正式提供Mighty Eagle  SDK，讓第三方開發者們可以利用這個SDK快速的開發自己的虛寶系統。而如果大家記憶猶新的話，我們也在去年年底的時候介紹過他們的Android in-app purchase平台「Bad Piggy Bank」，雖然在Google官方推出自己的in-app purchase平台後，它們轉為為其他非官方Android平台服務。
+同時也開始跨足統一登入的領域，他們試圖透過結合Facebook、Apple ID等方式，做出一個一貫式的遊戲帳號，打通登入問題。接下來他們預計在五月份進軍Zynga社的大本營Facebook，進行正面交鋒，而他們也將開始利用html 5，讓使用者感受到，這不僅僅是一塊移植的作品，而是一款專門為其平台所打造的作品。
+整體來說，這隻憤怒的小鳥，不止是一個品牌這麼單純的事，而是一個發展潛力相當可怕的新應用王者。
+行動平台的消長
+這些驚人數字以及進展暫且放下不管，值得行動開發者注意的是，它們也同時表示，目前Angry Birds在Android以及iOS上的營收差不多相當（roughly even revenue），在去年12月的時候，他們預計未來每個月可以從Android平台上至少賺到1百萬美金。
+有三點值得注意的是：
+付費一次或者是長久收入的比較，在iOS上Angry Birds基本上是透過付費下載，一次性收費即止，而在Android他們則是透過免費下載方式，但透過廣告來獲利。
+Android 的Market上的150,000個競爭對手顯然比Apple App store上的350,000來得少許多，而這也使得Angry Birds的廣告填充量占據了大多數的Admob廣告所能供給的數量，甚至有些靠著Admob維生的開發者表示，他們的廣告填充量都被Rovio的作品給吃掉了。
+根據Comscore的數據，Android已經取代黑莓機RIM成為手機市場上的最大宗主流。
+回頭看起來，Angry Birds從2009年12月發佈iOS版本開始至今也不過一年半，但確實已經成為新網路世界的霸主之一，我們雖然不知道未來到底它會成長到什麼狀況，但記得，他們也是8年磨一劍的。
+
+
+
+
+

@@ -1,0 +1,42 @@
+
+
+
+Google 修改了他們在中國的搜尋服務（也就是 Google 香港），針對輸入含有「敏感字詞」的字串進行搜尋的情況做出提示，告知使用者如果「硬是要」搜尋的話，很可能引發中國當局干涉而暫時無法連上 Google。（當然，如果使用者無論如何都不想修改搜尋字串也是可以的）Google 希望這樣做能夠提高使用體驗的品質。
+Google 在官方搜尋功能的部落格 Inside Search 發表一篇文章〈Better search in mainland China〉（註 1）表示在過去幾年來不斷收到使用者反映 Google 的搜尋結果經常不一至而且不可靠，其實這與搜尋方式與使用者使用的瀏覽器有關，但使用者同時也經常遇見錯誤訊息，例如「這個網頁現在無法使用（The webpage is not available.）」或是「連線遭到重設（The connection was reset.）」的訊息，一旦使用者看見這樣的訊息，代表他們在未來幾分鐘內將無法再連上 Google。
+Google 的工程師實際測試了一下，發現不論是在電腦上的瀏覽器或是行動裝置的瀏覽器皆有這樣的情形。以下是測試影片：
+
+We’ve taken a long, hard look at our systems and have not found any problems. However, after digging into user reports, we’ve noticed that these interruptions are closely correlated with searches for a particular subset of queries.
+我們花了很多時間認真地檢視我們的系統，卻沒有找到任何問題。然而，當深入使用者的回報後我們發現這樣的阻斷情形與搜尋字串中的特定字詞有密切關連。
+他們試圖找出會引發阻斷連結的關鍵字詞，於是審視了三十五萬個在中國最常被輸入到搜尋框的字串之後，發現了一些脈絡。舉例來說，當使用者單獨搜尋「江」這個字，便很有可能發生問題，而且連帶其他含有「江」字的搜尋字串，例如「長江」、「麗江」、「江蘇移動」等等也很有可能會出現錯誤訊息。另一個例子則是「周」字，其他包含「周」字的字詞一樣有可能會出問題，例如「周星馳」、「周杰倫」等。
+不過 Google 也透漏，有個方式既可搜尋原本的字串，又能避開連線被切斷的問題，而方法就是中國人熟悉的「拼音」。像是用「changjiang」取代「長江」，一樣可以得到與長江有關的搜尋結果，但不會觸發中國當局阻斷連結的機制。
+英國衛報則是指出，如過用百度搜尋相同的字詞，並不會導致暫時無法連線的問題（註 2）。
+如果中國以外的使用者也想親自體驗一下 Google 描述的狀況，可以試試看這個連結。（這是 Google 在官方搜尋部落格 Inside Search 提供的連結）
+Google 表示他們非常希望能夠透過這樣的方式，讓更多人能夠順利地使用 Google 進行搜尋。
+值得注意的是，Google 近期與中國當局的關係似乎有稍微改善，畢竟中國已經批准了 Google 對 Motorola 的收購。不知道今天 Google 對使用者做出這樣的提醒，是否又會對雙方的關係造成影響。
+註 1：Better search in mainland China
+註 2：Google change will alert Chinese users when search terms are being censored
+
+
+
+
+Clement Yu:
+June 1st, 2012 at 9:42 am
+ google 被河蟹了
+
+
+Czars Chou:
+June 3rd, 2012 at 3:25 pm
+ 應該是google被擋掉了，所以使用者輸入之後會警告他說，這些會影響連上google的結果。這樣google是善意的吧？？應該是香港也開始吃河蟹了才對吧？？
+
+
+Yazhen Shi:
+June 6th, 2012 at 9:13 am
+ 大陸政府真的是管很寬...在大陸工作有使用到google的朋友們,自己要保重啦!
+
+
+Leon Lyu:
+June 11th, 2012 at 4:48 am
+ 在內地工作的人，如何在Google找到答案，真是可憐~
+
+
+

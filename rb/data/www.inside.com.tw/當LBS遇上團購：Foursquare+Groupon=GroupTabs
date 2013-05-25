@@ -1,0 +1,20 @@
+
+
+ 
+Groupon和Foursquare都是之前Lawrence提出今年度特別值得觀察的網站：
+五個2010年值得觀望的社群媒體網站（一）：Foursquare 
+五個2010年值得觀望的社群媒體網站（三）：Groupon 
+這二個網站都造就了一些重度使用者，Foursquare造成了某些使用者check-in成癮，而Groupon則是造成使用者每日check促銷商品成癮。那麼，把這二個網站結合在一起會是什麼？答案是：GroupTabs。
+Foursquare已經有越來越多的行銷應用案例了，Fox在先前也介紹了一般的店家可以如何使用Foursquare來做LBS行銷。而Groupon的商業模式也很清楚：向刊登團購訊息的商家收取手續費或上架費，目前全世界這種團購網站已經多到難以計算，尤其是在對岸。
+對Foursquare的使用者來說，一定會希望他們除了得到徽章和市長頭銜外，也能讓他們的Check-In有多一點點”實質”的意義。在Groupon方面，對店家而言，如果消費者只是在網路上買商品，好像就了少那麼一點和實體店面接觸的機會。
+GroupTabs的概念即是結合上述兩點而生：GroupTabs是一個基於LBS的團購網站，店家可以在GroupTabs上登錄自己的團購促銷訊息，在一定的時間內，只要該實體店家的Check-In次數超過一定數量，參與Check-In的人就可以得到團購優惠。舉個例來說，公館誠X書店可以在GroupTabs上設定：「只要在8/16號情人節當天，有來誠X書店Check-In的用戶超過30人，那麼有Check-In的使用者，即可享受八折優惠」。
+筆者認為這真的是一個非常聰明的作法，以往我們在Foursquare看到的行銷手法大多是：單一使用者的Check-In超過一定次數，就可以得到優惠，而GroupTabs比Foursquare多了「揪人」的概念，可以把你的好朋友通通抓來Check-In搶優惠。對店家來說，在GroupTabs團購促銷的商品可以吸引更多的消費者來實體店面消費，而不是像其他的團購網站，只是在網路上購買。一旦有更多的消費者到實體店面，就可以產生更多的產品曝光機會，帶來更大的商機。
+GroupTabs不做自己的LBS Check-In服務，使用Foursquare API，讓使用者可以使用Foursquare登入做Check-In，未來也將可以使用Brightkite和Gowalla等其他LBS服務來Check-In。GroupTabs的第一次團購將會辦在8/18，地點是紐約的某家商店。
+以LBS結合團購、以網路結合實體通路的行銷手法，能否成功帶來新的一波趨勢呢？
+references:readwriteweb, mashable
+
+
+
+
+
+ Tagged with: foursquare, groupon, grouptabs 

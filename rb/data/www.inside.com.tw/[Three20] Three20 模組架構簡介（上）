@@ -1,0 +1,67 @@
+
+
+在筆者先前的Three20文章中曾經提到，在本月初最新的Three20大改版中，將長久以來令人詬病的龐大程式庫細分為多個模組，本篇文章將針對這些模組進行簡單的介紹及說明，讓大家能夠對於Three20的架構有基本的概念。
+整體架構圖
+如前述，Three20已經分為模組化的架構，開發者可以自由選擇所需要的模組加入到專案中，但這些模組之間有一些相依性的問題，階層的架構如下：
+------------------------------------------
+|                    UI                  |
+------------------------------------------
+| UINavigator  |            |   Style    |
+|--------------|            |------------|
+|   UICommon   |            |  Network   |
+------------------------------------------
+|                   Core                 |
+------------------------------------------
+如圖上所見，如果我們要使用Three20Style這個framework的話，就會一併加入Three20Network和Three20Core這兩個必備的底層framework。但我們不需要擔心是否要自行加入這些相依的framework，因為在Three20的各framework內部就有作相關的設定了，我們只需要加入想要使用的framework即可。
+Three20Core
+Three20Core是整個Three20中最底層的framework，所有的framework均相依於這個framework。在Three20Core中提供了許多常用的helper method、Macro，還有對Cocoa Touch的內建類別透過Category新增一些額外的方法。
+以下列舉幾個在Three20中常出現的共用方法、函式：
+TT_RELEASE_SAFELY(POINTER); -- 將物件release後一併將POINTER = nil;
+BOOL TTIsStringWithAnyText(id object); -- 檢查物件是否為字串、字串內是否有內容，另有NSSet、NSArray的版本
+NSMutableArray* TTCreateNonRetainingArray(); --  建立一個新的NSMutableArray但不會自動retain加入的物件，在delegate中相當實用
+NSString* TTPathForBundleResource(NSString* relativePath); -- 取得Bundle中特定檔案的path
+NSString* TTPathForDocumentsResource(NSString* relativePath); -- 取得documents中特定的檔案path
+而針對Foundation類別也有許多新增，以下列舉幾個：
+NSArray
+- (void)perform:(SEL)selector; -- 對陣列中的每個物件呼叫selector
+
+NSData
+- (NSString*)md5Hash; -- 取得資料的md5 hash
+
+NSMutableArray
+- (void)addNonEmptyString:(NSString*)string; -- 加入字串並檢查該字串是否有內容
+
+NSString
+- (BOOL)isWhitespaceAndNewlines; -- 字串是否為空白或換行字元
+- (NSDictionary*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding; -- 將URL字串parse為query dictionary
+- (NSString*)stringByRemovingHTMLTags; -- 移除字串中的html tags
+- (NSString*)md5Hash; -- 取得字串的md5 hash
+
+Three20Network
+Three20Network主要提供了TTURLRequest類別，相對於Cocoa內建的NSURLRequest而言，此類別有以下特點：
+支援各種HTTP methods
+提供修改各種header參數
+加入字串、檔案作為parameters
+完整的cache機制
+自動parse response並驗證回傳資料
+處理cookies
+伴隨著TTURLRequest，Three20Network中也有TTURLResponse類別及Protocol、TTURLCache等類別，有興趣的讀者可以自行閱讀相關原始碼。
+Three20UICommon
+若Three20Core是Three20中的基礎，則Three20UICommon則是Three20中UI介面相關類別、函式的基礎了。此類別仍然包含了許多方便的helper方法、Macro，也對UIKit的現有類別加入許多方法。
+以下列舉Three20UICommon中的幾個方法，主要是以各種判斷為主：
+float TTOSVersion(); -- 回傳iPhone OS版本
+BOOL TTIsKeyboardVisible(); -- 檢查Keyboard是否在畫面上
+BOOL TTIsPhoneSupported(); -- 是否有iPhone
+UIDeviceOrientation TTDeviceOrientation(); -- 目前的裝置方向
+void TTAlert(NSString* message); -- 簡化版的UIAlertView
+至於對UIKit的新增方法，以UIWindow為例：
+- (UIView*)findFirstResponder; -- 尋找目前的First Responder，也就是目前虛擬鍵盤的對應物件
+- (UIView*)findFirstResponderInView:(UIView*)topView; -- 同上，不過從某個UIView開始往subviews找
+小結
+在此篇文章中介紹了Three20的架構及底層三個模組的用途，在下一篇文章中筆者將繼續探討Three20的上層模組，以及XML、JSON兩個附屬的額外模組，還請各位多多指教！
+
+
+
+
+
+ Tagged with: Cocoa Touch, iPhone, iPhone Dev, Three20 

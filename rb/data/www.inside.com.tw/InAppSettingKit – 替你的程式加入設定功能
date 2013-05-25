@@ -1,0 +1,28 @@
+
+
+當我們在開發iPhone應用程式時，特別是對於一些工具類的應用程式，開發者常常得花不少時間撰寫「設定」功能、使用者介面。而撰寫這些程式碼其實是相當繁瑣的工作，往往得花上不少時間來處理。而InAppSettingKit這個開放原始碼的Cocoa Touch專案，便是讓我們能夠大幅簡化這部份的工作。
+功能展示
+在安裝好InAppSettingKit後，我們可以得到一個類似iPhone OS所提供的設定頁面，提供了一些常見的選項設定：
+而針對同樣的TextField，也可以作多種不同的設定，像是密碼欄位、大小寫設定：
+基礎原理
+或許看到這麼複雜的介面，大家會擔心說是不是要經過繁雜的設定才能呈現出如此的效果。事實上，InAppSettingKit會自動讀取程式中Setting.bundle的內容，就如同iPhone OS的設定程式一樣，不需要自行規劃UI元件，只需要依照iPhone SDK內文件的規定建立plist檔即可。
+而設定的修改結果就如同iPhone所提供的設定功能一樣，會將修改的內容、結果，儲存到NSUserDefaults中，可以直接在應用程式中使用。
+（補充：當我們安裝軟體到iPhone時，iPhone OS會自動讀取程式中的Setting.bundle，並在「設定」程式中加入Setting.bundle中所包含的設定選項）
+安裝方法
+在我們從github頁面上下載最新版的程式碼、並解壓縮之後會看到兩個資料夾，要安裝InAppSettingKit至我們的專案中，只需要將其中的InAppSettingKit拖曳到Xcode的專案視窗中，便可以完成安裝。
+筆者建議可以一同參考InAppSettingKitSampeApp這個資料夾內所含的範例程式，該範例程式中包含了一份相當複雜的Setting.bundle，也透過三種不同的呈現方式（Navigation、ModalView、TabBar）來展示設定畫面。
+使用方式
+InAppSettingKit的使用方式相當簡單，只需要建立InAppSettingViewController並且如其他Controller使用即可：
+appSettingsViewController = [[IASKAppSettingsViewController alloc] initWithNibName:@"IASKAppSettingsView" bundle:nil];
+[self.navigationController pushViewController:appSettingsViewController animated:YES];
+而InAppSettingViewController也有delegate的設計，delegate物件需實做IASKSettingsDelegate這個Protocol，包含以下方法：
+- (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController*)sender;
+當使用者修改完設定後InAppSettingViewController便會呼叫這個delegate方法，而開發者便可以在方法中自行加入程式碼、依照設定值設定程式。
+結論
+InAppSettingKit的出現解決了許多iPhone開發者長期以來的困擾。雖然使用Setting.bundle的設定方式有利有弊，優點是可以很方便的建立起設定選項，但缺點是我們沒辦法將「設定」程式中的選項與本身應用程式的選項分離。但對於大多數的情況來講，InAppSettingKit仍然是一個相當值得考慮的選擇！
+
+
+
+
+
+ Tagged with: Cocoa Touch, framework, iPhone, opensource 

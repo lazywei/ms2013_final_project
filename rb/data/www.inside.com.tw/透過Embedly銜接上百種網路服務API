@@ -1,0 +1,51 @@
+
+
+隨著線上的影音媒體網站等越來越發達，將網站、部落格中的影音圖像等放到第三方的網站服務，在透過API嵌入到自己的網頁中是相當常見的事情。然而，隨著各式各樣的網路服務興起，開發者們也必須學習越來越多種不同的網路服務API，而透過Embedly這個統一的架構，就可以解決我們的問題！
+什麼是API？
+曾經製作過網頁、或者是寫過部落格的朋友們應該知道，當我們需要將儲存在網路上的圖片、影音等加入到自己的部落格或是網頁中時，就需要依照網站的說明去學習使用嵌入碼，像是YouTube的就是如下圖：
+
+而透過JavaScript，便可以呼叫各個服務所提供的API來進行更複雜的客製化調整，像是透過JavaScript直接調整時間軸進行互動式播放、或者是在同一個播放器中根據使用者的操作輪流播放不同影片等。
+然而，若是我們需要同時嵌入數個不同的來源網站的資料時就會很困擾，由於各家的嵌入方式有所差異，當今天只要嵌入YouTube時只要學一種、但若是要同時嵌入YouTube、Facebook、Flickr、Picasa，甚至是更多網路服務時，就必須得分別去了解各個API的差異、並且依照不同的平台使用不同的嵌入程式。
+Embedly
+
+而Embedly便是提供了一個統一的API，讓我們能夠透過同一組介面來嵌入高達108種不同的網站服務內容！
+
+這對開發者、網站經營者而言有什麼優點呢？大致上可以分成兩部份，首先，我們再也不需要去各個不同的網站上翻閱API文件，學習各種不同的嵌入方式、就可以輕易的加入各種服務內容到網站當中，代表著開發上所需要的時間、成本也都減低了。
+此外，由於Embedly會長期的更新服務，加入更多網站支援、並修正API的問題，所以若像是YouTube的網站API有更新的話，我們只要繼續使用Embedly的服務，他們便會在後端幫我們處理YouTube API更新的相容性問題，所以後續的維護成本也降低了許多。
+使用方式
+在使用上面，我們同樣必須透過JavaScript呼叫網址，再取得內容之後加入到HTML的頁面中，透過呼叫以下的API網址：
+http://api.embed.ly/v1/api/oembed?url=:url&maxwidth=:maxwidth&maxheight=:maxheight&format=:format&callback=:callback
+並分別傳入以下參數內容：
+url = 要嵌入的網路資源頁面
+maxwidth = 最大寬度
+maxheight = 最大高度
+format = JSON或是XML
+callback = 回傳後所要執行的callback function
+而像是下面這段簡單的JavaScript搭配jQuery的程式碼便可以嵌入Vimeo的影片到網頁中：
+ // Call API to get a video oEmbed JSON response
+var url = escape('http://vimeo.com/9503416');
+var api_url = 'http://api.embed.ly/v1/api/oembed?url=' + url + '&callback=?';
+//jQuery JSON call
+$.getJSON( api_url, function(json) {
+    var html = json.html;
+    $('#videodiv').html(html);
+});
+而上述的程式碼最厲害的便是，即便是帶入不同影音服務的URL，像是YouTube或是TED等，也都可以正確的顯示無誤、不需另外進行額外的調整，是不是很棒呢？
+除此之外就算是圖片、文字型的內容也同樣可以透過一樣的介面來完成嵌入的工作，各位讀者有興趣的話，可以先在Embedly的網站，將欲嵌入的網址輸入到Demo頁面進行測試。
+
+Embedly Script Tag
+上述的方式可能對於非JavaScript的開發者而言略顯得困難，但不需要擔心，因為Embedly提供了更簡單的外掛可以直接加入到網頁中。透過加入以下程式片段到你的HTML或是部落格頁面中：
+<script src="http://scripts.embed.ly/embedly.js" type="text/javascript"></script>
+這段加入的程式便會自動分析你的頁面，並且將連結轉換成嵌入式的內容直接加到網頁中！像是官網上的範例便是將Twitter搜尋出來帶有圖片的結果直接自動化嵌入到網頁中：
+另外Embedly也有提供WordPress的Plugin，只要在文章的內容中加入任何的網路服務連結，這個Plugin便會自動判斷並嵌入該連結的內容到文章中，提供給使用WordPress的讀者參考。
+結論
+隨著網路上越來越多網路服務平台的興起，像是Embedly這種透過銜接、整合各個不同平台的統一的入口網站、服務也逐漸的越來越受到使用者與開發者的青睞，且隨著網路的持續成長，這樣的服務在未來像必是會更加風行。
+參考資源
+Embedly -- API
+Embedly -- Documentation
+
+
+
+
+
+ Tagged with: api, platforms 

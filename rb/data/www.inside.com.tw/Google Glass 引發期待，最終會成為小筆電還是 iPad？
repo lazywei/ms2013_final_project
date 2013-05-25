@@ -1,0 +1,38 @@
+
+
+
+ 圖片來源：維基百科、蘋果官網
+Google Glass 儼然已成為 Google 寄予厚望，希冀掀起下一波消費性電子科技浪潮的產品。在本年度 SXSW 大會上，Google Glass 開發者  Timothy Jordan 強調，Google Glass 讓人們依然可以隨時隨地使用科技產品連上網路，而重點是─進入虛擬世界不再需要抽離現實。
+Timothy Jordan 也揭露 Google Glass 藉由 Mirror API 與Google 後端伺服器交換訊息的細節。Google Glass 從 Google 或 app 的後端伺服器讀取訊息，接著以「時間軸卡片」（timeline cards）的格式顯示在Glass 的鏡片上面。這些「時間軸卡片」可以顯示文字、圖片、影片和HTML。除了單卡片顯示之外，開發者也可以將多張卡片放在一起（bundle），使用者可以聲控或觸控瀏覽。Mirror API 目前已可支援在 Google+ 上張貼訊息。
+他向觀眾展示這款外型極具未來感的眼鏡如何應用在日常生活中，只要戴上它，不須透過其他行動裝置螢幕，就能輕鬆搞定下列工作：
+《紐約時報》突發新聞每個小時自動播送，但只會顯示標題與照片，不過使用者若抬頭，便可啟用朗讀功能，直接聽新聞。
+Gmail 的寄件者頭像、郵件標題會顯示在螢幕上，使用者可以口述回覆信件。
+Evernote 與 Skitch 也內建其中，使用者透過分享功能將內容傳送至雲端伺服器。
+使用者也可在私密社群應用程式 Path 傳送表情符號與回覆好友狀態。
+《The Next Web》特約作者 Owen Williams 盛讚（註二）， Google Glass 的出現，瞬間消弭了智慧型手機的缺陷。從此，再也不會有一片厚重的玻璃，讓你在音樂會上分心；漫步異國城市街道時，也不必老是要拿出手機查詢路線。科技與生活的界線消融於無形，曾經低頭的人們終於抬頭挺胸張望世界、專注交談，重新擁抱生活。
+的確，Google 共同創辦人 Sergey Brin 參與 TED 2013 時曾陳述 15 年前研發 Google Glass 的願景：「我當初的構想是，資訊會自動自發地在對的時間點提供協助，你甚至不需透過搜尋引擎。」但現在，我們在得到資訊後，反而失去了人與人之間的聯繫，我們都成了只關心自己的手機的低頭族。他反思：「難道人類就注定要用這種方式來互動？難道未來的交流方式就是在街上駝著背、低著頭，手指滑著一片毫無感情的玻璃？」他質疑：「這其實是一種變相的剝奪，誰會真的想把自己的身體搞成這副德性？」（註三）
+於是，背負科技回歸人性的使命，主打語音控制與擴增實境的 Google Glass 就此誕生。Google特別為此拍攝了不少極富感染力的宣傳影片，讓我們透過幾支短片來感受一下 Google Glass 的未來感吧！
+
+
+如果上述描繪 Google Glass 種種美妙的文字以及畫面令您怦然心動，迫不及待想體驗 Google Glass 的一切美好，也讓您深信 Google Glass 會取代「疏離人心」的各種行動裝置，成為「改變賽局」的產品，先來看看矽谷創投家 Andrew Chen 發表的不同意見。（註四）
+暫且撇除影片中各種令人躍躍欲試的冒險活動或者光潔燦爛的廣告意象，Google Glass 在日常生活中究竟能夠發揮甚麼作用？除了查詢時間、天氣、路線、航班等基本功能，可能還有拍照錄影、以語音傳送簡訊、開視訊會議、搜尋 Google 圖片、翻譯、查維基百科、分享照片……Andrew Chen 比喻，Google Glass 說穿了就是掛在臉上的電腦，利用它查資料並不比存在你我「口袋裡的電腦」方便多少。
+況且，在語音辨識仍沒甚麼長進的今日，想要隨口使喚 Google Glass 為你達成任務也不容易。Andrew Chen 認為，語音之於 Google Glass，宛如手寫技術之於蘋果 Newton（蘋果於 1993 年推出的全球第一款商業化 PDA，Steve Jobs 重返蘋果後撤銷了整條 Newton 生產線），不成熟的技術總為產品帶來厄運。現今無論 Android 或 iOS 的語音功能都還只是悲劇一場，即使 Google 將傾盡全力為 Google Glass 打造頂尖的語音辨識技術，不過屆時 Google 應該也不致於偏廢 Android 系統，只讓 Google Glass 獨享。如此一來，兩者又有何差別？
+Google Glass 索費不眥，目前要價 1500 美元，但未來 2 年，會有愈來愈多可穿戴式產品如蓄勢待發的 iWatch 上市，而且功能大同小異。Google Glass 若沒有其它更新穎更便利的功能，如何在電子市場上與其它產品抗衡，Andrew Chen 抱持懷疑態度。
+如 Andrew Chen 懷疑 Google Glass 現階段能耐的人不在少數，他們認為那只不過是一時新奇，熱潮很快就會退卻，何況戴著 Google Glass 走在路上實在太古怪了。《紐約時報》曾經撰文指出，Google Glass 要打入市場，賦予其時尚感是最重要的關鍵。因此 Google 大力招募高流行敏感度的女性加入團隊，也傳出正與網路眼鏡銷售商 Warby Parker 洽談合作關係，力圖創造有型的 Google Glass。（註五）
+即使不少人看衰 Google Glass，《The Next Web》的 Owen Williams 說，就像 2001 年電子書將橫掃出版市場的說法遭人嗤之以鼻，iPod、iPhone 都曾被視為只是短暫的流行…後來的故事大家都一清二楚了。每逢有嶄新的科技產品問世，總得先面臨專家或大眾此起彼落的質疑或奚落，Williams 認為，所有新事物技術上來說都是一時風尚，但並不會消褪，下一個成功產品的靈魂裡可能就有它們的影子。隨身聽啟發了可儲存 16000 首歌的 iPod，沒有 PDA 當前導，智慧型手機說不定不是今天這副聰明樣貌。
+Google Glass 是會成為下一個如 iPad 般獨領風騷的產品，或是曾經風光一時，如今已無人聞問的小筆電？你很期待 Google Glass 嗎？還是你絲毫不感興趣？歡迎與我們分享。
+（註一）Google reveals Glass apps: New York Times, Evernote, Gmail, and Pat
+（註二）Google Glass and wearable tech: This is a game-changer, not a fad
+（註三）Google Glass 給予你更好的數位化體驗（TED 2013）
+（註四）I’m a Google Glass skeptic and think it’ll be the next Apple Newton
+（註五）谷歌眼镜要流行，时尚是关键！
+
+
+
+
+Chao Ciao:
+March 13th, 2013 at 10:58 pm
+ 沒有實品永遠不知道反應，樂見Don't be evil的這群人讓世界更進步。
+
+
+

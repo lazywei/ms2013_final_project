@@ -1,0 +1,75 @@
+
+
+Google Analytics是每個網路相關的開發者、行銷人員必備的工具之一，而在iOS上若是我們要追蹤使用者的使用次數、使用習慣，同樣也是可以透過Google Analytics的幫助，就讓我們一起來看看吧！
+Google Analytics
+Google Analytics是Google所提供的免費網站使用者分析服務，透過註冊該服務並且加入相對應的程式碼到網頁中，我們便可以得知使用者的各種消息，像是流進網站的來源、瀏覽一頁便退回上一頁的比例是多少或是每一次進入網站後會瀏覽多少頁面等等。
+此外，網頁中的各個頁面都是分別進行統計的，透過客製化的置入程式碼到網頁中，我們還可以追蹤網頁中所發生的大大小小「事件」，像是網頁上的影片被播放了幾次、或者是檔案被下載了幾次，又或是像網站上有一些透過Flash、AJAX所實做的元件都可以作使用的紀錄。透過針對個種事件、頁面的分別統計、分析，我們便可以從中得到許多珍貴的使用者資料。
+Google Analytics SDK for iPhone and iPod Touch
+就在前幾個月，Google釋出了官方的SDK讓開發者們能夠將上述的分析功能整合到iOS軟體中了！而透過這個SDK，我們可以追蹤兩種使用者互動：
+頁面瀏覽：由於iOS上並不如同網頁有一頁一頁的HTML頁面，開發者必須自己決定哪些時候（ViewControllers）要作為一個頁面、並且決定頁面的命名、描述，以在後部分析時可以有所區隔。
+事件：除了頁面瀏覽之外，我們可以進行有分類的事件追蹤。比如說我可以分別追蹤使用者播放、暫停或是快轉影片的次數，並且將這些事件歸賴於影片分類之下。
+使用方式
+在下載了官方的SDK之後，我們必須先針對Xcode專案進行設定：
+將SDK中的GANTracker.h和libGoogleAnalytics.a加入到專案中
+在左手邊檔案右鍵點選任一資料夾或檔案，並選擇Add -> Existing Frameworks，並加入CFNetwork框架
+設定專案使其與libsqlite3.0.dylib連結
+接下來，在我們的Application Delegate中加入以下程式片段。注意，必須根據自己Google Analytics的設定值內容進行調整：
+
+#import "BasicExampleAppDelegate.h"
+
+#import "GANTracker.h"
+
+// Dispatch period in seconds
+static const NSInteger kGANDispatchPeriodSec = 10;
+
+@implementation BasicExampleAppDelegate
+
+@synthesize window = window_;
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+  // **************************************************************************
+  // PLEASE REPLACE WITH YOUR ACCOUNT DETAILS.
+  // **************************************************************************
+  [[GANTracker sharedTracker] startTrackerWithAccountID:@"UA-0000000-1"
+                                        dispatchPeriod:kGANDispatchPeriodSec
+                                              delegate:nil];
+  NSError *error;
+  if (![[GANTracker sharedTracker] trackEvent:@"my_category"
+                                       action:@"my_action"
+                                        label:@"my_label"
+                                        value:-1
+                                   withError:&error]) {
+    // Handle error here
+  }
+
+  if (![[GANTracker sharedTracker] trackPageview:@"/app_entry_point"
+                                   withError:&error]) {
+    // Handle error here
+  }
+
+  [window_ makeKeyAndVisible];
+}
+
+- (void)dealloc {
+  [[GANTracker sharedTracker] stopTracker];
+  [window_ release];
+  [super dealloc];
+}
+ 
+@end
+
+在上述程式中，我們可以看到分別藉由呼叫- (BOOL)trackEvent:action:label:value:withError、- (BOOL)trackPageview:withError:進行事件以及頁面的追蹤。
+而在其他的程式碼當中，也可以透過類似的方法呼叫進行更多的事件與頁面瀏覽的追蹤，是不是很方便呢？
+參考資源
+Google Analytics SDK for iPhone and iPod Touch
+
+
+
+
+Gwing Chen:
+February 20th, 2013 at 6:30 am
+ 順便請教Campaign Tracking - iOS SDK怎麼弄啊？？
+
+
+
+ Tagged with: Cocoa Touch, Google Analytics, iOS 

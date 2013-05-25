@@ -1,0 +1,56 @@
+
+
+上次的筆記中我們提到了View Controller的基礎，以及如何建立自己的View Controller。在這一次的課程內容中，我們將學習到如何使用UIKit所提供的View Controllers來幫助我們建立程式的導覽。
+第七次的課堂中，主要涵蓋了一下幾個主題：
+Navigation Controller
+Controller間的資料傳遞
+自訂導覽列
+Tab Bar Controller
+結合兩種形式
+Navigation Controller
+在上一次的iPhone開發課程筆記中我們談到了View Controller的建立方法以及概念，概括而言，View Controller在iPhone程式當中扮演著主幹的角色，負責銜接View和Model。
+而在上回筆記中的後段，我們也曾經談過我們可以透過UIKit中所提供的View Controller來銜結我們自己的View Controller，建立出整個程式的動線。而Navigation Controller就是常用的一種。很多iPhone的程式中都有Navigation Controller，像是當我們在專輯列表中選擇了某一張專輯，隨集會從螢幕左邊帶入歌曲的列表，我們也可以點左上角的返回按鈕回到專輯列表，這樣的導覽模式就是Navigation Controller。
+而Navigation Controller的畫面就如下所示，在中間顯示了目前在Stack最上端的Controller的View，在上面則是這個Controller的title，左上角的上一頁按鈕則是前一個Controller的title。
+
+就實做上來說，Navigation Controller下面包含了許多需要顯示的View Controllers，用Stack的方式集合在一起。當我們需要換頁的時候，我們只需要push一個View Controller進去，而需要回到上一頁則是透過pop一個View Controller來達成。
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated; // 換到新的Controller
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated; // 回到上一個Controller
+- (void)setViewControllers:(NSArray *)viewControllers animated:(BOOL)animated; // 整組換掉，在iPhone OS 3.0後加入
+上面這幾個方法中，(BOOL)animated這個參數決定了換頁時是否會有動畫的效果。在大多數的情況下，我們當然想要顯示換頁的效果，但是當程式剛啟動、初始化時，在加入第一個VIew Controller的時，我們就不需要動畫的效果。
+值得一提的是，我們一般很少會直接呼叫pop方法，因為在使用者按下左上角的退回按鈕時就會自動呼叫這個方法了。
+在投影片的第19頁和22有分別介紹如何初始化一個Navigation Controller以及如何加入新的Controller，有興趣的讀者還請參考。比較需要注意的是，當我們初始化完NavigationController之後，要記得把NavigationController的view加入到window的subview中，否則畫面上不會顯示。
+Controller間的資料傳遞
+在程式的進行中，會有很多Controller被建立或是移除，那我們要怎麼讓這些Controller能夠互相溝通呢？用下圖的例子作為舉例，List Controller包含了所有資料的列表，而Detail Controller則是會顯示被選取道的資料內容。
+
+由List Controller傳遞資料到Detail Controller的方法相當簡單，由於後者的初始化會由前者進行，所以只要定義好初始化的參數就沒問題了。然而，要從後者傳遞給前者，我們會使用Delegate的方式，也就是建立一組protocol，讓List Controller去實做，當Detail Controller需要傳遞訊息時則呼叫List Controller的對應方法就行了。
+自訂導覽列
+Navigation Controller所產生的螢幕畫面最上方有條導覽列，包含了標題還有一些按鈕，我們可以透過修改UINavigationItem來達成我們想要的效果。每個View Controller都包含一個UINavigationItem，然而只有在Navigation Controller的Stack最上方的才會被顯示。
+
+如果我們修改標題的話，並不需要修改UINavigationItem，因為View Controller中就有一個title的property，UINavigationItem會自動繼承這個property來顯示。
+至於按鈕的部份，UIKit提供了三種不同的按鈕，分別是字串的顯示、圖片的顯示和系統內建的按鈕。而這些按鈕就如同一般按鈕一樣，用的是target-action的概念，在投影片的第50到59頁中有範例的程式碼，讀者可以直接複製使用。
+
+此外，我們也可以在原本title的地方顯示一個View而非單純的字串，只要將self.navigationItem.titleView指定為想要顯示的View即可。
+
+最後，因為退回按鈕是直接使用NavigationController中Stack的前一項Controller的title，有時候會出現文字過長的情形，請參考投影片的第66頁的作法，另行設定一個按鈕替換，就可以解決這個問題了。
+
+Tab bar Controller
+談完了NavgationController，我們當然也沒有忘記TabBarController。TabBarController就是我們在各個App中看到下方有一排按鈕，每個按鈕分別會切換到不同的View Controller。
+
+在投影片78頁中可以看到，建立TabBarController的作法跟NavigationController相同，一樣要記得加入到window的subviews當中，才會在螢幕上顯示。
+如同UINavigationItem一樣，每個View Controller也包含了一個UITabBarItem物件，由文字及圖案組成，而UIKit也提供了一些系統內建的按鈕可以使用。建立按鈕的程式碼在投影片的第84和87頁，大家還多多參考。要注意的是，除了用程式建立UITabBarItem之外，我們也可以透過Interface Builder來建立，相對是比較容易、簡單。
+結合兩種形式
+最後，我們也可以結合以上兩種形式，由Tab Bar Controller作為基礎，加入Navigation Controller或是其他自訂的View Controller，這樣一來就形成了一般常見的iPhone應用程式架構了。
+
+結論
+在這次的課程中，我們學習到了兩種導覽用的View Controlles的使用方法。在下一次的內容中，我們將看到如何透過Table View Controller來顯示大量資料，並且處理捲動的效果，還請各位讀者敬請期待！
+參考資源
+Lecture #7 -- Navigation and Tab Bar Controllers
+View Controller Programming Guide for iPhone OS
+UINavigationController Class Reference
+UITabBarController Class Reference
+
+
+
+
+
+ Tagged with: CS193P, Stanford 
