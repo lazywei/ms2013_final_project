@@ -12,12 +12,23 @@ end
 
 redis = Redis.new
 
+data_dirs = []
 Dir["data/*"].each do |data_dir|
+  puts "process #{data_dir} ? (Y/n)"
+  ans = gets
+  if ans.gsub!("\n", "").downcase == "y"
+    data_dirs << data_dir
+  else
+    p "Skip this data dir."
+  end
+end
+
+data_dirs.each do |data_dir|
   data_files = Dir["#{data_dir}/*"]
   result = []
 
   data_files.each do |filename|
-    next unless redis.get(filename).nil?
+    next unless redis.get(data_dir + '--' + filename).nil?
 
     text = File.read(filename)
     text = text.split(/[^\u4E00-\u9fa5]+/)
