@@ -22,7 +22,8 @@ for i=1:size(chr_groups)(1)
 
     score = 0;
     for i=1:size(result)(1)
-        score += count_score(result(i, :));
+       score += count_score(result(i, :));
+       %score *= exp(occurrence([result(i-1, :) result(i, :)]) / occurrence(result(i-1, :)));
     end
 
     if score > final_score
@@ -38,17 +39,21 @@ function len=tw_len(str)
     len = length(str) / 3;
 end
 
-function score=count_score(word)
+function output=occurrence(word)
     cmd_str = 'redis-cli get ';
     [s, output] = system([cmd_str word]);
     output = str2num(output);
     if isempty(output)
         output = 1;
     end
+end
+
+function score=count_score(word)
+    output = occurrence(word);
     if (tw_len(word) >= 4)
         score = (-1) * output;
     else
-        score = tw_len(word) * output;
+        score = tw_len(word)^(2) * output;
     end
 end
 

@@ -13,7 +13,7 @@ targets = []
   p "page:#{page} is done."
 end
 
-data_dir = [File.dirname(__FILE__),'/data'].join
+data_dir = [File.dirname(__FILE__),'/data/tw.news.yahoo.com'].join
 
 targets.each do |url|
   r = Typhoeus::Request.get(base_url + url)
