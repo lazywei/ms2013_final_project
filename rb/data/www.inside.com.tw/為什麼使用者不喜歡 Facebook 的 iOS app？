@@ -1,6 +1,5 @@
 
 
-
 Facebook 創辦人與執行長 Mark Zuckerberg 最近喜事連連，除了上週五自己創辦的公司公開上市，他自己也在隔天與女友結婚。不過也許是因為要公開上市，最近市場冒出許多質疑 Facebook 的聲音，例如美國通用汽車（GM）認為在 Facebook 投放廣告不划算、分析師認為 Faecbook 執行長「不夠成熟」（例如在路演期間穿的是招牌連帽外套而非西裝）、Facebook 的市值被高估等等，其中跟使用者最為相關的，就是 Facebook 搞不定行動裝置。
 目前 Facebook 有半數的使用者透過行動裝置（iOS、Android app 或行動版網頁等等）使用這個全世界最大的社交平台，可是他們的 app 在行動裝置上的兩大平台 iOS 與 Android 最近飽受批評，而這些批評不外乎是速度太慢、bug 太多⋯ 舉例來說，也許有讀者看過 Facebook 的 iOS app 出現類似以下的畫面：
 
@@ -52,50 +51,4 @@ HTML 更符合 Facebook 的連續佈署程序。Apple 的審核時間太長，�
 註 2：Three20
 註 3：Here’s why the Facebook iOS app is so bad (UIWebViews and no Nitro)
 註 4：Blake Ross 的 Facebook 牆上照片
-
-
-
-
-Aslan Chen:
-May 21st, 2012 at 3:29 am
- 速度太慢+1
-
-
-Pony Weng:
-May 21st, 2012 at 4:24 am
- 世界上只有一個Facebook,即使再爛還是得用它....
-
-
-YaJing Liu:
-May 21st, 2012 at 4:51 am
- 我android和iOS都用過，兩者相去不遠。沒有分享功能真的有荒謬到，你不是就是為了分享而存在的嗎？但全世界只有一個Facebook也是事實，大部份的人只能邊用邊罵...
-
-
-羽瀬川 小鳩:
-May 21st, 2012 at 5:15 am
- 速度慢、功能不比行動版網頁多、吃的記憶體多、吃得內存容量也大
-什麼時候才有一個比較完美的Facebook app？
-真的受不了的時候還是跑去用FriendCaster for Android...
-
-
-Singuan Iap:
-May 22nd, 2012 at 12:15 am
- 裝潢不好怪鐵鎚，不會開船嫌溪窄。就算UIWebView較慢，UIWebView也只是個工具。NTT DoCoMo是第一個成功的Mobile App Store，所使用的不過只是9.6K的連線。寫App的人亂寫的話，用什麼都危險，原生App也一樣。最重要的還是--人。工具是無辜的，別一知半解，胡亂造謠。
-
-
-陳宏綱:
-May 22nd, 2012 at 6:20 am
- 還以為是我手機的問題，原來真的沒有分享功能...
-
-
-Taroa Chang:
-May 23rd, 2012 at 5:19 am
- 真正的問題是apple與google都沒有意願與義務去讓html canvas的功能與效率提昇，因為他們都不會希望開發者只用html開發app，這樣尤如腳踏兩條船，事實上等html5有關getusermedia等手機周邊媒體存取的標準在今年或明年確立後，就會知道facebook自己也來做app market是憑什麼了。.
-
-
-Francis Lou:
-July 3rd, 2012 at 8:39 am
- 那為什麼3rd party的FB client不會有問題呢?
-
-
 

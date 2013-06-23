@@ -1,0 +1,22 @@
+
+
+過去一年 Yahoo! 在 Marissa Mayer 治下做出許多變動，收購 Summly、Tumblr 等多家新創公司；與 Dropbox 合作；Yahoo! mail、首頁（美國）、Flickr 等產品皆大幅改版，還推出全新的 Yahoo! app、Mail app 和天氣 app，後者甚至還獲得本屆 Apple Design Award1。今天他們在部落格宣布：Yahoo! 將重新整頓使用者帳號，回收那些今年 7 月 15 日（美西時間）前超過一年未登入 Yahoo! 的帳號，將這些帳號重新釋出給使用者申請。
+Yahoo! 在他們的新版部落格（當然是在 tumblr.com）宣布2，為了讓使用者能夠享受較短的 ID，例如「[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+」，減少老是被系統建議使用「[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+」這種鬼帳號做為 ID 的困擾。
+如果您的 Yahoo! 帳號久未登入，卻又想要保有自己現在的帳號，只需在 7 月 15 日前登入 Yahoo! 旗下的任一產品即可。
+
+This year’s winners -- Apple Design Awards -- Events -- WWDC -- Apple Developer↩
+[email protected]
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+ Can Be Yours!↩
+
+

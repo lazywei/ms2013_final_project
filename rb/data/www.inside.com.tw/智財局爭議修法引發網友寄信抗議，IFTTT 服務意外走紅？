@@ -1,0 +1,27 @@
+
+
+最近經濟部智慧財產局擬修法封鎖境外侵權網站一事鬧得沸沸揚揚，甚至引起了國外媒體的注意1，昨日智財局在記者會上的發言也讓外界產生更多疑問2：
+智財局副局長李鎂今（28）日表示，目前規劃封鎖對象僅針對伺服器設置在國外，且內容「幾乎全為」侵權物的網站，但不涉及內容檢查，完全不影響日常接觸資訊的網站；經智財局決定封鎖後，還會再交由司法審理裁定。
+- NOWnews
+智財局此舉也引發國內眾多網路社群和科技網站的撻伐，許多網友們決定要寄信到智財局表達抗議，其中有網友想到利用 IFTTT 這樣的自動化網路服務，每天自動寄信到智財局3。
+
+網路自動化服務好幫手
+
+IFTTT 的意思是「If this then that」，是一個成立於 2010 年底，透過各家網站 API 提供自動化服務的網站，使用者先設定條件及相對應的動作，一旦某個網路服務滿足條件，就會觸發另一個網路服務的反應。例如使用者可以設定每當自己在 Facebook 張貼連結，就會被製作成筆記傳送到 Evernote；或是將 Gmail 裡標記星號的 E-mail 傳送到 Evernote 等等。
+
+將自己拍攝的 Instagram 照片傳送到 Dropbox。
+IFTTT 提供了各種網路服務的自動化流程，包括 Gmail、Facebook、RSS、Google Drive、Dropbox、YouTube、Instagram 和 Evernote 等等。（完整名單）這些網路服務彼此連結起來之後，可以產生更多便利的服務。大家可以發揮創意，思考一下有沒有哪些例行工作可以交由 IFTTT 來處理，或是直接採用網友們設計好的自動化流程（IFTTT 稱之為「Recipe」）。
+目前對部分使用者來說，IFTTT 的缺點大概是沒有中文介面，至於公司行號則可以考慮另外一個「zapier.com」提供企業版的自動化服務（Zapier 與 IFTTT 無關）。
+「物聯網」興起，IFTTT 還可以連上真實物體
+
+隨著硬體文藝復興時期到來，越來越多「智慧型」裝置（例如 [Nest]、SmartThings4、Twine5 等等）可以連上無線網路，搭配感應器、攝影機、網路介面或 app 等等，提供許多過去只存在人們想像中的服務。「物聯網」正逐漸成為大家關注的焦點。
+
+IFTTT 也在這股風潮中搶占了先機，於五月宣布「gets physical」，推出了搭配 Jawbone 智慧型健康管理手環「UP」、飛利浦燈泡「Hue」和 Belkin 開關等自動化服務。
+
+Taiwan proposes China-style block on overseas Internet services that infringe copyright↩
+封鎖國外網站？　智財局：僅針對重大明顯侵權網站↩
+每天寄信給智財局意見信箱↩
+SmartThings: Automate your home and your life↩
+Twine : Listen to your world, talk to the Internet↩
+
+

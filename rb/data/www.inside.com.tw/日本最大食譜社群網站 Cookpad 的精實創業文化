@@ -1,6 +1,5 @@
 
 
-
 Inside 曾經在 2011 年七月份介紹過「日本三分之一家庭主婦愛用的食譜社群網站：Cookpad 」，Cookpad 是日本最大的食譜社群網站，每個月有超過 1,200 萬的不重複訪客，單月的流量可以達到將近 5 億，目前是 Alexa 排行榜上全球前 1,000 大、日本約 76 名的網站。
 Cookpad 在今明兩天會參與一年一度的開放原始碼社群聚會 OSDC 2012，主要目的是藉由積極參與社群並且接觸到在台灣的優秀開發者。Inside 的幾位筆者，包括我（Lawrence）、Fox、Richard 也藉由這次的機會與 Cookpad 的成員們進行了一次簡單的專訪（不過其實比較像是閒聊啦～），希望能夠進一步了解這個非常特別的網站。
 Cookpad 的企業文化
@@ -32,91 +31,4 @@ Cookpad 使用 Ruby on Rails 技術，而且一路從 1.x、2.x 到現在升級�
 除了技術架構希望能 Keep it simple，團隊則是 Keep it small（事實上，徵才訊息裡面也提到，團隊都在三人以內）
 工程師來自七個不同的國家，可說是擁有國際化的工作環境
  
-
-
-
-
-Jimmy Chen:
-April 13th, 2012 at 5:39 pm
- Nice article
-
-
-陶韻智:
-April 14th, 2012 at 12:34 am
- 寫的真好
-
-
-Ben Lin:
-April 14th, 2012 at 1:12 pm
- 1.你必須喜歡你在做的事情
-2.你必須做你最擅長的事情
-3.你做的事情，要能夠對公司有所貢獻
-
-
-Ading Lu:
-April 14th, 2012 at 2:17 pm
- 你必須喜歡你在做的事情
-你必須做你最擅長的事情
-你做的事情，要能夠對公司有所貢獻
-
-
-陳智偉:
-April 16th, 2012 at 1:54 am
- 對公司有所貢獻，是因是領公司的新水
-當自己當老闆當然可以選擇
-所以這是有條件的限制..這很正常
-
-
-David Shao:
-April 16th, 2012 at 4:45 am
- 有趣的公司文化
-
-
-Mr.ken肯先生:
-April 16th, 2012 at 4:48 am
- 精實創業應該廣泛的推廣，快速、輕量、精簡的啟動，是大家都要學習的能力
-發現最近常有新創公司再找Ruby/Rails的人員
-
-
-Gisele Chou:
-April 16th, 2012 at 5:19 am
- 我超喜歡cookpad的！btw, 他們有發現你們三個都是icook的嗎... 感覺超好玩的啦！
-
-
-Chiang-Suo Lee:
-April 17th, 2012 at 1:57 am
- 引自內文
-『1. 你必須喜歡你在做的事情
-2. 你必須做你最擅長的事情
-3. 你做的事情，要能夠對公司有所貢獻』
-
-
-WhosCall Joe:
-April 17th, 2012 at 12:59 pm
- Enjoy cooking, enjoy start up, enjoy coding. 
-你必須喜歡你在做的事情
-你必須做你最擅長的事情
-你做的事情，要能夠對公司有所貢獻
-
-
-Rovi Kuo:
-April 17th, 2012 at 3:27 pm
- ．你必須喜歡你在做的事情
-．你必須做你最擅長的事情
-．你做的事情，要能夠對公司有所貢獻
-
-
-林雅香:
-April 17th, 2012 at 4:28 pm
- 有人經營三年就準備退休了，那你呢?
-http://vechb698.ftp.cc/
-免費註冊體驗後您將立即擁有個人專屬行銷網頁，
-詳細資料請註冊瀏覽。
-
-
-George Hsu George Hsu:
-May 3rd, 2012 at 1:00 am
- cool.
-
-
 

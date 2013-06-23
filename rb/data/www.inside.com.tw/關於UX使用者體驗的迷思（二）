@@ -1,5 +1,4 @@
 
-
 這是關於設計上UX常見的迷思所做的翻譯與探討，本系列的第一篇文章在 關於UX使用者體驗的迷思（一），若對設計沒興趣的讀者，可以直接跳掉本文。
 在我們繼續往下探討使用者體驗 User Experience 前，我們先來試圖區分一下 他跟 Usability的差別：還是拿inside作者Nika舉的例子來看：
 題目：我們要設計從A地到B地的路徑。
@@ -49,66 +48,4 @@ Users make optimal choices
 小結
 本文再試著簡單翻譯了 UX Myths上的三個迷思與內容，拋磚引玉，還是希望能引起留言區的討論與回響。
 下面板面是您的！
-
-
-
-
-Lu Yogi:
-November 23rd, 2011 at 7:46 am
- 迷思31？？上面有個小筆誤
-
-
-Felix Tang:
-November 23rd, 2011 at 10:28 am
- "從瞭解Business model開始，作使用者研究，並了解服務如何有意義的嵌入使用者的生活中。"
-這句描述得很棒。
-
-
-Ivan Lin:
-November 24th, 2011 at 1:02 am
- 想請問曾經在UI設計上有經驗的先進，你們在做設計時，腦海中是否充滿了每一個細節該遵守的原則？還是純憑直覺，意之所驅，筆之所到的方式來做設計？
-
-
-Bany Lu:
-November 24th, 2011 at 2:01 am
- "可用性中最難的一課就是學到–你不是用戶",看來只有不斷跟在用戶身邊觀察,但是有幾家公司可以做得到呢?希望我有機會挑戰。
-
-
-Richard Tsai:
-November 24th, 2011 at 1:57 pm
- 我喜歡使用 Peter Morville的解釋方式. 構成完整 User Experience有很多面向, 使用者獲得的最終價值, 不一定來自於Usability。可能Usability 不怎麼好, 但是Experience 絕佳!
-有些時候Usability不能太好，是為了讓使用者更專心思考任務，或者讓另一方使用者更滿意。
-謝謝 Sting的文章!
-Facets of the User Experience http://semanticstudios.com/publications/semantics/000029.php
-
-
-Antonius Wei:
-November 24th, 2011 at 3:08 pm
- 剛仔細看了文章，沒想到許多觀點還蠻近的...
-無論是以UX角度，還是以「設計力創新」角度來切入，
-我覺得最後決定產品的定位會是個關鍵~~
-
-
-趙政宏:
-November 25th, 2011 at 4:41 am
- 無薪假風波，你受傷害了嗎?
-失業沒工作，無收入可以嗎?
-輕鬆加盟~快樂創業! 還在等什麼呢?
-免費索取資訊>>> happyball008.idv.st
-ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
-
-
-游舒帆:
-December 1st, 2011 at 1:34 pm
- 舉個貼近的例子，Usability就像我們設計了很多提示與導引讓使用者完成他的工作，但其實用起來一點也不順暢，UX則是希望從設計時就是從使用者思考的角度去切入，不會有一堆的訊息炸彈，也不用一堆導引，你應該是設計成我自然會去按哪個按鈕...
-
-
-趙政宏:
-December 14th, 2011 at 4:30 am
- 居家網路創業兼職，建立屬於你的事業
-在家工作，不用外出奔波勞累
-免費索取資訊 www.happyball007.weebly.com
-ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
-
-
 

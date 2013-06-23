@@ -1,6 +1,5 @@
 
 
-
 大家看完 app 評測網站的文章之後，會去點擊下載按鈕嗎？
 說到行動廣告，不外乎是展示型或是任務/獎勵型的廣告，但日本還有另一種不同型態的廣告方式。成立於 2011 年 12 月，母公司為 Fan Communications1，8Crops 採用的方式很不一樣——與大量的「app 評測網站」合作，廣告活動透過這些評測網站文章最下方的「下載」按鈕來進行。
 以 iOS 為例，使用者在一個專門評測 app 的 app「A」中瀏覽介紹文章後，點擊「下載」的連結，一般來說這樣會先離開原本的 app「A」，連到 itunes.apple.com 網頁後再跳轉到 App Store 下載頁面。但 8Crops 則會在離開原 app、開啟瀏覽器之後安裝 SDK 並取得使用者 iPhone 的 UUID 之後，再跳轉至 App Store，而原先的 app「A」會在背景持續執行，確認使用者是否從 App Store 上安裝了該 app。也因此，8Crops 的廣告收費是 CPI 方式（cost per install），這是一般最高價的廣告收費方式。
@@ -10,23 +9,5 @@
 8Crops 告訴 Inside，除了希望台灣開發者到日本發展時採用他們的服務之外，這次來台灣的目的也是為了拓展海外市場，了解台灣 app 評測網站的發展狀況。
 
 Fan Communications 目前是日本最大的聯盟服務供應商（affiliate service providers）之一，旗下的 Ad Japon 在去年與國內的 Vpon 結盟，前者是日本國內最大的行動網路及網際網路廣告聯播平台。↩
-
-
-
-
-
-Gold Huang:
-March 5th, 2013 at 11:16 am
- 這其實就只是一種SDK LESS的技術，跟一般的CPC相比轉化率大幅提昇，但是跟標準嵌入SDK的CPI Cmapign相比，轉化率好一點的接近70%。 最重要的，APPLE現在開始在查這種方式（認為此PO我在說天書的請轉身離開）
-
-
-佐久間 諒:
-March 10th, 2013 at 7:42 am
- Gold Huang san
-I think that the effectiveness of a campaign depends on each medias.
-Although we use the standard SDK, but there is no big difference in them.
-About Apple, I think it is no problem.
-Because there is no ranking operation, UDID and cookie.
-
 
 

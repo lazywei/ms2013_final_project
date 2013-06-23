@@ -1,6 +1,5 @@
 
 
-
 credits: Kengo HAMASAKI
 前幾天的Mashable的Scott Gerber 問了在Young Entrepreneur Council裡的新創業家一個問題，他問他們認為未來這幾年科技業最缺哪種專才，答案是具備以下8種專業領域知識的人才：
 1. 搜尋引擎最佳化專家（SEO）
@@ -44,32 +43,5 @@ Sharing 共享
 在敏捷開發中會常常需要持續部署，也因此需要更緊密的團隊溝通以減少出錯，而一開始沒有將溝通納入考量的公司會隨著敏捷開發的團隊擴大規模而發現不少問題。
 為使「開發團隊與運營團隊之間更具協作性、更高效的關係」，對DevOps有興趣的人可以參考John Allspaw (Flickr/Yahoo!) 和 Paul Hammond (Flickr)的演講："10+ Deploys Per Day: Dev and Ops Cooperation at Flickr"（投影片、Liveblog），這個關於DevOps合作的演講後來還啓發了日本的Cookpad呢，後來Cookpad也做了一個叫"10+Deploys Per Day: Dev and Ops Coopeartion at Cookpad."的投影片。
  
+ Tagged with: devops 
 
-
-
-
-Klaus Chen:
-February 21st, 2012 at 3:37 am
- It is good for the mind initiation....for the next job dev...
-
-
-Tosby Shia:
-February 21st, 2012 at 10:27 am
- 趕快來充實一下自己的能力吧
-
-
-葉柏廷:
-February 25th, 2012 at 3:55 pm
- "DevOps（Development＋Operations）是一組過程、方法與系統的統稱，用於促進開發（應用程序/軟體工程）、技術運營和質量保障（QA）部門之間的溝通、協作與整合。需要頻繁交付（continuous delivery）的企業可能更需要對DevOps有一個大致的了解。Flickr發展了自己的DevOps能力，使之能夠支撐業務部門「每天部署10次」的要求──如果一個組織要生產面向多種用戶、具備多樣功能的應用程序，其部署周期必然會很短。這種能力也被稱為持續部署，並且經常與精實創業方法聯繫起來。"
-部門分工越多的組織貌似越需要DevOps
-但已經慢慢體驗到其實現在所接觸到的組織已經有此需求了
-
-
-莊淑斐:
-March 22nd, 2013 at 6:14 am
- 
-
-
- Tagged with:  devops 
-
-                

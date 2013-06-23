@@ -1,6 +1,5 @@
 
 
-
 根據Twitter工程部落格上最新的發佈，Twitter決定分享他們的knowhow，把他們在MySQL上做的程式碼修改，開放出來給大家一起參與改進。
 主要的修改簡要內容包括：
 - 在正式巨量環境運行下的時候，能更有效地監控系統，瞭解資料庫行為的狀態變數修正。
@@ -13,13 +12,4 @@ Twitter也一併公佈了他們在MySQL上的開發文件。以MySQL為基底，
 我們知道Twitter即時地需要處理海量資料，也很想知道他背後怎麼達成的。今天Twitter釋出了程式碼，趕快拿來應用到你的專案中吧！
  
  
-
-
-
-
-Pofeng Lee:
-April 10th, 2012 at 10:10 am
- datastore 應該是指 a place that can store data , 而不是 "商店" 之意.
-
-
 

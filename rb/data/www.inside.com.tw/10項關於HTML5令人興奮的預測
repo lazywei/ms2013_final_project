@@ -1,6 +1,5 @@
 
 
-
  
 本文編譯自readwrite.com，『HTML5: 10 Provocative Predictions For The Future』，對於HTML5 的開發者和公司決策者們而言，現在最重要的技術是HTML、JavaScript、CSS、行動平台和設備、以及不斷改進的HTML 平台（包括瀏覽器和作業系統）。這意味著，下面10 件事情將發生在2013 年：
 1 HTML5行動平台的崛起
@@ -27,49 +26,4 @@ Android 2.x（Eclair, Froyo and Gingerbread）看上去就像我們的手中的�
 10去掉HTML版本號
 現在，W3C已經“完成了”HTML5規範，媒體報導和大家關注的重點將會集中在“Web標準平台下面將推出什麼”上面。W3C已經開始致力於HTML 5.1標準，HTML 5.1是下一個網頁超文本技術工作小組（Web Hypertext Application Technology Working Group，縮寫為WHATWG）的標準的縮影。下一代的HTML平台的改進將從HTML5的較低層核心（DOM元素、CSS樣式、Simple JavaScript APIs，比如Geolocation），轉向對應用開發更為重要的改進上來（如ShadowDOM、Web Components、CSS和語音識別）。
 即使版本號不來湊湊熱鬧，關於HTML 討論將會繼續，HTML 技術也將繼續發展。
-
-
-
-
-Thinkpanda Hkhc:
-February 25th, 2013 at 5:18 am
- 因為Windows XP 無法升級至IE9, IE8 勢必成為新時代的"IE6"... :(
-
-
-Dennis Zhuo:
-February 25th, 2013 at 3:52 pm
- W3C已經“完成了”HTML5規範!!!! HTML5真的來了 @@
-
-
-Chander She:
-February 26th, 2013 at 1:55 am
- 確實令人興奮
-
-
-廖晨凱:
-February 26th, 2013 at 9:20 am
- 你的瀏覽器支援 HTML5 及最新的 WebSocket 通訊協定嗎? 台灣製的HTML5篏入式平台 http://www.embeda.com.tw/tw/?p=3841
-
-
-神劍闖江湖:
-February 27th, 2013 at 10:34 am
- 現在還能不使用 HTML5 嗎?
-http://m8.tw-mo.com/twnews/
-
-
-Hai Feng Kao:
-February 28th, 2013 at 4:01 pm
- HTML 5炒了很久了，但是相關的技術還是相當的不成熟，最好再觀望一段時間。
-
-
-Tsunami Sun:
-March 8th, 2013 at 1:56 am
- 重點是css3...
-
-
-Aaron Chang:
-March 11th, 2013 at 5:52 am
- 大概還要再五年吧
-
-
 

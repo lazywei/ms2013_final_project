@@ -1,5 +1,4 @@
 
-
 HTML5的發展越來越邁向成熟，很多的應用已經逐漸出現在你我日常生活中了，不只讓傳統網站上的互動Flash逐漸的被HTML5的技術取代，更重要的是可以透過HTML5的技術來開發跨平台的手機軟體，讓許多開發者感到十分的興奮！
 
 當你開始想要學習、試圖想要投入相關的開發時，由於HTML5的技術還在持續發展、進化當中，學習的資源也都比較零散，較難有一個整體的方向。在本篇文章中，筆者將會導覽HTML5的主要技術組成，並且提供一些學習資源讓大家參考。
@@ -59,58 +58,5 @@ History API -- 瀏覽器的上下頁內容修改，方便AJAX可以保留瀏覽�
 學習的方向
 在看完本篇文章之後，大家或許可以針對自己有興趣的方面透過關鍵字搜尋去尋找相關的學習資源以及內容。
 Google的HTML5Rocks網站也是我相當推薦的，其中的透過HTML5開發的HTML5介紹投影片更是值得一看，可以將上述的內容都實際試玩（推薦使用Chrome瀏覽器以獲得完整的功能效果）。
-
-
-
-
-Wallace Weng:
-August 1st, 2011 at 3:27 am
- 新的方向，看樣子flash會面臨大挑戰
-
-
-Vincent Huang:
-August 1st, 2011 at 4:37 am
- WebSocket 挺有搞頭。然後到目前為止，沒有一個主流的瀏覽器支援 Notification。XD
-
-
-Serenity Lo:
-September 16th, 2011 at 4:37 am
- flash .... bye 0.0"
-
-
-Sie Yao-Huei:
-October 1st, 2011 at 4:12 pm
- Indexed DB, Application Cache....Cool!
-
-
-Mi Chun Chiu:
-October 11th, 2011 at 3:32 am
- HTML5...攻佔市場
-
-
-趙政宏:
-October 29th, 2011 at 11:34 am
- 我的電腦不只幫我花錢，還能幫我賺錢!!
-免費索取資訊>>> http://www.fr02.weebly.com
-ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
-
-
-廖某允:
-February 2nd, 2012 at 10:23 am
- 對於一些傳統產業的行政人員沒有用，
-因為他們該死的還在用IE6.......也不會更新。
-但是這些人還是顧客阿~~
-
-
-蘇玉貞:
-March 10th, 2012 at 6:12 am
- 不能停止的學習
-
-
-酷企鵝:
-March 17th, 2012 at 9:09 pm
- 大家一起邁向 HTML5 的腳步吧
-
-
-
  Tagged with: html5 
+

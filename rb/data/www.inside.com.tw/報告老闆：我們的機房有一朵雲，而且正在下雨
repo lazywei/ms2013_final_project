@@ -1,0 +1,26 @@
+
+
+我們聽過機房失火（今年初台北才發生過），但如果機房裡不但有雲，還開始下雨，該怎麼辦？
+網路公司如 Google、Facebook 等極為仰賴他們的資料中心（Data Center），那是人們所稱的「雲端」。簡單來說資料中心就是存放大量伺服器的地方，而大量、密集的伺服器會產生高溫，於是資料中心必須要設法控制住伺服器所在地的溫度與濕度等，確保機器能在這樣的環境下運轉順暢。
+最近 Facebook 的基礎設施工程副總 Jay Parikh 分享了一個案例1：
+我接到一通電話：「Jay，資料中心裡有一朵雲。」
+「你什麼意思？外面有一朵雲？」
+「不，是資料中心裡面有一朵雲。」
+電話那頭的人慌了。
+「那朵雲開始下雨了！」
+不同於傳統資料中心使用電力密集的方式去冷卻伺服器，Google 與 Facebook 都採用了「chiller-less air conditioning system 」 ，透過室內與戶外的空氣交換為資料中心維持適當的溫度，我們曾在 〈 Google 資料中心大揭密：展現能源管理效率 〉 一文介紹過：
+Google 的伺服器機房有兩種通道——冷通道和熱通道。冷通道位在伺服器的前端，也是工作人員檢查伺服器狀態的地方，溫度約華氏 80 度左右。熱通道則位在伺服器的後端，溫度約華氏 120 度。伺服器所產生的熱都向這一側排出，並利用管線中的水將熱能吸收，排出室外冷卻後再送回室內吸收熱能。
+
+Facebook 資料中心人員講解。（影片來源：gigaom）
+奧勒岡 Prineville 那座 Facebook 建於 2011 年的資料中心採用的正是這樣的技術。然而在 Prineville 資料中心的第一個夏天，建築管理系統（building-management system）出了問題，導致高溫、低濕度的空氣不斷由熱通道通過蒸發式的水冷系統（water-based evaporative cooling system），於是空氣冷卻、變得潮溼，然後開始凝結，搞得機器到處都是水2。
+
+照片來源：Open Compute Project
+
+照片來源：Open Compute Project
+很快地，斯斯聲開始冒出，伺服器的電源開始短路，一片煙霧瀰漫。Facebook 學到教訓，將伺服器的電源供應器用密封膠處理過，穿上 Jay Parikh 口中的「雨衣」。
+Facebook 後來也改善了建築管理系統，確保這樣的錯誤不再發生。「100% 仰賴空氣的散熱氣統效能很棒，但要顧慮的範圍就大多了。」Jay Parikh 說。目前 Facebook 資料中心的效能屬於各個資料中心裡效能最好的那一群，甚至有時可以跟 Google 匹敵。
+
+Facebook’s first data center DRENCHED by ACTUAL CLOUD↩
+Learning Lessons at the Prineville Data Center↩
+
+

@@ -1,5 +1,4 @@
 
-
  圖片來源：Forbes
 兩位德國 Erlangen 大學的研究學者 Tilo Mueller 和 Michael Spreitzenbarth 發表了聲明，說明其研究的手機解密技術。他們發現，有一個技巧（通常稱作 Cold Boot Attack）能夠從Samsung Galaxy Nexus手機（使用最新版本的 Android 作業系統），讀出裡面的資訊，就算手機被 PIN 碼保護也一樣。他們將這個新發現的技巧稱做「冷凍（Frost）」。這個技巧原理是將手機冷凍到華氏零下 5 度（攝氏零下 15 度）以下，再快速重新開機，研究學者就能從冰凍後的手機上，讀出其記憶內容甚至是圖片、Email、網頁歷史瀏覽紀錄，和手機的密碼等。
 冰箱裡的手機，圖片來源：Forbes
@@ -11,68 +10,4 @@
 研究學者說明，要阻止這種解密方法，並不容易，除非是在手機外流前就將手機關機。另外，較頻繁的重新開機，有助於降低記憶體中存儲的個人資料。目前這項研究尚未針對其它手機做測試，但相信在 iOS 作業系統上會更困難。
 Mueller 和 Spreitzenbarth 把這項研究，當做一個對 Android 系統手機使用者的一個警告，因為智慧型手機較少關機，因此隱私權問題將會比個人電腦更加嚴重。
 編譯來源："Frost" Attack Unlocks Android Phones' Data By Chilling Their Memory In A Freezer
-
-
-
-
-喬峯:
-February 22nd, 2013 at 1:01 pm
- 這也太酷炫了吧!!!!!!
-
-
-Tom Chen:
-February 22nd, 2013 at 1:23 pm
- 嘖嘖
-
-
-鄭惠文:
-February 22nd, 2013 at 1:46 pm
- 翻譯有很多錯誤啊...作者應該沒有刷過android手機的rom吧...
-請參考http://tw.tech.yahoo.com/news/%E6%80%A5%E5%87%8D%E7%A0%B4%E8%A7%A3%E5%A4%A7%E6%B3%95-android%E6%89%8B%E6%A9%9F%E5%8A%A0%E5%AF%86%E7%A0%B4%E5%8A%9F-082900036.html
-
-
-陳均名:
-February 22nd, 2013 at 1:51 pm
- 又不是人人會這招..
-還有除非手機不要了
-否則退冰後就知道...
-
-
-Tsung-Hsuan Liu:
-February 22nd, 2013 at 2:21 pm
- 超酷的拉XD~能夠想到這招真的很厲害ㄟ
-
-
-林右明:
-February 23rd, 2013 at 12:45 am
- 您的智慧型手機有經常關機嗎？很重要的~~~
-
-
-陳國銓:
-February 23rd, 2013 at 5:36 am
- 這有點帥......ˊˇˋ
-
-
-Jeffrey Chang:
-February 24th, 2013 at 3:26 am
- Wow ! 超強 !
-
-
-Cj Hong:
-February 24th, 2013 at 9:06 am
- 火燒可以損毀資料,冰凍可以竊取資料.
-真是有趣~~~
-
-
-ChenHsiung Lin:
-February 25th, 2013 at 7:53 am
- 一般不是要root嗎？ 這個介面看起來像是XDA 用的CM 系列的recover mode
-
-
-SISTAR:
-February 27th, 2013 at 11:41 am
- 記憶體是通電暫存資料，斷電資料就清除資料
-http://m8.tw-mo.com/twnews/
-
-
 

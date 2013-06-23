@@ -1,6 +1,5 @@
 
 
-
 編按：本文由主辦單位提供。
 隨著技術的日新月異，網站的開發與設計儼然已是複雜的議題，從前端的美術設計到後端程式設計、資料庫、資訊安全、資訊法律等議題牽涉也越來越廣泛。
 WebConf Taiwan 是專為網站開發者、設計師所舉辦的大型綜合技術研討會，將於 2013 年 1 月 12 ~ 13 日在中研院舉辦，這是台灣非常難得的 Web 從業人員技術分享、認識新朋友的所在。預計兩天有三個會議室同時進行，並邀請近 50 位台灣 Web 開發、設計業界頂尖講師。除了介紹網站開發相關的技術之外，也會在美術設計、介面設計、使用者體驗等各方面分享相關議題，總共約會有 800 人參加。
@@ -19,9 +18,5 @@ WebConf Taiwan 是專為網站開發者、設計師所舉辦的大型綜合技�
 /* <![CDATA[ */
 (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
 /* ]]> */
-
-
-
-
 
 

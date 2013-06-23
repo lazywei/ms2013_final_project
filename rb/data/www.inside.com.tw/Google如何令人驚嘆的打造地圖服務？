@@ -1,6 +1,5 @@
 
 
-
 (Photo by Jaap (@tjaap))
 原文編譯自：theatlantic
 在每張Google地圖的背後，都有一張肉眼不可見的地圖，正是這張隱藏地圖隱含著真實地理位置的邏輯：哪些地方不能左轉，哪些是高速公路匝道，限速要求和即時路況等等。正是這些數據讓Google為你提供導航成為可能。上週，Google請我去參觀這張隱藏地圖背後的構建機制，這是Google首次向外界披露這項名為Ground Truth或者GT（地面實況）的計劃到底是怎麼回事。
@@ -27,23 +26,4 @@ Google地圖有著相似的策略，人類對路況訊息進行編碼，之後�
 MapMaker這款產品清晰的解釋了Google的野心。通過MapMaker，每個用戶都可以將自己世界裡的訊息添加到Google地圖中去。這也是一種將人類大腦中的訊息抓取到網路的方式，類似的競爭者還有Open Street Map，也是通過群眾外包的方式來製作地圖。
 隨著這個世界在線上線下都變得越來越後現代，Google的地理數據正在成為它最寶貴的資產。不單單是因為這些地理數據本身，還在於這些數據能讓Google正在做的和已經做的事情更有價值。也許就像我一個朋友Robin所說：「我堅信地圖才是Google的核心資產。50年內，Google就會成為一家自動駕駛汽車公司（依靠的就是對這個世界真正的理解），哦對了，它應該還會留著搜索引擎吧。」
  
-
-
-
-
-大雄:
-September 11th, 2012 at 2:20 am
- That's why I personally firmly believe;it will be Google but not Apple, it's development in cyber and physical world, will far beyond our expectation in the long run. Google car is not just a fantasy.
-
-
-林君臨:
-September 11th, 2012 at 3:27 am
- "我堅信地圖才是Google的核心資產。50年內，Google就會成為一家自動駕駛汽車公司（依靠的就是對這個世界真正的理解），哦對了，它應該還會留著搜索引擎吧。"
-
-
-Mercy Peng:
-September 20th, 2012 at 4:19 pm
- 事實上Google地圖每天"只"處理上千件的地圖反饋問題(絕不是"全世界"的地圖問題！否則怎麼可能每天只有幾千件！)因為目前Google地圖錯誤回報功能("report a problem")只可用於十幾個支援Map maker功能的國家,多半是歐美先進國家,連東歐,南歐很多國家都沒列入;其他用Tele Alets地圖的國家是回報給Tele Alets、更多國家是Local地圖廠商去處理這些問題。.
-
-
 

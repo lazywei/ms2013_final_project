@@ -1,6 +1,5 @@
 
 
-
 Google 修改了他們在中國的搜尋服務（也就是 Google 香港），針對輸入含有「敏感字詞」的字串進行搜尋的情況做出提示，告知使用者如果「硬是要」搜尋的話，很可能引發中國當局干涉而暫時無法連上 Google。（當然，如果使用者無論如何都不想修改搜尋字串也是可以的）Google 希望這樣做能夠提高使用體驗的品質。
 Google 在官方搜尋功能的部落格 Inside Search 發表一篇文章〈Better search in mainland China〉（註 1）表示在過去幾年來不斷收到使用者反映 Google 的搜尋結果經常不一至而且不可靠，其實這與搜尋方式與使用者使用的瀏覽器有關，但使用者同時也經常遇見錯誤訊息，例如「這個網頁現在無法使用（The webpage is not available.）」或是「連線遭到重設（The connection was reset.）」的訊息，一旦使用者看見這樣的訊息，代表他們在未來幾分鐘內將無法再連上 Google。
 Google 的工程師實際測試了一下，發現不論是在電腦上的瀏覽器或是行動裝置的瀏覽器皆有這樣的情形。以下是測試影片：
@@ -15,28 +14,4 @@ Google 表示他們非常希望能夠透過這樣的方式，讓更多人能夠�
 值得注意的是，Google 近期與中國當局的關係似乎有稍微改善，畢竟中國已經批准了 Google 對 Motorola 的收購。不知道今天 Google 對使用者做出這樣的提醒，是否又會對雙方的關係造成影響。
 註 1：Better search in mainland China
 註 2：Google change will alert Chinese users when search terms are being censored
-
-
-
-
-Clement Yu:
-June 1st, 2012 at 9:42 am
- google 被河蟹了
-
-
-Czars Chou:
-June 3rd, 2012 at 3:25 pm
- 應該是google被擋掉了，所以使用者輸入之後會警告他說，這些會影響連上google的結果。這樣google是善意的吧？？應該是香港也開始吃河蟹了才對吧？？
-
-
-Yazhen Shi:
-June 6th, 2012 at 9:13 am
- 大陸政府真的是管很寬...在大陸工作有使用到google的朋友們,自己要保重啦!
-
-
-Leon Lyu:
-June 11th, 2012 at 4:48 am
- 在內地工作的人，如何在Google找到答案，真是可憐~
-
-
 

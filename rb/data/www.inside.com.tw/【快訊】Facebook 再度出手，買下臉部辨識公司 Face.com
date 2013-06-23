@@ -1,6 +1,5 @@
 
 
-
 看來 Mark Zuckerberg 又交了新朋友。併購速度幾乎要跟 Google 一樣快了的 Facebook 今天決定買下臉部辨識公司 face.com，在此之前兩家公司彼此已經是合作夥伴。Face.com 已經在自家的部落格證實此一消息（註 1）。
 Face.com 是一家 11 人的以色列公司，曾獲得俄羅斯最大的搜尋引擎公司 Yandex 投資五百萬美金。他們的技術協助 Facebook 使用者辨認出照片中的朋友並加上標籤，這是 Facebook 照片分享服務中廣被使用的功能之一。
   圖片來源：App Store
@@ -18,8 +17,4 @@ Face.com 在部落格寫道：
  
 註 1：Awesome News – Facebook Acquires Face.com
 註 2：Klik（App Store 連結）
-
-
-
-
 

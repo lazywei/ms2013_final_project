@@ -1,6 +1,5 @@
 
 
-
 你是否有過這樣的經驗？夜深人靜的時候，開發了一個很棒的服務，馬上就想要分享給你的朋友們看看，告訴他們你做出了下一個能幹掉Facebook的好服務，但因為開發過程你的程式碼、資料庫都在自己的開發機上，要開給朋友們看還需要多很多步驟，像是放到伺服器上、建立&設定環境或是在自己的開發機上弄一個可以公開的環境出來，或是你根本就在防火牆內、也根本沒有公開的IP可用，種種麻煩顯然會阻擋了你幹掉Facebook的決心。
 多虧了科技持續在進步、而且始終來自於人性，現在想要炫耀你的好作品有了更簡單的管道：showoff.io。
 之前 Inside 作者 Richard 曾經在2011網頁開發熱門技術 – Node.js一文中介紹過 Node.Js：
@@ -21,42 +20,5 @@ showoff.io 特別適用於以下幾種情境：
 開發手機應用，想讓mobile apps可以直接存取某個Web Services（例如手機用3G上網，跟開發環境處在不同網段，開發期間可以透過此方式進行測試）
 在 showoff.io 的教學頁面有說明要如何在 Mac OS X 以及 Windows 環境上安裝，基本上使用 showoff.io 你必須要有 Ruby 以及 RubyGems 的支援，同時防火牆的 port 22 必須是開放的。
 showoff.io 是一個非常實用的服務，簡單的指令就可以解決許多困擾，不曉得您是否有遇過類似的問題是可以直接利用 showoff.io 解決的？期待您的經驗分享。
-
-
-
-
-Mona Hu:
-June 29th, 2011 at 2:04 pm
- 第一時間的 show-off is priceless！.
-
-
-Kyk Tommy:
-June 29th, 2011 at 2:26 pm
- This service is very useful for beginner like me. I do not have any server and want to "show off" my good ideas!
-
-
-Philip Zheng:
-June 30th, 2011 at 2:13 am
- 分享iOS App上的TestFlight。
-http://server.everfine.com.tw/blog/archives/2011/06/testflight---ap.html
-
-
-Jack Huang:
-July 2nd, 2011 at 7:24 am
- good
-
-
-Kero Yu:
-July 6th, 2011 at 5:53 am
- 還是直接花兩三塊美金買個美國host隨時用划算
-
-
-趙政宏:
-October 30th, 2011 at 7:58 am
- 我的電腦不只幫我花錢，還能幫我賺錢!!
-免費索取資訊>>> http://www.fr02.weebly.com
-ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
-
-
-
  Tagged with: node.js, showoff.io 
+

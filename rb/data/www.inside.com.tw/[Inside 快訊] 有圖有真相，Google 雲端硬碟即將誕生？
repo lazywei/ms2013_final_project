@@ -1,5 +1,4 @@
 
-
 今天網路上最多人討論的訊息莫過於 Google 的社群網站，沒什麼人用的 Google+ 抄襲向 Facebook 的新版時間軸介面致敬，G+ 上的網友們對於新版的介面褒貶不一，其中針對新版畫面中留白特多的問題，G+ 上甚至已經出現如何運用留白處的照片（ref: https://plus.google.com/s/%23usesforwhitespace ）。國外則有 Google 高層表示，留白的地方將會有特殊用途，而且不是廣告。
 於是，馬上就有神人開始研究新版 G+ 的網頁程式中的奧祕，沒想到尋找的過程中驚見，雲端硬碟的字樣，並投稿到 Inside 快訊信箱，小編一看，眉頭皺了一下，發現案情不單純，為什麼他的畫面上有「雲端硬碟」而我的沒有？
 於是，有圖有真相的這篇 Inside 快訊就來了。請問，已經用 Dropbox 的你，有興趣改用 Google 的 Dropbox 嗎？啊，我是說 Google 的雲端硬碟。
@@ -8,16 +7,6 @@
 /* <![CDATA[ */
 (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
 /* ]]> */
-
-
-
-
-
-
-Will Tsai:
-April 12th, 2012 at 7:37 am
- 這位神人可能是有使用google app開發某些軟體，因為google cloud storage是for開發者的.
-參見 https://developers.google.com/storage/?hl=zh-TW
 
 
 

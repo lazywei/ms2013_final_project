@@ -53,7 +53,7 @@ function score=count_score(word)
     if (tw_len(word) >= 4)
         score = (-1) * output;
     else
-        score = tw_len(word)^(2) * output;
+        score = tw_len(word)^(0.6) * output;
     end
 end
 

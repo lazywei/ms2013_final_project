@@ -1,6 +1,5 @@
 
 
-
 有一天我在辦公室打開 iTunes 的分享功能，想說跟同事分享一下資料庫的音樂（iTunes 有一個「分享」功能可以讓使用者在區網內以串流方式分享資料庫的音樂），沒想到同事們卻說：「我們聽音樂都開 YouTube」。如果各位讀者們聽音樂也都是用 YouTube，卻又覺得它拿來聽音樂無法滿足需求，可以試試看愛聽客 AtticTV。
 AtticTV 是一個來自馬來西亞的 MV 串流隨選服務。運作方式是先從各大音樂平台蒐集音樂的資料，像台灣的話就是以 KKBOX、ezpeer、IndieVox、StreetVoice 作為「歌名」、「演唱人」等資訊來源，再到 YouTube 上將相關的影片找出來呈現給使用者。使用者可以按音樂類型隨機播放音樂，或是編輯自己的播放清單與朋友分享。
 為什麼要做 AtticTV
@@ -25,19 +24,4 @@ Johnson 與我們分享了一個有趣的現象，他觀察到 AtticTV 上的使
 (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
 /* ]]> */
 ）。
-
-
-
-
-:
-August 22nd, 2012 at 1:32 pm
- 你上網都在做什麼呢? 玩遊戲？聊天？還是漫無目的？
-這樣可以讓生活變得更好嗎？
-如果這一個機會可以改變生活增加收入，你願意來了解嗎?
-只需你認真完整的評估一次，自行判斷適不適合自己!
-其他的不會跟你講太多，決定權在你!
-www.liuliping.ftp.cc 沒有連結請手動～.
-（謹慎評估了解才是上策 決定當下既是決定未來）
-
-
 

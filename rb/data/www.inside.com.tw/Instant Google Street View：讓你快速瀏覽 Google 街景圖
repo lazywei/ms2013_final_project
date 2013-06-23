@@ -1,6 +1,5 @@
 
 
-
 讀者們應該大多用過 Google 地圖的街景圖功能，會不會覺得在上面拖曳小人偶很麻煩？今天我們要介紹一個叫「Instant Google Street View」的網頁。顧名思義，就是讓使用者快速瀏覽 Google 街景圖。
 
 打開網頁會發現幾乎什麼都沒有，只有一個搜尋框。但是當使用者開始輸入後，它就會利用 Google Maps 的 API 快速地找出你輸入的地點（精確的地址、建築物或地名皆可），輸入中文也沒問題。如果我們輸入的地點 Google 有製作室內導覽的話，會直接切換城市內導覽，例如白宮。使用者有需要的話，Instant Google Street View 也可以產生連結讓大家分享。
@@ -11,8 +10,4 @@
 另外再介紹一個趣味的 Google Street View 應用「Streetview Stereographic」，作者利用 WebGL 將 Google Street View 的畫面重組，例如我們輸入「龍山寺」，瀏覽器左方就會出現以下的畫面，很有趣 XD
 
 如果想要知道作者採用的語法，可以點選左上角的「＋」查看。
-
-
-
-
 

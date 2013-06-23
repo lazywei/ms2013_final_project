@@ -1,43 +1,7 @@
 
 
-
 美國國土安全部轄下的電腦資安單位 US-CERT（United States Computer Emergency Readiness Team） 在昨天發布一則警告，指出使用率相當高的甲骨文軟體 Java 出現嚴重的安全漏洞，該漏洞可能影響全球數億台 PC 使其暴露在駭客攻擊的危險下，並建議所有使用者應該立刻停用。（註一）
 US-CERT 表示，駭客可以利用這個 Java 安全漏洞，讓電腦打開特定檔案，進而讓駭客進入電腦系統進行遠端操縱。該警告之所以重要的原因，正是因為發現有些惡意軟體已經在利用這個新發現的 Java 漏洞。更嚴重的是，這個漏洞的解決辦法還沒有被找出來，而且甲骨文針對這類的安全漏洞通常得花上一周到一個月才會提供補救更新，因此只能建議使用者將瀏覽器的 Java 停用。
 網路安全顧問公司 Rapid7 的資安主任 HD Moore 表示，無論是 Mac OS X、Linux 或是 Windows 系統的電腦都無法倖免於駭客的攻擊，並形容「這就像是駭客的狩獵季節」。
 （註一）Java 7 fails to restrict access to privileged code
-
-
-
-
-方興木:
-January 11th, 2013 at 11:31 am
- 挖哩咧...這樣就解除安裝...那IE早就該廢了吧...
-
-
-Ching-Han Ho:
-January 11th, 2013 at 11:49 am
- 最近「重大安全漏洞」好像很流行齁。
-
-
-Joey Yeh:
-January 11th, 2013 at 12:58 pm
- 真的還假的這麼嚴重＝＿＝
-解除安裝ＪＡＶＡ牽連超廣耶
-
-
-Telung Pan:
-January 12th, 2013 at 2:28 am
- There's no completely secure system.
-
-
-Chieh Yu:
-January 12th, 2013 at 10:28 am
- 標題過於聳動了，建議修改一下
-
-
-Chun-Chieh Jimmy Hou:
-January 13th, 2013 at 5:13 am
- 我要失業了............
-
-
 

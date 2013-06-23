@@ -1,6 +1,5 @@
 
 
-
 大家熟知的網路瀏覽器 Firefox，其背後的 Mozilla 在部落格上宣布（註 1），將他們以開放式網路標準為根基打造的作業系統命名為 Firefox OS。
 完全開放
 行動裝置版的 Firefox OS 是從 Mozilla 的「Boot to Gecko 計畫」而來，該計畫解除了許多行動網路開發的限制，可以讓 HTM5 應用程式使用手機的基本功能，這在過去只有原生程式才辦得到。今年初 Telefónica 與 Mozilla 合作，設計出各種手機功能的 HTMl5 版本，例如通話、簡訊與遊戲等等。
@@ -16,8 +15,4 @@ Mozilla 表示，包含其他所有的參與者，他們與 Mozilla 都將致力
  
  
 註 1：Mozilla Gains Global Support For a Firefox Mobile OS
-
-
-
-
 

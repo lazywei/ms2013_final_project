@@ -1,5 +1,4 @@
 
-
 Ryan Singer（圖片來源：Rob Lambert）
 37signals 的 UI 設計師 Ryan Singer（同時也寫程式、當產品經理）相信：
 產品設計應該由 UI 驅動，因為 UI 才是人們真正使用的部份。
@@ -18,70 +17,5 @@ UI 是軟體，因此設計師應該要知道如何寫程式。
 但是對於軟體設計師來說，我建議先深入了解 UI 本身，光是基礎的部份就便能使你獲益良多。
 
 What UI really is (and how UX confuses matters)↩
-
-
-
-
-
-Norman Nian:
-April 3rd, 2013 at 3:42 am
- UI 是一門很深的學問，每項設計、規劃、視覺、誘導、資料收集，每個步驟都得銜接的很好，才有辦法能夠達到原本每項軟體規劃的目的，自己也正努力學習中.......
-
-
-陳宗興:
-April 3rd, 2013 at 4:21 am
- 恩 講解的非常好,這讓我想起 我常看到若干的老師在教學行動裝置系統開發時,並沒有這些這些行動裝置的使用經驗 ,甚至連裝置都沒有的情況之下.因此在UX尚無法累積與感受,就直接教授UI設計,似乎有點閉門造車...而這些經驗就得必須每天使用下 才能有所體認與創新.
-
-
-馬超:
-April 3rd, 2013 at 6:20 am
- 對軟體工程師 似乎受益良多
-對於韌體工程師而言..... 這是廢話
-
-
-WEn KAi Wang:
-April 3rd, 2013 at 6:36 am
- 對於開發自動化測試來說.... UI 愈少愈好....最好就是一個 script 然後自動做到好跟我說結果跟產出 report....
-
-
-Tsung-Hsuan Liu:
-April 3rd, 2013 at 7:05 am
- 我蠻認同UI要對程式有部分了解這個看法，當然，你未必要非常專精，但對程式要一定的認知，才能夠讓這個使用者和電腦之間的橋樑穩固，關於這方面，我也還在努力學習。
-
-
-David Hsu:
-April 3rd, 2013 at 9:48 am
- 實在是太同意了。
-UI 才是個「可設計」的標的物，而 UX 跟客戶滿意度，以及盈餘一樣，是包括 Business Model , Coding, UI ...在內，所有產品元素的綜合成果。 所以，真的不要繼續說什麼 UX Design 了，這跟說 Customer Royalty Design 或 Profit Design 一樣的荒謬。
-
-
-Jimmy Chen:
-April 3rd, 2013 at 7:23 pm
- 就算是後端程式設計師 有基礎的UI概念 會對兩者都有好處
-ＵＩ好困難 繼續努力學習
-
-
-William Lue:
-April 4th, 2013 at 4:00 am
- 交通大學 侯君皓 教授在臉書上與友人討論這則 po 文, 讓我以外行的立場來了解'業內'人士討論的觀點. 在數位技術迅速促成個人話產製 digital/disruptive know-how enhanced personal fabrication as forewarned/promoted by Prof Neil Gershenfeld and his MIT Fab Lab / FabCentral 這則 po 文幫助無技術背景的人有關鍵的理解 . 多謝
-
-
-Chih-Wei Huang:
-April 7th, 2013 at 12:13 pm
- UI是可見之物，UX則是改善設計思維並將使用經驗納入設計的方法流程，或許複雜、或許無法一言蔽之，但不代表它不重要、不值得討論。
-
-
-Benny Lee:
-April 8th, 2013 at 6:20 pm
- 這邊只是在闡述UI只是UX的一環，這點完全同意
-但說到"UI是軟體"這句話，可沒在原文裡面看到這樣的意思，請編輯再看一下吧？
-拿文中舉的ATM例子來說，ATM上實體按鈕的設計，也是人機互動的一環。你可以設計成全部都用觸控螢幕輸入密碼，也可以保留傳統數字鍵盤輸入密碼，端看使用情境跟目的為何。簡單來說，硬體跟軟體的搭配絕對會影響到所謂UI的設計，所以要說"UI是軟體"，我想這句話是不太正確的。
-UI應該包含了硬體跟軟體端的元件，達成使用者可操縱，而系統可反映使用者操縱之影響。
-
-
-Puzz Kuo:
-April 9th, 2013 at 9:47 am
- 太酷了！超清楚！！
-
 
 

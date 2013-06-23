@@ -1,9 +1,8 @@
 
-
  
 (Reference: shatterbox)
 
-投稿作者：Leon Lu ([email protected]
+投稿作者：Leon Lu (Le[email protected]
 /* <![CDATA[ */
 (function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
 /* ]]> */
@@ -72,46 +71,4 @@ EI這個名詞，單純就 Wiki 上的定義，是指有能力去識別、評估
 一位優秀的軟體開發人員，是指花費大量時間或精神去設計出複雜的、具備彈性的 Library來符合軟體系統需求嗎? 答案有可能不是。但會嘗試著找出最簡單的作法，在有限時程及資源下解決專案問題或需求的軟體人員，將會是大多數 Project Stakeholders 所認為的優秀開發人員。
 或許在軟體領域中沒有“完美”的解決之道，但存在著“完成”需求並達到高測試品質的解決方案，方法就在前述的九大特質之中(根本需求、善用工具、注重易用性、測試、持續重構…)。
 不曉得這十項軟體工程人員的技能，有多少已經融入在您的工作型態之中了，這些想法無關乎正確與否，僅在於是否適用於您或是您的團隊之中，若您也有一些受用，並且不吐不快的經驗法則，請留言分享，讓所有關注的 Inside 讀者們一起成長。
-
-
-
-
-Jame Whang:
-June 9th, 2012 at 3:23 pm
- It's really difficult about software.
-
-
-Ray Shih:
-June 10th, 2012 at 6:54 am
- 修一下吧
-把RoR歸類成語言，然後說自己「研究軟體架構的美」
-會被笑死
-
-
-Hsiu Wu:
-June 11th, 2012 at 5:13 am
- 文章不錯，很值得分享給週糟的PG朋友.
-
-
-Leon Lyu:
-June 11th, 2012 at 1:12 pm
- 感謝 Ray 的回應, 當天晚上有感而發, 就趕緊將想法敲下來, 沒有多花心思好好 review, 腦子裏只是想到以前寫 Ruby 時的想法 : "簡潔", 就順手敲了 RoR (雖然 Rails framework 也是很值得學習啦, 但對應到該段落寫 RoR 的確會語意不明) ; 非常感謝您的訂正, 希望日後有機會與您多互動討論, 多多學習. 感恩 ^^
-
-
-Leon Lyu:
-June 11th, 2012 at 3:53 pm
- 感謝 Ray 的回應, 當天晚上有感而發, 就趕緊將想法敲下來, 沒有多花心思好好 review, 腦子裏只是想到以前寫 Ruby 時, 語法的 "簡潔" 特質, 就順手敲了 RoR, 雖然 Rails framework 也是很值得學習啦, 但對應到該段落特別標註了 "程式" 二個字, 寫 RoR 的確會語意不明。.
-哈, 不好意思, 當時心理還在想要寫 "Architecture" 或 "Code", 手已經不自覺的打好字了! 非常感謝您的指正, 更重要的是希望文章內容對軟體同好們有所幫助, 即是給予小弟的鼓勵, 希望日後有機會與您多互動討論, 多多學習. 感恩 ^^
-
-
-Eric Yeh:
-June 12th, 2012 at 10:06 am
- 這篇文章內容, 個人認為是滿優的分享, 很適合作為我部門同仁的 Learning & Brainstorming 題材, 要讓約 20 人的團隊引起共鳴的 Study Meeting, 總是讓人疲於找題材.
-
-
-林暉恩:
-June 25th, 2012 at 3:39 am
- 心中有好多疑問在這裡找到解答，個人認為程式設計是技術加上管理，單會寫程式不是什麼困難的事，更重要的是持續精進及培養解決問題的能力
-
-
 

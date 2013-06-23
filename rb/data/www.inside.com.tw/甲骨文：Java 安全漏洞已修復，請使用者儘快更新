@@ -1,6 +1,5 @@
 
 
-
 在傳出 Java 安全漏洞的消息後，甲骨文於昨天緊急釋出了 Java 7 Update 11 的更新以修補相關的安全漏洞。（註一）
 使用者可以直接在甲骨文的網站上找到最新版本的更新：Java SE 7u11，在 Java 的官方網站上也有下載連結。在甲骨文的官方更新說明中（註二），指出這份最新版的更新修復了安全漏洞的問題，而在 Oracle Security Alert for CVE-2013-0422（註三）這份說明文件中更詳細說明了這兩個安全漏洞的情形。
 
@@ -12,8 +11,4 @@
 （註三）Oracle Security Alert for CVE-2013-0422
 （註四）Following active exploits, Mozilla adds all recent versions of Java to its Firefox add-on blocklist
 （註五）Apple takes no prisoners, immediately blocks Java 7 on OS X 10.6 and up to protect Mac users
-
-
-
-
 

@@ -1,6 +1,5 @@
 
 
-
 Raincole Lai， 資工系學生，玩心很重的小孩，總是處於會寫程式和不會之間的模糊地帶。信奉「積極地懶惰」哲學，為了讓世界變得更有趣而努力著。部落格連結：raintoday.cc
 昨天是appWorks第三屆的Demo Day，因為我已經很久沒去他們的每月集會，和appWorks的最新動態有點脫節，我就抱持著 朝聖 觀摩學習的心態去了一趟。(ps: appWorks是一家創業投資公司，專門投資草創時期的網路事業，Demo Day就是讓接受投資的公司demo的那個day)
 這次的團隊共有15家，一如以往以電子商務為大宗，佔了5家；另外還有B2B、遊戲、聯誼社群等等各種服務。因為東西太多了我決定分成兩篇(有空的話可能會再加一篇感想)，以下並非按照Demo日出場順序，而是(粗略地)用「這到底是哪門生意？」來分類。
@@ -49,87 +48,4 @@ Patisco：線上商務系統
 這也是我比較看好的類型，網路創業者通常都著重面向消費大眾的軟體，我們喜歡Ruby on Rails、Python之類的語言，瞧不起會寫Java的人，連COBOL怎麼拼都不知道，還以為SAP是某種統計軟體。但可別忘了，企業軟體可是有2450億美金的龐大市場，而且Oracle的市值比Google還高呢。
 不過畢竟我不是它的客群，也很難做出太多評論。附帶一提，因為很好奇到底什麼是「線上商務社群」，我試圖申請它的30天免費試用版本，但是無論如何都收不到認證信，可能用gmail當信箱太不像正經公司了吧。
 (to be continue……)
-
-
-
-
-Chris Chen:
-October 30th, 2011 at 3:25 pm
- iHealth 感覺就是藥房的Ｅ化而已
-不知道偏遠地區他們送不送還是僅大台北而已
-
-
-林恒生:
-October 30th, 2011 at 3:29 pm
- 感謝整理，很多回來就沒記住，有這一篇就可以更清楚的fellow。不過是不是把每個團隊的名字再放大，並且放到圖片前面，也許這樣排版會更清楚。
-
-
-Ken Hsu:
-October 30th, 2011 at 3:37 pm
- http://www.ihealth.com.tw/
-概念真的很棒~
-http://www.patisco.com/pages_zh-TW/strength.html
-這個更有趣，看介紹也很實際，如果有行動支援是更好啦(我一開始在iphone看的)
-目前也在註冊中~
-
-
-Landon C Tseng:
-October 30th, 2011 at 3:53 pm
- iHealth的idea, 也太容易被copy了, 門檻太低了.
-任何一間藥房聽到這點子, 都可以自己去建一個iHealth.
-如果連鎖藥房進入市場, 影響就更大.
-
-
-Even Chung:
-October 30th, 2011 at 5:16 pm
- 大家好，我是 Patisco 的 Even Chung ，由於Patisco主要是針對商務使用，對於試用審核我們會盡可能去確認申請者是否為有登記的公司，非常不好意思。若有興趣想瞭解操作細節，可以透過Facebook 私訊給我，我來看看能否安排 DEMO Site 供您試用，謝謝。
-
-
-何百年:
-October 30th, 2011 at 6:28 pm
- 我點一個盲點,其實長期藥3個月還有一個意義,就是可以回診確認病情,調整藥單,有些病患以為開一次就吃很久是錯的,調整藥單是有意義的
-
-
-Carrie Yu:
-October 31st, 2011 at 12:54 am
- 寫得真好 那個偽直銷的小姐也一直讓我瞪大眼睛 呵呵 不過...小小的建議 是to be continued 啦XD
-
-
-Anthea Hou:
-November 1st, 2011 at 2:10 pm
- 謝謝您的建議，中文版網站我們會儘快做出來.
-
-
-Yu-Hsuan Lai:
-November 2nd, 2011 at 9:33 am
- 話說我搞錯了，inTaiwan.ru並沒有得到亞洲百強，只是進入決選名單(finalist)而已，patisco才是有得到top 100 winners……
-
-
-Ray Chu:
-November 3rd, 2011 at 10:39 am
- 來個上下篇一起貼 很有趣的文章
-
-
-骑士外送:
-November 3rd, 2011 at 10:40 am
- 太有意思了.. @行動得來速 跟我們家的 騎士外送網 有異曲同工之妙~~~(謎:.咳..好像都一樣)
-
-
-Ricky Chen:
-November 3rd, 2011 at 5:51 pm
- 我也認同iHealth是最大有可為的, 但如果核心只放在處方葯的宅配就太可惜也太危險了, 畢竟隨便一個連鎖葯局的採購能量就足以讓iHealth花很久時間追趕 (我並沒有在暗示葯價差跟採購數量有關) 既然名字叫iHealth, 跟區域醫院合作, 作遠距醫療的行當, 光是跟政府請補助再找硬體廠商合作申請ICP(不是INTERNET CONTENT PROVIDER), 可以養很多人養很久, 屆時市場也成熟了.
-
-
-Wei Han Chi:
-November 5th, 2011 at 4:28 am
- IHEALTH可能有醫病關係的問題需要克服吧
-
-
-趙政宏:
-November 10th, 2011 at 2:47 pm
- 我的電腦不只幫我花錢，還能幫我賺錢!!
-免費索取資訊>>> happyball008.idv.st
-ps:謝謝您的閱讀，如果您不感興趣，很抱歉打擾您!!請將此文刪除，祝版主事事順心。
-
-
 

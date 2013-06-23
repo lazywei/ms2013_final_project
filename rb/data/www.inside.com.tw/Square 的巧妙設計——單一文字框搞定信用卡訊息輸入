@@ -1,5 +1,4 @@
 
-
  
 本文作者是 c7210，一位 UX 玩家、互動設計師、iOS 開發菜鳥、貓奴、guitar fucker。原文刊載於 Be For Web，編譯自 〈 Collecting Payment Information Within a Single Input 〉 和 〈 Making beautiful forms; Square and Recurly 〉 兩篇文章。
 行動 app 的設計師們一直在努力降低使用者輸入文字的量。因為螢幕太小，手指無法精準控制，在輸入過程中出錯簡直是家常便飯。而輸入量不會無限地降低，常常我們更需要考慮的是如何使輸入訊息變得更加容易。
@@ -13,23 +12,4 @@
 這裡有一個很棒的細節，當使用者在輸入 CVV 時，左側的圖示會發生變化（如上圖所示），提示使用者所謂的 CVV 就是卡片背後的 3 位數字；非常貼心。
 目前看來人們對這套互動模式的反應都很好；這簡直是一定的。只用一個輸入框，有效的利用格式限制的防錯與輔助功能，又極大減少傳統模式輸入框的使用量——Square 厲害！
 另外值得一提的是，Zachary Forrest 用網頁前端技術將這套互動模式「移植」到網頁上，有興趣的朋友們也不妨去看看。
-
-
-
-
-黃聖儒:
-December 26th, 2012 at 2:36 pm
- 不過輸入錯誤怎麼修正？
-
-
-Julian Zhu:
-December 27th, 2012 at 12:38 am
- 想法不错
-
-
-Slippery Handle:
-December 27th, 2012 at 10:37 am
- 這很像是初學者會想到, 工程師會忽略的功能
-
-
 

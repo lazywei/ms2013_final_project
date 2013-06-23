@@ -1,6 +1,5 @@
 
 
-
 國人自製的 Cubie Messenger 下載次數突破 350 萬，團隊中的工程師之一 Ingram Chen 在部落格 Xexex’s Java 和其他二三事 發表 〈 Cubie 3.5 Million Download 〉，跟大家聊聊支撐 Cubie 聊天功能背後的 UX optimization、Feature set 和 Growth hack。（UX optimization 為「使用者體驗最佳化」、Feature set 是指決定程式要有哪些功能，而 Growth hack 的意思是「設法讓流量成長」，「Growth Hacker」就是我們說的「流量成長駭客」）
 本文作者：Ingram Chen（@ingramchen），大學和研究所都是讀化工系，因緣際會成為 Java 愛好者，Din.Ben.Don!訂便當管理系統與科科科站長。目前負責 Cubie Messenger 的 server 與 iOS 版 app。
 今天不小心在 Hacker News 看到有人貼 Cubie 的成長，雖然沒有人討論，但好歹也進過首頁一次。啊，我人生的目標可以打一個勾了，完成進 Hacker News 首頁的悲願。
@@ -24,18 +23,4 @@ Growth Hack
 Growth Hack 我們有做，也有做 A/B Test，讓 Data driven 我們的設計。我們現在通通在 Android 平台上執行 A/B Test，原因呢？當然是他媽的 App Store 審查要 10天 啊。你設計了一個 A/B Test 結果要兩週後才有結果不是氣死人嘛？Android 用戶和 iOS 用戶也許有不同的喜好，但是當量級到一個程度後就沒差了，你在 Android 上做的結果可以套在 iOS 上，最少我們的經驗是這樣。目前我們的 growth hacking 不是很深層的，只做到連結其他的服務的基本功能，這一點是真的弱掉了。上一回老闆到了矽谷一趟，那邊的圈子隨口給的 growth 建議都讓人眼睛一亮，矽谷在這方面真是有一套。我們是否該停止大量投入在 Feature set，將一半的時間移過來做深層的整合呢？Growth Hack 的總帥 Andrew Chen 也是如此建議我們 (他當然覺得 Growth Hack 最重要的啦)。我個人也同意他的建議，不過我的原因只是 Cubie App 在功能上已經太肥了，造成程式的架構太複雜。(I am a developer!)
 用戶成長還有其他的點嗎? 我是做 server 的所以要臭屁一下自己的功勞: server 在不斷的成長和爆炸的循環之下, 總算調整到可以穩定承受用戶數增加(現階段啦)。後台要承受百萬支手機同時在線上聊天還是要有點經驗才做的到, 我們跌跌撞撞地也達到了那個點. 我們學到什麼都要非同步操作, 後台的 server 因為放在 amazon, 大概兩~三週就會有一台server 無預警掛掉, 我們的架構也可以容忍這種當機. (ps. 現在大約是20台 server). Market 快速成長, 後台也要追的上同樣的成長速度, 不然用戶數就卡住了。當然現在的硬體很好, open source 資源比以前更豐富, 所以要開發百萬用戶的後台不再是火箭科學了. 有經驗的工程師大家現在都辦得到，只是要撐過成長的陣痛期。
 好了，這就是我目前對於 Cubie 成長各方面的看法，有時間有資源當然是想全部都做到 100 分啊。不過，你曉得的。
-
-
-
-
-史蓋:
-September 24th, 2012 at 5:09 am
- TMD咧...舊的Android2.1系統不支援哦...真是三角圈圈叉叉涅...
-
-
-Alan Feng:
-September 26th, 2012 at 5:27 am
- Great article.
-
-
 
